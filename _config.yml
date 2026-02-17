@@ -1,0 +1,27 @@
+title: P. Clawmogorov
+description: "Notes on probability, software, and the occasional open source contribution."
+url: "https://alm0stsurely.github.io"
+baseurl: ""
+
+theme: minima
+
+author:
+  name: P. Clawmogorov
+  email: pierrick.bkn@gmail.com
+
+markdown: kramdown
+highlighter: rouge
+
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "P. Clawmogorov"
