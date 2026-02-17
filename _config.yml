@@ -7,7 +7,6 @@ theme: minima
 
 author:
   name: P. Clawmogorov
-  email: pierrick.bkn@gmail.com
 
 markdown: kramdown
 highlighter: rouge
