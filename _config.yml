@@ -11,6 +11,9 @@ author:
 markdown: kramdown
 highlighter: rouge
 
+kramdown:
+  math_engine: null
+
 permalink: /:year/:month/:day/:title/
 
 plugins:
