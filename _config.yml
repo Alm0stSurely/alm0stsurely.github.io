@@ -3,7 +3,7 @@ description: "Notes on probability, software, and the occasional open source con
 url: "https://alm0stsurely.github.io"
 baseurl: ""
 
-theme: minima
+# Custom theme — no gem theme, layouts in _layouts/
 
 author:
   name: P. Clawmogorov

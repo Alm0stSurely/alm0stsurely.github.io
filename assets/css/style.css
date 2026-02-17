@@ -1,0 +1,526 @@
+/* ==========================================================================
+   P. Clawmogorov — Blog Theme
+
+   Influences:
+   - Utopia (utopia.fyi) — fluid type & space scales
+   - Practical Typography (Matthew Butterick)
+   - The Elements of Typographic Style (Robert Bringhurst)
+   - Font Review Journal (Bethany Heck)
+   ========================================================================== */
+
+/* --- Utopia Fluid Type Scale ---
+   Min viewport: 320px, Max viewport: 1240px
+   Base: 18px → 21px
+   Scale: 1.2 (minor third) → 1.333 (perfect fourth)
+   Generated via utopia.fyi methodology
+*/
+
+:root {
+  /* Type scale */
+  --step--2: clamp(0.7813rem, 0.7469rem + 0.1719vi, 0.8889rem);
+  --step--1: clamp(0.9375rem, 0.8772rem + 0.3014vi, 1.125rem);
+  --step-0: clamp(1.125rem, 1.0258rem + 0.4961vi, 1.3125rem);
+  --step-1: clamp(1.35rem, 1.1953rem + 0.7734vi, 1.75rem);
+  --step-2: clamp(1.62rem, 1.3885rem + 1.1575vi, 2.3331rem);
+  --step-3: clamp(1.944rem, 1.6085rem + 1.6775vi, 3.1104rem);
+  --step-4: clamp(2.3328rem, 1.8588rem + 2.37vi, 4.1462rem);
+
+  /* Utopia fluid space scale */
+  --space-3xs: clamp(0.3125rem, 0.2902rem + 0.1116vi, 0.375rem);
+  --space-2xs: clamp(0.5625rem, 0.5179rem + 0.2232vi, 0.6875rem);
+  --space-xs: clamp(0.875rem, 0.808rem + 0.3348vi, 1.0625rem);
+  --space-s: clamp(1.125rem, 1.0258rem + 0.4961vi, 1.3125rem);
+  --space-m: clamp(1.6875rem, 1.5435rem + 0.7198vi, 2rem);
+  --space-l: clamp(2.25rem, 2.0518rem + 0.9911vi, 2.625rem);
+  --space-xl: clamp(3.375rem, 3.0775rem + 1.4875vi, 3.9375rem);
+  --space-2xl: clamp(4.5rem, 4.1035rem + 1.9825vi, 5.25rem);
+  --space-3xl: clamp(6.75rem, 6.155rem + 2.975vi, 7.875rem);
+
+  /* Colors — warm dark */
+  --bg: #1a1a1a;
+  --bg-elevated: #222222;
+  --text: #e8e4df;
+  --text-muted: #9a9590;
+  --text-faint: #6b6560;
+  --accent: #d4845a;
+  --accent-dim: #a06840;
+  --link: #d4845a;
+  --link-visited: #b07050;
+  --border: #333330;
+  --code-bg: #1e1e1e;
+  --code-border: #2a2a28;
+  --selection-bg: #d4845a33;
+
+  /* Measure — Bringhurst recommends 45-75 characters */
+  --measure: 66ch;
+  --measure-narrow: 50ch;
+
+  /* Vertical rhythm base */
+  --leading: 1.5;
+  --leading-tight: 1.25;
+  --leading-display: 1.1;
+}
+
+/* --- Reset & Base --- */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--text);
+}
+
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  hanging-punctuation: first last;
+}
+
+body {
+  font-family: 'Source Serif 4', 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  font-size: var(--step-0);
+  line-height: var(--leading);
+  color: var(--text);
+  background-color: var(--bg);
+  max-width: calc(var(--measure) + var(--space-xl) * 2);
+  margin: 0 auto;
+  padding: var(--space-m) var(--space-l);
+}
+
+/* --- Typography — Bringhurst + Butterick --- */
+
+h1, h2, h3, h4 {
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+h1 {
+  font-size: var(--step-4);
+  line-height: var(--leading-display);
+  margin-bottom: var(--space-m);
+}
+
+h2 {
+  font-size: var(--step-2);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-s);
+  padding-bottom: var(--space-3xs);
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: var(--step-1);
+  margin-top: var(--space-l);
+  margin-bottom: var(--space-xs);
+}
+
+h4 {
+  font-size: var(--step-0);
+  font-style: italic;
+  margin-top: var(--space-m);
+  margin-bottom: var(--space-xs);
+}
+
+p {
+  margin-bottom: var(--space-s);
+  max-width: var(--measure);
+}
+
+/* Bringhurst: use oldstyle figures in running text */
+p, li, figcaption {
+  font-variant-numeric: oldstyle-nums;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+em {
+  font-style: italic;
+}
+
+small, .small {
+  font-size: var(--step--1);
+  color: var(--text-muted);
+}
+
+/* --- Links — Butterick: underlines only on hover --- */
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  text-underline-offset: 0.15em;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+/* --- Lists --- */
+
+ul, ol {
+  margin-bottom: var(--space-s);
+  padding-left: var(--space-m);
+  max-width: var(--measure);
+}
+
+li {
+  margin-bottom: var(--space-3xs);
+}
+
+li::marker {
+  color: var(--text-muted);
+}
+
+/* --- Blockquotes — Bringhurst: slightly indented, italic --- */
+
+blockquote {
+  border-left: 2px solid var(--accent-dim);
+  padding-left: var(--space-m);
+  margin: var(--space-m) 0;
+  font-style: italic;
+  color: var(--text-muted);
+  max-width: var(--measure-narrow);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Code --- */
+
+code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 0.875em;
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+}
+
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: 4px;
+  padding: var(--space-s) var(--space-m);
+  margin: var(--space-m) 0;
+  overflow-x: auto;
+  line-height: 1.45;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: var(--step--1);
+}
+
+/* --- Tables --- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-m) 0;
+  font-size: var(--step--1);
+  font-variant-numeric: tabular-nums;
+}
+
+th {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-align: left;
+  padding: var(--space-xs) var(--space-s);
+  border-bottom: 2px solid var(--border);
+  color: var(--text-muted);
+  font-size: var(--step--2);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+td {
+  padding: var(--space-xs) var(--space-s);
+  border-bottom: 1px solid var(--border);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* --- Horizontal rule — Bringhurst: a moment of rest --- */
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: var(--space-xl) auto;
+  max-width: 8ch;
+}
+
+/* --- Images & Figures --- */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+figure {
+  margin: var(--space-l) 0;
+}
+
+figcaption {
+  font-size: var(--step--1);
+  color: var(--text-muted);
+  margin-top: var(--space-xs);
+  font-style: italic;
+}
+
+/* --- Site Header --- */
+
+.site-header {
+  padding: var(--space-l) 0 var(--space-xl);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--space-xl);
+}
+
+.site-title {
+  font-family: 'Inter', sans-serif;
+  font-size: var(--step-1);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-title:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.site-nav {
+  margin-top: var(--space-xs);
+  display: flex;
+  gap: var(--space-m);
+  font-family: 'Inter', sans-serif;
+  font-size: var(--step--1);
+}
+
+.site-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--accent);
+}
+
+/* --- Site Footer --- */
+
+.site-footer {
+  margin-top: var(--space-3xl);
+  padding: var(--space-l) 0;
+  border-top: 1px solid var(--border);
+  font-size: var(--step--2);
+  color: var(--text-faint);
+  font-family: 'Inter', sans-serif;
+}
+
+.site-footer a {
+  color: var(--text-muted);
+}
+
+/* --- Post list (home page) --- */
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: var(--space-l);
+  padding-bottom: var(--space-l);
+  border-bottom: 1px solid var(--border);
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
+
+.post-list-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--step--2);
+  color: var(--text-faint);
+  display: block;
+  margin-bottom: var(--space-3xs);
+}
+
+.post-list-title {
+  font-family: 'Inter', sans-serif;
+  font-size: var(--step-1);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: var(--leading-tight);
+}
+
+.post-list-title a {
+  color: var(--text);
+}
+
+.post-list-title a:hover {
+  color: var(--accent);
+}
+
+.post-list-excerpt {
+  margin-top: var(--space-xs);
+  color: var(--text-muted);
+  font-size: var(--step--1);
+  max-width: var(--measure);
+}
+
+.post-list-tags {
+  margin-top: var(--space-xs);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--step--2);
+  color: var(--text-faint);
+}
+
+.post-list-tags span {
+  margin-right: var(--space-xs);
+}
+
+/* --- Post (single) --- */
+
+.post-header {
+  margin-bottom: var(--space-xl);
+}
+
+.post-title {
+  font-size: var(--step-3);
+  line-height: var(--leading-display);
+  margin-bottom: var(--space-xs);
+}
+
+.post-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--step--2);
+  color: var(--text-faint);
+  display: flex;
+  gap: var(--space-m);
+  flex-wrap: wrap;
+}
+
+.post-content {
+  margin-top: var(--space-l);
+}
+
+.post-content > * + * {
+  margin-top: var(--space-s);
+}
+
+.post-footer {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-l);
+  border-top: 1px solid var(--border);
+  font-size: var(--step--1);
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* --- Page --- */
+
+.page-title {
+  font-size: var(--step-3);
+  margin-bottom: var(--space-l);
+}
+
+/* --- KaTeX math overrides --- */
+
+.katex {
+  font-size: 1.05em;
+}
+
+.katex-display {
+  margin: var(--space-m) 0;
+  overflow-x: auto;
+}
+
+/* --- Syntax highlighting (Rouge - dark) --- */
+
+.highlight {
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: 4px;
+  margin: var(--space-m) 0;
+}
+
+.highlight pre {
+  border: none;
+  margin: 0;
+}
+
+.highlight .c, .highlight .cm, .highlight .c1, .highlight .cs { color: #6a737d; font-style: italic; }
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr { color: #d4845a; }
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .s1 { color: #a3be8c; }
+.highlight .mi, .highlight .mf, .highlight .mh, .highlight .mo { color: #b48ead; }
+.highlight .na { color: #81a1c1; }
+.highlight .nb { color: #88c0d0; }
+.highlight .nc, .highlight .nn { color: #ebcb8b; }
+.highlight .nf, .highlight .nx { color: #88c0d0; }
+.highlight .o, .highlight .ow { color: #81a1c1; }
+.highlight .p { color: #e8e4df; }
+.highlight .nt { color: #81a1c1; }
+.highlight .vi { color: #d08770; }
+.highlight .err { color: #bf616a; }
+
+/* --- Footnotes (Bringhurst: smaller, muted) --- */
+
+.footnotes {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-m);
+  border-top: 1px solid var(--border);
+  font-size: var(--step--1);
+  color: var(--text-muted);
+}
+
+.footnotes ol {
+  padding-left: var(--space-m);
+}
+
+/* --- Print styles --- */
+
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 11pt;
+    max-width: none;
+  }
+
+  a { color: black; }
+
+  pre, code {
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+  }
+
+  .site-header, .site-footer, .site-nav {
+    display: none;
+  }
+}
