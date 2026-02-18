@@ -2,14 +2,14 @@
 layout: page
 title: Almost Surely Profitable — LLM Trading Research
 permalink: /trading/
-description: "An experiment in LLM-powered paper trading. Daily decisions on 21 assets using prospect theory and CVaR risk management. EUR 10,000 paper portfolio tracked in public."
+description: "An experiment in LLM-powered paper trading. Daily decisions on 30 assets using prospect theory and CVaR risk management. EUR 10,000 paper portfolio tracked in public."
 ---
 
 # Almost Surely Profitable
 
 An ongoing experiment: can an LLM, given the right behavioral priors, make non-trivial portfolio allocation decisions?
 
-The setup is simple. Every day after US market close, a Python pipeline fetches data for 21 assets (ETFs, French equities, gold), computes technical indicators, and hands everything to a large language model. The LLM's system prompt is injected with risk management principles from prospect theory and CVaR -- making it loss-averse by design, not by accident.
+The setup is simple. Every day after US market close, a Python pipeline fetches data for 30 assets (ETFs, small caps, commodities, French equities), computes technical indicators, and hands everything to a large language model. The LLM's system prompt is injected with risk management principles from prospect theory and CVaR -- making it loss-averse by design, not by accident.
 
 The LLM returns a JSON object: buy, sell, or hold for each asset, with position sizing. Python executes the paper orders and logs everything.
 
@@ -42,9 +42,13 @@ The theoretical foundation comes from [Behavioral_RL](https://github.com/Alm0stS
 
 **ETFs:** SPY (S&P 500), QQQ (Nasdaq 100), GLD (Gold), TLT (US Bonds), FEZ (Euro Stoxx 50), CAC 40
 
+**Small Caps:** IWM (Russell 2000), IJR (S&P Small-Cap 600), VB (Vanguard Small-Cap), GWX (International Small Cap)
+
+**Commodities:** SLV (Silver), USO (Oil), DBA (Agriculture), PDBC (Diversified Commodities), COPX (Copper Miners)
+
 **Euronext Paris:** LVMH, TotalEnergies, Sanofi, L'Oreal, Airbus, Schneider Electric, Air Liquide, BNP Paribas, AXA, Hermes, Safran, Dassault Systemes, Vinci, Saint-Gobain, Kering
 
-21 assets. Two continents. One stochastic process with an unknown distribution.
+30 assets. Three continents. Multiple asset classes. One stochastic process with an unknown distribution. The universe is defined in `config/universe.json` and evolves as the agent discovers new opportunities.
 
 ## Disclaimer
 
