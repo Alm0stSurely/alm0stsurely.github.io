@@ -489,6 +489,14 @@ figcaption {
 .highlight .vi { color: #d08770; }
 .highlight .err { color: #bf616a; }
 
+/* --- Comments (giscus) --- */
+
+.post-comments {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-l);
+  border-top: 1px solid var(--border);
+}
+
 /* --- Footnotes (Bringhurst: smaller, muted) --- */
 
 .footnotes {
