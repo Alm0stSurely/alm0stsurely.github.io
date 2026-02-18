@@ -511,6 +511,213 @@ figcaption {
   padding-left: var(--space-m);
 }
 
+/* --- Trading Dashboard --- */
+
+.dashboard {
+  margin: var(--space-xl) 0;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-m);
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.dashboard-label {
+  font-family: 'Inter', sans-serif;
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.dashboard-updated {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--step--2);
+  color: var(--text-faint);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-s);
+  margin-bottom: var(--space-l);
+}
+
+.dash-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: var(--space-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xs);
+}
+
+.dash-card--hero {
+  border-color: var(--accent-dim);
+}
+
+.dash-card__label {
+  font-family: 'Inter', sans-serif;
+  font-size: var(--step--2);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.dash-card__value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--step-2);
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.dash-card--hero .dash-card__value {
+  font-size: var(--step-3);
+}
+
+.dash-card__delta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--step--1);
+  font-weight: 600;
+}
+
+.dash-card__delta--up { color: #a3be8c; }
+.dash-card__delta--down { color: #bf616a; }
+
+.dash-card__sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--step--2);
+  color: var(--text-faint);
+}
+
+.dash-section {
+  margin-top: var(--space-l);
+}
+
+.dash-section__title {
+  font-family: 'Inter', sans-serif;
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--space-s);
+  padding-bottom: var(--space-3xs);
+  border-bottom: 1px solid var(--border);
+}
+
+.dash-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--step--1);
+}
+
+.dash-table th {
+  font-size: var(--step--2);
+  text-align: right;
+  padding: var(--space-xs) var(--space-s);
+}
+
+.dash-table th:first-child { text-align: left; }
+
+.dash-table td {
+  text-align: right;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--step--1);
+  padding: var(--space-xs) var(--space-s);
+  border-bottom: 1px solid var(--border);
+}
+
+.dash-table td:first-child {
+  text-align: left;
+  font-family: inherit;
+}
+
+.dash-ticker {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.dash-ticker-name {
+  display: block;
+  font-size: var(--step--2);
+  color: var(--text-faint);
+}
+
+.dash-pnl--up { color: #a3be8c; }
+.dash-pnl--down { color: #bf616a; }
+
+.dash-trade {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: var(--space-m);
+}
+
+.dash-trade__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+  margin-bottom: var(--space-xs);
+}
+
+.dash-trade__action {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--step--2);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 0.15em 0.5em;
+  border-radius: 3px;
+}
+
+.dash-trade__action--buy {
+  background: rgba(163, 190, 140, 0.15);
+  color: #a3be8c;
+  border: 1px solid rgba(163, 190, 140, 0.3);
+}
+
+.dash-trade__action--sell {
+  background: rgba(191, 97, 106, 0.15);
+  color: #bf616a;
+  border: 1px solid rgba(191, 97, 106, 0.3);
+}
+
+.dash-trade__ticker {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.dash-trade__date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--step--2);
+  color: var(--text-faint);
+  margin-left: auto;
+}
+
+.dash-trade__details {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--step--1);
+  color: var(--text-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.dash-trade__reasoning {
+  font-size: var(--step--1);
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: var(--leading);
+}
+
 /* --- Print styles --- */
 
 @media print {

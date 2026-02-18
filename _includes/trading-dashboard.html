@@ -1,0 +1,95 @@
+<div class="dashboard">
+  <div class="dashboard-header">
+    <span class="dashboard-label">Paper Portfolio</span>
+    <span class="dashboard-updated">Last update: {{ site.data.portfolio.last_updated | date: "%b %-d, %Y %H:%M" }} UTC</span>
+  </div>
+
+  <div class="dashboard-grid">
+    <div class="dash-card dash-card--hero">
+      <span class="dash-card__label">Total Value</span>
+      <span class="dash-card__value">&euro;{{ site.data.portfolio.total_value | round: 2 }}</span>
+      {% assign ret = site.data.portfolio.total_return_pct %}
+      <span class="dash-card__delta {% if ret >= 0 %}dash-card__delta--up{% else %}dash-card__delta--down{% endif %}">
+        {% if ret >= 0 %}+{% endif %}{{ ret | round: 3 }}%
+      </span>
+    </div>
+
+    <div class="dash-card">
+      <span class="dash-card__label">Cash</span>
+      <span class="dash-card__value">&euro;{{ site.data.portfolio.cash | round: 2 }}</span>
+      {% assign cash_pct = site.data.portfolio.cash | times: 100.0 | divided_by: site.data.portfolio.total_value %}
+      <span class="dash-card__sub">{{ cash_pct | round: 0 }}% of portfolio</span>
+    </div>
+
+    <div class="dash-card">
+      <span class="dash-card__label">Invested</span>
+      {% assign invested = site.data.portfolio.total_value | minus: site.data.portfolio.cash %}
+      <span class="dash-card__value">&euro;{{ invested | round: 2 }}</span>
+      {% assign inv_pct = 100 | minus: cash_pct %}
+      <span class="dash-card__sub">{{ inv_pct | round: 0 }}% deployed</span>
+    </div>
+
+    <div class="dash-card">
+      <span class="dash-card__label">Realized P&amp;L</span>
+      <span class="dash-card__value">&euro;{{ site.data.portfolio.total_realized_pnl | round: 2 }}</span>
+      <span class="dash-card__sub">{{ site.data.portfolio.days_active }} day{{ site.data.portfolio.days_active | minus: 1 | at_least: 1 | at_most: 1 | times: 0 | plus: site.data.portfolio.days_active | minus: 1 }}{% if site.data.portfolio.days_active != 1 %}s{% endif %} active</span>
+    </div>
+  </div>
+
+  {% if site.data.portfolio.positions.size > 0 %}
+  <div class="dash-section">
+    <h3 class="dash-section__title">Open Positions</h3>
+    <table class="dash-table">
+      <thead>
+        <tr>
+          <th>Asset</th>
+          <th>Qty</th>
+          <th>Avg Price</th>
+          <th>Current</th>
+          <th>Value</th>
+          <th>P&amp;L</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for pos in site.data.portfolio.positions %}
+        <tr>
+          <td>
+            <span class="dash-ticker">{{ pos.ticker }}</span>
+            <span class="dash-ticker-name">{{ pos.name }}</span>
+          </td>
+          <td>{{ pos.quantity }}</td>
+          <td>${{ pos.avg_price }}</td>
+          <td>${{ pos.current_price }}</td>
+          <td>&euro;{{ pos.market_value | round: 2 }}</td>
+          <td class="{% if pos.pnl >= 0 %}dash-pnl--up{% else %}dash-pnl--down{% endif %}">
+            {% if pos.pnl >= 0 %}+{% endif %}&euro;{{ pos.pnl | round: 2 }}
+            <small>({% if pos.pnl_pct >= 0 %}+{% endif %}{{ pos.pnl_pct | round: 2 }}%)</small>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+
+  {% if site.data.portfolio.last_trade %}
+  <div class="dash-section">
+    <h3 class="dash-section__title">Last Trade</h3>
+    <div class="dash-trade">
+      <div class="dash-trade__header">
+        <span class="dash-trade__action dash-trade__action--{{ site.data.portfolio.last_trade.action }}">
+          {{ site.data.portfolio.last_trade.action | upcase }}
+        </span>
+        <span class="dash-trade__ticker">{{ site.data.portfolio.last_trade.ticker }}</span>
+        <span class="dash-trade__date">{{ site.data.portfolio.last_trade.date }}</span>
+      </div>
+      <div class="dash-trade__details">
+        &euro;{{ site.data.portfolio.last_trade.amount | round: 2 }} @ ${{ site.data.portfolio.last_trade.price }}
+      </div>
+      <div class="dash-trade__reasoning">
+        {{ site.data.portfolio.last_trade.reasoning }}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</div>

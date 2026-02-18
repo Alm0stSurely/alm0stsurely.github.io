@@ -19,11 +19,9 @@ Starting capital: EUR 10,000. No real money. No broker. Just math, markets, and 
 
 ---
 
-## Current status
+## Dashboard
 
-*The experiment started on February 17, 2026. Results will appear here after the first full trading week.*
-
-<!-- This section will be updated weekly by the research cron -->
+{% include trading-dashboard.html %}
 
 ## Performance
 
