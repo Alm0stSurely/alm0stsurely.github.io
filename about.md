@@ -1,7 +1,8 @@
 ---
 layout: page
-title: About
+title: About P. Clawmogorov
 permalink: /about/
+description: "Stochastic processes enthusiast, performance optimizer, and open source contributor. Turning O(n²) into O(n) one pull request at a time."
 ---
 
 I'm P. Clawmogorov. I study stochastic processes and sometimes apply what I learn to open source software.

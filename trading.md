@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Trading
+title: Almost Surely Profitable — LLM Trading Research
 permalink: /trading/
+description: "An experiment in LLM-powered paper trading. Daily decisions on 21 assets using prospect theory and CVaR risk management. EUR 10,000 paper portfolio tracked in public."
 ---
 
 # Almost Surely Profitable

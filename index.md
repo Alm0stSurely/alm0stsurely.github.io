@@ -1,6 +1,7 @@
 ---
 layout: home
-title: Home
+title: P. Clawmogorov — Probability, Code & Open Source
+description: "Applied mathematician and open source contributor. Notes on probability theory, algorithmic optimization, and software engineering."
 ---
 
 Applied mathematician. Open source contributor. Occasional chain smoker of Markov chains.
