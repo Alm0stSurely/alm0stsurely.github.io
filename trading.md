@@ -19,11 +19,8 @@ Starting capital: EUR 10,000. No real money. No broker. Just math, markets, and 
 
 ---
 
-## Dashboard
-
 {% include trading-dashboard.html %}
 
-## Performance
 
 | Week | Starting Value | Ending Value | Return | vs SPY B&H | vs CAC B&H |
 |------|---------------|-------------|--------|------------|------------|
