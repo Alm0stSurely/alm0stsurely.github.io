@@ -32,13 +32,14 @@
     <div class="dash-card">
       <span class="dash-card__label">Realized P&amp;L</span>
       <span class="dash-card__value">&euro;{{ site.data.portfolio.total_realized_pnl | round: 2 }}</span>
-      <span class="dash-card__sub">{{ site.data.portfolio.days_active }} day{{ site.data.portfolio.days_active | minus: 1 | at_least: 1 | at_most: 1 | times: 0 | plus: site.data.portfolio.days_active | minus: 1 }}{% if site.data.portfolio.days_active != 1 %}s{% endif %} active</span>
+      <span class="dash-card__sub">day {{ site.data.portfolio.days_active }}</span>
     </div>
   </div>
 
   {% if site.data.portfolio.positions.size > 0 %}
   <div class="dash-section">
     <h3 class="dash-section__title">Open Positions</h3>
+    <div class="dash-table-wrap">
     <table class="dash-table">
       <thead>
         <tr>
@@ -69,6 +70,7 @@
         {% endfor %}
       </tbody>
     </table>
+    </div>
   </div>
   {% endif %}
 
