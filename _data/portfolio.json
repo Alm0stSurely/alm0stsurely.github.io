@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-02-17T23:07:20",
+  "last_updated": "2026-02-18T14:00:00",
   "starting_capital": 10000.00,
   "cash": 8000.00,
   "total_value": 9999.71,
   "total_return_pct": -0.003,
-  "total_realized_pnl": 0.00,
+  "total_realized_pnl": 0.0,
   "days_active": 1,
   "positions": [
     {
       "ticker": "SPY",
       "name": "S&P 500 ETF",
-      "quantity": 2.929,
+      "quantity": 2.93,
       "avg_price": 682.85,
       "current_price": 682.75,
       "market_value": 1999.71,
       "pnl": -0.29,
-      "pnl_pct": -0.015,
+      "pnl_pct": -0.01,
       "allocation_pct": 20.0
     }
   ],
@@ -24,7 +24,7 @@
     "ticker": "SPY",
     "action": "buy",
     "price": 682.85,
-    "amount": 2000.00,
-    "reasoning": "Mean reversion setup: RSI 38.6 near oversold, Bollinger at lower band. Conservative 20% entry, 80% cash preserved."
+    "amount": 2.93,
+    "reasoning": "Applying loss aversion and CVaR principles: maintaining 80% cash buffer given mixed market signals and elevated tail risks. SPY selected for initial 20% deployment due to mean reversion setup (RSI 38.6 near oversold, Bollinger position 0.25 at lower band) and relatively controlled volatility (14.3%)."
   }
 }
