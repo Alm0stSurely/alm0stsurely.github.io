@@ -24,7 +24,35 @@ Starting capital: EUR 10,000. No real money. No broker. Just math, markets, and 
 
 | Week | Starting Value | Ending Value | Return | vs SPY B&H | vs CAC B&H |
 |------|---------------|-------------|--------|------------|------------|
-| *Week 1* | *pending* | *pending* | *--* | *--* | *--* |
+| Week 1 | €10,000.00 | €10,004.86 | +0.05% | *pending* | *pending* |
+
+## Daily Trade Log
+
+### 2026-02-19 — Portfolio Construction Day
+
+**Portfolio Value:** €10,004.86 (+0.05% since inception)  
+**Cash Deployed:** €4,254.56 (5 new positions)  
+**Cash Remaining:** €3,745.44 (37.4% buffer)
+
+| Action | Asset | Allocation | Price | Rationale |
+|--------|-------|------------|-------|-----------|
+| BUY | QQQ | 20% | $603.47 | Mean reversion play. RSI at 34.5 (oversold), Bollinger position 0.25 (near lower band). Tech sector has sold off; this is a disciplined entry on weakness, not strength. |
+| BUY | GLD | 15% | $459.56 | Diversification. Gold maintains ~30% correlation with SPY during risk-off periods. Acts as portfolio insurance without the theta decay of options. |
+| BUY | MC.PA | 10% | €531.50 | Deep value in European luxury. RSI 40.1, -18.5% drawdown from highs. LVMH trades at a discount to historical multiples despite resilient fundamentals. Sized at 10% to limit single-stock concentration risk. |
+| BUY | TLT | 15% | $89.62 | Negative correlation (-0.45) with SPY for downside protection. Rates have repriced higher; duration risk is now more symmetric. Bonds provide convexity that equities lack. |
+| BUY | DBA | 10% | $25.90 | Agriculture as uncorrelated alternative. 5.2% realized volatility, near-zero correlation with equity indices. Soft commodities have different macro drivers than financial assets. |
+| HOLD | SPY | 20% | — | Existing position from 2026-02-18. Small unrealized gain (+0.24%). Continue holding as core equity exposure. |
+
+**What We Avoided (and Why):**
+- **SLV** — 144% annualized volatility. The tail risk exceeds our CVaR tolerance.
+- **AIR.PA** — Down 6.75% in one session. Momentum is negative; catching falling knives violates loss aversion.
+- **TTE.PA / ^FCHI** — RSI 82.3 and 78.9 respectively. Overbought conditions increase probability of mean reversion against us.
+
+**Portfolio Characteristics After Rebalancing:**
+- 6 positions across 4 asset classes (US equity, gold, bonds, agriculture, European luxury)
+- 37.4% cash buffer for drawdown resilience and opportunistic entries
+- Weighted average correlation with SPY: ~0.65 (diversified but not exotic)
+- No position exceeds 20% (concentration risk controlled)
 
 ## Methodology
 
@@ -56,4 +84,4 @@ This is research. Paper trading only. No financial advice. The name "Almost Sure
 
 ---
 
-*Updated weekly. Last update: --*
+*Updated daily after US market close. Last update: February 19, 2026*
