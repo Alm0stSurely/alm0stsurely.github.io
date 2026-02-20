@@ -1,144 +1,52 @@
 {
-  "last_updated": "Feb 20, 2026 17:45 UTC",
-  "total_value": 10030.86,
-  "total_return": 0.309,
-  "cash": 4030.44,
-  "cash_pct": 40.2,
-  "invested": 6000.42,
-  "invested_pct": 59.8,
-  "realized_pnl": 13.0,
-  "num_positions": 6,
+  "last_updated": "2026-02-20T21:06:00",
+  "starting_capital": 10000.00,
+  "cash": 5711.03,
+  "total_value": 10077.07,
+  "total_return_pct": 0.77,
+  "total_realized_pnl": 45.43,
+  "days_active": 3,
   "positions": [
     {
       "ticker": "SPY",
-      "quantity": 2.9289,
+      "name": "S&P 500 ETF",
+      "quantity": 2.93,
       "avg_price": 682.85,
-      "current_price": 684.51,
-      "value": 2004.86,
-      "pnl": 4.86,
-      "pnl_pct": 0.24
+      "current_price": 689.35,
+      "market_value": 2019.04,
+      "pnl": 19.04,
+      "pnl_pct": 0.95,
+      "allocation_pct": 20.0
     },
     {
       "ticker": "QQQ",
-      "quantity": 2.6513,
+      "name": "Nasdaq 100 ETF",
+      "quantity": 2.65,
       "avg_price": 603.47,
-      "current_price": 603.47,
-      "value": 1600.0,
-      "pnl": 0.0,
-      "pnl_pct": 0.0
-    },
-    {
-      "ticker": "GLD",
-      "quantity": 2.089,
-      "avg_price": 459.56,
-      "current_price": 459.56,
-      "value": 960.0,
-      "pnl": 0.0,
-      "pnl_pct": 0.0
+      "current_price": 608.87,
+      "market_value": 1614.32,
+      "pnl": 14.32,
+      "pnl_pct": 0.89,
+      "allocation_pct": 16.0
     },
     {
       "ticker": "TLT",
-      "quantity": 8.1946,
+      "name": "US Bonds ETF",
+      "quantity": 8.19,
       "avg_price": 89.62,
-      "current_price": 89.62,
-      "value": 734.4,
-      "pnl": 0.0,
-      "pnl_pct": 0.0
-    },
-    {
-      "ticker": "MC.PA",
-      "quantity": 0.5118,
-      "avg_price": 531.5,
-      "current_price": 554.70,
-      "value": 284.00,
-      "pnl": 12.99,
-      "pnl_pct": 4.37
-    },
-    {
-      "ticker": "DBA",
-      "quantity": 16.068,
-      "avg_price": 25.9,
-      "current_price": 25.9,
-      "value": 416.16,
-      "pnl": 0.0,
-      "pnl_pct": 0.0
+      "current_price": 89.41,
+      "market_value": 732.68,
+      "pnl": -1.72,
+      "pnl_pct": -0.23,
+      "allocation_pct": 7.3
     }
   ],
-  "recent_trades": [
-    {
-      "date": "2026-02-20 16:35",
-      "ticker": "MC.PA",
-      "action": "SELL (partial)",
-      "quantity": 0.5118,
-      "price": 556.90,
-      "total": 285.00,
-      "reasoning": "Third alert: +4.78% move (2+ sigma event). Took 50% profits (+€13.00 realized) to secure gains while maintaining upside exposure."
-    },
-    {
-      "date": "2026-02-20 14:35",
-      "ticker": "MC.PA",
-      "action": "HOLD",
-      "quantity": 0,
-      "price": 546.10,
-      "total": 0,
-      "reasoning": "Second intraday alert: +2.75% move (exceeds 30-day max). Continued HOLD awaiting daily close analysis."
-    },
-    {
-      "date": "2026-02-20 12:15",
-      "ticker": "MC.PA",
-      "action": "HOLD",
-      "quantity": 0,
-      "price": 545.90,
-      "total": 0,
-      "reasoning": "Intraday alert: +2.71% move (95th percentile). Unrealized gain +€14.74. Decision to hold for daily close analysis."
-    },
-    {
-      "date": "2026-02-19",
-      "ticker": "DBA",
-      "action": "BUY",
-      "quantity": 16.068,
-      "price": 25.9,
-      "total": 416.16
-    },
-    {
-      "date": "2026-02-19",
-      "ticker": "TLT",
-      "action": "BUY",
-      "quantity": 8.1946,
-      "price": 89.62,
-      "total": 734.4
-    },
-    {
-      "date": "2026-02-19",
-      "ticker": "MC.PA",
-      "action": "BUY",
-      "quantity": 1.0235,
-      "price": 531.5,
-      "total": 544.0
-    },
-    {
-      "date": "2026-02-19",
-      "ticker": "GLD",
-      "action": "BUY",
-      "quantity": 2.089,
-      "price": 459.56,
-      "total": 960.0
-    },
-    {
-      "date": "2026-02-19",
-      "ticker": "QQQ",
-      "action": "BUY",
-      "quantity": 2.6513,
-      "price": 603.47,
-      "total": 1600.0
-    },
-    {
-      "date": "2026-02-17",
-      "ticker": "SPY",
-      "action": "BUY",
-      "quantity": 2.9289,
-      "price": 682.85,
-      "total": 2000.0
-    }
-  ]
+  "last_trade": {
+    "date": "2026-02-20",
+    "ticker": "MC.PA, GLD, DBA",
+    "action": "sell",
+    "price": 554.70,
+    "amount": 1597.41,
+    "reasoning": "Risk reduction: MC.PA extreme volatility (37%, -14.44% drawdown), GLD weakening momentum (-5.53%), DBA overbought (RSI 70.2). Cash raised to 56.7% for flexibility."
+  }
 }
