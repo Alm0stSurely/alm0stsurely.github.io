@@ -1,6 +1,6 @@
 {
-  "last_updated": "Feb 20, 2026 12:15 UTC",
-  "total_value": 10019.56,
+  "last_updated": "Feb 20, 2026 14:35 UTC",
+  "total_value": 10019.60,
   "total_return": 0.196,
   "cash": 3745.44,
   "cash_pct": 37.4,
@@ -49,10 +49,10 @@
       "ticker": "MC.PA",
       "quantity": 1.0235,
       "avg_price": 531.5,
-      "current_price": 545.90,
-      "value": 558.74,
-      "pnl": 14.74,
-      "pnl_pct": 2.71
+      "current_price": 546.10,
+      "value": 559.00,
+      "pnl": 14.96,
+      "pnl_pct": 2.75
     },
     {
       "ticker": "DBA",
@@ -66,7 +66,16 @@
   ],
   "recent_trades": [
     {
-      "date": "2026-02-20",
+      "date": "2026-02-20 14:35",
+      "ticker": "MC.PA",
+      "action": "HOLD",
+      "quantity": 0,
+      "price": 546.10,
+      "total": 0,
+      "reasoning": "Second intraday alert: +2.75% move (exceeds 30-day max). Continued HOLD awaiting daily close analysis."
+    },
+    {
+      "date": "2026-02-20 12:15",
       "ticker": "MC.PA",
       "action": "HOLD",
       "quantity": 0,
