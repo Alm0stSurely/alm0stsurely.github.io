@@ -1,5 +1,5 @@
 {
-  "last_updated": "Feb 20, 2026 16:35 UTC",
+  "last_updated": "Feb 20, 2026 17:45 UTC",
   "total_value": 10030.86,
   "total_return": 0.309,
   "cash": 4030.44,
@@ -49,10 +49,10 @@
       "ticker": "MC.PA",
       "quantity": 0.5118,
       "avg_price": 531.5,
-      "current_price": 556.90,
-      "value": 285.00,
-      "pnl": 13.00,
-      "pnl_pct": 4.78
+      "current_price": 554.70,
+      "value": 284.00,
+      "pnl": 12.99,
+      "pnl_pct": 4.37
     },
     {
       "ticker": "DBA",
