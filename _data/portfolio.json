@@ -1,12 +1,12 @@
 {
-  "last_updated": "Feb 20, 2026 14:35 UTC",
-  "total_value": 10019.60,
-  "total_return": 0.196,
-  "cash": 3745.44,
-  "cash_pct": 37.4,
-  "invested": 6274.12,
-  "invested_pct": 62.6,
-  "realized_pnl": 0.0,
+  "last_updated": "Feb 20, 2026 16:35 UTC",
+  "total_value": 10030.86,
+  "total_return": 0.309,
+  "cash": 4030.44,
+  "cash_pct": 40.2,
+  "invested": 6000.42,
+  "invested_pct": 59.8,
+  "realized_pnl": 13.0,
   "num_positions": 6,
   "positions": [
     {
@@ -47,12 +47,12 @@
     },
     {
       "ticker": "MC.PA",
-      "quantity": 1.0235,
+      "quantity": 0.5118,
       "avg_price": 531.5,
-      "current_price": 546.10,
-      "value": 559.00,
-      "pnl": 14.96,
-      "pnl_pct": 2.75
+      "current_price": 556.90,
+      "value": 285.00,
+      "pnl": 13.00,
+      "pnl_pct": 4.78
     },
     {
       "ticker": "DBA",
@@ -65,6 +65,15 @@
     }
   ],
   "recent_trades": [
+    {
+      "date": "2026-02-20 16:35",
+      "ticker": "MC.PA",
+      "action": "SELL (partial)",
+      "quantity": 0.5118,
+      "price": 556.90,
+      "total": 285.00,
+      "reasoning": "Third alert: +4.78% move (2+ sigma event). Took 50% profits (+€13.00 realized) to secure gains while maintaining upside exposure."
+    },
     {
       "date": "2026-02-20 14:35",
       "ticker": "MC.PA",
