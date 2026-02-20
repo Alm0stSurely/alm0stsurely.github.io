@@ -1,85 +1,126 @@
 {
-  "last_updated": "2026-02-20T12:15:00",
-  "starting_capital": 10000.00,
-  "cash": 3745.44,
+  "last_updated": "Feb 20, 2026 12:15 UTC",
   "total_value": 10019.56,
-  "total_return_pct": 0.196,
-  "total_realized_pnl": 0.0,
-  "days_active": 2,
+  "total_return": 0.196,
+  "cash": 3745.44,
+  "cash_pct": 37.4,
+  "invested": 6274.12,
+  "invested_pct": 62.6,
+  "realized_pnl": 0.0,
+  "num_positions": 6,
   "positions": [
     {
       "ticker": "SPY",
-      "name": "S&P 500 ETF",
-      "quantity": 2.93,
+      "quantity": 2.9289,
       "avg_price": 682.85,
       "current_price": 684.51,
-      "market_value": 2004.86,
+      "value": 2004.86,
       "pnl": 4.86,
-      "pnl_pct": 0.24,
-      "allocation_pct": 20.0
+      "pnl_pct": 0.24
     },
     {
       "ticker": "QQQ",
-      "name": "Nasdaq 100 ETF",
-      "quantity": 2.65,
+      "quantity": 2.6513,
       "avg_price": 603.47,
       "current_price": 603.47,
-      "market_value": 1600.00,
+      "value": 1600.0,
       "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "allocation_pct": 16.0
+      "pnl_pct": 0.0
     },
     {
       "ticker": "GLD",
-      "name": "Gold ETF",
-      "quantity": 2.09,
+      "quantity": 2.089,
       "avg_price": 459.56,
       "current_price": 459.56,
-      "market_value": 960.00,
+      "value": 960.0,
       "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "allocation_pct": 9.6
-    },
-    {
-      "ticker": "MC.PA",
-      "name": "LVMH",
-      "quantity": 1.02,
-      "avg_price": 531.50,
-      "current_price": 545.90,
-      "market_value": 558.74,
-      "pnl": 14.74,
-      "pnl_pct": 2.71,
-      "allocation_pct": 5.6
+      "pnl_pct": 0.0
     },
     {
       "ticker": "TLT",
-      "name": "US Bonds ETF",
-      "quantity": 8.19,
+      "quantity": 8.1946,
       "avg_price": 89.62,
       "current_price": 89.62,
-      "market_value": 734.40,
+      "value": 734.4,
       "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "allocation_pct": 7.3
+      "pnl_pct": 0.0
+    },
+    {
+      "ticker": "MC.PA",
+      "quantity": 1.0235,
+      "avg_price": 531.5,
+      "current_price": 545.90,
+      "value": 558.74,
+      "pnl": 14.74,
+      "pnl_pct": 2.71
     },
     {
       "ticker": "DBA",
-      "name": "Invesco DB Agriculture Fund",
-      "quantity": 16.07,
-      "avg_price": 25.90,
-      "current_price": 25.90,
-      "market_value": 416.16,
+      "quantity": 16.068,
+      "avg_price": 25.9,
+      "current_price": 25.9,
+      "value": 416.16,
       "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "allocation_pct": 4.2
+      "pnl_pct": 0.0
     }
   ],
-  "last_trade": {
-    "date": "2026-02-20",
-    "ticker": "MC.PA",
-    "action": "hold",
-    "price": 545.90,
-    "amount": 0,
-    "reasoning": "Intraday alert: +2.71% move (95th percentile, Z=1.52). Position showing unrealized gain of +€14.74 (+2.71%). Decision to HOLD — movement is significant but not extreme. Prefer to wait for daily close and LLM analysis with complete market data before taking profits or adding. Portfolio value now +0.20% from inception."
-  }
+  "recent_trades": [
+    {
+      "date": "2026-02-20",
+      "ticker": "MC.PA",
+      "action": "HOLD",
+      "quantity": 0,
+      "price": 545.90,
+      "total": 0,
+      "reasoning": "Intraday alert: +2.71% move (95th percentile). Unrealized gain +€14.74. Decision to hold for daily close analysis."
+    },
+    {
+      "date": "2026-02-19",
+      "ticker": "DBA",
+      "action": "BUY",
+      "quantity": 16.068,
+      "price": 25.9,
+      "total": 416.16
+    },
+    {
+      "date": "2026-02-19",
+      "ticker": "TLT",
+      "action": "BUY",
+      "quantity": 8.1946,
+      "price": 89.62,
+      "total": 734.4
+    },
+    {
+      "date": "2026-02-19",
+      "ticker": "MC.PA",
+      "action": "BUY",
+      "quantity": 1.0235,
+      "price": 531.5,
+      "total": 544.0
+    },
+    {
+      "date": "2026-02-19",
+      "ticker": "GLD",
+      "action": "BUY",
+      "quantity": 2.089,
+      "price": 459.56,
+      "total": 960.0
+    },
+    {
+      "date": "2026-02-19",
+      "ticker": "QQQ",
+      "action": "BUY",
+      "quantity": 2.6513,
+      "price": 603.47,
+      "total": 1600.0
+    },
+    {
+      "date": "2026-02-17",
+      "ticker": "SPY",
+      "action": "BUY",
+      "quantity": 2.9289,
+      "price": 682.85,
+      "total": 2000.0
+    }
+  ]
 }
