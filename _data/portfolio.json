@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T21:06:00",
+  "last_updated": "2026-02-20T21:06:19",
   "starting_capital": 10000.00,
   "cash": 5711.03,
   "total_value": 10077.07,
@@ -16,7 +16,7 @@
       "market_value": 2019.04,
       "pnl": 19.04,
       "pnl_pct": 0.95,
-      "allocation_pct": 20.0
+      "allocation_pct": 20.04
     },
     {
       "ticker": "QQQ",
@@ -27,7 +27,7 @@
       "market_value": 1614.32,
       "pnl": 14.32,
       "pnl_pct": 0.89,
-      "allocation_pct": 16.0
+      "allocation_pct": 16.02
     },
     {
       "ticker": "TLT",
@@ -38,15 +38,15 @@
       "market_value": 732.68,
       "pnl": -1.72,
       "pnl_pct": -0.23,
-      "allocation_pct": 7.3
+      "allocation_pct": 7.27
     }
   ],
   "last_trade": {
     "date": "2026-02-20",
-    "ticker": "MC.PA, GLD, DBA",
+    "ticker": "MC.PA",
     "action": "sell",
     "price": 554.70,
-    "amount": 1597.41,
-    "reasoning": "Risk reduction: MC.PA extreme volatility (37%, -14.44% drawdown), GLD weakening momentum (-5.53%), DBA overbought (RSI 70.2). Cash raised to 56.7% for flexibility."
+    "amount": 50,
+    "reasoning": "Applying loss aversion and CVaR principles: Reducing exposure to positions with drawdowns exceeding 5% threshold (GLD -5.53%, MC.PA -14.44%) to limit tail risk, despite today's bounce in both. MC.PA's extreme volatility (37%) and deep drawdown warrant significant reduction."
   }
 }
