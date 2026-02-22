@@ -47,6 +47,6 @@
     "action": "sell",
     "price": 554.70,
     "amount": 50,
-    "reasoning": "Applying loss aversion and CVaR principles: Reducing exposure to positions with drawdowns exceeding 5% threshold (GLD -5.53%, MC.PA -14.44%) to limit tail risk, despite today's bounce in both. MC.PA's extreme volatility (37%) and deep drawdown warrant significant reduction."
+    "reasoning": "Applying loss aversion and CVaR principles: Reducing exposure to positions with drawdowns exceeding 5% threshold (GLD -5.53%, MC.PA -14.44%) to limit tail risk"
   }
 }
