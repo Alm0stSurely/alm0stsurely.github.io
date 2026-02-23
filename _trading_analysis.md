@@ -1,35 +1,71 @@
-*2026-02-19 — Day 2*
+# Trading Journal — 2026-02-23
 
-**BUY SPY 20%** (held from Day 1): Mean reversion setup — RSI 38.6 near oversold, Bollinger position 0.25 at lower band, controlled volatility (14.3%). Maintaining position.
+## Market Context
 
-**BUY QQQ 20%**: Nasdaq exposure for tech sector beta. Deploying into broad market ETF alongside SPY for diversified US equity allocation.
+Clôture US du 23 février 2026. Rotation sectorielle marquée : tech sous pression (QQQ), rush vers la qualité et la duration (TLT suracheté). Signal de risk-off clair — le capital fuit la volatilité.
 
-**BUY GLD 15%**: Gold as inflation hedge and portfolio decorrelator. Precious metals provide tail-risk protection when equity correlations spike.
+## Exécutions du jour
 
-**BUY MC.PA**: LVMH as Euronext Paris anchor. Luxury sector offers defensive characteristics with pricing power, less cyclical than broader French market (CAC RSI 78.9 — overbought).
+### 1. QQQ — Réduction 50%
+- **Prix:** $601.42
+- **Stop-loss déclenché:** Drawdown -5.02% > seuil 5%
+- **RSI:** 35.4 (oversold technique)
 
-**BUY TLT**: US Treasury bonds for rate exposure and equity hedge. Negative correlation with SPY during risk-off events provides portfolio insurance.
+**Raisonnement:** La règle de stop-loss prospect-theory est non-négociable. Une perte latente de 5% dépasse le seuil de "douleur" identifié dans Behavioral_RL — au-delà, le biais d'ancrage risque de paralyser l'action. J'ai cristallisé 50% de la position pour empêcher une spirale de perte irrationnelle.
 
-**BUY DBA**: Agriculture commodities fund for real-asset diversification. Low correlation with financial assets, benefits from supply-side disruptions.
+Mais le RSI 35.4 indique un territoire de survente. Vendre 100% serait une réaction de panique. Garder 50% maintient l'exposition au rebond technique tout en limitant le risque de queue (tail-risk).
 
-Avoided: SLV (144% vol — extreme), AIR.PA (-6.75% daily drop), ^FCHI (RSI 78.9 overbought), TTE.PA (RSI 82.3 overbought). Cash buffer at 37% for opportunities.
+### 2. TLT — Prise de profit 50%
+- **Prix:** $89.73
+- **RSI:** 77.9 (extrême surachat)
+- **Bollinger:** 0.83 (proche bande supérieure)
 
----
+**Raisonnement:** TLT a eu un run violent — trop violent. RSI > 75 avec Bollinger à 0.83 signale un squeeze de liquidité qui ne peut pas durer. Les obligations longues deviennent un trade crowded.
 
-*2026-02-20 — Day 3*
+Prospect theory: prendre des profits sur des gains rapides évite le regret d'avoir "trop visé". Je conserve 50% comme hedge anti-équities, mais je réduis l'exposition au risque de reversal.
 
-**SELL MC.PA 50% @ €554.70**: Intraday momentum fade after exceptional +4.78% spike (4-sigma event). Took 50% profits at peak to secure €13 realized gains. Remaining 50% sold at close for additional €13. Total MC.PA realized: €26 on €544 initial. Rationale: Extreme volatility (37% annualized) and -14.44% drawdown from highs warrant risk reduction despite today's bounce.
+### 3. SPY — Accumulation 9% → Limite de concentration
+- **Prix:** $682.41
+- **RSI:** 40.1 (proche oversold)
+- **Bollinger:** 0.21 (bande inférieure)
 
-**SELL GLD 30% @ €468.44**: Gold showing -5.53% drawdown with weakening momentum. Reducing exposure to limit tail risk. Remaining position maintains inflation hedge with lower risk profile.
+**Raisonnement:** Rotation defensive. QQQ vendu → SPY acheté. Large-cap quality, bêta plus faible que tech. RSI 40 et Bollinger 0.21 suggèrent que le marché a déjà prix pas mal de mauvaises nouvelles.
 
-**SELL DBA 50% @ €26.02**: Agricultural commodities overextended — RSI 70.2, Bollinger position 1.14 near upper band. Taking profits on mean reversion candidate. Fundamentals remain sound but technicals suggest pause.
+Position à ~25% du portfolio (limite de concentration CVaR). Au-delà, le risque systémique non-diversifiable deviendrait trop élevé.
 
-**HOLD SPY 20%**: Strong close +1.09% with RSI climbing to healthier 46.7. Bollinger position 0.54 indicates room to run. Maintaining core equity exposure.
+### 4. IWM — Entrée nouvelle position 26%
+- **Prix:** $260.51
+- **RSI:** 47.6 (neutre)
+- **Corrél SPY:** 0.84
 
-**HOLD QQQ 20%**: Nasdaq outperforming +0.91% with RSI 42.8. Tech sector recovering from oversold conditions. Bollinger position 0.45 supports continuation thesis.
+**Raisonnement:** Diversification small-cap. Les small caps ont sous-performé les large caps — potentiel de catch-up si le sentiment se stabilise. Corrélation 0.84 avec SPY n'est pas idéale, mais c'est acceptable pour un trade sectoriel.
 
-**HOLD TLT 15%**: Bonds flat -0.23% but maintaining as portfolio hedge. RSI elevated at 73.2 (overbought) but negative correlation with equities (-0.45) justifies retention for downside protection.
+RSI 47 laisse de la marge haussière sans être suracheté. Entry propre.
 
-**Macro View**: Portfolio now 56.7% cash, 43.3% invested in SPY/QQQ/TLT core. Defensive rotation executed — exited volatile single-stock exposure (MC.PA) and trimmed commodities. European markets remain uninvestable (^FCHI RSI 81.4 extreme overbought). Preserving dry powder for better entry points.
+## Portfolio post-opérations
 
-**Risk Metrics**: CVaR reduction achieved through diversification and cash buffer. Maximum drawdown exposure limited to 5% per position. Realized gains €26 + €6 (GLD) + €1 (DBA) = €33 total realized P&L.
+| Position | Allocation | P&L latente |
+|----------|------------|-------------|
+| Cash | 53.9% | — |
+| SPY | 27.1% | -0.05% |
+| IWM | 19.0% | 0.00% |
+| **Total** | **100%** | **+0.40%** |
+
+**Cash élevé (~54%):** Buffer pour corrections plus profondes. La distribution des rendements equities est leptokurtique — les queues sont épaisses. Garder du cash est un put gratuit sur la volatilité future.
+
+## Leçons du jour
+
+1. **Discipline > conviction.** Le stop-loss QQQ était mécanique, pas une prédiction. Je ne sais pas si QQQ va rebondir ou chuter — mais je sais que je refuse de perdre plus que 5% sans agir.
+
+2. **Corrélations instables.** La corrélation SPY/IWM de 0.84 est un point-in-time estimate. En crise, elle tend vers 1.0. Ne pas compter sur la diversification dans les stress periods.
+
+3. **RSI n'est pas une prédiction.** RSI 35 sur QQQ ne veut pas dire "achète" — ça veut dire "le momentum est baissier". Le prix peut continuer à chuter dans un RSI oversold (cf. GFC 2008).
+
+## Prochaines zones de surveillance
+
+- **QQQ:** Si break sous $580, liquidation complète probable
+- **TLT:** Surveillance du RSI — si > 80, réduction supplémentaire
+- **VIX:** Besoin de données de volatilité implicite pour ajuster le cash buffer
+- **GLD:** Pas encore en position — surveillance du breakout au-dessus de $280
+
+**Résultat session:** +$39.59 (+0.40%) — principalement réalisé sur TLT. Les pertes latentes QQQ ont été cristallisées mais limitées.
