@@ -5,7 +5,7 @@
   "total_value": 10079.88,
   "total_return_pct": 0.80,
   "total_realized_pnl": 40.90,
-  "days_active": 1,
+  "days_active": 5,
   "positions": [
     {
       "ticker": "SPY",
@@ -32,10 +32,10 @@
   ],
   "last_trade": {
     "date": "2026-02-24",
-    "ticker": "SPY",
+    "ticker": "PORTFOLIO",
     "action": "hold",
-    "price": 687.36,
+    "price": 0,
     "amount": 0,
-    "reasoning": "LLM API error. Holding all positions."
+    "reasoning": "LLM API error. Holding all positions. CVaR metrics now included in prompt."
   }
 }
