@@ -1,47 +1,41 @@
 {
-  "last_updated": "2026-02-23T21:07:12",
+  "last_updated": "2026-02-24T21:06:55",
   "starting_capital": 10000.00,
   "cash": 5414.74,
-  "total_value": 10039.59,
-  "total_return_pct": 0.40,
+  "total_value": 10079.88,
+  "total_return_pct": 0.80,
   "total_realized_pnl": 40.90,
-  "days_active": 4,
+  "days_active": 1,
   "positions": [
     {
       "ticker": "SPY",
       "name": "S&P 500 ETF",
-      "quantity": 3.99,
+      "quantity": 3.9894,
       "avg_price": 682.73,
-      "current_price": 682.41,
-      "market_value": 2722.38,
-      "pnl": -1.30,
-      "pnl_pct": -0.05,
-      "allocation_pct": 27.12
+      "current_price": 687.36,
+      "market_value": 2742.14,
+      "pnl": 18.46,
+      "pnl_pct": 0.68,
+      "allocation_pct": 27.20
     },
     {
       "ticker": "IWM",
       "name": "iShares Russell 2000",
-      "quantity": 7.30,
+      "quantity": 7.3029,
       "avg_price": 260.51,
-      "current_price": 260.51,
-      "market_value": 1902.48,
-      "pnl": 0.00,
-      "pnl_pct": 0.00,
-      "allocation_pct": 18.95
+      "current_price": 263.32,
+      "market_value": 1923.00,
+      "pnl": 20.52,
+      "pnl_pct": 1.08,
+      "allocation_pct": 19.08
     }
   ],
   "last_trade": {
-    "date": "2026-02-23",
-    "ticker": "QQQ",
-    "action": "sell",
-    "price": 601.42,
-    "amount": 50,
-    "reasoning": "Stop-loss drawdown -5.02% déclenché — cristallisation des pertes, conservation 50% pour rebond technique"
-  },
-  "risk_metrics": {
-    "cvar_95": 0.015,
-    "var_95": 0.012,
-    "max_drawdown": -0.02,
-    "cash_buffer_pct": 53.93
+    "date": "2026-02-24",
+    "ticker": "SPY",
+    "action": "hold",
+    "price": 687.36,
+    "amount": 0,
+    "reasoning": "LLM API error. Holding all positions."
   }
 }
