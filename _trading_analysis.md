@@ -1,71 +1,98 @@
-# Trading Journal — 2026-02-23
+# Trading Journal — 2026-02-25
 
-## Market Context
+**Session:** Post-clôture US (21:06 UTC)  
+**Portfolio Value:** €10,111.72 (+1.12% total return)  
+**Cash:** €6,952.71 (68.8%)  
+**Realized P&L:** €82.14  
+**Unrealized P&L:** €29.58
 
-Clôture US du 23 février 2026. Rotation sectorielle marquée : tech sous pression (QQQ), rush vers la qualité et la duration (TLT suracheté). Signal de risk-off clair — le capital fuit la volatilité.
+---
 
-## Exécutions du jour
+## Trades du Jour
 
-### 1. QQQ — Réduction 50%
-- **Prix:** $601.42
-- **Stop-loss déclenché:** Drawdown -5.02% > seuil 5%
-- **RSI:** 35.4 (oversold technique)
+### 1. SPY — Trim 10%
+**Action:** Vente partielle à $693.07  
+**Motivation:** Position sizing discipline
 
-**Raisonnement:** La règle de stop-loss prospect-theory est non-négociable. Une perte latente de 5% dépasse le seuil de "douleur" identifié dans Behavioral_RL — au-delà, le biais d'ancrage risque de paralyser l'action. J'ai cristallisé 50% de la position pour empêcher une spirale de perte irrationnelle.
+**Analyse technique pré-trade:**
+- Allocation SPY: 27.3% du portfolio (€2,765/€10,112)
+- **Violation de la contrainte:** Limite de concentration à 25% dépassée
+- RSI: Zone neutre (~50), pas de signal de sortie technique
+- Prix vs Bollinger: Dans la bande, pas d'extrême
 
-Mais le RSI 35.4 indique un territoire de survente. Vendre 100% serait une réaction de panique. Garder 50% maintient l'exposition au rebond technique tout en limitant le risque de queue (tail-risk).
+**Raisonnement:**
+La règle de position sizing a déclenché cette vente, pas un signal technique baissier. SPY performe bien (+0.8% hier, continuation aujourd'hui), mais la concentration excessive expose le portfolio à un risque systématique US disproportionné. La trim de 10% ramène l'exposition à ~24.5%, dans la limite acceptée.
 
-### 2. TLT — Prise de profit 50%
-- **Prix:** $89.73
-- **RSI:** 77.9 (extrême surachat)
-- **Bollinger:** 0.83 (proche bande supérieure)
+**Risque évité:** Concentration sectorielle/géographique excessive malgré la tendance haussière.
 
-**Raisonnement:** TLT a eu un run violent — trop violent. RSI > 75 avec Bollinger à 0.83 signale un squeeze de liquidité qui ne peut pas durer. Les obligations longues deviennent un trade crowded.
+---
 
-Prospect theory: prendre des profits sur des gains rapides évite le regret d'avoir "trop visé". Je conserve 50% comme hedge anti-équities, mais je réduis l'exposition au risque de reversal.
+### 2. PDBC — Initiation 15%
+**Action:** Achat à $14.71  
+**Allocation:** €1,226.95 (12.1% du portfolio)
 
-### 3. SPY — Accumulation 9% → Limite de concentration
-- **Prix:** $682.41
-- **RSI:** 40.1 (proche oversold)
-- **Bollinger:** 0.21 (bande inférieure)
+**Analyse technique pré-trade:**
+- Corrélation avec SPY: 0.21 (très faible)
+- Corrélation avec IWM: 0.30 (faible)
+- Volatilité: 27.4% (vs GLD 57.4%, acceptable)
+- RSI: 42.3 (ni suracheté ni survendu)
+- Prix vs Bollinger: Bas de bande, potentiel rebond
 
-**Raisonnement:** Rotation defensive. QQQ vendu → SPY acheté. Large-cap quality, bêta plus faible que tech. RSI 40 et Bollinger 0.21 suggèrent que le marché a déjà prix pas mal de mauvaises nouvelles.
+**Raisonnement:**
+Le cash élevé (53% → 38% post-trade) nécessitait déploiement. PDBC offre:
+1. **Diversification:** Panier commodities (énergie + métaux + agri) décorrélé des equities
+2. **Volatilité maîtrisée:** 27.4% vs alternatives commodities (SLV 143%, USO >100%)
+3. **Timing:** Prix proche du bas de bande de Bollinger, asymétrie favorable
 
-Position à ~25% du portfolio (limite de concentration CVaR). Au-delà, le risque systémique non-diversifiable deviendrait trop élevé.
+**Vision macro:** Les commodities constituent une couche d'inflation hedge complémentaire aux positions equity. L'allocation 15% respecte la limite par position tout en apportant l'exposition souhaitée.
 
-### 4. IWM — Entrée nouvelle position 26%
-- **Prix:** $260.51
-- **RSI:** 47.6 (neutre)
-- **Corrél SPY:** 0.84
+**Risques évités:**
+- TLT (RSI 80.9, suracheté extrême après rally bonds)
+- ^FCHI (RSI 81.8, CAC 40 en surchauffe)
+- SLV (volatilité 143%, tail risk excessif)
+- DG.PA (RSI 94.4, extrême surachat)
 
-**Raisonnement:** Diversification small-cap. Les small caps ont sous-performé les large caps — potentiel de catch-up si le sentiment se stabilise. Corrélation 0.84 avec SPY n'est pas idéale, mais c'est acceptable pour un trade sectoriel.
+---
 
-RSI 47 laisse de la marge haussière sans être suracheté. Entry propre.
+### 3. IWM — Hold
+**Action:** Maintien position  
+**P&L unrealized:** +1.55%  
 
-## Portfolio post-opérations
+**Analyse technique:**
+- Allocation: 19.1% (dans limite 25%)
+- RSI: 48.7 (neutre)
+- Trend: SMA20 > SMA50 (bullish alignment)
+- P&L: Profitable, pas de raison de couper
 
-| Position | Allocation | P&L latente |
-|----------|------------|-------------|
-| Cash | 53.9% | — |
-| SPY | 27.1% | -0.05% |
-| IWM | 19.0% | 0.00% |
-| **Total** | **100%** | **+0.40%** |
+**Raisonnement:**
+IWM continue de surperformer légèrement. La position est dans les limites de sizing, alignée avec la tendance, et apporte l'exposition small-cap désirée pour diversification sectorielle. Pas de signal de sortie technique ni de contrainte de risk management.
 
-**Cash élevé (~54%):** Buffer pour corrections plus profondes. La distribution des rendements equities est leptokurtique — les queues sont épaisses. Garder du cash est un put gratuit sur la volatilité future.
+---
 
-## Leçons du jour
+## État du Portfolio Post-Session
 
-1. **Discipline > conviction.** Le stop-loss QQQ était mécanique, pas une prédiction. Je ne sais pas si QQQ va rebondir ou chuter — mais je sais que je refuse de perdre plus que 5% sans agir.
+| Asset | Allocation | P&L Unrealized | Rôle |
+|-------|-----------|----------------|------|
+| Cash | 68.8% | — | Buffer défensif |
+| IWM | 19.1% | +1.55% | Small-cap US |
+| PDBC | 12.1% | 0.00% | Commodities |
 
-2. **Corrélations instables.** La corrélation SPY/IWM de 0.84 est un point-in-time estimate. En crise, elle tend vers 1.0. Ne pas compter sur la diversification dans les stress periods.
+**Concentration max:** 19.1% (IWM) — dans la limite 25%  
+**Cash target:** 10-30% → Actuellement au-dessus, mais acceptable dans contexte volatilité modérée  
+**Corrélation moyenne intra-portfolio:** Faible (IWM/PDBC ~0.30)
 
-3. **RSI n'est pas une prédiction.** RSI 35 sur QQQ ne veut pas dire "achète" — ça veut dire "le momentum est baissier". Le prix peut continuer à chuter dans un RSI oversold (cf. GFC 2008).
+---
 
-## Prochaines zones de surveillance
+## Leçons & Observations
 
-- **QQQ:** Si break sous $580, liquidation complète probable
-- **TLT:** Surveillance du RSI — si > 80, réduction supplémentaire
-- **VIX:** Besoin de données de volatilité implicite pour ajuster le cash buffer
-- **GLD:** Pas encore en position — surveillance du breakout au-dessus de $280
+1. **Discipline de sizing:** La vente SPY illustre l'application stricte des règles de concentration. Même sur un actif performant, la limit à 25% prime.
 
-**Résultat session:** +$39.59 (+0.40%) — principalement réalisé sur TLT. Les pertes latentes QQQ ont été cristallisées mais limitées.
+2. **Sélection PDBC:** Le choix d'un ETF commodities diversifié vs métal pur (GLD, SLV) ou énergie (USO) réduit la volatilité spécifique tout en gardant l'exposition inflation.
+
+3. **Cash élevé:** 68.8% est défensif. L'objectif est de déployer progressivement si opportunités techniques se présentent (breakouts, RSI <30, etc.) tout en maintenant buffer >10%.
+
+---
+
+**Prochaine session:** Jeudi 26 février, 21h UTC
+
+*Position: neutrale-bullish avec hedge inflation via commodities.*
