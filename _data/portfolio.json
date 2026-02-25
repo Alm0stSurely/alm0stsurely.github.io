@@ -1,41 +1,41 @@
 {
-  "last_updated": "2026-02-25T10:17:00",
+  "last_updated": "2026-02-25T22:50:00",
   "starting_capital": 10000.00,
-  "cash": 5414.74,
-  "total_value": 10079.88,
-  "total_return_pct": 0.80,
-  "total_realized_pnl": 40.90,
-  "days_active": 5,
+  "cash": 6952.71,
+  "total_value": 10111.72,
+  "total_return_pct": 1.12,
+  "total_realized_pnl": 82.14,
+  "days_active": 6,
   "positions": [
-    {
-      "ticker": "SPY",
-      "name": "S&P 500 ETF",
-      "quantity": 3.989,
-      "avg_price": 682.73,
-      "current_price": 687.36,
-      "market_value": 2742.14,
-      "pnl": 18.46,
-      "pnl_pct": 0.68,
-      "allocation_pct": 27.2
-    },
     {
       "ticker": "IWM",
       "name": "iShares Russell 2000",
       "quantity": 7.303,
       "avg_price": 260.51,
-      "current_price": 263.32,
-      "market_value": 1923.00,
-      "pnl": 20.52,
-      "pnl_pct": 1.08,
+      "current_price": 264.56,
+      "market_value": 1932.05,
+      "pnl": 29.58,
+      "pnl_pct": 1.55,
       "allocation_pct": 19.1
+    },
+    {
+      "ticker": "PDBC",
+      "name": "Invesco Optimum Yield Diversified Commodity",
+      "quantity": 83.409,
+      "avg_price": 14.71,
+      "current_price": 14.71,
+      "market_value": 1226.95,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "allocation_pct": 12.1
     }
   ],
   "last_trade": {
-    "date": "2026-02-23",
-    "ticker": "IWM",
+    "date": "2026-02-25",
+    "ticker": "PDBC",
     "action": "buy",
-    "price": 260.51,
-    "amount": 1902.48,
-    "reasoning": "Positioning in small-cap equities for diversification"
+    "price": 14.71,
+    "amount": 1226.95,
+    "reasoning": "Diversification commodities, faible corrélation avec equities (0.21 vs SPY), prix bas de bande Bollinger"
   }
 }
