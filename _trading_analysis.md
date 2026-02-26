@@ -1,98 +1,106 @@
-# Trading Journal — 2026-02-25
+# Trading Journal — 2026-02-26
 
-**Session:** Post-clôture US (21:06 UTC)  
-**Portfolio Value:** €10,111.72 (+1.12% total return)  
-**Cash:** €6,952.71 (68.8%)  
-**Realized P&L:** €82.14  
-**Unrealized P&L:** €29.58
+## Performance
+| Metric | Valeur |
+|--------|--------|
+| NAV | €10,123.05 |
+| Day Return | +0.11% |
+| Total Return | +1.23% |
+| Cash Deployed | €1,947 (-28%) |
+| Positions | 4 |
 
 ---
 
 ## Trades du Jour
 
-### 1. SPY — Trim 10%
-**Action:** Vente partielle à $693.07  
-**Motivation:** Position sizing discipline
+### BUY SPY — 20% cash allocation
+**Prix d'entrée :** $689.33  
+**Montant :** €1,390.54
 
-**Analyse technique pré-trade:**
-- Allocation SPY: 27.3% du portfolio (€2,765/€10,112)
-- **Violation de la contrainte:** Limite de concentration à 25% dépassée
-- RSI: Zone neutre (~50), pas de signal de sortie technique
-- Prix vs Bollinger: Dans la bande, pas d'extrême
+**Signaux techniques :**
+- RSI 59.4 — zone neutre, ni surachat ni survente
+- Bollinger position 0.56 — proche de la moyenne, pas d'extension excessive  
+- Drawdown -0.89% — consolidation saine, pas de panique vendeuse
+- Volatilité 18% annualisée — acceptable pour core holding
 
-**Raisonnement:**
-La règle de position sizing a déclenché cette vente, pas un signal technique baissier. SPY performe bien (+0.8% hier, continuation aujourd'hui), mais la concentration excessive expose le portfolio à un risque systématique US disproportionné. La trim de 10% ramène l'exposition à ~24.5%, dans la limite acceptée.
+**Thèse :** Déploiement progressif du cash excédentaire (69% → 49%). SPY offre l'exposition large-cap US avec un profil risque/rendement équilibré. Pas de mèche haussière à chasser, juste une entrée mécanique dans une tendance intacte.
 
-**Risque évité:** Concentration sectorielle/géographique excessive malgré la tendance haussière.
-
----
-
-### 2. PDBC — Initiation 15%
-**Action:** Achat à $14.71  
-**Allocation:** €1,226.95 (12.1% du portfolio)
-
-**Analyse technique pré-trade:**
-- Corrélation avec SPY: 0.21 (très faible)
-- Corrélation avec IWM: 0.30 (faible)
-- Volatilité: 27.4% (vs GLD 57.4%, acceptable)
-- RSI: 42.3 (ni suracheté ni survendu)
-- Prix vs Bollinger: Bas de bande, potentiel rebond
-
-**Raisonnement:**
-Le cash élevé (53% → 38% post-trade) nécessitait déploiement. PDBC offre:
-1. **Diversification:** Panier commodities (énergie + métaux + agri) décorrélé des equities
-2. **Volatilité maîtrisée:** 27.4% vs alternatives commodities (SLV 143%, USO >100%)
-3. **Timing:** Prix proche du bas de bande de Bollinger, asymétrie favorable
-
-**Vision macro:** Les commodities constituent une couche d'inflation hedge complémentaire aux positions equity. L'allocation 15% respecte la limite par position tout en apportant l'exposition souhaitée.
-
-**Risques évités:**
-- TLT (RSI 80.9, suracheté extrême après rally bonds)
-- ^FCHI (RSI 81.8, CAC 40 en surchauffe)
-- SLV (volatilité 143%, tail risk excessif)
-- DG.PA (RSI 94.4, extrême surachat)
+**Risque évité :** European equities surachetées (^FCHI RSI 82.7, TTE.PA RSI 81.7). Le spread valuation US/EU ne justifie pas d'aller chercher la chaleur en Europe.
 
 ---
 
-### 3. IWM — Hold
-**Action:** Maintien position  
-**P&L unrealized:** +1.55%  
+### BUY GLD — 10% cash allocation
+**Prix d'entrée :** $477.46  
+**Montant :** €556.22
 
-**Analyse technique:**
-- Allocation: 19.1% (dans limite 25%)
-- RSI: 48.7 (neutre)
-- Trend: SMA20 > SMA50 (bullish alignment)
-- P&L: Profitable, pas de raison de couper
+**Signaux techniques :**
+- RSI 64.6 — légèrement élevé mais pas critique
+- Corrélation SPY/GLD 0.17 — diversification effective
+- Beta vs équities ~0.1 — hedge de queue de distribution
 
-**Raisonnement:**
-IWM continue de surperformer légèrement. La position est dans les limites de sizing, alignée avec la tendance, et apporte l'exposition small-cap désirée pour diversification sectorielle. Pas de signal de sortie technique ni de contrainte de risk management.
+**Thèse :** Allocation défensive malgré le RSI. L'or conserve ses propriétés de safe-haven ; en cas de correction brutale du S&P, GLD amortira le drawdown portfolio. La volatilité historique (15%) est inférieure aux indices actions.
 
----
-
-## État du Portfolio Post-Session
-
-| Asset | Allocation | P&L Unrealized | Rôle |
-|-------|-----------|----------------|------|
-| Cash | 68.8% | — | Buffer défensif |
-| IWM | 19.1% | +1.55% | Small-cap US |
-| PDBC | 12.1% | 0.00% | Commodities |
-
-**Concentration max:** 19.1% (IWM) — dans la limite 25%  
-**Cash target:** 10-30% → Actuellement au-dessus, mais acceptable dans contexte volatilité modérée  
-**Corrélation moyenne intra-portfolio:** Faible (IWM/PDBC ~0.30)
+**Risque évité :** Bonds (TLT) surachetés (RSI 80.9) avec duration sensible aux taux. GLD offre une diversification sans risque de taux.
 
 ---
 
-## Leçons & Observations
+## Holds
 
-1. **Discipline de sizing:** La vente SPY illustre l'application stricte des règles de concentration. Même sur un actif performant, la limit à 25% prime.
+### IWM — Russell 2000
+- **P&L unrealized :** +2.08%
+- **Allocation :** 19.2% — sous le seuil 25%
+- **Stop-loss :** Aucun (profitable, trend intact)
 
-2. **Sélection PDBC:** Le choix d'un ETF commodities diversifié vs métal pur (GLD, SLV) ou énergie (USO) réduit la volatilité spécifique tout en gardant l'exposition inflation.
+Momentum small-cap intact. IWM corrige moins fort que le SPY sur les séances rouges, signe de force relative. Maintien.
 
-3. **Cash élevé:** 68.8% est défensif. L'objectif est de déployer progressivement si opportunités techniques se présentent (breakouts, RSI <30, etc.) tout en maintenant buffer >10%.
+### PDBC — Commodities Diversified  
+- **P&L unrealized :** +0.10%
+- **Allocation :** 12.1%
+- **Corrélation équities :** 0.25
+
+Position récente (entrée hier). Volatilité modérée, exposition energy/agriculture/métaux sans levier pétrole brut. Maintien comme diversificateur.
 
 ---
 
-**Prochaine session:** Jeudi 26 février, 21h UTC
+## Macro Portfolio
 
-*Position: neutrale-bullish avec hedge inflation via commodities.*
+```
+Allocation actuelle :
+├── Cash : 49.5%
+├── US Large-Cap (SPY) : 13.7%
+├── US Small-Cap (IWM) : 19.2%
+├── Commodities (PDBC) : 12.1%
+└── Gold (GLD) : 5.5%
+```
+
+**Conviction :** Neutre. Ni euphorie ni panique. Déploiement graduel respectant les contraintes de risk management (max 25% par position, stop-loss 5% sur nouvelles entrées).
+
+**Setup de marché :**
+- VIX ~16 — complaisance mais pas extrême
+- Yield curve uninverted — pas de signal récession imminent
+- Earnings season en cours — volatilité sectorielle élevée, d'où la préférence pour les ETFs larges
+
+---
+
+## Risques surveillés
+
+| Risque | Probabilité | Impact | Mitigation |
+|--------|-------------|--------|------------|
+| Correction Europe (RSI extrêmes) | Moyenne | Faible | Pas d'exposition EU equities |
+| Mean-reversion huile (USO +3% today) | Élevée | Nul | Pas de position USO |
+| Chute TLT (surachat technique) | Moyenne | Faible | Pas d'exposition rates |
+| Drawdown IWM >5% | Faible | Moyen | Stop-loss mental à -5% |
+
+---
+
+## Leçons
+
+1. **Patience sur le cash** — 69% était trop défensif. Déploiement mécanique à 30% par séance jusqu'à atteindre 20-30% cash cible.
+
+2. **Éviter les pièges de mean-reversion** — DSY.PA (RSI 31, vol 90%) et AIR.PA (-14% drawdown) ont l'air cheap mais sont des value traps. Le LLM a correctement ignoré.
+
+3. **Corrélations dynamiques** — PDBC n'a pas suivi le spike USO (+3%) hier. La diversification fonctionne.
+
+---
+
+*Prochaine revue : 2026-02-27 22:30 UTC*
