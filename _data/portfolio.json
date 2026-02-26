@@ -1,41 +1,63 @@
 {
-  "last_updated": "2026-02-25T21:06:11",
+  "last_updated": "2026-02-26T21:05:45",
   "starting_capital": 10000.00,
-  "cash": 6952.71,
-  "total_value": 10111.72,
-  "total_return_pct": 1.12,
+  "cash": 5005.95,
+  "total_value": 10123.05,
+  "total_return_pct": 1.23,
   "total_realized_pnl": 82.14,
-  "days_active": 5,
+  "days_active": 6,
   "positions": [
     {
       "ticker": "IWM",
       "name": "iShares Russell 2000",
       "quantity": 7.30,
       "avg_price": 260.51,
-      "current_price": 264.56,
-      "market_value": 1932.05,
-      "pnl": 29.58,
-      "pnl_pct": 1.55,
-      "allocation_pct": 19.11
+      "current_price": 265.94,
+      "market_value": 1942.13,
+      "pnl": 39.65,
+      "pnl_pct": 2.08,
+      "allocation_pct": 19.19
     },
     {
       "ticker": "PDBC",
       "name": "Invesco Optimum Yield Diversified Commodity",
       "quantity": 83.41,
       "avg_price": 14.71,
-      "current_price": 14.71,
-      "market_value": 1226.95,
+      "current_price": 14.73,
+      "market_value": 1228.20,
+      "pnl": 1.25,
+      "pnl_pct": 0.10,
+      "allocation_pct": 12.13
+    },
+    {
+      "ticker": "SPY",
+      "name": "S&P 500 ETF",
+      "quantity": 2.02,
+      "avg_price": 689.33,
+      "current_price": 689.33,
+      "market_value": 1390.54,
       "pnl": 0.00,
       "pnl_pct": 0.00,
-      "allocation_pct": 12.13
+      "allocation_pct": 13.74
+    },
+    {
+      "ticker": "GLD",
+      "name": "Gold ETF",
+      "quantity": 1.16,
+      "avg_price": 477.46,
+      "current_price": 477.46,
+      "market_value": 556.22,
+      "pnl": 0.00,
+      "pnl_pct": 0.00,
+      "allocation_pct": 5.49
     }
   ],
   "last_trade": {
-    "date": "2026-02-25",
-    "ticker": "PDBC",
+    "date": "2026-02-26",
+    "ticker": "GLD",
     "action": "buy",
-    "price": 14.71,
-    "amount": 1226.95,
-    "reasoning": "Deploying capital into commodities basket (PDBC) at 15% allocation for diversification. PDBC exhibits low correlation with existing equity holdings (0.21 vs SPY, 0.30 vs IWM)."
+    "price": 477.46,
+    "amount": 556.22,
+    "reasoning": "Cash position at 69% exceeds optimal buffer (10-30%), deploying 10% into GLD for diversification and tail risk protection. Correlation vs SPY: 0.17."
   }
 }
