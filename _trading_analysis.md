@@ -1,106 +1,94 @@
-# Trading Journal — 2026-02-26
+# Trading Analysis — 2026-02-27
 
-## Performance
-| Metric | Valeur |
-|--------|--------|
-| NAV | €10,123.05 |
-| Day Return | +0.11% |
-| Total Return | +1.23% |
-| Cash Deployed | €1,947 (-28%) |
-| Positions | 4 |
+## Executive Summary
 
----
+| Metric | Value |
+|--------|-------|
+| Portfolio Value | €10,107.35 |
+| Cash Position | €4,052.82 (40.1%) |
+| Total Return | +1.07% |
+| Realized P&L | +€82.14 |
+| Unrealized P&L | +€25.21 |
+| Active Positions | 5 |
 
-## Trades du Jour
-
-### BUY SPY — 20% cash allocation
-**Prix d'entrée :** $689.33  
-**Montant :** €1,390.54
-
-**Signaux techniques :**
-- RSI 59.4 — zone neutre, ni surachat ni survente
-- Bollinger position 0.56 — proche de la moyenne, pas d'extension excessive  
-- Drawdown -0.89% — consolidation saine, pas de panique vendeuse
-- Volatilité 18% annualisée — acceptable pour core holding
-
-**Thèse :** Déploiement progressif du cash excédentaire (69% → 49%). SPY offre l'exposition large-cap US avec un profil risque/rendement équilibré. Pas de mèche haussière à chasser, juste une entrée mécanique dans une tendance intacte.
-
-**Risque évité :** European equities surachetées (^FCHI RSI 82.7, TTE.PA RSI 81.7). Le spread valuation US/EU ne justifie pas d'aller chercher la chaleur en Europe.
+**Actions du jour** : Achat IWM (+12% cash), Achat FEZ (+8% cash)  
+**Stratégie** : Déploiement progressif du cash excédentaire (>30%), maintien buffer tail risk
 
 ---
 
-### BUY GLD — 10% cash allocation
-**Prix d'entrée :** $477.46  
-**Montant :** €556.22
+## Décisions de Trading
 
-**Signaux techniques :**
-- RSI 64.6 — légèrement élevé mais pas critique
-- Corrélation SPY/GLD 0.17 — diversification effective
-- Beta vs équities ~0.1 — hedge de queue de distribution
+### 1. IWM (Russell 2000) — BUY +12% cash
 
-**Thèse :** Allocation défensive malgré le RSI. L'or conserve ses propriétés de safe-haven ; en cas de correction brutale du S&P, GLD amortira le drawdown portfolio. La volatilité historique (15%) est inférieure aux indices actions.
+**Signaux techniques** :
+- RSI : 43.7 (zone de survente relative, mean-reversion potentiel)
+- Bollinger : 0.36 (proche de la bande inférieure)
+- Prix vs SMAs : sous les moyennes mobiles → opportunité d'entrée
+- Volatilité : 21.2% (modérée, acceptable)
 
-**Risque évité :** Bonds (TLT) surachetés (RSI 80.9) avec duration sensible aux taux. GLD offre une diversification sans risque de taux.
+**Raisonnement** :
+Le small-cap a corrigé depuis l'alerte intraday de +2.08% ce matin. Le prix de clôture (€261.41) est inférieur au prix d'alerte (€265.94), confirmant le caractère de mean-reversion du mouvement matinal. L'ajout de 12% de cash porte la position totale IWM à ~24.8% du portfolio, juste sous la limite de concentration de 25%.
 
----
+**Gestion du risque** :
+- Stop-loss : -5% (non atteint)
+- Position sizing : respect de la limite 25%
+- Corrélation : small-cap US faiblement corrélé au large-cap (SPY)
 
-## Holds
+### 2. FEZ (Euro Stoxx 50) — BUY +8% cash
 
-### IWM — Russell 2000
-- **P&L unrealized :** +2.08%
-- **Allocation :** 19.2% — sous le seuil 25%
-- **Stop-loss :** Aucun (profitable, trend intact)
+**Signaux techniques** :
+- RSI : 58.3 (neutre, pas de surachat)
+- Tendance : uptrend intact
+- Volatilité : inférieure au small-cap US
 
-Momentum small-cap intact. IWM corrige moins fort que le SPY sur les séances rouges, signe de force relative. Maintien.
+**Raisonnement** :
+Diversification géographique européenne. Le CAC 40 (^FCHI) n'est pas accessible via yfinance actuellement (problème de ticker), FEZ offre une exposition équivalente aux grandes caps européennes. L'allocation de 8% maintient le cash à ~40%, conservant une marge pour les opportunités de marché.
 
-### PDBC — Commodities Diversified  
-- **P&L unrealized :** +0.10%
-- **Allocation :** 12.1%
-- **Corrélation équities :** 0.25
+### 3. Positions conservées
 
-Position récente (entrée hier). Volatilité modérée, exposition energy/agriculture/métaux sans levier pétrole brut. Maintien comme diversificateur.
+| Ticker | Action | Rationale |
+|--------|--------|-----------|
+| PDBC | HOLD | RSI 69.9, Bollinger 0.98 — proche surachat mais position small (12.3%). Pas de trim car pas de stop-loss déclenché |
+| SPY | HOLD | P&L négatif (-0.44%) mais faible drawdown. Pas de stop-loss atteint. Maintien pour exposition large-cap |
+| GLD | HOLD | RSI 62.3, Bollinger 0.90 — modérément suracheté mais fonction de couverture inflation/dollar. Position small (5.6%) |
 
 ---
 
 ## Macro Portfolio
 
-```
-Allocation actuelle :
-├── Cash : 49.5%
-├── US Large-Cap (SPY) : 13.7%
-├── US Small-Cap (IWM) : 19.2%
-├── Commodities (PDBC) : 12.1%
-└── Gold (GLD) : 5.5%
-```
+### Allocation actuelle
 
-**Conviction :** Neutre. Ni euphorie ni panique. Déploiement graduel respectant les contraintes de risk management (max 25% par position, stop-loss 5% sur nouvelles entrées).
+| Asset Class | Allocation | P&L Unrealized |
+|-------------|------------|----------------|
+| Small-cap US (IWM) | 24.8% | +0.26% |
+| Commodities (PDBC) | 12.3% | +1.43% |
+| Large-cap US (SPY) | 13.7% | -0.44% |
+| Gold (GLD) | 5.6% | +1.31% |
+| Euro large-cap (FEZ) | 3.5% | 0.00% |
+| Cash | 40.1% | — |
 
-**Setup de marché :**
-- VIX ~16 — complaisance mais pas extrême
-- Yield curve uninverted — pas de signal récession imminent
-- Earnings season en cours — volatilité sectorielle élevée, d'où la préférence pour les ETFs larges
+### Principes appliqués
 
----
+1. **Loss Aversion** : Pas de positions en perte >5%, pas de fermeture de SPY malgré P&L négatif (drawdown limité)
+2. **CVaR / Tail Risk** : Cash à 40% offre protection contre chocs de marché
+3. **Concentration Limit** : IWM à 24.8% — proche mais sous la limite 25%
+4. **Mean Reversion** : Entrée IWM sur RSI < 45, Bollinger bas
+5. **Diversification** : 5 actifs non parfaitement corrélés, exposition US + Europe
 
-## Risques surveillés
+### Risques surveillés
 
-| Risque | Probabilité | Impact | Mitigation |
-|--------|-------------|--------|------------|
-| Correction Europe (RSI extrêmes) | Moyenne | Faible | Pas d'exposition EU equities |
-| Mean-reversion huile (USO +3% today) | Élevée | Nul | Pas de position USO |
-| Chute TLT (surachat technique) | Moyenne | Faible | Pas d'exposition rates |
-| Drawdown IWM >5% | Faible | Moyen | Stop-loss mental à -5% |
+- **PDBC** : RSI > 69, Bollinger 0.98 — surveillance pour trim si dépassement 15% allocation
+- **SPY** : Tendance baissière intraday, surveiller -5% drawdown
+- **IWM** : Position concentrée — plus d'achat bloqué jusqu'à réduction ou croissance portfolio
 
 ---
 
-## Leçons
+## Notes
 
-1. **Patience sur le cash** — 69% était trop défensif. Déploiement mécanique à 30% par séance jusqu'à atteindre 20-30% cash cible.
+La stratégie de déploiement progressif du cash continue. L'objectif est de ramener le cash de 40% vers 20-30% sur les prochaines sessions, tout en respectant les seuils de risque. L'absence de ^FCHI dans les données (problème yfinance) est un point de friction — FEZ est un substitut acceptable mais pas idéal pour l'exposition France pure.
 
-2. **Éviter les pièges de mean-reversion** — DSY.PA (RSI 31, vol 90%) et AIR.PA (-14% drawdown) ont l'air cheap mais sont des value traps. Le LLM a correctement ignoré.
-
-3. **Corrélations dynamiques** — PDBC n'a pas suivi le spike USO (+3%) hier. La diversification fonctionne.
+Prochaine review : Lundi 2026-03-02 (clôture US).
 
 ---
-
-*Prochaine revue : 2026-02-27 22:30 UTC*
+*Analysis generated by LLM agent | Almost Surely Profitable*
+*Strategy: Risk-aware diversification with loss aversion and CVaR constraints*
