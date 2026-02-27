@@ -1,43 +1,43 @@
 {
-  "last_updated": "2026-02-27T11:30:00",
+  "last_updated": "2026-02-27T21:06:41",
   "starting_capital": 10000.00,
-  "cash": 5005.95,
-  "total_value": 10123.05,
-  "total_return_pct": 1.23,
+  "cash": 4052.82,
+  "total_value": 10107.35,
+  "total_return_pct": 1.07,
   "total_realized_pnl": 82.14,
-  "days_active": 7,
+  "days_active": 8,
   "positions": [
     {
       "ticker": "IWM",
       "name": "iShares Russell 2000",
-      "quantity": 7.30,
-      "avg_price": 260.51,
-      "current_price": 265.94,
-      "market_value": 1942.13,
-      "pnl": 39.65,
-      "pnl_pct": 2.08,
-      "allocation_pct": 19.2
+      "quantity": 9.60,
+      "avg_price": 260.73,
+      "current_price": 261.41,
+      "market_value": 2509.76,
+      "pnl": 6.57,
+      "pnl_pct": 0.26,
+      "allocation_pct": 24.8
     },
     {
       "ticker": "PDBC",
       "name": "Invesco Optimum Yield Diversified Commodity",
       "quantity": 83.41,
       "avg_price": 14.71,
-      "current_price": 14.73,
-      "market_value": 1228.20,
-      "pnl": 1.25,
-      "pnl_pct": 0.10,
-      "allocation_pct": 12.1
+      "current_price": 14.92,
+      "market_value": 1244.47,
+      "pnl": 17.52,
+      "pnl_pct": 1.43,
+      "allocation_pct": 12.3
     },
     {
       "ticker": "SPY",
       "name": "S&P 500 ETF",
       "quantity": 2.02,
       "avg_price": 689.33,
-      "current_price": 689.33,
-      "market_value": 1390.54,
-      "pnl": 0.00,
-      "pnl_pct": 0.00,
+      "current_price": 686.28,
+      "market_value": 1384.39,
+      "pnl": -6.15,
+      "pnl_pct": -0.44,
       "allocation_pct": 13.7
     },
     {
@@ -45,19 +45,30 @@
       "name": "Gold ETF",
       "quantity": 1.16,
       "avg_price": 477.46,
-      "current_price": 477.46,
-      "market_value": 556.22,
-      "pnl": 0.00,
-      "pnl_pct": 0.00,
-      "allocation_pct": 5.5
+      "current_price": 483.71,
+      "market_value": 563.49,
+      "pnl": 7.28,
+      "pnl_pct": 1.31,
+      "allocation_pct": 5.6
+    },
+    {
+      "ticker": "FEZ",
+      "name": "Euro Stoxx 50 ETF",
+      "quantity": 5.14,
+      "avg_price": 68.54,
+      "current_price": 68.54,
+      "market_value": 352.42,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "allocation_pct": 3.5
     }
   ],
   "last_trade": {
-    "date": "2026-02-26",
-    "ticker": "SPY",
+    "date": "2026-02-27",
+    "ticker": "FEZ",
     "action": "buy",
-    "price": 689.33,
-    "amount": 1390.54,
-    "reasoning": "Cash position at 69% exceeds optimal buffer. SPY offers neutral technical entry with low drawdown. GLD added for diversification and tail risk protection."
+    "price": 68.54,
+    "amount": 352.42,
+    "reasoning": "European diversification with 8% cash deployment. FEZ in uptrend (RSI 58.3), maintaining 40% cash buffer for tail risk protection."
   }
 }
