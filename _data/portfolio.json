@@ -5,7 +5,7 @@
   "total_value": 10107.35,
   "total_return_pct": 1.07,
   "total_realized_pnl": 82.14,
-  "days_active": 8,
+  "days_active": 5,
   "positions": [
     {
       "ticker": "IWM",
@@ -16,18 +16,7 @@
       "market_value": 2509.76,
       "pnl": 6.57,
       "pnl_pct": 0.26,
-      "allocation_pct": 24.8
-    },
-    {
-      "ticker": "PDBC",
-      "name": "Invesco Optimum Yield Diversified Commodity",
-      "quantity": 83.41,
-      "avg_price": 14.71,
-      "current_price": 14.92,
-      "market_value": 1244.47,
-      "pnl": 17.52,
-      "pnl_pct": 1.43,
-      "allocation_pct": 12.3
+      "allocation_pct": 24.83
     },
     {
       "ticker": "SPY",
@@ -38,7 +27,18 @@
       "market_value": 1384.39,
       "pnl": -6.15,
       "pnl_pct": -0.44,
-      "allocation_pct": 13.7
+      "allocation_pct": 13.70
+    },
+    {
+      "ticker": "PDBC",
+      "name": "Invesco Optimum Yield Diversified Commodity",
+      "quantity": 83.41,
+      "avg_price": 14.71,
+      "current_price": 14.92,
+      "market_value": 1244.47,
+      "pnl": 17.52,
+      "pnl_pct": 1.43,
+      "allocation_pct": 12.31
     },
     {
       "ticker": "GLD",
@@ -49,7 +49,7 @@
       "market_value": 563.49,
       "pnl": 7.28,
       "pnl_pct": 1.31,
-      "allocation_pct": 5.6
+      "allocation_pct": 5.57
     },
     {
       "ticker": "FEZ",
@@ -58,17 +58,17 @@
       "avg_price": 68.54,
       "current_price": 68.54,
       "market_value": 352.42,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "allocation_pct": 3.5
+      "pnl": 0.00,
+      "pnl_pct": 0.00,
+      "allocation_pct": 3.49
     }
   ],
   "last_trade": {
     "date": "2026-02-27",
-    "ticker": "FEZ",
+    "ticker": "IWM",
     "action": "buy",
-    "price": 68.54,
-    "amount": 352.42,
-    "reasoning": "European diversification with 8% cash deployment. FEZ in uptrend (RSI 58.3), maintaining 40% cash buffer for tail risk protection."
+    "price": 261.41,
+    "amount": 9.60,
+    "reasoning": "Mean reversion opportunity (RSI 43.7, Bollinger 0.36), cash deployment at 49.5% exceeds optimal buffer"
   }
 }
