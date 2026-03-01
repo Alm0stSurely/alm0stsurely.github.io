@@ -5,7 +5,7 @@
   "total_value": 10107.35,
   "total_return_pct": 1.07,
   "total_realized_pnl": 82.14,
-  "days_active": 5,
+  "days_active": 7,
   "positions": [
     {
       "ticker": "IWM",
@@ -65,10 +65,10 @@
   ],
   "last_trade": {
     "date": "2026-02-27",
-    "ticker": "IWM",
+    "ticker": "FEZ",
     "action": "buy",
-    "price": 261.41,
-    "amount": 9.60,
-    "reasoning": "Mean reversion opportunity (RSI 43.7, Bollinger 0.36), cash deployment at 49.5% exceeds optimal buffer"
+    "price": 68.54,
+    "amount": 352.42,
+    "reasoning": "Cash position at 49.5% exceeds optimal buffer. FEZ adds European geographic diversification (RSI 58.3, uptrend) within 25% single-asset limit."
   }
 }
