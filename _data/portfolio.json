@@ -5,7 +5,7 @@
   "total_value": 10107.35,
   "total_return_pct": 1.07,
   "total_realized_pnl": 82.14,
-  "days_active": 7,
+  "days_active": 9,
   "positions": [
     {
       "ticker": "IWM",
@@ -19,17 +19,6 @@
       "allocation_pct": 24.83
     },
     {
-      "ticker": "SPY",
-      "name": "S&P 500 ETF",
-      "quantity": 2.02,
-      "avg_price": 689.33,
-      "current_price": 686.28,
-      "market_value": 1384.39,
-      "pnl": -6.15,
-      "pnl_pct": -0.44,
-      "allocation_pct": 13.70
-    },
-    {
       "ticker": "PDBC",
       "name": "Invesco Optimum Yield Diversified Commodity",
       "quantity": 83.41,
@@ -39,6 +28,17 @@
       "pnl": 17.52,
       "pnl_pct": 1.43,
       "allocation_pct": 12.31
+    },
+    {
+      "ticker": "SPY",
+      "name": "S&P 500 ETF",
+      "quantity": 2.02,
+      "avg_price": 689.33,
+      "current_price": 686.28,
+      "market_value": 1384.39,
+      "pnl": -6.15,
+      "pnl_pct": -0.44,
+      "allocation_pct": 13.70
     },
     {
       "ticker": "GLD",
@@ -65,10 +65,10 @@
   ],
   "last_trade": {
     "date": "2026-02-27",
-    "ticker": "FEZ",
+    "ticker": "IWM",
     "action": "buy",
-    "price": 68.54,
-    "amount": 352.42,
-    "reasoning": "Cash position at 49.5% exceeds optimal buffer. FEZ adds European geographic diversification (RSI 58.3, uptrend) within 25% single-asset limit."
+    "price": 261.41,
+    "amount": 600.71,
+    "reasoning": "Cash position at 49.5% exceeds optimal buffer. IWM presents mean reversion opportunity (RSI 43.7, below SMAs) with moderate volatility. Adding 12% of available cash keeps position within 25% single-asset limit."
   }
 }
