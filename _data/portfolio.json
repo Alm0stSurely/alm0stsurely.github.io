@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-02-27T21:06:41",
+  "last_updated": "2026-03-02T21:06:45",
   "starting_capital": 10000.00,
-  "cash": 4052.82,
-  "total_value": 10107.35,
-  "total_return_pct": 1.07,
-  "total_realized_pnl": 82.14,
+  "cash": 4799.84,
+  "total_value": 10163.33,
+  "total_return_pct": 1.63,
+  "total_realized_pnl": 135.52,
   "days_active": 9,
   "positions": [
     {
@@ -12,63 +12,63 @@
       "name": "iShares Russell 2000",
       "quantity": 9.60,
       "avg_price": 260.73,
-      "current_price": 261.41,
-      "market_value": 2509.76,
-      "pnl": 6.57,
-      "pnl_pct": 0.26,
-      "allocation_pct": 24.83
-    },
-    {
-      "ticker": "PDBC",
-      "name": "Invesco Optimum Yield Diversified Commodity",
-      "quantity": 83.41,
-      "avg_price": 14.71,
-      "current_price": 14.92,
-      "market_value": 1244.47,
-      "pnl": 17.52,
-      "pnl_pct": 1.43,
-      "allocation_pct": 12.31
+      "current_price": 263.80,
+      "market_value": 2532.71,
+      "pnl": 29.52,
+      "pnl_pct": 1.18,
+      "allocation_pct": 24.92
     },
     {
       "ticker": "SPY",
       "name": "S&P 500 ETF",
       "quantity": 2.02,
       "avg_price": 689.33,
-      "current_price": 686.28,
-      "market_value": 1384.39,
-      "pnl": -6.15,
-      "pnl_pct": -0.44,
-      "allocation_pct": 13.70
+      "current_price": 686.36,
+      "market_value": 1384.55,
+      "pnl": -5.99,
+      "pnl_pct": -0.43,
+      "allocation_pct": 13.62
     },
     {
       "ticker": "GLD",
       "name": "Gold ETF",
       "quantity": 1.16,
       "avg_price": 477.46,
-      "current_price": 483.71,
-      "market_value": 563.49,
-      "pnl": 7.28,
-      "pnl_pct": 1.31,
-      "allocation_pct": 5.57
+      "current_price": 489.96,
+      "market_value": 570.78,
+      "pnl": 14.56,
+      "pnl_pct": 2.62,
+      "allocation_pct": 5.62
     },
     {
       "ticker": "FEZ",
       "name": "Euro Stoxx 50 ETF",
       "quantity": 5.14,
       "avg_price": 68.54,
-      "current_price": 68.54,
-      "market_value": 352.42,
+      "current_price": 66.54,
+      "market_value": 342.14,
+      "pnl": -10.28,
+      "pnl_pct": -2.92,
+      "allocation_pct": 3.37
+    },
+    {
+      "ticker": "RMS.PA",
+      "name": "Hermes",
+      "quantity": 0.27,
+      "avg_price": 1967.00,
+      "current_price": 1967.00,
+      "market_value": 533.32,
       "pnl": 0.00,
       "pnl_pct": 0.00,
-      "allocation_pct": 3.49
+      "allocation_pct": 5.25
     }
   ],
   "last_trade": {
-    "date": "2026-02-27",
-    "ticker": "IWM",
+    "date": "2026-03-02",
+    "ticker": "RMS.PA",
     "action": "buy",
-    "price": 261.41,
-    "amount": 600.71,
-    "reasoning": "Cash position at 49.5% exceeds optimal buffer. IWM presents mean reversion opportunity (RSI 43.7, below SMAs) with moderate volatility. Adding 12% of available cash keeps position within 25% single-asset limit."
+    "price": 1967.00,
+    "amount": 533.32,
+    "reasoning": "Mean reversion play on oversold luxury defensive. RSI 31.3, Bollinger below lower band, -9.31% drawdown in quality name."
   }
 }
