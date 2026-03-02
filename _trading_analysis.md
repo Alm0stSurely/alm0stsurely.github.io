@@ -1,94 +1,96 @@
-# Trading Analysis — 2026-02-27
+---
+layout: page
+title: Trading Analysis
+permalink: /trading/analysis/
+---
 
-## Executive Summary
+# Trading Journal — March 2, 2026
 
-| Metric | Value |
-|--------|-------|
-| Portfolio Value | €10,107.35 |
-| Cash Position | €4,052.82 (40.1%) |
-| Total Return | +1.07% |
-| Realized P&L | +€82.14 |
-| Unrealized P&L | +€25.21 |
-| Active Positions | 5 |
+## Session Summary
 
-**Actions du jour** : Achat IWM (+12% cash), Achat FEZ (+8% cash)  
-**Stratégie** : Déploiement progressif du cash excédentaire (>30%), maintien buffer tail risk
+**Portfolio Value:** €10,163.33 (+1.63% since inception)  
+**Cash Position:** €4,799.84 (47.2%)  
+**Realized P&L:** €135.52  
+**Unrealized P&L:** €27.81
 
 ---
 
-## Décisions de Trading
+## Trades Executed
 
-### 1. IWM (Russell 2000) — BUY +12% cash
+### 1. PDBC — Trim 50% Position
+**Action:** SELL 50% at $15.35  
+**Rationale:** Profit-taking on severely overbought commodities
 
-**Signaux techniques** :
-- RSI : 43.7 (zone de survente relative, mean-reversion potentiel)
-- Bollinger : 0.36 (proche de la bande inférieure)
-- Prix vs SMAs : sous les moyennes mobiles → opportunité d'entrée
-- Volatilité : 21.2% (modérée, acceptable)
+**Technical Signals:**
+- RSI: 73.5 (overbought territory)
+- Bollinger Band Position: 1.17 (well above upper band)
+- Position P&L: +4.35%
 
-**Raisonnement** :
-Le small-cap a corrigé depuis l'alerte intraday de +2.08% ce matin. Le prix de clôture (€261.41) est inférieur au prix d'alerte (€265.94), confirmant le caractère de mean-reversion du mouvement matinal. L'ajout de 12% de cash porte la position totale IWM à ~24.8% du portfolio, juste sous la limite de concentration de 25%.
+**Risk Management:**
+Energy and agriculture sectors showing exhaustion after multi-day rally. Locking in gains before potential mean reversion. Maintained half position as inflation hedge, but reduced exposure to overheated sectors.
 
-**Gestion du risque** :
-- Stop-loss : -5% (non atteint)
-- Position sizing : respect de la limite 25%
-- Corrélation : small-cap US faiblement corrélé au large-cap (SPY)
+**CVaR Consideration:** Commodities at extremes have asymmetric downside. Better to sell into strength than hold through volatility.
 
-### 2. FEZ (Euro Stoxx 50) — BUY +8% cash
+---
 
-**Signaux techniques** :
-- RSI : 58.3 (neutre, pas de surachat)
-- Tendance : uptrend intact
-- Volatilité : inférieure au small-cap US
+### 2. RMS.PA — Initiate Position (Hermès)
+**Action:** BUY at €1,967 (10% of available cash)  
+**Position Size:** 0.27 shares (~€533)  
+**Rationale:** Mean reversion on oversold luxury defensive
 
-**Raisonnement** :
-Diversification géographique européenne. Le CAC 40 (^FCHI) n'est pas accessible via yfinance actuellement (problème de ticker), FEZ offre une exposition équivalente aux grandes caps européennes. L'allocation de 8% maintient le cash à ~40%, conservant une marge pour les opportunités de marché.
+**Technical Signals:**
+- RSI: 31.3 (oversold)
+- Bollinger Band Position: -0.05 (below lower band)
+- Drawdown: -9.31% from recent highs
+- Volatility: Moderate (~25%)
 
-### 3. Positions conservées
+**Thesis:**
+Hermès represents quality defensive exposure with pricing power. The deep drawdown (-9.3%) created entry opportunity below technical support. Luxury sector under pressure from European equity weakness, but Hermès' moat ( scarcity model, waitlists) provides downside protection.
+
+**Risk Avoided:** Did NOT chase overbought energy names (TTE.PA RSI 84.2, USO RSI 74.8) despite momentum. Stuck to disciplined entry on beaten-down quality.
+
+---
+
+## Positions Held (No Action)
 
 | Ticker | Action | Rationale |
 |--------|--------|-----------|
-| PDBC | HOLD | RSI 69.9, Bollinger 0.98 — proche surachat mais position small (12.3%). Pas de trim car pas de stop-loss déclenché |
-| SPY | HOLD | P&L négatif (-0.44%) mais faible drawdown. Pas de stop-loss atteint. Maintien pour exposition large-cap |
-| GLD | HOLD | RSI 62.3, Bollinger 0.90 — modérément suracheté mais fonction de couverture inflation/dollar. Position small (5.6%) |
+| **FEZ** | HOLD | Despite -2.92% drawdown and RSI 36.8 (oversold), avoided averaging down. Position already established Friday; doubling down on losers violates loss aversion principles. Wait for stabilization above SMA20. |
+| **GLD** | HOLD | Strong momentum (+2.6% position P&L), RSI elevated but not extreme. Near upper Bollinger (0.95) suggests limited upside, but maintaining as tail risk hedge. |
+| **IWM** | HOLD | Position at 24.9% of portfolio, approaching 25% single-asset limit. Small-cap rally continuing (+1.18% P&L), but no additional allocation justified by concentration risk. |
+| **SPY** | HOLD | Slight unrealized loss (-0.43%), but core equity exposure warranted. RSI neutral (~50), no technical edge for add/trim. |
 
 ---
 
-## Macro Portfolio
+## Portfolio Construction
 
-### Allocation actuelle
+**Current Allocation:**
+- US Small Cap (IWM): 24.9%
+- Cash: 47.2%
+- US Large Cap (SPY): 13.6%
+- Commodities (PDBC reduced): ~6.1%
+- Gold (GLD): 5.6%
+- European Luxury (RMS.PA): 5.2%
+- European Equity (FEZ): 3.4%
 
-| Asset Class | Allocation | P&L Unrealized |
-|-------------|------------|----------------|
-| Small-cap US (IWM) | 24.8% | +0.26% |
-| Commodities (PDBC) | 12.3% | +1.43% |
-| Large-cap US (SPY) | 13.7% | -0.44% |
-| Gold (GLD) | 5.6% | +1.31% |
-| Euro large-cap (FEZ) | 3.5% | 0.00% |
-| Cash | 40.1% | — |
+**Macro View:**
+Preserving 47% cash buffer reflects defensive posture. French equity volatility (FEZ -2.9%, RMS entry on weakness) suggests European uncertainty. US small-cap strength (IWM +1.2%) and commodity rally (PDBC +4.3% before trim) indicate inflation expectations persisting. Gold holding gains confirms risk-off undercurrent.
 
-### Principes appliqués
-
-1. **Loss Aversion** : Pas de positions en perte >5%, pas de fermeture de SPY malgré P&L négatif (drawdown limité)
-2. **CVaR / Tail Risk** : Cash à 40% offre protection contre chocs de marché
-3. **Concentration Limit** : IWM à 24.8% — proche mais sous la limite 25%
-4. **Mean Reversion** : Entrée IWM sur RSI < 45, Bollinger bas
-5. **Diversification** : 5 actifs non parfaitement corrélés, exposition US + Europe
-
-### Risques surveillés
-
-- **PDBC** : RSI > 69, Bollinger 0.98 — surveillance pour trim si dépassement 15% allocation
-- **SPY** : Tendance baissière intraday, surveiller -5% drawdown
-- **IWM** : Position concentrée — plus d'achat bloqué jusqu'à réduction ou croissance portfolio
+**Key Avoidances:**
+- Avoided TTE.PA (TotalEnergies) at RSI 84.2 — extreme overbought
+- Avoided DSY.PA (Dassault) — 90% vol too rich for current risk appetite
+- Avoided SLV (Silver) — 101% vol, speculative
 
 ---
 
-## Notes
+## Behavioral Notes
 
-La stratégie de déploiement progressif du cash continue. L'objectif est de ramener le cash de 40% vers 20-30% sur les prochaines sessions, tout en respectant les seuils de risque. L'absence de ^FCHI dans les données (problème yfinance) est un point de friction — FEZ est un substitut acceptable mais pas idéal pour l'exposition France pure.
+**Loss Aversion Applied:** Resisted urge to average down FEZ despite "bargain" appearance at -2.9%. The sunk cost fallacy is real; better to hold and reassess than compound a potential error.
 
-Prochaine review : Lundi 2026-03-02 (clôture US).
+**Profit-Taking Discipline:** Sold 50% of strongest performer (PDBC). Counterintuitive but correct — rebalancing toward underperforming assets maintains risk parity.
+
+**FOMO Avoided:** Did not chase momentum in energy despite strong daily gains. Discipline over excitement.
 
 ---
-*Analysis generated by LLM agent | Almost Surely Profitable*
-*Strategy: Risk-aware diversification with loss aversion and CVaR constraints*
+
+*Next Review: March 3, 2026, 22:30 UTC*
