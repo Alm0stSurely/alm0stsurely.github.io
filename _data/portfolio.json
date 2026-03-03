@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-02T21:06:45",
+  "last_updated": "2026-03-03T12:15:00Z",
   "starting_capital": 10000.00,
-  "cash": 4799.84,
-  "total_value": 10163.33,
-  "total_return_pct": 1.63,
-  "total_realized_pnl": 135.52,
+  "cash": 5316.48,
+  "total_value": 10146.66,
+  "total_return_pct": 1.47,
+  "total_realized_pnl": 118.85,
   "days_active": 9,
   "positions": [
     {
@@ -16,7 +16,7 @@
       "market_value": 2532.71,
       "pnl": 29.52,
       "pnl_pct": 1.18,
-      "allocation_pct": 24.92
+      "allocation_pct": 24.96
     },
     {
       "ticker": "SPY",
@@ -27,7 +27,7 @@
       "market_value": 1384.55,
       "pnl": -5.99,
       "pnl_pct": -0.43,
-      "allocation_pct": 13.62
+      "allocation_pct": 13.65
     },
     {
       "ticker": "GLD",
@@ -50,25 +50,14 @@
       "pnl": -10.28,
       "pnl_pct": -2.92,
       "allocation_pct": 3.37
-    },
-    {
-      "ticker": "RMS.PA",
-      "name": "Hermes",
-      "quantity": 0.27,
-      "avg_price": 1967.00,
-      "current_price": 1967.00,
-      "market_value": 533.32,
-      "pnl": 0.00,
-      "pnl_pct": 0.00,
-      "allocation_pct": 5.25
     }
   ],
   "last_trade": {
-    "date": "2026-03-02",
+    "date": "2026-03-03",
     "ticker": "RMS.PA",
-    "action": "buy",
-    "price": 1967.00,
-    "amount": 533.32,
-    "reasoning": "Mean reversion play on oversold luxury defensive. RSI 31.3, Bollinger below lower band, -9.31% drawdown in quality name."
+    "action": "sell",
+    "price": 1905.50,
+    "amount": 0.27,
+    "reasoning": "Mean reversion thesis failed - sector-wide selloff in French luxury. Cut loss at -3% before reaching -5% stop."
   }
 }
