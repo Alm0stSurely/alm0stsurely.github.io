@@ -1,52 +1,63 @@
 {
-  "last_updated": "2026-03-03T14:35:00Z",
+  "last_updated": "2026-03-03T21:06:29Z",
   "starting_capital": 10000.00,
-  "cash": 5642.48,
-  "total_value": 10120.52,
-  "total_return_pct": 1.21,
+  "cash": 5078.23,
+  "total_value": 10049.36,
+  "total_return_pct": 0.49,
   "total_realized_pnl": 92.71,
-  "days_active": 9,
+  "days_active": 10,
   "positions": [
     {
       "ticker": "IWM",
       "name": "iShares Russell 2000",
       "quantity": 9.60,
       "avg_price": 260.73,
-      "current_price": 256.00,
-      "market_value": 2457.82,
-      "pnl": -45.43,
-      "pnl_pct": -1.81,
-      "allocation_pct": 24.29
+      "current_price": 259.26,
+      "market_value": 2489.12,
+      "pnl": -14.07,
+      "pnl_pct": -0.56,
+      "allocation_pct": 24.77
     },
     {
       "ticker": "SPY",
       "name": "S&P 500 ETF",
       "quantity": 2.02,
       "avg_price": 689.33,
-      "current_price": 674.96,
-      "market_value": 1361.55,
-      "pnl": -29.03,
-      "pnl_pct": -2.09,
-      "allocation_pct": 13.45
+      "current_price": 680.28,
+      "market_value": 1372.29,
+      "pnl": -18.26,
+      "pnl_pct": -1.31,
+      "allocation_pct": 13.66
     },
     {
       "ticker": "GLD",
       "name": "Gold ETF",
       "quantity": 1.16,
       "avg_price": 477.46,
-      "current_price": 469.65,
-      "market_value": 547.14,
-      "pnl": -9.08,
-      "pnl_pct": -1.63,
-      "allocation_pct": 5.41
+      "current_price": 468.24,
+      "market_value": 545.48,
+      "pnl": -10.74,
+      "pnl_pct": -1.93,
+      "allocation_pct": 5.43
+    },
+    {
+      "ticker": "TLT",
+      "name": "US Bonds ETF",
+      "quantity": 6.31,
+      "avg_price": 89.43,
+      "current_price": 89.43,
+      "market_value": 564.25,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "allocation_pct": 5.61
     }
   ],
   "last_trade": {
     "date": "2026-03-03",
-    "ticker": "FEZ",
-    "action": "sell",
-    "price": 63.40,
-    "amount": 5.14,
-    "reasoning": "Stop-loss -5% triggered. Position at -7.5%. Mechanical exit to preserve capital during broad market selloff."
+    "ticker": "TLT",
+    "action": "buy",
+    "price": 89.43,
+    "amount": 6.31,
+    "reasoning": "Diversification with negative correlation to SPY (-0.46), low volatility (9.1%), positive momentum trend"
   }
 }
