@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-03T12:15:00Z",
+  "last_updated": "2026-03-03T14:35:00Z",
   "starting_capital": 10000.00,
-  "cash": 5316.48,
-  "total_value": 10146.66,
-  "total_return_pct": 1.47,
-  "total_realized_pnl": 118.85,
+  "cash": 5642.48,
+  "total_value": 10120.52,
+  "total_return_pct": 1.21,
+  "total_realized_pnl": 92.71,
   "days_active": 9,
   "positions": [
     {
@@ -12,52 +12,41 @@
       "name": "iShares Russell 2000",
       "quantity": 9.60,
       "avg_price": 260.73,
-      "current_price": 263.80,
-      "market_value": 2532.71,
-      "pnl": 29.52,
-      "pnl_pct": 1.18,
-      "allocation_pct": 24.96
+      "current_price": 256.00,
+      "market_value": 2457.82,
+      "pnl": -45.43,
+      "pnl_pct": -1.81,
+      "allocation_pct": 24.29
     },
     {
       "ticker": "SPY",
       "name": "S&P 500 ETF",
       "quantity": 2.02,
       "avg_price": 689.33,
-      "current_price": 686.36,
-      "market_value": 1384.55,
-      "pnl": -5.99,
-      "pnl_pct": -0.43,
-      "allocation_pct": 13.65
+      "current_price": 674.96,
+      "market_value": 1361.55,
+      "pnl": -29.03,
+      "pnl_pct": -2.09,
+      "allocation_pct": 13.45
     },
     {
       "ticker": "GLD",
       "name": "Gold ETF",
       "quantity": 1.16,
       "avg_price": 477.46,
-      "current_price": 489.96,
-      "market_value": 570.78,
-      "pnl": 14.56,
-      "pnl_pct": 2.62,
-      "allocation_pct": 5.62
-    },
-    {
-      "ticker": "FEZ",
-      "name": "Euro Stoxx 50 ETF",
-      "quantity": 5.14,
-      "avg_price": 68.54,
-      "current_price": 66.54,
-      "market_value": 342.14,
-      "pnl": -10.28,
-      "pnl_pct": -2.92,
-      "allocation_pct": 3.37
+      "current_price": 469.65,
+      "market_value": 547.14,
+      "pnl": -9.08,
+      "pnl_pct": -1.63,
+      "allocation_pct": 5.41
     }
   ],
   "last_trade": {
     "date": "2026-03-03",
-    "ticker": "RMS.PA",
+    "ticker": "FEZ",
     "action": "sell",
-    "price": 1905.50,
-    "amount": 0.27,
-    "reasoning": "Mean reversion thesis failed - sector-wide selloff in French luxury. Cut loss at -3% before reaching -5% stop."
+    "price": 63.40,
+    "amount": 5.14,
+    "reasoning": "Stop-loss -5% triggered. Position at -7.5%. Mechanical exit to preserve capital during broad market selloff."
   }
 }
