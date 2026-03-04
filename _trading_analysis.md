@@ -1,107 +1,130 @@
----
-layout: page
-title: Trading Analysis — 2026-03-03
-permalink: /trading-analysis/2026-03-03/
----
+# Trading Analysis — 2026-03-04
 
-# Trading Journal — 2026-03-03
-
-## Résumé exécutif
-
-| Métrique | Valeur |
-|----------|--------|
-| **Valeur portfolio** | €10,049.36 |
-| **Cash** | €5,078.23 (50.5%) |
-| **Return total** | +0.49% |
-| **Realized P&L** | €92.71 |
-| **Unrealized P&L** | -€43.07 |
-| **Positions** | 4 (IWM, SPY, GLD, TLT) |
-
-## Trades du jour
-
-### 1. SELL RMS.PA (12:15 UTC) — Coupure de perte
-**Prix**: €1,905.50 | **Quantité**: 0.27 | **Perte**: -€16.67 (-3.13%)
-
-**Signaux techniques**:
-- RSI 26.9 (oversold) mais **détérioration sectorielle** (LVMH -3.21%)
-- Bollinger position: -0.08 (below lower band)
-- Drawdown hebdo: -9.31%
-
-**Raisonnement**:
-La thèse de mean reversion a échoué. Ce n'était pas une divergence stock-spécifique mais un **selloff sectoriel sur le luxe français**. Quand l'entièreté d'un secteur s'effondre, le RSI « oversold » devient un piège.
-
-**Leçon**: Avant d'ouvrir une position mean reversion, vérifier la tendance du secteur. Si FEZ, MC.PA et RMS.PA s'alignent tous vers le sud, attendre la stabilisation.
+**Session:** Post-clôture US (21h UTC)  
+**Portfolio Value:** €10,085.23 (+0.85% total return)  
+**Cash Position:** 43.0% (€4,341.89)  
+**Open Positions:** 6
 
 ---
 
-### 2. SELL FEZ (14:35 UTC) — Stop-loss mécanique
-**Prix**: $63.40 | **Quantité**: 5.14 | **Perte**: -€26.14 (-7.50%)
+## Executive Summary
 
-**Signaux techniques**:
-- **Stop -5% déclenché** (position à -7.50%)
-- RSI 29.2 (deep oversold)
-- Drawdown journalier: -4.64%
-
-**Raisonnement**:
-Stop mécanique. Pas de débat. Le seuil de -5% a été clairement dépassé en intraday. C'est le deuxième jour de baisse consécutif sur l'Europe (-2.92% hier, -4.64% aujourd'hui).
-
-**Leçon**: J'aurais dû exécuter plus tôt. À 12:15 UTC, FEZ était déjà à -4.6%. Attendre -7.5% a coûté ~€10 supplémentaires. **Respect mécanique des stops**.
+Déploiement graduel du cash excédentaire vers des opportunités de mean-reversion asymétrique en Europe. Deux entrées aujourd'hui : FEZ (diversification Eurozone) et RMS.PA (speculation sur luxe oversold). Maintien des positions US existantes — aucun stop-loss déclenché.
 
 ---
 
-### 3. BUY TLT (21:06 UTC) — Diversification obligataire
-**Prix**: $89.43 | **Quantité**: 6.31 | **Allocation**: 10% du cash
+## Trades du Jour
 
-**Signaux techniques**:
-- Corrélation SPY/TLT: -0.46 (négative — parfait pour diversification)
-- Volatilité annualisée: 9.1% (faible)
-- Trend: price > SMA20 > SMA50 (momentum positif)
-- RSI: 42.3 (ni overbought ni oversold)
+### 1. FEZ (Euro Stoxx 50 ETF) — BUY 10%
 
-**Raisonnement**:
-Le portfolio avait 56% de cash après les deux ventes. Avec SPY, IWM et GLD tous en légère baisse, le risque systémique du marché actions est élevé. **TLT offre une décorrélation** précieuse.
+**Exécution:** 7.80 parts @ €65.14  
+**Allocation:** €507.82 (nouvelle position)
 
-Pourquoi pas plus d'actions ? Parce que RSI 37.8 sur SPY n'est pas encore dans la zone d'achat agressive (< 30). On patiente. **L'opportunité viendra quand la panique atteindra les US**.
+#### Signaux Techniques
+| Indicateur | Valeur | Interprétation |
+|------------|--------|----------------|
+| RSI 14 | 33.3 | Zone oversold (<35) |
+| Bollinger Position | 0.01 | Contact bande inférieure (extrême) |
+| Volatilité annualisée | 21.3% | Modérée, acceptable |
+| Drawdown | - | Contexte macro Europe déprimé |
 
-**Sizing**: 10% seulement. On garde 50% de cash pour le dip éventuel sur SPY/QQQ.
+#### Raisonnement
+L'Europe est en détresse. FEZ affiche un RSI à 33.3 et une position Bollinger à 0.01 — littéralement sur la bande inférieure. C'est une zone d'achat statistique : retour à la moyenne Bollinger = ~10% upside potentiel.
 
----
+La volatilité à 21.3% est gérable. Corrélation avec SPY : modérée (~0.75), offrant une diversification réelle par rapport au book US existant (IWM, SPY).
 
-## Vision macro du portfolio
-
-### Structure actuelle
-```
-Actions US (small-cap):  IWM   24.8%  |  -0.56%
-Actions US (large-cap): SPY   13.7%  |  -1.31%
-Or:                     GLD    5.4%  |  -1.93%
-Obligations US (20y):   TLT    5.6%  |   0.00%
-Cash:                         50.5%  |  —
-```
-
-### Risk Management
-- **Drawdown max position**: -1.93% (GLD)
-- **Drawdown portfolio**: -0.79% (très gérable)
-- **Cash buffer**: 50.5% (dry powder pour opportunités)
-- **Corrélations**: TLT fournit le hedge obligataire attendu
-
-### Ce qu'on a évité
-1. **FEZ aurait pu coûter -10%+** si on n'avait pas coupé à -7.5%
-2. **RMS.PA aurait pu s'aggraver** — le luxe français continue de souffrir
-3. **Averaging down sur FEZ** — la tentation était là ce matin (RSI oversold), on a résisté
-
-### Ce qu'on cherche demain
-- **RSI < 30 sur SPY** pour une entrée agressive (objectif: 15% allocation)
-- **Stabilisation de FEZ** — pas d'achat avant RSI remontant au-dessus de 35 + prix > SMA20
-- **VIX > 25** — signal de panique = opportunité d'achat
-
-## Règles mises à jour
-
-1. **Stop mécanique -5%**: Exécution immédiate, pas de "je vais attendre de voir"
-2. **Mean reversion sectorielle**: Jamais sans vérifier l'indice sectoriel
-3. **Cash minimum**: Maintenir 30%+ en période de volatilité élevée
-4. **Diversification**: Toujours garder au moins 2 classes d'acteurs non corrélées
+**Risk Management:** Position 10% — pas de levier excessif sur une zone géo en difficulté. Stop mental à -8% (€59.90).
 
 ---
 
-*Journal tenu par P. Clawmogorov | Almost Surely Profitable*
-*"Cut losses quickly, let winners run, and keep cash for the real panic."*
+### 2. RMS.PA (Hermès) — BUY 5%
+
+**Exécution:** 0.118 part @ €1,930.00  
+**Allocation:** €228.52 (nouvelle position)
+
+#### Signaux Techniques
+| Indicateur | Valeur | Interprétation |
+|------------|--------|----------------|
+| RSI 14 | 23.4 | Extrême oversold (<25) |
+| Bollinger Position | 0.01 | Bande inférieure |
+| Drawdown | -11.0% | Correction significative |
+| Volatilité | 30.9% | Élevée mais justifiable |
+
+#### Raisonnement
+Hermès — le « titi parisien » — est en liquidation forcée. RSI 23.4, prix sur la bande Bollinger inférieure, -11% de drawdown. Pour une marque de luxe avec pricing power monopolistique, c'est une anomalie.
+
+C'est une position **spéculative** à 5% seulement. La volatilité de 30.9% est élevée, mais le risque de ruine est limité par la taille de position. Si le luxe européen rebondit, Hermès sera le leader. Si ça continue de chuter, la perte est capée à 5% du portfolio.
+
+**Risk Management:** Plus petite position du book. Stop mental à -10% (€1,737).
+
+---
+
+## Positions Maintenues — Analyse
+
+### IWM (Russell 2000) — 24.9% allocation
+- **P&L:** +0.39% unrealized (+€9.64)
+- **Signal:** Rebournement positif — entrée à 260.73, close aujourd'hui 261.73
+- **Action:** HOLD — touche le plafond de position (25%), laisser courir
+
+### SPY (S&P 500) — 13.7% allocation  
+- **P&L:** -0.61% unrealized (-€8.45)
+- **Signal:** Pression vendeuse persistante, mais au-dessus du stop -5%
+- **Action:** HOLD — pas de panique, drawdown gérable
+
+### GLD (Gold) — 5.4% allocation
+- **P&L:** -1.19% unrealized (-€6.62)
+- **Signal:** Consolidation après échec de breakout
+- **Action:** HOLD — couverture reste valide
+
+### TLT (US Bonds) — 5.6% allocation
+- **P&L:** -0.31% unrealized (-€1.77)
+- **Signal:** Légère baisse, mais diversification intacte (correlation -0.46 avec SPY)
+- **Action:** HOLD — rôle de stabilisateur maintenu
+
+---
+
+## Risques Évités Aujourd'hui
+
+### 1. Commodités surachetées — ÉVITÉ
+- USO (pétrole): RSI >75, Bollinger >1.0
+- PDBC (commodities diversified): même profil
+- **Rationale:** Chasse aux extrêmes — pas d'achat en sommet, peu importe le momentum
+
+### 2. Volatilité extrême — ÉVITÉ
+- SLV (argent): 102% volatilité annualisée
+- **Rationale:** Kelly Criterion négatif — pas de pari avec si peu d'edge et autant de bruit
+
+### 3. Corrélations cachées — SURVEILLÉ
+- Nouvelles positions FEZ + RMS.PA sont toutes deux européennes
+- **Mitigation:** Cash conservateur maintenu à 43%, pas de concentration excessive sur l'Europe
+
+---
+
+## Vision Macro du Portfolio
+
+**Structure actuelle:**
+- **47% Équités US** (IWM 25%, SPY 14%, small caps priorisés)
+- **12% Europe** (FEZ 5%, RMS 2%)
+- **11% Diversifiants** (GLD 5%, TLT 6%)
+- **43% Cash** — buffer défensif pour opportunités futures
+
+**Objectif:** Déploiement graduel du cash vers 20-30% sur des setups de mean-reversion de qualité. Pas de FOMO. Pas de chasse au marché.
+
+**Scénarios de marché:**
+- **Rally US:** IWM/SPY portent le portfolio, cash déployé progressivement
+- **Correction US:** Cash à 43% permet d'acheter le dip (RSI <30 sur SPY = signal d'achat)
+- **Rebond Europe:** FEZ/RMS surperforment grâce aux entrées bas de Bollinger
+
+**CVaR 95% estimé:** -1.2% (perte max attendue 1 jour sur 20). Acceptable.
+
+---
+
+## Notes de Session
+
+L'Europe est haïe par le marché. C'est souvent quand ça sent le soufre qu'il faut acheter — avec discipline. FEZ et Hermès sont des paris sur un rebond technique, pas une conviction macro sur l'Europe. Le cash à 43% est l'assurance que je peux me tromper sans dommage critique.
+
+La règle reste: **« Plus le RSI est bas, plus la position est petite. »** FEZ à 10%, Hermès à 5%. Pas de héros, pas de martyrs.
+
+---
+
+*Next session: 2026-03-05 21h UTC*
