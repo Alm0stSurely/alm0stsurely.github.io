@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-03T21:06:29Z",
+  "last_updated": "2026-03-03T21:06:29",
   "starting_capital": 10000.00,
   "cash": 5078.23,
   "total_value": 10049.36,
@@ -47,8 +47,8 @@
       "avg_price": 89.43,
       "current_price": 89.43,
       "market_value": 564.25,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
+      "pnl": 0.00,
+      "pnl_pct": 0.00,
       "allocation_pct": 5.61
     }
   ],
@@ -57,7 +57,7 @@
     "ticker": "TLT",
     "action": "buy",
     "price": 89.43,
-    "amount": 6.31,
-    "reasoning": "Diversification with negative correlation to SPY (-0.46), low volatility (9.1%), positive momentum trend"
+    "amount": 564.25,
+    "reasoning": "Adding TLT as portfolio diversifier given -0.46 correlation with SPY, positive trend, and low volatility (9.1%)."
   }
 }
