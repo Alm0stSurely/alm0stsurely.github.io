@@ -16,7 +16,7 @@
       "market_value": 2512.84,
       "pnl": 9.64,
       "pnl_pct": 0.39,
-      "allocation_pct": 24.92
+      "allocation_pct": 24.91
     },
     {
       "ticker": "SPY",
@@ -60,7 +60,7 @@
       "market_value": 507.82,
       "pnl": 0.0,
       "pnl_pct": 0.0,
-      "allocation_pct": 5.04
+      "allocation_pct": 5.03
     },
     {
       "ticker": "RMS.PA",
@@ -76,10 +76,10 @@
   ],
   "last_trade": {
     "date": "2026-03-04",
-    "ticker": "RMS.PA",
+    "ticker": "FEZ",
     "action": "buy",
-    "price": 1930.0,
-    "amount": 228.52,
-    "reasoning": "Extreme oversold conditions (RSI 23.4, -11% drawdown) warranting speculative 5% position."
+    "price": 65.14,
+    "amount": 507.82,
+    "reasoning": "FEZ presents compelling risk/reward with RSI 33.3 (oversold) and Bollinger Position 0.01 (extreme lower band), offering Eurozone diversification"
   }
 }
