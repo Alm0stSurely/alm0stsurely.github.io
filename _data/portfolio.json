@@ -1,85 +1,96 @@
 {
-  "last_updated": "2026-03-04T21:06:11",
+  "last_updated": "2026-03-05T21:06:53",
   "starting_capital": 10000.00,
-  "cash": 4341.89,
-  "total_value": 10085.23,
-  "total_return_pct": 0.85,
+  "cash": 4001.48,
+  "total_value": 10006.97,
+  "total_return_pct": 0.07,
   "total_realized_pnl": 92.71,
-  "days_active": 11,
+  "days_active": 12,
   "positions": [
     {
       "ticker": "IWM",
       "name": "iShares Russell 2000",
       "quantity": 9.60,
       "avg_price": 260.73,
-      "current_price": 261.73,
-      "market_value": 2512.84,
-      "pnl": 9.64,
-      "pnl_pct": 0.39,
-      "allocation_pct": 24.91
+      "current_price": 256.79,
+      "market_value": 2465.41,
+      "pnl": -37.78,
+      "pnl_pct": -1.51,
+      "allocation_pct": 24.64
     },
     {
       "ticker": "SPY",
       "name": "S&P 500 ETF",
       "quantity": 2.02,
       "avg_price": 689.33,
-      "current_price": 685.14,
-      "market_value": 1382.09,
-      "pnl": -8.45,
-      "pnl_pct": -0.61,
-      "allocation_pct": 13.70
+      "current_price": 681.45,
+      "market_value": 1374.65,
+      "pnl": -15.90,
+      "pnl_pct": -1.14,
+      "allocation_pct": 13.74
     },
     {
       "ticker": "GLD",
       "name": "Gold ETF",
       "quantity": 1.16,
       "avg_price": 477.46,
-      "current_price": 471.77,
-      "market_value": 549.59,
-      "pnl": -6.62,
-      "pnl_pct": -1.19,
-      "allocation_pct": 5.45
+      "current_price": 466.24,
+      "market_value": 543.15,
+      "pnl": -13.07,
+      "pnl_pct": -2.35,
+      "allocation_pct": 5.43
     },
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
       "quantity": 6.31,
       "avg_price": 89.43,
-      "current_price": 89.15,
-      "market_value": 562.48,
-      "pnl": -1.77,
-      "pnl_pct": -0.31,
-      "allocation_pct": 5.58
+      "current_price": 88.79,
+      "market_value": 560.24,
+      "pnl": -4.01,
+      "pnl_pct": -0.71,
+      "allocation_pct": 5.60
     },
     {
       "ticker": "FEZ",
       "name": "Euro Stoxx 50 ETF",
       "quantity": 7.80,
       "avg_price": 65.14,
-      "current_price": 65.14,
-      "market_value": 507.82,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "allocation_pct": 5.03
+      "current_price": 63.72,
+      "market_value": 496.79,
+      "pnl": -11.03,
+      "pnl_pct": -2.17,
+      "allocation_pct": 4.96
     },
     {
       "ticker": "RMS.PA",
       "name": "Hermes",
-      "quantity": 0.12,
-      "avg_price": 1930.0,
-      "current_price": 1930.0,
-      "market_value": 228.52,
+      "quantity": 0.21,
+      "avg_price": 1916.80,
+      "current_price": 1899.00,
+      "market_value": 391.58,
+      "pnl": -3.67,
+      "pnl_pct": -0.93,
+      "allocation_pct": 3.91
+    },
+    {
+      "ticker": "SGO.PA",
+      "name": "Saint-Gobain",
+      "quantity": 2.29,
+      "avg_price": 75.92,
+      "current_price": 75.92,
+      "market_value": 173.68,
       "pnl": 0.0,
       "pnl_pct": 0.0,
-      "allocation_pct": 2.27
+      "allocation_pct": 1.74
     }
   ],
   "last_trade": {
-    "date": "2026-03-04",
-    "ticker": "FEZ",
+    "date": "2026-03-05",
+    "ticker": "SGO.PA",
     "action": "buy",
-    "price": 65.14,
-    "amount": 507.82,
-    "reasoning": "FEZ presents compelling risk/reward with RSI 33.3 (oversold) and Bollinger Position 0.01 (extreme lower band), offering Eurozone diversification"
+    "price": 75.92,
+    "amount": 173.68,
+    "reasoning": "RSI 13.4 (capitulation), Bollinger -0.10 (below lower band). Cyclical oversold play."
   }
 }
