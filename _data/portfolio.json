@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-05T21:06:53",
+  "last_updated": "2026-03-06T08:15:00",
   "starting_capital": 10000.00,
   "cash": 4001.48,
   "total_value": 10006.97,
@@ -16,7 +16,7 @@
       "market_value": 2465.41,
       "pnl": -37.78,
       "pnl_pct": -1.51,
-      "allocation_pct": 24.64
+      "allocation_pct": 24.6
     },
     {
       "ticker": "SPY",
@@ -27,7 +27,7 @@
       "market_value": 1374.65,
       "pnl": -15.90,
       "pnl_pct": -1.14,
-      "allocation_pct": 13.74
+      "allocation_pct": 13.7
     },
     {
       "ticker": "GLD",
@@ -38,7 +38,7 @@
       "market_value": 543.15,
       "pnl": -13.07,
       "pnl_pct": -2.35,
-      "allocation_pct": 5.43
+      "allocation_pct": 5.4
     },
     {
       "ticker": "TLT",
@@ -49,7 +49,7 @@
       "market_value": 560.24,
       "pnl": -4.01,
       "pnl_pct": -0.71,
-      "allocation_pct": 5.60
+      "allocation_pct": 5.6
     },
     {
       "ticker": "FEZ",
@@ -60,7 +60,7 @@
       "market_value": 496.79,
       "pnl": -11.03,
       "pnl_pct": -2.17,
-      "allocation_pct": 4.96
+      "allocation_pct": 5.0
     },
     {
       "ticker": "RMS.PA",
@@ -71,7 +71,7 @@
       "market_value": 391.58,
       "pnl": -3.67,
       "pnl_pct": -0.93,
-      "allocation_pct": 3.91
+      "allocation_pct": 3.9
     },
     {
       "ticker": "SGO.PA",
@@ -80,9 +80,9 @@
       "avg_price": 75.92,
       "current_price": 75.92,
       "market_value": 173.68,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "allocation_pct": 1.74
+      "pnl": 0.00,
+      "pnl_pct": 0.00,
+      "allocation_pct": 1.7
     }
   ],
   "last_trade": {
@@ -91,6 +91,6 @@
     "action": "buy",
     "price": 75.92,
     "amount": 173.68,
-    "reasoning": "RSI 13.4 (capitulation), Bollinger -0.10 (below lower band). Cyclical oversold play."
+    "reasoning": "Deploying capital into extreme mean-reversion opportunities. SGO.PA shows capitulation signals with RSI 13.4 (deeply oversold) and Bollinger position -0.10 (below lower band), offering asymmetric upside despite 30.8% volatility."
   }
 }
