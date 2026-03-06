@@ -1,32 +1,32 @@
 {
-  "last_updated": "2026-03-06T08:15:00",
+  "last_updated": "2026-03-06T21:10:00",
   "starting_capital": 10000.00,
   "cash": 4001.48,
-  "total_value": 10006.97,
-  "total_return_pct": 0.07,
+  "total_value": 9929.59,
+  "total_return_pct": -0.70,
   "total_realized_pnl": 92.71,
-  "days_active": 12,
+  "days_active": 13,
   "positions": [
     {
       "ticker": "IWM",
       "name": "iShares Russell 2000",
       "quantity": 9.60,
       "avg_price": 260.73,
-      "current_price": 256.79,
-      "market_value": 2465.41,
-      "pnl": -37.78,
-      "pnl_pct": -1.51,
-      "allocation_pct": 24.6
+      "current_price": 250.88,
+      "market_value": 2408.67,
+      "pnl": -94.52,
+      "pnl_pct": -3.78,
+      "allocation_pct": 24.3
     },
     {
       "ticker": "SPY",
       "name": "S&P 500 ETF",
       "quantity": 2.02,
       "avg_price": 689.33,
-      "current_price": 681.45,
-      "market_value": 1374.65,
-      "pnl": -15.90,
-      "pnl_pct": -1.14,
+      "current_price": 672.46,
+      "market_value": 1356.51,
+      "pnl": -34.03,
+      "pnl_pct": -2.45,
       "allocation_pct": 13.7
     },
     {
@@ -34,21 +34,21 @@
       "name": "Gold ETF",
       "quantity": 1.16,
       "avg_price": 477.46,
-      "current_price": 466.24,
-      "market_value": 543.15,
-      "pnl": -13.07,
-      "pnl_pct": -2.35,
-      "allocation_pct": 5.4
+      "current_price": 473.49,
+      "market_value": 551.59,
+      "pnl": -4.62,
+      "pnl_pct": -0.83,
+      "allocation_pct": 5.6
     },
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
       "quantity": 6.31,
       "avg_price": 89.43,
-      "current_price": 88.79,
-      "market_value": 560.24,
-      "pnl": -4.01,
-      "pnl_pct": -0.71,
+      "current_price": 88.47,
+      "market_value": 558.19,
+      "pnl": -6.06,
+      "pnl_pct": -1.07,
       "allocation_pct": 5.6
     },
     {
@@ -56,10 +56,10 @@
       "name": "Euro Stoxx 50 ETF",
       "quantity": 7.80,
       "avg_price": 65.14,
-      "current_price": 63.72,
-      "market_value": 496.79,
-      "pnl": -11.03,
-      "pnl_pct": -2.17,
+      "current_price": 63.09,
+      "market_value": 491.84,
+      "pnl": -15.98,
+      "pnl_pct": -3.15,
       "allocation_pct": 5.0
     },
     {
@@ -67,10 +67,10 @@
       "name": "Hermes",
       "quantity": 0.21,
       "avg_price": 1916.80,
-      "current_price": 1899.00,
-      "market_value": 391.58,
-      "pnl": -3.67,
-      "pnl_pct": -0.93,
+      "current_price": 1900.00,
+      "market_value": 391.78,
+      "pnl": -3.46,
+      "pnl_pct": -0.88,
       "allocation_pct": 3.9
     },
     {
@@ -78,10 +78,10 @@
       "name": "Saint-Gobain",
       "quantity": 2.29,
       "avg_price": 75.92,
-      "current_price": 75.92,
-      "market_value": 173.68,
-      "pnl": 0.00,
-      "pnl_pct": 0.00,
+      "current_price": 74.02,
+      "market_value": 169.33,
+      "pnl": -4.35,
+      "pnl_pct": -2.50,
       "allocation_pct": 1.7
     }
   ],
