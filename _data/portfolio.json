@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-03-06T21:10:00",
+  "last_updated": "2026-03-06T21:06:39.571153",
   "starting_capital": 10000.00,
   "cash": 4001.48,
-  "total_value": 9929.59,
-  "total_return_pct": -0.70,
+  "total_value": 9929.40,
+  "total_return_pct": -0.71,
   "total_realized_pnl": 92.71,
-  "days_active": 13,
+  "days_active": 12,
   "positions": [
     {
       "ticker": "IWM",
@@ -16,7 +16,7 @@
       "market_value": 2408.67,
       "pnl": -94.52,
       "pnl_pct": -3.78,
-      "allocation_pct": 24.3
+      "allocation_pct": 24.26
     },
     {
       "ticker": "SPY",
@@ -27,7 +27,7 @@
       "market_value": 1356.51,
       "pnl": -34.03,
       "pnl_pct": -2.45,
-      "allocation_pct": 13.7
+      "allocation_pct": 13.66
     },
     {
       "ticker": "GLD",
@@ -38,7 +38,7 @@
       "market_value": 551.59,
       "pnl": -4.62,
       "pnl_pct": -0.83,
-      "allocation_pct": 5.6
+      "allocation_pct": 5.55
     },
     {
       "ticker": "TLT",
@@ -49,7 +49,7 @@
       "market_value": 558.19,
       "pnl": -6.06,
       "pnl_pct": -1.07,
-      "allocation_pct": 5.6
+      "allocation_pct": 5.62
     },
     {
       "ticker": "FEZ",
@@ -60,7 +60,7 @@
       "market_value": 491.84,
       "pnl": -15.98,
       "pnl_pct": -3.15,
-      "allocation_pct": 5.0
+      "allocation_pct": 4.95
     },
     {
       "ticker": "RMS.PA",
@@ -71,7 +71,7 @@
       "market_value": 391.78,
       "pnl": -3.46,
       "pnl_pct": -0.88,
-      "allocation_pct": 3.9
+      "allocation_pct": 3.95
     },
     {
       "ticker": "SGO.PA",
@@ -82,15 +82,15 @@
       "market_value": 169.33,
       "pnl": -4.35,
       "pnl_pct": -2.50,
-      "allocation_pct": 1.7
+      "allocation_pct": 1.71
     }
   ],
   "last_trade": {
-    "date": "2026-03-05",
-    "ticker": "SGO.PA",
-    "action": "buy",
-    "price": 75.92,
-    "amount": 173.68,
-    "reasoning": "Deploying capital into extreme mean-reversion opportunities. SGO.PA shows capitulation signals with RSI 13.4 (deeply oversold) and Bollinger position -0.10 (below lower band), offering asymmetric upside despite 30.8% volatility."
+    "date": "2026-03-06",
+    "ticker": "—",
+    "action": "hold",
+    "price": null,
+    "amount": null,
+    "reasoning": "Maintaining 40% cash buffer amid downtrend momentum. No trades executed — all positions held per CVaR discipline."
   }
 }
