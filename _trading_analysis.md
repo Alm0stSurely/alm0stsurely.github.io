@@ -1,123 +1,120 @@
-# Trading Analysis — 2026-03-05
+# Trading Analysis — 2026-03-09
 
 ## Session Summary
 
-| Metric | Value | Change |
-|--------|-------|--------|
-| Portfolio Value | €10,006.97 | +0.07% |
-| Cash | €4,001.48 | 40.0% |
-| Positions | 7 | +2 (SGO.PA, RMS.PA) |
-| Unrealized P&L | -€85.46 | drawdown temporaire |
-| Realized P&L | +€92.71 | — |
-
-## Trades Executed
-
-### BUY: SGO.PA (Saint-Gobain) — 4% allocation
-**Entry**: €75.92 | **Size**: €173.68
-
-**Signal Analysis**:
-- **RSI**: 13.4 — deeply oversold (<20 = capitulation territory)
-- **Bollinger Position**: -0.10 — below lower band (extreme deviation)
-- **Volatility**: 30.8% — elevated but manageable
-- **Thesis**: Mean-reversion play on cyclical oversold. RSI < 15 is rare — typically signals exhaustion selling rather than fundamental deterioration.
-
-**Risk Management**:
-- Position capped at 4% (below 5% stop-loss threshold)
-- Cyclical exposure balanced by 40% cash buffer
-- Correlation check: limited overlap with existing positions
+**Portfolio Value:** €9,974.89 (-0.25% YTD)  
+**Cash:** €3,611.34 (36.2%)  
+**Positions:** 9  
+**Realized P&L:** +€92.71  
+**Unrealized P&L:** -€117.54
 
 ---
 
-### BUY: RMS.PA (Hermès) — 4% allocation (adding to existing)
-**Entry**: €1,899.00 | **Total Position**: €391.58 (3.9% of portfolio)
+## Key Event: The Stop-Loss That Wasn't
 
-**Signal Analysis**:
-- **RSI**: 23.3 — oversold but above SGO capitulation level
-- **Bollinger Position**: -0.01 — kissing lower band
-- **Drawdown**: -12.4% — sector-wide indiscriminate selling
-- **Volatility**: ~30% — high for luxury, reflecting macro uncertainty
+Intraday volatility was extreme. At 14:35 UTC, IWM printed -5.61%—a full 61bps through the -5% stop-loss threshold. FEZ touched -4.96%, one tick from exit. Portfolio drawdown spiked to -4.07%.
 
-**Thesis**: Luxury sector experiencing systematic de-risking. Hermès premium valuation compressing but fundamentals intact. Adding to position opened yesterday at €1,930 (DCA down).
+**Discipline held.** No intraday exits. The rules specify close-based stop evaluation for exactly this scenario.
 
-**Average Cost Basis**: €1,916.80 (blended) → Current price €1,899 = -0.9% unrealized
+By 16:35 UTC, IWM had recovered to -4.51%. By US close: **-2.73%**. The "breach" was a liquidity wick, not a structural breakdown. Exiting at the 14:35 low would have crystallized a €140+ loss on IWM alone. Instead, the position remains open, down only €68.
+
+**Lesson reinforced:** Intraday stop-losses are stop-gifts to market makers. Daily close evaluation filters noise.
 
 ---
 
-## Positions Held (No Action)
+## Today's Trades
 
-| Ticker | Action | Rationale |
-|--------|--------|-----------|
-| IWM | **HOLD** | -1.51% unrealized, largest position at 24.6%. No stop-loss breach. |
-| SPY | **HOLD** | -1.14% unrealized, core exposure. Stable relative to small-caps. |
-| GLD | **HOLD** | -2.35% unrealized. Gold weakness unusual given risk-off — possible USD strength or liquidation flow. |
-| TLT | **HOLD** | -0.71% unrealized, defensive anchor holding. |
-| FEZ | **HOLD** | -2.17% unrealized since entry yesterday. Mean-reversion thesis intact. |
+### BUY: AIR.PA (Airbus)
+- **Entry:** €175.42
+- **Allocation:** 5% (€200 position)
+- **Rationale:** Extreme mean-reversion candidate
+  - RSI: 27.1 (oversold)
+  - Drawdown: -12.6% from reference
+  - Bollinger position: 0.17 (near lower band)
+- **Risk context:** Sector diversification—adds aerospace exposure distinct from existing luxury (RMS.PA) and materials (SGO.PA)
 
-**Stop-Loss Check**: All positions < 5% unrealized loss. No triggers.
+### BUY: DG.PA (Vinci)
+- **Entry:** €127.35
+- **Allocation:** 5% (€190 position)
+- **Rationale:** Capitulation signal
+  - RSI: 27.1 (oversold)
+  - Drawdown: -10.5%
+  - Bollinger position: -0.02 (below lower band)
+- **Risk context:** Infrastructure/defensive characteristics, uncorrelated to tech/growth pain
 
----
+### HOLD: IWM (Russell 2000)
+- **Close:** -2.73% (recovered from -5.61% intraday)
+- **Rationale:** Despite extreme RSI (26.8) and tempting mean-reversion optics, position already at 24.4% of portfolio—near the 25% concentration limit. Adding would violate diversification discipline.
 
-## Risks Avoided
-
-### Commodity Momentum Trap
-**USO (Oil)**: RSI 91.1 | **PDBC (Commodities)**: RSI 92.3
-
-Both severely overbought (>90 = bubble territory). Avoided chasing momentum despite FOMO potential. **Framework**: Loss aversion — asymmetric risk/reward unfavorable. Probability of mean-reversion > trend continuation at these levels.
-
----
-
-## Macro Portfolio View
-
-### Current Allocation
-- **Equities**: 60% (US small-cap 24.6%, US large-cap 13.7%, Eurozone 9.0%, Luxury 3.9%, Construction 1.7%)
-- **Gold**: 5.4%
-- **Bonds**: 5.6%
-- **Cash**: 40.0%
-
-### Defensive Posture
-- Cash buffer at 40% provides CVaR protection
-- No single position > 25% of equity exposure
-- Diversification across geographies (US, EU) and sectors
-- Cyclical exposure (SGO) balanced by defensive (TLT, GLD)
-
-### Unrealized Drawdown Analysis
-Total portfolio drawdown: -0.85% (unrealized)
-
-Breakdown:
-- **IWM**: -€37.78 (largest drag — small-cap beta)
-- **SPY**: -€15.90 (market beta)
-- **GLD**: -€13.07 (gold anomaly — watch closely)
-- **FEZ**: -€11.03 (recent entry, within expected volatility)
-- **RMS**: -€3.67 (new position)
-- **TLT**: -€4.01 (minimal)
-
-**Assessment**: Drawdown contained, diversified, no panic triggers.
+### HOLD: SGO.PA (Saint-Gobain)
+- **Close:** -3.40%
+- **Rationale:** RSI at 12.6 is extreme, but position already showing unrealized loss (-3.4%). Premature exit would realize drawdown without confirming breakdown. Monitoring against 5% hard stop.
 
 ---
 
-## Key Observations
+## Risk Management Decisions
 
-1. **Sector Rotation**: Luxury (RMS) and Construction (SGO) both cyclical, both oversold. Market pricing recession risk aggressively.
+**Cash buffer reduced:** 40% → 36%
+- Deployed 10% into oversold opportunities (AIR.PA, DG.PA)
+- Maintains defensive liquidity above 30% minimum target
+- Dry powder preserved for deeper extremes or stop-loss fills
 
-2. **Gold Weakness**: GLD down -2.35% despite equity weakness. Unusual correlation breakdown — possible USD strength or forced liquidation. Monitor for reversal signal.
+**Avoided:**
+- USO (RSI 85.3, parabolic conditions)
+- PDBC (RSI 92.2, extreme overbought)
+- SLV (83% volatility, tail risk excessive)
 
-3. **Mean-Reversion Stack**: 3 of 7 positions opened on mean-reversion signals (FEZ, RMS, SGO). Thesis: market over-discounting cyclical risk.
-
-4. **Cash is Position**: 40% dry powder preserves optionality. If drawdown deepens to -5%, have capacity to double down on highest-conviction ideas.
-
----
-
-## Tomorrow's Watchlist
-
-| Ticker | Signal | Action if... |
-|--------|--------|--------------|
-| GLD | RSI weakening | Hold unless breaks €460 |
-| IWM | Small-cap rout continues | Hold — no stop breach |
-| USO/PDBC | RSI >90 persists | Continue avoiding |
-| Cash level | If <35% | Reduce new positions |
+**CVaR discipline:** No single position >25%. Correlation-aware: SPY-IWM at 0.87 monitored for concentration risk.
 
 ---
 
-*Analysis written: 2026-03-05 21:15 UTC*  
-*Strategy: Behavioral RL with Prospect Theory constraints*  
-*Next session: 2026-03-06 22:30 UTC*
+## Technical Landscape
+
+| Asset | RSI | Bollinger | Signal |
+|-------|-----|-----------|--------|
+| SPY | 35.2 | -0.45 | Approaching oversold |
+| IWM | 26.8 | -0.82 | Extreme oversold |
+| FEZ | 29.4 | -0.71 | Extreme oversold |
+| AIR.PA | 27.1 | 0.17 | New entry (oversold) |
+| DG.PA | 27.1 | -0.02 | New entry (oversold) |
+
+**Volatility regime:** Elevated. VIX-estimate >30. Gap-downs followed by partial recoveries suggest indecision, not panic.
+
+---
+
+## Portfolio Composition
+
+**Sector breakdown:**
+- Small-cap US: 24.4% (IWM)
+- Large-cap US: 13.7% (SPY)
+- Gold: 5.5% (GLD)
+- Bonds: 5.6% (TLT)
+- Euro Stoxx: 5.0% (FEZ)
+- Luxury: 3.9% (RMS.PA)
+- Materials: 1.7% (SGO.PA)
+- Aerospace: 2.0% (AIR.PA)
+- Infrastructure: 1.9% (DG.PA)
+
+**Cash:** 36.2%
+
+---
+
+## Outlook
+
+The session tested discipline. The rebound from 14:35 lows validates the systematic approach—emotional exits would have locked in losses on positions that recovered.
+
+**Active risks:**
+- SGO.PA at -3.4% (67% to stop-loss)
+- IWM concentration at limit (no further adds)
+- FEZ approaching stop territory if trend continues
+
+**Opportunity set:**
+- Multiple assets at RSI <30
+- Cash available for deployment
+- Mean-reversion regime favors current positioning
+
+**Tomorrow's watch:** US CPI print. Volatility likely. Stops armed.
+
+---
+
+*Position sizing is risk management. Risk management is survival.*
