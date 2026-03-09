@@ -1,32 +1,32 @@
 {
-  "last_updated": "2026-03-06T21:06:39",
+  "last_updated": "2026-03-09T21:06:39",
   "starting_capital": 10000.00,
-  "cash": 4001.48,
-  "total_value": 9929.40,
-  "total_return_pct": -0.71,
+  "cash": 3611.34,
+  "total_value": 9974.89,
+  "total_return_pct": -0.25,
   "total_realized_pnl": 92.71,
-  "days_active": 13,
+  "days_active": 14,
   "positions": [
     {
       "ticker": "IWM",
       "name": "iShares Russell 2000",
       "quantity": 9.60,
       "avg_price": 260.73,
-      "current_price": 250.88,
-      "market_value": 2408.67,
-      "pnl": -94.52,
-      "pnl_pct": -3.78,
-      "allocation_pct": 24.3
+      "current_price": 253.61,
+      "market_value": 2434.88,
+      "pnl": -68.31,
+      "pnl_pct": -2.73,
+      "allocation_pct": 24.4
     },
     {
       "ticker": "SPY",
       "name": "S&P 500 ETF",
       "quantity": 2.02,
       "avg_price": 689.33,
-      "current_price": 672.46,
-      "market_value": 1356.51,
-      "pnl": -34.03,
-      "pnl_pct": -2.45,
+      "current_price": 678.30,
+      "market_value": 1368.29,
+      "pnl": -22.25,
+      "pnl_pct": -1.60,
       "allocation_pct": 13.7
     },
     {
@@ -34,21 +34,21 @@
       "name": "Gold ETF",
       "quantity": 1.16,
       "avg_price": 477.46,
-      "current_price": 473.49,
-      "market_value": 551.59,
-      "pnl": -4.62,
-      "pnl_pct": -0.83,
-      "allocation_pct": 5.6
+      "current_price": 472.45,
+      "market_value": 550.38,
+      "pnl": -5.84,
+      "pnl_pct": -1.05,
+      "allocation_pct": 5.5
     },
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
       "quantity": 6.31,
       "avg_price": 89.43,
-      "current_price": 88.47,
-      "market_value": 558.19,
-      "pnl": -6.06,
-      "pnl_pct": -1.07,
+      "current_price": 89.21,
+      "market_value": 562.88,
+      "pnl": -1.37,
+      "pnl_pct": -0.24,
       "allocation_pct": 5.6
     },
     {
@@ -56,10 +56,10 @@
       "name": "Euro Stoxx 50 ETF",
       "quantity": 7.80,
       "avg_price": 65.14,
-      "current_price": 63.09,
-      "market_value": 491.84,
-      "pnl": -15.98,
-      "pnl_pct": -3.15,
+      "current_price": 63.78,
+      "market_value": 497.22,
+      "pnl": -10.60,
+      "pnl_pct": -2.09,
       "allocation_pct": 5.0
     },
     {
@@ -67,10 +67,10 @@
       "name": "Hermes",
       "quantity": 0.21,
       "avg_price": 1916.80,
-      "current_price": 1900.00,
-      "market_value": 391.78,
-      "pnl": -3.46,
-      "pnl_pct": -0.88,
+      "current_price": 1901.00,
+      "market_value": 391.99,
+      "pnl": -3.26,
+      "pnl_pct": -0.82,
       "allocation_pct": 3.9
     },
     {
@@ -78,19 +78,41 @@
       "name": "Saint-Gobain",
       "quantity": 2.29,
       "avg_price": 75.92,
-      "current_price": 74.02,
-      "market_value": 169.33,
-      "pnl": -4.35,
-      "pnl_pct": -2.50,
+      "current_price": 73.34,
+      "market_value": 167.77,
+      "pnl": -5.90,
+      "pnl_pct": -3.40,
       "allocation_pct": 1.7
+    },
+    {
+      "ticker": "AIR.PA",
+      "name": "Airbus",
+      "quantity": 1.14,
+      "avg_price": 175.42,
+      "current_price": 175.42,
+      "market_value": 200.07,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "allocation_pct": 2.0
+    },
+    {
+      "ticker": "DG.PA",
+      "name": "Vinci",
+      "quantity": 1.49,
+      "avg_price": 127.35,
+      "current_price": 127.35,
+      "market_value": 190.07,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "allocation_pct": 1.9
     }
   ],
   "last_trade": {
-    "date": "2026-03-05",
-    "ticker": "SGO.PA",
+    "date": "2026-03-09",
+    "ticker": "AIR.PA",
     "action": "buy",
-    "price": 75.92,
-    "amount": 173.68,
-    "reasoning": "Deploying capital into extreme mean-reversion opportunities: SGO.PA (Saint-Gobain) shows capitulation signals with RSI 13.4 (deeply oversold) and Bollinger position -0.10 (below lower band)"
+    "price": 175.42,
+    "amount": 200.07,
+    "reasoning": "Deploying capital into extreme mean-reversion opportunities. AIR.PA shows capitulation signals with RSI 27.1 and -12.6% drawdown"
   }
 }
