@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-03-10T21:06:46",
+  "last_updated": "2026-03-11T08:15:00",
   "starting_capital": 10000.00,
   "cash": 2956.96,
   "total_value": 9989.75,
   "total_return_pct": -0.10,
   "total_realized_pnl": 92.71,
-  "days_active": 14,
+  "days_active": 15,
   "positions": [
     {
       "ticker": "IWM",
       "name": "iShares Russell 2000",
-      "quantity": 9.6009,
+      "quantity": 9.60,
       "avg_price": 260.73,
       "current_price": 253.37,
       "market_value": 2432.57,
@@ -21,7 +21,7 @@
     {
       "ticker": "SPY",
       "name": "S&P 500 ETF",
-      "quantity": 2.0172,
+      "quantity": 2.02,
       "avg_price": 689.33,
       "current_price": 677.05,
       "market_value": 1365.77,
@@ -30,31 +30,9 @@
       "allocation_pct": 13.67
     },
     {
-      "ticker": "GLD",
-      "name": "Gold ETF",
-      "quantity": 1.1650,
-      "avg_price": 477.46,
-      "current_price": 477.73,
-      "market_value": 556.53,
-      "pnl": 0.31,
-      "pnl_pct": 0.06,
-      "allocation_pct": 5.57
-    },
-    {
-      "ticker": "TLT",
-      "name": "US Bonds ETF",
-      "quantity": 6.3094,
-      "avg_price": 89.43,
-      "current_price": 88.29,
-      "market_value": 557.06,
-      "pnl": -7.19,
-      "pnl_pct": -1.27,
-      "allocation_pct": 5.58
-    },
-    {
       "ticker": "FEZ",
       "name": "Euro Stoxx 50 ETF",
-      "quantity": 7.7959,
+      "quantity": 7.80,
       "avg_price": 65.14,
       "current_price": 63.83,
       "market_value": 497.61,
@@ -65,7 +43,7 @@
     {
       "ticker": "RMS.PA",
       "name": "Hermes",
-      "quantity": 0.2062,
+      "quantity": 0.21,
       "avg_price": 1916.80,
       "current_price": 1951.00,
       "market_value": 402.30,
@@ -76,7 +54,7 @@
     {
       "ticker": "SGO.PA",
       "name": "Saint-Gobain",
-      "quantity": 5.7473,
+      "quantity": 5.75,
       "avg_price": 74.96,
       "current_price": 74.32,
       "market_value": 427.14,
@@ -85,9 +63,31 @@
       "allocation_pct": 4.28
     },
     {
+      "ticker": "GLD",
+      "name": "Gold ETF",
+      "quantity": 1.16,
+      "avg_price": 477.46,
+      "current_price": 477.73,
+      "market_value": 556.53,
+      "pnl": 0.31,
+      "pnl_pct": 0.06,
+      "allocation_pct": 5.57
+    },
+    {
+      "ticker": "TLT",
+      "name": "US Bonds ETF",
+      "quantity": 6.31,
+      "avg_price": 89.43,
+      "current_price": 88.29,
+      "market_value": 557.06,
+      "pnl": -7.19,
+      "pnl_pct": -1.27,
+      "allocation_pct": 5.58
+    },
+    {
       "ticker": "AIR.PA",
       "name": "Airbus",
-      "quantity": 1.1405,
+      "quantity": 1.14,
       "avg_price": 175.42,
       "current_price": 176.98,
       "market_value": 201.85,
@@ -98,18 +98,18 @@
     {
       "ticker": "DG.PA",
       "name": "Vinci",
-      "quantity": 1.4925,
+      "quantity": 1.49,
       "avg_price": 127.35,
       "current_price": 130.45,
       "market_value": 194.70,
       "pnl": 4.63,
-      "pnl_pct": 2.43,
+      "pnl_pct": 2.24,
       "allocation_pct": 1.95
     },
     {
       "ticker": "OR.PA",
       "name": "L'Oreal",
-      "quantity": 1.0942,
+      "quantity": 1.09,
       "avg_price": 363.05,
       "current_price": 363.05,
       "market_value": 397.25,
@@ -124,6 +124,6 @@
     "action": "buy",
     "price": 363.05,
     "amount": 397.25,
-    "reasoning": "Mean-reversion on quality defensive: RSI 29.8, Bollinger 0.10, -9.94% drawdown. L'Oreal showing capitulation signals."
+    "reasoning": "Deploying 19% of available cash into extreme mean-reversion opportunities. OR.PA signals capitulation with RSI 29.8, Bollinger position 0.10 (near lower band), and -9.94% drawdown."
   }
 }
