@@ -1,3 +1,167 @@
+# Trading Analysis — 2026-03-11
+
+## Session Summary
+| Metric | Value |
+|--------|-------|
+| Starting Value | €9,989.75 |
+| Ending Value | €9,957.05 |
+| Daily Return | -0.43% |
+| Cash Deployed | €428.76 (14.5% of available) |
+| Cash Remaining | €2,528.20 (25.4%) |
+| Positions | 10 (avg down on 2) |
+
+## Market Regime
+
+**Risk-off généralisé.** SPY -2.17%, IWM -3.02%, TLT -2.56%. Tout ce qui est risqué a vendu — small-caps, cycliques, bonds longue durée. Ce n'est plus une correction isolée, c'est une rotation de régime. Le CVaR (Conditional Value at Risk) du portefeuille a augmenté, justifiant le maintien du buffer cash à 25%.
+
+---
+
+## Trades Executed
+
+### BUY: SGO.PA (Saint-Gobain) — Scale-in, +10% allocation
+**Entry:** €73.36  
+**Shares added:** 4.031  
+**Total Position:** 9.778 shares @ €74.30 avg  
+**Total Value:** €717.32
+
+**Technical Setup:**
+- RSI: 17.1 (capitulation extrême)
+- Bollinger Position: 0.13 (proche bande inférieure)
+- Drawdown: -19%+ depuis les sommets
+- Prix d'entrée: -2.1% sous le close d'hier
+
+**Rationale:**  
+Hier j'ai initié à €74.96 sur RSI 17.1. Aujourd'hui le RSI est encore plus bas, le prix aussi. Ce n'est pas un trade qui "ne fonctionne pas" — c'est un trade qui demande du temps. Saint-Gobain est un leader mondial des matériaux avec une exposition structurelle à la rénovation énergétique (RE2024, aides européennes). À €73, on pricing une récession profonde qui n'est pas encore là.
+
+**Moyennage:**  
+Le scale-in améliore le cost basis de €74.96 à €74.30. La position totale passe à 7.2% du portefeuille — encore gérable si ça continue à baisser.
+
+**Stop Mental:**  
+Pas de stop dur. Si ça casse €70, j'ajoute encore. Le risque de ruin est nul sur ce type de position (diversification sectorielle, liquidité, bilan solide).
+
+---
+
+### BUY: OR.PA (L'Oreal) — Scale-in, +5% allocation
+**Entry:** €359.75  
+**Shares added:** 0.370  
+**Total Position:** 1.464 shares @ €362.22 avg  
+**Total Value:** €526.70
+
+**Technical Setup:**
+- RSI: 29.0 (survente, mais moins extrême que SGO)
+- Bollinger: proche bande inférieure
+- Drawdown: -11% depuis les sommets
+- Secteur: Luxe / Consumer staples (qualité défensive)
+
+**Rationale:**  
+L'Oréal hier à €363 était une opportunité. Aujourd'hui à €359.75, c'est encore mieux. Le luxe français a souffert des craintes sur la Chine, mais L'Oréal a des marques resilientes (skincare, pharmacy). Le pricing power reste intact.
+
+**Conservatisme:**  
+Seulement 5% déployés vs 10% sur SGO car le RSI est moins extrême (29 vs 17). La survente est réelle mais pas historique. Position finale à 5.3% du portefeuille.
+
+---
+
+## Positions Held (No Action)
+
+### IWM (Russell 2000)
+**Status:** HOLD  
+**Close:** €252.85, -3.02% unrealized  
+**Portfolio Weight:** 24.4% (limite 25%)
+
+**Rationale:**  
+Alertes intraday à -3.65% à 17:45 UTC. J'aurais pu paniquer. Mais:
+- Aucun stop à -5% n'a été touché
+- Le cash protège le drawdown
+- C'est un mouvement de marché, pas une erreur de stock-picking
+
+Discipline: pas d'ajout (limite 25% atteinte), pas de vente (pas de signal technique). Hold.
+
+### SPY (S&P 500)
+**Status:** HOLD  
+**Close:** €676.33, -1.89% unrealized
+
+**Rationale:**  
+La baisse de -2.17% aujourd'hui confirme le risk-off. Mais le positionnement reste core. Pas de trim, pas d'ajout. La beta du portefeuille est élevée, c'est assumé.
+
+### DG.PA (Vinci)
+**Status:** HOLD  
+**Close:** €130.15, +2.20% unrealized
+
+**Rationale:**  
+Seul gagnant de la journée. Le trade mean-reversion d'hier fonctionne (+2.2%). Démonstration que la discipline paie — achat sur RSI extrême, vente sur récupération. Je ne prends pas de profits encore, la rotation défensive pourrait continuer.
+
+### TLT, GLD, FEZ, RMS.PA, AIR.PA
+**Status:** HOLD ALL
+
+**Observations:**
+- **TLT:** Bonds longue durée qui corrigent avec les equities (-2.56%). Typique d'un repositionnement Fed ou d'une vente de portefeuille forcée.
+- **AIR.PA:** Résilience relative (+0.50%). Défensif aéronautique.
+
+---
+
+## Risks Avoided
+
+**Commodity Extremes:**  
+USO (RSI 84.6) et PDBC (RSI 92.4) continuent leur parabole. Pas de FOMO. Ces niveaux de RSI historiques précèdent souvent des corrections violentes. Le coût d'opportunité est acceptable.
+
+**Panic Selling:**  
+Aujourd'hui à 17:45 UTC, 5 alerts simultanées, drawdown à -2.23%, tout le portefeuille dans le rouge sauf DG.PA. L'impulsion émotionnelle dit "vends tout." La discipline dit "hold." Les prix de clôture confirment: pas de catastrophe, juste une journée difficile.
+
+**Over-trading:**  
+J'aurais pu trader les intraday alerts. IWM qui oscille entre -2.8% et -3.6%. Mais le slippage, les frais, et le bruit dépassent l'edge. Daily close discipline > intraday noise.
+
+---
+
+## Portfolio Vision
+
+**Allocation Post-Session:**
+- US Equities (IWM, SPY): 38.0%
+- EU Equities (FEZ + 5 individuels): 26.6%
+- Gold (GLD): 5.6%
+- Bonds (TLT): 5.5%
+- Cash: 25.4%
+
+**Thèse:**  
+Nous sommes dans une correction de "growth scare" qui pourrait s'étendre. Le cash à 25% est un gouvernail, pas une ancre. Il permet d'acheter la panique sans vendre la peur.
+
+**Mean-Reversion Trades Actifs:**
+| Ticker | RSI Entry | Current Price | Avg Cost | P&L |
+|--------|-----------|---------------|----------|-----|
+| SGO.PA | 17.1 | €73.36 | €74.30 | -1.26% |
+| OR.PA | 29.0 | €359.75 | €362.22 | -0.68% |
+| DG.PA | (prior) | €130.15 | €127.35 | +2.20% |
+
+**Niveaux Clés:**
+- **SGO.PA:** Si break €70 → ajout massif (RSI < 15 serait historique)
+- **IWM:** Stop à €247.69 (-5% depuis entrée). Pas touché aujourd'hui (min €251.21).
+- **Cash Floor:** 20%. Actuellement 25.4% = marge pour 1-2 opportunités supplémentaires.
+
+**Edge Cases:**
+- Crash -5% demain → déploiement cash dans SPY/IWM sur close.
+- Rebond technique → pas de vente, laisser courir les mean-reversions.
+- Continuation de la baisse → scale-in progressif sur SGO.PA et OR.PA.
+
+---
+
+## Today's Lesson
+
+**Patience vs Conviction:**  
+Hier SGO.PA à €74.96 semblait une aubaine. Aujourd'hui à €73.36, c'en est une meilleure. La conviction dans l'analyse technique (RSI extrême) doit primer sur l'aversion aux pertes temporaires.
+
+**Le Cash comme Option:**  
+25% de cash sur un portefeuille qui baisse de 0.43% — c'est une performance relative. Les indices ont chuté 2-3%. La protection du cash a fonctionné.
+
+**Intraday vs Daily:**  
+Les alerts 08:05, 12:15, 14:35, 16:35, 17:45 auraient pu générer 5 trades. Le résultat: 2 trades sur close, meilleurs prix, moins de frais, moins de stress.
+
+> *"La volatilité est le prix d'entrée pour la performance. Le cash est le prix de la tranquillité."*
+
+---
+*Analysis written: 2026-03-11 21:15 UTC*  
+*Next session: 2026-03-12 21:05 UTC*
+
+---
+
 # Trading Analysis — 2026-03-10
 
 ## Session Summary
