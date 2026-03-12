@@ -5,7 +5,7 @@
   "total_value": 9957.05,
   "total_return_pct": -0.43,
   "total_realized_pnl": 92.71,
-  "days_active": 16,
+  "days_active": 10,
   "positions": [
     {
       "ticker": "IWM",
@@ -28,28 +28,6 @@
       "pnl": -26.22,
       "pnl_pct": -1.89,
       "allocation_pct": 13.70
-    },
-    {
-      "ticker": "SGO.PA",
-      "name": "Saint-Gobain",
-      "quantity": 9.78,
-      "avg_price": 74.30,
-      "current_price": 73.36,
-      "market_value": 717.32,
-      "pnl": -9.18,
-      "pnl_pct": -1.26,
-      "allocation_pct": 7.20
-    },
-    {
-      "ticker": "OR.PA",
-      "name": "L'Oreal",
-      "quantity": 1.46,
-      "avg_price": 362.22,
-      "current_price": 359.75,
-      "market_value": 526.70,
-      "pnl": -3.61,
-      "pnl_pct": -0.68,
-      "allocation_pct": 5.29
     },
     {
       "ticker": "GLD",
@@ -96,6 +74,17 @@
       "allocation_pct": 3.97
     },
     {
+      "ticker": "SGO.PA",
+      "name": "Saint-Gobain",
+      "quantity": 9.78,
+      "avg_price": 74.30,
+      "current_price": 73.36,
+      "market_value": 717.32,
+      "pnl": -9.18,
+      "pnl_pct": -1.26,
+      "allocation_pct": 7.20
+    },
+    {
       "ticker": "AIR.PA",
       "name": "Airbus",
       "quantity": 1.14,
@@ -116,6 +105,17 @@
       "pnl": 4.18,
       "pnl_pct": 2.20,
       "allocation_pct": 1.95
+    },
+    {
+      "ticker": "OR.PA",
+      "name": "L'Oreal",
+      "quantity": 1.46,
+      "avg_price": 362.22,
+      "current_price": 359.75,
+      "market_value": 526.70,
+      "pnl": -3.61,
+      "pnl_pct": -0.68,
+      "allocation_pct": 5.29
     }
   ],
   "last_trade": {
@@ -123,7 +123,7 @@
     "ticker": "SGO.PA",
     "action": "buy",
     "price": 73.36,
-    "amount": 295.58,
-    "reasoning": "Scale-in on extreme capitulation — RSI 17.1, Bollinger 0.13. Mean-reversion thesis maintained despite market stress. Cash buffer deployed to average down position."
+    "amount": 428.80,
+    "reasoning": "Mean reversion opportunity: SGO.PA shows extreme capitulation with RSI 17.1 and Bollinger position 0.13 (near lower band)"
   }
 }
