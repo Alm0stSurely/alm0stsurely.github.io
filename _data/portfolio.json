@@ -1,129 +1,129 @@
 {
-  "last_updated": "2026-03-11T21:06:44",
+  "last_updated": "2026-03-12T21:06:46",
   "starting_capital": 10000.00,
-  "cash": 2528.20,
-  "total_value": 9957.05,
-  "total_return_pct": -0.43,
-  "total_realized_pnl": 92.71,
-  "days_active": 10,
+  "cash": 4838.36,
+  "total_value": 9844.89,
+  "total_return_pct": -1.55,
+  "total_realized_pnl": -81.34,
+  "days_active": 11,
   "positions": [
-    {
-      "ticker": "IWM",
-      "name": "iShares Russell 2000",
-      "quantity": 9.60,
-      "avg_price": 260.73,
-      "current_price": 252.85,
-      "market_value": 2427.58,
-      "pnl": -75.61,
-      "pnl_pct": -3.02,
-      "allocation_pct": 24.38
-    },
-    {
-      "ticker": "SPY",
-      "name": "S&P 500 ETF",
-      "quantity": 2.02,
-      "avg_price": 689.33,
-      "current_price": 676.33,
-      "market_value": 1364.32,
-      "pnl": -26.22,
-      "pnl_pct": -1.89,
-      "allocation_pct": 13.70
-    },
     {
       "ticker": "GLD",
       "name": "Gold ETF",
       "quantity": 1.16,
       "avg_price": 477.46,
-      "current_price": 476.26,
-      "market_value": 554.82,
-      "pnl": -1.40,
-      "pnl_pct": -0.25,
-      "allocation_pct": 5.57
+      "current_price": 466.98,
+      "market_value": 544.01,
+      "pnl": -12.21,
+      "pnl_pct": -2.19,
+      "allocation_pct": 5.52
     },
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
       "quantity": 6.31,
       "avg_price": 89.43,
-      "current_price": 87.14,
-      "market_value": 549.80,
-      "pnl": -14.45,
-      "pnl_pct": -2.56,
-      "allocation_pct": 5.52
+      "current_price": 86.97,
+      "market_value": 548.73,
+      "pnl": -15.52,
+      "pnl_pct": -2.75,
+      "allocation_pct": 5.57
     },
     {
       "ticker": "FEZ",
       "name": "Euro Stoxx 50 ETF",
       "quantity": 7.80,
       "avg_price": 65.14,
-      "current_price": 63.88,
-      "market_value": 498.00,
-      "pnl": -9.82,
-      "pnl_pct": -1.93,
-      "allocation_pct": 5.00
+      "current_price": 62.71,
+      "market_value": 488.88,
+      "pnl": -18.94,
+      "pnl_pct": -3.73,
+      "allocation_pct": 4.96
     },
     {
       "ticker": "RMS.PA",
       "name": "Hermes",
       "quantity": 0.21,
       "avg_price": 1916.80,
-      "current_price": 1915.50,
-      "market_value": 394.98,
-      "pnl": -0.27,
-      "pnl_pct": -0.07,
-      "allocation_pct": 3.97
+      "current_price": 1902.00,
+      "market_value": 392.20,
+      "pnl": -3.05,
+      "pnl_pct": -0.77,
+      "allocation_pct": 3.98
     },
     {
       "ticker": "SGO.PA",
       "name": "Saint-Gobain",
       "quantity": 9.78,
       "avg_price": 74.30,
-      "current_price": 73.36,
-      "market_value": 717.32,
-      "pnl": -9.18,
-      "pnl_pct": -1.26,
-      "allocation_pct": 7.20
+      "current_price": 72.36,
+      "market_value": 707.54,
+      "pnl": -18.96,
+      "pnl_pct": -2.61,
+      "allocation_pct": 7.19
     },
     {
       "ticker": "AIR.PA",
       "name": "Airbus",
       "quantity": 1.14,
       "avg_price": 175.42,
-      "current_price": 176.30,
-      "market_value": 201.08,
-      "pnl": 1.00,
-      "pnl_pct": 0.50,
-      "allocation_pct": 2.02
+      "current_price": 172.06,
+      "market_value": 196.24,
+      "pnl": -3.83,
+      "pnl_pct": -1.92,
+      "allocation_pct": 1.99
     },
     {
       "ticker": "DG.PA",
       "name": "Vinci",
       "quantity": 1.49,
       "avg_price": 127.35,
-      "current_price": 130.15,
-      "market_value": 194.25,
-      "pnl": 4.18,
-      "pnl_pct": 2.20,
-      "allocation_pct": 1.95
+      "current_price": 130.10,
+      "market_value": 194.17,
+      "pnl": 4.10,
+      "pnl_pct": 2.16,
+      "allocation_pct": 1.97
     },
     {
       "ticker": "OR.PA",
       "name": "L'Oreal",
       "quantity": 1.46,
       "avg_price": 362.22,
-      "current_price": 359.75,
-      "market_value": 526.70,
-      "pnl": -3.61,
-      "pnl_pct": -0.68,
-      "allocation_pct": 5.29
+      "current_price": 358.75,
+      "market_value": 525.24,
+      "pnl": -5.07,
+      "pnl_pct": -0.96,
+      "allocation_pct": 5.34
+    },
+    {
+      "ticker": "MC.PA",
+      "name": "LVMH",
+      "quantity": 1.51,
+      "avg_price": 495.00,
+      "current_price": 495.00,
+      "market_value": 749.75,
+      "pnl": 0.00,
+      "pnl_pct": 0.00,
+      "allocation_pct": 7.62
+    },
+    {
+      "ticker": "GWX",
+      "name": "SPDR S&P International Small Cap",
+      "quantity": 15.48,
+      "avg_price": 42.63,
+      "current_price": 42.63,
+      "market_value": 659.78,
+      "pnl": 0.00,
+      "pnl_pct": 0.00,
+      "allocation_pct": 6.70
     }
   ],
   "last_trade": {
-    "date": "2026-03-11",
-    "ticker": "SGO.PA",
+    "date": "2026-03-12",
+    "ticker": "MC.PA",
     "action": "buy",
-    "price": 73.36,
-    "amount": 428.80,
-    "reasoning": "Mean reversion opportunity: SGO.PA shows extreme capitulation with RSI 17.1 and Bollinger position 0.13 (near lower band)"
+    "price": 495.00,
+    "amount": 749.75,
+    "reasoning": "Mean reversion on LVMH — RSI 19.5, extreme oversold in luxury sector"
   }
 }
