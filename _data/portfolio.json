@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-13T08:05:06",
+  "last_updated": "2026-03-13T16:35:00",
   "starting_capital": 10000.00,
-  "cash": 4838.36,
+  "cash": 5534.29,
   "total_value": 9844.89,
   "total_return_pct": -1.55,
-  "total_realized_pnl": -81.34,
+  "total_realized_pnl": -275.73,
   "days_active": 11,
   "positions": [
     {
@@ -12,99 +12,99 @@
       "name": "Gold ETF",
       "quantity": 1.16,
       "avg_price": 477.46,
-      "current_price": 466.98,
-      "market_value": 544.01,
-      "pnl": -12.21,
-      "pnl_pct": -2.19,
-      "allocation_pct": 5.52
+      "current_price": 463.49,
+      "market_value": 539.95,
+      "pnl": -16.29,
+      "pnl_pct": -2.93,
+      "allocation_pct": 5.48
     },
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
       "quantity": 6.31,
       "avg_price": 89.43,
-      "current_price": 86.97,
-      "market_value": 548.73,
-      "pnl": -15.52,
-      "pnl_pct": -2.75,
-      "allocation_pct": 5.57
+      "current_price": 86.53,
+      "market_value": 546.15,
+      "pnl": -18.34,
+      "pnl_pct": -3.24,
+      "allocation_pct": 5.55
     },
     {
       "ticker": "FEZ",
       "name": "Euro Stoxx 50 ETF",
-      "quantity": 7.80,
+      "quantity": 3.90,
       "avg_price": 65.14,
-      "current_price": 62.71,
-      "market_value": 488.88,
-      "pnl": -18.94,
-      "pnl_pct": -3.73,
-      "allocation_pct": 4.96
+      "current_price": 62.06,
+      "market_value": 241.91,
+      "pnl": -12.01,
+      "pnl_pct": -4.73,
+      "allocation_pct": 2.46
     },
     {
       "ticker": "RMS.PA",
       "name": "Hermes",
       "quantity": 0.21,
       "avg_price": 1916.80,
-      "current_price": 1902.00,
-      "market_value": 392.20,
-      "pnl": -3.05,
-      "pnl_pct": -0.77,
-      "allocation_pct": 3.98
+      "current_price": 1875.00,
+      "market_value": 386.63,
+      "pnl": -8.62,
+      "pnl_pct": -2.18,
+      "allocation_pct": 3.93
     },
     {
       "ticker": "SGO.PA",
       "name": "Saint-Gobain",
       "quantity": 9.78,
       "avg_price": 74.30,
-      "current_price": 72.36,
-      "market_value": 707.54,
-      "pnl": -18.96,
-      "pnl_pct": -2.61,
-      "allocation_pct": 7.19
+      "current_price": 71.46,
+      "market_value": 698.75,
+      "pnl": -27.83,
+      "pnl_pct": -3.82,
+      "allocation_pct": 7.10
     },
     {
       "ticker": "AIR.PA",
       "name": "Airbus",
-      "quantity": 1.14,
+      "quantity": 0.57,
       "avg_price": 175.42,
-      "current_price": 172.06,
-      "market_value": 196.24,
-      "pnl": -3.83,
-      "pnl_pct": -1.92,
-      "allocation_pct": 1.99
+      "current_price": 168.48,
+      "market_value": 96.09,
+      "pnl": -3.96,
+      "pnl_pct": -3.96,
+      "allocation_pct": 0.98
     },
     {
       "ticker": "DG.PA",
       "name": "Vinci",
       "quantity": 1.49,
       "avg_price": 127.35,
-      "current_price": 130.10,
-      "market_value": 194.17,
-      "pnl": 4.10,
-      "pnl_pct": 2.16,
-      "allocation_pct": 1.97
+      "current_price": 130.32,
+      "market_value": 194.51,
+      "pnl": 4.43,
+      "pnl_pct": 2.34,
+      "allocation_pct": 1.98
     },
     {
       "ticker": "OR.PA",
       "name": "L'Oreal",
       "quantity": 1.46,
       "avg_price": 362.22,
-      "current_price": 358.75,
-      "market_value": 525.24,
-      "pnl": -5.07,
-      "pnl_pct": -0.96,
-      "allocation_pct": 5.34
+      "current_price": 352.73,
+      "market_value": 516.42,
+      "pnl": -13.89,
+      "pnl_pct": -2.62,
+      "allocation_pct": 5.25
     },
     {
       "ticker": "MC.PA",
       "name": "LVMH",
-      "quantity": 1.51,
+      "quantity": 0.76,
       "avg_price": 495.00,
-      "current_price": 495.00,
-      "market_value": 749.75,
-      "pnl": 0.00,
-      "pnl_pct": 0.00,
-      "allocation_pct": 7.62
+      "current_price": 472.65,
+      "market_value": 357.95,
+      "pnl": -16.94,
+      "pnl_pct": -4.52,
+      "allocation_pct": 3.64
     },
     {
       "ticker": "GWX",
@@ -119,11 +119,11 @@
     }
   ],
   "last_trade": {
-    "date": "2026-03-12",
-    "ticker": "MC.PA / GWX",
-    "action": "buy",
-    "price": 495.00,
-    "amount": 749.75,
-    "reasoning": "Trimming SPY position (currently -3.38% drawdown) by 25% to preemptively limit downside risk. Deploying capital into extreme mean-reversion opportunities: MC.PA (RSI 19.5, -11.89% drawdown) and GWX (RSI 21.9, -8.18% drawdown) with low correlation to SPY."
+    "date": "2026-03-13",
+    "ticker": "FEZ / MC.PA / AIR.PA",
+    "action": "sell",
+    "price": 62.06 / 472.65 / 168.48,
+    "amount": 695.94,
+    "reasoning": "Risk reduction intraday: portfolio drawdown atteint -3.00%, FEZ à -4.73% et MC.PA à -4.52% proches des stop-loss. Réduction de 50% sur ces 3 positions pour préserver le capital. Cash passe de 49% à 56%."
   }
 }
