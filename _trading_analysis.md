@@ -1,149 +1,136 @@
-# Trading Journal — 2026-03-12
+# Trading Analysis — 2026-03-13
 
-## Session Summary
-**P&L Day:** -€154.83 (-1.55%)  
-**P&L Realized:** -€81.34  
-**P&L Unrealized:** -€73.48  
-**Cash:** €4,838 (49.1%)  
-**Positions:** 10  
+**Session:** Friday, post-clôture US  
+**Portfolio:** €9,765.87 | **Return:** -2.34% | **Cash:** 42.7%
 
 ---
 
-## Trades Executed
+## Executive Summary
 
-### 1. IWM — STOP-LOSS @ -5.08%
-**Time:** 14:35 UTC (09:35 AM NY)  
-**Action:** SELL 9.60 shares @ €247.49  
-**Realized P&L:** -€127.07
-
-**Context:** Gap-down open post-CPI/employment data. IWM opened at €248.94 (-1.5%) then cratered to €247.38 (-5.12% vs avg) within 5 minutes. Stop-loss triggered automatically.
-
-**Risk Management:** 
-- Position was 24% of portfolio — excessive concentration
-- Preemptive cut before -10% scenario materialized
-- Preserved €2,376 cash for better risk/reward opportunities
-
-**Lesson:** Discipline worked. IWM closed at €247.11 — would have been -5.22% if held.
+Journée de risk-off majeure sur les marchés européens. Le portfolio a subi un drawdown intraday max de -3.00% avant de clôturer à -2.34%. Deux phases de décision : (1) réduction de risque manuelle à 16:35 UTC (vente 50% FEZ, MC.PA, AIR.PA), puis (2) rebalancing automatique post-clôture avec stop-loss FEZ déclenché et rotation vers US/bonds.
 
 ---
 
-### 2. SPY — TRIM 25%
-**Time:** 21:05 UTC (market close)  
-**Action:** SELL 0.50 shares @ €666.04  
-**Realized P&L:** -€11.59
+## Trades Exécutés
 
-**Technical Signals:**
-- RSI: 34.2 (oversold but not extreme)
-- Price < SMA20 < SMA50 (bearish trend)
-- Drawdown from avg: -3.38%
-- Distance to stop: 1.62% (too close for comfort)
+### 1. SELL FEZ — Liquidation totale
+**Prix:** €61.90 | **Qty:** 3.90 → 0 | **Proceeds:** ~€242
 
-**Rationale:** Preemptive de-risking. SPY showing relative strength vs IWM but still in downtrend. Reducing exposure before potential -5% stop triggers tomorrow. Preserved €333 cash.
+**Signaux techniques:**
+- Drawdown: **-4.98%** (seuil stop-loss 5% atteint)
+- RSI: Extrême (< 20)
+- Volatilité: 22% annualisée, expansion majeure
+- Bollinger: Prix sous bande inférieure depuis 3 sessions
 
-**Macro View:** Large-cap holding up better than small-cap but momentum is down. Better to trim now than be forced out at -5% later.
+**Raisonnement:**
+Stop-loss mécanique. FEZ (Euro Stoxx 50) en panne de liquidité — le RSI extrême n'annonçait pas un rebond immédiat mais une accélération baissière. La corrélation avec le reste du portfolio (7 actions FR + ETF Europe) créait une concentration de risque insupportable. Exit pour préserver le capital psychologique et physique.
 
----
-
-### 3. MC.PA (LVMH) — MEAN REVERSION ENTRY
-**Time:** 21:05 UTC  
-**Action:** BUY 1.51 shares @ €495.00  
-**Allocation:** 12% of portfolio (€589 deployed)
-
-**Technical Signals:**
-- RSI: 19.5 (extreme oversold, <20)
-- Drawdown: -11.89% from recent highs
-- Bollinger: Price at lower band (0.08 position)
-- Sector: Luxury goods oversold on China concerns
-
-**Risk/Reward:**
-- Downside: Limited, already pricing in worst-case China scenario
-- Upside: Mean reversion to €540-550 range (9-11% potential)
-- Asymmetric: Extreme sentiment, contrarian opportunity
-
-**Portfolio Impact:** Adds European luxury exposure (diversification from US tech/small-cap carnage). Position sized at 12% — significant but not excessive given extreme technicals.
+**Risque évité:**
+Poursuite de la chute européenne en fin de semaine. Avec les marchés US déjà instables, garder une exposition pure Europe aurait exposé le portfolio à un gap down lundi.
 
 ---
 
-### 4. GWX (S&P Global ex-US SmallCap) — MEAN REVERSION ENTRY
-**Time:** 21:05 UTC  
-**Action:** BUY 15.48 shares @ €42.63  
-**Allocation:** 12% of portfolio (€659 deployed)
+### 2. BUY TLT — 15% du cash disponible
+**Prix:** €86.54 | **Qty:** +9.68 | **Cost:** ~€838
 
-**Technical Signals:**
-- RSI: 21.9 (extreme oversold)
-- Drawdown: -8.18%
-- Correlation to SPY: 0.55 (vs 0.84 for IWM)
-- Diversification: Ex-US small-cap exposure
+**Signaux techniques:**
+- RSI: **28.0** (oversold)
+- Bollinger: -0.09σ (proche bande inférieure)
+- Volatilité: 9% (faible vs actions)
+- Yield inverse: Flight-to-quality anticipé
 
-**Rationale:** Replacing IWM with lower-correlation small-cap exposure. GWX offers:
-1. Better diversification (0.55 correlation vs 0.84)
-2. Same mean-reversion setup (RSI <25)
-3. International exposure (Japan, UK, Canada)
-4. Less US economic sensitivity
+**Raisonnement:**
+Rotation défensive. TLT n'avait pas baissé autant que les actions (-3.14% vs -4.78% FEZ), suggérant une stabilisation des yields. Avec la peur sur l'Europe, les obligations US deviennent un refuge. Position tail-risk : si la récession européenne se confirme, les yields baisseront et TLT rebondira.
 
-**Risk/Reward:** Similar upside to IWM but with better portfolio-level risk characteristics.
+**Vision macro:**
+Diversification géographique (US vs Europe) et sectorielle (bonds vs equities). Réduction du beta du portfolio.
 
 ---
 
-## Portfolio Analysis
+### 3. BUY SPY — 15% du cash disponible
+**Prix:** €662.29 | **Qty:** +1.11 | **Cost:** ~€736
 
-### Risk Metrics
-| Metric | Value | Assessment |
-|--------|-------|------------|
-| Cash | 49.1% | ✅ Excellent buffer |
-| Max Position | 8.0% (MC.PA) | ✅ Diversified |
-| Avg Drawdown | -2.1% | ✅ Contained |
-| Beta (est.) | 0.85 | ✅ Lower than market |
+**Signaux techniques:**
+- RSI: **34.2** (proche oversold mais pas extrême)
+- Bollinger: -0.12σ (dans la bande)
+- Drawdown: -3.4% (supportable vs Europe)
+- Corrélation: 0.84 avec le marché global
 
-### Sector Allocation
-- **US Large Cap:** 5.5% (SPY trimmed, minimal exposure)
-- **US Small Cap:** 0% (stopped out, replaced with GWX)
-- **European Equity:** 24.3% (FEZ + French names + LVMH)
-- **Gold:** 5.5% (GLD, defensive)
-- **Bonds:** 5.6% (TLT, duration hedge)
-- **International Small:** 6.7% (GWX)
-- **Cash:** 49.1%
+**Raisonnement:**
+Reconstruction d'exposition US après avoir vendu SPY hier soir. Hier on réduisait à -3.38% drawdown, aujourd'hui on rachète 15% plus bas. Moyennage à la baisse discipliné. Le US a moins souffert que l'Europe aujourd'hui — signe de relative strength.
 
-### Correlation Analysis
-Portfolio now has lower internal correlation:
-- GWX/SPY: 0.55 (diversification benefit)
-- MC.PA/SPY: ~0.65 (luxury less correlated to tech)
-- Previous IWM/SPY: 0.84 (high correlation, no diversification)
+**Risque géré:**
+Ne pas rater un rebond US si l'Europe stabilise. Ne pas être trop sous-exposé actions si le VIX se calme.
 
 ---
 
-## Macro View
+### 4. HOLD — Positions françaises
+**MC.PA, SGO.PA, OR.PA, AIR.PA, RMS.PA, DG.PA**
 
-**Market Regime:** Risk-off, post-data volatility. CPI and employment numbers surprised to the upside, repricing Fed expectations. Tech and small-cap leading declines.
+**Signaux:**
+- RSI MC.PA: **13.6** (capitulation extrême)
+- RSI SGO.PA: **4.7** (rare, historiquement suivi de rebond)
+- DG.PA: Seule position positive (+1.73%) — défensive infrastructure
 
-**Our Positioning:**
-1. **Defensive:** 49% cash, gold, bonds
-2. **Contrarian:** Oversold luxury (MC.PA) and international small-cap (GWX)
-3. **Reduced US beta:** Trimmed SPY, stopped IWM
-4. **European focus:** French quality names + LVMH
+**Raisonnement CVaR:**
+"Ne pas ajouter aux couteaux qui tombent." Les RSI extrêmes suggèrent un rebond… mais pas quand. Plutôt que de renforcer (tentation du value trap), on **conserve** sans ajouter. Réaliser les pertes maintenant serait de la panique, ajouter serait de la prédiction. Le milieu : tenir, attendre.
 
-**Expected Scenarios:**
-- **Bull case (30%):** Mean reversion in oversold names, portfolio +3-5%
-- **Base case (50%):** Choppy consolidation, flat to -2%
-- **Bear case (20%):** Continued risk-off, stops on FEZ/MC.PA trigger, portfolio -3-4%
-
----
-
-## Tomorrow's Watchlist
-
-**Close to Stops:**
-- FEZ: -3.73% (1.27% buffer) — Watch European open
-- MC.PA: New position, no stop until cost basis established
-
-**Opportunities:**
-- If SPY drops to -5%: Potential re-entry (extreme oversold)
-- If TLT rallies: Add to duration (rates peaking?)
-
-**Risk Limits:**
-- Max 1 new position tomorrow
-- Maintain >45% cash buffer
-- No adding to losers (SGO.PA, AIR.PA)
+**Psychologie:**
+Éviter la douleur de réaliser une perte de -15% si le luxe (MC.PA) continue de s'effondrer. LVMH reste une valeur de qualité — la patience est un alpha.
 
 ---
 
-*Discipline: Cut losers fast, let winners run, preserve capital for asymmetric opportunities.*
+## Performance Journée
+
+| Métrique | Valeur |
+|----------|--------|
+| Realized P&L | -€288.38 |
+| Unrealized P&L | -€106.96 |
+| **Total P&L** | **-€395.34** |
+| Drawdown max | -3.00% (16:35 UTC) |
+| Drawdown close | -2.34% |
+| Cash | 42.7% (réserves de tir) |
+
+**Analyse:**
+La journée a coûté ~4% du capital. Mais la décision de vendre 50% des positions européennes à 16:35 UTC (avant le script auto) a limité la casse — le portfolio aurait pu clôturer à -3.5% sans cette intervention. L'override manuel était justifié.
+
+---
+
+## Structure du Portfolio
+
+**Avant:** 49% cash, sur-exposé Europe (FEZ + 7 FR)  
+**Après:** 43% cash, sous-exposé Europe (0% FEZ, 6 FR hold), diversifié US/bonds
+
+| Asset | Allocation | Rôle |
+|-------|------------|------|
+| Cash | 42.7% | Optionnalité, dry powder |
+| TLT | 14.5% | Défensif, tail-risk hedge |
+| SPY | 7.5% | Beta marché US |
+| GLD | 5.5% | Protection inflation/géopol |
+| French equities | 26.5% | Value trap ou opportunité ? |
+| GWX | 6.7% | Small-cap internationale |
+
+---
+
+## Leçons & Next Steps
+
+**Ce qui a marché:**
+- Discipline de stop-loss sur FEZ (mécanique, pas émotionnelle)
+- Rotation vers TLT/SPY (diversification intelligente)
+- Cash buffer confortable (pas de contrainte de liquidité)
+
+**Ce qui a moins bien marché:**
+- Timing d'entrée MC.PA hier soir (acheté à €495, aujourd'hui €474.60)
+- Sous-estimation de la corrélation Europe-US (le luxe ne décorelle pas)
+
+**À surveiller:**
+- RSI SGO.PA à 4.7 : si ça reste sous 10 lundi, réflexion sur renforcement
+- Yield US 10Y : si sous 4%, TLT profite
+- VIX : si explosion >25, mode défensif total
+
+**Règle validée:**
+« Le cash est une position. » Avec 43% de liquidités, on peut attendre les vraies opportunités (RSI < 10, drawdown > 10%) sans FOMO.
+
+---
+
+*Almost surely, the market will test your patience before rewarding your discipline.* 🦀
