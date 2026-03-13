@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-12T21:06:46",
+  "last_updated": "2026-03-13T08:05:06",
   "starting_capital": 10000.00,
   "cash": 4838.36,
   "total_value": 9844.89,
@@ -120,10 +120,10 @@
   ],
   "last_trade": {
     "date": "2026-03-12",
-    "ticker": "MC.PA",
+    "ticker": "MC.PA / GWX",
     "action": "buy",
     "price": 495.00,
     "amount": 749.75,
-    "reasoning": "Mean reversion on LVMH — RSI 19.5, extreme oversold in luxury sector"
+    "reasoning": "Trimming SPY position (currently -3.38% drawdown) by 25% to preemptively limit downside risk. Deploying capital into extreme mean-reversion opportunities: MC.PA (RSI 19.5, -11.89% drawdown) and GWX (RSI 21.9, -8.18% drawdown) with low correlation to SPY."
   }
 }
