@@ -1,74 +1,63 @@
 {
-  "last_updated": "2026-03-13T16:35:00",
+  "last_updated": "2026-03-13T21:06:09",
   "starting_capital": 10000.00,
-  "cash": 5534.29,
-  "total_value": 9844.89,
-  "total_return_pct": -1.55,
-  "total_realized_pnl": -275.73,
+  "cash": 4172.84,
+  "total_value": 9765.87,
+  "total_return_pct": -2.34,
+  "total_realized_pnl": -288.38,
   "days_active": 11,
   "positions": [
     {
       "ticker": "GLD",
       "name": "Gold ETF",
-      "quantity": 1.16,
+      "quantity": 1.165,
       "avg_price": 477.46,
-      "current_price": 463.49,
-      "market_value": 539.95,
-      "pnl": -16.29,
-      "pnl_pct": -2.93,
-      "allocation_pct": 5.48
+      "current_price": 460.80,
+      "market_value": 536.81,
+      "pnl": -19.41,
+      "pnl_pct": -3.49,
+      "allocation_pct": 5.50
     },
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
-      "quantity": 6.31,
-      "avg_price": 89.43,
-      "current_price": 86.53,
-      "market_value": 546.15,
-      "pnl": -18.34,
-      "pnl_pct": -3.24,
-      "allocation_pct": 5.55
-    },
-    {
-      "ticker": "FEZ",
-      "name": "Euro Stoxx 50 ETF",
-      "quantity": 3.90,
-      "avg_price": 65.14,
-      "current_price": 62.06,
-      "market_value": 241.91,
-      "pnl": -12.01,
-      "pnl_pct": -4.73,
-      "allocation_pct": 2.46
+      "quantity": 16.32,
+      "avg_price": 87.66,
+      "current_price": 86.54,
+      "market_value": 1412.35,
+      "pnl": -18.23,
+      "pnl_pct": -1.27,
+      "allocation_pct": 14.46
     },
     {
       "ticker": "RMS.PA",
       "name": "Hermes",
-      "quantity": 0.21,
+      "quantity": 0.206,
       "avg_price": 1916.80,
-      "current_price": 1875.00,
-      "market_value": 386.63,
-      "pnl": -8.62,
-      "pnl_pct": -2.18,
-      "allocation_pct": 3.93
+      "current_price": 1878.00,
+      "market_value": 387.25,
+      "pnl": -8.00,
+      "pnl_pct": -2.02,
+      "allocation_pct": 3.97
     },
     {
       "ticker": "SGO.PA",
       "name": "Saint-Gobain",
-      "quantity": 9.78,
+      "quantity": 9.778,
       "avg_price": 74.30,
-      "current_price": 71.46,
-      "market_value": 698.75,
-      "pnl": -27.83,
-      "pnl_pct": -3.82,
-      "allocation_pct": 7.10
+      "current_price": 71.56,
+      "market_value": 699.72,
+      "pnl": -26.78,
+      "pnl_pct": -3.69,
+      "allocation_pct": 7.17
     },
     {
       "ticker": "AIR.PA",
       "name": "Airbus",
-      "quantity": 0.57,
+      "quantity": 0.570,
       "avg_price": 175.42,
       "current_price": 168.48,
-      "market_value": 96.09,
+      "market_value": 96.08,
       "pnl": -3.96,
       "pnl_pct": -3.96,
       "allocation_pct": 0.98
@@ -76,54 +65,65 @@
     {
       "ticker": "DG.PA",
       "name": "Vinci",
-      "quantity": 1.49,
+      "quantity": 1.493,
       "avg_price": 127.35,
-      "current_price": 130.32,
-      "market_value": 194.51,
-      "pnl": 4.43,
-      "pnl_pct": 2.34,
+      "current_price": 129.55,
+      "market_value": 193.35,
+      "pnl": 3.28,
+      "pnl_pct": 1.73,
       "allocation_pct": 1.98
     },
     {
       "ticker": "OR.PA",
       "name": "L'Oreal",
-      "quantity": 1.46,
+      "quantity": 1.464,
       "avg_price": 362.22,
-      "current_price": 352.73,
-      "market_value": 516.42,
-      "pnl": -13.89,
-      "pnl_pct": -2.62,
-      "allocation_pct": 5.25
+      "current_price": 353.55,
+      "market_value": 517.62,
+      "pnl": -12.69,
+      "pnl_pct": -2.39,
+      "allocation_pct": 5.30
     },
     {
       "ticker": "MC.PA",
       "name": "LVMH",
-      "quantity": 0.76,
+      "quantity": 0.757,
       "avg_price": 495.00,
-      "current_price": 472.65,
-      "market_value": 357.95,
-      "pnl": -16.94,
-      "pnl_pct": -4.52,
-      "allocation_pct": 3.64
+      "current_price": 474.60,
+      "market_value": 359.42,
+      "pnl": -15.45,
+      "pnl_pct": -4.12,
+      "allocation_pct": 3.68
     },
     {
       "ticker": "GWX",
       "name": "SPDR S&P International Small Cap",
-      "quantity": 15.48,
+      "quantity": 15.477,
       "avg_price": 42.63,
-      "current_price": 42.63,
-      "market_value": 659.78,
+      "current_price": 42.26,
+      "market_value": 654.05,
+      "pnl": -5.73,
+      "pnl_pct": -0.87,
+      "allocation_pct": 6.70
+    },
+    {
+      "ticker": "SPY",
+      "name": "S&P 500 ETF",
+      "quantity": 1.112,
+      "avg_price": 662.29,
+      "current_price": 662.29,
+      "market_value": 736.38,
       "pnl": 0.00,
       "pnl_pct": 0.00,
-      "allocation_pct": 6.70
+      "allocation_pct": 7.54
     }
   ],
   "last_trade": {
     "date": "2026-03-13",
-    "ticker": "FEZ / MC.PA / AIR.PA",
+    "ticker": "FEZ",
     "action": "sell",
-    "price": 62.06 / 472.65 / 168.48,
-    "amount": 695.94,
-    "reasoning": "Risk reduction intraday: portfolio drawdown atteint -3.00%, FEZ à -4.73% et MC.PA à -4.52% proches des stop-loss. Réduction de 50% sur ces 3 positions pour préserver le capital. Cash passe de 49% à 56%."
+    "price": 61.90,
+    "amount": 100,
+    "reasoning": "Stop-loss triggered: -4.98% drawdown breaching 5% threshold. Exiting European equity concentration to preserve capital."
   }
 }
