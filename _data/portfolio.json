@@ -1,12 +1,34 @@
 {
-  "last_updated": "2026-03-13T21:06:09",
+  "last_updated": "2026-03-16T08:30:00",
   "starting_capital": 10000.00,
   "cash": 4172.84,
   "total_value": 9765.87,
   "total_return_pct": -2.34,
   "total_realized_pnl": -288.38,
-  "days_active": 11,
+  "days_active": 14,
   "positions": [
+    {
+      "ticker": "SPY",
+      "name": "S&P 500 ETF",
+      "quantity": 1.112,
+      "avg_price": 662.29,
+      "current_price": 662.29,
+      "market_value": 736.38,
+      "pnl": 0.00,
+      "pnl_pct": 0.00,
+      "allocation_pct": 7.54
+    },
+    {
+      "ticker": "TLT",
+      "name": "US Bonds ETF",
+      "quantity": 16.320,
+      "avg_price": 87.66,
+      "current_price": 86.54,
+      "market_value": 1412.35,
+      "pnl": -18.23,
+      "pnl_pct": -1.27,
+      "allocation_pct": 14.46
+    },
     {
       "ticker": "GLD",
       "name": "Gold ETF",
@@ -19,15 +41,26 @@
       "allocation_pct": 5.50
     },
     {
-      "ticker": "TLT",
-      "name": "US Bonds ETF",
-      "quantity": 16.32,
-      "avg_price": 87.66,
-      "current_price": 86.54,
-      "market_value": 1412.35,
-      "pnl": -18.23,
-      "pnl_pct": -1.27,
-      "allocation_pct": 14.46
+      "ticker": "GWX",
+      "name": "SPDR S&P International Small Cap",
+      "quantity": 15.477,
+      "avg_price": 42.63,
+      "current_price": 42.26,
+      "market_value": 654.05,
+      "pnl": -5.73,
+      "pnl_pct": -0.87,
+      "allocation_pct": 6.70
+    },
+    {
+      "ticker": "MC.PA",
+      "name": "LVMH",
+      "quantity": 0.757,
+      "avg_price": 495.00,
+      "current_price": 474.60,
+      "market_value": 359.42,
+      "pnl": -15.45,
+      "pnl_pct": -4.12,
+      "allocation_pct": 3.68
     },
     {
       "ticker": "RMS.PA",
@@ -83,39 +116,6 @@
       "pnl": -12.69,
       "pnl_pct": -2.39,
       "allocation_pct": 5.30
-    },
-    {
-      "ticker": "MC.PA",
-      "name": "LVMH",
-      "quantity": 0.757,
-      "avg_price": 495.00,
-      "current_price": 474.60,
-      "market_value": 359.42,
-      "pnl": -15.45,
-      "pnl_pct": -4.12,
-      "allocation_pct": 3.68
-    },
-    {
-      "ticker": "GWX",
-      "name": "SPDR S&P International Small Cap",
-      "quantity": 15.477,
-      "avg_price": 42.63,
-      "current_price": 42.26,
-      "market_value": 654.05,
-      "pnl": -5.73,
-      "pnl_pct": -0.87,
-      "allocation_pct": 6.70
-    },
-    {
-      "ticker": "SPY",
-      "name": "S&P 500 ETF",
-      "quantity": 1.112,
-      "avg_price": 662.29,
-      "current_price": 662.29,
-      "market_value": 736.38,
-      "pnl": 0.00,
-      "pnl_pct": 0.00,
-      "allocation_pct": 7.54
     }
   ],
   "last_trade": {
@@ -123,7 +123,7 @@
     "ticker": "FEZ",
     "action": "sell",
     "price": 61.90,
-    "amount": 100,
-    "reasoning": "Stop-loss triggered: -4.98% drawdown breaching 5% threshold. Exiting European equity concentration to preserve capital."
+    "amount": 1361.45,
+    "reasoning": "Stop-loss at -5% triggered. Exiting European equity concentration, deploying to TLT + SPY for defensive positioning."
   }
 }
