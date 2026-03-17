@@ -1,24 +1,22 @@
 {
-  "last_updated": "2026-03-17T16:35:00",
+  "last_updated": "2026-03-17T21:08:00",
   "starting_capital": 10000.00,
-  "cash": 3192.22,
-  "total_value": 9794.52,
-  "total_return_pct": -2.05,
-  "total_realized_pnl": -288.38,
-  "days_active": 11,
+  "cash": 3608.11,
+  "total_value": 9793.21,
+  "total_return_pct": -2.07,
+  "total_realized_pnl": -337.13,
+  "days_active": 20,
   "positions": [
-    {"ticker": "SPY", "name": "S&P 500 ETF", "quantity": 1.11, "avg_price": 662.29, "current_price": 668.96, "market_value": 743.80, "pnl": 7.42, "pnl_pct": 1.01, "allocation_pct": 7.6},
-    {"ticker": "GLD", "name": "Gold ETF", "quantity": 1.16, "avg_price": 477.46, "current_price": 459.64, "market_value": 536.40, "pnl": -19.82, "pnl_pct": -3.73, "allocation_pct": 5.5},
-    {"ticker": "TLT", "name": "US Bonds ETF", "quantity": 16.32, "avg_price": 87.66, "current_price": 87.21, "market_value": 1423.28, "pnl": -7.30, "pnl_pct": -0.51, "allocation_pct": 14.5},
-    {"ticker": "IWM", "name": "iShares Russell 2000", "quantity": 2.51, "avg_price": 248.92, "current_price": 248.92, "market_value": 625.93, "pnl": 0.0, "pnl_pct": 0.0, "allocation_pct": 6.4},
-    {"ticker": "FEZ", "name": "Euro Stoxx 50 ETF", "quantity": 5.64, "avg_price": 62.88, "current_price": 62.88, "market_value": 354.69, "pnl": 0.0, "pnl_pct": 0.0, "allocation_pct": 3.6},
-    {"ticker": "GWX", "name": "SPDR S&P International Small Cap", "quantity": 15.48, "avg_price": 42.63, "current_price": 43.02, "market_value": 665.76, "pnl": 5.98, "pnl_pct": 0.91, "allocation_pct": 6.8},
-    {"ticker": "MC.PA", "name": "LVMH", "quantity": 0.76, "avg_price": 495.00, "current_price": 472.00, "market_value": 362.57, "pnl": -12.31, "pnl_pct": -4.65, "allocation_pct": 3.7},
-    {"ticker": "RMS.PA", "name": "Hermes", "quantity": 0.21, "avg_price": 1916.80, "current_price": 1846.50, "market_value": 388.59, "pnl": -6.66, "pnl_pct": -3.67, "allocation_pct": 4.0},
-    {"ticker": "OR.PA", "name": "L'Oreal", "quantity": 1.46, "avg_price": 362.22, "current_price": 352.55, "market_value": 513.52, "pnl": -16.79, "pnl_pct": -2.67, "allocation_pct": 5.2},
-    {"ticker": "AIR.PA", "name": "Airbus", "quantity": 0.57, "avg_price": 175.42, "current_price": 170.34, "market_value": 96.87, "pnl": -3.17, "pnl_pct": -2.90, "allocation_pct": 1.0},
-    {"ticker": "DG.PA", "name": "Vinci", "quantity": 1.49, "avg_price": 127.35, "current_price": 130.50, "market_value": 193.13, "pnl": 3.06, "pnl_pct": 2.47, "allocation_pct": 2.0},
-    {"ticker": "SGO.PA", "name": "Saint-Gobain", "quantity": 9.78, "avg_price": 74.30, "current_price": 71.36, "market_value": 697.77, "pnl": -28.73, "pnl_pct": -3.96, "allocation_pct": 7.1}
+    {"ticker": "SPY", "name": "S&P 500 ETF", "quantity": 1.11, "avg_price": 662.29, "current_price": 670.73, "market_value": 745.77, "pnl": 9.38, "pnl_pct": 1.27, "allocation_pct": 7.6},
+    {"ticker": "GLD", "name": "Gold ETF", "quantity": 1.16, "avg_price": 477.46, "current_price": 459.30, "market_value": 535.06, "pnl": -21.16, "pnl_pct": -3.80, "allocation_pct": 5.5},
+    {"ticker": "TLT", "name": "US Bonds ETF", "quantity": 23.60, "avg_price": 87.60, "current_price": 87.46, "market_value": 2064.09, "pnl": -3.22, "pnl_pct": -0.16, "allocation_pct": 21.1},
+    {"ticker": "IWM", "name": "iShares Russell 2000", "quantity": 2.51, "avg_price": 248.92, "current_price": 250.08, "market_value": 628.84, "pnl": 2.92, "pnl_pct": 0.47, "allocation_pct": 6.4},
+    {"ticker": "FEZ", "name": "Euro Stoxx 50 ETF", "quantity": 5.64, "avg_price": 62.88, "current_price": 63.17, "market_value": 356.33, "pnl": 1.64, "pnl_pct": 0.46, "allocation_pct": 3.6},
+    {"ticker": "GWX", "name": "SPDR S&P International Small Cap", "quantity": 15.48, "avg_price": 42.63, "current_price": 43.17, "market_value": 668.76, "pnl": 8.32, "pnl_pct": 1.26, "allocation_pct": 6.8},
+    {"ticker": "RMS.PA", "name": "Hermes", "quantity": 0.21, "avg_price": 1916.80, "current_price": 1842.50, "market_value": 379.93, "pnl": -15.32, "pnl_pct": -3.88, "allocation_pct": 3.9},
+    {"ticker": "OR.PA", "name": "L'Oreal", "quantity": 1.46, "avg_price": 362.22, "current_price": 352.00, "market_value": 515.35, "pnl": -14.96, "pnl_pct": -2.82, "allocation_pct": 5.3},
+    {"ticker": "AIR.PA", "name": "Airbus", "quantity": 0.57, "avg_price": 175.42, "current_price": 170.24, "market_value": 97.08, "pnl": -2.95, "pnl_pct": -2.95, "allocation_pct": 1.0},
+    {"ticker": "DG.PA", "name": "Vinci", "quantity": 1.49, "avg_price": 127.35, "current_price": 130.35, "market_value": 194.55, "pnl": 4.48, "pnl_pct": 2.36, "allocation_pct": 2.0}
   ],
-  "last_trade": {"date": "2026-03-16", "ticker": "IWM", "action": "buy", "price": 248.92, "amount": 625.93, "reasoning": "Mean reversion: RSI 31.8 + Bollinger proximity, diversifies US equity factor exposure"}
+  "last_trade": {"date": "2026-03-17", "ticker": "TLT", "action": "buy", "price": 87.46, "amount": 979.89, "reasoning": "Defensive rebalancing — added bond duration as portfolio ballast"}
 }
