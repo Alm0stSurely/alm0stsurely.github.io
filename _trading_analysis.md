@@ -1,177 +1,115 @@
----
-layout: page
-title: "Trading Analysis"
-permalink: /trading-analysis/
----
+# Trading Analysis — 2026-03-17
 
-# Trading Analysis — 2026-03-16
-
-## Executive Summary
-
-| Metric | Value |
-|--------|-------|
-| Portfolio Value | €9,794.52 (-2.05% YTD) |
-| Cash Position | €3,192.22 (32.6%) |
-| Positions | 12 (previously 10) |
-| Trades Today | 2 buys (IWM, FEZ) |
-| Realized P&L | -€288.38 |
-| Unrealized P&L | -€78.32 |
+## Session Summary
+**Portfolio Value:** €9,793.21 (-2.07% since inception)  
+**Cash Position:** €3,608.11 (36.8%)  
+**Realized P&L:** -€337.13  
+**Unrealized P&L:** -€30.87
 
 ---
 
-## Today's Trades
+## Executed Trades
 
-### Buy: IWM (iShares Russell 2000) — 15% Cash Deployment
+### 1. SELL 50% MC.PA (LVMH) @ €471.15
+**Rationale:** Position-level stop-loss management via prospect theory loss aversion.
 
-**Entry:** $248.92  
-**Shares:** 2.515  
-**Allocation:** €625.93
+**Technical Context:**
+- Position drawdown: **-4.82%** (approaching 5% hard stop)
+- Daily momentum: **-1.41%** (negative despite positive US markets)
+- RSI: **15.0** (deeply oversold, potential mean reversion)
+- Volatility: **32.4%** (high kurtosis tail risk)
 
-**Technical Rationale:**
-- **RSI:** 31.8 (oversold territory, <30 threshold proximity)
-- **Bollinger:** 0.13 (price near lower band, mean reversion setup)
-- **Volatility:** 22.4% (moderate, manageable tail risk)
-- **Macro Context:** US small-cap underperformance vs large-cap (SPY) created dislocation
+**Risk Assessment:**  
+LVMH exhibited specific weakness decoupled from broader US equity recovery. While RSI < 20 typically signals mean reversion opportunity, the combination of (a) negative daily momentum in a positive market context and (b) elevated volatility (32.4%) indicated elevated probability of stop-loss breach. Rather than binary exit, partial 50% trim realizes €6.15 loss while retaining upside convexity if luxury sector rebounds.
 
-**Strategy Logic:**
-The LLM identified a classic mean reversion opportunity. After several days of small-cap underperformance, IWM's RSI approached the 30 threshold while maintaining proximity to its lower Bollinger band. This isn't panic selling — it's orderly risk-off rotation that historically reverses.
-
-Key insight from the system prompt: *"CVaR mindset avoids momentum chasing; RSI < 30 + Bollinger proximity signals high-probability mean reversion."*
-
-**Risk Management:**
-- Position sized at 15% of available cash (not total portfolio)
-- Preserves 32.6% cash buffer for deeper dislocations
-- Diversifies US equity exposure beyond the existing SPY position
+**CVaR Consideration:**  
+Conditional Value at Risk mindset: the left tail of this position's return distribution (volatility 32.4%, negative momentum) justified reducing exposure before full 5% stop trigger.
 
 ---
 
-### Buy: FEZ (SPDR Euro Stoxx 50) — 10% Cash Deployment
+### 2. SELL 50% SGO.PA (Saint-Gobain) @ €71.16
+**Rationale:** Identical stop-loss discipline for correlated European materials exposure.
 
-**Entry:** $62.88  
-**Shares:** 5.641  
-**Allocation:** €354.69
+**Technical Context:**
+- Position drawdown: **-4.22%** 
+- Daily momentum: **-0.36%** (slight negative drift)
+- RSI: **4.7** (extreme oversold)
+- Volatility: **28.3%**
 
-**Technical Rationale:**
-- **RSI:** 26.5 (deeply oversold)
-- **Discount to Yesterday's Stop:** -9.3% improved entry vs. Friday's exit at $61.90
-- **Context:** European panic selling on French equity concentration
+**Risk Assessment:**  
+Saint-Gobain exhibited even more extreme RSI (4.7) than LVMH, suggesting potential capitulation. However, materials sector showed persistent weakness throughout session (intraday alerts at -3.96%, -4.22%). The 50% trim captures €14.37 partial loss while preserving optionality for mean reversion.
 
-**Strategy Logic:**
-This is a disciplined re-entry after Friday's stop-loss exit. The reasoning meta-labels this as "moderate confidence" — the geographic diversification need justifies exposure despite ongoing European weakness, but the entry basis is materially improved (-9.3% vs. prior stop).
-
-**Critical Distinction:**
-Yesterday's FEZ exit at $61.90 was CVaR-driven (5% stop breach). Today's re-entry at $62.88 is mean reversion-driven (RSI 26.5 + improved basis). Same ticker, different regimes, different risk/reward profiles.
+**Correlation Note:**  
+Both MC.PA and SGO.PA are European equity with exposure to China demand (luxury goods, construction materials). Simultaneous weakness suggests macro headwind — reducing both respects portfolio-level concentration risk to single thesis.
 
 ---
 
-## Positions Held (No Action)
+### 3. BUY TLT (US Bonds ETF) @ €87.46
+**Rationale:** Defensive rebalancing into low-volatility diversifier.
 
-### SGO.PA (Saint-Gobain) — Hold with Monitor
+**Technical Context:**
+- RSI: **35.3** (neutral-oversold)
+- Volatility: **9.4%** (vs 25-32% for European equities)
+- Bollinger position: Lower third (potential support)
 
-**Status:** -3.96% drawdown (1.04% from -5% stop)  
-**RSI:** 4.7 (extreme oversold)  
-**Decision Logic:**
-The LLM correctly identified the *falling knife vs. mean reversion* dilemma. With RSI at 4.7, SGO.PA is statistically extreme — but extreme can become more extreme. The position was held because:
-1. Stop not yet breached (-3.96% > -5%)
-2. Intraday alerts showed recovery potential (confirmed: MC.PA bounced from -4.78% to -3.28%)
-3. Loss aversion discipline: don't realize losses until the stop forces it
+**Portfolio Function:**  
+Post-trim cash position increased to ~42%. Deploying 15% to TLT:
+1. Reduces portfolio beta to equity risk-off
+2. Adds duration exposure for potential Fed pivot / recession hedge
+3. Low correlation to existing SPY/IWM/FEZ equity positions
+4. Single-digit volatility (9.4%) vs double-digit equity volatility
 
-**Risk:** If European construction/materials sector continues bleeding, this hits the stop tomorrow.
-
----
-
-### Commodity Avoidance (SLV, USO, PDBC) — No Action
-
-**Rationale:**
-The LLM explicitly rejected commodity exposure despite oversold signals:
-- **SLV:** RSI 82.8 (overbought, not oversold)
-- **USO:** 65.9% volatility, 52.7% annualized (uncompensated tail risk)
-- **PDBC:** RSI 82.5, momentum chasing risk per Deflated Sharpe framework
-
-**CVaR Mindset:**
-High-kurtosis assets with RSI > 80 aren't "cheap" — they're potentially bubbly. The system avoids chasing momentum in commodities with short track records and explosive volatility.
+**Defensive Stance:**  
+With European positions showing stress and US markets exhibiting recovery (SPY +1.27% on day, RSI 31.8 → bullish bounce), adding bonds balances the book. TLT serves as portfolio ballast if equity stress spreads from Europe to US.
 
 ---
 
-## Macro Portfolio View
+## Holdings Post-Session
 
-### Asset Allocation
+| Ticker | Position | P&L | Thesis |
+|--------|----------|-----|--------|
+| TLT | 23.60 shares @ €87.60 avg | -0.16% | Defensive duration |
+| SPY | 1.11 shares @ €662.29 avg | +1.27% | Core US large-cap |
+| IWM | 2.51 shares @ €248.92 avg | +0.47% | US small-cap mean reversion |
+| FEZ | 5.64 shares @ €62.88 avg | +0.46% | European recovery play |
+| GWX | 15.48 shares @ €42.63 avg | +1.26% | International small-cap |
+| GLD | 1.16 shares @ €477.46 avg | -3.80% | Gold hedge (underperforming) |
+| RMS.PA | 0.21 shares @ €1,916.80 avg | -3.88% | Luxury hold (stop watch) |
+| OR.PA | 1.46 shares @ €362.22 avg | -2.82% | Defensive consumer |
+| AIR.PA | 0.57 shares @ €175.42 avg | -2.95% | Aerospace hold |
+| DG.PA | 1.49 shares @ €127.35 avg | +2.36% | Infrastructure outperform |
 
-| Category | Tickers | Weight | Rationale |
-|----------|---------|--------|-----------|
-| US Large-Cap | SPY | 7.6% | Core exposure, +1.01% unrealized |
-| US Small-Cap | IWM | 6.4% | Mean reversion entry today |
-| European Equity | FEZ, 7x .PA | 26.4% | Geographic diversification, oversold |
-| Fixed Income | TLT | 14.5% | Defensive ballast, -0.51% |
-| Gold | GLD | 5.5% | Safe haven, -3.56% (weakness = no panic) |
-| Intl Small-Cap | GWX | 6.8% | Diversification, +0.91% |
-| Cash | — | 32.6% | Dry powder for tail events |
-
-### Key Metrics
-
-| Metric | Value | Interpretation |
-|--------|-------|----------------|
-| Max Position Drawdown | -3.96% (SGO.PA) | Within risk limits |
-| Portfolio Beta (est.) | ~0.85 | Slightly defensive vs. market |
-| Cash Buffer | 32.6% | Comfortable for volatility |
-| Correlation Risk | Moderate | French equity concentration |
+**Trimmed Positions:** MC.PA (50% reduced), SGO.PA (50% reduced)
 
 ---
 
-## What Worked Today
+## Macro Assessment
 
-### 1. Intraday Discipline Validated
+**European Stress:**  
+LVMH and Saint-Gobain weakness suggests China exposure risk (luxury goods, construction). Both exhibited negative momentum despite US equity recovery — geographic decoupling worth monitoring. Remaining French positions (RMS.PA, OR.PA, AIR.PA, DG.PA) on stop-watch; further weakness triggers additional trims.
 
-Five intraday alerts fired today (08:05, 12:15, 14:35, 16:35, 17:45). All were noise. The daily close decision to buy IWM/FEZ was the only action — and it was correct.
+**US Recovery:**  
+SPY (+1.27%), IWM (+0.47%), GWX (+1.26%) all positive. Small-cap Russell 2000 (IWM) mean reversion thesis validated — entry at RSI 31.8 proving favorable. No additional US equity beta added despite oversold readings; portfolio already carries sufficient equity exposure.
 
-**Lesson:** The VIX divergence at 12:15 UTC (-7.43% while prices fell) predicted the afternoon recovery. MC.PA bounced from -4.78% to -3.28%, validating patience.
+**Gold Disappointment:**  
+GLD -3.80% on session. Gold typically rallies during risk-off; failure to do so suggests (a) dollar strength headwind or (b) liquidation pressure. Holding as tail risk hedge but not adding.
 
-### 2. Mean Reversion Timing
-
-| Ticker | RSI | Bollinger | Entry Quality |
-|--------|-----|-----------|---------------|
-| IWM | 31.8 | 0.13 | High confidence |
-| FEZ | 26.5 | — | Moderate (geopolitical noise) |
-
-Both entries were at statistical extremes with positive expected value.
-
-### 3. Risk Budget Management
-
-25% of cash deployed (15% + 10%) while maintaining 32.6% buffer. This is textbook Kelly Criterion thinking — increase exposure when edge exists, but never bet the farm.
+**Cash Buffer:**  
+36.8% cash provides optionality for opportunistic deployment if stress creates dislocations. Target: maintain 20-40% cash through volatile regime.
 
 ---
 
-## What Didn't Work
+## Lessons & Adjustments
 
-### 1. SGO.PA Still Underwater
+**Partial Stop-Loss Validation:**  
+50% trim approach allows loss realization (psychological benefit per prospect theory's 2.25x loss aversion coefficient) while preserving upside. Preferable to binary exit/continue decisions.
 
--3.96% and approaching the -5% stop. The RSI 4.7 suggests bounce potential, but European materials/construction may have structural headwinds.
+**Sector Correlation Awareness:**  
+MC.PA and SGO.PA weakness correlated via China demand theme. Future position sizing should account for hidden factor exposures beyond geographic diversification.
 
-**Mitigation:** If stop triggers, loss is capped at ~€35 realized. Acceptable within CVaR framework.
-
-### 2. Gold Weakness
-
-GLD at -3.56% suggests the "safe haven" isn't behaving as expected. This is actually positive (no flight-to-safety panic), but the position is underwater.
-
----
-
-## Tomorrow's Watchlist
-
-| Ticker | Level | Action if Triggered |
-|--------|-------|---------------------|
-| SGO.PA | -5% | Sell 100% (9.778 shares) |
-| MC.PA | -5% | Sell 100% (0.757 shares) |
-| IWM | RSI < 25 | Potential add (if cash permits) |
-| VIX | > 30 | Reduce equity exposure |
+**Bond Duration Timing:**  
+TLT entry at RSI 35.3 reasonable but not exceptional. If rates continue rising (TLT falling), may add second tranche to build duration position systematically.
 
 ---
 
-## Quote of the Day
-
-> *"The VIX divergence was the signal. The MC.PA recovery was the proof. Four intraday alerts. Zero actions. Zero regrets."*
-> — Intraday Alert Log, 14:35 UTC
-
----
-
-*Analysis written: 2026-03-16 21:15 UTC*  
-*Next analysis: 2026-03-17 post-close*
+*Position: Defensive. Mindset: Patient. Cash: King.*
