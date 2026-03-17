@@ -5,23 +5,23 @@
   "total_value": 9794.52,
   "total_return_pct": -2.05,
   "total_realized_pnl": -288.38,
-  "days_active": 15,
+  "days_active": 11,
   "positions": [
     {
       "ticker": "SPY",
       "name": "S&P 500 ETF",
-      "quantity": 1.112,
+      "quantity": 1.11,
       "avg_price": 662.29,
       "current_price": 668.96,
       "market_value": 743.80,
       "pnl": 7.42,
       "pnl_pct": 1.01,
-      "allocation_pct": 7.59
+      "allocation_pct": 7.60
     },
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
-      "quantity": 16.320,
+      "quantity": 16.32,
       "avg_price": 87.66,
       "current_price": 87.21,
       "market_value": 1423.28,
@@ -32,7 +32,7 @@
     {
       "ticker": "GLD",
       "name": "Gold ETF",
-      "quantity": 1.165,
+      "quantity": 1.16,
       "avg_price": 477.46,
       "current_price": 460.45,
       "market_value": 536.40,
@@ -41,86 +41,9 @@
       "allocation_pct": 5.48
     },
     {
-      "ticker": "GWX",
-      "name": "SPDR S&P International Small Cap",
-      "quantity": 15.477,
-      "avg_price": 42.63,
-      "current_price": 43.02,
-      "market_value": 665.76,
-      "pnl": 5.98,
-      "pnl_pct": 0.91,
-      "allocation_pct": 6.80
-    },
-    {
-      "ticker": "MC.PA",
-      "name": "LVMH",
-      "quantity": 0.757,
-      "avg_price": 495.00,
-      "current_price": 478.75,
-      "market_value": 362.57,
-      "pnl": -12.31,
-      "pnl_pct": -3.28,
-      "allocation_pct": 3.70
-    },
-    {
-      "ticker": "RMS.PA",
-      "name": "Hermes",
-      "quantity": 0.206,
-      "avg_price": 1916.80,
-      "current_price": 1884.50,
-      "market_value": 388.59,
-      "pnl": -6.66,
-      "pnl_pct": -1.69,
-      "allocation_pct": 3.97
-    },
-    {
-      "ticker": "SGO.PA",
-      "name": "Saint-Gobain",
-      "quantity": 9.778,
-      "avg_price": 74.30,
-      "current_price": 71.36,
-      "market_value": 697.77,
-      "pnl": -28.73,
-      "pnl_pct": -3.96,
-      "allocation_pct": 7.12
-    },
-    {
-      "ticker": "AIR.PA",
-      "name": "Airbus",
-      "quantity": 0.570,
-      "avg_price": 175.42,
-      "current_price": 169.86,
-      "market_value": 96.87,
-      "pnl": -3.17,
-      "pnl_pct": -3.17,
-      "allocation_pct": 0.99
-    },
-    {
-      "ticker": "DG.PA",
-      "name": "Vinci",
-      "quantity": 1.493,
-      "avg_price": 127.35,
-      "current_price": 129.40,
-      "market_value": 193.13,
-      "pnl": 3.06,
-      "pnl_pct": 1.61,
-      "allocation_pct": 1.97
-    },
-    {
-      "ticker": "OR.PA",
-      "name": "L'Oreal",
-      "quantity": 1.464,
-      "avg_price": 362.22,
-      "current_price": 350.75,
-      "market_value": 513.52,
-      "pnl": -16.79,
-      "pnl_pct": -3.17,
-      "allocation_pct": 5.24
-    },
-    {
       "ticker": "IWM",
       "name": "iShares Russell 2000",
-      "quantity": 2.515,
+      "quantity": 2.51,
       "avg_price": 248.92,
       "current_price": 248.92,
       "market_value": 625.93,
@@ -131,21 +54,98 @@
     {
       "ticker": "FEZ",
       "name": "Euro Stoxx 50 ETF",
-      "quantity": 5.641,
+      "quantity": 5.64,
       "avg_price": 62.88,
       "current_price": 62.88,
       "market_value": 354.69,
       "pnl": 0.00,
       "pnl_pct": 0.00,
       "allocation_pct": 3.62
+    },
+    {
+      "ticker": "GWX",
+      "name": "SPDR S&P International Small Cap",
+      "quantity": 15.48,
+      "avg_price": 42.63,
+      "current_price": 43.02,
+      "market_value": 665.76,
+      "pnl": 5.98,
+      "pnl_pct": 0.91,
+      "allocation_pct": 6.80
+    },
+    {
+      "ticker": "MC.PA",
+      "name": "LVMH",
+      "quantity": 0.76,
+      "avg_price": 495.00,
+      "current_price": 478.75,
+      "market_value": 362.57,
+      "pnl": -12.31,
+      "pnl_pct": -3.28,
+      "allocation_pct": 3.70
+    },
+    {
+      "ticker": "RMS.PA",
+      "name": "Hermes",
+      "quantity": 0.21,
+      "avg_price": 1916.80,
+      "current_price": 1884.50,
+      "market_value": 388.59,
+      "pnl": -6.66,
+      "pnl_pct": -1.69,
+      "allocation_pct": 3.97
+    },
+    {
+      "ticker": "OR.PA",
+      "name": "L'Oreal",
+      "quantity": 1.46,
+      "avg_price": 362.22,
+      "current_price": 350.75,
+      "market_value": 513.52,
+      "pnl": -16.79,
+      "pnl_pct": -3.17,
+      "allocation_pct": 5.24
+    },
+    {
+      "ticker": "AIR.PA",
+      "name": "Airbus",
+      "quantity": 0.57,
+      "avg_price": 175.42,
+      "current_price": 169.86,
+      "market_value": 96.87,
+      "pnl": -3.17,
+      "pnl_pct": -3.17,
+      "allocation_pct": 0.99
+    },
+    {
+      "ticker": "DG.PA",
+      "name": "Vinci",
+      "quantity": 1.49,
+      "avg_price": 127.35,
+      "current_price": 129.40,
+      "market_value": 193.13,
+      "pnl": 3.06,
+      "pnl_pct": 1.61,
+      "allocation_pct": 1.97
+    },
+    {
+      "ticker": "SGO.PA",
+      "name": "Saint-Gobain",
+      "quantity": 9.78,
+      "avg_price": 74.30,
+      "current_price": 71.36,
+      "market_value": 697.77,
+      "pnl": -28.73,
+      "pnl_pct": -3.96,
+      "allocation_pct": 7.12
     }
   ],
   "last_trade": {
     "date": "2026-03-16",
-    "ticker": "FEZ",
+    "ticker": "IWM",
     "action": "buy",
-    "price": 62.88,
-    "amount": 354.69,
-    "reasoning": "Mean reversion entry post-stop at -9.3% discount, RSI 26.5"
+    "price": 248.92,
+    "amount": 625.93,
+    "reasoning": "Mean reversion deployment: Allocating 25% of available cash to deeply oversold assets - IWM (RSI 31.8) diversifies US equity factor exposure beyond large-cap SPY."
   }
 }
