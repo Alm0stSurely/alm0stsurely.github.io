@@ -1,23 +1,12 @@
 {
-  "last_updated": "2026-03-17T21:08:04",
+  "last_updated": "2026-03-18T14:35:05",
   "starting_capital": 10000.00,
-  "cash": 3608.11,
-  "total_value": 9793.21,
-  "total_return_pct": -2.07,
-  "total_realized_pnl": -337.13,
+  "cash": 4128.44,
+  "total_value": 9273.21,
+  "total_return_pct": -7.27,
+  "total_realized_pnl": -373.03,
   "days_active": 20,
   "positions": [
-    {
-      "ticker": "GLD",
-      "name": "Gold ETF",
-      "quantity": 1.1650,
-      "avg_price": 477.46,
-      "current_price": 459.30,
-      "market_value": 535.06,
-      "pnl": -21.16,
-      "pnl_pct": -3.80,
-      "allocation_pct": 5.46
-    },
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
@@ -27,29 +16,29 @@
       "market_value": 2064.09,
       "pnl": -3.22,
       "pnl_pct": -0.16,
-      "allocation_pct": 21.08
+      "allocation_pct": 22.26
     },
     {
       "ticker": "RMS.PA",
       "name": "Hermes",
       "quantity": 0.2062,
       "avg_price": 1916.80,
-      "current_price": 1842.50,
-      "market_value": 379.93,
-      "pnl": -15.32,
-      "pnl_pct": -3.88,
-      "allocation_pct": 3.88
+      "current_price": 1856.50,
+      "market_value": 382.76,
+      "pnl": -12.44,
+      "pnl_pct": -3.15,
+      "allocation_pct": 4.13
     },
     {
       "ticker": "AIR.PA",
       "name": "Airbus",
       "quantity": 0.5703,
       "avg_price": 175.42,
-      "current_price": 170.24,
-      "market_value": 97.08,
-      "pnl": -2.95,
-      "pnl_pct": -2.95,
-      "allocation_pct": 0.99
+      "current_price": 171.62,
+      "market_value": 97.86,
+      "pnl": -2.18,
+      "pnl_pct": -2.17,
+      "allocation_pct": 1.06
     },
     {
       "ticker": "DG.PA",
@@ -59,19 +48,19 @@
       "current_price": 130.35,
       "market_value": 194.55,
       "pnl": 4.48,
-      "pnl_pct": 2.36,
-      "allocation_pct": 1.99
+      "pnl_pct": 2.28,
+      "allocation_pct": 2.10
     },
     {
       "ticker": "OR.PA",
       "name": "L'Oreal",
       "quantity": 1.4641,
       "avg_price": 362.22,
-      "current_price": 352.00,
-      "market_value": 515.35,
-      "pnl": -14.96,
-      "pnl_pct": -2.82,
-      "allocation_pct": 5.26
+      "current_price": 349.10,
+      "market_value": 511.11,
+      "pnl": -19.23,
+      "pnl_pct": -3.62,
+      "allocation_pct": 5.51
     },
     {
       "ticker": "GWX",
@@ -82,7 +71,7 @@
       "market_value": 668.10,
       "pnl": 8.32,
       "pnl_pct": 1.26,
-      "allocation_pct": 6.82
+      "allocation_pct": 7.20
     },
     {
       "ticker": "SPY",
@@ -93,7 +82,7 @@
       "market_value": 745.77,
       "pnl": 9.38,
       "pnl_pct": 1.27,
-      "allocation_pct": 7.62
+      "allocation_pct": 8.04
     },
     {
       "ticker": "IWM",
@@ -104,7 +93,7 @@
       "market_value": 628.84,
       "pnl": 2.92,
       "pnl_pct": 0.47,
-      "allocation_pct": 6.42
+      "allocation_pct": 6.78
     },
     {
       "ticker": "FEZ",
@@ -115,15 +104,15 @@
       "market_value": 356.33,
       "pnl": 1.64,
       "pnl_pct": 0.46,
-      "allocation_pct": 3.64
+      "allocation_pct": 3.84
     }
   ],
   "last_trade": {
-    "date": "2026-03-17",
-    "ticker": "MC.PA / SGO.PA / TLT",
-    "action": "sell/sell/buy",
-    "price": "471.15 / 71.16 / 87.46",
-    "amount": "50% positions / 15% cash",
-    "reasoning": "Trimming LVMH and Saint-Gobain approaching 5% stop-loss, deploying to TLT as defensive ballast. CVaR mindset: realizing partial losses to avoid larger drawdowns."
+    "date": "2026-03-18",
+    "ticker": "GLD",
+    "action": "sell",
+    "price": "446.65",
+    "amount": "100% position (1.165 shares)",
+    "reasoning": "Stop-loss triggered at -6.45%. Discipline over conviction — cutting losses to preserve capital. CVaR mindset: respecting risk limits."
   }
 }
