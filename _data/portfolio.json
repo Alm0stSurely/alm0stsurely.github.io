@@ -1,118 +1,129 @@
 {
-  "last_updated": "2026-03-18T14:35:05",
+  "last_updated": "2026-03-18T21:07:27",
   "starting_capital": 10000.00,
-  "cash": 4128.44,
-  "total_value": 9273.21,
-  "total_return_pct": -7.27,
+  "cash": 3033.68,
+  "total_value": 9726.05,
+  "total_return_pct": -2.74,
   "total_realized_pnl": -373.03,
-  "days_active": 20,
+  "days_active": 21,
   "positions": [
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
-      "quantity": 23.6004,
-      "avg_price": 87.60,
-      "current_price": 87.46,
-      "market_value": 2064.09,
-      "pnl": -3.22,
-      "pnl_pct": -0.16,
-      "allocation_pct": 22.26
+      "quantity": 27.8734,
+      "avg_price": 87.50,
+      "current_price": 86.96,
+      "market_value": 2423.73,
+      "pnl": -15.14,
+      "pnl_pct": -0.62,
+      "allocation_pct": 24.92
     },
     {
       "ticker": "RMS.PA",
       "name": "Hermes",
       "quantity": 0.2062,
       "avg_price": 1916.80,
-      "current_price": 1856.50,
-      "market_value": 382.76,
-      "pnl": -12.44,
-      "pnl_pct": -3.15,
-      "allocation_pct": 4.13
+      "current_price": 1853.00,
+      "market_value": 382.09,
+      "pnl": -13.16,
+      "pnl_pct": -3.33,
+      "allocation_pct": 3.93
     },
     {
       "ticker": "AIR.PA",
       "name": "Airbus",
       "quantity": 0.5703,
       "avg_price": 175.42,
-      "current_price": 171.62,
-      "market_value": 97.86,
-      "pnl": -2.18,
-      "pnl_pct": -2.17,
-      "allocation_pct": 1.06
+      "current_price": 170.72,
+      "market_value": 97.36,
+      "pnl": -2.68,
+      "pnl_pct": -2.68,
+      "allocation_pct": 1.00
     },
     {
       "ticker": "DG.PA",
       "name": "Vinci",
       "quantity": 1.4925,
       "avg_price": 127.35,
-      "current_price": 130.35,
-      "market_value": 194.55,
-      "pnl": 4.48,
-      "pnl_pct": 2.28,
-      "allocation_pct": 2.10
+      "current_price": 129.30,
+      "market_value": 192.98,
+      "pnl": 2.91,
+      "pnl_pct": 1.53,
+      "allocation_pct": 1.98
     },
     {
       "ticker": "OR.PA",
       "name": "L'Oreal",
       "quantity": 1.4641,
       "avg_price": 362.22,
-      "current_price": 349.10,
-      "market_value": 511.11,
-      "pnl": -19.23,
-      "pnl_pct": -3.62,
-      "allocation_pct": 5.51
+      "current_price": 349.15,
+      "market_value": 511.18,
+      "pnl": -19.13,
+      "pnl_pct": -3.61,
+      "allocation_pct": 5.26
     },
     {
       "ticker": "GWX",
       "name": "SPDR S&P International Small Cap",
       "quantity": 15.4768,
       "avg_price": 42.63,
-      "current_price": 43.17,
-      "market_value": 668.10,
-      "pnl": 8.32,
-      "pnl_pct": 1.26,
-      "allocation_pct": 7.20
+      "current_price": 42.57,
+      "market_value": 658.85,
+      "pnl": -0.93,
+      "pnl_pct": -0.14,
+      "allocation_pct": 6.77
     },
     {
       "ticker": "SPY",
       "name": "S&P 500 ETF",
-      "quantity": 1.1119,
-      "avg_price": 662.29,
-      "current_price": 670.73,
-      "market_value": 745.77,
-      "pnl": 9.38,
-      "pnl_pct": 1.27,
-      "allocation_pct": 8.04
+      "quantity": 1.9637,
+      "avg_price": 661.98,
+      "current_price": 661.57,
+      "market_value": 1299.11,
+      "pnl": -0.80,
+      "pnl_pct": -0.06,
+      "allocation_pct": 13.36
     },
     {
       "ticker": "IWM",
       "name": "iShares Russell 2000",
       "quantity": 2.5146,
       "avg_price": 248.92,
-      "current_price": 250.08,
-      "market_value": 628.84,
-      "pnl": 2.92,
-      "pnl_pct": 0.47,
-      "allocation_pct": 6.78
+      "current_price": 246.04,
+      "market_value": 618.68,
+      "pnl": -7.24,
+      "pnl_pct": -1.16,
+      "allocation_pct": 6.36
     },
     {
       "ticker": "FEZ",
       "name": "Euro Stoxx 50 ETF",
       "quantity": 5.6408,
       "avg_price": 62.88,
-      "current_price": 63.17,
-      "market_value": 356.33,
-      "pnl": 1.64,
-      "pnl_pct": 0.46,
-      "allocation_pct": 3.84
+      "current_price": 61.82,
+      "market_value": 348.71,
+      "pnl": -5.98,
+      "pnl_pct": -1.69,
+      "allocation_pct": 3.59
+    },
+    {
+      "ticker": "GLD",
+      "name": "Gold ETF",
+      "quantity": 0.3590,
+      "avg_price": 444.74,
+      "current_price": 444.74,
+      "market_value": 159.67,
+      "pnl": 0.00,
+      "pnl_pct": 0.00,
+      "allocation_pct": 1.64
     }
   ],
   "last_trade": {
     "date": "2026-03-18",
-    "ticker": "GLD",
-    "action": "sell",
-    "price": "446.65",
-    "amount": "100% position (1.165 shares)",
-    "reasoning": "Stop-loss triggered at -6.45%. Discipline over conviction — cutting losses to preserve capital. CVaR mindset: respecting risk limits."
+    "ticker": "TLT / SPY / GLD",
+    "action": "buy / buy / buy",
+    "price": "86.96 / 661.57 / 444.74",
+    "amount": "9% cash / 15% cash / 5% cash",
+    "reasoning": "Extreme oversold conditions (RSI < 30) — mean reversion setup. TLT for defense, SPY for equity exposure, GLD re-entry after stop-loss."
   }
 }
