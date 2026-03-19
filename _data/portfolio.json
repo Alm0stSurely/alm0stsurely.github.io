@@ -1,96 +1,96 @@
 {
-  "last_updated": "2026-03-19T16:36:02",
+  "last_updated": "2026-03-19T21:07:10",
   "starting_capital": 10000.0,
-  "cash": 3649.07,
-  "total_value": 9702.32,
-  "total_return_pct": -2.98,
-  "total_realized_pnl": -412.59,
-  "days_active": 21,
+  "cash": 3627.55,
+  "total_value": 9706.82,
+  "total_return_pct": -2.93,
+  "total_realized_pnl": -436.7,
+  "days_active": 22,
   "positions": [
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
       "quantity": 27.87,
       "avg_price": 87.5,
-      "current_price": 86.96,
-      "market_value": 2423.73,
-      "pnl": -15.14,
-      "pnl_pct": -0.62,
-      "allocation_pct": 24.98
+      "current_price": 87.5,
+      "market_value": 2438.78,
+      "pnl": -0.09,
+      "pnl_pct": -0.0,
+      "allocation_pct": 25.12
     },
     {
       "ticker": "SPY",
       "name": "S&P 500 ETF",
-      "quantity": 1.96,
-      "avg_price": 661.98,
-      "current_price": 661.57,
-      "market_value": 1299.11,
-      "pnl": -0.8,
-      "pnl_pct": -0.06,
-      "allocation_pct": 13.39
+      "quantity": 2.59,
+      "avg_price": 661.43,
+      "current_price": 659.72,
+      "market_value": 1711.01,
+      "pnl": -4.43,
+      "pnl_pct": -0.26,
+      "allocation_pct": 17.63
     },
     {
       "ticker": "GWX",
       "name": "SPDR S&P International Small Cap",
       "quantity": 15.48,
       "avg_price": 42.63,
-      "current_price": 42.57,
-      "market_value": 658.85,
-      "pnl": -0.93,
-      "pnl_pct": -0.14,
-      "allocation_pct": 6.79
+      "current_price": 42.37,
+      "market_value": 655.75,
+      "pnl": -4.03,
+      "pnl_pct": -0.61,
+      "allocation_pct": 6.76
     },
     {
       "ticker": "IWM",
       "name": "iShares Russell 2000",
       "quantity": 2.51,
       "avg_price": 248.92,
-      "current_price": 246.04,
-      "market_value": 618.68,
-      "pnl": -7.24,
-      "pnl_pct": -1.16,
-      "allocation_pct": 6.38
-    },
-    {
-      "ticker": "OR.PA",
-      "name": "L'Oreal",
-      "quantity": 1.46,
-      "avg_price": 362.22,
-      "current_price": 349.15,
-      "market_value": 511.18,
-      "pnl": -19.13,
-      "pnl_pct": -3.61,
-      "allocation_pct": 5.27
+      "current_price": 247.63,
+      "market_value": 622.68,
+      "pnl": -3.24,
+      "pnl_pct": -0.52,
+      "allocation_pct": 6.41
     },
     {
       "ticker": "FEZ",
       "name": "Euro Stoxx 50 ETF",
       "quantity": 5.64,
       "avg_price": 62.88,
-      "current_price": 61.82,
-      "market_value": 348.71,
-      "pnl": -5.98,
-      "pnl_pct": -1.69,
-      "allocation_pct": 3.59
+      "current_price": 62.15,
+      "market_value": 350.57,
+      "pnl": -4.12,
+      "pnl_pct": -1.16,
+      "allocation_pct": 3.61
     },
     {
       "ticker": "DG.PA",
       "name": "Vinci",
       "quantity": 1.49,
       "avg_price": 127.35,
-      "current_price": 129.3,
-      "market_value": 192.98,
-      "pnl": 2.91,
-      "pnl_pct": 1.53,
-      "allocation_pct": 1.99
+      "current_price": 126.15,
+      "market_value": 188.28,
+      "pnl": -1.79,
+      "pnl_pct": -0.94,
+      "allocation_pct": 1.94
+    },
+    {
+      "ticker": "GLD",
+      "name": "Gold ETF",
+      "quantity": 0.26,
+      "avg_price": 426.41,
+      "current_price": 426.41,
+      "market_value": 112.19,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "allocation_pct": 1.16
     }
   ],
   "last_trade": {
     "date": "2026-03-19",
-    "ticker": "GLD",
-    "action": "sell (stop-loss)",
-    "price": 421.87,
-    "amount": "0.36 shares",
-    "reasoning": "CVaR stop-loss at -5.14% drawdown"
+    "ticker": "OR.PA + SPY + GLD",
+    "action": "rebalance",
+    "price": "345.75 / 659.72 / 426.41",
+    "amount": "3 trades",
+    "reasoning": "Risk-off: trim OR.PA at -4.55%, add SPY mean-reversion, rebuild GLD position"
   }
 }
