@@ -1,22 +1,22 @@
 {
-  "last_updated": "2026-03-18T21:07:27",
+  "last_updated": "2026-03-19T12:16:10",
   "starting_capital": 10000.0,
-  "cash": 3033.68,
-  "total_value": 9726.05,
-  "total_return_pct": -2.74,
-  "total_realized_pnl": -373.03,
+  "cash": 3497.62,
+  "total_value": 9710.53,
+  "total_return_pct": -2.89,
+  "total_realized_pnl": -404.38,
   "days_active": 21,
   "positions": [
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
       "quantity": 27.87,
-      "avg_price": 87.50,
+      "avg_price": 87.5,
       "current_price": 86.96,
       "market_value": 2423.73,
       "pnl": -15.14,
       "pnl_pct": -0.62,
-      "allocation_pct": 24.92
+      "allocation_pct": 24.96
     },
     {
       "ticker": "SPY",
@@ -25,9 +25,9 @@
       "avg_price": 661.98,
       "current_price": 661.57,
       "market_value": 1299.11,
-      "pnl": -0.80,
+      "pnl": -0.8,
       "pnl_pct": -0.06,
-      "allocation_pct": 13.36
+      "allocation_pct": 13.38
     },
     {
       "ticker": "GWX",
@@ -38,7 +38,7 @@
       "market_value": 658.85,
       "pnl": -0.93,
       "pnl_pct": -0.14,
-      "allocation_pct": 6.77
+      "allocation_pct": 6.78
     },
     {
       "ticker": "IWM",
@@ -49,7 +49,7 @@
       "market_value": 618.68,
       "pnl": -7.24,
       "pnl_pct": -1.16,
-      "allocation_pct": 6.36
+      "allocation_pct": 6.37
     },
     {
       "ticker": "OR.PA",
@@ -61,17 +61,6 @@
       "pnl": -19.13,
       "pnl_pct": -3.61,
       "allocation_pct": 5.26
-    },
-    {
-      "ticker": "RMS.PA",
-      "name": "Hermes",
-      "quantity": 0.21,
-      "avg_price": 1916.80,
-      "current_price": 1853.00,
-      "market_value": 382.09,
-      "pnl": -13.16,
-      "pnl_pct": -3.33,
-      "allocation_pct": 3.93
     },
     {
       "ticker": "FEZ",
@@ -89,11 +78,11 @@
       "name": "Vinci",
       "quantity": 1.49,
       "avg_price": 127.35,
-      "current_price": 129.30,
+      "current_price": 129.3,
       "market_value": 192.98,
       "pnl": 2.91,
       "pnl_pct": 1.53,
-      "allocation_pct": 1.98
+      "allocation_pct": 1.99
     },
     {
       "ticker": "GLD",
@@ -102,28 +91,17 @@
       "avg_price": 444.74,
       "current_price": 444.74,
       "market_value": 159.67,
-      "pnl": 0.00,
-      "pnl_pct": 0.00,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
       "allocation_pct": 1.64
-    },
-    {
-      "ticker": "AIR.PA",
-      "name": "Airbus",
-      "quantity": 0.57,
-      "avg_price": 175.42,
-      "current_price": 170.72,
-      "market_value": 97.36,
-      "pnl": -2.68,
-      "pnl_pct": -2.68,
-      "allocation_pct": 1.00
     }
   ],
   "last_trade": {
-    "date": "2026-03-18",
-    "ticker": "TLT",
-    "action": "buy",
-    "price": 86.96,
-    "amount": 9,
-    "reasoning": "CVaR principles: scaling into TLT (oversold, RSI 29.8) for capital preservation while maintaining 30% cash buffer"
+    "date": "2026-03-19",
+    "ticker": "RMS.PA + AIR.PA",
+    "action": "sell (stop-loss)",
+    "price": "1796.00 / 164.12",
+    "amount": "2 positions",
+    "reasoning": "CVaR stop-loss triggered: -6.30% and -6.44% drawdowns exceeding 5% threshold"
   }
 }
