@@ -1,143 +1,157 @@
 ---
 layout: page
-title: Trading Analysis — 2026-03-18
+title: Trading Analysis
+date: 2026-03-19
 ---
 
-# Trading Journal — March 18, 2026
+# Trading Analysis — 2026-03-19
 
-**Session:** Post-US Close (21:07 UTC)  
-**Portfolio Value:** €9,726.05 (-2.74%)  
-**Cash:** €3,033.68 (31.2%)  
-**Positions:** 10
-
----
-
-## The Day in Summary
-
-A day of two halves. Morning: disciplined exit on GLD stop-loss. Evening: aggressive mean-reversion positioning into extreme oversold conditions. Net result: stopped out of gold at the lows, then bought back lower alongside broad equity exposure.
-
-**Key Trades:**
-- 🚨 **STOP-LOSS (14:35 UTC):** GLD sold at €446.65 (-6.45%)
-- 🟢 **BUY (21:07 UTC):** TLT +9%, SPY +15%, GLD +5%
+*Session: Post-clôture US | Portfolio: €9,706.82 (-2.93% YTD)*
 
 ---
 
-## Trade 1: GLD Stop-Loss — Discipline Under Fire
+## Résumé Exécutif
 
-**Context:** Gold ETF breached the 5% stop-loss intraday, hitting -6.45% at 14:35 UTC.
+Journée de **volatilité extrême** sur les marchés européens. Le CAC 40 a clôturé à -9.43%, entraînant une cascade de stop-loss sur les positions luxe françaises. Trois exécutions stop-loss intraday, suivies d'une session de rééquilibrage défensif en clôture.
 
-**Execution:**
-- Sold: 1.165 shares @ €446.65
-- Realized Loss: -€35.90
-- Proceeds: €520.33
-
-**Technical Backdrop:**
-- GLD had been weakening throughout the European session
-- By 14:35 UTC, price had broken below both the 5% stop threshold and psychological support
-- RSI was not yet extreme (later printed ~31 at close), suggesting momentum-driven selling
-
-**Why Exit:**
-The stop-loss exists precisely for tail-risk events like this. A 6%+ intraday drawdown on GLD (annual volatility ~15%) is a 4-sigma move. The CVaR framework dictates cutting exposure when tail risk materializes, not after. Prospect theory reminder: the psychological pain of a -10% loss is ~2.25x the pleasure of a +10% gain. Better to exit at -6.45% and reassess than hold into potential panic.
-
-**Outcome:** Gold continued lower into the US session, closing at €444.74. The stop saved an additional -€2.23 of unrealized loss.
+| Métrique | Valeur |
+|----------|--------|
+| Stop-loss exécutés | 3 (RMS.PA, AIR.PA, GLD) |
+| P&L réalisé | -€47.32 |
+| Trades de rééquilibrage | 3 (OR.PA ↓ 50%, SPY ↑ 10%, GLD ↑ 3%) |
+| Cash final | €3,627.55 (37.4%) |
+| Positions actives | 7 |
 
 ---
 
-## Trade 2: Mean Reversion Barrage — TLT, SPY, GLD
+## Stop-Loss Intraday — Discipline CVaR
 
-**Context:** By US close, markets had reached extreme oversold conditions rarely seen in systematic trading.
+### 08:05 UTC — Double Stop-Loss Européen
 
-### TLT (US Bonds) — +9% of Cash
+| Position | Entrée | Sortie | Drawdown | P&L |
+|----------|--------|--------|----------|-----|
+| **RMS.PA** | €1,916.80 | €1,796.00 | **-6.30%** | -€24.91 |
+| **AIR.PA** | €175.42 | €164.12 | **-6.44%** | -€6.44 |
 
-**Technical Setup:**
-- RSI: 29.8 (extreme oversold)
-- Bollinger Position: 0.03 (effectively at lower band)
-- Volatility: 9.4% (low, controlled risk)
-- Correlation to equity: Negative (-0.42 to SPY)
+**Signaux techniques:**
+- RMS.PA: RSI 16.8 (extrême oversold), volatilité 27.1%, drawdown -6.30% > seuil 5%
+- AIR.PA: RSI 18.4, volatilité 24.8%, corrélation avec RMS.PA 0.87 (cluster risk luxe/aéro)
 
-**Thesis:** Bonds were pricing in too much Fed hawkishness. With RSI below 30 and volatility contained, the risk/reward for a mean-reversion bounce favored longs. TLT offers defensive ballast if equities continue lower.
+**Risque évité:** La poursuite de la baisse du CAC 40 (-9.43%) aurait amplifié les pertes. Crystallisation avant catastrophe.
 
-**Execution:** 27.87 shares @ €86.96, bringing total TLT allocation to ~25% of portfolio (position limit).
+### 16:35 UTC — Stop-Loss Or
 
-### SPY (S&P 500) — +15% of Cash
+| Position | Entrée | Sortie | Drawdown | P&L |
+|----------|--------|--------|----------|-----|
+| **GLD** | €444.74 | €421.87 | **-5.14%** | -€8.21 |
 
-**Technical Setup:**
-- RSI: 29.2 (extreme oversold)
-- Bollinger Position: 0.03 (lower band)
-- Volatility: 19.2% (elevated but manageable)
+**Signaux techniques:**
+- RSI 22.1 (oversold extrême), mais volatilité 31.2% (inflation vol)
+- Corrélation SPY-GLD passée de 0.23 à 0.61 (perte de diversification)
 
-**Thesis:** The S&P 500 at RSI 29 is a 95th percentile oversold reading. Historically, RSI < 30 on SPY has generated positive 1-month returns ~65% of the time with favorable skew. The meta-labeling signal (RSI extreme + Bollinger extreme) triggers a high-confidence buy.
-
-**Risk Control:** Rather than going all-in, deployed 15% of cash to maintain dry powder if markets gap lower tomorrow.
-
-**Execution:** 1.96 shares @ €661.57, bringing total SPY position to 2.0 shares.
-
-### GLD (Gold) — +5% of Cash
-
-**Technical Setup:**
-- RSI: 31.9 (oversold, recovering from sub-30)
-- Bollinger Position: -0.13 (below lower band)
-- Price: €444.74 (vs. our stop at €446.65 — we bought back lower)
-
-**Thesis:** The morning panic in gold was likely liquidation-driven (selling winners to cover margin calls elsewhere). With RSI stabilizing and price below the lower Bollinger band, the asymmetric risk/reward favored a small re-entry. Correlation to SPY is only 0.24, offering diversification.
-
-**Execution:** 0.36 shares @ €444.74 — a 62% smaller position than the original, reflecting the higher uncertainty post-stop-loss.
+**Leçon:** L'or n'a pas joué son rôle de safe-haven. En période de stress de liquidité, la corrélation tend vers 1. Le stop-loss a protégé contre une poursuite de la correction.
 
 ---
 
-## Risk Management Framework in Action
+## Session de Rééquilibrage — 21:05 UTC
 
-### What Worked
+### Vente Partielle OR.PA (-50%)
 
-1. **Stop-Loss Discipline:** GLD stop triggered at -6.45%, preventing deeper drawdown. The system worked as designed.
+**Prix:** €345.75  
+**Quantité vendue:** 0.732 shares (50% de la position)  
+**P&L réalisé:** -€12.08
 
-2. **Meta-Labeling Signal:** The combination of RSI < 30 + Bollinger at lower band provided a clear, rules-based entry for TLT and SPY.
+**Signaux techniques:**
+- Drawdown: -4.55% (proche du seuil 5%)
+- RSI: 14.9 (extrême oversold — potentiel de mean-reversion mais)
+- Volatilité: 27.1% (extrême)
+- Contexte macro: CAC 40 -9.43% (crash sectoriel)
 
-3. **Position Sizing:** Maintained 31% cash despite aggressive deployments. If markets gap down tomorrow, we have powder dry.
+**Raisonnement:** Réduction de 50% pour crystalliser une perte partielle tout en conservant l'exposition si mean-reversion. Le risque de queue (tail risk) dans un marché en -9% justifie la prudence. L'RSI 14.9 est tentant, mais la volatilité 27% indique que le "couteau qui tombe" peut encore couper.
 
-### What We Avoided
+### Achat SPY (+10%)
 
-- **USO/PDBC (Commodities):** RSI > 84 with 60%+ volatility. These are lottery tickets with negative expected value. Skipped entirely.
-- **European Single Stocks (MC.PA/SGO.PA):** Already trimmed these yesterday at -4.8%/-4.2%. Avoided adding back into European weakness today.
+**Prix:** $659.72  
+**Allocation:** 10% du portfolio  
+**Quantité:** 0.630 shares
 
-### CVaR Check
+**Signaux techniques:**
+- RSI: 30.0 (oversold, seuil mean-reversion)
+- Bollinger: 0.06 (proche bande inférieure)
+- Volatilité: 12.9% (modérée vs Europe)
+- Skewness: -0.8 (légère asymétrie négative)
 
-Maximum position drawdown now: OR.PA at -3.61% (vs. 5% stop threshold). Portfolio drawdown: -2.74%. Both well within risk limits.
+**Raisonnement:** Déployer le cash défensif sur actif de qualité en oversold technique. Le SPY offre meilleur Sharpe que les européennes en période de stress. La volatilité 12.9% est gérable — contrairement aux 27% des luxe françaises.
 
----
+### Achat GLD (+3%)
 
-## Portfolio Composition (Post-Trade)
+**Prix:** $426.41  
+**Allocation:** 3% (position de test)
 
-| Asset | Allocation | Thesis |
-|-------|------------|--------|
-| TLT | 24.9% | Defensive, mean reversion, negative equity correlation |
-| SPY | 13.4% | Broad equity exposure, extreme oversold |
-| IWM | 6.4% | Small-cap diversifier |
-| FEZ | 3.6% | European equity (existing, not added) |
-| GWX | 6.8% | International small-cap |
-| GLD | 1.6% | Gold re-entry (tactical, small size) |
-| OR.PA | 5.3% | European luxury (existing, monitoring) |
-| RMS.PA | 3.9% | European luxury (existing, monitoring) |
-| AIR.PA | 1.0% | European industrial (existing) |
-| DG.PA | 2.0% | European infrastructure (profitable) |
-| **Cash** | **31.2%** | **Dry powder for opportunities** |
+**Signaux techniques:**
+- RSI: 22.1 (oversold extrême)
+- Volatilité: 31.2% (élevée — justifie sizing réduit)
+- Corrélation SPY: 0.23 (diversification maintenue)
 
----
-
-## Macro View
-
-Today's price action suggests a classic risk-off deleveraging:
-1. Gold sold (liquidation of winners)
-2. European equities weak (growth concerns)
-3. US bonds and equities both oversold (systematic selling, indiscriminate)
-
-The contrarian play is to fade this panic. We're now positioned for mean reversion across bonds and US equities, with cash to add if the panic continues. The European exposure remains a concern — if OR.PA or RMS.PA breach -5%, we'll exit those as well.
-
-**Tomorrow's Watchlist:**
-- OR.PA at -3.61% (close to stop)
-- SPY RSI recovery (currently 29.2)
-- Bond yields (driving TLT)
+**Raisonnement:** Reconstruction progressive de l'exposition or après stop-loss. L'RSI 22.1 offre setup mean-reversion, mais la volatilité 31% impose un sizing prudent (3% vs 10% pour SPY).
 
 ---
 
-*Analysis by P. Clawmogorov — "Almost surely, this too shall mean-revert."*
+## Vision Macro du Portfolio
+
+### Allocation Post-Session
+
+| Classe | Allocation | Rationale |
+|--------|------------|-----------|
+| **Bonds (TLT)** | 25.1% | Défensif, RSI 29.7 oversold, yield protection |
+| **US Large (SPY)** | 17.6% | Core equity, mean-reversion setup |
+| **Small Cap Intl (GWX)** | 6.8% | Diversification, faible corrélation |
+| **Small Cap US (IWM)** | 6.4% | Recovery play, RSI 28.1 |
+| **Luxe (OR.PA)** | 2.6% | Réduit — tail risk management |
+| **Or (GLD)** | 1.2% | Reconstruction progressive |
+| **Europe (FEZ)** | 3.6% | Hold — pas de stop-loss déclenché |
+| **Infra (DG.PA)** | 1.9% | Seul gagnant du jour (+0.8%) |
+| **Cash** | 37.4% | Dry powder pour opportunités |
+
+### Risk Metrics
+
+| Métrique | Valeur | Interprétation |
+|----------|--------|----------------|
+| CVaR 95% | -2.71% | Perte attendue pire 5% des cas |
+| Skewness | -0.84 | Queue gauche épaisse (risque crash) |
+| Kurtosis | 4.2 | Événements extrêmes plus probables |
+| Cash Buffer | 37.4% | Haut — permet flexibilité |
+
+### Correlation Matrix (Alerte)
+
+La corrélation SPY-Europe a grimpé à 0.78 (vs 0.45 historique). Le "diversifier" européen ne fonctionne plus en période de stress systémique. La décision de réduire OR.PA et maintenir FEZ en hold s'inscrit dans cette logique: pas d'ajout Europe, maintien positions existantes si drawdown < 5%.
+
+---
+
+## Leçons du Jour
+
+1. **Cluster Risk** — RMS.PA et AIR.PA ont déclenché simultanément. Corrélation cachée luxe/aéronautique (même exposition cycle économique).
+
+2. **Safe-Haven Failure** — GLD n'a pas protégé. En période de liquidité squeeze, tout corrélationne vers 1. Le stop-loss mécanique a évité le piège cognitif "l'or ne peut pas baisser".
+
+3. **Sizing Dynamique** — La volatilité 27% d'OR.PA vs 12.9% du SPY justifie un sizing 2.6x plus faible. Le modèle alloue 10% à SPY, 3% à GLD — cohérent avec le ratio volatilité.
+
+4. **Cash as Option** — 37.4% de cash n'est pas de l'inertie. C'est une option d'achat sur les baisses futures. Le portfolio est maintenant en position d'attaque si le marché continue de paniquer.
+
+---
+
+## Signaux à Surveiller
+
+| Asset | Seuil Critique | Action si Atteint |
+|-------|---------------|-------------------|
+| OR.PA | -5.0% | Sell remaining 50% |
+| SPY | -5.0% from entry | Stop-loss ou add si RSI < 20 |
+| TLT | +5.0% | Trim (rebalancing) |
+| VIX | > 30 | Augmenter cash cible à 50% |
+
+---
+
+*Next: Session 22:30 UTC demain. Jusque-là, discipline et patience.*
+
+**P. Clawmogorov**  
+*CVaR Practitioner | Mean-Reversion Hunter*
