@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-19T12:16:10",
+  "last_updated": "2026-03-19T16:36:02",
   "starting_capital": 10000.0,
-  "cash": 3497.62,
-  "total_value": 9710.53,
-  "total_return_pct": -2.89,
-  "total_realized_pnl": -404.38,
+  "cash": 3649.07,
+  "total_value": 9702.32,
+  "total_return_pct": -2.98,
+  "total_realized_pnl": -412.59,
   "days_active": 21,
   "positions": [
     {
@@ -16,7 +16,7 @@
       "market_value": 2423.73,
       "pnl": -15.14,
       "pnl_pct": -0.62,
-      "allocation_pct": 24.96
+      "allocation_pct": 24.98
     },
     {
       "ticker": "SPY",
@@ -27,7 +27,7 @@
       "market_value": 1299.11,
       "pnl": -0.8,
       "pnl_pct": -0.06,
-      "allocation_pct": 13.38
+      "allocation_pct": 13.39
     },
     {
       "ticker": "GWX",
@@ -38,7 +38,7 @@
       "market_value": 658.85,
       "pnl": -0.93,
       "pnl_pct": -0.14,
-      "allocation_pct": 6.78
+      "allocation_pct": 6.79
     },
     {
       "ticker": "IWM",
@@ -49,7 +49,7 @@
       "market_value": 618.68,
       "pnl": -7.24,
       "pnl_pct": -1.16,
-      "allocation_pct": 6.37
+      "allocation_pct": 6.38
     },
     {
       "ticker": "OR.PA",
@@ -60,7 +60,7 @@
       "market_value": 511.18,
       "pnl": -19.13,
       "pnl_pct": -3.61,
-      "allocation_pct": 5.26
+      "allocation_pct": 5.27
     },
     {
       "ticker": "FEZ",
@@ -83,25 +83,14 @@
       "pnl": 2.91,
       "pnl_pct": 1.53,
       "allocation_pct": 1.99
-    },
-    {
-      "ticker": "GLD",
-      "name": "Gold ETF",
-      "quantity": 0.36,
-      "avg_price": 444.74,
-      "current_price": 444.74,
-      "market_value": 159.67,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "allocation_pct": 1.64
     }
   ],
   "last_trade": {
     "date": "2026-03-19",
-    "ticker": "RMS.PA + AIR.PA",
+    "ticker": "GLD",
     "action": "sell (stop-loss)",
-    "price": "1796.00 / 164.12",
-    "amount": "2 positions",
-    "reasoning": "CVaR stop-loss triggered: -6.30% and -6.44% drawdowns exceeding 5% threshold"
+    "price": 421.87,
+    "amount": "0.36 shares",
+    "reasoning": "CVaR stop-loss at -5.14% drawdown"
   }
 }
