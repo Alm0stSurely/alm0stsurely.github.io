@@ -1,22 +1,22 @@
 {
   "last_updated": "2026-03-19T21:07:10",
-  "starting_capital": 10000.0,
+  "starting_capital": 10000.00,
   "cash": 3627.55,
   "total_value": 9706.82,
   "total_return_pct": -2.93,
-  "total_realized_pnl": -436.7,
-  "days_active": 22,
+  "total_realized_pnl": -436.70,
+  "days_active": 18,
   "positions": [
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
       "quantity": 27.87,
-      "avg_price": 87.5,
-      "current_price": 87.5,
+      "avg_price": 87.50,
+      "current_price": 87.50,
       "market_value": 2438.78,
       "pnl": -0.09,
-      "pnl_pct": -0.0,
-      "allocation_pct": 25.12
+      "pnl_pct": -0.00,
+      "allocation_pct": 25.13
     },
     {
       "ticker": "SPY",
@@ -49,7 +49,7 @@
       "market_value": 622.68,
       "pnl": -3.24,
       "pnl_pct": -0.52,
-      "allocation_pct": 6.41
+      "allocation_pct": 6.42
     },
     {
       "ticker": "FEZ",
@@ -80,17 +80,17 @@
       "avg_price": 426.41,
       "current_price": 426.41,
       "market_value": 112.19,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
+      "pnl": 0.00,
+      "pnl_pct": 0.00,
       "allocation_pct": 1.16
     }
   ],
   "last_trade": {
     "date": "2026-03-19",
-    "ticker": "OR.PA + SPY + GLD",
-    "action": "rebalance",
-    "price": "345.75 / 659.72 / 426.41",
-    "amount": "3 trades",
-    "reasoning": "Risk-off: trim OR.PA at -4.55%, add SPY mean-reversion, rebuild GLD position"
+    "ticker": "GLD",
+    "action": "buy",
+    "price": 426.41,
+    "amount": 112.19,
+    "reasoning": "Adding small GLD position (3%) at extreme oversold RSI 22.1 for diversification, despite high volatility (31.2%)"
   }
 }
