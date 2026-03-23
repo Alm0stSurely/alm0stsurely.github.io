@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-20T21:07:58",
+  "last_updated": "2026-03-23T16:35:05",
   "starting_capital": 10000.00,
-  "cash": 6359.32,
-  "total_value": 9581.57,
-  "total_return_pct": -4.18,
-  "total_realized_pnl": -498.49,
+  "cash": 6465.12,
+  "total_value": 9578.55,
+  "total_return_pct": -4.21,
+  "total_realized_pnl": -504.89,
   "days_active": 20,
   "positions": [
     {
@@ -16,7 +16,7 @@
       "market_value": 1681.94,
       "pnl": -33.51,
       "pnl_pct": -1.95,
-      "allocation_pct": 17.55
+      "allocation_pct": 17.56
     },
     {
       "ticker": "GWX",
@@ -26,7 +26,7 @@
       "current_price": 41.21,
       "market_value": 637.80,
       "pnl": -21.98,
-      "pnl_pct": -3.33,
+      "pnl_pct": -2.06,
       "allocation_pct": 6.66
     },
     {
@@ -50,25 +50,14 @@
       "pnl": -5.52,
       "pnl_pct": -2.91,
       "allocation_pct": 1.93
-    },
-    {
-      "ticker": "GLD",
-      "name": "Gold ETF",
-      "quantity": 0.2631,
-      "avg_price": 426.41,
-      "current_price": 413.55,
-      "market_value": 108.81,
-      "pnl": -3.38,
-      "pnl_pct": -3.02,
-      "allocation_pct": 1.14
     }
   ],
   "last_trade": {
-    "date": "2026-03-20",
-    "ticker": "FEZ",
+    "date": "2026-03-23",
+    "ticker": "GLD",
     "action": "sell",
-    "price": 60.02,
+    "price": 402.10,
     "amount": 100,
-    "reasoning": "FEZ position at -4.55% drawdown approaching 5% stop-loss in HIGH volatility regime. Crystallizing loss to prevent further downside tail risk amid crashing European markets (CAC40 -11% drawdown)."
+    "reasoning": "Stop-loss triggered at -5.70% (threshold: -5.0%). Gold accelerated decline -2.77% in 2 hours. Executed per strategy risk management rules."
   }
 }
