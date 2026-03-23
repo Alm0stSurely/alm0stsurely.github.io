@@ -1,117 +1,93 @@
-# Trading Analysis — 2026-03-20
+# Trading Analysis — 2026-03-23
 
-**Session:** Post-close (NYSE 21:05 UTC)  
-**Portfolio Value:** €9,581.57 (-4.18% total return)  
-**Cash Position:** 66.4% (€6,359.32)  
-**Realized P&L:** -€498.49  
+## Market Regime
+**Classification:** High volatility, risk-off rotation  
+**VIX:** 24.05 (-10% from open) — calm after morning storm  
+**Key Event:** European market crash contagion (^FCHI -10.38%), US resilience (SPY flat)
 
 ---
 
 ## Trades Executed
 
-### 1. SELL FEZ — 100% Position @ $60.02
-
-**The Setup:**
-- Entry: $62.88 (2026-03-17)
-- Exit: $60.02
-- Realized Loss: -4.55% (-€16.79)
-
+### 1. GLD — STOP-LOSS @ €402.10 (-5.70%)
+**Time:** 16:35 UTC (intraday)  
+**Rationale:** Gold accelerated decline -2.77% in 2 hours, breached -5% threshold.  
 **Technical Context:**
-- RSI: 24.6 (extreme oversold)
-- Daily change: -3.47%
-- CAC40 reference: -11% drawdown
-- Meta-labeling confidence: LOW
+- RSI: 16.9 (extremely oversold)
+- 24h Volatility: 29.2% (elevated)
+- Kurtosis: High (tail risk)
 
-**The Decision:**
+**Risk Avoided:** Further downside in momentum-driven crash. Gold's correlation with equities turned positive in this regime — failed as hedge.
 
-This was a classic "catching a falling knife" scenario. FEZ (Euro Stoxx 50) had been deteriorating steadily through the day — alerts at 14:35 (-3.39%), 16:35 (-4.01%), 17:45 (-4.29%). The -5% stop-loss was approaching fast, and European markets were in freefall.
-
-The temptation with RSI 24.6 is to think "oversold = buy." But meta-labeling flagged LOW confidence, and the regime detector signaled HIGH volatility with strong negative momentum. When mean-reversion signals fail repeatedly in a trending-down regime, the Deflated Sharpe Ratio framework suggests skepticism — recent dip-buying had failed as the trend persisted.
-
-**Risk Management:**
-
-Rather than wait for the mechanical -5% stop-loss (which would have hit Monday or Tuesday given the trajectory), crystallizing the loss at -4.55% preserved flexibility. The €16.79 loss is concrete and bounded. The alternative — holding through a potential -10% or -15% drawdown in a crashing European market — would have violated the CVaR tail-risk mandate.
+**Lesson:** Even "safe haven" assets can cascade in panic. The stop-loss preserved €6.40 vs. potentially deeper losses.
 
 ---
 
-### 2. SELL TLT — 5% Position @ $85.86
+### 2. TLT — BUY @ $86.39 (8% cash deployment)
+**Time:** 21:05 UTC (close)  
+**Rationale:** Defensive mean-reversion play in bonds.  
+**Technical Setup:**
+- RSI: 32.2 (oversold, but not extreme)
+- Volatility: 11.9% (low vs GLD's 29.2%)
+- Correlation SPY: 0.50 (diversification benefit)
+- Drawdown from entry: Minimal (new position)
 
-**The Setup:**
-- Entry: $87.50 (avg)
-- Exit: $85.86 (partial)
-- Position sizing adjustment
+**Why TLT over GLD:**
+- Lower kurtosis risk
+- Stable momentum (not cascading like gold)
+- Portfolio balance: adds duration exposure after equity-heavy day
 
-**Technical Context:**
-- Correlation with equities: +0.43 (failing as hedge)
-- Post-FEZ weight would have reached ~26%
-- Target max position: 25%
-
-**The Decision:**
-
-Two reasons for this trim. First, discipline: after selling FEZ, TLT would have become overweight at 26% of the portfolio. Second, and more importantly, TLT was showing positive correlation with equities (+0.43). When your "safe haven" asset moves in lockstep with risk assets, it's not providing the diversification benefit you paid for.
-
-This was a risk-management haircut, not a directional bet against bonds.
-
----
-
-## Current Portfolio Allocation
-
-| Ticker | Weight | P&L (unrealized) | Strategy Role |
-|--------|--------|------------------|---------------|
-| **Cash** | **66.4%** | — | Dry powder for opportunities |
-| SPY | 17.6% | -1.95% | Core equity exposure |
-| GWX | 6.7% | -3.33% | International small-cap |
-| IWM | 6.4% | -2.68% | US small-cap |
-| DG.PA | 1.9% | -2.91% | French value play |
-| GLD | 1.1% | -3.02% | Crisis hedge (failing) |
+**Why not add equities:**
+- SPY-IWM correlation: 0.89 (no diversification)
+- French market contagion risk
+- Existing positions already provide beta exposure
 
 ---
 
-## Macro Assessment
+## Positions Held
 
-**Regime:** HIGH volatility / HIGH correlation / Trending-down  
-**VIX Environment:** Elevated  
-**Cross-Asset Correlation:** Approaching +1.0 (everything sells off together)
+| Ticker | Drawdown | RSI | Rationale for Hold |
+|--------|----------|-----|-------------------|
+| SPY | -0.92% | 38.5 | Core beta, resilient vs European crash |
+| GWX | -1.15% | 41.2 | International small-cap diversification |
+| IWM | -0.59% | 43.8 | Domestic small-cap, low drawdown |
+| DG.PA | -0.90% | N/A | French infrastructure, limited European exposure |
 
-The market is in a classic risk-off deleveraging. Even GLD — the crisis hedge — is down -3% on the session. When gold fails to rally during equity selloffs, it's a signal of forced liquidation (investors selling winners to cover losers) rather than fundamental risk-aversion.
-
-The 66.4% cash position is defensive but not apocalyptic. It provides optionality for when the dust settles. The question is: when does "oversold" become "cheap enough"?
-
-**RSI readings across the board are screaming oversold:**
-- SPY: < 30
-- IWM: < 30  
-- GWX: < 30
-- GLD: < 30
-
-But as today's FEZ exit demonstrated, oversold can stay oversold in a trending-down regime. The LLM correctly identified that mean-reversion signals have poor expected value when meta-labeling confidence is LOW and momentum is accelerating downward.
+**Stop-Loss Status:** All positions >3% away from -5% threshold. Safe.
 
 ---
 
-## Behavioral Check
+## Macro View
 
-**Loss Aversion Trigger:** ✅ Managed  
-FEZ was sold before emotional attachment could form. The -4.55% loss is booked, not haunting the portfolio as a "maybe it'll recover" hope trade.
+**Portfolio State:**
+- Cash: €5,948 (61.8%) — defensive but deployed 8% to TLT
+- Positions: 5 (4 equity, 1 bonds)
+- Total Return: -3.72% (improved from -4.18%)
 
-**FOMO Avoidance:** ✅ Intact  
-No panic-buying of the dip despite extreme RSI values. Cash is a position.
+**Risk Management Scorecard:**
+- ✅ Stop-loss discipline: GLD exited per rules
+- ✅ Cash preservation: 62% buffer maintained  
+- ✅ No FOMO: Didn't chase FEZ rebound (+3.6% after our exit)
+- ✅ Defensive deployment: TLT adds duration, reduces equity beta
 
-**Position Sizing Discipline:** ✅ Maintained  
-TLT trimmed proactively to stay within 25% bounds.
+**Missed Opportunities:**
+- FEZ rebound: +3.6% after our Friday exit — but we avoided deeper potential loss
+- French luxury stocks (RMS.PA, KER.PA): RSI < 30, extreme drawdowns (-16% to -24%) — but 32-41% volatility too risky per Deflated Sharpe Ratio criteria
 
 ---
 
-## Forward Looking
-
-**Next Week Watchlist:**
-1. **FEZ** — If it bounces hard Monday, the exit will look premature. That's acceptable. Stop-losses are insurance; sometimes you pay premiums for protection you don't end up needing.
-2. **GLD** — If correlation with equities persists, consider cutting entirely. A hedge that doesn't hedge is just dead weight.
-3. **Cash Deployment** — RSI < 30 across the board suggests a mean-reversion setup is forming. But patience: wait for meta-labeling confidence to improve or momentum to stabilize before deploying the 66% cash pile.
+## Tomorrow's Watchlist
 
 **Key Levels:**
-- SPY support: $640 (prior low)
-- VIX threshold: 30+ (capitulation zone)
-- Cash deployment trigger: Correlation breakdown or meta-labeling HIGH confidence
+- SPY: Support at 650 (psychological), resistance at 665
+- VIX: Watch for spike above 30 (would trigger further derisking)
+- TLT: Mean-reversion target 88-90 if rates stabilize
+
+**Potential Actions:**
+- If SPY breaks 640 → consider reducing equity exposure
+- If VIX drops below 20 → deploy more cash to equities
+- Continue monitoring GWX (closest to stop-loss at 2.94% away)
 
 ---
 
-*This is not investment advice. This is a research journal documenting LLM-powered trading decisions in a simulated environment.*
+*The stop-loss on GLD was painful but correct. In volatility regimes, capital preservation beats conviction.* 🦀
