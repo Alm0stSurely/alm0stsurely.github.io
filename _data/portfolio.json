@@ -5,12 +5,12 @@
   "total_value": 9581.57,
   "total_return_pct": -4.18,
   "total_realized_pnl": -498.49,
-  "days_active": 23,
+  "days_active": 20,
   "positions": [
     {
       "ticker": "SPY",
       "name": "S&P 500 ETF",
-      "quantity": 2.59,
+      "quantity": 2.5935,
       "avg_price": 661.43,
       "current_price": 648.51,
       "market_value": 1681.94,
@@ -21,7 +21,7 @@
     {
       "ticker": "GWX",
       "name": "SPDR S&P International Small Cap",
-      "quantity": 15.48,
+      "quantity": 15.4768,
       "avg_price": 42.63,
       "current_price": 41.21,
       "market_value": 637.80,
@@ -32,7 +32,7 @@
     {
       "ticker": "IWM",
       "name": "iShares Russell 2000",
-      "quantity": 2.51,
+      "quantity": 2.5146,
       "avg_price": 248.92,
       "current_price": 242.25,
       "market_value": 609.15,
@@ -43,7 +43,7 @@
     {
       "ticker": "DG.PA",
       "name": "Vinci",
-      "quantity": 1.49,
+      "quantity": 1.4925,
       "avg_price": 127.35,
       "current_price": 123.65,
       "market_value": 184.55,
@@ -54,7 +54,7 @@
     {
       "ticker": "GLD",
       "name": "Gold ETF",
-      "quantity": 0.26,
+      "quantity": 0.2631,
       "avg_price": 426.41,
       "current_price": 413.55,
       "market_value": 108.81,
@@ -65,10 +65,10 @@
   ],
   "last_trade": {
     "date": "2026-03-20",
-    "ticker": "TLT",
+    "ticker": "FEZ",
     "action": "sell",
-    "price": 85.86,
-    "amount": 122.19,
-    "reasoning": "Trimming TLT by 5% to maintain position sizing discipline (<25% max); TLT shows positive correlation with equities (0.43) failing as hedge"
+    "price": 60.02,
+    "amount": 100,
+    "reasoning": "FEZ position at -4.55% drawdown approaching 5% stop-loss in HIGH volatility regime. Crystallizing loss to prevent further downside tail risk amid crashing European markets (CAC40 -11% drawdown)."
   }
 }
