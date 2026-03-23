@@ -1,63 +1,140 @@
 {
-  "last_updated": "2026-03-23T16:35:05",
-  "starting_capital": 10000.00,
-  "cash": 6465.12,
-  "total_value": 9578.55,
-  "total_return_pct": -4.21,
-  "total_realized_pnl": -504.89,
-  "days_active": 20,
+  "last_updated": "Mar 23, 2026 21:06 UTC",
+  "total_value": 9627.59,
+  "total_return": -3.724,
+  "cash": 5947.91,
+  "cash_pct": 61.8,
+  "invested": 3679.69,
+  "invested_pct": 38.2,
+  "realized_pnl": -504.89,
+  "num_positions": 5,
   "positions": [
     {
       "ticker": "SPY",
-      "name": "S&P 500 ETF",
       "quantity": 2.5935,
       "avg_price": 661.43,
-      "current_price": 648.51,
-      "market_value": 1681.94,
-      "pnl": -33.51,
-      "pnl_pct": -1.95,
-      "allocation_pct": 17.56
+      "current_price": 655.37,
+      "value": 1699.73,
+      "pnl": -15.72,
+      "pnl_pct": -0.92
     },
     {
       "ticker": "GWX",
-      "name": "SPDR S&P International Small Cap",
       "quantity": 15.4768,
       "avg_price": 42.63,
-      "current_price": 41.21,
-      "market_value": 637.80,
-      "pnl": -21.98,
-      "pnl_pct": -2.06,
-      "allocation_pct": 6.66
+      "current_price": 42.14,
+      "value": 652.19,
+      "pnl": -7.59,
+      "pnl_pct": -1.15
     },
     {
       "ticker": "IWM",
-      "name": "iShares Russell 2000",
       "quantity": 2.5146,
       "avg_price": 248.92,
-      "current_price": 242.25,
-      "market_value": 609.15,
-      "pnl": -16.77,
-      "pnl_pct": -2.68,
-      "allocation_pct": 6.36
+      "current_price": 247.44,
+      "value": 622.2,
+      "pnl": -3.72,
+      "pnl_pct": -0.59
+    },
+    {
+      "ticker": "TLT",
+      "quantity": 5.9873,
+      "avg_price": 86.39,
+      "current_price": 86.39,
+      "value": 517.21,
+      "pnl": 0.0,
+      "pnl_pct": 0.0
     },
     {
       "ticker": "DG.PA",
-      "name": "Vinci",
       "quantity": 1.4925,
       "avg_price": 127.35,
-      "current_price": 123.65,
-      "market_value": 184.55,
-      "pnl": -5.52,
-      "pnl_pct": -2.91,
-      "allocation_pct": 1.93
+      "current_price": 126.2,
+      "value": 188.35,
+      "pnl": -1.72,
+      "pnl_pct": -0.9
     }
   ],
-  "last_trade": {
-    "date": "2026-03-23",
-    "ticker": "GLD",
-    "action": "sell",
-    "price": 402.10,
-    "amount": 100,
-    "reasoning": "Stop-loss triggered at -5.70% (threshold: -5.0%). Gold accelerated decline -2.77% in 2 hours. Executed per strategy risk management rules."
-  }
+  "recent_trades": [
+    {
+      "date": "2026-03-23",
+      "ticker": "TLT",
+      "action": "BUY",
+      "quantity": 5.9873,
+      "price": 86.39,
+      "total": 517.21
+    },
+    {
+      "date": "2026-03-20",
+      "ticker": "TLT",
+      "action": "SELL",
+      "quantity": 27.8734,
+      "price": 85.86,
+      "total": 2393.21
+    },
+    {
+      "date": "2026-03-20",
+      "ticker": "FEZ",
+      "action": "SELL",
+      "quantity": 5.6408,
+      "price": 60.02,
+      "total": 338.56
+    },
+    {
+      "date": "2026-03-19",
+      "ticker": "GLD",
+      "action": "BUY",
+      "quantity": 0.2631,
+      "price": 426.41,
+      "total": 112.19
+    },
+    {
+      "date": "2026-03-19",
+      "ticker": "SPY",
+      "action": "BUY",
+      "quantity": 0.6299,
+      "price": 659.72,
+      "total": 415.53
+    },
+    {
+      "date": "2026-03-19",
+      "ticker": "OR.PA",
+      "action": "SELL",
+      "quantity": 1.4641,
+      "price": 345.75,
+      "total": 506.2
+    },
+    {
+      "date": "2026-03-18",
+      "ticker": "GLD",
+      "action": "BUY",
+      "quantity": 0.359,
+      "price": 444.74,
+      "total": 159.67
+    },
+    {
+      "date": "2026-03-18",
+      "ticker": "SPY",
+      "action": "BUY",
+      "quantity": 0.8518,
+      "price": 661.57,
+      "total": 563.53
+    },
+    {
+      "date": "2026-03-18",
+      "ticker": "TLT",
+      "action": "BUY",
+      "quantity": 4.273,
+      "price": 86.96,
+      "total": 371.56
+    },
+    {
+      "date": "2026-03-17",
+      "ticker": "TLT",
+      "action": "BUY",
+      "quantity": 7.2802,
+      "price": 87.46,
+      "total": 636.73
+    }
+  ]
 }
