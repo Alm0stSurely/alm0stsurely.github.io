@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-26T17:45:00",
+  "last_updated": "2026-03-26T21:06:45",
   "starting_capital": 10000.00,
-  "cash": 5947.91,
-  "total_value": 9653.39,
-  "total_return_pct": -3.47,
-  "total_realized_pnl": -504.89,
+  "cash": 8262.68,
+  "total_value": 9590.02,
+  "total_return_pct": -4.10,
+  "total_realized_pnl": -565.34,
   "days_active": 28,
   "positions": [
     {
@@ -12,71 +12,51 @@
       "name": "Vinci",
       "quantity": 1.49,
       "avg_price": 127.35,
-      "current_price": 128.65,
-      "market_value": 192.01,
-      "pnl": 1.94,
-      "pnl_pct": 1.02,
-      "allocation_pct": 1.99
-    },
-    {
-      "ticker": "GWX",
-      "name": "SPDR S&P International Small Cap",
-      "quantity": 15.48,
-      "avg_price": 42.63,
-      "current_price": 42.45,
-      "market_value": 657.03,
-      "pnl": -2.75,
-      "pnl_pct": -0.42,
-      "allocation_pct": 6.81
-    },
-    {
-      "ticker": "SPY",
-      "name": "S&P 500 ETF",
-      "quantity": 2.59,
-      "avg_price": 661.43,
-      "current_price": 648.07,
-      "market_value": 1679.47,
-      "pnl": -34.68,
-      "pnl_pct": -2.02,
-      "allocation_pct": 17.40
+      "current_price": 127.05,
+      "market_value": 189.62,
+      "pnl": -0.45,
+      "pnl_pct": -0.24,
+      "allocation_pct": 1.98
     },
     {
       "ticker": "IWM",
       "name": "iShares Russell 2000",
       "quantity": 2.51,
       "avg_price": 248.92,
-      "current_price": 251.85,
-      "market_value": 633.29,
-      "pnl": 7.37,
-      "pnl_pct": 1.18,
-      "allocation_pct": 6.56
+      "current_price": 247.41,
+      "market_value": 622.13,
+      "pnl": -3.80,
+      "pnl_pct": -0.61,
+      "allocation_pct": 6.49
     },
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
       "quantity": 5.99,
       "avg_price": 86.39,
-      "current_price": 86.83,
-      "market_value": 519.87,
-      "pnl": 2.66,
-      "pnl_pct": 0.52,
-      "allocation_pct": 5.39
+      "current_price": 86.11,
+      "market_value": 515.59,
+      "pnl": -1.62,
+      "pnl_pct": -0.31,
+      "allocation_pct": 5.38
     }
   ],
   "last_trade": {
-    "date": "2026-03-25",
-    "ticker": "SPY",
-    "action": "hold",
-    "price": 656.74,
-    "amount": 0,
-    "reasoning": "LLM API error. Holding all positions."
+    "date": "2026-03-26",
+    "ticker": "GWX",
+    "action": "sell",
+    "price": 41.46,
+    "amount": 15.48,
+    "reasoning": "Market regime: high-volatility downtrend. Crystallizing loss -2.74% and eliminating redundant correlation (0.79 with SPY)."
   },
-  "alert_status": {
-    "active_alert": true,
-    "alert_time": "2026-03-26T17:45:00",
-    "alert_type": "POSITION_MOVEMENT",
-    "affected_ticker": "SPY",
-    "movement_pct": -2.02,
-    "severity": "MEDIUM"
+  "weekly_summary": {
+    "week": "2026-W12",
+    "weekly_return_pct": -0.39,
+    "trades_count": 3,
+    "trades": [
+      {"date": "2026-03-23", "ticker": "TLT", "action": "buy"},
+      {"date": "2026-03-26", "ticker": "SPY", "action": "sell"},
+      {"date": "2026-03-26", "ticker": "GWX", "action": "sell"}
+    ]
   }
 }
