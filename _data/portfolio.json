@@ -1,140 +1,82 @@
 {
-  "last_updated": "Mar 23, 2026 21:06 UTC",
-  "total_value": 9627.59,
-  "total_return": -3.724,
+  "last_updated": "2026-03-26T17:45:00",
+  "starting_capital": 10000.00,
   "cash": 5947.91,
-  "cash_pct": 61.8,
-  "invested": 3679.69,
-  "invested_pct": 38.2,
-  "realized_pnl": -504.89,
-  "num_positions": 5,
+  "total_value": 9653.39,
+  "total_return_pct": -3.47,
+  "total_realized_pnl": -504.89,
+  "days_active": 28,
   "positions": [
     {
-      "ticker": "SPY",
-      "quantity": 2.5935,
-      "avg_price": 661.43,
-      "current_price": 655.37,
-      "value": 1699.73,
-      "pnl": -15.72,
-      "pnl_pct": -0.92
+      "ticker": "DG.PA",
+      "name": "Vinci",
+      "quantity": 1.49,
+      "avg_price": 127.35,
+      "current_price": 128.65,
+      "market_value": 192.01,
+      "pnl": 1.94,
+      "pnl_pct": 1.02,
+      "allocation_pct": 1.99
     },
     {
       "ticker": "GWX",
-      "quantity": 15.4768,
+      "name": "SPDR S&P International Small Cap",
+      "quantity": 15.48,
       "avg_price": 42.63,
-      "current_price": 42.14,
-      "value": 652.19,
-      "pnl": -7.59,
-      "pnl_pct": -1.15
+      "current_price": 42.45,
+      "market_value": 657.03,
+      "pnl": -2.75,
+      "pnl_pct": -0.42,
+      "allocation_pct": 6.81
+    },
+    {
+      "ticker": "SPY",
+      "name": "S&P 500 ETF",
+      "quantity": 2.59,
+      "avg_price": 661.43,
+      "current_price": 648.07,
+      "market_value": 1679.47,
+      "pnl": -34.68,
+      "pnl_pct": -2.02,
+      "allocation_pct": 17.40
     },
     {
       "ticker": "IWM",
-      "quantity": 2.5146,
+      "name": "iShares Russell 2000",
+      "quantity": 2.51,
       "avg_price": 248.92,
-      "current_price": 247.44,
-      "value": 622.2,
-      "pnl": -3.72,
-      "pnl_pct": -0.59
+      "current_price": 251.85,
+      "market_value": 633.29,
+      "pnl": 7.37,
+      "pnl_pct": 1.18,
+      "allocation_pct": 6.56
     },
     {
       "ticker": "TLT",
-      "quantity": 5.9873,
+      "name": "US Bonds ETF",
+      "quantity": 5.99,
       "avg_price": 86.39,
-      "current_price": 86.39,
-      "value": 517.21,
-      "pnl": 0.0,
-      "pnl_pct": 0.0
-    },
-    {
-      "ticker": "DG.PA",
-      "quantity": 1.4925,
-      "avg_price": 127.35,
-      "current_price": 126.2,
-      "value": 188.35,
-      "pnl": -1.72,
-      "pnl_pct": -0.9
+      "current_price": 86.83,
+      "market_value": 519.87,
+      "pnl": 2.66,
+      "pnl_pct": 0.52,
+      "allocation_pct": 5.39
     }
   ],
-  "recent_trades": [
-    {
-      "date": "2026-03-23",
-      "ticker": "TLT",
-      "action": "BUY",
-      "quantity": 5.9873,
-      "price": 86.39,
-      "total": 517.21
-    },
-    {
-      "date": "2026-03-20",
-      "ticker": "TLT",
-      "action": "SELL",
-      "quantity": 27.8734,
-      "price": 85.86,
-      "total": 2393.21
-    },
-    {
-      "date": "2026-03-20",
-      "ticker": "FEZ",
-      "action": "SELL",
-      "quantity": 5.6408,
-      "price": 60.02,
-      "total": 338.56
-    },
-    {
-      "date": "2026-03-19",
-      "ticker": "GLD",
-      "action": "BUY",
-      "quantity": 0.2631,
-      "price": 426.41,
-      "total": 112.19
-    },
-    {
-      "date": "2026-03-19",
-      "ticker": "SPY",
-      "action": "BUY",
-      "quantity": 0.6299,
-      "price": 659.72,
-      "total": 415.53
-    },
-    {
-      "date": "2026-03-19",
-      "ticker": "OR.PA",
-      "action": "SELL",
-      "quantity": 1.4641,
-      "price": 345.75,
-      "total": 506.2
-    },
-    {
-      "date": "2026-03-18",
-      "ticker": "GLD",
-      "action": "BUY",
-      "quantity": 0.359,
-      "price": 444.74,
-      "total": 159.67
-    },
-    {
-      "date": "2026-03-18",
-      "ticker": "SPY",
-      "action": "BUY",
-      "quantity": 0.8518,
-      "price": 661.57,
-      "total": 563.53
-    },
-    {
-      "date": "2026-03-18",
-      "ticker": "TLT",
-      "action": "BUY",
-      "quantity": 4.273,
-      "price": 86.96,
-      "total": 371.56
-    },
-    {
-      "date": "2026-03-17",
-      "ticker": "TLT",
-      "action": "BUY",
-      "quantity": 7.2802,
-      "price": 87.46,
-      "total": 636.73
-    }
-  ]
+  "last_trade": {
+    "date": "2026-03-25",
+    "ticker": "SPY",
+    "action": "hold",
+    "price": 656.74,
+    "amount": 0,
+    "reasoning": "LLM API error. Holding all positions."
+  },
+  "alert_status": {
+    "active_alert": true,
+    "alert_time": "2026-03-26T17:45:00",
+    "alert_type": "POSITION_MOVEMENT",
+    "affected_ticker": "SPY",
+    "movement_pct": -2.02,
+    "severity": "MEDIUM"
+  }
 }
