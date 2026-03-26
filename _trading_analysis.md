@@ -1,93 +1,94 @@
-# Trading Analysis — 2026-03-23
+# Trading Analysis — 2026-03-26
 
-## Market Regime
-**Classification:** High volatility, risk-off rotation  
-**VIX:** 24.05 (-10% from open) — calm after morning storm  
-**Key Event:** European market crash contagion (^FCHI -10.38%), US resilience (SPY flat)
+## Session Summary
+
+**Market Regime:** High-volatility downtrend  
+**Portfolio Action:** Defensive de-risking  
+**Cash Position:** 77% (€8,262.68)  
+**Total P&L:** -€571.20 (-5.71% since inception)
 
 ---
 
-## Trades Executed
+## Executed Trades
 
-### 1. GLD — STOP-LOSS @ €402.10 (-5.70%)
-**Time:** 16:35 UTC (intraday)  
-**Rationale:** Gold accelerated decline -2.77% in 2 hours, breached -5% threshold.  
+### 1. SPY — Reduce 50%
+- **Action:** SELL 50% position (1.30 shares)
+- **Price:** €645.10
+- **Rationale:** 
+  - SPY broke below SMA20 < SMA50 — classic downtrend signal
+  - Intraday alert at -2.02% was early warning; full session confirmed breakdown
+  - Reducing largest single exposure (was ~17% of portfolio) to align with regime
+  - RSI 33 suggests oversold, but Trend Regime principles favor momentum over mean reversion when VIXY spikes +6.87%
+
 **Technical Context:**
-- RSI: 16.9 (extremely oversold)
-- 24h Volatility: 29.2% (elevated)
-- Kurtosis: High (tail risk)
+- Price action: Close €645.10 vs previous €656.74 (-1.77%)
+- Volatility regime: VIXY +6.87% confirms fear expansion
+- Correlation risk: Maintained 50% exposure keeps upside participation if reversal occurs
 
-**Risk Avoided:** Further downside in momentum-driven crash. Gold's correlation with equities turned positive in this regime — failed as hedge.
+### 2. GWX — Full Exit
+- **Action:** SELL 100% position (15.48 shares)
+- **Price:** €41.46
+- **Realized Loss:** -€2.75 (-0.42%)
+- **Rationale:**
+  - Crystallized small loss before it extended
+  - Correlation with SPY at 0.79 — redundant small-cap exposure
+  - International small-cap underperforming domestic (IWM held, GWX cut)
+  - Portfolio drawdown -4.1% triggered loss aversion protocols from Behavioral_RL framework
 
-**Lesson:** Even "safe haven" assets can cascade in panic. The stop-loss preserved €6.40 vs. potentially deeper losses.
-
----
-
-### 2. TLT — BUY @ $86.39 (8% cash deployment)
-**Time:** 21:05 UTC (close)  
-**Rationale:** Defensive mean-reversion play in bonds.  
-**Technical Setup:**
-- RSI: 32.2 (oversold, but not extreme)
-- Volatility: 11.9% (low vs GLD's 29.2%)
-- Correlation SPY: 0.50 (diversification benefit)
-- Drawdown from entry: Minimal (new position)
-
-**Why TLT over GLD:**
-- Lower kurtosis risk
-- Stable momentum (not cascading like gold)
-- Portfolio balance: adds duration exposure after equity-heavy day
-
-**Why not add equities:**
-- SPY-IWM correlation: 0.89 (no diversification)
-- French market contagion risk
-- Existing positions already provide beta exposure
+**Technical Context:**
+- Price: €41.46 vs entry €42.63 (-2.74% total)
+- No technical support visible; momentum clearly negative
 
 ---
 
-## Positions Held
+## Hold Positions
 
-| Ticker | Drawdown | RSI | Rationale for Hold |
-|--------|----------|-----|-------------------|
-| SPY | -0.92% | 38.5 | Core beta, resilient vs European crash |
-| GWX | -1.15% | 41.2 | International small-cap diversification |
-| IWM | -0.59% | 43.8 | Domestic small-cap, low drawdown |
-| DG.PA | -0.90% | N/A | French infrastructure, limited European exposure |
+### DG.PA (Vinci)
+- **Action:** HOLD
+- **Current:** €127.05 (-0.24% unrealized)
+- **Rationale:** French infrastructure holding up better than US equity. Small position size (2% of portfolio) means low risk contribution. Holding as diversification anchor.
 
-**Stop-Loss Status:** All positions >3% away from -5% threshold. Safe.
+### IWM (Russell 2000)
+- **Action:** HOLD  
+- **Current:** €247.41 (-0.61% unrealized)
+- **Rationale:** Small-cap domestic preferred over international (GWX). Lower correlation to SPY than expected (preserved). Position size manageable at 6.5% of portfolio post-de-risking.
+
+### TLT (US Bonds)
+- **Action:** HOLD
+- **Current:** €86.11 (-0.31% unrealized)
+- **Rationale:** Diversification anchor maintained despite positive equity correlation. Bond volatility lower than equity; serves as portfolio stabilizer. 20+ year duration provides convexity if rates fall in risk-off scenario.
 
 ---
 
 ## Macro View
 
-**Portfolio State:**
-- Cash: €5,948 (61.8%) — defensive but deployed 8% to TLT
-- Positions: 5 (4 equity, 1 bonds)
-- Total Return: -3.72% (improved from -4.18%)
+**Market Stress Indicators:**
+- Precious metals crashing: GLD drawdown -6% to -18% range
+- CVaR tail risk realizing across commodities
+- 95% VIXY volatility suggests directional picking has low probability of success
 
-**Risk Management Scorecard:**
-- ✅ Stop-loss discipline: GLD exited per rules
-- ✅ Cash preservation: 62% buffer maintained  
-- ✅ No FOMO: Didn't chase FEZ rebound (+3.6% after our exit)
-- ✅ Defensive deployment: TLT adds duration, reduces equity beta
+**Portfolio Construction:**
+- Reduced from 5 to 3 positions
+- Cash raised to 77% creates dry powder for high-conviction entries
+- Meta-labeling suggests waiting for regime stabilization before new positions
+- Loss aversion triggered at -4.1% drawdown per prospect theory parameters
 
-**Missed Opportunities:**
-- FEZ rebound: +3.6% after our Friday exit — but we avoided deeper potential loss
-- French luxury stocks (RMS.PA, KER.PA): RSI < 30, extreme drawdowns (-16% to -24%) — but 32-41% volatility too risky per Deflated Sharpe Ratio criteria
-
----
-
-## Tomorrow's Watchlist
-
-**Key Levels:**
-- SPY: Support at 650 (psychological), resistance at 665
-- VIX: Watch for spike above 30 (would trigger further derisking)
-- TLT: Mean-reversion target 88-90 if rates stabilize
-
-**Potential Actions:**
-- If SPY breaks 640 → consider reducing equity exposure
-- If VIX drops below 20 → deploy more cash to equities
-- Continue monitoring GWX (closest to stop-loss at 2.94% away)
+**Risk Management:**
+- No new positions initiated despite oversold readings
+- Crystallized GWX loss to prevent further drift
+- SPY partial exit maintains upside optionality while cutting risk
 
 ---
 
-*The stop-loss on GLD was painful but correct. In volatility regimes, capital preservation beats conviction.* 🦀
+## Next Session Outlook
+
+**Watchlist:**
+- SPY: Monitor for stabilization above SMA50 or breakdown continuation
+- VIXY: Spike cooling would signal regime shift potential
+- GLD: Extreme oversold (RSI 16) but trend-following overrides mean reversion in current regime
+
+**Trigger Levels:**
+- Add equity exposure if VIXY < 15 and SPY > SMA20
+- Maintain defensive posture while drawdown > -5%
+
+*Session executed per Trend Regime principles. Capital preservation prioritized over return maximization in high-volatility environment.*
