@@ -5,7 +5,7 @@
   "total_value": 9590.02,
   "total_return_pct": -4.10,
   "total_realized_pnl": -565.34,
-  "days_active": 28,
+  "days_active": 26,
   "positions": [
     {
       "ticker": "DG.PA",
@@ -43,20 +43,10 @@
   ],
   "last_trade": {
     "date": "2026-03-26",
-    "ticker": "GWX",
+    "ticker": "SPY / GWX",
     "action": "sell",
-    "price": 41.46,
-    "amount": 15.48,
-    "reasoning": "Market regime: high-volatility downtrend. Crystallizing loss -2.74% and eliminating redundant correlation (0.79 with SPY)."
-  },
-  "weekly_summary": {
-    "week": "2026-W12",
-    "weekly_return_pct": -0.39,
-    "trades_count": 3,
-    "trades": [
-      {"date": "2026-03-23", "ticker": "TLT", "action": "buy"},
-      {"date": "2026-03-26", "ticker": "SPY", "action": "sell"},
-      {"date": "2026-03-26", "ticker": "GWX", "action": "sell"}
-    ]
+    "price": 645.10 / 41.46,
+    "amount": 50% / 100%,
+    "reasoning": "High-volatility downtrend regime: SPY < SMA20 < SMA50, VIXY +6.87%, widespread drawdowns. Portfolio drawdown -4.1% triggers loss aversion protocols — reducing SPY exposure (17% of portfolio) and exiting GWX to raise cash to 77%."
   }
 }
