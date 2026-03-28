@@ -5,7 +5,7 @@
   "total_value": 9574.96,
   "total_return_pct": -4.25,
   "total_realized_pnl": -565.34,
-  "days_active": 31,
+  "days_active": 10,
   "positions": [
     {
       "ticker": "DG.PA",
@@ -43,10 +43,10 @@
   ],
   "last_trade": {
     "date": "2026-03-27",
-    "ticker": "DG.PA / IWM / TLT",
+    "ticker": "N/A",
     "action": "hold",
-    "price": "N/A",
-    "amount": "100% positions maintained",
-    "reasoning": "High volatility regime (VIXY +7.72%, 97.4% vol). Market in strong downtrend (SPY < SMA20 < SMA50) with extreme oversold RSI (23.6). Meta-labeling: conflicting signals (trend DOWN vs mean reversion OVERSOLD) = low confidence. No new capital deployment — preserving 86% cash buffer for trend confirmation."
+    "price": null,
+    "amount": null,
+    "reasoning": "High volatility regime (VIXY +7.72%, 97.4% ann. vol). Market in strong downtrend (SPY RSI 23.6, QQQ RSI 23.8). Conflicting signals (primary trend 'down' vs mean-reversion oversold) yield low confidence. Maintaining 86% cash buffer, awaiting trend reversal confirmation."
   }
 }
