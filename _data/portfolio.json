@@ -5,7 +5,7 @@
   "total_value": 9574.96,
   "total_return_pct": -4.25,
   "total_realized_pnl": -565.34,
-  "days_active": 28,
+  "days_active": 8,
   "positions": [
     {
       "ticker": "DG.PA",
@@ -43,10 +43,10 @@
   ],
   "last_trade": {
     "date": "2026-03-27",
-    "ticker": "DG.PA",
+    "ticker": "N/A",
     "action": "hold",
-    "price": 126.10,
-    "amount": 0,
-    "reasoning": "High volatility regime (VIXY +7.72%, 97% ann. vol). Market in strong downtrend with extreme oversold RSI. Conflicting signals yield low confidence. No new capital deployment per Trend Regime principles. 86% cash buffer for tail-risk protection."
+    "price": null,
+    "amount": null,
+    "reasoning": "High volatility regime (VIXY +7.72%). Market in downtrend with extreme oversold RSI (SPY 23.6). Conflicting signals (primary trend 'down' vs mean-reversion 'bounce') yield low confidence. 86% cash buffer maintained for tail-risk protection. Awaiting trend reversal confirmation."
   }
 }
