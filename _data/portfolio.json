@@ -1,52 +1,41 @@
 {
-  "last_updated": "2026-03-27T21:06:01",
+  "last_updated": "2026-03-30T21:06:21",
   "starting_capital": 10000.00,
-  "cash": 8262.68,
-  "total_value": 9574.96,
-  "total_return_pct": -4.25,
-  "total_realized_pnl": -565.34,
-  "days_active": 8,
+  "cash": 8865.17,
+  "total_value": 9573.69,
+  "total_return_pct": -4.26,
+  "total_realized_pnl": -588.77,
+  "days_active": 9,
   "positions": [
     {
       "ticker": "DG.PA",
       "name": "Vinci",
       "quantity": 1.49,
       "avg_price": 127.35,
-      "current_price": 126.10,
-      "market_value": 188.20,
-      "pnl": -1.87,
-      "pnl_pct": -0.98,
+      "current_price": 126.60,
+      "market_value": 188.95,
+      "pnl": -1.12,
+      "pnl_pct": -0.59,
       "allocation_pct": 1.97
-    },
-    {
-      "ticker": "IWM",
-      "name": "iShares Russell 2000",
-      "quantity": 2.51,
-      "avg_price": 248.92,
-      "current_price": 243.08,
-      "market_value": 611.24,
-      "pnl": -14.69,
-      "pnl_pct": -2.35,
-      "allocation_pct": 6.38
     },
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
       "quantity": 5.99,
       "avg_price": 86.39,
-      "current_price": 85.65,
-      "market_value": 512.84,
-      "pnl": -4.37,
-      "pnl_pct": -0.85,
-      "allocation_pct": 5.36
+      "current_price": 86.78,
+      "market_value": 519.57,
+      "pnl": 2.36,
+      "pnl_pct": 0.46,
+      "allocation_pct": 5.43
     }
   ],
   "last_trade": {
-    "date": "2026-03-27",
-    "ticker": "N/A",
-    "action": "hold",
-    "price": null,
-    "amount": null,
-    "reasoning": "High volatility regime (VIXY +7.72%). Market in downtrend with extreme oversold RSI (SPY 23.6). Conflicting signals (primary trend 'down' vs mean-reversion 'bounce') yield low confidence. 86% cash buffer maintained for tail-risk protection. Awaiting trend reversal confirmation."
+    "date": "2026-03-30",
+    "ticker": "IWM",
+    "action": "sell",
+    "price": 239.60,
+    "amount": 2.51,
+    "reasoning": "Stop-loss discipline applied at -3.74%. Bearish trend confirmed (price < SMA20 < SMA50). Small-cap underperformance vs SPY. Meta-Labeling: conflicting signals (oversold RSI but downtrend) = low conviction. Cut before -5% threshold to avoid tail risk."
   }
 }
