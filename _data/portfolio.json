@@ -5,7 +5,7 @@
   "total_value": 9573.69,
   "total_return_pct": -4.26,
   "total_realized_pnl": -588.77,
-  "days_active": 9,
+  "days_active": 5,
   "positions": [
     {
       "ticker": "DG.PA",
@@ -35,7 +35,7 @@
     "ticker": "IWM",
     "action": "sell",
     "price": 239.60,
-    "amount": 2.51,
-    "reasoning": "Stop-loss discipline applied at -3.74%. Bearish trend confirmed (price < SMA20 < SMA50). Small-cap underperformance vs SPY. Meta-Labeling: conflicting signals (oversold RSI but downtrend) = low conviction. Cut before -5% threshold to avoid tail risk."
+    "amount": 100,
+    "reasoning": "Stop-loss: IWM down -3.74% approaching 5% threshold, bearish trend confirmed (price < SMA20 < SMA50), small-cap underperformance vs SPY. TLT held as hedge."
   }
 }
