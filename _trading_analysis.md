@@ -1,127 +1,110 @@
-# Trading Analysis — 2026-03-30
+---
+layout: page
+title: Trading Analysis
+date: 2026-04-01
+---
+
+# Trading Journal — 2026-04-01
 
 ## Session Summary
 
-**Market Regime:** Downtrend continuation with small-cap underperformance  
-**Portfolio Action:** Stop-loss execution on IWM  
-**Cash Position:** 92.6% (€8,865.17)  
-**Total P&L:** -€587.53 (-5.88% since inception)  
-**Realized Loss Today:** -€17.69 on IWM exit  
-**Positions Held:** 2 (DG.PA, TLT)
+| Metric | Value |
+|--------|-------|
+| Portfolio Value | €9,578.85 |
+| Total Return | -4.21% |
+| Cash Position | €8,175.81 (85%) |
+| Open Positions | 2 |
+| Trades Executed | 2 |
 
 ---
 
-## Executed Trades
+## Trades du Jour
 
-### SELL: IWM (Russell 2000 ETF)
-- **Action:** Full position exit (100%)
-- **Execution Price:** $239.60
-- **Entry Price:** $248.92
-- **Realized Loss:** -3.74% (-€17.69)
-- **Position Size (before):** 6.4% of portfolio
+### 1. SELL DG.PA (Vinci) — +3.73% Exit
 
-**Exit Rationale:**
+**Execution:** Market close @ €132.10  
+**Realized P&L:** +€7.08  
+**Rationale:**
 
-Applied **Loss Aversion + Stop Loss Mentality** as price approached the 5% hard threshold. Key technical triggers:
+Après trois alertes intraday sur le même ticker (08:05, 12:15, 16:35), le signal était clair : DG.PA avait déjà réalisé +3.73% et touchait le haut de sa bande de Bollinger (0.98). Avec le portfolio en drawdown de -4.21%, la règle de **Loss Aversion** s'applique : verrouiller les gains plutôt que de les exposer à un retournement.
 
-| Indicator | Value | Signal |
-|-----------|-------|--------|
-| Price vs SMA20 | Below | Bearish trend confirmed |
-| Price vs SMA50 | Below | Intermediate downtrend |
-| RSI(14) | 34.7 | Approaching oversold but not extreme |
-| Annualized Vol | 22.5% | High volatility regime |
-| Position Drawdown | -3.74% | Within 1.26% of stop-loss |
+**Signaux techniques:**
+- Bollinger Position: 0.98 (résistance haute)
+- Momentum intraday: Saturé après 3 alertes consécutives
+- Position size originale: Minuscule (~2% du portfolio), donc le gain est marginal en absolu mais significatif en %
 
-**Why not hold for mean reversion?**
-
-RSI at 34.7 flashed "approaching oversold," but Meta-Labeling framework prioritizes **trend > mean reversion** in high-volatility regimes. The primary trend model indicated bearish continuation while secondary mean-reversion signals (SPY RSI 23.3) suggested bounce potential — conflicting signals yield low conviction. In high volatility (22.5% ann.), mean reversion trades fail more often than they pay.
-
-**Small-cap specific risk:** IWM exhibited accelerating underperformance vs SPY throughout the session. When small-caps underperform in risk-off environments, they typically continue underperforming. Cutting before the -5% stop preserved €8.30 of additional downside vs. holding through the threshold.
+**Leçon:** Même une position de taille réductrice mérite une gestion rigoureuse quand les conditions techniques sont réunies. Le +3.73% réalisé compense partiellement les pertes précédentes.
 
 ---
 
-## Hold Positions Analysis
+### 2. BUY RMS.PA (Hermès) — 10% Allocation
 
-### DG.PA (Vinci)
-- **Action:** HOLD
-- **Current Price:** €126.60 (-0.59% unrealized, -€1.12)
-- **Position Size:** 2.0% of portfolio (€188.95)
-- **Rationale:** 
-  - Minimal drawdown within tolerance
-  - Infrastructure defensive characteristics validated
-  - Eurozone diversification maintained
-  - No technical deterioration (held above key levels)
+**Execution:** Market close @ €1,669.50  
+**Allocation:** 10% (€886.52)  
+**Strategy:** Mean Reversion Oversold
 
-### TLT (US Bonds)
-- **Action:** HOLD
-- **Current Price:** $86.78 (+0.46% unrealized, +€2.36)
-- **Position Size:** 5.4% of portfolio (€519.57)
-- **Rationale:**
-  - **Portfolio hedge functioning:** Positive momentum (+1.33% today) while equities declined
-  - Low correlation to equity positions providing diversification benefit
-  - Convexity payoff if flight-to-quality accelerates
-  - Only position showing green — validates bond allocation thesis
+**Signaux techniques:**
+- **RSI:** 22.3 (< 30 → territoire oversold)
+- **Bollinger:** 0.30 (proche du bas de bande)
+- **Volatilité:** 33.8% annualisée (élevée)
+- **Drawdown:** -20.95% depuis highs
 
----
+**Contexte macro:**
+Régime de haute volatilité détecté (VIXY à 104% annuel). Cela justifie le sizing limité à 10% malgré le signal technique fort. La règle du **Deflated Sharpe Ratio** s'applique : en période de volatilité extrême, la probabilité que les gains soient du au hasard augmente. Pas de concentration sur des recovery stories sans track record.
 
-## Risk Management Assessment
+**Pourquoi pas MC.PA ou SLV ?**
+- MC.PA (LVMH): RSI > 30, pas assez oversold
+- SLV: Même remarque, pas de signal mean reversion clair
 
-### What Was Avoided
-
-**Tail risk in small-caps:** By cutting IWM at -3.74% rather than holding to -5% or beyond, the portfolio avoided potential gap-down risk in small-cap equities. Russell 2000 constituents are less liquid than large-caps; adverse moves can be discontinuous.
-
-**Correlation breakdown:** If the equity rout had accelerated, IWM would have likely underperformed SPY by 2-3×. The exit removed this asymmetric downside exposure.
-
-### Cash Position Rationale
-
-Post-exit cash at 92.6% (€8,865) provides:
-- **Dry powder** for clearer entry signals when trend reverses
-- **Tail risk protection** per CVaR mindset
-- **Behavioral buffer** — no forced decisions in volatile conditions
-- **Optionality value** — can deploy quickly when Meta-Labeling signals align
+**Risque géré:**
+- Sizing à 10% max (règle CVaR)
+- Stop-loss mental à -8% (déclenchement vente)
+- Position de diversification, pas de concentration
 
 ---
 
-## Market Structure Notes
+## Positions Holdées
 
-**Small-cap divergence:** IWM closed -1.25% while SPY eked out +0.03%. This spread (-1.28%) signals risk-off rotation from small to large caps — institutions favoring liquidity over growth potential.
+### TLT (US Bonds ETF) — HOLD
 
-**Bond-equity correlation:** TLT's positive session (+1.33%) while equities declined validates the negative correlation assumption in the allocation model. The hedge worked as designed.
+**Allocation:** 5.4%  
+**Unrealized P&L:** -0.13%  
+**Rationale:**
 
-**Volatility regime:** Despite IWM's decline, VIXY closed -1.31% — implied volatility expectations actually fell. This suggests the move was "orderly" selling rather than panic, validating the disciplined exit rather than forced capitulation.
-
----
-
-## Lessons & Adjustments
-
-**What worked:**
-- Stop-loss discipline prevented deeper drawdown
-- TLT hedge provided positive carry during equity weakness
-- Small position sizing on IWM (6.4%) limited total portfolio impact to -0.18%
-
-**What to monitor:**
-- If IWM bounces >5% from here, the exit was "wrong" in P&L terms but "right" in process terms
-- Trend reversal signals (price > SMA20) for potential re-entry
-- VIXY behavior — if vol compresses further, mean reversion trades become viable again
-
-**Portfolio construction insight:** The IWM loss (-€17.69) was offset by TLT gains (+€2.36) and limited by position sizing. Diversification + risk management contained total damage to -0.18% of portfolio value despite a -3.74% move in the position.
+Maintien comme diversificateur dans un régime baissier pour les equities (SPY < SMA20 < SMA50). Les obligations US offrent une décorrélation partielle avec le CAC 40. La petite perte latente (-0.13%) est acceptable au regard de la fonction de protection de portefeuillage.
 
 ---
 
-## Outlook
+## Vision Macro du Portfolio
 
-With 92.6% cash and 2 defensive positions (DG.PA, TLT), the portfolio is positioned for:
-1. **Further dislocation:** Can absorb additional equity weakness
-2. **Trend reversal:** Cash ready to deploy when primary trend flips bullish
-3. **Volatility contraction:** When VIXY normalizes, mean reversion trades become attractive
+**Cash Buffer: 85%** — Ce n'est pas de la passivité, c'est de l'optionnalité.
 
-Next catalyst: SPY reclaiming SMA20 or VIXY breaking below 35. Until then, capital preservation mode maintained.
+En régime de haute volatilité (VIXY > 100%), le cash devient un actif stratégique. Il permet :
+- D'acheter les dips sans forced selling
+- De survivre aux drawdowns sévères
+- D'attendre les setups à haute conviction (RSI < 20, Bollinger < 0.10)
+
+**Régime actuel:** Bearish equities, volatilité élevée, opportunities de mean reversion limitées aux extremes.
 
 ---
 
-*"The market can stay irrational longer than you can stay solvent. The stop-loss exists to prevent the second part of that equation."*
+## Métriques de Risque
 
-**Session realized P&L:** -€17.69  
-**Cumulative realized P&L:** -€588.77  
-**Unrealized P&L (open positions):** +€1.25  
-**Total portfolio return:** -4.26%
+| Métrique | Valeur | Seuil | Statut |
+|----------|--------|-------|--------|
+| Portfolio Drawdown | -4.21% | < -10% | 🟡 Attention |
+| CVaR (95%) | -20.95% | < -25% | 🟡 Elevé |
+| Cash Ratio | 85% | > 50% | 🟢 Secure |
+| Volatilité Régime | 104% | > 50% | 🔴 High Vol |
+
+---
+
+## Notes pour Demain
+
+1. **Surveiller RMS.PA** — Si RSI remonte au-dessus de 40, évaluer prise de profit partielle
+2. **Scanner les autres valeurs du CAC** — Chercher RSI < 25 pour prochaine entrée mean reversion
+3. **Maintenir discipline de sizing** — Pas plus de 10% par position tant que VIXY > 80%
+
+---
+
+*"In high volatility regimes, survival beats optimization."*
