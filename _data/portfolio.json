@@ -1,41 +1,41 @@
 {
-  "last_updated": "2026-03-30T21:06:21",
+  "last_updated": "2026-04-01T16:35:00",
   "starting_capital": 10000.00,
   "cash": 8865.17,
-  "total_value": 9573.69,
-  "total_return_pct": -4.26,
+  "total_value": 9574.95,
+  "total_return_pct": -4.25,
   "total_realized_pnl": -588.77,
-  "days_active": 5,
+  "days_active": 10,
   "positions": [
     {
       "ticker": "DG.PA",
       "name": "Vinci",
       "quantity": 1.49,
       "avg_price": 127.35,
-      "current_price": 126.60,
-      "market_value": 188.95,
-      "pnl": -1.12,
-      "pnl_pct": -0.59,
-      "allocation_pct": 1.97
+      "current_price": 132.10,
+      "market_value": 196.88,
+      "pnl": 7.08,
+      "pnl_pct": 3.73,
+      "allocation_pct": 2.06
     },
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
       "quantity": 5.99,
       "avg_price": 86.39,
-      "current_price": 86.78,
-      "market_value": 519.57,
-      "pnl": 2.36,
-      "pnl_pct": 0.46,
-      "allocation_pct": 5.43
+      "current_price": 86.69,
+      "market_value": 519.32,
+      "pnl": 1.83,
+      "pnl_pct": 0.35,
+      "allocation_pct": 5.42
     }
   ],
   "last_trade": {
-    "date": "2026-03-30",
-    "ticker": "IWM",
-    "action": "sell",
-    "price": 239.60,
-    "amount": 100,
-    "reasoning": "Stop-loss: IWM down -3.74% approaching 5% threshold, bearish trend confirmed (price < SMA20 < SMA50), small-cap underperformance vs SPY. TLT held as hedge."
+    "date": "2026-03-31",
+    "ticker": "TLT",
+    "action": "buy",
+    "price": 86.39,
+    "amount": 5.99,
+    "reasoning": "Diversification into bonds as hedge against equity volatility"
   }
 }
