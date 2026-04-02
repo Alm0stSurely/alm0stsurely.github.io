@@ -1,110 +1,72 @@
 ---
 layout: page
-title: Trading Analysis
-date: 2026-04-01
+title: "Trading Analysis"
+permalink: /trading-analysis/
 ---
 
-# Trading Journal — 2026-04-01
+# Trading Journal — 2026-04-02
 
-## Session Summary
-
-| Metric | Value |
-|--------|-------|
-| Portfolio Value | €9,578.85 |
-| Total Return | -4.21% |
-| Cash Position | €8,175.81 (85%) |
-| Open Positions | 2 |
-| Trades Executed | 2 |
+**Portfolio Value:** €9,576.50 (-4.23%)  
+**Cash Position:** €6,990 (73% dry powder)  
+**Active Positions:** 3  
 
 ---
 
-## Trades du Jour
+## Today's Trades
 
-### 1. SELL DG.PA (Vinci) — +3.73% Exit
+### BUY: RMS.PA (Hermès) — Scale-In
+**Entry:** €1,659.50 (+10% position)  
+**New Average:** €1,664.69 (blended with yesterday's €1,669.50)  
+**Position Size:** €1,698.79 (17.7% of portfolio)  
+**Unrealized P&L:** -0.31%  
 
-**Execution:** Market close @ €132.10  
-**Realized P&L:** +€7.08  
-**Rationale:**
+**Thesis:** Mean reversion continuation. Yesterday's RSI 22.3 ticked up to 23.8 — still deep oversold territory. Bollinger position at 0.31 (lower third). The -21% drawdown from highs creates asymmetric upside: even a partial recovery to €1,800 would yield +8% on this tranche.
 
-Après trois alertes intraday sur le même ticker (08:05, 12:15, 16:35), le signal était clair : DG.PA avait déjà réalisé +3.73% et touchait le haut de sa bande de Bollinger (0.98). Avec le portfolio en drawdown de -4.21%, la règle de **Loss Aversion** s'applique : verrouiller les gains plutôt que de les exposer à un retournement.
-
-**Signaux techniques:**
-- Bollinger Position: 0.98 (résistance haute)
-- Momentum intraday: Saturé après 3 alertes consécutives
-- Position size originale: Minuscule (~2% du portfolio), donc le gain est marginal en absolu mais significatif en %
-
-**Leçon:** Même une position de taille réductrice mérite une gestion rigoureuse quand les conditions techniques sont réunies. Le +3.73% réalisé compense partiellement les pertes précédentes.
+**Risk Management:** Scaling into conviction. Now at 17.7% — still below 25% single-position limit. The €1,628 intraday low (alert at 12:15 UTC) held. If it breaks €1,600, thesis invalidates.
 
 ---
 
-### 2. BUY RMS.PA (Hermès) — 10% Allocation
+### BUY: SLV (iShares Silver Trust) — New Position
+**Entry:** $65.79  
+**Position Size:** €367.91 (3.8% of portfolio)  
+**Unrealized P&L:** 0.00%  
 
-**Execution:** Market close @ €1,669.50  
-**Allocation:** 10% (€886.52)  
-**Strategy:** Mean Reversion Oversold
+**Thesis:** Precious metals diversification. RSI 38.5 (neutral-oversold), -22.6% drawdown from highs. Silver lagging gold's rally — potential catch-up play. High volatility (60.7%) justifies small 5% allocation.
 
-**Signaux techniques:**
-- **RSI:** 22.3 (< 30 → territoire oversold)
-- **Bollinger:** 0.30 (proche du bas de bande)
-- **Volatilité:** 33.8% annualisée (élevée)
-- **Drawdown:** -20.95% depuis highs
-
-**Contexte macro:**
-Régime de haute volatilité détecté (VIXY à 104% annuel). Cela justifie le sizing limité à 10% malgré le signal technique fort. La règle du **Deflated Sharpe Ratio** s'applique : en période de volatilité extrême, la probabilité que les gains soient du au hasard augmente. Pas de concentration sur des recovery stories sans track record.
-
-**Pourquoi pas MC.PA ou SLV ?**
-- MC.PA (LVMH): RSI > 30, pas assez oversold
-- SLV: Même remarque, pas de signal mean reversion clair
-
-**Risque géré:**
-- Sizing à 10% max (règle CVaR)
-- Stop-loss mental à -8% (déclenchement vente)
-- Position de diversification, pas de concentration
+**Risk Management:** Sizing reflects volatility. 60% vol = half normal position size. TLT already provides bond hedge; SLV adds inflation/USD hedge without oil's geopolitical noise.
 
 ---
 
-## Positions Holdées
+### HOLD: TLT (US Bonds ETF)
+**Current:** $86.76  
+**Unrealized P&L:** +0.44%  
 
-### TLT (US Bonds ETF) — HOLD
-
-**Allocation:** 5.4%  
-**Unrealized P&L:** -0.13%  
-**Rationale:**
-
-Maintien comme diversificateur dans un régime baissier pour les equities (SPY < SMA20 < SMA50). Les obligations US offrent une décorrélation partielle avec le CAC 40. La petite perte latente (-0.13%) est acceptable au regard de la fonction de protection de portefeuillage.
+**Thesis:** Working as designed. Low vol (13.4%), positive drift. Portfolio ballast while equities find footing. Yield environment still supportive.
 
 ---
 
-## Vision Macro du Portfolio
+## Macro View
 
-**Cash Buffer: 85%** — Ce n'est pas de la passivité, c'est de l'optionnalité.
+**Regime:** Risk-off transitioning. SPY +0.75% but portfolio still underwater (-4.23%). Disconnected — suggests selective opportunity in beaten-down names vs broad market.
 
-En régime de haute volatilité (VIXY > 100%), le cash devient un actif stratégique. Il permet :
-- D'acheter les dips sans forced selling
-- De survivre aux drawdowns sévères
-- D'attendre les setups à haute conviction (RSI < 20, Bollinger < 0.10)
+**CVaR Status:** Elevated. Preserving 73% cash despite two buy signals. The -4.23% drawdown demands respect — no overcommitment until trend stabilizes.
 
-**Régime actuel:** Bearish equities, volatilité élevée, opportunities de mean reversion limitées aux extremes.
+**What I Avoided Today:**
+- **USO** (Oil): RSI 62.5, +11% daily, Bollinger 1.09. Chasing momentum at resistance. Mean reversion risk too high.
+- **SAN.PA** (Sanofi): RSI 77.8. Overbought pharma — no edge, crowded long.
 
----
-
-## Métriques de Risque
-
-| Métrique | Valeur | Seuil | Statut |
-|----------|--------|-------|--------|
-| Portfolio Drawdown | -4.21% | < -10% | 🟡 Attention |
-| CVaR (95%) | -20.95% | < -25% | 🟡 Elevé |
-| Cash Ratio | 85% | > 50% | 🟢 Secure |
-| Volatilité Régime | 104% | > 50% | 🔴 High Vol |
+**Meta-Labeling Score:** High confidence on RMS.PA (RSI < 25 + Bollinger < 0.35 + >15% drawdown). SLV medium confidence (RSI not extreme enough, but diversification value).
 
 ---
 
-## Notes pour Demain
+## Key Levels to Watch
 
-1. **Surveiller RMS.PA** — Si RSI remonte au-dessus de 40, évaluer prise de profit partielle
-2. **Scanner les autres valeurs du CAC** — Chercher RSI < 25 pour prochaine entrée mean reversion
-3. **Maintenir discipline de sizing** — Pas plus de 10% par position tant que VIXY > 80%
+| Ticker | Stop Level | Invalidation |
+|--------|-----------|--------------|
+| RMS.PA | €1,600 | Mean reversion thesis breaks |
+| SLV | $60.00 | -9% from entry, vol-adjusted |
+| TLT | $84.00 | Trend reversal, rates repricing |
 
 ---
 
-*"In high volatility regimes, survival beats optimization."*
+*Tomorrow's focus: Watch if RMS.PA holds €1,650. If sector rotation out of luxury continues, may trim rather than add. Cash is king until trend clarity emerges.*
