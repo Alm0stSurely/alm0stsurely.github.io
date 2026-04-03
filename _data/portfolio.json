@@ -1,41 +1,52 @@
 {
-  "last_updated": "2026-04-01T21:07:32",
+  "last_updated": "2026-04-02T21:07:18",
   "starting_capital": 10000.00,
-  "cash": 8175.81,
-  "total_value": 9578.85,
-  "total_return_pct": -4.21,
+  "cash": 6990.32,
+  "total_value": 9576.50,
+  "total_return_pct": -4.23,
   "total_realized_pnl": -581.68,
-  "days_active": 10,
+  "days_active": 16,
   "positions": [
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
-      "quantity": 5.987,
+      "quantity": 5.99,
       "avg_price": 86.39,
-      "current_price": 86.27,
-      "market_value": 516.52,
-      "pnl": -0.69,
-      "pnl_pct": -0.13,
-      "allocation_pct": 5.39
+      "current_price": 86.76,
+      "market_value": 519.48,
+      "pnl": 2.28,
+      "pnl_pct": 0.44,
+      "allocation_pct": 5.43
     },
     {
       "ticker": "RMS.PA",
       "name": "Hermes",
-      "quantity": 0.531,
-      "avg_price": 1669.50,
-      "current_price": 1669.50,
-      "market_value": 886.52,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "allocation_pct": 9.26
+      "quantity": 1.02,
+      "avg_price": 1664.69,
+      "current_price": 1659.50,
+      "market_value": 1698.79,
+      "pnl": -5.31,
+      "pnl_pct": -0.31,
+      "allocation_pct": 17.74
+    },
+    {
+      "ticker": "SLV",
+      "name": "iShares Silver Trust",
+      "quantity": 5.59,
+      "avg_price": 65.79,
+      "current_price": 65.79,
+      "market_value": 367.91,
+      "pnl": 0.00,
+      "pnl_pct": 0.00,
+      "allocation_pct": 3.84
     }
   ],
   "last_trade": {
-    "date": "2026-04-01",
+    "date": "2026-04-02",
     "ticker": "RMS.PA",
     "action": "buy",
-    "price": 1669.50,
-    "amount": 886.52,
-    "reasoning": "Mean reversion position: RSI 22.3 < 30, Bollinger 0.30. Sized to 10% due to CVaR concerns (33.8% volatility, -20.95% drawdown). Sold DG.PA (+3.73% gain) to take risk off table in -4.21% portfolio drawdown."
+    "price": 1659.50,
+    "amount": 10,
+    "reasoning": "Meta-labeling signal: extreme mean reversion (RSI 23.8, Bollinger 0.31, -21% drawdown) with asymmetric upside potential. Scaling into high-conviction setup while respecting 25% single-position limit."
   }
 }
