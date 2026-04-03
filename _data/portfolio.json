@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-04-02T21:07:18",
+  "last_updated": "2026-04-03T21:07:12",
   "starting_capital": 10000.00,
-  "cash": 6990.32,
-  "total_value": 9576.50,
+  "cash": 7358.29,
+  "total_value": 9576.56,
   "total_return_pct": -4.23,
-  "total_realized_pnl": -581.68,
+  "total_realized_pnl": -581.63,
   "days_active": 16,
   "positions": [
     {
@@ -28,25 +28,21 @@
       "pnl": -5.31,
       "pnl_pct": -0.31,
       "allocation_pct": 17.74
-    },
-    {
-      "ticker": "SLV",
-      "name": "iShares Silver Trust",
-      "quantity": 5.59,
-      "avg_price": 65.79,
-      "current_price": 65.79,
-      "market_value": 367.91,
-      "pnl": 0.00,
-      "pnl_pct": 0.00,
-      "allocation_pct": 3.84
     }
   ],
   "last_trade": {
-    "date": "2026-04-02",
-    "ticker": "RMS.PA",
-    "action": "buy",
-    "price": 1659.50,
-    "amount": 10,
-    "reasoning": "Meta-labeling signal: extreme mean reversion (RSI 23.8, Bollinger 0.31, -21% drawdown) with asymmetric upside potential. Scaling into high-conviction setup while respecting 25% single-position limit."
+    "date": "2026-04-03",
+    "ticker": "SLV",
+    "action": "sell",
+    "price": 65.80,
+    "amount": 100,
+    "reasoning": "CVaR framework: SLV exhibited dangerous tail risk (60.7% vol, -3.45% daily drop, high kurtosis). Exit to protect capital in portfolio drawdown context."
+  },
+  "weekly_performance": {
+    "week": "2026-W13",
+    "return_pct": 0.03,
+    "sharpe": -0.27,
+    "max_drawdown_pct": 0.02,
+    "volatility": 0.43
   }
 }
