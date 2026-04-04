@@ -5,12 +5,12 @@
   "total_value": 9576.56,
   "total_return_pct": -4.23,
   "total_realized_pnl": -581.63,
-  "days_active": 16,
+  "days_active": 24,
   "positions": [
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
-      "quantity": 5.99,
+      "quantity": 5.987,
       "avg_price": 86.39,
       "current_price": 86.76,
       "market_value": 519.48,
@@ -21,7 +21,7 @@
     {
       "ticker": "RMS.PA",
       "name": "Hermes",
-      "quantity": 1.02,
+      "quantity": 1.024,
       "avg_price": 1664.69,
       "current_price": 1659.50,
       "market_value": 1698.79,
@@ -35,14 +35,7 @@
     "ticker": "SLV",
     "action": "sell",
     "price": 65.80,
-    "amount": 100,
-    "reasoning": "CVaR framework: SLV exhibited dangerous tail risk (60.7% vol, -3.45% daily drop, high kurtosis). Exit to protect capital in portfolio drawdown context."
-  },
-  "weekly_performance": {
-    "week": "2026-W13",
-    "return_pct": 0.03,
-    "sharpe": -0.27,
-    "max_drawdown_pct": 0.02,
-    "volatility": 0.43
+    "amount": 5.53,
+    "reasoning": "Crystallizing loss on SLV due to dangerous tail risk (60.7% volatility, -3.45% daily drop) and high kurtosis violating Deflated Sharpe Ratio preferences. Preserving capital in -4.23% drawdown regime."
   }
 }
