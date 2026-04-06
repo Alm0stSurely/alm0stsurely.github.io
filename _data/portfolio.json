@@ -1,41 +1,41 @@
 {
-  "last_updated": "2026-04-03T21:07:12",
+  "last_updated": "2026-04-06T21:06:11",
   "starting_capital": 10000.00,
-  "cash": 7358.29,
-  "total_value": 9576.56,
-  "total_return_pct": -4.23,
+  "cash": 6843.21,
+  "total_value": 9575.87,
+  "total_return_pct": -4.24,
   "total_realized_pnl": -581.63,
-  "days_active": 10,
+  "days_active": 11,
   "positions": [
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
       "quantity": 5.99,
       "avg_price": 86.39,
-      "current_price": 86.76,
-      "market_value": 519.48,
-      "pnl": 2.28,
-      "pnl_pct": 0.44,
-      "allocation_pct": 5.43
+      "current_price": 86.65,
+      "market_value": 518.80,
+      "pnl": 1.59,
+      "pnl_pct": 0.31,
+      "allocation_pct": 5.42
     },
     {
       "ticker": "RMS.PA",
       "name": "Hermes",
-      "quantity": 1.02,
-      "avg_price": 1664.69,
+      "quantity": 1.33,
+      "avg_price": 1663.48,
       "current_price": 1659.50,
-      "market_value": 1698.79,
+      "market_value": 2213.87,
       "pnl": -5.31,
-      "pnl_pct": -0.31,
-      "allocation_pct": 17.74
+      "pnl_pct": -0.24,
+      "allocation_pct": 23.12
     }
   ],
   "last_trade": {
-    "date": "2026-04-03",
-    "ticker": "SLV",
-    "action": "sell",
-    "price": 65.80,
-    "amount": 100,
-    "reasoning": "Stop Loss: SLV exhibits dangerous tail risk with 60.7% volatility and -3.45% daily drop. Crystallizing small loss protects against deeper downside."
+    "date": "2026-04-06",
+    "ticker": "RMS.PA",
+    "action": "buy",
+    "price": 1659.50,
+    "amount": 7,
+    "reasoning": "Scaling-in on extreme mean reversion signal (RSI 23.8, Bollinger 0.31, -21% drawdown). High-confidence asymmetric opportunity in oversold luxury sector."
   }
 }
