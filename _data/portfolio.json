@@ -1,41 +1,41 @@
 {
-  "last_updated": "2026-04-07T21:06:10",
-  "starting_capital": 10000.00,
-  "cash": 6843.21,
-  "total_value": 9567.14,
-  "total_return_pct": -4.33,
-  "total_realized_pnl": -581.63,
+  "last_updated": "2026-04-08T08:09:14.455383",
+  "starting_capital": 10000.0,
+  "cash": 8022.13,
+  "total_value": 9643.51,
+  "total_return_pct": -3.56,
+  "total_realized_pnl": -512.24,
   "days_active": 35,
   "positions": [
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
-      "quantity": 5.987,
+      "quantity": 5.9873,
       "avg_price": 86.39,
       "current_price": 86.64,
       "market_value": 518.74,
       "pnl": 1.53,
-      "pnl_pct": 0.30,
-      "allocation_pct": 5.42
+      "pnl_pct": 0.3,
+      "allocation_pct": 5.4
     },
     {
       "ticker": "RMS.PA",
       "name": "Hermes",
-      "quantity": 1.334,
+      "quantity": 0.6671,
       "avg_price": 1663.48,
-      "current_price": 1653.00,
-      "market_value": 2205.20,
-      "pnl": -13.98,
+      "current_price": 1653.0,
+      "market_value": 1102.65,
+      "pnl": -6.99,
       "pnl_pct": -0.63,
-      "allocation_pct": 23.05
+      "allocation_pct": 11.4
     }
   ],
   "last_trade": {
-    "date": "2026-04-07",
-    "ticker": null,
-    "action": "hold",
-    "price": null,
-    "amount": null,
-    "reasoning": "Portfolio drawdown (-4.33%) and rising volatility warrant maintaining 71.5% cash buffer as tail risk protection. RMS.PA remains valid mean reversion hold but position size (23%) near 25% limit prevents adding. No new entries given SPY neutral RSI and ambiguous trend."
+    "date": "2026-04-08",
+    "ticker": "RMS.PA",
+    "action": "sell",
+    "price": 1767.5,
+    "amount": 0.667,
+    "reasoning": "Partial profit taking after +6.25% mean reversion move. Position reached 24.3% of portfolio limit. Prospect Theory: lock in gains while maintaining upside exposure."
   }
 }
