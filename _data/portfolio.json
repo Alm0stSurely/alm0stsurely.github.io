@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-04-08T08:09:14.455383",
+  "last_updated": "2026-04-08T21:06:45.739554",
   "starting_capital": 10000.0,
-  "cash": 8022.13,
-  "total_value": 9643.51,
-  "total_return_pct": -3.56,
+  "cash": 7380.36,
+  "total_value": 9719.84,
+  "total_return_pct": -2.8,
   "total_realized_pnl": -512.24,
-  "days_active": 35,
+  "days_active": 36,
   "positions": [
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
       "quantity": 5.9873,
       "avg_price": 86.39,
-      "current_price": 86.64,
-      "market_value": 518.74,
-      "pnl": 1.53,
-      "pnl_pct": 0.3,
+      "current_price": 86.91,
+      "market_value": 520.35,
+      "pnl": 3.14,
+      "pnl_pct": 0.61,
       "allocation_pct": 5.4
     },
     {
@@ -23,19 +23,30 @@
       "name": "Hermes",
       "quantity": 0.6671,
       "avg_price": 1663.48,
-      "current_price": 1653.0,
-      "market_value": 1102.65,
-      "pnl": -6.99,
-      "pnl_pct": -0.63,
-      "allocation_pct": 11.4
+      "current_price": 1765.0,
+      "market_value": 1177.36,
+      "pnl": 67.72,
+      "pnl_pct": 6.1,
+      "allocation_pct": 12.1
+    },
+    {
+      "ticker": "DBA",
+      "name": "Invesco DB Agriculture Fund",
+      "quantity": 23.8843,
+      "avg_price": 26.87,
+      "current_price": 26.87,
+      "market_value": 641.77,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "allocation_pct": 6.6
     }
   ],
   "last_trade": {
     "date": "2026-04-08",
-    "ticker": "RMS.PA",
-    "action": "sell",
-    "price": 1767.5,
-    "amount": 0.667,
-    "reasoning": "Partial profit taking after +6.25% mean reversion move. Position reached 24.3% of portfolio limit. Prospect Theory: lock in gains while maintaining upside exposure."
+    "ticker": "DBA",
+    "action": "buy",
+    "price": 26.87,
+    "amount": 641.77,
+    "reasoning": "Mean reversion play with favorable risk characteristics: low volatility (9.2%), negative correlation to SPY (-0.22), RSI 48.7 and Bollinger 0.42"
   }
 }
