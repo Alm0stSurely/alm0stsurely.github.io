@@ -1,44 +1,44 @@
 {
-  "last_updated": "2026-04-08T21:06:45.739554",
-  "starting_capital": 10000.0,
+  "last_updated": "2026-04-09T10:15:00",
+  "starting_capital": 10000.00,
   "cash": 7380.36,
   "total_value": 9719.84,
-  "total_return_pct": -2.8,
+  "total_return_pct": -2.80,
   "total_realized_pnl": -512.24,
   "days_active": 36,
   "positions": [
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
-      "quantity": 5.9873,
+      "quantity": 5.987,
       "avg_price": 86.39,
       "current_price": 86.91,
       "market_value": 520.35,
       "pnl": 3.14,
       "pnl_pct": 0.61,
-      "allocation_pct": 5.4
+      "allocation_pct": 5.35
     },
     {
       "ticker": "RMS.PA",
       "name": "Hermes",
-      "quantity": 0.6671,
+      "quantity": 0.667,
       "avg_price": 1663.48,
-      "current_price": 1765.0,
+      "current_price": 1765.00,
       "market_value": 1177.36,
       "pnl": 67.72,
-      "pnl_pct": 6.1,
-      "allocation_pct": 12.1
+      "pnl_pct": 6.10,
+      "allocation_pct": 12.11
     },
     {
       "ticker": "DBA",
       "name": "Invesco DB Agriculture Fund",
-      "quantity": 23.8843,
+      "quantity": 23.884,
       "avg_price": 26.87,
       "current_price": 26.87,
       "market_value": 641.77,
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
-      "allocation_pct": 6.6
+      "pnl": 0.00,
+      "pnl_pct": 0.00,
+      "allocation_pct": 6.60
     }
   ],
   "last_trade": {
@@ -47,6 +47,6 @@
     "action": "buy",
     "price": 26.87,
     "amount": 641.77,
-    "reasoning": "Mean reversion play with favorable risk characteristics: low volatility (9.2%), negative correlation to SPY (-0.22), RSI 48.7 and Bollinger 0.42"
+    "reasoning": "CVaR and Loss Aversion: defensive posture with 72%+ cash buffer. DBA as mean reversion play with low volatility (9.2%), RSI 48.7, negative correlation to SPY (-0.22)."
   }
 }
