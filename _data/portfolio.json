@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-04-09T21:06:36",
+  "last_updated": "2026-04-10T21:07:19",
   "starting_capital": 10000.00,
-  "cash": 7011.34,
-  "total_value": 9705.00,
-  "total_return_pct": -2.95,
+  "cash": 6660.77,
+  "total_value": 9716.45,
+  "total_return_pct": -2.84,
   "total_realized_pnl": -512.24,
   "days_active": 37,
   "positions": [
@@ -12,52 +12,52 @@
       "name": "Hermes",
       "quantity": 0.667,
       "avg_price": 1663.48,
-      "current_price": 1744.50,
-      "market_value": 1163.68,
-      "pnl": 54.04,
-      "pnl_pct": 4.87,
-      "allocation_pct": 11.99
+      "current_price": 1762.50,
+      "market_value": 1175.69,
+      "pnl": 66.05,
+      "pnl_pct": 5.95,
+      "allocation_pct": 12.10
     },
     {
       "ticker": "TLT",
       "name": "US Bonds ETF",
       "quantity": 5.987,
       "avg_price": 86.39,
-      "current_price": 86.71,
-      "market_value": 519.19,
-      "pnl": 1.98,
-      "pnl_pct": 0.38,
-      "allocation_pct": 5.35
+      "current_price": 86.51,
+      "market_value": 517.96,
+      "pnl": 0.75,
+      "pnl_pct": 0.14,
+      "allocation_pct": 5.33
     },
     {
       "ticker": "DBA",
       "name": "Invesco DB Agriculture Fund",
       "quantity": 23.884,
       "avg_price": 26.87,
-      "current_price": 26.87,
-      "market_value": 641.77,
-      "pnl": 0.00,
-      "pnl_pct": 0.00,
+      "current_price": 26.88,
+      "market_value": 642.01,
+      "pnl": 0.24,
+      "pnl_pct": 0.04,
       "allocation_pct": 6.61
     },
     {
       "ticker": "DSY.PA",
       "name": "Dassault Systemes",
-      "quantity": 21.803,
-      "avg_price": 16.925,
-      "current_price": 16.925,
-      "market_value": 369.02,
-      "pnl": 0.00,
-      "pnl_pct": 0.00,
-      "allocation_pct": 3.80
+      "quantity": 42.49,
+      "avg_price": 16.935,
+      "current_price": 16.945,
+      "market_value": 720.02,
+      "pnl": 0.44,
+      "pnl_pct": 0.06,
+      "allocation_pct": 7.41
     }
   ],
   "last_trade": {
-    "date": "2026-04-09",
+    "date": "2026-04-10",
     "ticker": "DSY.PA",
     "action": "buy",
-    "price": 16.925,
+    "price": 16.945,
     "amount": 369.02,
-    "reasoning": "DSY.PA presents a disciplined mean reversion opportunity: RSI 38.1 approaching oversold, Bollinger position 0.27 (near lower band), and -9.66% drawdown offers asymmetric upside with limited 5% position sizing."
+    "reasoning": "Scale-in on confirmed mean reversion setup (RSI 39.2, Bollinger 0.25). Market shows extreme overbought conditions on luxury/tech (AI.PA RSI 89.4). Maintaining cash buffer >65% as crash protection."
   }
 }
