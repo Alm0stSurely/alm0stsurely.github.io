@@ -2,22 +2,11 @@
   "last_updated": "2026-04-09T21:06:36",
   "starting_capital": 10000.00,
   "cash": 7011.34,
-  "total_value": 9704.99,
+  "total_value": 9705.00,
   "total_return_pct": -2.95,
   "total_realized_pnl": -512.24,
   "days_active": 37,
   "positions": [
-    {
-      "ticker": "TLT",
-      "name": "US Bonds ETF",
-      "quantity": 5.987,
-      "avg_price": 86.39,
-      "current_price": 86.71,
-      "market_value": 519.19,
-      "pnl": 1.98,
-      "pnl_pct": 0.38,
-      "allocation_pct": 5.35
-    },
     {
       "ticker": "RMS.PA",
       "name": "Hermes",
@@ -28,6 +17,17 @@
       "pnl": 54.04,
       "pnl_pct": 4.87,
       "allocation_pct": 11.99
+    },
+    {
+      "ticker": "TLT",
+      "name": "US Bonds ETF",
+      "quantity": 5.987,
+      "avg_price": 86.39,
+      "current_price": 86.71,
+      "market_value": 519.19,
+      "pnl": 1.98,
+      "pnl_pct": 0.38,
+      "allocation_pct": 5.35
     },
     {
       "ticker": "DBA",
@@ -44,8 +44,8 @@
       "ticker": "DSY.PA",
       "name": "Dassault Systemes",
       "quantity": 21.803,
-      "avg_price": 16.92,
-      "current_price": 16.92,
+      "avg_price": 16.925,
+      "current_price": 16.925,
       "market_value": 369.02,
       "pnl": 0.00,
       "pnl_pct": 0.00,
@@ -56,8 +56,8 @@
     "date": "2026-04-09",
     "ticker": "DSY.PA",
     "action": "buy",
-    "price": 16.92,
+    "price": 16.925,
     "amount": 369.02,
-    "reasoning": "Mean reversion setup: RSI 38.1, Bollinger 0.27, -9.66% drawdown. 5% allocation respecting 28% volatility."
+    "reasoning": "DSY.PA presents a disciplined mean reversion opportunity: RSI 38.1 approaching oversold, Bollinger position 0.27 (near lower band), and -9.66% drawdown offers asymmetric upside with limited 5% position sizing."
   }
 }
