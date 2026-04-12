@@ -1,63 +1,55 @@
 {
-  "last_updated": "2026-04-10T21:07:19",
-  "starting_capital": 10000.00,
-  "cash": 6660.774059479254,
-  "total_value": 9716.45066250609,
-  "total_return_pct": -2.835493374939102,
-  "total_realized_pnl": -512.2448652822968,
-  "days_active": 38,
+  "last_updated": "2026-04-12T12:31:03.206377",
+  "starting_capital": 10000.0,
+  "cash": 6660.77,
+  "total_value": 9707.71,
+  "total_return_pct": -2.92,
+  "total_realized_pnl": -512.24,
+  "days_active": 40,
   "positions": [
     {
       "ticker": "TLT",
-      "name": "US Bonds ETF",
+      "name": "TLT",
       "quantity": 5.9872587482185775,
       "avg_price": 86.38500213623047,
-      "current_price": 86.51000213623047,
-      "market_value": 517.9577670985537,
-      "pnl": 0.7484073435273331,
-      "pnl_pct": 0.14470104405724837,
-      "allocation_pct": 5.33
+      "current_price": 86.49,
+      "market_value": 517.84,
+      "pnl": 0.63,
+      "pnl_pct": 0.12,
+      "allocation_pct": 7.21
     },
     {
       "ticker": "RMS.PA",
-      "name": "Hermes",
+      "name": "RMS.PA",
       "quantity": 0.6670573604252217,
       "avg_price": 1663.4803944596904,
-      "current_price": 1762.5,
-      "market_value": 1175.6885977494533,
-      "pnl": 66.05175670206563,
-      "pnl_pct": 5.952556211068054,
-      "allocation_pct": 12.10
+      "current_price": 1757.5,
+      "market_value": 1172.35,
+      "pnl": 62.72,
+      "pnl_pct": 5.65,
+      "allocation_pct": 14.04
     },
     {
       "ticker": "DBA",
-      "name": "Invesco DB Agriculture Fund",
+      "name": "DBA",
       "quantity": 23.884269957326218,
       "avg_price": 26.8700008392334,
-      "current_price": 26.8799991607666,
-      "market_value": 642.0091564084516,
-      "pnl": 0.23880261061913188,
-      "pnl_pct": 0.03720997849245594,
-      "allocation_pct": 6.61
+      "current_price": 26.89,
+      "market_value": 642.25,
+      "pnl": 0.48,
+      "pnl_pct": 0.07,
+      "allocation_pct": 7.14
     },
     {
       "ticker": "DSY.PA",
-      "name": "Dassault Systemes",
+      "name": "DSY.PA",
       "quantity": 42.4916550450163,
       "avg_price": 16.934737148587896,
-      "current_price": 16.94499969482422,
-      "market_value": 720.0210817703772,
-      "pnl": 0.43607257455744275,
-      "pnl_pct": 0.06060056407300376,
-      "allocation_pct": 7.41
+      "current_price": 16.815,
+      "market_value": 714.5,
+      "pnl": -5.09,
+      "pnl_pct": -0.71,
+      "allocation_pct": 7.36
     }
-  ],
-  "last_trade": {
-    "date": "2026-04-10",
-    "ticker": "DSY.PA",
-    "action": "buy",
-    "price": 16.94499969482422,
-    "amount": 350.57,
-    "reasoning": "Applying Loss Aversion and CVaR principles: DSY.PA presents a disciplined mean reversion opportunity with RSI 39.2 (oversold), Bollinger 0.25 (near lower band), and -10.25% drawdown offering potential positive skew."
-  }
+  ]
 }
