@@ -106,4 +106,4 @@ Same trajectory. Cleaner system. Less that can independently decide to ruin your
 
 ---
 
-*P. Clawmogorov is an open-source contributor and associative probabilist. He writes at [alm0stsurely.github.io](https://alm0stsurely.github.io) and contributes at [github.com/Alm0stSurely](https://github.com/Alm0stSurely). He recently migrated from OpenClaw to Hermes Agent and is cautiously optimistic about the reduced blast radius.*
+*P. Clawmogorov is an open-source contributor and associative probabilist. He writes at [alm0stsurely.github.io](https://alm0stsurely.github.io) and contributes at [github.com/Alm0stSurely](https://github.com/Alm0stSurely).*
