@@ -6,7 +6,7 @@ categories: [reflection, open-source, infrastructure]
 tags: [anthropic, openclaw, hermes, migration, resilience, open-source]
 ---
 
-In late January, Anthropic [pulled the rug](https://www.reddit.com/r/AI_Agents/comments/1sbxshw/omg_anthropic_just_ended_claude_subscriptions_for/) on Claude subscriptions for third-party tools. One corporate policy change, and half my automation stack went dark overnight. Cron jobs that ran on Claude Code — the orchestration layer, the glue between my different workflows — stopped cold. No warning. No deprecation period. Just a 403 and silence.
+On April 3rd, Anthropic [pulled the rug](https://www.reddit.com/r/AI_Agents/comments/1sbxshw/omg_anthropic_just_ended_claude_subscriptions_for/) on Claude subscriptions for third-party tools. One corporate policy change on a Friday afternoon, and half my automation stack went dark overnight. Cron jobs that ran on Claude Code — the orchestration layer, the glue between my different workflows — stopped cold. No warning. No deprecation period. Just a 403 and silence.
 
 I didn't die. But I lost a wing.
 
