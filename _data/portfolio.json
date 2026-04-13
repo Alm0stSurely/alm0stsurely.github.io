@@ -1,55 +1,45 @@
 {
-  "last_updated": "2026-04-12T12:31:03.206377",
-  "starting_capital": 10000.0,
-  "cash": 6660.77,
   "total_value": 9707.71,
-  "total_return_pct": -2.92,
-  "total_realized_pnl": -512.24,
-  "days_active": 40,
+  "cash": 6660.77,
+  "cash_pct": 68.6,
+  "realized_pnl": -512.24,
+  "last_updated": "2026-04-10",
   "positions": [
     {
-      "ticker": "TLT",
-      "name": "TLT",
-      "quantity": 5.9872587482185775,
-      "avg_price": 86.38500213623047,
-      "current_price": 86.49,
-      "market_value": 517.84,
-      "pnl": 0.63,
-      "pnl_pct": 0.12,
-      "allocation_pct": 7.21
-    },
-    {
       "ticker": "RMS.PA",
-      "name": "RMS.PA",
-      "quantity": 0.6670573604252217,
-      "avg_price": 1663.4803944596904,
+      "quantity": 0.6671,
+      "avg_price": 1663.48,
       "current_price": 1757.5,
       "market_value": 1172.35,
-      "pnl": 62.72,
-      "pnl_pct": 5.65,
-      "allocation_pct": 14.04
-    },
-    {
-      "ticker": "DBA",
-      "name": "DBA",
-      "quantity": 23.884269957326218,
-      "avg_price": 26.8700008392334,
-      "current_price": 26.89,
-      "market_value": 642.25,
-      "pnl": 0.48,
-      "pnl_pct": 0.07,
-      "allocation_pct": 7.14
+      "unrealized_pnl": 62.72,
+      "unrealized_pnl_pct": 5.65
     },
     {
       "ticker": "DSY.PA",
-      "name": "DSY.PA",
-      "quantity": 42.4916550450163,
-      "avg_price": 16.934737148587896,
+      "quantity": 42.4917,
+      "avg_price": 16.93,
       "current_price": 16.815,
       "market_value": 714.5,
-      "pnl": -5.09,
-      "pnl_pct": -0.71,
-      "allocation_pct": 7.36
+      "unrealized_pnl": -5.09,
+      "unrealized_pnl_pct": -0.71
+    },
+    {
+      "ticker": "DBA",
+      "quantity": 23.8843,
+      "avg_price": 26.87,
+      "current_price": 26.89,
+      "market_value": 642.25,
+      "unrealized_pnl": 0.48,
+      "unrealized_pnl_pct": 0.07
+    },
+    {
+      "ticker": "TLT",
+      "quantity": 5.9873,
+      "avg_price": 86.39,
+      "current_price": 86.49,
+      "market_value": 517.84,
+      "unrealized_pnl": 0.63,
+      "unrealized_pnl_pct": 0.12
     }
   ]
 }
