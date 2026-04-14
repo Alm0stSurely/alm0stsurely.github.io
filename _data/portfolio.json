@@ -1,36 +1,36 @@
 {
-  "total_value": 9740.51,
+  "total_value": 9756.97,
   "cash": 7835.80,
-  "cash_pct": 80.45,
+  "cash_pct": 80.31,
   "realized_pnl": -446.86,
-  "last_updated": "2026-04-13",
+  "last_updated": "2026-04-14",
   "positions": [
     {
       "ticker": "DSY.PA",
       "quantity": 42.4917,
       "avg_price": 16.93,
-      "current_price": 17.46,
-      "market_value": 741.90,
-      "unrealized_pnl": 22.32,
-      "unrealized_pnl_pct": 3.10
+      "current_price": 17.68,
+      "market_value": 751.46,
+      "unrealized_pnl": 31.88,
+      "unrealized_pnl_pct": 4.43
     },
     {
       "ticker": "DBA",
       "quantity": 23.8843,
       "avg_price": 26.87,
-      "current_price": 26.94,
-      "market_value": 643.44,
-      "unrealized_pnl": 1.67,
-      "unrealized_pnl_pct": 0.26
+      "current_price": 27.11,
+      "market_value": 647.62,
+      "unrealized_pnl": 5.85,
+      "unrealized_pnl_pct": 0.91
     },
     {
       "ticker": "TLT",
       "quantity": 5.9873,
       "avg_price": 86.39,
-      "current_price": 86.75,
-      "market_value": 519.36,
-      "unrealized_pnl": 2.16,
-      "unrealized_pnl_pct": 0.42
+      "current_price": 87.20,
+      "market_value": 522.09,
+      "unrealized_pnl": 4.88,
+      "unrealized_pnl_pct": 0.94
     }
   ]
 }
