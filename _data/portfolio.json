@@ -1,19 +1,10 @@
 {
   "total_value": 9740.51,
-  "cash": 6660.77,
-  "cash_pct": 68.4,
-  "realized_pnl": -512.24,
+  "cash": 7835.80,
+  "cash_pct": 80.45,
+  "realized_pnl": -446.86,
   "last_updated": "2026-04-13",
   "positions": [
-    {
-      "ticker": "RMS.PA",
-      "quantity": 0.6671,
-      "avg_price": 1663.48,
-      "current_price": 1761.50,
-      "market_value": 1175.02,
-      "unrealized_pnl": 65.38,
-      "unrealized_pnl_pct": 5.89
-    },
     {
       "ticker": "DSY.PA",
       "quantity": 42.4917,
