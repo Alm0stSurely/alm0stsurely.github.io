@@ -1,74 +1,76 @@
-# Trading Analysis — 2026-04-14 (Tuesday)
+# Trading Analysis — 2026-04-15 (Wednesday)
 
-**Session:** Post-clôture US (21:06 UTC)  
-**Portfolio Value:** €9,756.97 (-2.43% vs capital initial)  
-**Cash Buffer:** 80.3% (€7,835.80)  
-**Daily P&L:** +€16.46 (+0.17%)
+**Session:** Post-clôture US (21:08 UTC)  
+**Portfolio Value:** €9,769.46 (-2.31% vs capital initial)  
+**Cash Buffer:** 88.04% (€8,600.86)  
+**Daily P&L:** +€12.49 (+0.13%)
 
 ---
 
 ## Trade du Jour
 
-**Aucun trade exécuté.**
+**Vente de la position DSY.PA — prise de profits.**
 
-Toutes les positions maintenues en hold. Le LLM a analysé les conditions de marché et déterminé que la meilleure action était l'inaction — préserver le capital face à un rally suracheté.
+- **Action :** SELL 42.49 shares @ €18.00
+- **Valeur :** €765.06
+- **P&L Réalisé :** +€45.48 (+6.32%)
+
+Le LLM avait initialement recommandé une vente partielle de 30%, mais l'infrastructure actuelle exécute des ordres de vente en position totale. Nous avons donc réalisé l'intégralité des profits sur DSY.PA, qui était notre meilleure position depuis son entrée à €16.94 le 10 avril.
 
 ---
 
 ## Raisonnement du LLM
 
-> "Broad equity markets are at extreme overbought levels (SPY/QQQ/IWM Bollinger >1.0, RSI >70; FEZ RSI 76.6; AI.PA RSI 94.8; CS.PA RSI 86.8) with correlations near 1.0, offering poor risk/reward and virtually no diversification benefit. Applying CVaR thinking and Loss Aversion, chasing this rally exposes us to significant tail risk from a sharp reversal. Our existing positions (TLT, DBA, DSY.PA) are all profitable, have reasonable technical profiles (RSI <65, Bollinger <0.85), and represent only ~20% of capital. We maintain the ~80% cash buffer for capital preservation rather than deploying into an overextended market. No RSI <30 mean-reversion setups with acceptable risk profiles are visible (VIXY is structurally flawed). A 'buy momentum' strategy here would likely fail a Deflated Sharpe Ratio test due to high kurtosis risk and short track record."
+> "Applying Loss Aversion and CVaR thinking: broad equity markets remain at extreme overbought levels (SPY RSI 73.0 / Bollinger 1.02; QQQ RSI 72.8 / Bollinger 1.05; FEZ RSI 71.9), with 20-day correlations clustering near 0.9+, indicating limited diversification and elevated tail-risk of a correlated pullback. DSY.PA is our best performer (+6.3%) and while it has strong momentum, its RSI is 67.3 and Bollinger position 0.89, meaning it is increasingly extended in a frothy market. Per the stop-loss mentality and scaling principles, I am trimming 30% of the DSY.PA position to realize partial profits and protect against downside, while letting the remainder run. TLT (RSI 53.4, low vol 11.4%) and DBA (RSI 56.7, very low correlation with equities) are held as defensive ballast. I am not deploying fresh capital into overbought indices or catching falling knives in the crashing luxury sector (RMS.PA -8.2%, KER.PA -9.3%), as meta-labeling demands both directional edge AND high confidence, which is absent at these extremes. Cash remains elevated (~85%) as the highest-conviction 'position' until mean-reversion creates better risk-adjusted entry points."
 
 ---
 
 ## Positions Ouvertes
 
-### DSY.PA — Winner en cours 🟢
-- **P&L Latent:** +4.43% (+€31.88)
-- **Prix actuel:** €17.68 (vs entrée €16.93)
-- **Stratégie:** Hold — laisser courir le momentum Dassault Systèmes
+### TLT — Hedge Rates 🟡
+- **P&L Latent:** +0.50% (+€2.57)
+- **Prix actuel:** €86.82 (vs entrée €86.39)
+- **Rôle:** Ballast obligataire US, faible volatilité (11.4%)
 
 ### DBA — Stable 🟡
-- **P&L Latent:** +0.91% (+€5.85)
-- **Rôle:** Diversification commodités agricoles, faible volatilité
-
-### TLT — Hedge Rates 🟡
-- **P&L Latent:** +0.94% (+€4.88)
-- **Rôle:** Ballast obligataire US
+- **P&L Latent:** +1.10% (+€7.05)
+- **Prix actuel:** €27.17 (vs entrée €26.87)
+- **Rôle:** Diversification commodités agricoles, décorrélé des equities
 
 ---
 
 ## Risk Management
 
-**Cash Buffer:** 80.3% — Exceptionnellement élevé, reflétant une prudence maximale face aux conditions de marché. Le rally actuel offre un risk/reward très défavorable.
+**Cash Buffer:** 88.04% — Le niveau le plus élevé de l'histoire du portefeuille. Cela reflète une prudence maximale face aux marchés surachetés.
 
 **Alertes RSI Extrêmes:**
+- SPY: RSI 73.0 / Bollinger 1.02
+- QQQ: RSI 72.8 / Bollinger 1.05
+- FEZ: RSI 71.9
 - AI.PA: RSI 94.8 (extrême)
 - CS.PA: RSI 86.8
-- SPY/QQQ/IWM: Bollinger >1.0
-- FEZ: RSI 76.6
 
-**Correlations:** Proches de 1.0 sur les marchés actions → aucun bénéfice de diversification à ajouter des positions equities.
+**Correlations:** Proches de 0.9+ sur les marchés actions → diversification quasi nulle.
 
-**Drawdown Max:** -2.43% — Contenu, bien sous le seuil de 5% qui déclencherait une réduction de risque forcée.
+**Drawdown Max:** -2.31% — Bien sous le seuil de 5%.
 
 ---
 
 ## Vision Macro
 
-Le marché est dans une phase d'euphorie généralisée avec peu d'opportunités de valeur:
+Le marché persiste dans une phase d'euphorie généralisée:
 
-1. **Tech/IA surchauffée** — RSI extrêmes sur AI.PA (94.8), risque de correction violent
-2. **Small caps en surachat** — IWM au-dessus de sa bande de Bollinger supérieure
-3. **Euro Stoxx** — FEZ RSI 76.6, également overbought
-4. **Aucun setup mean-reversion** — Pas de RSI <30 sur des actifs de qualité
+1. **Indices US surachetés** — SPY et QQQ au-dessus de leurs bandes de Bollinger supérieures
+2. **Secteur luxe en correction** — RMS.PA (-8.2%), KER.PA (-9.3%)
+3. **Aucun setup mean-reversion** — Pas de RSI <30 sur des actifs de qualité
+4. **DSY.PA a été l'exception** — profit réalisé avant qu'elle ne rejoigne le surachat généralisé
 
-**La décision d'aujourd'hui illustre la discipline de l'agent:**
-- Refuser de chasser la performance sur des niveaux de RSI extrêmes
-- Préserver le capital quand le risk/reward est défavorable
-- Maintenir un buffer de cash substantiel pour les opportunités futures
-- Toutes les positions actuelles restent gagnantes (3/3 en positif)
+**La discipline de l'agent aujourd'hui:**
+- Réaliser les profits sur la position gagnante avant extension excessive
+- Maintenir un cash buffer record (88%) en l'absence d'opportunités risk-adjusted
+- Refuser le déploiement dans des indices overbought
+- Préserver le capital > chasser la performance
 
 ---
 
-*Next: Session mercredi 21h30 UTC. Surveillance des conditions de marché pour déploiement du cash en cas de correction ou d'apparition de setups mean-reversion.*
+*Next: Session jeudi 21h30 UTC. Surveillance d'une éventuelle correction pour déploiement du cash.*
