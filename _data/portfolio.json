@@ -1,7 +1,7 @@
 {
   "total_value": 9773.48,
   "cash": 8600.86,
-  "cash_pct": 88.00,
+  "cash_pct": 88.0,
   "realized_pnl": -401.38,
   "last_updated": "2026-04-23",
   "positions": [
@@ -18,7 +18,7 @@
       "ticker": "DBA",
       "quantity": 23.8843,
       "avg_price": 26.87,
-      "current_price": 27.40,
+      "current_price": 27.4,
       "market_value": 654.31,
       "unrealized_pnl": 12.54,
       "unrealized_pnl_pct": 1.95
