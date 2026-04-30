@@ -1,27 +1,18 @@
 {
-  "total_value": 9773.90,
-  "cash": 8600.86,
-  "cash_pct": 88.0,
-  "realized_pnl": -401.38,
-  "last_updated": "2026-04-24",
+  "total_value": 9782.65,
+  "cash": 9270.10,
+  "cash_pct": 94.8,
+  "realized_pnl": -373.92,
+  "last_updated": "2026-04-30",
   "positions": [
     {
       "ticker": "TLT",
       "quantity": 5.9873,
       "avg_price": 86.39,
-      "current_price": 86.70,
-      "market_value": 519.10,
-      "unrealized_pnl": 1.89,
-      "unrealized_pnl_pct": 0.36
-    },
-    {
-      "ticker": "DBA",
-      "quantity": 23.8843,
-      "avg_price": 26.87,
-      "current_price": 27.38,
-      "market_value": 653.95,
-      "unrealized_pnl": 12.18,
-      "unrealized_pnl_pct": 1.90
+      "current_price": 85.61,
+      "market_value": 512.55,
+      "unrealized_pnl": -4.66,
+      "unrealized_pnl_pct": -0.90
     }
   ]
 }
