@@ -1,32 +1,31 @@
-# Trading Analysis — 2026-04-30 (Thursday)
+# Trading Analysis — 2026-05-01 (Friday)
 
 **Session:** Post-clôture US (21:08 UTC)  
-**Portfolio Value:** €9,782.65 (-2.17% vs capital initial)  
+**Portfolio Value:** €9,782.60 (-2.17% vs capital initial)  
 **Cash Buffer:** 94.76% (€9,270.10)  
-**Daily Return:** +0.09%
+**Daily Return:** 0.00%
 
 ---
 
 ## Trade du Jour
 
-**SELL DBA — 100% of position**
-- **Quantité:** 23.8843 @ €28.02
-- **P&L Réalisé:** +€27.47 (+4.28%)
-- **Raison:** RSI 80.0, position Bollinger 1.00 — conditions de surachat extrême après un rallye violent. Cristallisation du gain avant réversion à la moyenne.
+**Aucun trade exécuté.**
+
+L'agent maintient sa position TLT et son cash à quasi-niveau record. Aucun signal ne dépasse le seuil de meta-labeling (directional edge + high confidence) dans un marché suracheté.
 
 ---
 
 ## Raisonnement du LLM
 
-> "DBA exhibits extreme overbought conditions (RSI 80.0, Bollinger position 1.00) after a sharp rally; selling crystallizes the +4.28% gain before mean reversion erodes it. US equities remain in a dangerously overstretched regime (SPY RSI 80.6, QQQ 82.8, IWM 74.2) with inter-index correlations near 0.94—chasing momentum here offers asymmetric downside under a CVaR/loss-aversion framework. No alternative setup today meets the meta-labeling threshold of both directional edge AND high confidence: GLD and TLT are only mildly oversold and below falling SMAs, while deeply oversold French names (e.g., KER.PA, SAF.PA) carry prohibitive idiosyncratic volatility (53-62% ann.) and falling-knife risk. Preserving ~95% cash maintains substantial dry powder for tail opportunities and aligns with capital preservation as the primary objective."
+> "US equities (QQQ RSI 82.8, SPY RSI 79.1, IWM RSI 72.3) are in extreme overbought territory near upper Bollinger bands, offering poor risk/reward for new longs per meta-labeling principles (directional edge exists but confidence in timing is low). With correlations among US risk assets elevated (~0.8-0.95) and recent returns likely overstating true risk-adjusted edge (Deflated Sharpe skepticism), I avoid chasing momentum. Loss aversion and CVaR mindset prioritize protecting against mean-reversion tail risk rather than FOMO. TLT remains the sole position at ~5% of portfolio with only a -0.91% unrealized loss; it is technically oversold (RSI 37.3, Bollinger -0.01) with very low vol (6.6%), so no stop-loss is triggered. Individual French names (e.g., KER.PA, MC.PA) show oversold readings but carry extreme volatility (33-62%) and lack correlation transparency, making them poor candidates for capital preservation. Maintaining ~95% cash preserves liquidity and optionality until technical extremes normalize or higher-confidence setups appear."
 
 ---
 
 ## Positions Ouvertes
 
 ### TLT — Hedge Rates 🟡
-- **P&L Latent:** -0.90% (-€4.66)
-- **Prix actuel:** €85.61 (vs entrée €86.39)
+- **P&L Latent:** -0.91% (-€4.70)
+- **Prix actuel:** €85.60 (vs entrée €86.39)
 - **Rôle:** Ballast obligataire US, faible volatilité
 - **Quantité:** 5.9873
 
@@ -34,15 +33,14 @@
 
 ## Risk Management
 
-**Cash Buffer:** 94.76% — Niveau historique. L'agent a cristallisé le gain DBA et maintient une position quasi-totalement liquide.
+**Cash Buffer:** 94.76% — Niveau historique maintenu. L'agent refuse de déployer dans un rallye suracheté.
 
 **Alertes RSI Extrêmes:**
-- SPY: RSI ~80.6 / Bollinger >0.75
+- SPY: RSI ~79.1 / Bollinger >0.75
 - QQQ: RSI ~82.8
-- IWM: RSI ~74.2
-- DBA: RSI ~80.0 / Bollinger 1.00 (vendu)
+- IWM: RSI ~72.3
 
-**Correlations:** ~0.94 entre les proxies equity → diversification quasi nulle.
+**Correlations:** ~0.8-0.95 entre les proxies equity → diversification quasi nulle.
 
 **Drawdown Max:** -2.17% — Bien sous le seuil de 5%.
 
@@ -52,17 +50,17 @@
 
 Le marché persiste dans une phase d'euphorie généralisée:
 
-1. **Indices US surachetés** — RSI 74–83 sur les principaux proxies
-2. **DBA vendu sur signal de surachat** — Cristallisation d'un gain de +4.28%
-3. **TLT maintenu** — Légère perte latente (-0.90%), mais rôle de ballast intact
-4. **Régime de haute corrélation** — ~0.94 entre les proxies equity
+1. **Indices US surachetés** — RSI 72–83 sur les principaux proxies
+2. **Aucun déploiement** — L'agent maintient sa discipline de non-action
+3. **TLT maintenu** — Légère perte latente (-0.91%), rôle de ballast intact
+4. **Régime de haute corrélation** — ~0.8-0.95 entre les proxies equity
 5. **Cash record** — 94.76%, prêt pour déploiement sur correction
 
 **La discipline de l'agent aujourd'hui:**
-- Cristalliser les gains quand le signal technique l'exige (DBA)
-- Refuser de déployer dans un rallye suracheté
+- Refuser de déployer dans un rallye suracheté (3ème jour consécutif)
 - Préserver le capital pour des setups risk-adjusted de meilleure qualité
+- Maintenir TLT comme seule exposition (ballast obligataire)
 
 ---
 
-*Next: Session vendredi 21h30 UTC. Surveillance d'une éventuelle correction pour déploiement du cash.*
+*Next: Bilan hebdomadaire vendredi. Surveillance d'une éventuelle correction pour déploiement du cash.*

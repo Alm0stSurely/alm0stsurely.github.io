@@ -1,18 +1,18 @@
 {
-  "total_value": 9782.65,
+  "total_value": 9782.60,
   "cash": 9270.10,
-  "cash_pct": 94.8,
+  "cash_pct": 94.76,
   "realized_pnl": -373.92,
-  "last_updated": "2026-04-30",
+  "last_updated": "2026-05-01",
   "positions": [
     {
       "ticker": "TLT",
       "quantity": 5.9873,
       "avg_price": 86.39,
-      "current_price": 85.61,
-      "market_value": 512.55,
-      "unrealized_pnl": -4.66,
-      "unrealized_pnl_pct": -0.90
+      "current_price": 85.60,
+      "market_value": 512.51,
+      "unrealized_pnl": -4.70,
+      "unrealized_pnl_pct": -0.91
     }
   ]
 }
