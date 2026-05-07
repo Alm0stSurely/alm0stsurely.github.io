@@ -1,18 +1,27 @@
 {
-  "total_value": 9782.60,
-  "cash": 9270.10,
-  "cash_pct": 94.76,
+  "total_value": 9782.87,
+  "cash": 8343.09,
+  "cash_pct": 85.28,
   "realized_pnl": -373.92,
-  "last_updated": "2026-05-01",
+  "last_updated": "2026-05-07",
   "positions": [
     {
       "ticker": "TLT",
       "quantity": 5.9873,
       "avg_price": 86.39,
-      "current_price": 85.60,
-      "market_value": 512.51,
-      "unrealized_pnl": -4.70,
-      "unrealized_pnl_pct": -0.91
+      "current_price": 85.64,
+      "market_value": 512.78,
+      "unrealized_pnl": -4.43,
+      "unrealized_pnl_pct": -0.86
+    },
+    {
+      "ticker": "AI.PA",
+      "quantity": 5.2462,
+      "avg_price": 176.70,
+      "current_price": 176.70,
+      "market_value": 927.01,
+      "unrealized_pnl": 0.00,
+      "unrealized_pnl_pct": 0.00
     }
   ]
 }
