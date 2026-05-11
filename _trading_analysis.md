@@ -1,86 +1,70 @@
-# Trading Analysis — 2026-05-08 (Friday)
+# Trading Analysis — 2026-05-11 (Monday)
 
 **Session:** Post-clôture US (21:08 UTC)  
-**Portfolio Value:** €9,777.28 (-2.23% vs capital initial)  
-**Cash Buffer:** 76.80% (€7,508.78)  
-**Daily Return:** -0.06%
+**Portfolio Value:** €9,778.82 (-2.21% vs capital initial)  
+**Cash Buffer:** 76.79% (€7,508.78)  
+**Daily Return:** +0.02%
 
 ---
 
 ## Trade du Jour
 
-**BUY SAN.PA — €834.31 (10% of available cash)**
+**AUCUN TRADE — LLM API timeout, maintien des positions**
 
-- **Quantité:** 11.4132
-- **Prix d'entrée:** €73.10
-- **P&L Latent:** 0.00%
-
-L'agent déploie 10% de son cash disponible sur Sanofi (SAN.PA), détecté en survente extrême (RSI 29.6, position Bollinger 0.06, drawdown -6.86%). C'est le deuxième déploiement consécutif sur une valeur européenne en survente, après AI.PA hier.
+L'appel au LLM (Kimi API) a échoué par timeout après 180s. Le pipeline est tombé en mode conservateur par défaut : maintien de toutes les positions existantes sans nouvelle décision. C'est un comportement souhaitable — mieux vaut ne pas tradefr que de tradefr aveuglément sans analyse.
 
 ---
 
 ## Raisonnement du LLM
 
-> "US mega-caps (QQQ/SPY) are at extreme overbought levels (RSI 84.2/73.8, Bollinger >0.95) with euphoric daily moves; per Loss Aversion and CVaR thinking, the asymmetric downside risk of chasing this momentum outweighs potential upside, especially given Deflated Sharpe Ratio skepticism—such parabolic runs often hide tail risks and suffer from multiple-testing bias. Instead, I favor capital preservation with a heavy cash buffer (~75% post-trade) and focus on high-contrarian-confidence setups in beaten-down European names. SAN.PA exhibits extreme mean-reversion statistics (RSI 29.6, Bollinger 0.06, -6.86% drawdown) that satisfy the meta-labeling proxy for both directional edge and high probability of bounce, while offering sector diversification away from AI.PA. I am scaling into this new position gradually (10% of available cash) to respect position-sizing limits. TLT is held as a low-volatility anchor, and AI.PA is held as its oversold signal has deepened further (RSI 29.2, Bollinger -0.02) without breaching our -5% position stop-loss."
+> *Indisponible — API timeout à 21:08 UTC*
 
 ---
 
 ## Positions Ouvertes
 
 ### TLT — Hedge Rates 🟡
-- **P&L Latent:** -0.38% (-€1.95)
-- **Prix actuel:** €86.06 (vs entrée €86.39)
+- **P&L Latent:** -0.97% (-€5.00)
+- **Prix actuel:** €85.55 (vs entrée €86.39)
 - **Rôle:** Ballast obligataire US, faible volatilité
 - **Quantité:** 5.9873
 
-### AI.PA — Survente Technique 🔴
-- **P&L Latent:** -0.87% (-€8.08)
-- **Prix actuel:** €175.16 (vs entrée €176.70)
-- **Rôle:** Mean-reversion contrarian, survente s'est creusée (RSI 29.2)
+### AI.PA — Survente Technique 🟢
+- **P&L Latent:** -0.49% (-€4.51)
+- **Prix actuel:** €175.84 (vs entrée €176.70)
+- **Rôle:** Mean-reversion contrarian, légère amélioration depuis vendredi
 - **Quantité:** 5.2462
 
 ### SAN.PA — Survente Extrême 🟢
-- **P&L Latent:** 0.00% (€0.00)
-- **Prix actuel:** €73.10 (entrée)
-- **Rôle:** Mean-reversion contrarian, diversification sectorielle vs AI.PA
+- **P&L Latent:** +0.12% (+€1.03)
+- **Prix actuel:** €73.19 (vs entrée €73.10)
+- **Rôle:** Mean-reversion contrarian, déjà profitable après 1 session
 - **Quantité:** 11.4132
 
 ---
 
 ## Risk Management
 
-**Cash Buffer:** 76.80% — Déploiement partiel conservateur (10% du cash), bien sous le cap de 25% par position. Cash réduit de 85% à 76% après deux déploiements consécutifs.
+**Cash Buffer:** 76.79% — Inchangé, pas de déploiement aujourd'hui.
 
-**Alertes RSI Extrêmes:**
-- SPY: RSI ~73.8 / Bollinger 0.95
-- QQQ: RSI ~84.2
-- IWM: RSI ~73.0
+**Drawdown Max:** -2.21% — Stable, bien sous le seuil de 5%.
 
-**Correlations:** ~0.8-0.97 entre les proxies equity → diversification quasi nulle.
+**SAN.PA** montre un signe encourageant : +0.12% après une seule session, validant partiellement le signal de survente (RSI 29.6) qui avait déclenché l'achat vendredi.
 
-**Drawdown Max:** -2.23% — Bien sous le seuil de 5%.
-
-**Nouvelle position:** SAN.PA oversold (RSI 29.6, Bollinger 0.06, -6.86% drawdown) → taille réduite par principe DSR.
+**AI.PA** continue de s'améliorer légèrement (-0.49% vs -0.87% vendredi), confirmant que la patience sur les positions contrarian peut payer.
 
 ---
 
 ## Vision Macro
 
-Le marché persiste dans une phase d'euphorie US généralisée, mais l'agent continue à privilégier les opportunités contrarian en Europe:
+1. **Positions inchangées** — Pas de nouvelle analyse LLM, pas de nouvelle décision
+2. **SAN.PA déjà verte** — +0.12% en 1 jour, signal de survente validé
+3. **AI.PA en récupération** — -0.49%, amélioration progressive
+4. **TLT stable** — -0.97%, légère baisse mais rôle de ballast intact
+5. **Cash préservé** — 76.79%, prêt pour déploiement dès retour du LLM
 
-1. **Indices US surachetés** — RSI 74–84 sur les principaux proxies, pas de déploiement
-2. **SAN.PA survente extrême** — RSI 29.6, Bollinger 0.06, drawdown -6.86% → déploiement 10% cash
-3. **AI.PA maintenu** — Survente s'est creusée (RSI 29.2, Bollinger -0.02), pas de stop-loss atteint
-4. **TLT maintenu** — Légère perte latente (-0.38%), rôle de ballast intact
-5. **Régime de haute corrélation** — ~0.8-0.97 entre les proxies equity
-6. **Cash élevé mais réduit** — 76.80%, prêt pour déploiement supplémentaire sur correction
-
-**La discipline de l'agent aujourd'hui:**
-- Refuser de chasser les indices US surachetés (RSI 84 sur QQQ)
-- Déployer selectivement sur survente individuelle (SAN.PA) avec sizing conservateur
-- Tenir AI.PA malgré la survente qui s'approfondit, respectant le stop-loss à -5%
-- Préserver 76% de cash pour absorber la volatilité et exploiter les dislocations futures
+**Bilan de la session :** API indisponible, pas de décision active. Le portefeuille a légèrement gagné en valeur (+€1.54) grâce à la performance de SAN.PA. La discipline de fallback (hold par défaut) a fonctionné comme prévu.
 
 ---
 
-*Next: Surveillance de AI.PA et SAN.PA — stop-loss mental à -5% si le mean-reversion échoue. Maintien de la discipline de non-déploiement sur US equity jusqu'à normalisation des RSI.*
+*Next: Vérifier la disponibilité de l'API LLM demain. Si le timeout persiste → investigation réseau ou switch vers un endpoint alternatif. Surveillance de AI.PA et SAN.PA — stop-loss mental à -5%.*
