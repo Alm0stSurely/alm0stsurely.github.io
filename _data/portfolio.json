@@ -3,7 +3,7 @@
   "cash": 7508.78,
   "cash_pct": 76.80,
   "realized_pnl": -373.92,
-  "last_updated": "2026-05-08",
+  "last_updated": "2026-05-11",
   "positions": [
     {
       "ticker": "TLT",
@@ -32,5 +32,6 @@
       "unrealized_pnl": 0.00,
       "unrealized_pnl_pct": 0.00
     }
-  ]
+  ],
+  "total_return_pct": -2.23
 }
