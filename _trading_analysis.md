@@ -1,72 +1,88 @@
-# Trading Analysis — 2026-05-14 (Thursday)
+# Trading Analysis — 2026-05-15 (Friday)
 
-**Session:** Post-clôture US (21:09 UTC)  
-**Portfolio Value:** €9,785.26 (-2.15% vs capital initial)  
-**Cash Buffer:** 70.60% (€6,908.07)  
-**Daily Change:** +0.07% (vs €9,778.82 le 11 mai)
+**Session:** Post-clôture US (21:07 UTC)  
+**Portfolio Value:** €9,787.09 (-2.13% vs capital initial)  
+**Cash Buffer:** 70.58% (€6,908.07)  
+**Daily Change:** +0.02% (vs €9,785.26 hier)  
+**Weekly Return:** +0.08% (semaine W20)
 
 ---
 
 ## Trade du Jour
 
-**BUY SAN.PA — 8.2232 @ €73.05 = €600.70**
+**AUCUN TRADE — JOURNÉE DE HOLD**
 
-Après 3 jours d'attente depuis le dernier run valide (vendredi 8 mai), le pipeline est de nouveau opérationnel. Le LLM a décidé de renforcer la position SAN.PA, passant de 11.41 à 19.64 actions. L'allocation cash descend de 76.8% à 70.6% — un déploiement mesuré, conservateur.
+Le LLM a décidé de ne pas déployer de capital aujourd'hui. Après le scaling-in de SAN.PA hier (8.22 actions @ €73.05), l'agent choisit la patience. Meta-labeling n'a pas dépassé le seuil de confiance sur aucun actif.
 
 ---
 
 ## Raisonnement du LLM
 
-> *Portfolio is in drawdown (-2.15%) in a high-correlation regime where diversification benefits are minimal. SPY and QQQ are at extreme overbought levels (RSI >82, Bollinger >0.92), presenting asymmetric downside risk. Applying Loss Aversion and DSR skepticism, I refuse to chase crowded mega-cap momentum that likely carries negative skew. Instead, I am scaling into SAN.PA, which exhibits a high-confidence mean-reversion signal: RSI exactly at 30, Bollinger position at 0.24 (near lower band), and a positive daily turn (+0.72%) suggesting selling exhaustion. This satisfies Meta-Labeling—directional edge (oversold bounce) plus confidence (RSI extreme + band position). I am deploying only 8% of available cash to stay gradual and keep a large liquidity buffer (~69% cash) for tail-risk opportunities, consistent with CVaR thinking. Existing positions in TLT (-1.68%) and AI.PA (+0.78%) remain within position-level drawdown limits, so no stop-losses are triggered.*
+> *Loss aversion and CVaR mindset dictate capital preservation in the current tape. The portfolio maintains a ~70% cash buffer, which has insulated us from the broad drawdowns afflicting French equities (e.g., AIR.PA -11%, SAF.PA -14.5%) and commodities (SLV -13%, COPX -9.6%). No current position exceeds the 5% drawdown stop-loss threshold (TLT -3.12%, AI.PA -0.17%, SAN.PA +1.22%), so we do not cut. Regarding new deployments, meta-labeling fails to clear the hurdle: while TLT (RSI 32.1, Bollinger -0.18) and AI.PA (RSI 30.1) show primary mean-reversion signals, the secondary confidence is low because both are in strong downtrends below their SMA20/50, and French equities exhibit a high-correlation regime (>0.8) where diversification is minimal. SPY/QQQ remain extended (Bollinger 0.78, RSI >69) with poor asymmetry after a multi-week rally. Deflated Sharpe skepticism also applies—there is no evidence that any short-term contrarian or momentum signal here would survive a multiple-testing or non-normality adjustment, especially with several assets realizing fat-tail moves. We stay defensive, keep powder dry, and wait for a higher-convergence of directional edge and probability of success.*
 
 ---
 
 ## Positions Ouvertes
 
-### TLT — Hedge Rates 🟡
-- **P&L Latent:** -1.68% (-€8.71)
-- **Prix actuel:** €84.93 (vs entrée €86.39)
+### TLT — Hedge Rates 🔴
+- **P&L Latent:** -3.12% (-€16.14)
+- **Prix actuel:** €83.69 (vs entrée €86.39)
 - **Rôle:** Ballast obligataire US, sous pression avec la remontée des yields
 - **Quantité:** 5.9873
+- **Évolution:** Détérioration depuis hier (-1.68% → -3.12%)
 
-### AI.PA — Survente Technique 🟢
-- **P&L Latent:** +0.78% (+€7.24)
-- **Prix actuel:** €178.08 (vs entrée €176.70)
-- **Rôle:** Mean-reversion contrarian, enfin profitable après 7 sessions
+### AI.PA — Survente Technique 🟡
+- **P&L Latent:** -0.17% (-€1.57)
+- **Prix actuel:** €176.40 (vs entrée €176.70)
+- **Rôle:** Mean-reversion contrarian, retour quasi flat après avoir été verte hier
 - **Quantité:** 5.2462
+- **Évolution:** Recul depuis hier (+0.78% → -0.17%)
 
-### SAN.PA — Survente Extrème (Scaling In) 🟡
-- **P&L Latent:** -0.04% (-€0.57)
-- **Prix actuel:** €73.05 (vs entrée moyenne €73.08)
-- **Rôle:** Mean-reversion contrarian, position doublée aujourd'hui
-- **Quantité:** 19.6364 (11.41 + 8.22)
+### SAN.PA — Survente Extrème (Scaling In) 🟢
+- **P&L Latent:** +1.22% (+€17.49)
+- **Prix actuel:** €73.97 (vs entrée moyenne €73.08)
+- **Rôle:** Mean-reversion contrarian, position doublée hier, maintenant profitable
+- **Quantité:** 19.6364
+- **Évolution:** Amélioration depuis hier (-0.04% → +1.22%)
 
 ---
 
 ## Risk Management
 
-**Cash Buffer:** 70.60% — Déploiement graduel de 8% sur SAN.PA, liquidité substantielle conservée.
+**Cash Buffer:** 70.58% — Aucun déploiement aujourd'hui. La poudre reste sèche.
 
-**Drawdown Max:** -2.15% — Stable, bien sous le seuil de 5%.
+**Drawdown Max:** -2.13% — Stable, bien sous le seuil de 5%.
 
-**AI.PA** est maintenant verte (+0.78%) après avoir touché -0.87% le 8 mai. La patience contrarian paie. C'est la validation la plus nette du mécanisme de mean-reversion dans ce portefeuille.
+**TLT** continue de souffrir (-3.12%) avec la tension sur les yields US. La position reste petite (5.1% du portefeuille) et le LLM ne coupe pas car elle reste sous le seuil de stop-loss de 5%.
 
-**TLT** continue de souffrir (-1.68%) avec la tension sur les yields US. Le rôle de ballast est mis à l'épreuve mais la position reste petite (5.2% du portefeuille).
+**AI.PA** retourne quasi flat (-0.17%) après avoir touché +0.78% hier. Volatilité normale pour une position contrarian.
 
-**SAN.PA** : la première tranche (achetée le 8 mai à €73.10) est quasi flat après le pullback d'aujourd'hui. Le LLM voit un signal de survente encore plus fort (RSI 30 exactement, Bollinger à 0.24) et double down — une stratégie de scaling-in classique en mean-reversion.
+**SAN.PA** devient l'étoile du portefeuille (+1.22%) après le scaling-in d'hier à €73.05. Le prix a monté à €73.97. C'est la validation du signal RSI 30 + Bollinger 0.24 que le LLM a identifié hier.
 
 ---
 
 ## Vision Macro
 
-1. **Mega-caps surchauffées** — SPY/QQQ avec RSI >82, Bollinger >0.92. Le LLM refuse d'y toucher. C'est de la discipline Loss Aversion pure.
-2. **AI.PA débloquée** — +0.78%, la première position contrarian à passer verte. Validation du signal RSI 29 de la semaine dernière.
-3. **SAN.PA scaling-in** — Position doublée sur signal RSI 30 + Bollinger 0.24. Le LLM applique un méta-labeling implicite : edge directionnel + confiance élevée.
-4. **Cash préservé à 70.6%** — Même après le déploiement, la liquidité reste massive. Le LLM pense en termes de CVaR et d'opportunités de tail-risk.
-5. **Corrélation élevée** — Le LLM note explicitement que les bénéfices de diversification sont minimaux dans ce régime. C'est une observation de régime de marché sophistiquée.
+1. **French equities en difficulté** — AIR.PA -11%, SAF.PA -14.5% cette semaine. Le LLM note explicitement avoir été protégé par son cash buffer de 70%.
 
-**Bilan de la session :** Le pipeline est de nouveau opérationnel après le timeout du 11 mai. Le LLM a produit une analyse de qualité : refus des surchauffes US, scaling-in mesuré sur survente européenne, préservation du cash. La position AI.PA qui passe verte est un bon signe pour la stratégie contrarian globale.
+2. **SAN.PA comme contre-performance** — +1.22% alors que le secteur français souffre. C'est la validation du mécanisme de mean-reversion : acheter la survente extrême quand le marché panique.
+
+3. **TLT sous pression** — -3.12%, la position de hedge rates est testée. Le LLM maintient car le drawdown reste sous 5% et il y a un signal de survente technique (RSI 32.1, Bollinger -0.18).
+
+4. **SPY/QQQ surchauffés** — Le LLM refuse toujours d'y toucher (Bollinger 0.78, RSI >69). Discipline Loss Aversion.
+
+5. **Meta-labeling strict** — Aujourd'hui, aucun actif ne satisfait les deux conditions : edge directionnel + confiance élevée. Le LLM préfère ne rien faire plutôt que forcer un trade. C'est une qualité rare.
 
 ---
 
-*Next: Surveillance de SAN.PA — avec une position doublée, le stop-loss mental passe à -3% sur le nominal SAN.PA global. Vendredi prochain = weekly report. Continuer de tracker la divergence entre surchauffe US (SPY/QQQ) et survente européenne (SAN.PA, AI.PA).*
+## Bilan Hebdomadaire (W20)
+
+- **Performance:** +0.08% sur la semaine (3 jours de trading)
+- **Volatilité:** 0.53% — très faible, grâce au cash buffer massif
+- **Sharpe hebdo:** 16.33 — artéfact de la faible volatilité
+- **1 trade:** BUY SAN.PA @ €73.05 (2026-05-14)
+- **Protection:** Le cash buffer de 70% a isolé le portefeuille des chutes brutales sur les small-caps et les commodities
+
+---
+
+*Next: Semaine W21. Surveillance de TLT — si le drawdown dépasse -5%, le LLM coupera. SAN.PA est maintenant en profit, le stop-loss mental peut remonter au breakeven. Continuer de tracker la divergence surchauffe US / survente européenne.*
