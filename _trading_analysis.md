@@ -1,88 +1,95 @@
-# Trading Analysis — 2026-05-15 (Friday)
+# Trading Analysis — 2026-05-21 (Thursday)
 
-**Session:** Post-clôture US (21:07 UTC)  
-**Portfolio Value:** €9,787.09 (-2.13% vs capital initial)  
-**Cash Buffer:** 70.58% (€6,908.07)  
-**Daily Change:** +0.02% (vs €9,785.26 hier)  
-**Weekly Return:** +0.08% (semaine W20)
+**Session:** Post-clôture US (21:09 UTC)  
+**Portfolio Value:** €9,881.22 (-1.19% vs capital initial)  
+**Cash Buffer:** 69.91% (€6,908.07)  
+**Daily Change:** N/A (dernière session le 2026-05-15)  
+**Trades Exécutés:** 0 (LLM API timeout — fallback HOLD)
 
 ---
 
 ## Trade du Jour
 
-**AUCUN TRADE — JOURNÉE DE HOLD**
+**AUCUN TRADE — LLM API TIMEOUT**
 
-Le LLM a décidé de ne pas déployer de capital aujourd'hui. Après le scaling-in de SAN.PA hier (8.22 actions @ €73.05), l'agent choisit la patience. Meta-labeling n'a pas dépassé le seuil de confiance sur aucun actif.
+L'appel à l'API Kimi a expiré après 180s (read timeout). Le pipeline a correctement basculé en mode conservateur : maintien de toutes les positions existantes, aucun ordre exécuté. C'est le comportement attendu en cas d'indisponibilité du modèle — mieux vaut ne rien faire que prendre une décision non informée.
 
 ---
 
 ## Raisonnement du LLM
 
-> *Loss aversion and CVaR mindset dictate capital preservation in the current tape. The portfolio maintains a ~70% cash buffer, which has insulated us from the broad drawdowns afflicting French equities (e.g., AIR.PA -11%, SAF.PA -14.5%) and commodities (SLV -13%, COPX -9.6%). No current position exceeds the 5% drawdown stop-loss threshold (TLT -3.12%, AI.PA -0.17%, SAN.PA +1.22%), so we do not cut. Regarding new deployments, meta-labeling fails to clear the hurdle: while TLT (RSI 32.1, Bollinger -0.18) and AI.PA (RSI 30.1) show primary mean-reversion signals, the secondary confidence is low because both are in strong downtrends below their SMA20/50, and French equities exhibit a high-correlation regime (>0.8) where diversification is minimal. SPY/QQQ remain extended (Bollinger 0.78, RSI >69) with poor asymmetry after a multi-week rally. Deflated Sharpe skepticism also applies—there is no evidence that any short-term contrarian or momentum signal here would survive a multiple-testing or non-normality adjustment, especially with several assets realizing fat-tail moves. We stay defensive, keep powder dry, and wait for a higher-convergence of directional edge and probability of success.*
+> *LLM API error. Holding all positions.*
+
+Pas de raisonnement disponible aujourd'hui en raison du timeout API. Les positions restent inchangées.
 
 ---
 
 ## Positions Ouvertes
 
 ### TLT — Hedge Rates 🔴
-- **P&L Latent:** -3.12% (-€16.14)
-- **Prix actuel:** €83.69 (vs entrée €86.39)
+- **P&L Latent:** -2.49% (-€12.90)
+- **Prix actuel:** €84.23 (vs entrée €86.39)
 - **Rôle:** Ballast obligataire US, sous pression avec la remontée des yields
 - **Quantité:** 5.9873
-- **Évolution:** Détérioration depuis hier (-1.68% → -3.12%)
+- **Évolution:** Amélioration depuis le 15/05 (-3.12% → -2.49%)
 
-### AI.PA — Survente Technique 🟡
-- **P&L Latent:** -0.17% (-€1.57)
-- **Prix actuel:** €176.40 (vs entrée €176.70)
-- **Rôle:** Mean-reversion contrarian, retour quasi flat après avoir été verte hier
+### AI.PA — Mean-Reversion 🟢
+- **P&L Latent:** +1.95% (+€18.05)
+- **Prix actuel:** €180.14 (vs entrée €176.70)
+- **Rôle:** Position contrarian, retournée en profit
 - **Quantité:** 5.2462
-- **Évolution:** Recul depuis hier (+0.78% → -0.17%)
+- **Évolution:** Amélioration depuis le 15/05 (-0.17% → +1.95%)
 
-### SAN.PA — Survente Extrème (Scaling In) 🟢
-- **P&L Latent:** +1.22% (+€17.49)
-- **Prix actuel:** €73.97 (vs entrée moyenne €73.08)
-- **Rôle:** Mean-reversion contrarian, position doublée hier, maintenant profitable
+### SAN.PA — Scaling In Réussi 🟢
+- **P&L Latent:** +6.19% (+€88.77)
+- **Prix actuel:** €77.60 (vs entrée moyenne €73.08)
+- **Rôle:** Mean-reversion contrarian, la star du portefeuille
 - **Quantité:** 19.6364
-- **Évolution:** Amélioration depuis hier (-0.04% → +1.22%)
+- **Évolution:** Forte amélioration depuis le 15/05 (+1.22% → +6.19%)
 
 ---
 
 ## Risk Management
 
-**Cash Buffer:** 70.58% — Aucun déploiement aujourd'hui. La poudre reste sèche.
+**Cash Buffer:** 69.91% — La trésorerie reste élevée malgré l'absence de décision LLM.
 
-**Drawdown Max:** -2.13% — Stable, bien sous le seuil de 5%.
+**Drawdown Max:** -1.19% — Le portefeuille a récupéré depuis le -2.13% du 15 mai. La tendance est positive.
 
-**TLT** continue de souffrir (-3.12%) avec la tension sur les yields US. La position reste petite (5.1% du portefeuille) et le LLM ne coupe pas car elle reste sous le seuil de stop-loss de 5%.
+**TLT** continue de souffrir (-2.49%) mais s'est amélioré. Position petite (5.1% du portefeuille), bien sous le stop-loss de 5%.
 
-**AI.PA** retourne quasi flat (-0.17%) après avoir touché +0.78% hier. Volatilité normale pour une position contrarian.
+**AI.PA** est retournée en territoire positif (+1.95%) après être passée par -0.17%. Le signal mean-reversion de l'entrée à €176.70 se confirme.
 
-**SAN.PA** devient l'étoile du portefeuille (+1.22%) après le scaling-in d'hier à €73.05. Le prix a monté à €73.97. C'est la validation du signal RSI 30 + Bollinger 0.24 que le LLM a identifié hier.
+**SAN.PA** est la position phare (+6.19%). Le scaling-in des 8 et 14 mai à ~€73.05 est désormais solidement profitable. Attention néanmoins au breakout Bollinger supérieur observé en intraday (alerte monitor 16:36 UTC) — signal de surachat potentiel.
+
+**Métriques de risque :**
+- CVaR 95% : 0.56%
+- VaR 95% : 0.38%
+- Max Drawdown : -1.59%
+- Sharpe Ratio : -0.60
+- Volatilité : 4.31%
 
 ---
 
 ## Vision Macro
 
-1. **French equities en difficulté** — AIR.PA -11%, SAF.PA -14.5% cette semaine. Le LLM note explicitement avoir été protégé par son cash buffer de 70%.
+1. **Rebond des actifs détenus** — Les trois positions ont gagné du terrain depuis la dernière session. TLT (-2.49% vs -3.12%), AI.PA (+1.95% vs -0.17%), SAN.PA (+6.19% vs +1.22%). Le portefeuille global gagne ~€94 depuis le 15 mai.
 
-2. **SAN.PA comme contre-performance** — +1.22% alors que le secteur français souffre. C'est la validation du mécanisme de mean-reversion : acheter la survente extrême quand le marché panique.
+2. **SAN.PA en surchauffe technique** — Le monitor intraday a détecté un breakout Bollinger supérieur à €77.41. Avec le prix à €77.60 en clôture, l'actif est potentiellement suracheté à court terme. La session quotidienne de demain devra évaluer un partial sell ou un relèvement de stop.
 
-3. **TLT sous pression** — -3.12%, la position de hedge rates est testée. Le LLM maintient car le drawdown reste sous 5% et il y a un signal de survente technique (RSI 32.1, Bollinger -0.18).
+3. **TLT stabilisation** — Après plusieurs semaines de baisse, TLT semble trouver un plancher autour de €84. RSI à 32 (survente) et Bollinger proche de la bande inférieure. La position mean-reversion pourrait enfin payer.
 
-4. **SPY/QQQ surchauffés** — Le LLM refuse toujours d'y toucher (Bollinger 0.78, RSI >69). Discipline Loss Aversion.
+4. **API timeout** — Premier timeout de l'API Kimi depuis le lancement du pipeline. À monitorer si cela se répète. Pas d'urgence : le fallback conservateur (HOLD ALL) est la bonne stratégie.
 
-5. **Meta-labeling strict** — Aujourd'hui, aucun actif ne satisfait les deux conditions : edge directionnel + confiance élevée. Le LLM préfère ne rien faire plutôt que forcer un trade. C'est une qualité rare.
-
----
-
-## Bilan Hebdomadaire (W20)
-
-- **Performance:** +0.08% sur la semaine (3 jours de trading)
-- **Volatilité:** 0.53% — très faible, grâce au cash buffer massif
-- **Sharpe hebdo:** 16.33 — artéfact de la faible volatilité
-- **1 trade:** BUY SAN.PA @ €73.05 (2026-05-14)
-- **Protection:** Le cash buffer de 70% a isolé le portefeuille des chutes brutales sur les small-caps et les commodities
+5. **Cash buffer élevé** — 69.91% de cash non déployé. Le portefeuille reste très défensif, ce qui a permis d'éviter les drawdowns sur les marchés US/européens ces derniers jours.
 
 ---
 
-*Next: Semaine W21. Surveillance de TLT — si le drawdown dépasse -5%, le LLM coupera. SAN.PA est maintenant en profit, le stop-loss mental peut remonter au breakeven. Continuer de tracker la divergence surchauffe US / survente européenne.*
+## Notes Techniques
+
+- **API Timeout** : `HTTPSConnectionPool(host='api.kimi.com', port=443): Read timed out.` après 180s. Le pipeline a traité l'erreur correctement sans crash.
+- **32 actifs analysés** : données marché récupérées avec succès via yfinance.
+- **Métriques de performance** : Sharpe -0.60, volatilité 4.31%. Le Sharpe négatif reflète la période de drawdown initial du portefeuille.
+
+---
+
+*Next: Vendredi 22 mai — surveillance du timeout API. Évaluation de SAN.PA pour un partial sell si le breakout Bollinger persiste. TLT : confirmer le rebond au-dessus de €84.*
