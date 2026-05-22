@@ -1,32 +1,32 @@
 {
-  "cash": 7669.97,
-  "total_value": 9885.23,
-  "total_realized_pnl": -329.53,
-  "last_updated": "2026-05-22T08:08:51",
+  "cash": 8047.48,
+  "total_value": 9882.58,
+  "total_realized_pnl": -310.77,
+  "last_updated": "2026-05-22T21:09:08",
   "positions": [
     {
       "ticker": "TLT",
       "quantity": 5.987,
       "avg_price": 86.39,
-      "current_price": 84.23,
-      "unrealized_pnl": -12.9,
-      "unrealized_pnl_pct": -2.49
+      "current_price": 84.68,
+      "unrealized_pnl": -10.24,
+      "unrealized_pnl_pct": -1.98
     },
     {
       "ticker": "AI.PA",
       "quantity": 5.246,
-      "avg_price": 176.7,
-      "current_price": 180.96,
-      "unrealized_pnl": 22.35,
-      "unrealized_pnl_pct": 2.41
+      "avg_price": 176.70,
+      "current_price": 181.20,
+      "unrealized_pnl": 23.61,
+      "unrealized_pnl_pct": 2.55
     },
     {
       "ticker": "SAN.PA",
-      "quantity": 9.818,
+      "quantity": 4.909,
       "avg_price": 73.08,
-      "current_price": 77.94,
-      "unrealized_pnl": 47.73,
-      "unrealized_pnl_pct": 6.65
+      "current_price": 76.90,
+      "unrealized_pnl": 18.76,
+      "unrealized_pnl_pct": 5.23
     }
   ]
 }
