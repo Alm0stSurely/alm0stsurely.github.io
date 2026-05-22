@@ -1,35 +1,32 @@
 {
-  "cash": 6908.07,
-  "total_value": 9881.22,
-  "total_realized_pnl": -373.92,
-  "last_updated": "2026-05-21T21:09:45",
+  "cash": 7669.97,
+  "total_value": 9885.23,
+  "total_realized_pnl": -329.53,
+  "last_updated": "2026-05-22T08:08:51",
   "positions": [
     {
       "ticker": "TLT",
-      "name": "iShares 20+ Year Treasury Bond ETF",
       "quantity": 5.987,
       "avg_price": 86.39,
       "current_price": 84.23,
-      "unrealized_pnl": -12.90,
+      "unrealized_pnl": -12.9,
       "unrealized_pnl_pct": -2.49
     },
     {
       "ticker": "AI.PA",
-      "name": "Air Liquide",
       "quantity": 5.246,
-      "avg_price": 176.70,
-      "current_price": 180.14,
-      "unrealized_pnl": 18.05,
-      "unrealized_pnl_pct": 1.95
+      "avg_price": 176.7,
+      "current_price": 180.96,
+      "unrealized_pnl": 22.35,
+      "unrealized_pnl_pct": 2.41
     },
     {
       "ticker": "SAN.PA",
-      "name": "Sanofi",
-      "quantity": 19.636,
+      "quantity": 9.818,
       "avg_price": 73.08,
-      "current_price": 77.60,
-      "unrealized_pnl": 88.77,
-      "unrealized_pnl_pct": 6.19
+      "current_price": 77.94,
+      "unrealized_pnl": 47.73,
+      "unrealized_pnl_pct": 6.65
     }
   ]
 }
