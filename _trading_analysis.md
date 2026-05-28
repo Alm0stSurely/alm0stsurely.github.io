@@ -1,98 +1,115 @@
-# Trading Analysis — 2026-05-22 (Friday)
+# Trading Analysis — 2026-05-28 (Thursday)
 
-**Session:** Post-clôture US (21:09 UTC)  
-**Portfolio Value:** €9,882.58 (-1.17% vs capital initial)  
-**Cash Buffer:** 81.43% (€8,047.48)  
-**Daily Change:** +€1.36 (+0.01%)  
-**Trades Exécutés:** 1 (SELL SAN.PA 50%)
+**Session:** Post-clôture US (21:08 UTC)  
+**Portfolio Value:** €9,890.35 (-1.10% vs capital initial)  
+**Cash Buffer:** 77.58% (€7,672.87)  
+**Daily Change:** +€7.77 (+0.08%)  
+**Trades Exécutés:** 2 (SELL AI.PA 50%, BUY GLD 10%)
 
 ---
 
 ## Trade du Jour
 
-**SELL SAN.PA — 50% de la position**
+**SELL AI.PA — 50% de la position**
 
-- **Quantité vendue :** 4.9091 (50% de la position)
-- **Prix d'exécution :** €76.90
-- **Produit de la vente :** €377.51
-- **P&L réalisé :** +€18.76
-- **Raison :** SAN.PA extrêmement étendu (RSI 68.0, position Bollinger 0.93). Probabilité élevée de pullback mean-reversion. Réalisation partielle des profits pour satisfaire l'aversion aux pertes (prospect theory).
+- **Quantité vendue :** 2.6231 (50% de la position)
+- **Prix d'exécution :** €182.20
+- **Produit de la vente :** €477.93
+- **P&L réalisé :** +€14.43
+- **Raison :** AI.PA en surachat (RSI 72.6, Bollinger 0.83). Réduction de position pour verrouiller les profits et réduire le risque de tail dans un régime overbought.
+
+**BUY GLD — 10% du cash disponible**
+
+- **Quantité achetée :** 2.0654
+- **Prix d'exécution :** €412.77
+- **Montant déployé :** €852.54
+- **P&L réalisé :** N/A (nouvelle position)
+- **Raison :** GLD en survente (RSI 30.2, Bollinger 0.24). Play mean-reversion avec risque borné. Diversification dans un contexte de correlations élevées entre obligations et actions (TLT~SPY 0.83).
 
 ---
 
 ## Raisonnement du LLM
 
-> Trimming SAN.PA by 50% because it is extremely extended (RSI 68.0, Bollinger position 0.93), which raises the probability of a mean-reversion pullback; locking in partial profits satisfies loss-aversion (protecting unrealized gains) and follows the gradual scale-out rule. No new positions are initiated today: meta-labeling criteria are not met—there are no high-confidence oversold mean-reversion candidates (no RSI <30 with Bollinger near 0), while chasing US large-cap momentum (QQQ/SPY at RSI >70) offers poor risk/reward and fails DSR skepticism given the short track record and elevated tail risk. TLT and AI.PA are held as they have not breached position-level stop thresholds. Maintaining a ~78% cash buffer preserves capital in a mixed regime where French equities show high internal correlations, limiting diversification benefits.
+> Trimmed AI.PA by 50% (RSI 72.6, Bollinger 0.83) to lock in profits as overbought conditions reduce meta-labeling confidence and increase tail risk; applied loss aversion by not letting a winner turn into a loser. Avoided chasing US mega-cap momentum (QQQ/SPY RSI >70, Bollinger >0.89) given DSR skepticism and high equity-bond correlations (TLT~SPY 0.83) that limit diversification. Deployed 10% of available cash into GLD at RSI 30.2 / Bollinger 0.24 as an oversold mean-reversion play with bounded risk. Maintained ~77% cash buffer consistent with CVaR-focused capital preservation in a high-correlation, overbought regime.
 
 ---
 
 ## Positions Ouvertes
 
 ### TLT — Hedge Rates 🔴
-- **P&L Latent:** -1.98% (-€10.24)
-- **Prix actuel:** €84.68 (vs entrée €86.39)
+- **P&L Latent:** -0.77% (-€3.98)
+- **Prix actuel:** €85.72 (vs entrée €86.39)
 - **Rôle:** Ballast obligataire US, sous pression avec la remontée des yields
 - **Quantité:** 5.9873
-- **Évolution:** Légère amélioration depuis hier (-2.49% → -1.98%)
+- **Évolution:** Amélioration significative depuis vendredi (-1.98% → -0.77%)
 
-### AI.PA — Mean-Reversion 🟢
-- **P&L Latent:** +2.55% (+€23.61)
-- **Prix actuel:** €181.20 (vs entrée €176.70)
+### AI.PA — Partial Profit Realized 🟢
+- **P&L Latent:** +3.11% (+€14.43)
+- **Prix actuel:** €182.20 (vs entrée €176.70)
+- **Rôle:** Position contrarian, 50% de la position verrouillée en profit
+- **Quantité:** 2.6231 (après vente de 50%)
+- **Évolution:** Vente partielle sur signal de surachat technique (RSI 72.6)
+
+### SAN.PA — Mean-Reversion 🟢
+- **P&L Latent:** +4.19% (+€15.03)
+- **Prix actuel:** €76.14 (vs entrée €73.08)
 - **Rôle:** Position contrarian, continue de performer
-- **Quantité:** 5.2462
-- **Évolution:** Amélioration depuis hier (+1.95% → +2.55%)
+- **Quantité:** 4.9091
+- **Évolution:** Légère baisse depuis vendredi (+5.23% → +4.19%) mais reste profitable
 
-### SAN.PA — Partial Profit Realized 🟢
-- **P&L Latent:** +5.23% (+€18.76)
-- **Prix actuel:** €76.90 (vs entrée moyenne €73.08)
-- **Rôle:** Mean-reversion contrarian, 50% de la position verrouillée en profit
-- **Quantité:** 4.9091 (après vente de 50%)
-- **Évolution:** Réduction de position prudente sur signal de surachat technique
+### GLD — Mean-Reversion Play 🟡
+- **P&L Latent:** 0.00% (€0.00)
+- **Prix actuel:** €412.77 (entrée)
+- **Rôle:** Nouvelle position mean-reversion sur métal en survente
+- **Quantité:** 2.0654
+- **Évolution:** Position fraîche, RSI 30.2 suggère un bottoming potentiel
 
 ---
 
 ## Risk Management
 
-**Cash Buffer:** 81.43% — La vente partielle de SAN.PA a fait monter la trésorerie à un niveau très élevé. Le portefeuille est extrêmement défensif.
+**Cash Buffer:** 77.58% — La vente partielle de AI.PA maintient la trésorerie à un niveau très élevé. Le portefeuille reste extrêmement défensif.
 
-**Drawdown Max:** -1.17% — Le portefeuille continue de se stabiliser autour de -1.2%, loin des pires niveaux observés.
+**Drawdown Max:** -1.10% — Le portefeuille continue de se stabiliser autour de -1.1%, légèrement amélioré par rapport à vendredi (-1.17%).
 
-**TLT** continue de souffrir (-1.98%) mais s'est amélioré. RSI à 32 (survente) et Bollinger proche de la bande inférieure. La position mean-reversion pourrait enfin payer.
+**TLT** continue de s'améliorer (-0.77% vs -1.98% vendredi). La position mean-reversion sur obligations longues US semble enfin payer.
 
-**AI.PA** performe bien (+2.55%). Le signal mean-reversion de l'entrée à €176.70 se confirme avec le prix à €181.20.
+**AI.PA** — La décision de vendre 50% était fondée : l'actif était en surchauffe technique (RSI 72.6, Bollinger 0.83). On a verrouillé €14.43 de profit réalisé tout en conservant 50% pour capter d'éventuels gains additionnels. La tranche restante est toujours profitable (+3.11% latent).
 
-**SAN.PA** — La décision de vendre 50% était fondée : l'actif était en surchauffe technique (RSI 68, Bollinger 0.93). On a verrouillé €18.76 de profit réalisé tout en conservant 50% pour capter d'éventuels gains additionnels. La tranche restante est toujours profitable (+5.23% latent).
+**SAN.PA** — La position se maintient bien (+4.19% latent) malgré un léger reflux depuis vendredi. Pas de signal de sortie, le HOLD est justifié.
+
+**GLD** — Nouvelle position mean-reversion sur or en survente. RSI 30.2 et Bollinger 0.24 offrent un setup attrayant avec risque borné. La position représente ~8.6% du NAV.
 
 **Métriques de risque :**
-- CVaR 95% : 0.43%
-- VaR 95% : 0.33%
-- Max Drawdown : -1.12%
-- Sharpe Ratio : -1.21
-- Volatilité : 3.06%
+- CVaR 95% : 0.33%
+- VaR 95% : 0.26%
+- Max Drawdown : -0.91%
+- Sharpe Ratio : -0.89
+- Volatilité : 2.40%
 
 ---
 
 ## Vision Macro
 
-1. **SAN.PA : prise de profits disciplinée** — Le LLM a correctement identifié le signal de surachat technique et a recommandé une vente partielle (50%). C'est exactement le comportement attendu d'un agent risk-aware : protéger les gains unrealisés quand la probabilité de pullback augmente. Le P&L réalisé de +€18.76 compense partiellement les pertes passées.
+1. **AI.PA : prise de profits disciplinée** — Le LLM a correctement identifié le signal de surachat technique et a recommandé une vente partielle (50%). C'est exactement le comportement attendu d'un agent risk-aware : protéger les gains unrealisés quand la probabilité de pullback augmente. Le P&L réalisé de +€14.43 compense partiellement les pertes passées.
 
-2. **Cash buffer à 81%** — Le portefeuille est désormais très léger en positions. Aucune nouvelle position n'a été initiée car les critères de meta-labeling n'étaient pas remplis (pas de candidats mean-reversion oversold avec RSI <30 et Bollinger proche de 0). Le LLM a fait preuve de discipline en ne forçant pas des trades de faible conviction.
+2. **GLD : nouveau play mean-reversion** — Le LLM a identifié GLD comme candidat mean-reversion (RSI 30.2, Bollinger 0.24) dans un contexte où les large-caps US sont surachetées. C'est une diversification pertinente : l'or offre un hedge contre la correlation élevée entre obligations et actions (TLT~SPY 0.83 noté par le LLM).
 
-3. **TLT : possible rebond** — Les indicateurs techniques (RSI 32, Bollinger inférieure) suggèrent que TLT est proche d'un bottom. La position est petite (5.1% du portefeuille) et ne représente pas un risque majeur. Le maintien est justifié.
+3. **Cash buffer à 77%** — Le portefeuille reste très léger en positions. Le LLM a fait preuve de discipline en ne déployant que 10% du cash sur GLD et en rejetant les trades de faible conviction sur les large-caps US surachetées.
 
 4. **QQQ/SPY surachetés** — Le LLM a explicitement rejeté l'idée de chasser la momentum sur les large-caps US (RSI >70), citant un poor risk/reward et un elevated tail risk. C'est une analyse sophistiquée qui évite le FOMO.
 
-5. **Correlations élevées entre valeurs françaises** — Le LLM note que les actions françaises montrent des corrélations internes élevées, limitant les bénéfices de diversification. C'est une observation pertinente qui justifie la prudence actuelle.
+5. **Correlations élevées** — Le LLM note que les correlations entre obligations et actions sont anormalement élevées (TLT~SPY 0.83), limitant les bénéfices de diversification traditionnels. GLD offre une voie de diversification alternative.
 
 ---
 
 ## Notes Techniques
 
-- **API Kimi :** Fonctionnement nominal après le timeout d'hier. Réponse en 1033 caractères, parsing JSON réussi.
+- **API Kimi :** Fonctionnement nominal. Réponse en 867 caractères, parsing JSON réussi.
 - **32 actifs analysés** : données marché récupérées avec succès via yfinance.
-- **Métriques de performance** : Sharpe -1.21, volatilité 3.06%. Le Sharpe reste négatif mais la volatilité a baissé significativement (4.31% → 3.06%), indiquant une stabilisation du portefeuille.
-- **Weekly report** : généré automatiquement (W21). Retour hebdo +0.01%, stable.
+- **Métriques de performance** : Sharpe -0.89, volatilité 2.40%. Le Sharpe reste négatif mais la volatilité continue de baisser (3.06% → 2.40%), indiquant une stabilisation progressive du portefeuille.
+- **Écart depuis dernière session** : 6 jours (22 mai → 28 mai). Le portefeuille a bien résisté pendant cette période sans intervention, confirmant la robustesse de la stratégie defensive.
 
 ---
 
-*Next: Lundi 25 mai — surveillance de TLT pour un possible rebond mean-reversion. AI.PA : confirmer la tendance au-dessus de €180. SAN.PA : évaluer si le pullback se matérialise après la vente partielle.*
+*Next: Vendredi 29 mai — surveillance de GLD pour confirmation du rebond mean-reversion. TLT : confirmer la tendance au-dessus de €85. AI.PA : évaluer si le pullback se matérialise après la vente partielle.*
