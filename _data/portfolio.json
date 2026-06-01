@@ -1,40 +1,28 @@
 {
-  "cash": 6905.58,
-  "total_value": 9883.78,
-  "total_realized_pnl": -296.34,
-  "last_updated": "2026-05-29T21:09:07",
-  "positions": [
-    {
-      "ticker": "TLT",
-      "quantity": 5.987,
-      "avg_price": 86.39,
-      "current_price": 85.73,
-      "unrealized_pnl": -3.92,
-      "unrealized_pnl_pct": -0.76
+  "cash": 6905.58182406352,
+  "total_realized_pnl": -296.3440368950783,
+  "positions": {
+    "TLT": {
+      "quantity": 5.9872587482185775,
+      "avg_price": 86.38500213623047,
+      "current_price": 85.7300033569336
     },
-    {
-      "ticker": "AI.PA",
-      "quantity": 2.623,
-      "avg_price": 176.70,
-      "current_price": 178.32,
-      "unrealized_pnl": 4.25,
-      "unrealized_pnl_pct": 0.92
+    "AI.PA": {
+      "quantity": 2.623116929409555,
+      "avg_price": 176.6999969482422,
+      "current_price": 178.32000732421875
     },
-    {
-      "ticker": "SAN.PA",
-      "quantity": 4.909,
-      "avg_price": 73.08,
-      "current_price": 75.00,
-      "unrealized_pnl": 9.43,
-      "unrealized_pnl_pct": 2.63
+    "SAN.PA": {
+      "quantity": 4.909103512711255,
+      "avg_price": 73.07906183264495,
+      "current_price": 75.0
     },
-    {
-      "ticker": "GLD",
-      "quantity": 3.905,
-      "avg_price": 414.86,
-      "current_price": 417.20,
-      "unrealized_pnl": 9.15,
-      "unrealized_pnl_pct": 0.56
+    "GLD": {
+      "quantity": 3.9045484661829497,
+      "avg_price": 414.8566343338767,
+      "current_price": 417.20001220703125
     }
-  ]
+  },
+  "last_updated": "2026-05-29T21:09:07.316974",
+  "total_value": 9883.784197919538
 }
