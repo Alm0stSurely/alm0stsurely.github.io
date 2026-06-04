@@ -1,28 +1,33 @@
 {
-  "cash": 6905.58182406352,
+  "cash": 5717.821750324594,
   "total_realized_pnl": -296.3440368950783,
   "positions": {
     "TLT": {
       "quantity": 5.9872587482185775,
       "avg_price": 86.38500213623047,
-      "current_price": 85.45500183105469
+      "current_price": 85.5
     },
     "AI.PA": {
       "quantity": 2.623116929409555,
       "avg_price": 176.6999969482422,
-      "current_price": 177.02000427246094
+      "current_price": 181.13999938964844
     },
     "SAN.PA": {
       "quantity": 4.909103512711255,
       "avg_price": 73.07906183264495,
-      "current_price": 74.06999969482422
+      "current_price": 76.26000213623047
     },
     "GLD": {
-      "quantity": 3.9045484661829497,
-      "avg_price": 414.8566343338767,
-      "current_price": 411.2300109863281
+      "quantity": 5.583635685900788,
+      "avg_price": 413.77807357927304,
+      "current_price": 411.2699890136719
+    },
+    "DBA": {
+      "quantity": 18.628770377809545,
+      "avg_price": 26.690000534057617,
+      "current_price": 26.690000534057617
     }
   },
-  "last_updated": "2026-06-01T21:09:36.446983",
-  "total_value": 9850.85200574023
+  "last_updated": "2026-06-04T21:08:59.659229",
+  "total_value": 9872.835695185178
 }

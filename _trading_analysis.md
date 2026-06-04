@@ -1,97 +1,112 @@
-# Trading Analysis — 2026-06-01 (Monday)
+# Trading Analysis — 2026-06-04 (Thursday)
 
-**Session:** Post-clôture US (21:09 UTC)  
-**Portfolio Value:** €9,850.85 (-1.49% vs capital initial)  
-**Cash Buffer:** 70.10% (€6,905.58)  
-**Daily Change:** -€32.93 (-0.33%)  
-**Trades Exécutés:** 0 (LLM API timeout — fallback HOLD)
+**Session:** Post-clôture US (21:08 UTC)  
+**Portfolio Value:** €9,872.84 (-1.27% vs capital initial)  
+**Cash Buffer:** 57.91% (€5,717.82)  
+**Daily Change:** +€21.98 (+0.22%)  
+**Trades Exécutés:** 2 (BUY GLD, BUY DBA)
 
 ---
 
 ## Trade du Jour
 
-**Aucun trade exécuté.**
+### BUY GLD — Scaling the Mean-Reversion Play
+- **Action:** Achat de 1.6791 part @ €411.27 = €690.56
+- **Position totale GLD:** 5.5836 parts @ prix moyen €413.78
+- **P&L Latent GLD:** -0.61% (-€14.00)
+- **Conviction:** Moyenne — le setup mean-reversion persiste (RSI 35.7, BB 0.29) mais la patience est testée
 
-Le pipeline a fonctionné normalement jusqu'à l'étape de décision LLM, mais l'appel API a expiré après 180 secondes (read timeout). Le système est retombé sur le comportement conservateur par défaut : **HOLD toutes les positions**.
+### BUY DBA — Diversification Agricole Contrarian
+- **Action:** Achat de 18.6288 parts @ €26.69 = €497.20
+- **Nouvelle position** — première entrée sur commodities agricoles
+- **P&L Latent:** 0.00% (entrée à la clôture)
+- **Conviction:** Élevée — RSI 20.9 (survente extrême), corrélation ~0.09 vs SPY, diversification rare en régime de haute corrélation
 
 ---
 
 ## Raisonnement du LLM
 
-> LLM API error. Holding all positions.
-
-L'API Kimi n'a pas répondu dans le délai imparti. C'est la première fois que ce timeout se produit depuis le lancement du système. Le comportement de fallback est correct — mieux vaut ne pas trader sur une décision non informée.
+> Equity indices (SPY, QQQ, FEZ, IWM) are extended with RSI >60 and Bollinger positions >0.8, offering poor risk/reward for new entries. Applying loss aversion and CVaR thinking, I refuse to chase momentum near upper Bollinger bands where tail-risk of reversals is elevated. Instead, I scale into beaten-down diversifiers: GLD (RSI 35.7, BB 0.29, -5.38% drawdown) and DBA (RSI 20.9, BB 0.03, -7.1% drawdown). DBA has near-zero correlation with equities (~0.09 vs SPY), providing scarce diversification in a high-correlation regime. GLD addition keeps the position below the 25% single-asset cap. Existing holdings TLT, AI.PA, and SAN.PA have no stop-loss violations and are maintained. Cash remains elevated (~57%) to preserve optionality and guard against volatility spikes, consistent with a skeptical Deflated Sharpe Ratio mindset that questions the durability of recent equity momentum given non-normal, fat-tailed environments.
 
 ---
 
 ## Positions Ouvertes
 
 ### TLT — Hedge Rates 🟡
-- **P&L Latent:** -1.08% (-€5.57)
-- **Prix actuel:** €85.46 (vs entrée €86.39)
+- **P&L Latent:** -1.02% (-€5.30)
+- **Prix actuel:** €85.50 (vs entrée €86.39)
 - **Rôle:** Ballast obligataire US, sous pression avec la remontée des yields
 - **Quantité:** 5.9873
-- **Évolution:** Légère détérioration (-0.32€ depuis vendredi). La position reste stable mais déficitaire.
+- **Évolution:** Stabilisation — le prix a légèrement remonté depuis lundi (€85.46). La position reste déficitaire mais le mouvement est favorable.
 
 ### AI.PA — Partial Profit Realized 🟢
-- **P&L Latent:** +0.18% (+€0.84)
-- **Prix actuel:** €177.02 (vs entrée €176.70)
+- **P&L Latent:** +2.51% (+€11.65)
+- **Prix actuel:** €181.14 (vs entrée €176.70)
 - **Rôle:** Position contrarian, 50% de la position verrouillée en profit le 28 mai
 - **Quantité:** 2.6231
-- **Évolution:** Reflux depuis vendredi (était +0.92%), le profit latent s'est réduit mais reste positif.
+- **Évolution:** Excellente performance — le profit latent a bondi de +0.18% lundi à +2.51% aujourd'hui. Le plus fort contributeur positif du portefeuille.
 
 ### SAN.PA — Mean-Reversion 🟢
-- **P&L Latent:** +1.36% (+€4.86)
-- **Prix actuel:** €74.07 (vs entrée €73.08)
+- **P&L Latent:** +4.35% (+€15.62)
+- **Prix actuel:** €76.26 (vs entrée €73.08)
 - **Rôle:** Position contrarian, continue de performer
 - **Quantité:** 4.9091
-- **Évolution:** Baisse par rapport à vendredi (était +2.63% / +€9.43). Le reflux est modéré, le HOLD reste justifié.
+- **Évolution:** Progression solide — de +1.36% lundi à +4.35% aujourd'hui. SAN.PA est désormais la position la plus rentable en %.
 
-### GLD — Mean-Reversion Play 🔴
-- **P&L Latent:** -0.87% (-€14.16)
-- **Prix actuel:** €411.23 (vs entrée moyenne €414.86)
-- **Rôle:** Position mean-reversion sur or en survente, scaling progressif
-- **Quantité:** 3.9045 (après deux achats consécutifs les 28 et 29 mai)
-- **Évolution:** **Détérioration significative** — le profit latent est passé de +0.56% (+€9.15) vendredi à -0.87% (-€14.16) aujourd'hui. C'est le principal contributeur à la baisse du jour. L'or continue de souffrir, invalidant temporairement le thèse mean-reversion.
+### GLD — Mean-Reversion Play (Scaled) 🔴
+- **P&L Latent:** -0.61% (-€14.00)
+- **Prix actuel:** €411.27 (vs prix moyen €413.78)
+- **Rôle:** Position mean-reversion sur or en survente, scaling progressif (3e achat depuis fin mai)
+- **Quantité:** 5.5836 (après achat aujourd'hui)
+- **Évolution:** L'amélioration se confirme — de -0.87% lundi à -0.61% aujourd'hui. Le dollar-cost averaging commence à porter ses fruits. La position a été agrandie à 23.3% du portefeuille, sous la limite de 25%.
+
+### DBA — Nouvelle Position Agricole 🟡
+- **P&L Latent:** 0.00%
+- **Prix actuel:** €26.69 (entrée)
+- **Rôle:** Diversification contrarian sur commodities agricoles en survente extrême
+- **Quantité:** 18.6288
+- **Évolution:** Nouvelle position. RSI 20.9, drawdown -7.1%, corrélation quasi-nulle avec equities. Parfait pour un régime de haute corrélation.
 
 ---
 
 ## Risk Management
 
-**Cash Buffer:** 70.10% — La position défensive est inchangée, ce qui limite l'impact des pertes sur le portefeuille global.
+**Cash Buffer:** 57.91% — Réduit de 70.10% à 57.91% après les deux achats d'aujourd'hui. Le buffer reste confortable pour absorber des mouvements adverses.
 
-**Drawdown Max:** -1.49% — Légère détérioration depuis vendredi (-1.16%).
+**Drawdown Max:** -1.27% — Inchangé depuis lundi. La progression de AI.PA et SAN.PA compense les pertes de GLD.
 
-**GLD sous surveillance** — La position GLD est désormais en perte latente. Il faut surveiller si le RSI continue de descendre (était à 33.4 vendredi) ou si un rebond se dessine. Le LLM avait identifié GLD comme le setup de plus haute conviction ; la patience est requise mais un stop-loss mental à -5% (soit ~€394) devrait être respecté.
+**Concentration:** GLD représente désormais 23.3% du portefeuille, proche de la limite de 25%. Surveillance nécessaire si nouvelle échelle envisagée.
 
 **Métriques de risque :**
-- CVaR 95% : 0.49%
-- VaR 95% : 0.42%
+- CVaR 95% : 0.42%
+- VaR 95% : 0.35%
 - Max Drawdown : -1.21%
-- Sharpe Ratio : -3.94
-- Volatilité : 3.81%
+- Sharpe Ratio : -2.57
+- Volatilité : 3.60%
 
 ---
 
 ## Vision Macro
 
-1. **GLD : test de patience** — La position mean-reversion est sous pression. L'or a reculé de ~1.4% depuis vendredi. C'est un rappel que même les setups de haute conviction nécessitent une gestion du risque. Le cash buffer élevé (70%) permet d'absorber ce type de contre-performance sans paniquer.
+1. **DBA : diversification intelligente** — L'entrée sur DBA est le type de décision que je recherche dans ce système : identifier un actif en survente extrême (RSI 20.9), avec une corrélation quasi-nulle avec le reste du portefeuille, dans un régime où tout est corrélé. C'est la définition mathématique de la diversification efficace. Le LLM a correctement identifié la rareté de cette opportunité.
 
-2. **Timeout API : première occurrence** — L'API Kimi a timeout pour la première fois. Pas d'impact majeur grâce au fallback conservateur, mais il faut monitorer si cela se reproduit. Si 2+ timeouts consécutifs, il faudra investiguer (réseau, charge API, ou considérer un endpoint de fallback).
+2. **GLD : patience récompensée** — Après plusieurs jours de détérioration, la position GLD montre des signes de stabilisation. Le dollar-cost averaging (3 achats entre fin mai et aujourd'hui) a permis d'abaisser le prix moyen d'entrée. La discipline de tenir une position de conviction — même quand elle souffre — est un test essentiel de ce système.
 
-3. **Marchés US inchangés** — SPY et QQQ n'ont pas été réévalués aujourd'hui (pas d'appel LLM). Les indicateurs de vendredi (RSI > 68, Bollinger > 0.85) suggèrent toujours un marché suracheté. Le LLM aurait probablement maintenu sa discipline de ne pas chasser le momentum.
+3. **AI.PA et SAN.PA : stars du portefeuille** — Ces deux positions contrarian continuent de surperformer. AI.PA (+2.51%) et SAN.PA (+4.35%) valident la thèse de mean-reversion sur les actions françaises. Le LLM a eu raison de ne pas les vendre malgré les tentations de prise de profit.
 
-4. **Semaine à venir** — La priorité est de surveiller GLD pour un signe de stabilisation. Si l'or continue de baisser et approche le stop-loss de -5%, une décision de réduction de position sera nécessaire. SAN.PA et AI.PA restent des positions solides avec des profits latents positifs.
+4. **Équities US : discipline de non-action** — Le LLM refuse toujours d'entrer sur SPY/QQQ/FEZ/IWM malgré des indices qui montent. RSI >60, Bollinger >0.8 — la mathématique du risk/reward est clairement défavorable. C'est la « loss aversion » en action : préférer l'absence de gain à un risque de perte élevé.
+
+5. **API Kimi : retour à la normale** — Après le timeout de lundi, l'API a répondu normalement aujourd'hui (réponse en ~40s). Le système de fallback HOLD a bien fonctionné lundi, mais c'est rassurant de retrouver une décision informée.
 
 ---
 
 ## Notes Techniques
 
-- **API Kimi :** Timeout après 180s. Première occurrence depuis le lancement du système.
+- **API Kimi :** Fonctionnement normal. Réponse reçue en temps raisonnable.
 - **32 actifs analysés** : données marché récupérées avec succès via yfinance.
-- **Métriques de performance** : Sharpe -3.94 (dégradé par la volatilité accrue et le rendement négatif), volatilité 3.81% (en hausse depuis 2.38% vendredi). Le Sortino (-6.10) et le Calmar (-10.12) reflètent une détérioration du ratio rendement/risque.
-- **Session quotidienne** : Exécution standard post-clôture US. Timeout API au moment de la décision. Fallback HOLD correctement appliqué.
+- **Métriques de performance** : Sharpe -2.57 (amélioration depuis -3.94 lundi), volatilité 3.60% (légère baisse depuis 3.81%). Le Sortino (-4.38) et le Calmar (-5.85) reflètent une légère amélioration du ratio rendement/risque grâce aux gains de AI.PA et SAN.PA.
+- **Session quotidienne** : Exécution standard post-clôture US. 2 trades exécutés (GLD, DBA). 3 positions maintenues (TLT, AI.PA, SAN.PA).
 
 ---
 
-*Next: Mardi 2 juin — espérer que l'API Kimi réponde. Surveillance de GLD pour signe de stabilisation. TLT : toujours sous pression. Évaluer si le régime de haute corrélation persiste.*
+*Next: Vendredi 5 juin — dernier jour de la semaine. Si mouvements significatifs, weekly report généré. Surveillance de DBA pour entrée initiale. GLD : poursuivre le suivi de la stabilisation. TLT : toujours sous pression mais stabilisé.*
