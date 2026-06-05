@@ -5,29 +5,29 @@
     "TLT": {
       "quantity": 5.9872587482185775,
       "avg_price": 86.38500213623047,
-      "current_price": 85.5
+      "current_price": 85.06999969482422
     },
     "AI.PA": {
       "quantity": 2.623116929409555,
       "avg_price": 176.6999969482422,
-      "current_price": 181.13999938964844
+      "current_price": 183.22000122070312
     },
     "SAN.PA": {
       "quantity": 4.909103512711255,
       "avg_price": 73.07906183264495,
-      "current_price": 76.26000213623047
+      "current_price": 78.25
     },
     "GLD": {
       "quantity": 5.583635685900788,
       "avg_price": 413.77807357927304,
-      "current_price": 411.2699890136719
+      "current_price": 396.25
     },
     "DBA": {
       "quantity": 18.628770377809545,
       "avg_price": 26.690000534057617,
-      "current_price": 26.690000534057617
+      "current_price": 26.399999618530273
     }
   },
-  "last_updated": "2026-06-04T21:08:59.659229",
-  "total_value": 9872.835695185178
+  "last_updated": "2026-06-05T21:12:39.524702",
+  "total_value": 9796.217858492551
 }
