@@ -1,38 +1,57 @@
 {
+  "last_updated": "2026-06-16T21:09:50.099857",
+  "total_value": 9760.146079480433,
   "cash": 4708.768327023746,
   "total_realized_pnl": -322.4178255775033,
-  "positions": {
-    "TLT": {
+  "num_positions": 6,
+  "positions": [
+    {
+      "ticker": "TLT",
       "quantity": 5.9872587482185775,
       "avg_price": 86.38500213623047,
-      "current_price": 86.19000244140625
+      "current_price": 86.19000244140625,
+      "market_value": 516.0418461262901,
+      "unrealized_pnl_pct": -0.2257332754552709
     },
-    "SAN.PA": {
+    {
+      "ticker": "SAN.PA",
       "quantity": 4.909103512711255,
       "avg_price": 73.07906183264495,
-      "current_price": 75.62999725341797
+      "current_price": 75.62999725341797,
+      "market_value": 371.2754851830967,
+      "unrealized_pnl_pct": 3.490651572149075
     },
-    "GLD": {
+    {
+      "ticker": "GLD",
       "quantity": 5.583635685900788,
       "avg_price": 413.77807357927304,
-      "current_price": 397.7300109863281
+      "current_price": 397.7300109863281,
+      "market_value": 2220.779482696974,
+      "unrealized_pnl_pct": -3.878422666074492
     },
-    "DBA": {
+    {
+      "ticker": "DBA",
       "quantity": 18.628770377809545,
       "avg_price": 26.690000534057617,
-      "current_price": 26.670000076293945
+      "current_price": 26.670000076293945,
+      "market_value": 496.82930739744296,
+      "unrealized_pnl_pct": -0.07493614598527419
     },
-    "SPY": {
+    {
+      "ticker": "SPY",
       "quantity": 1.2305090909737713,
       "avg_price": 750.3300170898438,
-      "current_price": 750.3300170898438
+      "current_price": 750.3499755859375,
+      "market_value": 923.3124663704434,
+      "unrealized_pnl_pct": 0.002659962368446762
     },
-    "QQQ": {
+    {
+      "ticker": "QQQ",
       "quantity": 0.7168449994260205,
       "avg_price": 729.8599853515625,
-      "current_price": 729.8599853515625
+      "current_price": 729.780029296875,
+      "market_value": 523.1391646824396,
+      "unrealized_pnl_pct": -0.010954985379693938
     }
-  },
-  "last_updated": "2026-06-16T21:06:37.900594",
-  "total_value": 9760.178836467523
+  ]
 }
