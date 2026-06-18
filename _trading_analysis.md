@@ -1,105 +1,108 @@
-# Trading Analysis — 2026-06-16 (Tuesday)
+# Trading Analysis — 2026-06-18 (Thursday)
 
 **Session:** Post-clôture US (21:06 UTC)  
-**Portfolio Value:** €9,760.18 (-2.40% vs capital initial)  
-**Cash Buffer:** 48.24% (€4,708.77)  
-**Daily Change:** -€36.04 (-0.37%)  
-**Trades Exécutés:** 2 (BUY SPY, BUY QQQ)
+**Portfolio Value:** €9,696.25 (-3.04% vs capital initial)  
+**Cash Buffer:** 70.88% (€6,872.71)  
+**Daily Change:** -€63.90 (-0.65%)  
+**Trades Exécutés:** 0 (4 bloqués par cooldown)
 
 ---
 
-## Context Marché : Neutral/Ambigu
+## Context Marché : Neutral / Slight Risk-Off
 
-Le marché est dans un régime neutre avec une légère pression vendeuse. Le VIXY est stable, signalant une volatilité modérée. Les equities US montrent des signes de consolidation après les chutes de la semaine dernière :
-- **SPY : €750.33** — Régime neutre (RSI ~50, Bollinger ~0.6)
-- **QQQ : €729.86** — Régime neutre, consolidation
-- **IWM : €272.24** — Légère hausse, small caps en récupération
-- **GLD : €397.73** — Continuation de la baisse, -3.88% latent
+Le marché reste dans un régime neutre avec une pression vendeuse modérée. Les équities US continuent de consolider après le mini sell-off de la semaine dernière :
+- **SPY : €746.59** — Léger recul (-0.50% latent), consolidation
+- **QQQ : €739.69** — Résilience relative, +1.35% latent depuis l'entrée mardi
+- **TLT : €86.74** — Bonds US en légère hausse, +0.41% latent, breakout Bollinger marginal (déjà signalé en intraday)
+- **DBA : €26.63** — Stable, -0.22% latent, RSI 29.4 — survente extrême en attente
+- **SAN.PA : €73.17** — Résilience, +0.12% latent, star française
 
-Le CAC 40 (^FCHI) est à ~8320, avec un régime overbought sur les actions françaises (BNP.PA, MC.PA, OR.PA en RSI > 68). L'Europe montre une force relative mais avec des signaux d'extension technique.
+Le CAC 40 (^FCHI) est dans un régime neutre avec certains noms français overbought (BNP.PA, CS.PA). L'Europe montre une résistance relative mais sans force de breakout.
 
 ---
 
-## Décision du LLM : Déploiement Cautieux de Cash
+## Décision du LLM : Déploiement Bloqué par Cooldown
 
-> The portfolio currently holds 63% cash, which is above the 30% maximum buffer target, allowing for gradual capital deployment. SPY and QQQ are in neutral regimes (RSI ~50, Bollinger ~0.6), offering solid core exposure without chasing overbought momentum. French equities (^FCHI, BNP.PA, MC.PA) are overbought (RSI > 68, BB > 1.1), so I am avoiding new long entries there to respect loss aversion and mean-reversion risk. GLD is in a downtrend and dragging, but the position size is near the 25% max limit and it acts as a tail-risk hedge; holding for now but monitoring closely. DBA is oversold (RSI 29.4) and presents a mean-reversion setup; holding the existing position. Applying DSR skepticism by avoiding highly volatile, oversold commodities like USO and SLV which may be value traps with negative skew. Deploying 25% of available cash to build core US equity positions while maintaining a healthy cash buffer for future opportunities.
+> With cash at ~71%, we need to deploy capital to reach the 10-30% cash buffer target. Applying a momentum strategy to FEZ (RSI 60.5) and IJR (RSI 62.2), which show strong trends without being extremely overbought (RSI < 70). Adding REET for sector diversification in a neutral regime. Applying a mean-reversion approach to PDBC (RSI 26.7, BB 0.04), but limiting position size to 10% of cash due to CVaR concerns over its -12.7% drawdown and commodity tail risks. Holding existing positions as they provide good diversification and are either profitable or in acceptable oversold/neutral regimes. Avoiding highly volatile oversold commodities like SLV and USO, and overbought French equities like BNP.PA and CS.PA, to satisfy loss aversion and minimize downside tail risk.
+
+**Actions proposées :**
+- BUY FEZ (20% du cash) — Momentum sur Europe, RSI 60.5
+- BUY IJR (15% du cash) — Small caps US, momentum
+- BUY REET (15% du cash) — Diversification sectorielle
+- BUY PDBC (10% du cash) — Mean-reversion sur commodities, tail risk managed
+- HOLD TLT, SAN.PA, DBA, SPY, QQQ
+
+**Actions exécutées : AUCUNE** — Weekly trade cap atteint (2/2). Toutes les entrées proposées ont été bloquées par le guardrail de cooldown.
 
 ---
 
 ## Positions Ouvertes
 
-### SPY — Core Equity US (NEW) 🟢
-- **P&L Latent:** 0.00% (entrée aujourd'hui)
-- **Prix actuel:** €750.33 (entrée à €750.33)
-- **Rôle:** Exposition core S&P 500, diversification US equity
-- **Quantité:** 1.2305
-- **Évolution:** Nouvelle position ouverte avec 15% du cash disponible. Régime neutre, pas de surachat. Première exposition US equity depuis le sell-off de la semaine dernière.
-
-### QQQ — Growth US (NEW) 🟢
-- **P&L Latent:** 0.00% (entrée aujourd'hui)
-- **Prix actuel:** €729.86 (entrée à €729.86)
-- **Rôle:** Exposition growth Nasdaq, diversification tech
+### QQQ — Growth US 🟢
+- **P&L Latent:** +1.35% (+€7.05)
+- **Prix actuel:** €739.69 (entrée à €729.86)
+- **Rôle:** Exposition growth Nasdaq
 - **Quantité:** 0.7168
-- **Évolution:** Nouvelle position avec 10% du cash. Régime neutre, consolidation après la chute de vendredi. Position de taille modeste pour tester le terrain.
+- **Évolution:** Meilleure position du portefeuille. Résilience remarquable depuis l'entrée mardi. Le LLM maintient HOLD.
 
 ### TLT — Hedge Rates 🟡
-- **P&L Latent:** -0.23% (-€1.17)
-- **Prix actuel:** €86.19 (vs entrée €86.39)
+- **P&L Latent:** +0.41% (+€2.13)
+- **Prix actuel:** €86.74 (entrée à €86.39)
 - **Rôle:** Ballast obligataire US
 - **Quantité:** 5.9873
-- **Évolution:** Stabilisation. Légère baisse depuis l'entrée mais sous contrôle. Le yield se stabilise.
+- **Évolution:** Légère hausse. Breakout Bollinger marginal signalé en intraday (17:46 UTC) mais RSI 64.3 < 70 — pas de signal de sortie. Le LLM maintient HOLD.
 
-### SAN.PA — Meilleure Position 🟢
-- **P&L Latent:** +3.49% (+€12.52)
-- **Prix actuel:** €75.63 (vs entrée €73.08)
-- **Rôle:** Position contrarian française, star du portefeuille
+### SAN.PA — Position Française 🟡
+- **P&L Latent:** +0.12% (+€0.45)
+- **Prix actuel:** €73.17 (entrée à €73.08)
+- **Rôle:** Diversification géographique Europe
 - **Quantité:** 4.9091
-- **Évolution:** Résilience maintenue. SAN.PA reste la position la plus rentable en %. Le LLM maintient HOLD.
-
-### GLD — Mean-Reversion sous Pression 🔴
-- **P&L Latent:** -3.88% (-€89.61)
-- **Prix actuel:** €397.73 (vs prix moyen €413.78)
-- **Rôle:** Position mean-reversion sur or, test de patience
-- **Quantité:** 5.5836
-- **Évolution:** Le drawdown continue de s'accentuer. L'or n'a pas rebondi comme espéré. Le LLM maintient la position comme tail-risk hedge mais surveille de près. Approche du stop-loss à 5%.
+- **Évolution:** Consolidation. +0.60% en intraday, +0.12% au close. Résilience maintenue.
 
 ### DBA — Diversification Agricole 🟡
-- **P&L Latent:** -0.07% (-€0.37)
-- **Prix actuel:** €26.67 (vs entrée €26.69)
+- **P&L Latent:** -0.22% (-€1.12)
+- **Prix actuel:** €26.63 (entrée à €26.69)
 - **Rôle:** Diversification contrarian sur commodities agricoles
 - **Quantité:** 18.6288
-- **Évolution:** Stabilisation proche du prix d'entrée. RSI 29.4 — survente extrême qui pourrait offrir un rebond mean-reversion.
+- **Évolution:** Stabilisation proche du prix d'entrée. RSI 29.4 — survente extrême qui pourrait offrir un rebond mean-reversion. Le LLM maintient HOLD.
+
+### SPY — Core Equity US 🔴
+- **P&L Latent:** -0.50% (-€4.60)
+- **Prix actuel:** €746.59 (entrée à €750.33)
+- **Rôle:** Exposition core S&P 500
+- **Quantité:** 1.2305
+- **Évolution:** Légère baisse depuis l'entrée mardi. Régime neutre, pas de panique. Le LLM maintient HOLD.
 
 ---
 
 ## Risk Management
 
-**Cash Buffer:** 48.24% — Réduit de 63% à 48% après les deux achats. Toujours au-dessus du minimum de 30% mais le déploiement est progressif. Le LLM a respecté la règle de ne jamais descendre sous 30% de cash.
+**Cash Buffer:** 70.88% — Le déploiement de mardi (SPY, QQQ) a été partiellement annulé dans l'attente du reset du cooldown. Le buffer est à un niveau très confortable.
 
-**Drawdown Max:** -2.40% — Le portefeuille est à -2.40% depuis le départ. La performance relative vs SPY (régime neutre) reste à monitorer.
+**Drawdown Max:** -3.04% — Le portefeuille est à -3.04% depuis le départ. La performance est stable depuis mardi malgré la baisse de GLD (vendue) et la légère consolidation de SPY.
 
-**Concentration:** GLD représente 22.8% du portefeuille. Approche du seuil de 25% mais sous contrôle. Pas de nouvel achat sur GLD aujourd'hui — sage décision.
+**Concentration:** Toutes les positions sont <10% du portefeuille. Aucune concentration excessive. Le plus gros poids est SPY à 9.47%.
 
 **Métriques de risque :**
-- CVaR 95% : 0.92%
-- VaR 95% : 0.77%
-- Max Drawdown : -3.52%
-- Sharpe Ratio : -2.02
-- Volatilité : 6.32%
+- CVaR 95% : 0.42%
+- VaR 95% : 0.33%
+- Max Drawdown : -0.96%
+- Sharpe Ratio : 0.69
+- Volatilité : 3.09%
 
 ---
 
 ## Vision Macro
 
-1. **Déploiement discipliné de cash** — Après des semaines de patience avec un buffer de 60%+, le LLM a enfin déployé 25% du cash sur des positions core US (SPY, QQQ). Ce n'est pas un FOMO trade — c'est un déploiement mesuré sur des actifs en régime neutre, sans surachat. La discipline est intacte : pas de chase, pas de panique, juste du déploiement graduel.
+1. **Cooldown : le double tranchant** — Le guardrail de 2 trades/semaine a protégé le portefeuille de nombreuses entrées impulsives mais aujourd'hui il a bloqué 4 opportunités bien argumentées par le LLM. C'est le prix de la discipline. Le LLM a raison de vouloir déployer : le cash à 71% est trop élevé même pour un buffer conservateur. Le reset hebdomadaire (lundi) sera l'occasion de déployer si les setups persistent.
 
-2. **GLD : le test continue** — La position or est à -3.88%, proche du stop-loss à 5%. L'or continue de baisser malgré son rôle d'actif refuge. Le LLM maintient la position comme tail-risk hedge mais la limite de 25% est proche. Si le stop est déclenché, ce sera une perte disciplinée de ~€100. C'est le prix de la diversification.
+2. **QQQ : la résilience** — +1.35% depuis l'entrée mardi, c'est la meilleure position du portefeuille. Le Nasdaq montre une force relative par rapport au S&P. C'est un signe que le marché ne panique pas — c'est la tech qui mène.
 
-3. **SAN.PA : l'Europe résiste** — Cette position française montre une force relative remarquable avec +3.49%. Le LLM a raison de la maintenir. C'est la diversification géographique qui paie.
+3. **PDBC : mean-reversion manquée** — Le LLM a identifié PDBC comme un setup mean-reversion (RSI 26.7, BB 0.04, drawdown -12.7%) avec une allocation prudente de 10% du cash. Le cooldown a bloqué cette entrée. Si le rebond se produit, ce sera une opportunité manquée. Mais la règle est la règle.
 
-4. **DBA : mean-reversion en attente** — RSI 29.4, survente extrême. La position est proche de l'entrée. Si le rebond mean-reversion se matérialise, ce sera une validation de la stratégie contrarian.
+4. **FEZ et IJR : momentum bloqué** — Le LLM a proposé d'ajouter de l'exposition Europe (FEZ) et small caps US (IJR) pour la diversification. Ces setups momentum (RSI 60-62) n'ont pas été chassés — ils sont en zone neutre avec tendance. Le reset hebdomadaire permettra peut-être de capturer ces tendances si elles se maintiennent.
 
-5. **Exposition US equity : retour prudent** — Après avoir évité le sell-off de vendredi (SPY -2.58%, QQQ -4.8%), le LLM réintroduit progressivement l'exposition US. Ce n'est pas un "catching falling knife" — c'est un déploiement sur des niveaux neutres, avec un buffer de 48% pour absorber d'éventuelles secousses.
+5. **DBA : patience récompensée** — La position est à -0.22% avec un RSI 29.4. La patience est le maître-mot ici. Le LLM a raison de maintenir — c'est un setup mean-reversion qui demande du temps.
 
 ---
 
@@ -107,10 +110,10 @@ Le CAC 40 (^FCHI) est à ~8320, avec un régime overbought sur les actions fran�
 
 - **API Venice :** Fonctionnement normal. Endpoint https://api.venice.ai/v1/chat/completions, modèle qwen-3-7-max. Réponse en ~90s, qualité rigoureuse.
 - **32 actifs analysés** : données marché récupérées avec succès via yfinance.
-- **Métriques de performance** : Sharpe -2.02 (amélioration depuis -3.96 vendredi), volatilité 6.32% (hausse depuis 5.08%). Le déploiement de cash augmente la volatilité mais réduit la dépendance au cash drag.
-- **Session quotidienne** : Exécution standard post-clôture US. 2 trades exécutés (SPY, QQQ). 6 positions maintenues.
-- **Cooldown guardrails** : 0/2 trades cette semaine (semaine commence mardi). Le système est prêt pour d'autres trades si opportunités se présentent.
+- **Métriques de performance** : Sharpe 0.69 (amélioration significative depuis -2.02 mardi), volatilité 3.09% (baisse depuis 6.32%). La réduction du nombre de positions (de 6 à 5) et la vente de GLD ont amélioré les métriques de risque.
+- **Session quotidienne** : Exécution standard post-clôture US. 0 trades exécutés. 4 trades bloqués par cooldown. 5 positions maintenues.
+- **Cooldown guardrails** : 2/2 trades cette semaine (semaine commence mardi). Reset lundi prochain. Le LLM a proposé 4 trades aujourd'hui, tous bloqués. C'est une semaine de transition.
 
 ---
 
-*Next: Mercredi 17 juin — surveillance de GLD (stop-loss à 5%). SPY et QQQ sont de nouvelles positions, monitorer l'évolution. Si marché reste neutre, possibilité de déploiement supplémentaire. Si volatilité revient, maintenir le buffer. Cash buffer 48% = confortable.*
+*Next: Vendredi 19 juin — dernière session avant le weekend. Cooldown toujours actif (2/2). Si le LLM propose des trades, ils seront bloqués. Focus sur la surveillance des positions existantes. SPY et QQQ sont des nouvelles positions, monitorer l'évolution. TLT breakout Bollinger marginal à surveiller. Reset cooldown lundi 22 juin — grande opportunité de déploiement si les setups se maintiennent. Cash buffer 71% = très confortable, presque trop.*
