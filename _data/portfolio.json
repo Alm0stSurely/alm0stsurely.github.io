@@ -1,49 +1,49 @@
 {
-  "last_updated": "2026-06-18T21:07:09.531970",
-  "total_value": 9696.253209180271,
-  "cash": 6872.7062689349805,
-  "total_realized_pnl": -468.8659013467792,
+  "last_updated": "2026-06-19T10:00:00",
+  "total_value": 9705.92,
+  "cash": 6872.71,
+  "total_realized_pnl": -468.87,
   "num_positions": 5,
   "positions": [
     {
       "ticker": "TLT",
-      "quantity": 5.9872587482185775,
-      "avg_price": 86.38500213623047,
-      "current_price": 86.73999786376953,
-      "market_value": 519.3348110303149,
-      "unrealized_pnl_pct": 0.4109460192861124
+      "quantity": 5.99,
+      "avg_price": 86.39,
+      "current_price": 86.74,
+      "market_value": 519.33,
+      "unrealized_pnl_pct": 0.41
     },
     {
       "ticker": "SAN.PA",
-      "quantity": 4.909103512711255,
-      "avg_price": 73.07906183264495,
-      "current_price": 73.16999816894531,
-      "market_value": 359.1990950362455,
-      "unrealized_pnl_pct": 0.12443555516436669
+      "quantity": 4.91,
+      "avg_price": 73.08,
+      "current_price": 75.14,
+      "market_value": 368.87,
+      "unrealized_pnl_pct": 2.82
     },
     {
       "ticker": "DBA",
-      "quantity": 18.628770377809545,
-      "avg_price": 26.690000534057617,
-      "current_price": 26.6299991607666,
-      "market_value": 496.0841395271819,
-      "unrealized_pnl_pct": -0.22480843795583083
+      "quantity": 18.63,
+      "avg_price": 26.69,
+      "current_price": 26.63,
+      "market_value": 496.08,
+      "unrealized_pnl_pct": -0.22
     },
     {
       "ticker": "SPY",
-      "quantity": 1.2305090909737713,
-      "avg_price": 750.3300170898438,
-      "current_price": 746.5900268554688,
-      "market_value": 918.6858152760063,
-      "unrealized_pnl_pct": -0.4984460369692436
+      "quantity": 1.23,
+      "avg_price": 750.33,
+      "current_price": 746.59,
+      "market_value": 918.69,
+      "unrealized_pnl_pct": -0.50
     },
     {
       "ticker": "QQQ",
-      "quantity": 0.7168449994260205,
-      "avg_price": 729.8599853515625,
-      "current_price": 739.6900024414062,
-      "market_value": 530.243079375543,
-      "unrealized_pnl_pct": 1.3468360078828918
+      "quantity": 0.72,
+      "avg_price": 729.86,
+      "current_price": 739.69,
+      "market_value": 530.24,
+      "unrealized_pnl_pct": 1.35
     }
   ]
 }
