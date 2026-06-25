@@ -1,36 +1,36 @@
-# Trading Analysis — 2026-06-19 (Friday)
+# Trading Analysis — 2026-06-25 (Thursday)
 
 **Session:** Post-clôture US (21:06 UTC)  
-**Portfolio Value:** €9,697.58 (-3.02% vs capital initial)  
-**Cash Buffer:** 70.87% (€6,872.71)  
-**Daily Change:** +€1.33 (+0.01%)  
+**Portfolio Value:** €9,674.55 (-3.25% vs capital initial)  
+**Cash Buffer:** 71.04% (€6,872.71)  
+**Daily Change:** -€23.03 (-0.24%)  
 **Trades Exécutés:** 0 (weekly cap atteint)
 
 ---
 
-## Context Marché : Neutral / Consolidation
+## Context Marché : Neutral / Risk-Off Modéré
 
-Fin de semaine marquée par une consolidation générale. Les marchés US ferment en légère baisse après une semaine de haute volatilité :
-- **SPY : €746.59** — Recul modéré (-0.50% latent), consolidation post-sell-off
-- **QQQ : €739.69** — Résilience persistante, +1.35% latent, meilleure position du portefeuille
-- **TLT : €86.74** — Bonds US stables, +0.41% latent, hedge rates efficace
-- **DBA : €26.63** — Agricole stable, -0.22% latent, RSI extrêmement survente (29.4)
-- **SAN.PA : €73.44** — Résilience française, +0.49% latent
+Les marchés US reculent en fin de séance, avec une pression vendeuse persistante sur les large caps et le growth :
+- **SPY : €733.27** — Recul significatif (-2.27% latent), break sous le support court terme
+- **QQQ : €716.26** — Correction growth (-1.86% latent), sous-performance relève de la tech
+- **TLT : €87.33** — Bonds US en hausse (+1.09% latent), flight-to-quality efficace
+- **DBA : €26.92** — Agricole rebondissant (+0.86% latent), mean-reversion en cours
+- **SAN.PA : €73.69** — Défensif pharma français stable (+0.84% latent)
 
-Le CAC 40 reste dans un régime neutre avec des opportunités limitées. L'Europe montre une résistance relative mais sans momentum convaincant pour de nouvelles entrées.
+Le CAC 40 reste dans un régime neutre. L'Europe montre une résistance relative face à la volatilité US, avec le secteur défensif (santé, utilities) qui surperforme.
 
 ---
 
 ## Décision du LLM : Conservation du Capital
 
-> The weekly trade cap has been reached, prohibiting any new buys or sells unless a stop-loss override is triggered. Reviewing the current positions (TLT, SAN.PA, DBA, SPY, QQQ), none have experienced a position drawdown exceeding the 5% threshold that would necessitate a defensive stop-loss sale. Furthermore, SPY and QQQ are still within their mandatory cooldown holding periods. Applying loss aversion and capital preservation principles, we maintain our current allocations and hold all positions until the trade cap resets or stop-loss conditions are met.
+> The weekly trade cap has been reached (2/2 trades used), prohibiting any new buys or sells unless a stop-loss override is triggered. Reviewing the current positions, none have breached the 5% individual position drawdown threshold (SPY is at -2.27%, QQQ at -1.86%, while TLT, SAN.PA, and DBA are in positive territory). Furthermore, there is no indication of a >3% single-day portfolio drawdown that would necessitate a defensive shift. Applying loss aversion and adhering to the system's risk management guardrails (trade frequency limits to prevent overtrading and multiple testing bias) takes precedence. Therefore, the only prudent action is to hold all current positions until the trade cap resets.
 
 **Actions proposées :**
-- HOLD TLT — Hedge rates, profit latent stable
-- HOLD SAN.PA — Résilience française, +0.49%
-- HOLD DBA — Mean-reversion en attente, RSI survente extrême
-- HOLD SPY — Consolidation, pas de panique
-- HOLD QQQ — Meilleure position, momentum intact
+- HOLD TLT — Hedge rates, +1.09%, meilleure position actuelle
+- HOLD SAN.PA — Défensif FR, +0.84%, résilience confirmée
+- HOLD DBA — Mean-reversion en cours, +0.86%, rebond agricole
+- HOLD SPY — Core US, -2.27%, sous le support mais pas de panique
+- HOLD QQQ — Growth US, -1.86%, correction tech non alarmante
 
 **Actions exécutées : AUCUNE** — Weekly trade cap atteint (2/2). Conservation du capital en attendant le reset lundi.
 
@@ -38,75 +38,64 @@ Le CAC 40 reste dans un régime neutre avec des opportunités limitées. L'Europ
 
 ## Positions Ouvertes
 
-### QQQ — Growth US 🟢
-- **P&L Latent:** +1.35% (+€7.05)
-- **Prix actuel:** €739.69 (entrée à €729.86)
-- **Rôle:** Exposition growth Nasdaq
-- **Quantité:** 0.7168
-- **Évolution:** Meilleure position du portefeuille. Résilience remarquable depuis l'entrée mardi. Le LLM maintient HOLD.
-
-### TLT — Hedge Rates 🟡
-- **P&L Latent:** +0.41% (+€2.13)
-- **Prix actuel:** €86.74 (entrée à €86.39)
-- **Rôle:** Hedge contre la hausse des taux
+### TLT — Hedge Rates 🟢
+- **P&L Latent:** +1.09% (+€5.66)
+- **Prix actuel:** €87.33 (entrée à €86.39)
+- **Rôle:** Hedge contre la hausse des taux / flight-to-quality
 - **Quantité:** 5.9873
-- **Évolution:** Position stable, légèrement profitable. Durée de détention: 88 jours (well beyond min hold).
+- **Évolution:** Meilleure position du portefeuille. Profite de la baisse des yields US et du risk-off. 94 jours de détention.
 
-### SAN.PA — Défensif Pharma FR 🟡
-- **P&L Latent:** +0.49% (+€1.77)
-- **Prix actuel:** €73.44 (entrée à €73.08)
+### SAN.PA — Défensif Pharma FR 🟢
+- **P&L Latent:** +0.84% (+€3.00)
+- **Prix actuel:** €73.69 (entrée à €73.08)
 - **Rôle:** Défensif secteur santé France
 - **Quantité:** 4.9091
-- **Évolution:** Légèrement profitable, résilience defensive confirmée. 36 jours de détention.
+- **Évolution:** Résilience defensive confirmée face à la volatilité US. 42 jours de détention.
 
-### SPY — Core US Equity 🟡
-- **P&L Latent:** -0.50% (-€4.60)
-- **Prix actuel:** €746.59 (entrée à €750.33)
-- **Rôle:** Core exposure US large cap
-- **Quantité:** 1.2305
-- **Évolution:** Légère perte depuis entrée mardi. Pas de panique, consolidation normale. 3 jours de détention.
-
-### DBA — Agricole / Inflation Hedge 🟡
-- **P&L Latent:** -0.22% (-€1.12)
-- **Prix actuel:** €26.63 (entrée à €26.69)
+### DBA — Agricole / Inflation Hedge 🟢
+- **P&L Latent:** +0.86% (+€4.28)
+- **Prix actuel:** €26.92 (entrée à €26.69)
 - **Rôle:** Diversification sectorielle, hedge inflation
 - **Quantité:** 18.6288
-- **Évolution:** RSI 29.4 — survente extrême. Setup mean-reversion en attente. 15 jours de détention.
+- **Évolution:** Rebond après une période de survente. 21 jours de détention.
+
+### SPY — Core US Equity 🟡
+- **P&L Latent:** -2.27% (-€20.99)
+- **Prix actuel:** €733.27 (entrée à €750.33)
+- **Rôle:** Core exposure US large cap
+- **Quantité:** 1.2305
+- **Évolution:** Recul significatif depuis l'entrée mardi 16 juin. Pas encore de stop-loss (seuil à -5%). 9 jours de détention.
+
+### QQQ — Growth US 🟡
+- **P&L Latent:** -1.86% (-€9.75)
+- **Prix actuel:** €716.26 (entrée à €729.86)
+- **Rôle:** Exposition growth Nasdaq
+- **Quantité:** 0.7168
+- **Évolution:** Sous-performance tech depuis l'entrée mardi. Pas de stop-loss déclenché. 9 jours de détention.
 
 ---
 
-## Bilan de la Semaine (W25)
+## Métriques de Risque
 
-**Performance hebdomadaire:** -0.64%  
-**Valeur début de semaine:** €9,760.15  
-**Valeur fin de semaine:** €9,697.58  
-**Trades exécutés:** 2 (SPY + QQQ mardi)  
-**Trades bloqués:** 4 (mercredi + jeudi par cooldown)
-
-### Points Clés :
-1. **Début de semaine difficile** — Le portefeuille a ouvert avec un realized P&L négatif de -€468.87, hérité des positions fermées la semaine précédente (GLD, AI.PA à perte)
-2. **Reprise contrôlée mardi** — Deux entrées disciplinées (SPY + QQQ) avec une allocation modérée (15% + 10% du cash)
-3. **Conservation du capital** — Mercredi et jeudi, le LLM a proposé des entrées agressives (FEZ, IJR, REET, PDBC) mais le cooldown a préservé le capital en limitant les risques
-4. **Résilience du portefeuille** — Fin de semaine quasi-stable malgré la pression vendeuse sur les équities US
-
-### Métriques de Risque :
-- **CVaR 95%:** 0.47% — Risque de queue très maîtrisé
-- **VaR 95%:** 0.30% — Perte quotidienne maximale attendue à 95% de confiance
-- **Sharpe Ratio:** 0.30 — Rendement ajusté au risque positif
-- **Volatilité:** 3.39% — Volatilité modérée
-- **Max Drawdown:** -0.98% — Drawdown contrôlé
+- **CVaR 95%:** 0.47% — Risque de queue maîtrisé
+- **VaR 95%:** 0.29% — Perte quotidienne maximale attendue à 95% de confiance
+- **Sharpe Ratio:** -1.05 — Rendement ajusté au risque négatif (concentration cash élevée)
+- **Volatilité:** 3.32% — Volatilité modérée
+- **Max Drawdown:** -0.92% — Drawdown contrôlé sur la fenêtre de calcul
+- **Total Realized P&L:** -€468.87 (hérité des positions fermées précédemment)
+- **Total Unrealized P&L:** -€17.80
 
 ---
 
 ## Réflexion Stratégique
 
-Cette semaine illustre parfaitement le rôle des **guardrails de cooldown** dans un système de trading LLM-powered. Sans la limite de 2 trades/semaine, le LLM aurait déployé 60% du cash supplémentaire mercredi et jeudi dans des positions de momentum (FEZ, IJR) et mean-reversion (PDBC). Or, le marché est resté dans un régime neutre avec une pression vendeuse modérée — ces entrées auraient probablement généré des pertes supplémentaires.
+Le portefeuille subit une **pression latente** sur les positions US equities (SPY -2.27%, QQQ -1.86%) alors que les positions défensives (TLT, SAN.PA, DBA) amortissent le choc. Cette configuration est cohérente avec un régime de risk-off modéré : les bonds et les défensifs surperforment, le growth et le large cap sous-performent.
 
-Le **trade-off** est clair : on sacrifie de l'opportunité (potentiel de gains sur FEZ/IJR) pour préserver du capital. Dans un régime de drawdown (-3.02% depuis le départ), cette conservation est rationnelle au sens de la prospect theory — la loss aversion domine la greed pour le gain.
+Le **cash à 71%** est un bouclier important mais aussi un coût d'opportunité. Le weekly trade cap (2/2) a bloqué toute nouvelle entrée cette semaine, ce qui, en rétrospective, est favorable : les deux entrées de la semaine (SPY + QQQ mardi 16 juin) sont déjà en perte. Limiter l'overtrading dans un marché directionnellement incertain est une protection contre la **multiple testing bias**.
 
-La **position DBA** mérite une attention particulière : RSI 29.4, survente extrême, 15 jours de détention. Le setup mean-reversion est en place. Si le régime reste neutre lundi, cette position pourrait être le premier candidat à un rebond.
+**Prochain reset cooldown :** Lundi 29 juin 2026. Le LLM aura alors 2 nouveaux "coupons" de trading pour potentiellement rééquilibrer le portefeuille.
 
-**Prochain reset cooldown :** Lundi 22 juin 2026. Le LLM aura alors 2 nouveaux "coupons" de trading pour déployer le cash à 70%.
+**Hypothèse pour lundi :** Si le sell-off US se poursuit et que SPY/QQQ approchent du seuil de stop-loss (-5%), le LLM pourrait recommander une sortie défensive et un réalignement vers les défensifs (TLT, SAN.PA) ou de nouveaux hedges (GLD, VIXY). À l'inverse, si le rebond se matérialise, le cash élevé permettra une entrée rapide.
 
 ---
 
