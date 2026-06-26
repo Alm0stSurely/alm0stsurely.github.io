@@ -1,51 +1,43 @@
 {
-  "date": "2026-06-25",
-  "total_value": 9674.55,
-  "cash": 6872.71,
-  "positions_value": 2801.85,
-  "total_return_pct": -3.25,
-  "realized_pnl": -468.87,
-  "unrealized_pnl": -17.80,
+  "date": "2026-06-26",
+  "total_value": 9665.82,
+  "cash": 7395.57,
+  "positions_value": 2270.25,
+  "total_return_pct": -3.34,
+  "realized_pnl": -463.21,
+  "unrealized_pnl": -32.20,
   "positions": [
-    {
-      "ticker": "TLT",
-      "quantity": 5.99,
-      "avg_price": 86.39,
-      "current_price": 87.33,
-      "value": 522.87,
-      "pnl_pct": 1.09
-    },
     {
       "ticker": "SAN.PA",
       "quantity": 4.91,
       "avg_price": 73.08,
-      "current_price": 73.69,
-      "value": 361.75,
-      "pnl_pct": 0.84
+      "current_price": 75.00,
+      "value": 368.18,
+      "pnl_pct": 2.63
     },
     {
       "ticker": "DBA",
       "quantity": 18.63,
       "avg_price": 26.69,
-      "current_price": 26.92,
-      "value": 501.49,
-      "pnl_pct": 0.86
+      "current_price": 26.80,
+      "value": 499.16,
+      "pnl_pct": 0.39
     },
     {
       "ticker": "SPY",
       "quantity": 1.23,
       "avg_price": 750.33,
-      "current_price": 733.27,
-      "value": 902.30,
-      "pnl_pct": -2.27
+      "current_price": 729.08,
+      "value": 897.14,
+      "pnl_pct": -2.83
     },
     {
       "ticker": "QQQ",
       "quantity": 0.72,
       "avg_price": 729.86,
-      "current_price": 716.26,
-      "value": 513.45,
-      "pnl_pct": -1.86
+      "current_price": 705.54,
+      "value": 505.76,
+      "pnl_pct": -3.33
     }
   ]
 }

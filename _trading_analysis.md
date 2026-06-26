@@ -1,77 +1,70 @@
-# Trading Analysis — 2026-06-25 (Thursday)
+# Trading Analysis — 2026-06-26 (Friday)
 
-**Session:** Post-clôture US (21:06 UTC)  
-**Portfolio Value:** €9,674.55 (-3.25% vs capital initial)  
-**Cash Buffer:** 71.04% (€6,872.71)  
-**Daily Change:** -€23.03 (-0.24%)  
-**Trades Exécutés:** 0 (weekly cap atteint)
-
----
-
-## Context Marché : Neutral / Risk-Off Modéré
-
-Les marchés US reculent en fin de séance, avec une pression vendeuse persistante sur les large caps et le growth :
-- **SPY : €733.27** — Recul significatif (-2.27% latent), break sous le support court terme
-- **QQQ : €716.26** — Correction growth (-1.86% latent), sous-performance relève de la tech
-- **TLT : €87.33** — Bonds US en hausse (+1.09% latent), flight-to-quality efficace
-- **DBA : €26.92** — Agricole rebondissant (+0.86% latent), mean-reversion en cours
-- **SAN.PA : €73.69** — Défensif pharma français stable (+0.84% latent)
-
-Le CAC 40 reste dans un régime neutre. L'Europe montre une résistance relative face à la volatilité US, avec le secteur défensif (santé, utilities) qui surperforme.
+**Session:** Post-clôture US (21:07 UTC)  
+**Portfolio Value:** €9,665.82 (-3.34% vs capital initial)  
+**Cash Buffer:** 76.51% (€7,395.57)  
+**Daily Change:** -€8.73 (-0.09%)  
+**Trades Exécutés:** 1 (SELL TLT)
 
 ---
 
-## Décision du LLM : Conservation du Capital
+## Context Marché : Risk-Off Persistant
 
-> The weekly trade cap has been reached (2/2 trades used), prohibiting any new buys or sells unless a stop-loss override is triggered. Reviewing the current positions, none have breached the 5% individual position drawdown threshold (SPY is at -2.27%, QQQ at -1.86%, while TLT, SAN.PA, and DBA are in positive territory). Furthermore, there is no indication of a >3% single-day portfolio drawdown that would necessitate a defensive shift. Applying loss aversion and adhering to the system's risk management guardrails (trade frequency limits to prevent overtrading and multiple testing bias) takes precedence. Therefore, the only prudent action is to hold all current positions until the trade cap resets.
+Les marchés US terminent la semaine sur une note défensive, avec le tech et le large cap qui continuent de sous-performer :
+- **SPY : €729.08** — Recul accentué (-2.83% latent), sous-performance s'aggrave
+- **QQQ : €705.54** — Correction tech se creuse (-3.33% latent)
+- **TLT : €87.33** — Bonds US surachetés (RSI 70.7, Bollinger 0.95), signal de sortie
+- **DBA : €26.80** — Agricole stable (+0.39% latent), consolidation
+- **SAN.PA : €75.00** — Défensif pharma français qui surperforme (+2.63% latent)
+
+Le CAC 40 montre une résilience relative. L'Europe continue d'outperformer les US sur cette fin de semaine, avec le secteur santé (Sanofi) qui profite de la rotation défensive.
+
+---
+
+## Décision du LLM : Prise de Profit Défensive sur TLT
+
+> With only one trade remaining this week and the portfolio maintaining a defensive posture due to a -3.34% overall drawdown, I am executing the planned exit for TLT. TLT is flashing overbought signals (RSI 70.7, Bollinger Position 0.95) and selling it locks in a small profit (+1.09%), aligning with loss aversion and capital preservation principles. SPY and QQQ are currently down but have not breached my personal 5% stop-loss threshold on cost basis, and their RSI levels (46.1 and 50.7) do not yet warrant panic selling. Holding the remaining positions preserves capital while maintaining some market exposure.
 
 **Actions proposées :**
-- HOLD TLT — Hedge rates, +1.09%, meilleure position actuelle
-- HOLD SAN.PA — Défensif FR, +0.84%, résilience confirmée
-- HOLD DBA — Mean-reversion en cours, +0.86%, rebond agricole
-- HOLD SPY — Core US, -2.27%, sous le support mais pas de panique
-- HOLD QQQ — Growth US, -1.86%, correction tech non alarmante
+- **SELL TLT 100%** — Signal technique de surachat (RSI 70.7, Bollinger 0.95), crystallisation du profit +1.09% (+€5.66)
+- HOLD SAN.PA — Défensif FR qui surperforme (+2.63%), résilience confirmée
+- HOLD DBA — Position stable (+0.39%), inflation hedge intact
+- HOLD SPY — Core US, -2.83% mais pas de stop-loss déclenché (-5% seuil)
+- HOLD QQQ — Growth US, -3.33% mais RSI 50.7 ne justifie pas de panique
 
-**Actions exécutées : AUCUNE** — Weekly trade cap atteint (2/2). Conservation du capital en attendant le reset lundi.
+**Actions exécutées : SELL TLT @ €87.33** — Réalisation d'un profit de +€5.66. Le portefeuille passe de 5 à 4 positions, cash élevé à 76.5%.
 
 ---
 
 ## Positions Ouvertes
 
-### TLT — Hedge Rates 🟢
-- **P&L Latent:** +1.09% (+€5.66)
-- **Prix actuel:** €87.33 (entrée à €86.39)
-- **Rôle:** Hedge contre la hausse des taux / flight-to-quality
-- **Quantité:** 5.9873
-- **Évolution:** Meilleure position du portefeuille. Profite de la baisse des yields US et du risk-off. 94 jours de détention.
-
 ### SAN.PA — Défensif Pharma FR 🟢
-- **P&L Latent:** +0.84% (+€3.00)
-- **Prix actuel:** €73.69 (entrée à €73.08)
+- **P&L Latent:** +2.63% (+€9.43)
+- **Prix actuel:** €75.00 (entrée à €73.08)
 - **Rôle:** Défensif secteur santé France
 - **Quantité:** 4.9091
-- **Évolution:** Résilience defensive confirmée face à la volatilité US. 42 jours de détention.
+- **Évolution:** Meilleure position du portefeuille. Surperformance defensive dans le contexte de risk-off. 43 jours de détention.
 
 ### DBA — Agricole / Inflation Hedge 🟢
-- **P&L Latent:** +0.86% (+€4.28)
-- **Prix actuel:** €26.92 (entrée à €26.69)
+- **P&L Latent:** +0.39% (+€1.96)
+- **Prix actuel:** €26.80 (entrée à €26.69)
 - **Rôle:** Diversification sectorielle, hedge inflation
 - **Quantité:** 18.6288
-- **Évolution:** Rebond après une période de survente. 21 jours de détention.
+- **Évolution:** Consolidation après le rebond. Position stable dans le portefeuille. 22 jours de détention.
 
 ### SPY — Core US Equity 🟡
-- **P&L Latent:** -2.27% (-€20.99)
-- **Prix actuel:** €733.27 (entrée à €750.33)
+- **P&L Latent:** -2.83% (-€26.15)
+- **Prix actuel:** €729.08 (entrée à €750.33)
 - **Rôle:** Core exposure US large cap
 - **Quantité:** 1.2305
-- **Évolution:** Recul significatif depuis l'entrée mardi 16 juin. Pas encore de stop-loss (seuil à -5%). 9 jours de détention.
+- **Évolution:** Recul qui s'accentue depuis l'entrée mardi 16 juin. Pas encore de stop-loss (seuil à -5%). 10 jours de détention.
 
 ### QQQ — Growth US 🟡
-- **P&L Latent:** -1.86% (-€9.75)
-- **Prix actuel:** €716.26 (entrée à €729.86)
+- **P&L Latent:** -3.33% (-€17.43)
+- **Prix actuel:** €705.54 (entrée à €729.86)
 - **Rôle:** Exposition growth Nasdaq
 - **Quantité:** 0.7168
-- **Évolution:** Sous-performance tech depuis l'entrée mardi. Pas de stop-loss déclenché. 9 jours de détention.
+- **Évolution:** Sous-performance tech qui se creuse. Pas de stop-loss déclenché. 10 jours de détention.
 
 ---
 
@@ -79,23 +72,32 @@ Le CAC 40 reste dans un régime neutre. L'Europe montre une résistance relative
 
 - **CVaR 95%:** 0.47% — Risque de queue maîtrisé
 - **VaR 95%:** 0.29% — Perte quotidienne maximale attendue à 95% de confiance
-- **Sharpe Ratio:** -1.05 — Rendement ajusté au risque négatif (concentration cash élevée)
-- **Volatilité:** 3.32% — Volatilité modérée
-- **Max Drawdown:** -0.92% — Drawdown contrôlé sur la fenêtre de calcul
-- **Total Realized P&L:** -€468.87 (hérité des positions fermées précédemment)
-- **Total Unrealized P&L:** -€17.80
+- **Sharpe Ratio:** -1.43 — Rendement ajusté au risque négatif (concentration cash élevée)
+- **Sortino Ratio:** -1.80 — Pénalisation des rendements négatifs
+- **Volatilité:** 3.31% — Volatilité modérée
+- **Max Drawdown:** -0.91% — Drawdown contrôlé sur la fenêtre de calcul
+- **Total Realized P&L:** -€463.21 (amélioration de +€5.66 grâce à la vente TLT)
+- **Total Unrealized P&L:** -€32.20
 
 ---
 
 ## Réflexion Stratégique
 
-Le portefeuille subit une **pression latente** sur les positions US equities (SPY -2.27%, QQQ -1.86%) alors que les positions défensives (TLT, SAN.PA, DBA) amortissent le choc. Cette configuration est cohérente avec un régime de risk-off modéré : les bonds et les défensifs surperforment, le growth et le large cap sous-performent.
+La vente de **TLT** est une décision technique solide : le signal de surachat était clair (RSI 70.7, Bollinger 0.95) et crystalliser un profit de +€5.66 dans un contexte de drawdown global (-3.34%) est cohérent avec les principes de **loss aversion** et de **préservation du capital**. La position TLT avait rempli son rôle de hedge pendant 95 jours ; sortir sur un signal technique évite de laisser du profit s'évaporer.
 
-Le **cash à 71%** est un bouclier important mais aussi un coût d'opportunité. Le weekly trade cap (2/2) a bloqué toute nouvelle entrée cette semaine, ce qui, en rétrospective, est favorable : les deux entrées de la semaine (SPY + QQQ mardi 16 juin) sont déjà en perte. Limiter l'overtrading dans un marché directionnellement incertain est une protection contre la **multiple testing bias**.
+Le portefeuille est maintenant très **concentré en cash (76.5%)**, ce qui est à la fois une protection et un coût d'opportunité. La sous-performance vs le benchmark equal-weight (-3.07% de gap) s'explique par :
+1. Les pertes réalisées précédentes (€463.21) qui pèsent sur le rendement total
+2. La concentration cash qui ne participe pas à la remontée du marché
+3. Les positions US equities (SPY, QQQ) qui sont entrées au mauvais moment (mardi 16 juin, juste avant le sell-off)
 
-**Prochain reset cooldown :** Lundi 29 juin 2026. Le LLM aura alors 2 nouveaux "coupons" de trading pour potentiellement rééquilibrer le portefeuille.
+**Leçon de la semaine :** Les deux trades de la semaine (SPY + QQQ mardi 16 juin) ont été mal temporisés. Le système de cooldown (max 2 trades/semaine en régime normal) a heureusement limité les dégâts. La règle de fréquence de trading est une protection contre la **multiple testing bias** et l'**overfitting comportemental**.
 
-**Hypothèse pour lundi :** Si le sell-off US se poursuit et que SPY/QQQ approchent du seuil de stop-loss (-5%), le LLM pourrait recommander une sortie défensive et un réalignement vers les défensifs (TLT, SAN.PA) ou de nouveaux hedges (GLD, VIXY). À l'inverse, si le rebond se matérialise, le cash élevé permettra une entrée rapide.
+**Prochain reset cooldown :** Lundi 29 juin 2026. Le LLM aura 3 nouveaux "coupons" de trading pour la semaine à venir.
+
+**Hypothèse pour lundi :** Avec 76.5% de cash, le portefeuille est bien positionné pour :
+- Une **entrée opportuniste** si SPY/QQQ rebondissent (RSI proche de la zone de survente)
+- Une **défense renforcée** avec GLD ou VIXY si le sell-off se poursuit
+- Un **pivot vers l'Europe** (FEZ, actions FR) si le découplage US-Europe se confirme
 
 ---
 
