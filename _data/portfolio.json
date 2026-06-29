@@ -1,43 +1,28 @@
 {
-  "date": "2026-06-26",
-  "total_value": 9665.82,
-  "cash": 7395.57,
-  "positions_value": 2270.25,
-  "total_return_pct": -3.34,
-  "realized_pnl": -463.21,
-  "unrealized_pnl": -32.20,
-  "positions": [
-    {
-      "ticker": "SAN.PA",
-      "quantity": 4.91,
-      "avg_price": 73.08,
-      "current_price": 75.00,
-      "value": 368.18,
-      "pnl_pct": 2.63
+  "cash": 7395.573586379907,
+  "total_realized_pnl": -463.207943656879,
+  "positions": {
+    "SAN.PA": {
+      "quantity": 4.909103512711255,
+      "avg_price": 73.07906183264495,
+      "current_price": 75.0
     },
-    {
-      "ticker": "DBA",
-      "quantity": 18.63,
-      "avg_price": 26.69,
-      "current_price": 26.80,
-      "value": 499.16,
-      "pnl_pct": 0.39
+    "DBA": {
+      "quantity": 18.628770377809545,
+      "avg_price": 26.690000534057617,
+      "current_price": 26.795000076293945
     },
-    {
-      "ticker": "SPY",
-      "quantity": 1.23,
-      "avg_price": 750.33,
-      "current_price": 729.08,
-      "value": 897.14,
-      "pnl_pct": -2.83
+    "SPY": {
+      "quantity": 1.2305090909737713,
+      "avg_price": 750.3300170898438,
+      "current_price": 729.0800170898438
     },
-    {
-      "ticker": "QQQ",
-      "quantity": 0.72,
-      "avg_price": 729.86,
-      "current_price": 705.54,
-      "value": 505.76,
-      "pnl_pct": -3.33
+    "QQQ": {
+      "quantity": 0.7168449994260205,
+      "avg_price": 729.8599853515625,
+      "current_price": 705.5399780273438
     }
-  ]
+  },
+  "last_updated": "2026-06-26T21:08:02.864612",
+  "total_value": 9665.816647748332
 }
