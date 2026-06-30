@@ -7,39 +7,39 @@
       "avg_price": 73.07906183264495,
       "current_price": 75.54000091552734,
       "market_value": 370.8336838446267,
-      "unrealized_pnl": 12.081004696346383,
-      "unrealized_pnl_pct": 3.367502292952366
+      "unrealized_pnl": 12.081004696346357,
+      "unrealized_pnl_pct": 3.3675022929523584
     },
     "DBA": {
       "quantity": 18.628770377809545,
       "avg_price": 26.690000534057617,
       "current_price": 26.5,
       "market_value": 493.66241501195293,
-      "unrealized_pnl": -3.5394763206205653,
-      "unrealized_pnl_pct": -0.7118790942516838
+      "unrealized_pnl": -3.5394763206205324,
+      "unrealized_pnl_pct": -0.7118790942516773
     },
     "SPY": {
       "quantity": 1.2305090909737713,
       "avg_price": 750.3300170898438,
       "current_price": 740.8499755859375,
       "market_value": 911.6226300061926,
-      "unrealized_pnl": -11.665277253365275,
-      "unrealized_pnl_pct": -1.263449587246234
+      "unrealized_pnl": -11.665277253365304,
+      "unrealized_pnl_pct": -1.2634495872462368
     },
     "QQQ": {
       "quantity": 0.7168449994260205,
       "avg_price": 729.8599853515625,
       "current_price": 724.030029296875,
       "market_value": 519.01730593574,
-      "unrealized_pnl": -4.179174844676254,
-      "unrealized_pnl_pct": -0.798777323280628
+      "unrealized_pnl": -4.179174844676186,
+      "unrealized_pnl_pct": -0.7987773232806151
     }
   },
   "last_updated": "2026-06-29T21:06:57.095531",
   "total_value": 9690.70962117842,
   "positions_value": 2295.1360347985124,
-  "cash_pct": 76.31,
-  "total_unrealized_pnl": -7.302923722315711,
+  "cash_pct": 76.32,
+  "total_unrealized_pnl": -7.302923722315664,
   "total_return_pct": -3.09,
   "benchmark_value": 9968.84430595378,
   "benchmark_return_pct": -0.31,
