@@ -9,7 +9,7 @@
       "current_price": 73.06999969482422,
       "market_value": 358.7081921756719,
       "unrealized_pnl": -0.044486972608410724,
-      "unrealized_pnl_pct": -0.012400457249274865
+      "unrealized_pnl_pct": -0.0001240045724928418
     },
     "DBA": {
       "ticker": "DBA",
@@ -18,7 +18,7 @@
       "current_price": 26.8700008392334,
       "market_value": 500.55507568562876,
       "unrealized_pnl": 3.353184353055269,
-      "unrealized_pnl_pct": 0.6744110212590396
+      "unrealized_pnl_pct": 0.006744110212590471
     },
     "SPY": {
       "ticker": "SPY",
@@ -27,7 +27,7 @@
       "current_price": 745.7000122070312,
       "market_value": 1545.5575741842597,
       "unrealized_pnl": -6.354087917590505,
-      "unrealized_pnl_pct": -0.40943618588346514
+      "unrealized_pnl_pct": -0.004094361858834605
     },
     "QQQ": {
       "ticker": "QQQ",
@@ -36,7 +36,7 @@
       "current_price": 725.1300048828125,
       "market_value": 519.80581793401,
       "unrealized_pnl": -3.390662846406258,
-      "unrealized_pnl_pct": -0.6480668297593745
+      "unrealized_pnl_pct": -0.006480668297593639
     },
     "TTE.PA": {
       "ticker": "TTE.PA",
@@ -45,16 +45,10 @@
       "current_price": 65.91999816894531,
       "market_value": 1074.9291621790233,
       "unrealized_pnl": -34.406875777962796,
-      "unrealized_pnl_pct": -3.1015737883471615
+      "unrealized_pnl_pct": -0.03101573788347156
     }
   },
-  "last_updated": "2026-07-01T21:07:15.676786",
   "total_value": 9657.169615739222,
-  "positions_value": 3999.5558221585934,
-  "cash_pct": 58.58,
-  "total_unrealized_pnl": -40.8429291615127,
-  "total_return_pct": -3.43,
-  "benchmark_value": 9929.319416108181,
-  "benchmark_return_pct": -0.71,
-  "gap_vs_benchmark_pct": -2.72
+  "positions_value": 3999.5558221585925,
+  "last_updated": "2026-07-01T21:07:15.676786"
 }
