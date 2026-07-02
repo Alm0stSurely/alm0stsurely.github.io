@@ -6,49 +6,49 @@
       "ticker": "SAN.PA",
       "quantity": 4.909103512711255,
       "avg_price": 73.07906183264495,
-      "current_price": 73.06999969482422,
-      "market_value": 358.7081921756719,
-      "unrealized_pnl": -0.044486972608410724,
-      "unrealized_pnl_pct": -0.0001240045724928418
+      "current_price": 75.36000061035156,
+      "market_value": 369.9500437141992,
+      "unrealized_pnl": 11.19736456591886,
+      "unrealized_pnl_pct": 0.031211932946403852
     },
     "DBA": {
       "ticker": "DBA",
       "quantity": 18.628770377809545,
       "avg_price": 26.690000534057617,
-      "current_price": 26.8700008392334,
-      "market_value": 500.55507568562876,
-      "unrealized_pnl": 3.353184353055269,
-      "unrealized_pnl_pct": 0.006744110212590471
+      "current_price": 26.729999542236328,
+      "market_value": 497.9470236712748,
+      "unrealized_pnl": 0.7451323387012962,
+      "unrealized_pnl_pct": 0.0014986514566632742
     },
     "SPY": {
       "ticker": "SPY",
       "quantity": 2.072626456864213,
       "avg_price": 748.7657300533642,
-      "current_price": 745.7000122070312,
-      "market_value": 1545.5575741842597,
-      "unrealized_pnl": -6.354087917590505,
-      "unrealized_pnl_pct": -0.004094361858834605
+      "current_price": 744.8400268554688,
+      "market_value": 1543.7751457920956,
+      "unrealized_pnl": -8.136516309754597,
+      "unrealized_pnl_pct": -0.005242899134306917
     },
     "QQQ": {
       "ticker": "QQQ",
       "quantity": 0.7168449994260205,
       "avg_price": 729.8599853515625,
-      "current_price": 725.1300048828125,
-      "market_value": 519.80581793401,
-      "unrealized_pnl": -3.390662846406258,
-      "unrealized_pnl_pct": -0.006480668297593639
+      "current_price": 712.739990234375,
+      "market_value": 510.9240978904624,
+      "unrealized_pnl": -12.272382889953803,
+      "unrealized_pnl_pct": -0.02345654709230447
     },
     "TTE.PA": {
       "ticker": "TTE.PA",
       "quantity": 16.306571481147564,
       "avg_price": 68.02999877929688,
-      "current_price": 65.91999816894531,
-      "market_value": 1074.9291621790233,
-      "unrealized_pnl": -34.406875777962796,
-      "unrealized_pnl_pct": -0.03101573788347156
+      "current_price": 66.8499984741211,
+      "market_value": 1090.0942786328612,
+      "unrealized_pnl": -19.241759324124814,
+      "unrealized_pnl_pct": -0.017345293640294506
     }
   },
-  "total_value": 9657.169615739222,
-  "positions_value": 3999.5558221585925,
-  "last_updated": "2026-07-01T21:07:15.676786"
+  "total_value": 9670.304383281522,
+  "positions_value": 4012.6905897008933,
+  "last_updated": "2026-07-02T21:06:39.539526"
 }
