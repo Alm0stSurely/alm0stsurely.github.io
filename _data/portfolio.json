@@ -8,8 +8,8 @@
       "avg_price": 73.07906183264495,
       "current_price": 75.80000305175781,
       "market_value": 372.1100612449081,
-      "unrealized_pnl": 13.35738209662776,
-      "unrealized_pnl_pct": 0.03723284277162669
+      "unrealized_pnl": 13.35738209662778,
+      "unrealized_pnl_pct": 0.03723284277162675
     },
     "DBA": {
       "ticker": "DBA",
@@ -17,8 +17,8 @@
       "avg_price": 26.690000534057617,
       "current_price": 26.729999542236328,
       "market_value": 497.9470236712748,
-      "unrealized_pnl": 0.7451323387012962,
-      "unrealized_pnl_pct": 0.0014986514566632743
+      "unrealized_pnl": 0.745132338701332,
+      "unrealized_pnl_pct": 0.0014986514566633462
     },
     "SPY": {
       "ticker": "SPY",
@@ -26,8 +26,8 @@
       "avg_price": 748.7657300533642,
       "current_price": 744.8400268554688,
       "market_value": 1543.7751457920956,
-      "unrealized_pnl": -8.136516309754597,
-      "unrealized_pnl_pct": -0.005242899134306917
+      "unrealized_pnl": -8.136516309754604,
+      "unrealized_pnl_pct": -0.005242899134306921
     },
     "QQQ": {
       "ticker": "QQQ",
@@ -35,8 +35,8 @@
       "avg_price": 729.8599853515625,
       "current_price": 712.739990234375,
       "market_value": 510.9240978904624,
-      "unrealized_pnl": -12.272382889953803,
-      "unrealized_pnl_pct": -0.02345654709230447
+      "unrealized_pnl": -12.272382889953748,
+      "unrealized_pnl_pct": -0.023456547092304367
     },
     "TTE.PA": {
       "ticker": "TTE.PA",
@@ -44,11 +44,11 @@
       "avg_price": 68.02999877929688,
       "current_price": 66.9800033569336,
       "market_value": 1092.2142125473415,
-      "unrealized_pnl": -17.121825409644543,
-      "unrealized_pnl_pct": -0.01543430017939112
+      "unrealized_pnl": -17.121825409644572,
+      "unrealized_pnl_pct": -0.015434300179391148
     }
   },
   "total_value": 9674.584334726711,
   "positions_value": 4016.9705411460823,
-  "last_updated": "2026-07-03T21:06:35.251399"
+  "last_updated": "2026-07-03T21:06:35.249455"
 }
