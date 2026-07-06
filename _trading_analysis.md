@@ -1,126 +1,119 @@
-# Trading Analysis — 2026-07-03 (Friday)
+# Trading Analysis — 2026-07-06 (Monday)
 
 **Session:** Post-US close (21:06 UTC)  
-**Portfolio Value:** €9,674.58 (−3.25% vs initial capital)  
-**Cash Buffer:** 58.51% (€5,657.61)  
-**Daily Change:** +€4.28 (+0.04%)  
-**Trades Executed:** 0
+**Portfolio Value:** €9,701.32 (-2.99% vs initial capital)  
+**Cash Buffer:** 51.81% (€5,026.62)  
+**Daily Change:** +€26.74 (+0.28%)  
+**Trades Executed:** 2 (1 intraday, 1 post-close)
 
 ---
 
-## Market Context: Thin Holiday Volume, No Conviction Signals
+## Market Context: Holiday Hangover, Defensive Rebalancing
 
-The session was a muted end to a short holiday week. Volumes were thin, moves were small, and no asset in the universe produced a signal strong enough to justify overriding the existing guardrails. The portfolio drifted slightly higher (+0.04%) on a SAN.PA bid and a small DBA tick, while the equal-weight benchmark continued its steady march to +0.30% since inception.
+The first trading day after the July 4th weekend brought a muted but productive session. The equal-weight benchmark drifted to +0.41% since inception, while the strategy clawed back some ground from Friday’s close (+0.28% daily) by trimming an overbought position and redeploying a portion of the cash buffer into a low-correlation small-cap asset.
 
 Key position observations:
 
-- **SAN.PA : €75.80** — The defensive anchor strengthened further, now +3.72% unrealized. It remains the book's strongest risk-adjusted contributor.
-- **DBA : €26.73** — Flat-positive (+0.15%), acting as a short-term stabilizer as expected.
-- **SPY : €744.84** — Core US exposure down slightly (−0.52%), still within the noise range of the recent consolidation.
-- **QQQ : €712.74** — Tech exposure remains the weakest link at −2.35% unrealized. No stop-loss override yet.
-- **TTE.PA : €66.98** — Energy mean-reversion trade improved from −1.73% to −1.54%, but still underwater. The thesis has room before the 5% adaptive stop-loss threshold.
-
-The portfolio remains defensively positioned with a 58.51% cash buffer and no positions near their stop-loss triggers.
+- **SAN.PA : €74.54** — The defensive anchor remains in the green, now +2.00% unrealized. It is the book’s most reliable risk-adjusted contributor.
+- **DBA : €27.53** — After a +2.8% intraday spike, we took a 50% profit at €27.49. The remaining half closed at €27.53, +3.15% unrealized.
+- **SPY : €751.31** — Core US exposure turned slightly positive (+0.34%) as the S&P held near all-time highs.
+- **QQQ : €722.65** — Tech exposure remains the weakest link at −0.99% unrealized, but well above the adaptive stop-loss.
+- **TTE.PA : €66.85** — The energy mean-reversion trade is still underwater (−1.73%), but no stop-loss override was triggered.
+- **IJR : €146.81** — New small-cap value position opened at the post-US close. It offers positive skew and low correlation to the large-cap core.
 
 ---
 
-## LLM Decision: Hold All Positions
+## Intraday Alert: Partial Profit on DBA
 
-> The weekly trade cap of 3/3 has been reached, strictly prohibiting any new buys or sells unless a stop-loss is triggered. Reviewing current positions, none have breached the −5% drawdown threshold from their average cost (SAN.PA +3.72%, DBA +0.15%, SPY −0.52%, QQQ −2.35%, TTE.PA −1.54%). Therefore, no stop-loss overrides are necessary. The portfolio remains in a cautious state with a −3.25% total drawdown and a healthy 58.5% cash buffer, aligning with our capital preservation and loss aversion principles. We will hold all positions and wait for the trade cap to reset before reassessing deployment opportunities.
+At 16:44 UTC the intraday monitor flagged a confirmed Bollinger upper breakout on DBA: RSI > 70, price > upper band by more than 1%, and the position was already +3% unrealized. To lock in gains ahead of a likely mean-reversion, half of the DBA position was sold.
+
+- **SELL DBA 50%** — 9.3144 shares @ €27.49 = €256.05, **realized P&L +€7.45**
+- Remaining 9.3144 shares held at €27.53 (+3.15% unrealized)
+
+This trade improved the realized P&L from −€463.21 to −€455.76 and reduced the cash buffer from 58.5% to roughly 61.0% before the post-close session.
+
+---
+
+## Post-Close LLM Decision: Deploy into IJR, TLT Blocked by Cooldown
+
+> Portfolio drawdown is -2.99%, nearing the -3% caution threshold but not requiring maximum defense. Cash is at 60.9%, significantly above the 30-50% target for high-volatility regimes, indicating we are under-invested. To deploy capital gradually while prioritizing capital preservation and diversification (CVaR mindset), I am initiating positions in TLT and IJR. TLT provides low volatility (10%) and low correlation to our equity holdings, reducing tail risk. IJR offers small-cap value exposure with positive skew and low volatility (16.8%), aligning with the Deflated Sharpe Ratio preference for positive skew. I am holding TTE.PA despite its oversold RSI (25.3) because averaging down on a losing position in a weak energy sector (USO also oversold) carries high tail risk. DBA is overbought but we let winners run. This deployment uses 30% of available cash, moving us closer to target cash levels while maintaining a defensive buffer.
 
 **Actions proposed:**
-- **HOLD SAN.PA** — Defensive position working; no exit signal.
-- **HOLD DBA** — Small positive; keep as short-term hedge.
-- **HOLD SPY** — Core US beta; minor unrealized loss, stay the course.
-- **HOLD QQQ** — Weak but above stop-loss; avoid crystallizing loss into a capped week.
-- **HOLD TTE.PA** — Improving but still below cost; give mean-reversion thesis more time.
+- **BUY TLT 15%** — Blocked by the 10-day flip cooldown (last exit on 2026-06-26, only ~10.0 days ago). The cooldown guardrail prevented a re-entry into bonds too soon after the recent exit.
+- **BUY IJR 15%** — Executed. Small-cap value exposure with positive skew and low volatility relative to large-cap equity.
+- **HOLD SAN.PA, DBA, SPY, QQQ, TTE.PA** — No stop-loss or take-profit triggers.
 
-**Actions executed:** None. The weekly trade cap for the normal-volatility regime is exhausted, and no stop-loss override activated.
+**Actions executed:**
+- **BUY IJR** — 6.0422 shares @ €146.81 = €887.05
 
----
-
-## Weekly Report — Week 2026-W27 (June 29 to July 3)
-
-| Metric | Value |
-|--------|-------|
-| Start of week | €9,690.71 |
-| End of week | €9,674.58 |
-| Weekly return | −0.17% |
-| Trading days | 5 |
-| Trades executed | 2 (BUY TTE.PA, BUY SPY on June 30) |
-| Sharpe Ratio | −2.41 |
-| Sortino Ratio | 0.00 |
-| Max Drawdown | −0.52% |
-| Volatility | 5.14% |
-| CVaR 95% | 0.52% |
-| VaR 95% | 0.44% |
-
-The week was essentially flat in absolute terms (−0.17%), but the gap versus the equal-weight benchmark widened from roughly −2.7% to −3.55%. The benchmark is now +0.30% while the strategy is −3.25%. This widening is not the result of a large weekly loss; it is the cumulative effect of earlier realized losses and a conservative cash position that misses the benchmark's broad, low-volatility drift.
+The weekly trade cap is now at **1/3** in the normal-volatility regime. The cooldown is behaving as intended: it blocked a bond re-entry that would have violated the flip rule, while allowing a fresh, uncorrelated equity position.
 
 ---
 
 ## Open Positions
 
-### SAN.PA — 🟢
-- **Latent P&L:** 3.72% (€13.36)
-- **Current Price:** €75.80 (avg €73.08)
-- **Quantity:** 4.9091
-- **Market Value:** €372.11
-
-### DBA — 🟡
-- **Latent P&L:** 0.15% (€0.75)
-- **Current Price:** €26.73 (avg €26.69)
-- **Quantity:** 18.6288
-- **Market Value:** €497.95
-
-### SPY — 🟡
-- **Latent P&L:** −0.52% (€−8.14)
-- **Current Price:** €744.84 (avg €748.77)
+### SPY — 🟢
+- **Latent P&L:** 0.34% (€5.27)
+- **Current Price:** €751.31 (avg €748.77)
 - **Quantity:** 2.0726
-- **Market Value:** €1,543.78
-
-### QQQ — 🔴
-- **Latent P&L:** −2.35% (€−12.27)
-- **Current Price:** €712.74 (avg €729.86)
-- **Quantity:** 0.7168
-- **Market Value:** €510.92
+- **Market Value:** €1557.18
 
 ### TTE.PA — 🔴
-- **Latent P&L:** −1.54% (€−17.12)
-- **Current Price:** €66.98 (avg €68.03)
+- **Latent P&L:** -1.73% (€-19.24)
+- **Current Price:** €66.85 (avg €68.03)
 - **Quantity:** 16.3066
-- **Market Value:** €1,092.21
+- **Market Value:** €1090.09
+
+### IJR — 🟡
+- **Latent P&L:** 0.00% (€0.00)
+- **Current Price:** €146.81 (avg €146.81)
+- **Quantity:** 6.0422
+- **Market Value:** €887.05
+
+### QQQ — 🔴
+- **Latent P&L:** -0.99% (€-5.17)
+- **Current Price:** €722.65 (avg €729.86)
+- **Quantity:** 0.7168
+- **Market Value:** €518.03
+
+### SAN.PA — 🟢
+- **Latent P&L:** 2.00% (€7.17)
+- **Current Price:** €74.54 (avg €73.08)
+- **Quantity:** 4.9091
+- **Market Value:** €365.92
+
+### DBA — 🟢
+- **Latent P&L:** 3.15% (€7.82)
+- **Current Price:** €27.53 (avg €26.69)
+- **Quantity:** 9.3144
+- **Market Value:** €256.43
 
 ---
 
 ## Risk Metrics
 
-- **CVaR 95%:** 0.72% — Tail risk remains contained
+- **CVaR 95%:** 0.00% — Tail risk remains contained (based on current model)
 - **VaR 95%:** 0.60% — Expected daily loss at 95% confidence
-- **Sharpe Ratio:** −3.62 — Negative due to realized losses and short-term volatility
-- **Sortino Ratio:** −4.03 — Downside risk-adjusted return negative
-- **Volatility:** 4.46% — Portfolio-level volatility stable
-- **Max Drawdown:** −2.22% — Rolling window; total inception drawdown −3.25%
-- **Total Realized P&L:** €−463.21
-- **Total Unrealized P&L:** €−23.43
-- **Gap vs Equal-Weight Benchmark:** −3.55% (strategy −3.25% vs benchmark +0.30%)
+- **Sharpe Ratio:** -2.86 — Negative due to realized losses and short-term volatility
+- **Sortino Ratio:** -3.21 — Downside risk-adjusted return still negative
+- **Volatility:** 4.57% — Portfolio-level volatility stable
+- **Max Drawdown:** -2.19% — Rolling window; total inception drawdown -2.99%
+- **Total Realized P&L:** €-455.76
+- **Total Unrealized P&L:** €-4.14
+- **Gap vs Equal-Weight Benchmark:** -3.40% (strategy -2.99% vs benchmark 0.41%)
 
 ---
 
 ## Strategic Reflection
 
-Friday was a **no-action day by design**, and the entire week was a study in constraint. The normal-volatility regime allows three trades per week; two were used on Tuesday to add SPY and TTE.PA. By Wednesday, the system was already in a multi-day blackout. It could not buy dips, take profits on SAN.PA, or rebalance away from QQQ even if the LLM saw merit in doing so.
+Monday was a textbook risk-aware session: the intraday monitor took a partial profit on an overbought signal, and the post-close LLM redeployed the proceeds into a diversifying small-cap position. Cash remains high at 51.8%, leaving plenty of dry powder for the rest of the week. The TLT block is a good example of the flip-cooldown doing its job — it would have been easy to chase the recent bond exit, but the system enforced patience.
 
-This is the intended behavior. The cooldown is not a bug; it is a guardrail against overtrading and multiple-testing bias. A system that can trade every day will find reasons to trade every day. The weekly cap forces the model to be selective: if Tuesday's entries were not high-conviction enough to carry the whole week, then Tuesday was probably not high-conviction enough.
+The benchmark gap is still −3.40%, largely because the strategy has been holding a large cash buffer through a low-volatility drift higher. That optionality is only valuable if it is eventually exercised; this week’s reset gives us three trade slots to do so. With one slot already used, the remaining two should be reserved for high-conviction setups rather than marginal rebalancing.
 
-The widening gap versus the benchmark is the cost of that discipline. The equal-weight benchmark is fully invested across 32 assets and reaps the low-volatility drift. The LLM strategy is holding 58.5% cash, paying for optionality that has not yet been exercised. In expected-value terms, this is only a problem if the cash remains idle for long periods. It has been idle for most of this week because the cap was exhausted early.
-
-**Hypotheses for next week:**
-- Monday's trade-cap reset is the first real test of the new adaptive parameters. If the LLM sees a clean setup, it can deploy the cash buffer into 1–3 positions.
-- If QQQ drops through −5% from cost, the stop-loss override will trigger an exit, consuming one trade slot. The system will then have to decide whether to redeploy or hold cash.
-- If TTE.PA continues to revert toward €68, the mean-reversion thesis validates; the gap versus benchmark should narrow.
-
-The full weekly report is saved as `results/weekly-2026-W27.md`.
+**Hypotheses for the next sessions:**
+- If QQQ continues to weaken and approaches −5% from cost, the stop-loss override will trigger an exit, freeing a slot for redeployment.
+- If TTE.PA reverts toward €68, the mean-reversion thesis validates and the gap versus benchmark should narrow.
+- If DBA remains overbought, the remaining half position may be fully exited on a confirmed reversal signal.
 
 ---
 
