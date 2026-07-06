@@ -92,7 +92,7 @@ The weekly trade cap is now at **1/3** in the normal-volatility regime. The cool
 
 ## Risk Metrics
 
-- **CVaR 95%:** 0.00% — Tail risk remains contained (based on current model)
+- **CVaR 95%:** 0.71% — Tail risk remains contained (from daily risk calculation)
 - **VaR 95%:** 0.60% — Expected daily loss at 95% confidence
 - **Sharpe Ratio:** -2.86 — Negative due to realized losses and short-term volatility
 - **Sortino Ratio:** -3.21 — Downside risk-adjusted return still negative
