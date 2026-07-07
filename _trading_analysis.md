@@ -1,119 +1,133 @@
-# Trading Analysis — 2026-07-06 (Monday)
+# Trading Analysis — 2026-07-07 (Tuesday)
 
 **Session:** Post-US close (21:06 UTC)  
-**Portfolio Value:** €9,701.32 (-2.99% vs initial capital)  
-**Cash Buffer:** 51.81% (€5,026.62)  
-**Daily Change:** +€26.74 (+0.28%)  
-**Trades Executed:** 2 (1 intraday, 1 post-close)
+**Portfolio Value:** €9,699.38 (-3.01% vs initial capital)  
+**Cash Buffer:** 37.44% (€3,631.73)  
+**Daily Change:** -1.94 EUR (-0.02%)  
+**Trades Executed:** 2 (post-close)
 
 ---
 
-## Market Context: Holiday Hangover, Defensive Rebalancing
+## Market Context: Diversification into Europe and Gold
 
-The first trading day after the July 4th weekend brought a muted but productive session. The equal-weight benchmark drifted to +0.41% since inception, while the strategy clawed back some ground from Friday’s close (+0.28% daily) by trimming an overbought position and redeploying a portion of the cash buffer into a low-correlation small-cap asset.
+The post-US session saw a measured redeployment of cash into two diversifying assets: European equities via **FEZ** and gold via **GLD**. The daily session was essentially flat (-1.94 EUR, -0.02%). The strategy remains in a shallow drawdown (-3.01% since inception) while the equal-weight benchmark edges further ahead to +0.12%. Cash is still elevated at ~37.4%, preserving optionality for the rest of the week.
 
 Key position observations:
 
-- **SAN.PA : €74.54** — The defensive anchor remains in the green, now +2.00% unrealized. It is the book’s most reliable risk-adjusted contributor.
-- **DBA : €27.53** — After a +2.8% intraday spike, we took a 50% profit at €27.49. The remaining half closed at €27.53, +3.15% unrealized.
-- **SPY : €751.31** — Core US exposure turned slightly positive (+0.34%) as the S&P held near all-time highs.
-- **QQQ : €722.65** — Tech exposure remains the weakest link at −0.99% unrealized, but well above the adaptive stop-loss.
-- **TTE.PA : €66.85** — The energy mean-reversion trade is still underwater (−1.73%), but no stop-loss override was triggered.
-- **IJR : €146.81** — New small-cap value position opened at the post-US close. It offers positive skew and low correlation to the large-cap core.
+- **SAN.PA : €75.97** — The strongest performer, now +3.96% unrealized, remains the book’s defensive anchor.
+- **DBA : €27.55** — Agricultural commodities continue to hold gains (+3.22%) after the partial profit on Monday. The residual position is small (~2.6% of portfolio).
+- **SPY : €747.70** — Core US exposure is essentially flat, acting as a stable anchor.
+- **QQQ : €709.38** — Tech exposure remains the weakest link at -2.81% unrealized, but above the adaptive stop-loss.
+- **TTE.PA : €67.85** — Energy mean-reversion has recovered from earlier lows and is now nearly flat.
+- **IJR : €145.41** — Small-cap value position opened Monday is slightly underwater (-0.95%) but within normal noise.
+- **FEZ : €68.62** — New European equity exposure opened today.
+- **GLD : €377.49** — New gold exposure opened today as a low-correlation diversifier.
 
 ---
 
-## Intraday Alert: Partial Profit on DBA
+## Intraday Activity
 
-At 16:44 UTC the intraday monitor flagged a confirmed Bollinger upper breakout on DBA: RSI > 70, price > upper band by more than 1%, and the position was already +3% unrealized. To lock in gains ahead of a likely mean-reversion, half of the DBA position was sold.
+The intraday monitor ran multiple times but did not execute any trades today. Several Bollinger breakout alerts on DBA were triggered, but the signals were marginal (RSI near 70, magnitude below 1%) and the residual position is too small to warrant further trimming.
 
-- **SELL DBA 50%** — 9.3144 shares @ €27.49 = €256.05, **realized P&L +€7.45**
-- Remaining 9.3144 shares held at €27.53 (+3.15% unrealized)
-
-This trade improved the realized P&L from −€463.21 to −€455.76 and reduced the cash buffer from 58.5% to roughly 61.0% before the post-close session.
+No intraday trades executed.
 
 ---
 
-## Post-Close LLM Decision: Deploy into IJR, TLT Blocked by Cooldown
+## Post-Close LLM Decision: Deploy FEZ and GLD
 
-> Portfolio drawdown is -2.99%, nearing the -3% caution threshold but not requiring maximum defense. Cash is at 60.9%, significantly above the 30-50% target for high-volatility regimes, indicating we are under-invested. To deploy capital gradually while prioritizing capital preservation and diversification (CVaR mindset), I am initiating positions in TLT and IJR. TLT provides low volatility (10%) and low correlation to our equity holdings, reducing tail risk. IJR offers small-cap value exposure with positive skew and low volatility (16.8%), aligning with the Deflated Sharpe Ratio preference for positive skew. I am holding TTE.PA despite its oversold RSI (25.3) because averaging down on a losing position in a weak energy sector (USO also oversold) carries high tail risk. DBA is overbought but we let winners run. This deployment uses 30% of available cash, moving us closer to target cash levels while maintaining a defensive buffer.
+> Portfolio drawdown is -3.01%, requiring caution but not maximum defense. Cash is at ~52%, which is above the 30-50% target for mixed/high-volatility regimes (noting QQQ at 31.3% and several commodities >40% vol). We are under-invested and should deploy capital gradually. I am using our 2 remaining weekly trades to add diversification and hedges. FEZ provides broad European exposure, diversifying our US-heavy equity book (SPY, QQQ, IJR) and single-stock European holdings (SAN.PA, TTE.PA), with a neutral RSI of 50.6. GLD acts as a portfolio hedge and is approaching oversold territory (RSI 35.1, BB 0.41) with a -9.5% drawdown, offering a mean-reversion opportunity and low correlation to equities. I am avoiding highly volatile, deeply oversold commodities like COPX and SLV due to DSR skepticism and CVaR tail-risk concerns (high kurtosis). No positions have breached the -5% stop-loss threshold; QQQ is at -2.81% and will be monitored closely. This leaves us with a ~36% cash buffer, aligning with loss aversion and capital preservation principles.
 
 **Actions proposed:**
-- **BUY TLT 15%** — Blocked by the 10-day flip cooldown (last exit on 2026-06-26, only ~10.0 days ago). The cooldown guardrail prevented a re-entry into bonds too soon after the recent exit.
-- **BUY IJR 15%** — Executed. Small-cap value exposure with positive skew and low volatility relative to large-cap equity.
-- **HOLD SAN.PA, DBA, SPY, QQQ, TTE.PA** — No stop-loss or take-profit triggers.
+- **BUY FEZ 15%** — Executed. European equity exposure via Euro Stoxx 50.
+- **BUY GLD 15%** — Executed. Gold as a low-correlation diversifier.
+- **HOLD SAN.PA, DBA, SPY, QQQ, TTE.PA, IJR** — No stop-loss or take-profit triggers.
 
 **Actions executed:**
-- **BUY IJR** — 6.0422 shares @ €146.81 = €887.05
+- **BUY FEZ** — 15% allocation @ 68.62 EUR
+- **BUY GLD** — 15% allocation @ 377.49 EUR
 
-The weekly trade cap is now at **1/3** in the normal-volatility regime. The cooldown is behaving as intended: it blocked a bond re-entry that would have violated the flip rule, while allowing a fresh, uncorrelated equity position.
+The weekly trade cap is now at **3/3** in the normal-volatility regime. No further deployment slots remain until the calendar week resets.
 
 ---
 
 ## Open Positions
 
-### SPY — 🟢
-- **Latent P&L:** 0.34% (€5.27)
-- **Current Price:** €751.31 (avg €748.77)
+### SPY — 🟡
+- **Latent P&L:** -0.14% (-2.21 EUR)
+- **Current Price:** 747.70 (avg 748.77)
 - **Quantity:** 2.0726
-- **Market Value:** €1557.18
+- **Market Value:** 1549.70
 
-### TTE.PA — 🔴
-- **Latent P&L:** -1.73% (€-19.24)
-- **Current Price:** €66.85 (avg €68.03)
+### TTE.PA — 🟡
+- **Latent P&L:** -0.26% (-2.94 EUR)
+- **Current Price:** 67.85 (avg 68.03)
 - **Quantity:** 16.3066
-- **Market Value:** €1090.09
+- **Market Value:** 1106.40
 
 ### IJR — 🟡
-- **Latent P&L:** 0.00% (€0.00)
-- **Current Price:** €146.81 (avg €146.81)
+- **Latent P&L:** -0.95% (-8.46 EUR)
+- **Current Price:** 145.41 (avg 146.81)
 - **Quantity:** 6.0422
-- **Market Value:** €887.05
+- **Market Value:** 878.59
 
-### QQQ — 🔴
-- **Latent P&L:** -0.99% (€-5.17)
-- **Current Price:** €722.65 (avg €729.86)
+### FEZ — 🟢
+- **Latent P&L:** 0.00% (+0.00 EUR)
+- **Current Price:** 68.62 (avg 68.62)
+- **Quantity:** 10.9879
+- **Market Value:** 753.99
+
+### GLD — 🟢
+- **Latent P&L:** 0.00% (+0.00 EUR)
+- **Current Price:** 377.49 (avg 377.49)
+- **Quantity:** 1.6978
+- **Market Value:** 640.89
+
+### QQQ — 🟡
+- **Latent P&L:** -2.81% (-14.68 EUR)
+- **Current Price:** 709.38 (avg 729.86)
 - **Quantity:** 0.7168
-- **Market Value:** €518.03
+- **Market Value:** 508.52
 
 ### SAN.PA — 🟢
-- **Latent P&L:** 2.00% (€7.17)
-- **Current Price:** €74.54 (avg €73.08)
+- **Latent P&L:** 3.96% (+14.19 EUR)
+- **Current Price:** 75.97 (avg 73.08)
 - **Quantity:** 4.9091
-- **Market Value:** €365.92
+- **Market Value:** 372.94
 
 ### DBA — 🟢
-- **Latent P&L:** 3.15% (€7.82)
-- **Current Price:** €27.53 (avg €26.69)
+- **Latent P&L:** 3.22% (+8.01 EUR)
+- **Current Price:** 27.55 (avg 26.69)
 - **Quantity:** 9.3144
-- **Market Value:** €256.43
+- **Market Value:** 256.61
+
 
 ---
 
 ## Risk Metrics
 
-- **CVaR 95%:** 0.71% — Tail risk remains contained (from daily risk calculation)
-- **VaR 95%:** 0.60% — Expected daily loss at 95% confidence
-- **Sharpe Ratio:** -2.86 — Negative due to realized losses and short-term volatility
-- **Sortino Ratio:** -3.21 — Downside risk-adjusted return still negative
-- **Volatility:** 4.57% — Portfolio-level volatility stable
-- **Max Drawdown:** -2.19% — Rolling window; total inception drawdown -2.99%
+- **CVaR 95%:** 0.81% — Tail risk slightly higher than yesterday but still contained
+- **VaR 95%:** 0.64% — Expected daily loss at 95% confidence
+- **Sharpe Ratio:** -1.15 — Still negative due to realized losses
+- **Sortino Ratio:** -1.22 — Downside-adjusted return negative
+- **Volatility:** 5.24% — Portfolio-level volatility
+- **Max Drawdown:** -1.86% — Rolling window; total inception drawdown -3.01%
 - **Total Realized P&L:** €-455.76
-- **Total Unrealized P&L:** €-4.14
-- **Gap vs Equal-Weight Benchmark:** -3.40% (strategy -2.99% vs benchmark 0.41%)
+- **Total Unrealized P&L:** €-6.08
+- **Gap vs Equal-Weight Benchmark:** -3.13% (strategy -3.01% vs benchmark 0.12%)
 
 ---
 
 ## Strategic Reflection
 
-Monday was a textbook risk-aware session: the intraday monitor took a partial profit on an overbought signal, and the post-close LLM redeployed the proceeds into a diversifying small-cap position. Cash remains high at 51.8%, leaving plenty of dry powder for the rest of the week. The TLT block is a good example of the flip-cooldown doing its job — it would have been easy to chase the recent bond exit, but the system enforced patience.
+Tuesday added two uncorrelated positions to the book: European equities and gold. Both are classic diversifiers in a portfolio that is still carrying a large cash buffer. The move reduces concentration in US equities and should, if correlations hold, improve portfolio-level Sharpe and Sortino ratios in the coming sessions.
 
-The benchmark gap is still −3.40%, largely because the strategy has been holding a large cash buffer through a low-volatility drift higher. That optionality is only valuable if it is eventually exercised; this week’s reset gives us three trade slots to do so. With one slot already used, the remaining two should be reserved for high-conviction setups rather than marginal rebalancing.
+The QQQ position remains the weakest contributor, but the loss is still well above the adaptive stop-loss and the position size is small. The equal-weight benchmark gap has widened slightly because the strategy has been slow to deploy cash during a low-volatility drift. With two more trade slots available this week, there is room to add further exposure if high-conviction setups emerge.
 
 **Hypotheses for the next sessions:**
-- If QQQ continues to weaken and approaches −5% from cost, the stop-loss override will trigger an exit, freeing a slot for redeployment.
-- If TTE.PA reverts toward €68, the mean-reversion thesis validates and the gap versus benchmark should narrow.
-- If DBA remains overbought, the remaining half position may be fully exited on a confirmed reversal signal.
+- If QQQ continues to weaken and approaches the adaptive stop-loss, the system will exit and free a slot for redeployment.
+- If European equities catch a bid, FEZ could narrow the benchmark gap meaningfully.
+- If gold continues to act as a diversifier, GLD should reduce portfolio volatility.
+- If TTE.PA reverts toward €68, the energy mean-reversion thesis validates further.
 
 ---
 
