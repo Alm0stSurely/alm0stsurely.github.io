@@ -121,7 +121,7 @@ The weekly trade cap is now at **3/3** in the normal-volatility regime. No furth
 
 Tuesday added two uncorrelated positions to the book: European equities and gold. Both are classic diversifiers in a portfolio that is still carrying a large cash buffer. The move reduces concentration in US equities and should, if correlations hold, improve portfolio-level Sharpe and Sortino ratios in the coming sessions.
 
-The QQQ position remains the weakest contributor, but the loss is still well above the adaptive stop-loss and the position size is small. The equal-weight benchmark gap has widened slightly because the strategy has been slow to deploy cash during a low-volatility drift. With two more trade slots available this week, there is room to add further exposure if high-conviction setups emerge.
+The QQQ position remains the weakest contributor, but the loss is still well above the adaptive stop-loss and the position size is small. The equal-weight benchmark gap has widened slightly because the strategy has been slow to deploy cash during a low-volatility drift. The weekly trade cap is exhausted, so no new positions can be opened until the next calendar week. Existing positions will continue to be monitored for stop-loss or take-profit triggers.
 
 **Hypotheses for the next sessions:**
 - If QQQ continues to weaken and approaches the adaptive stop-loss, the system will exit and free a slot for redeployment.
