@@ -10,7 +10,7 @@
 
 ## Market Context: On Hold with Trade Cap Reached
 
-The post-US session saw no trading activity. The weekly trade cap of 3/3 has been reached in the normal-volatility regime, and no position has breached the adaptive -5% stop-loss threshold. The strategy remains in a shallow drawdown (-3.10% since inception) while the equal-weight benchmark is at -142.88%. Cash remains elevated at ~37.48%, preserving optionality for the next calendar week.
+The post-US session saw no trading activity. The weekly trade cap of 3/3 has been reached in the normal-volatility regime, and no position has breached the adaptive -5% stop-loss threshold. The strategy remains in a shallow drawdown (-3.10% since inception) while the equal-weight benchmark is at -1.43%. Cash remains elevated at ~37.48%, preserving optionality for the next calendar week.
 
 Key position observations:
 
@@ -71,7 +71,7 @@ The weekly trade cap remains at **3/3** in the normal-volatility regime. No new 
 - **Max Drawdown:** -2.64% — Rolling window
 - **Total Realized P&L:** €-455.76
 - **Total Unrealized P&L:** €-15.21
-- **Gap vs Equal-Weight Benchmark:** 139.78% (strategy -3.10% vs benchmark -142.88%)
+- **Gap vs Equal-Weight Benchmark:** -1.67% (strategy -3.10% vs benchmark -1.43%)
 
 ---
 
