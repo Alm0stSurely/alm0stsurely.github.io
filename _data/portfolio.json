@@ -1,81 +1,81 @@
 {
-  "last_updated": "2026-07-08T21:08:20.003252",
+  "last_updated": "2026-07-09T21:06:45.061121",
   "cash": 3631.7302798191577,
   "total_realized_pnl": -455.7564426120672,
-  "positions_value": 6058.522887812114,
-  "total_value": 9690.253167631272,
+  "positions_value": 6100.225040265112,
+  "total_value": 9731.95532008427,
   "positions": [
     {
       "ticker": "SAN.PA",
       "quantity": 4.909103512711255,
       "avg_price": 73.07906183264495,
-      "current_price": 75.30999755859375,
-      "market_value": 369.7045735571686,
-      "unrealized_pnl": 10.951894408888272,
-      "unrealized_pnl_pct": 0.0305277006847428
+      "current_price": 76.36000061035156,
+      "market_value": 374.8591472269104,
+      "unrealized_pnl": 16.106468078630087,
+      "unrealized_pnl_pct": 0.04489574298613929
     },
     {
       "ticker": "DBA",
       "quantity": 9.314385188904772,
       "avg_price": 26.690000534057617,
-      "current_price": 27.6200008392334,
-      "market_value": 257.263326734493,
-      "unrealized_pnl": 8.662381068206216,
-      "unrealized_pnl_pct": 0.034844521789688984
+      "current_price": 27.719999313354492,
+      "market_value": 258.19475104075957,
+      "unrealized_pnl": 9.593805374472822,
+      "unrealized_pnl_pct": 0.03859118616286847
     },
     {
       "ticker": "SPY",
       "quantity": 2.072626456864213,
       "avg_price": 748.7657300533642,
-      "current_price": 745.2899780273438,
-      "market_value": 1544.7077264952209,
-      "unrealized_pnl": -7.203935606629424,
-      "unrealized_pnl_pct": -0.004641975302171959
+      "current_price": 751.6500244140625,
+      "market_value": 1557.8897269032177,
+      "unrealized_pnl": 5.978064801367509,
+      "unrealized_pnl_pct": 0.003852065131897421
     },
     {
       "ticker": "QQQ",
       "quantity": 0.7168449994260205,
       "avg_price": 729.8599853515625,
-      "current_price": 711.280029296875,
-      "market_value": 509.87753219305824,
-      "unrealized_pnl": -13.318948587357948,
-      "unrealized_pnl_pct": -0.025456877247130923
+      "current_price": 723.1799926757812,
+      "market_value": 518.40796143458,
+      "unrealized_pnl": -4.788519345836221,
+      "unrealized_pnl_pct": -0.009152430342600003
     },
     {
       "ticker": "TTE.PA",
       "quantity": 16.306571481147564,
       "avg_price": 68.02999877929688,
-      "current_price": 69.18000030517578,
-      "market_value": 1128.0886200421592,
-      "unrealized_pnl": 18.752582085173156,
-      "unrealized_pnl_pct": 0.016904329656240988
+      "current_price": 68.7300033569336,
+      "market_value": 1120.7507126393498,
+      "unrealized_pnl": 11.414674682363739,
+      "unrealized_pnl_pct": 0.010289645600431072
     },
     {
       "ticker": "IJR",
       "quantity": 6.0421630052117274,
       "avg_price": 146.80999755859375,
-      "current_price": 143.6699981689453,
-      "market_value": 868.077547895238,
-      "unrealized_pnl": -18.972388148521194,
-      "unrealized_pnl_pct": -0.021388185013729896
+      "current_price": 145.47999572753906,
+      "market_value": 879.0138481832967,
+      "unrealized_pnl": -8.036087860462544,
+      "unrealized_pnl_pct": -0.00905934100655424
     },
     {
       "ticker": "FEZ",
       "quantity": 10.987939601543543,
       "avg_price": 68.62000274658203,
-      "current_price": 67.80500030517578,
-      "market_value": 745.037248035913,
-      "unrealized_pnl": -8.955197601282405,
-      "unrealized_pnl_pct": -0.011877038892232416
+      "current_price": 68.16500091552734,
+      "market_value": 748.9929129989747,
+      "unrealized_pnl": -4.999532638220671,
+      "unrealized_pnl_pct": -0.006630746325310448
     },
     {
       "ticker": "GLD",
       "quantity": 1.6977763526754701,
       "avg_price": 377.489990234375,
-      "current_price": 374.4700012207031,
-      "market_value": 635.7663128588642,
-      "unrealized_pnl": -5.127265932751826,
-      "unrealized_pnl_pct": -0.008000183029480681
+      "current_price": 378.2099914550781,
+      "market_value": 642.1159798380232,
+      "unrealized_pnl": 1.2224010464071853,
+      "unrealized_pnl_pct": 0.0019073385767290453
     }
   ]
 }

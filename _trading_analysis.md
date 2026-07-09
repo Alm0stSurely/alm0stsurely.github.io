@@ -1,47 +1,46 @@
-# Trading Analysis — 2026-07-08 (Wednesday)
+# Trading Analysis — 2026-07-09 (Thursday)
 
-**Session:** Post-US close (21:07 UTC)  
-**Portfolio Value:** €9,690.25 (-3.10% vs initial capital)  
-**Cash Buffer:** 37.48% (€3,631.73)  
-**Daily Change:** -166.87 EUR vs equal-weight benchmark  
-**Trades Executed:** 0 (post-close)
+**Session:** Post-US close (21:06 UTC)  
+**Portfolio Value:** €9,731.96 (-2.68% vs initial capital)  
+**Cash Buffer:** 37.32% (€3,631.73)  
+**Daily Change:** +€41.71 (+0.43%)  
+**Trades Executed:** 0
 
 ---
 
-## Market Context: On Hold with Trade Cap Reached
+## Market Context: Trade-Cap Hold with a Small Bounce
 
-The post-US session saw no trading activity. The weekly trade cap of 3/3 has been reached in the normal-volatility regime, and no position has breached the adaptive -5% stop-loss threshold. The strategy remains in a shallow drawdown (-3.10% since inception) while the equal-weight benchmark is at -1.43%. Cash remains elevated at ~37.48%, preserving optionality for the next calendar week.
+The post-US close session delivered a modest recovery for the strategy: portfolio value rose €41.71 (+0.43%) from yesterday's €9,690.25 to €9,731.96. The equal-weight benchmark also rallied, widening the relative gap slightly from -1.67 to -2.05 percentage points (strategy -2.68% vs benchmark -0.63%). No post-close trades were executed because the weekly trade cap remains exhausted (3/3) in the normal-volatility regime, and no position has breached the adaptive -5% stop-loss threshold.
 
 Key position observations:
 
-- **SAN.PA : €75.31** — The strongest performer, now +3.05% unrealized, remains the book’s defensive anchor.
-- **DBA : €27.62** — Agricultural commodities continue to hold gains (+3.48%).
-- **SPY : €745.29** — Core US exposure is slightly down (-0.46%).
-- **QQQ : €711.28** — Tech exposure remains the weakest link at -2.55% unrealized, but above the adaptive stop-loss.
-- **TTE.PA : €69.18** — Energy mean-reversion has turned positive (+1.69%).
-- **IJR : €143.67** — Small-cap value position is underwater (-2.14%).
-- **FEZ : €67.81** — European equity exposure is slightly down (-1.19%) after yesterday's entry.
-- **GLD : €374.47** — Gold is slightly down (-0.80%) in its first session.
+- **SAN.PA : €76.36** — The strongest performer, now +4.49% unrealized, continues to anchor the book.
+- **DBA : €27.72** — Agricultural commodities keep climbing (+3.86%).
+- **SPY : €751.65** — Core US exposure turned slightly positive (+0.39%).
+- **QQQ : €723.18** — Tech exposure remains the weakest link at -0.92% unrealized, but well above the stop-loss.
+- **TTE.PA : €68.73** — Energy mean-reversion keeps working (+1.03%).
+- **IJR : €145.48** — Small-cap value is down -0.91% but stable.
+- **FEZ : €68.17** — European equity exposure is slightly down -0.66%.
+- **GLD : €378.21** — Gold recovered to +0.19% after yesterday's dip.
 
 ---
 
 ## Intraday Activity
 
-The intraday monitor ran but did not execute any trades today. No stop-loss or breakout triggers were hit.
+The intraday monitor ran five times (08:05, 12:16, 14:35, 16:35, 17:45 UTC) and reported a single recurring BOLLINGER_BREAKOUT UPPER alert on DBA. The signal was weak and marginal: price only ~0.19% above the upper Bollinger band, RSI below 70, and BB_position below 1.1. The reference price in `data/market_state.json` matched the current price, so the alert was effectively an artifact of the reference rather than a genuine gap. No trades were executed.
 
-No intraday trades executed.
+**Intraday trades executed:** None.
 
 ---
 
 ## Post-Close LLM Decision: Hold All Positions
 
-> The weekly trade cap has been reached (3/3 trades used), prohibiting any new buys or sells unless a stop-loss override is triggered. Reviewing the portfolio, no single position has breached the -5% drawdown threshold for stop-loss reduction (the worst performer is QQQ at -2.55%). The total portfolio drawdown is -3.10%, which requires caution but not maximum defense or forced liquidation. Cash stands at roughly 37.5%, aligning well with the 30-50% target for high-volatility regimes. Applying loss aversion and CVaR principles, preserving capital and avoiding unnecessary churn while capped is the most prudent approach. Therefore, all positions are placed on hold until the weekly trade counter resets.
+> The weekly trade cap of 3/3 has been reached, prohibiting any new buys or sells unless a stop-loss override is triggered. Reviewing the portfolio, no single position has breached the -5% drawdown threshold from its average cost (the worst performer is QQQ at -0.92%), and the total portfolio drawdown is -2.68%, well within the acceptable caution range. Therefore, no stop-loss overrides are necessary. Following the cooldown guardrails and applying loss aversion principles by not forcing trades, all positions must be held. We maintain our current allocation and cash buffer while monitoring for future opportunities or risk threshold breaches.
 
 **Actions proposed:**
 - **HOLD SAN.PA, DBA, SPY, QQQ, TTE.PA, IJR, FEZ, GLD** — No stop-loss or take-profit triggers; weekly trade cap reached.
 
-**Actions executed:**
-- None.
+**Actions executed:** None.
 
 The weekly trade cap remains at **3/3** in the normal-volatility regime. No new deployment slots until the next calendar week.
 
@@ -49,43 +48,52 @@ The weekly trade cap remains at **3/3** in the normal-volatility regime. No new 
 
 ## Open Positions
 
+### SAN.PA — 🟢
+- **Latent P&L:** +4.49% (+€16.11)
+- **Current Price:** €76.36 (avg €73.08)
+- **Quantity:** 4.9091
+- **Market Value:** €374.86
+
 ### DBA — 🟢
-- **Latent P&L:** 3.48% (8.66 EUR)
-- **Current Price:** 27.62 (avg 26.69)
+- **Latent P&L:** +3.86% (+€9.59)
+- **Current Price:** €27.72 (avg €26.69)
 - **Quantity:** 9.3144
-- **Market Value:** 257.26
+- **Market Value:** €258.19
 
 ### QQQ — 🔴
-- **Latent P&L:** -2.55% (-13.32 EUR)
-- **Current Price:** 711.28 (avg 729.86)
+- **Latent P&L:** -0.92% (-€4.79)
+- **Current Price:** €723.18 (avg €729.86)
 - **Quantity:** 0.7168
-- **Market Value:** 509.88
+- **Market Value:** €518.41
 
 ---
 
 ## Risk Metrics
 
-- **Sharpe Ratio:** -1.70 — Still negative due to realized losses
-- **Sortino Ratio:** -1.84 — Downside-adjusted return negative
-- **Volatility:** 7.37% — Portfolio-level volatility
-- **Max Drawdown:** -2.64% — Rolling window
+- **Sharpe Ratio:** -0.95 — Still negative due to realized losses
+- **Sortino Ratio:** -1.02
+- **Calmar Ratio:** -2.01
+- **Volatility:** 7.51%
+- **Max Drawdown:** -2.63% (rolling window)
+- **CVaR 95%:** 1.21%
+- **VaR 95%:** 0.98%
 - **Total Realized P&L:** €-455.76
-- **Total Unrealized P&L:** €-15.21
-- **Gap vs Equal-Weight Benchmark:** -1.67% (strategy -3.10% vs benchmark -1.43%)
+- **Total Unrealized P&L:** €+26.49
+- **Gap vs Equal-Weight Benchmark:** -2.05% (strategy -2.68% vs benchmark -0.63%)
 
 ---
 
 ## Strategic Reflection
 
-Wednesday was a quiet session by design. The trade cap reached earlier in the week means the agent cannot add new positions regardless of signal strength. This is a deliberate risk-management guardrail: in a -3% drawdown, preserving capital and avoiding churn is more important than chasing every market wiggle.
+Thursday was a constructive session: the strategy recovered a bit of ground in absolute terms, the portfolio returned to positive unrealized P&L, and no stop-loss was breached. The inability to trade is a feature, not a bug, of the current regime. The weekly cap reached earlier this week forces the agent to sit on its hands, which is exactly the right behavior when the book is already at maximum position count and only mildly underwater.
 
-No position is near the adaptive stop-loss. The book is diversified across US equities (SPY, QQQ, IJR), European equities (FEZ, SAN.PA, TTE.PA), and commodities/gold (DBA, GLD). The equal-weight benchmark gap has widened slightly because the strategy has been slow to deploy cash during a low-volatility drift, but the current cash buffer preserves optionality.
+The risk metrics remain stable. Volatility is 7.51%, CVaR 95% is 1.21%, and the max drawdown is contained at -2.63%. Cash at 37.32% preserves optionality for the next calendar week.
 
 **Hypotheses for the next sessions:**
-- If QQQ continues to weaken and approaches the adaptive stop-loss, the system will exit and free a slot for redeployment.
-- If European equities catch a bid, FEZ could narrow the benchmark gap.
-- If gold continues to act as a diversifier, GLD should reduce portfolio volatility.
-- If TTE.PA reverts further, the energy mean-reversion thesis validates further.
+- If QQQ stabilizes, the portfolio's main headwind will ease.
+- If European equities (FEZ, SAN.PA, TTE.PA) continue their relative strength, the benchmark gap should narrow.
+- If DBA's Bollinger breakout becomes genuine (RSI ≥ 70, magnitude ≥ 1%), a partial take-profit may trigger once the weekly cap resets.
+- If gold reverts to its diversifying role, GLD should help dampen volatility.
 
 ---
 
