@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-07-09T21:06:45.061121",
+  "last_updated": "2026-07-09T21:06:45.059273",
   "cash": 3631.7302798191577,
   "total_realized_pnl": -455.7564426120672,
-  "positions_value": 6100.225040265112,
-  "total_value": 9731.95532008427,
+  "positions_value": 6100.2250402651125,
+  "total_value": 9731.955320084271,
   "positions": [
     {
       "ticker": "SAN.PA",
@@ -20,8 +20,8 @@
       "avg_price": 26.690000534057617,
       "current_price": 27.719999313354492,
       "market_value": 258.19475104075957,
-      "unrealized_pnl": 9.593805374472822,
-      "unrealized_pnl_pct": 0.03859118616286847
+      "unrealized_pnl": 9.593805374472808,
+      "unrealized_pnl_pct": 0.03859118616286842
     },
     {
       "ticker": "SPY",
@@ -29,8 +29,8 @@
       "avg_price": 748.7657300533642,
       "current_price": 751.6500244140625,
       "market_value": 1557.8897269032177,
-      "unrealized_pnl": 5.978064801367509,
-      "unrealized_pnl_pct": 0.003852065131897421
+      "unrealized_pnl": 5.978064801367501,
+      "unrealized_pnl_pct": 0.0038520651318974157
     },
     {
       "ticker": "QQQ",
@@ -38,8 +38,8 @@
       "avg_price": 729.8599853515625,
       "current_price": 723.1799926757812,
       "market_value": 518.40796143458,
-      "unrealized_pnl": -4.788519345836221,
-      "unrealized_pnl_pct": -0.009152430342600003
+      "unrealized_pnl": -4.788519345836232,
+      "unrealized_pnl_pct": -0.009152430342600024
     },
     {
       "ticker": "TTE.PA",
@@ -47,8 +47,8 @@
       "avg_price": 68.02999877929688,
       "current_price": 68.7300033569336,
       "market_value": 1120.7507126393498,
-      "unrealized_pnl": 11.414674682363739,
-      "unrealized_pnl_pct": 0.010289645600431072
+      "unrealized_pnl": 11.414674682363664,
+      "unrealized_pnl_pct": 0.010289645600431005
     },
     {
       "ticker": "IJR",
@@ -56,8 +56,8 @@
       "avg_price": 146.80999755859375,
       "current_price": 145.47999572753906,
       "market_value": 879.0138481832967,
-      "unrealized_pnl": -8.036087860462544,
-      "unrealized_pnl_pct": -0.00905934100655424
+      "unrealized_pnl": -8.03608786046249,
+      "unrealized_pnl_pct": -0.009059341006554181
     },
     {
       "ticker": "FEZ",
@@ -65,8 +65,8 @@
       "avg_price": 68.62000274658203,
       "current_price": 68.16500091552734,
       "market_value": 748.9929129989747,
-      "unrealized_pnl": -4.999532638220671,
-      "unrealized_pnl_pct": -0.006630746325310448
+      "unrealized_pnl": -4.999532638220625,
+      "unrealized_pnl_pct": -0.006630746325310388
     },
     {
       "ticker": "GLD",
@@ -74,8 +74,8 @@
       "avg_price": 377.489990234375,
       "current_price": 378.2099914550781,
       "market_value": 642.1159798380232,
-      "unrealized_pnl": 1.2224010464071853,
-      "unrealized_pnl_pct": 0.0019073385767290453
+      "unrealized_pnl": 1.2224010464072377,
+      "unrealized_pnl_pct": 0.0019073385767291273
     }
   ]
 }
