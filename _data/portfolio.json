@@ -1,97 +1,48 @@
 {
-  "last_updated": "2026-07-10T22:32:48.009754",
-  "date": "2026-07-10",
   "cash": 3631.7302798191577,
-  "cash_pct": 37.32751129853599,
-  "positions_value": 6097.635952966892,
-  "total_value": 9729.36623278605,
-  "total_return_pct": -2.7063376721395027,
   "total_realized_pnl": -455.7564426120672,
-  "total_unrealized_pnl": 23.90218684050143,
-  "daily_change": 0.0,
-  "daily_change_pct": 0.0,
-  "benchmark_value": 9941.208752410439,
-  "benchmark_return_pct": -0.5879124758956096,
-  "positions": [
-    {
-      "ticker": "SPY",
-      "quantity": 2.072626456864213,
-      "avg_price": 748.7657300533642,
-      "current_price": 754.9000244140625,
-      "market_value": 1564.6257628880264,
-      "unrealized_pnl": 12.714100786176232,
-      "unrealized_pnl_pct": 0.8192541558039932,
-      "portfolio_weight": 0.16081476690799712
-    },
-    {
-      "ticker": "TTE.PA",
-      "quantity": 16.306571481147564,
-      "avg_price": 68.02999877929688,
-      "current_price": 68.26000213623047,
-      "market_value": 1113.0866041377276,
-      "unrealized_pnl": 3.7505661807415436,
-      "unrealized_pnl_pct": 0.33809107902496266,
-      "portfolio_weight": 0.11440484174466008
-    },
-    {
-      "ticker": "IJR",
-      "quantity": 6.0421630052117274,
-      "avg_price": 146.80999755859375,
-      "current_price": 145.5399932861328,
-      "market_value": 879.3763632122349,
-      "unrealized_pnl": -7.673572831524325,
-      "unrealized_pnl_pct": -0.8650666123429808,
-      "portfolio_weight": 0.09038372512373001
-    },
-    {
-      "ticker": "FEZ",
-      "quantity": 10.987939601543543,
-      "avg_price": 68.62000274658203,
-      "current_price": 68.06500244140625,
-      "market_value": 747.8941358050856,
-      "unrealized_pnl": -6.098309832109749,
-      "unrealized_pnl_pct": -0.8088025108734473,
-      "portfolio_weight": 0.07686976910015265
-    },
-    {
-      "ticker": "GLD",
-      "quantity": 1.6977763526754701,
-      "avg_price": 377.489990234375,
-      "current_price": 376.9800109863281,
-      "market_value": 640.0277480839268,
-      "unrealized_pnl": -0.8658307076892697,
-      "unrealized_pnl_pct": -0.13509742277676823,
-      "portfolio_weight": 0.06578308728138522
-    },
-    {
-      "ticker": "QQQ",
-      "quantity": 0.7168449994260205,
-      "avg_price": 729.8599853515625,
-      "current_price": 725.530029296875,
-      "market_value": 520.092573434879,
-      "unrealized_pnl": -3.103907345537209,
-      "unrealized_pnl_pct": -0.5932584525238633,
-      "portfolio_weight": 0.05345595601923889
-    },
-    {
-      "ticker": "SAN.PA",
+  "positions": {
+    "SAN.PA": {
       "quantity": 4.909103512711255,
       "avg_price": 73.07906183264495,
-      "current_price": 76.13999938964844,
-      "market_value": 373.77913846155593,
-      "unrealized_pnl": 15.026459313275609,
-      "unrealized_pnl_pct": 4.188528807352779,
-      "portfolio_weight": 0.03841762449048262
+      "current_price": 76.13999938964844
     },
-    {
-      "ticker": "DBA",
+    "DBA": {
       "quantity": 9.314385188904772,
       "avg_price": 26.690000534057617,
-      "current_price": 27.780000686645508,
-      "market_value": 258.75362694345534,
-      "unrealized_pnl": 10.152681277168597,
-      "unrealized_pnl_pct": 4.083927054242667,
-      "portfolio_weight": 0.026595116346993554
+      "current_price": 27.780000686645508
+    },
+    "SPY": {
+      "quantity": 2.072626456864213,
+      "avg_price": 748.7657300533642,
+      "current_price": 754.9000244140625
+    },
+    "QQQ": {
+      "quantity": 0.7168449994260205,
+      "avg_price": 729.8599853515625,
+      "current_price": 725.530029296875
+    },
+    "TTE.PA": {
+      "quantity": 16.306571481147564,
+      "avg_price": 68.02999877929688,
+      "current_price": 68.26000213623047
+    },
+    "IJR": {
+      "quantity": 6.0421630052117274,
+      "avg_price": 146.80999755859375,
+      "current_price": 145.5399932861328
+    },
+    "FEZ": {
+      "quantity": 10.987939601543543,
+      "avg_price": 68.62000274658203,
+      "current_price": 68.06500244140625
+    },
+    "GLD": {
+      "quantity": 1.6977763526754701,
+      "avg_price": 377.489990234375,
+      "current_price": 376.9800109863281
     }
-  ]
+  },
+  "last_updated": "2026-07-10T22:32:48.008746",
+  "total_value": 9729.36623278605
 }
