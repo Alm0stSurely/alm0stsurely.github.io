@@ -1,68 +1,66 @@
 ---
 layout: page
-title: "Trading Analysis — 2026-07-13"
-date: 2026-07-13
+title: "Trading Analysis — 2026-07-14"
+date: 2026-07-14
 ---
 
-# Daily Trading Analysis — 2026-07-13
+# Daily Trading Analysis — 2026-07-14
 
 ## Portfolio Snapshot
 
-- **Total value:** €9718.40
-- **Cash:** €2623.93 (27.00%)
-- **Positions value:** €7094.48
-- **Daily P&L:** €-10.96 (-0.11%)
-- **Total return since inception:** -2.82%
+- **Total value:** €9750.61
+- **Cash:** €2623.93 (26.91%)
+- **Positions value:** €7126.68
+- **Daily P&L:** €+32.21 (+0.33%)
+- **Total return since inception:** -2.49%
 - **Realized P&L:** €-455.76
-- **Unrealized P&L:** €+12.94
-- **Equal-weight benchmark:** €9952.19 (-0.48%)
-- **Gap vs benchmark:** €-233.79 (-2.34%)
+- **Unrealized P&L:** €+45.14
+- **Equal-weight benchmark:** €9988.66 (-0.11%)
+- **Gap vs benchmark:** €-238.05 (-2.38%)
 
 ## Risk Metrics
 
-- **CVaR 95%:** 1.20%
-- **VaR 95%:** 0.98%
-- **Max drawdown:** -2.64%
-- **Volatility:** 7.37%
-- **Sharpe ratio:** -1.53
+- **CVaR 95%:** 1.22%
+- **VaR 95%:** 0.97%
+- **Max drawdown:** -2.38%
+- **Volatility:** 7.64%
+- **Sharpe ratio:** -1.08
 
 ## Today's Decision
 
-The portfolio was carrying an elevated cash buffer of ~37.3%, above the 15–30% target for the normal volatility regime. With the weekly trade cap reset to 0/3 at the start of the new ISO week, the LLM chose a controlled deployment to bring the cash buffer back into the target range while preserving diversification.
+The portfolio carries a cash buffer of ~26.9%, inside the 15–30% target for the normal volatility regime. With the weekly trade cap already at 2/3 and no position breaching the adaptive -5% stop-loss or a confirmed technical reversal, the LLM chose to conserve the remaining trade for a potential risk-management override later in the week.
 
-Two positions were added: **TLT** (15% of target capital) and **REET** (15% of target capital). TLT was selected for its low volatility and low/negative correlation with equity holdings, which helps reduce portfolio CVaR. REET was chosen for its negative correlation with existing US equity positions (SPY, QQQ). VB was explicitly avoided because of its 0.93 correlation with the existing IJR small-cap position. All current positions were held because none breached the adaptive -5% stop-loss or a confirmed technical reversal.
+Mean-reversion and trend-following signals are disabled in the current neutral regime, reducing the edge for new entries. Applying loss-aversion and capital-preservation principles, the default action was **HOLD** across all ten positions.
 
-> Reasoning excerpt: *Current cash is ~37.3%, which is above the 15-30% target for the NORMAL volatility regime, indicating I am under-invested. I am deploying capital gradually to reach the target range without taking excessive risk. This deployment will bring cash down to ~26%, perfectly aligning with the regime's cash buffer target while maintaining a diversified, risk-aware portfolio.*
+> Reasoning excerpt: *Cash is at ~26.9%, which is perfectly within the 15-30% target range for the NORMAL volatility regime. I have only 1 trade remaining this week, and since no positions have triggered a stop-loss (all drawdowns are well below -5%) or a confirmed technical reversal (DBA has RSI > 70 but Bollinger Position is 0.81, not > 1.1), there is no compelling reason to use the last trade. Mean reversion and trend following are disabled in the current neutral regime, reducing the edge for new entries. Applying loss aversion and capital preservation principles, I will default to HOLD and conserve the remaining weekly trade for potential risk-management overrides later in the week.*
 
-**Actions executed:** 2
-- **BUY TLT:** 6.49 shares @ €83.97 = €544.76
-- **BUY REET:** 16.59 shares @ €27.91 = €463.05
+**Actions executed:** 0
 
 ## Open Positions
 
 | Ticker | Value | Weight | Unrealized P&L |
 |--------|-------|--------|----------------|
-| SPY | €1552.60 | 15.98% | +0.69 (+0.04%) |
-| TTE.PA | €1146.84 | 11.81% | +37.51 (+3.38%) |
-| IJR | €875.99 | 9.01% | -11.06 (-1.25%) |
-| FEZ | €741.41 | 7.63% | -12.58 (-1.67%) |
-| GLD | €623.42 | 6.41% | -17.47 (-2.73%) |
-| TLT | €544.76 | 5.61% | +0.00 (0.00%) |
-| QQQ | €510.19 | 5.25% | -13.00 (-2.49%) |
-| REET | €463.05 | 4.77% | +0.00 (0.00%) |
-| SAN.PA | €378.20 | 3.89% | +19.44 (+5.42%) |
-| DBA | €258.01 | 2.65% | +9.41 (+3.78%) |
+| SPY | €1558.35 | 15.98% | +6.43 (+0.41%) |
+| TTE.PA | €1159.72 | 11.89% | +50.39 (+4.54%) |
+| IJR | €878.41 | 9.01% | -8.64 (-0.97%) |
+| FEZ | €746.08 | 7.65% | -7.91 (-1.05%) |
+| GLD | €631.83 | 6.48% | -9.07 (-1.41%) |
+| TLT | €545.47 | 5.59% | +0.71 (+0.13%) |
+| QQQ | €515.90 | 5.29% | -7.30 (-1.39%) |
+| REET | €463.38 | 4.75% | +0.33 (+0.07%) |
+| SAN.PA | €370.10 | 3.80% | +11.34 (+3.16%) |
+| DBA | €257.45 | 2.64% | +8.85 (+3.56%) |
 
 ## Weekly Summary (2026-W29)
 
 - **Week start:** €9729.37 (carry from 2026-07-10)
-- **Week end:** €9718.40
-- **Weekly return:** -0.11% (first day)
+- **Current value:** €9750.61
+- **Weekly return so far:** +0.22%
 - **Trades this week:** 2 — TLT (Mon), REET (Mon)
 - **Weekly trade cap:** 2/3 used
 
 ## Notes
 
-The intraday monitor ran twice earlier today (08:05 UTC and 14:36 UTC) and flagged stale-reference alerts for TTE.PA and GLD, but both were correctly classified as HOLD because the apparent price moves were artifacts of outdated reference prices from the 10 July close. No intraday trades were executed. The evening daily run then refreshed all prices using post-US-close data and executed the two deployments above.
+The intraday monitor reset its alert history at 10:06 UTC today and recorded no actionable alerts during the session. No pre-close trades were executed. The evening daily run refreshed all prices using post-US-close data and confirmed the existing risk posture.
 
-Regime assessment remains **normal volatility** (50th percentile), with adaptive stop-loss at 5.0% and a weekly trade cap of 3. The portfolio is now at 10 positions, with the largest single allocation (SPY) at 15.98%, comfortably below the 25% concentration limit.
+Regime assessment remains **normal volatility** (50th percentile), with adaptive stop-loss at 5.0% and a weekly trade cap of 3. The portfolio holds 10 positions, with the largest single allocation (SPY) at 15.98%, below the 25% concentration limit.
