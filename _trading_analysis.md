@@ -1,38 +1,36 @@
 ---
 layout: page
-title: "Trading Analysis — 2026-07-15"
-date: 2026-07-15
+title: "Trading Analysis — 2026-07-16"
+date: 2026-07-16
 ---
 
-# Daily Trading Analysis — 2026-07-15
+# Daily Trading Analysis — 2026-07-16
 
 ## Portfolio Snapshot
 
-- **Total value:** €9765.81
-- **Cash:** €2623.93 (26.87%)
-- **Positions value:** €7141.89
-- **Daily P&L:** €+15.20 (+0.16%)
-- **Total return since inception:** -2.34%
+- **Total value:** €9,728.29
+- **Cash:** €2,623.93 (26.97%)
+- **Positions value:** €7,104.36
+- **Daily P&L:** €-37.53 (-0.38%)
+- **Total return since inception:** -2.72%
 - **Realized P&L:** €-455.76
-- **Unrealized P&L:** €60.35
-- **Equal-weight benchmark:** €10014.00 (0.14%)
-- **Gap vs benchmark:** -2.48%
+- **Unrealized P&L:** €+22.82
+- **Equal-weight benchmark:** €9,979.78 (-0.20%)
+- **Gap vs benchmark:** -2.51%
 
 ## Risk Metrics
 
-- **CVaR 95%:** 1.22%
-- **VaR 95%:** 0.97%
-- **Max drawdown:** -2.30%
-- **Volatility:** 7.59%
-- **Sharpe ratio:** -1.29
+- **CVaR 95%:** 1.21%
+- **VaR 95%:** 0.96%
+- **Max drawdown:** -2.26%
+- **Volatility:** 7.56%
+- **Sharpe ratio:** -1.27
 
 ## Today's Decision
 
-The portfolio retains a cash buffer of ~26.9%, within the 15–30% target for the normal volatility regime. With the weekly trade cap at 2/3 and no position breaching the adaptive -5.0% stop-loss or a confirmed technical reversal, the LLM chose to conserve the remaining trade for a higher-conviction or risk-management setup later in the week.
+The portfolio cash buffer sits at ~27.0%, inside the 15–30% target for the normal volatility regime. The weekly trade cap is at 2/3, leaving one remaining deployment. No position breached the adaptive -5.0% stop-loss (QQQ at -3.27%, GLD at -3.31% are the closest), and no winner triggered a technical reversal sell condition (RSI > 70 and Bollinger bandwidth > 1.1). TLT and REET are still within their mandatory holding cooldown. Given a neutral trend regime and normal volatility, the LLM chose to hold all positions and preserve the final weekly trade for a higher-conviction or defensive setup.
 
-Mean-reversion and trend-following signals are disabled in the current neutral regime, reducing the edge for new entries. Applying loss-aversion and capital-preservation principles, the default action was **HOLD** across all ten positions.
-
-> Reasoning excerpt: *Cash is at ~26.9%, which is perfectly within the 15-30% target range for the NORMAL volatility regime, meaning the portfolio is appropriately invested. I have only 1 trade remaining this week. Reviewing the portfolio, no single position has breached the -5% drawdown stop-loss limit, and there are no confirmed technical reversals (RSI > 70 AND BB > 1.1) to trigger a sell. Furthermore, mean reversion trades are disabled in the current regime, negating oversold signals like TLT or DG.PA. Given the lack of compelling directional edge and the desire to preserve the final weekly trade for potential risk management or high-confidence setups, the optimal decision is to hold all current positions and maintain the current risk profile.*
+> Reasoning excerpt: *Cash is at ~27%, which is perfectly within the 15-30% target range for the NORMAL volatility regime, meaning the portfolio is appropriately invested. I have only 1 trade remaining this week. Reviewing current positions, none have triggered the -5% single-position stop-loss (QQQ is at -3.27%, GLD at -3.31%), and no technical reversal sell conditions (RSI > 70 and BB > 1.1) are met for any winners. TLT and REET are still in their mandatory holding cooldown. Given the neutral trend regime and normal volatility, preserving the final weekly trade for potential tail-risk events or higher-confidence setups is optimal. Applying loss aversion and a CVaR mindset, I will hold and closely monitor QQQ and GLD for any breach of the -5% drawdown threshold in the coming days.*
 
 **Actions executed:** 0
 
@@ -40,27 +38,23 @@ Mean-reversion and trend-following signals are disabled in the current neutral r
 
 | Ticker | Value | Weight | Unrealized P&L |
 |--------|-------|--------|----------------|
-| SPY | €1564.27 | 16.02% | +12.36 (+0.80%) |
-| TTE.PA | €1151.73 | 11.79% | +42.40 (+3.82%) |
-| IJR | €883.21 | 9.04% | -3.84 (-0.43%) |
-| FEZ | €751.63 | 7.70% | -2.36 (-0.31%) |
-| GLD | €632.07 | 6.47% | -8.83 (-1.38%) |
-| TLT | €546.48 | 5.60% | +1.72 (+0.32%) |
-| QQQ | €514.47 | 5.27% | -8.72 (-1.67%) |
-| REET | €463.88 | 4.75% | +0.83 (+0.18%) |
-| SAN.PA | €373.44 | 3.82% | +14.68 (+4.09%) |
-| DBA | €260.71 | 2.67% | +12.11 (+4.87%) |
+| SPY | €1,556.05 | 16.00% | +4.13 (+0.27%) |
+| TTE.PA | €1,133.14 | 11.65% | +23.81 (+2.15%) |
+| IJR | €889.29 | 9.14% | +2.24 (+0.25%) |
+| FEZ | €747.29 | 7.68% | -6.70 (-0.89%) |
+| GLD | €619.71 | 6.37% | -21.19 (-3.31%) |
+| TLT | €546.37 | 5.62% | +1.61 (+0.30%) |
+| QQQ | €506.11 | 5.20% | -17.09 (-3.27%) |
+| REET | €472.95 | 4.86% | +9.90 (+2.14%) |
+| SAN.PA | €376.48 | 3.87% | +17.73 (+4.94%) |
+| DBA | €256.98 | 2.64% | +8.38 (+3.37%) |
 
 ## Weekly Summary (2026-W29)
 
-- **Week start:** €9750.61 (carry from 2026-07-14)
-- **Current value:** €9765.81
-- **Weekly return so far:** 0.16%
-- **Trades this week:** 2 — TLT (Mon), REET (Mon)
+- **Trades this week:** 2 — TLT (2026-07-13), REET (2026-07-13)
 - **Weekly trade cap:** 2/3 used
+- **Daily change:** -37.53 (-0.38%)
 
 ## Notes
 
-The intraday monitor recorded no actionable alerts during the session. No pre-close trades were executed. The evening daily run refreshed all prices using post-US-close data and confirmed the existing risk posture.
-
-Regime assessment remains **normal volatility** (50th percentile), with adaptive stop-loss at 5.0% and a weekly trade cap of 3. The portfolio holds 10 positions, with the largest single allocation (SPY) at 16.02%, below the 25% concentration limit.
+No intraday trades were recorded before the evening run. The post-US-close daily refresh updated all prices and confirmed the existing risk posture. Regime assessment remains **normal volatility**, with adaptive stop-loss at 5.0% and weekly trade cap of 3. The largest single allocation (SPY) is below the 25% concentration limit.
