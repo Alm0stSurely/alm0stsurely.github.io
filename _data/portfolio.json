@@ -1,6 +1,5 @@
 {
   "cash": 2623.9251271693415,
-  "total_realized_pnl": -455.7564426120672,
   "positions": [
     {
       "ticker": "SAN.PA",
@@ -93,7 +92,7 @@
       "unrealized_pnl_pct": 0.0220351047825315
     }
   ],
-  "positions_value": 7102.745121937114,
+  "positions_value": 7102.745121937113,
   "total_value": 9726.670249106455,
   "last_updated": "2026-07-17T21:07:02.094897"
 }
