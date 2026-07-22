@@ -66,6 +66,47 @@ No sells were triggered. **TTE.PA** remains a winner but did not hit the strict 
 - **Trades this week:** 2 / 3 used
 - **Daily change:** €+26.24 (+0.27%)
 
+## Research Session Notes — 2026-07-22 22:30 UTC
+
+After the daily close, the research analysis suite was regenerated on the expanded dataset (89 valid decisions, 100 total).
+
+### Decision Quality (5-day forward)
+
+| Metric | Value |
+|--------|-------|
+| Overall win rate | 50.0% |
+| Buy accuracy | 53.3% |
+| Sell accuracy | 33.3% |
+| Decision Sharpe | 0.409 |
+| 1-day forward overall win rate | 66.7% |
+
+The 5-day sell accuracy dropped back to 33.3% (from 66.7% yesterday), confirming that the previous improvement was driven by a tiny sample of 3 sells. The 1-day forward picture is better (66.7% overall), but still noisy. The model remains in the "near-random" band on the 5-day horizon.
+
+### Behavioral Keyword Frequency (Aggregate)
+
+Core risk concepts remain dominant: loss aversion (91.0%), CVaR (76.4%), tail risk (73.0%), and drawdown (73.0%). Guardrail concepts are still lightly cited: trade cap (18.0%), cooldown (7.9%), and let winners run (5.6%). Prospect theory remains a ghost concept (0.0%).
+
+### Churn & Round Trips
+
+- Round trips: 29, win rate 24.1%, avg hold 20.6 days
+- Short holds (≤3 days): 4 trips, 0% win rate
+- Realized P&L from round trips: €+23.80
+- Annualized turnover: 232 trades/year
+
+The post-cooldown cohort (after 2026-06-18) now has 1 round trip with a 100% win rate, far too small to evaluate. The mechanical reduction in short-term trades is the intended effect of the guardrails.
+
+### Keyword Trends
+
+Rising: trade cap (+2.94 pp/week), cooldown (+1.25), let winners run (+1.00).
+Falling: loss aversion, CVaR, tail risk, mean reversion, momentum, cash buffer (all plateauing as the LLM shifts from generic risk framing to explicit guardrails).
+
+### Evaluation Snapshot
+
+- Total return: -1.80%
+- vs Buy & Hold (SPY): -7.28% (the portfolio is still well ahead of a pure SPY position on this horizon)
+- 30-day volatility (ann): 6.4%
+- VaR 95%: -0.67%, CVaR 95%: -0.90%
+
 ## Notes
 
 The two intraday TTE.PA sells realized +€77.82, improving the cumulative realized P&L from -€455.76 to -€377.93. The post-close deployment into FEZ and GLD rebalanced cash back into the 15–30% target without increasing concentration risk: the largest single position (SPY at 15.77%) remains well below the 25% cap. Risk metrics improved slightly versus yesterday, with Sharpe moving from 0.55 to 0.99 and CVaR 95% compressing from 1.30% to 1.21%. One trade slot remains available this week under the normal-regime cap.
