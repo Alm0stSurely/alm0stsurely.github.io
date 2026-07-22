@@ -1,60 +1,71 @@
 ---
 layout: page
-title: "Trading Analysis — 2026-07-21"
-date: 2026-07-21
+title: "Trading Analysis — 2026-07-22"
+date: 2026-07-22
 ---
 
-# Daily Trading Analysis — 2026-07-21
+# Daily Trading Analysis — 2026-07-22
 
 ## Portfolio Snapshot
 
-- **Total value:** €9,794.17
-- **Cash:** €2,623.93 (26.79%)
-- **Positions value:** €7,170.24
-- **Daily P&L:** €+77.97 (+0.80%)
-- **Total return since inception:** -2.06%
-- **Realized P&L:** €-455.76
-- **Unrealized P&L:** €+88.70
-- **Equal-weight benchmark:** €10,032.47 (+0.32%)
-- **Gap vs benchmark:** -2.38%
+- **Total value:** €9,820.41
+- **Cash:** €2,553.13 (26.00%)
+- **Positions value:** €7,267.27
+- **Daily P&L:** €+26.24 (+0.27%)
+- **Total return since inception:** -1.80%
+- **Realized P&L:** €-377.93
+- **Unrealized P&L:** €+37.12
+- **Equal-weight benchmark:** €10,094.50 (+0.94%)
+- **Gap vs benchmark:** -2.74%
 
 ## Risk Metrics
 
-- **CVaR 95%:** 1.30%
-- **VaR 95%:** 1.00%
-- **Max drawdown:** -1.67%
-- **Volatility:** 6.72%
-- **Sharpe ratio:** 0.55
-- **Sortino ratio:** 0.74
+- **CVaR 95%:** 1.21%
+- **VaR 95%:** 1.03%
+- **Max drawdown:** -1.31%
+- **Volatility:** 6.70%
+- **Sharpe ratio:** 0.99
+- **Sortino ratio:** 1.64
+
+## Intraday Activity
+
+The monitor executed two partial profit-takes on **TTE.PA** before the evening session:
+
+- **08:08 UTC:** SELL 8.1533 shares @ €74.42 → realized P&L **+€52.10**
+- **14:37 UTC:** SELL 4.0766 shares @ €74.34 → realized P&L **+€25.72**
+
+Total realized from TTE.PA today: **+€77.82**. These trims locked in gains on the week's strongest energy position while leaving a residual holding.
 
 ## Today's Decision
 
-The portfolio cash buffer sits at ~26.8%, inside the 15–30% target for the normal volatility regime. The regime assessment is neutral trend with normal volatility and correlation, which disables both mean-reversion and trend-following tilts. No position breached the adaptive -5.0% stop-loss, and no winner triggered a strict technical reversal sell condition (RSI > 70 and Bollinger position > 1.1). With no clear statistical edge and a portfolio return skew of -0.58, the LLM chose to hold all positions and avoid unnecessary churn.
+Pre-trade cash sat at ~36%, above the 15–30% target for the normal volatility regime. The LLM chose to deploy capital gradually rather than chase momentum: 15% of available cash went into **FEZ** (Euro Stoxx 50) for European diversification, and 15% into **GLD** as a low-correlation hedge. This brought the cash buffer to ~25%, inside the target band.
 
-> Reasoning excerpt: *Cash is at ~26.8%, which is perfectly within the 15-30% target range for the NORMAL volatility regime, meaning the portfolio is appropriately invested. The Market Regime Analysis indicates a neutral trend and explicitly disables both mean reversion and trend following strategies, suggesting a wait-and-see approach. Reviewing current positions against the strict sell discipline criteria: no position has breached the -5% stop-loss, and while TTE.PA, DBA, and REET show elevated RSI (>70), none have a Bollinger Position > 1.1 to confirm a technical reversal, so we let these winners run. Conversely, TLT and QQQ are oversold, but with mean reversion disabled and no strong directional edge, adding to them is not justified. Holding all positions preserves capital and avoids unnecessary transaction costs in a neutral regime.*
+No sells were triggered. **TTE.PA** remains a winner but did not hit the strict reversal condition (RSI > 70 **and** Bollinger position > 1.1). **QQQ** is down -3.37% but has not breached the adaptive -5.0% stop-loss. **TLT** is deeply oversold (RSI ~20), so selling now would be panic-driven rather than rules-based. The model also avoided chasing **AIR.PA**'s +7% spike and overbought names like **BNP.PA**.
 
-**Actions:** SAN.PA: HOLD, DBA: HOLD, SPY: HOLD, QQQ: HOLD, TTE.PA: HOLD, IJR: HOLD, FEZ: HOLD, GLD: HOLD, TLT: HOLD, REET: HOLD
+> Reasoning excerpt: *Cash is at ~36%, slightly above the 15-30% target for the NORMAL volatility regime. To gradually deploy capital and reach the target, I am allocating 15% of available cash to FEZ and 15% to GLD. This deploys ~€1060, bringing cash to ~25%, perfectly within the target range. FEZ provides European diversification with stable technicals (RSI 53.4, BB 0.66). GLD acts as a portfolio hedge with low correlation to US equities and solid momentum. No sell signals are triggered: TTE.PA is strong but BB (1.10) is not strictly > 1.1, so I let the winner run per sell discipline. QQQ drawdown (-3.37%) hasn't breached the -5% stop. TLT is deeply oversold (RSI 20.3) and selling would be panic selling at the bottom. Applying DSR skepticism by avoiding chasing AIR.PA's 7% daily spike and avoiding overbought assets like BNP.PA.*
+
+**Post-close actions:** BUY FEZ (€530.06), BUY GLD (€450.55). All other positions: HOLD.
 
 ## Open Positions
 
 | Ticker | Value | Weight | Unrealized P&L |
 |--------|-------|--------|----------------|
-| SPY | €1,551.01 | 15.84% | -0.90 (-0.06%) |
-| TTE.PA | €1,184.35 | 12.09% | +75.01 (+6.76%) |
-| IJR | €885.66 | 9.04% | -1.39 (-0.16%) |
-| FEZ | €749.16 | 7.65% | -4.83 (-0.64%) |
-| GLD | €636.29 | 6.50% | -4.60 (-0.72%) |
-| TLT | €542.81 | 5.54% | -1.95 (-0.36%) |
-| QQQ | €508.21 | 5.19% | -14.99 (-2.86%) |
-| REET | €473.83 | 4.84% | +10.78 (+2.33%) |
-| SAN.PA | €376.77 | 3.85% | +18.02 (+5.02%) |
-| DBA | €262.15 | 2.68% | +13.55 (+5.45%) |
+| SPY | €1,548.94 | 15.77% | -2.98 (-0.19%) |
+| FEZ | €1,281.86 | 13.05% | -2.20 (-0.17%) |
+| GLD | €1,094.17 | 11.14% | +2.72 (+0.25%) |
+| IJR | €880.58 | 8.97% | -6.47 (-0.73%) |
+| QQQ | €505.57 | 5.15% | -17.63 (-3.37%) |
+| TLT | €541.19 | 5.51% | -3.57 (-0.65%) |
+| REET | €471.42 | 4.80% | +8.38 (+1.81%) |
+| SAN.PA | €378.64 | 3.86% | +19.89 (+5.54%) |
+| TTE.PA | €301.96 | 3.07% | +24.62 (+8.88%) |
+| DBA | €262.95 | 2.68% | +14.34 (+5.77%) |
 
 ## Weekly Summary
 
-- **Trades this week:** 0 / 3 used
-- **Daily change:** €+77.97 (+0.80%)
+- **Trades this week:** 2 / 3 used
+- **Daily change:** €+26.24 (+0.27%)
 
 ## Notes
 
-No intraday trades were recorded before the evening run. The post-US-close daily refresh updated all prices and confirmed the existing risk posture. Regime assessment remains **normal volatility**, with adaptive stop-loss at 5.0% and weekly trade cap of 3. The largest single allocation (SPY at 15.84%) is well below the 25% concentration limit. The portfolio skew (-0.58) and CVaR 95% (1.30%) continue to favor capital preservation over active deployment in a directionless market.
+The two intraday TTE.PA sells realized +€77.82, improving the cumulative realized P&L from -€455.76 to -€377.93. The post-close deployment into FEZ and GLD rebalanced cash back into the 15–30% target without increasing concentration risk: the largest single position (SPY at 15.77%) remains well below the 25% cap. Risk metrics improved slightly versus yesterday, with Sharpe moving from 0.55 to 0.99 and CVaR 95% compressing from 1.30% to 1.21%. One trade slot remains available this week under the normal-regime cap.
