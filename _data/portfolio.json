@@ -1,102 +1,92 @@
 {
   "date": "2026-07-23",
-  "cash": 2863.8155217968583,
+  "cash": 3360.0371217486536,
   "positions": [
     {
       "ticker": "SAN.PA",
       "quantity": 4.909103512711255,
       "avg_price": 73.07906183264495,
-      "current_price": 77.12999725341797,
-      "market_value": 378.6391404521636,
-      "unrealized_pnl": 19.886461303883255,
-      "unrealized_pnl_pct": 0.05543223078109403,
-      "weight": 0.0543606475335678
+      "current_price": 76.06999969482422,
+      "market_value": 373.43550271380565,
+      "unrealized_pnl": 14.682823565525325,
+      "unrealized_pnl_pct": 0.04092742554671374,
+      "weight": 0.038328034434490794
     },
     {
       "ticker": "DBA",
       "quantity": 9.314385188904772,
       "avg_price": 26.690000534057617,
-      "current_price": 28.229999542236328,
-      "market_value": 262.9450896189946,
-      "unrealized_pnl": 14.344143952707824,
-      "unrealized_pnl_pct": 0.05769947461086051,
-      "weight": 0.03775062800002953
+      "current_price": 28.239999771118164,
+      "market_value": 263.0382356027772,
+      "unrealized_pnl": 14.437289936490458,
+      "unrealized_pnl_pct": 0.058074155340786894,
+      "weight": 0.026997268547059954
     },
     {
       "ticker": "SPY",
       "quantity": 2.072626456864213,
       "avg_price": 748.7657300533642,
-      "current_price": 747.3300170898438,
-      "market_value": 1548.9359654291948,
-      "unrealized_pnl": -2.9756966726554572,
-      "unrealized_pnl_pct": -0.0019174394685747037,
-      "weight": 0.22237838900704138
-    },
-    {
-      "ticker": "QQQ",
-      "quantity": 0.7168449994260205,
-      "avg_price": 729.8599853515625,
-      "current_price": 705.27001953125,
-      "market_value": 505.56928674606837,
-      "unrealized_pnl": -17.627194034347777,
-      "unrealized_pnl_pct": -0.03369134671558667,
-      "weight": 0.07258381626310617
+      "current_price": 738.1699829101562,
+      "market_value": 1529.9506362425939,
+      "unrealized_pnl": -21.961025859256324,
+      "unrealized_pnl_pct": -0.014150950982295695,
+      "weight": 0.15702845670224852
     },
     {
       "ticker": "IJR",
       "quantity": 6.0421630052117274,
       "avg_price": 146.80999755859375,
-      "current_price": 145.74000549316406,
-      "market_value": 880.5848695701499,
-      "unrealized_pnl": -6.465066473609344,
-      "unrealized_pnl_pct": -0.007288277932179925,
-      "weight": 0.1264242351198327
+      "current_price": 144.875,
+      "market_value": 875.358365380049,
+      "unrealized_pnl": -11.691570663710195,
+      "unrealized_pnl_pct": -0.013180284658893697,
+      "weight": 0.08984353476567761
     },
     {
       "ticker": "FEZ",
       "quantity": 18.735126891665615,
       "avg_price": 68.53729858712835,
-      "current_price": 68.41999816894531,
-      "market_value": 1281.8573476227195,
-      "unrealized_pnl": -2.1976382191046024,
-      "unrealized_pnl_pct": -0.0017114829530947499,
-      "weight": 0.18403431662986328
+      "current_price": 67.18000030517578,
+      "market_value": 1258.625830299603,
+      "unrealized_pnl": -25.429155542221224,
+      "unrealized_pnl_pct": -0.01980379019793293,
+      "weight": 0.12918068532127094
     },
     {
       "ticker": "GLD",
       "quantity": 2.886276213231957,
       "avg_price": 378.150480872856,
-      "current_price": 379.093994140625,
-      "market_value": 1094.169977867181,
-      "unrealized_pnl": 2.723239901630396,
-      "unrealized_pnl_pct": 0.002495073563283993,
-      "weight": 0.1570883254108909
+      "current_price": 371.5400085449219,
+      "market_value": 1072.3670889272062,
+      "unrealized_pnl": -19.079649038344314,
+      "unrealized_pnl_pct": -0.017481062863322724,
+      "weight": 0.11006377918576275
     },
     {
       "ticker": "TLT",
       "quantity": 6.487549530231055,
       "avg_price": 83.97000122070312,
-      "current_price": 83.41999816894531,
-      "market_value": 541.1913699328167,
-      "unrealized_pnl": -3.568172040057043,
-      "unrealized_pnl_pct": -0.006549994566657302,
-      "weight": 0.07769802475780589
+      "current_price": 83.16999816894531,
+      "market_value": 539.5694825502588,
+      "unrealized_pnl": -5.190059422614809,
+      "unrealized_pnl_pct": -0.009527248304488162,
+      "weight": 0.05537940971519244
     },
     {
       "ticker": "REET",
       "quantity": 16.59067048400136,
       "avg_price": 27.90999984741211,
-      "current_price": 28.415000915527344,
-      "market_value": 471.4239169921112,
-      "unrealized_pnl": 8.37830631516858,
-      "unrealized_pnl_pct": 0.01809391153264587,
-      "weight": 0.06768161727786229
+      "current_price": 28.375,
+      "market_value": 470.76027498353864,
+      "unrealized_pnl": 7.714664306596092,
+      "unrealized_pnl_pct": 0.016660700649592065,
+      "weight": 0.048317087954509515
     }
   ],
-  "positions_value": 6965.3169642314,
-  "total_value": 9829.132486028258,
-  "total_return_pct": -0.01708675139717416,
-  "total_realized_pnl": -344.58638656297296,
-  "total_unrealized_pnl": 12.49838403361583,
-  "last_updated": "2026-07-23T08:07:59.879821"
+  "positions_value": 6383.105416699832,
+  "total_value": 9743.142538448486,
+  "total_return_pct": -0.0256857461551514,
+  "total_realized_pnl": -371.56126739159384,
+  "total_unrealized_pnl": -46.51668271753499,
+  "last_updated": "2026-07-23T21:08:58.400454"
 }
