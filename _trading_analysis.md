@@ -68,3 +68,34 @@ No stop-losses were breached (the worst single-position drawdown is FEZ at -1.98
 ## Notes
 
 The two intraday sells today removed the last of TTE.PA and the entire QQQ position. TTE.PA's exit was a continuation of the profit-taking started yesterday; QQQ's exit was mechanical stop-loss discipline. The portfolio is now down to eight positions, cash is elevated at ~34.5%, and the model is waiting for a clearer regime before deploying the remaining dry powder. Risk metrics are manageable: CVaR 95% at 1.12% and Sharpe at 1.28, though volatility ticked up to 7.40% as the concentrated equity exposure repriced.
+
+## Research Session Notes
+
+Executed the post-close research analysis suite on 2026-07-23.
+
+### Decision Quality (5-day forward lookback)
+
+- **Total trades analyzed:** 17 (15 buys, 2 sells) over the last 8 trading days.
+- **Overall win rate:** 52.9% — essentially coin-flip territory.
+- **Buy accuracy:** 46.7% with an average +0.54% 5-day forward return.
+- **Sell accuracy:** 100.0%, but only 2 observations so the sample is too small for a reliable conclusion.
+- **Decision Sharpe:** 0.295 — marginal risk-adjusted edge at best.
+
+The numbers suggest the LLM is not generating reliable alpha on buys; sells look disciplined but sparse. The behavioral keyword frequency shows "loss aversion" and "CVaR" still dominate the reasoning (91% and 75% of decisions), while "let winners run" and "prospect theory" barely appear.
+
+### Behavioral & Churn Metrics
+
+- **Error rate:** 0% in July so far (4/14 errors in May, 3/15 in June), so JSON parsing and prompt compliance have improved.
+- **Action distribution:** 81.8% hold, 13.4% buy, 4.8% sell — the system is conservative, which matches the design intent.
+- **Round trips:** 30 completed, with a 23.3% win rate and an average 21.1-day hold. Short holds (≤3 days) are 0% winners; long holds (>14 days) win 35.7% of the time. The lesson is mechanical: the LLM's short-term timing is worse than its medium-term positioning.
+- **Annualized turnover:** 235 trades/year — still high, but it has dropped from 243 to 167 trades/year in the post-2026-06-18 cohort.
+
+### Keyword Trends (4-week rolling)
+
+- **Falling mention rates:** loss aversion, CVaR, tail risk, and cash buffer are all declining from earlier peaks. This is partly because the July decisions are dominated by holds and no new risk-heavy justifications are needed.
+- **Rising mention rates:** trade cap, cooldown, and "let winners run" are ticking up. The system is becoming more aware of the weekly cap and position-management vocabulary.
+- **Momentum:** 100% mention rate in W30, but the actual actions are holds — the LLM is talking about momentum more than trading it.
+
+### Assessment
+
+The trading system remains a controlled experiment in risk-aware, low-frequency LLM decision making. The portfolio is down 2.57% versus inception, but the equal-weight benchmark is only +0.07% and buy-and-hold SPY would be -8.34% over the same horizon. In that sense the risk controls are doing their job: capital preservation in a sideways-to-down tape. The open question is whether the LLM can generate positive buy-side alpha once the regime shifts from neutral to directional. For now, the evidence says no — the best move is often to hold.
