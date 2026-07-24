@@ -141,3 +141,61 @@ The weekly research session will be appended separately after post-close evaluat
 | 2026-07-22 | BUY | GLD | €379.09 | — |
 
 ```
+
+---
+
+## Research Session Notes — 2026-07-24
+
+Post-close research suite executed at 22:32 UTC.
+
+### Decision Quality (7-day lookback)
+
+| Metric | Value |
+|--------|-------|
+| Trades analyzed | 15 (14 buys, 1 sell) |
+| 5-day forward win rate | 60.0% |
+| Buy accuracy (5D) | 57.1% |
+| Sell accuracy (5D) | 100.0% |
+| Decision Sharpe | 0.366 |
+
+The 5-day win rate is back above the 55% threshold, but the 1-day forward picture remains weak (40.0% overall, 35.7% buys). This asymmetry suggests the LLM is better at identifying medium-term relative value than timing short-term reversals.
+
+### Behavioral & Churn Metrics
+
+- **Round trips:** 30, win rate 23.3%, avg hold 21.1 days.
+- **Annualized turnover:** 235 trades/year.
+- **Error rate:** 0% in July (19/19 valid decisions), down from a noisy May–June period.
+- **Action distribution:** 81.8% hold, 13.4% buy, 4.8% sell — discipline remains high.
+- **Loss aversion score:** 0.13/1.0, indicating few sells in declining markets.
+
+The churn engine continues to be the main drag on realized returns. Longer holds (>14d) have the best win rate (35.7%), while short holds (≤3d) are 0-for-4. This reinforces the current cooldown and trade-cap regime.
+
+### Keyword Trends (4-week rolling)
+
+| Concept | Latest | 4W Avg | Direction |
+|---------|--------|--------|-----------|
+| loss aversion | 25.0% | 64.6% | falling |
+| CVaR | 25.0% | 36.2% | falling |
+| tail risk | 25.0% | 28.8% | falling |
+| mean reversion | 75.0% | 36.2% | falling |
+| momentum | 100.0% | 43.3% | falling |
+| cash buffer | 0.0% | 36.7% | falling |
+| stop-loss | 75.0% | 84.6% | flat |
+| trade cap | 0.0% | 52.5% | rising |
+| cooldown | 0.0% | 25.8% | rising |
+| let winners run | 25.0% | 14.6% | rising |
+
+Most risk-control keywords are falling simply because the neutral regime gave the LLM little to say about them; mentions of *trade cap* and *cooldown* are rising because the weekly limit became binding. Notably, *prospect theory* remains at 0% despite being a stated pillar — worth re-injecting into the system prompt if the behavioral angle weakens further.
+
+### System Health
+
+- Data feed: operational.
+- Core files: present.
+- Comprehensive evaluation: total return −2.35%, vs buy-and-hold SPY −5.33%.
+
+### Takeaways for W31
+
+1. The 5-day predictive edge is recovering; the 1-day edge is not. Avoid increasing intraday sensitivity until short-horizon accuracy improves.
+2. Churn is still the dominant cost driver. The current cooldown rules and weekly trade cap are aligned with the evidence.
+3. Prospect-theory framing has faded from the LLM vocabulary; consider re-emphasizing it in the system prompt to keep behavioral guardrails salient.
+4. With cash at 34.4% and only one weekly trade remaining, the portfolio is positioned defensively — appropriate until the market regime breaks its neutral stalemate.
