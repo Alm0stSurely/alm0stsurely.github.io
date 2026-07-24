@@ -1,48 +1,37 @@
 ---
 layout: page
-title: "Trading Analysis — 2026-07-23"
-date: 2026-07-23
+title: "Trading Analysis — 2026-07-24"
+date: 2026-07-24
 ---
 
-# Daily Trading Analysis — 2026-07-23
+# Daily Trading Analysis — 2026-07-24
 
 ## Portfolio Snapshot
 
-- **Total value:** €9,743.14
-- **Cash:** €3,360.04 (34.49%)
-- **Positions value:** €6,383.11
-- **Daily P&L:** €-77.27 (-0.79%)
-- **Total return since inception:** -2.57%
+- **Total value:** €9,764.80
+- **Cash:** €3,360.04 (34.41%)
+- **Positions value:** €6,404.76
+- **Daily P&L:** €+21.65 (+0.22%)
+- **Total return since inception:** -2.35%
 - **Realized P&L:** €-371.56
-- **Unrealized P&L:** €-46.52
-- **Equal-weight benchmark:** €10,006.94 (+0.07%)
-- **Gap vs benchmark:** -2.64%
+- **Unrealized P&L:** €-24.86
+- **Equal-weight benchmark:** €10,075.33 (0.75%)
+- **Gap vs benchmark:** -3.11%
 
 ## Risk Metrics
 
 - **CVaR 95%:** 1.12%
 - **VaR 95%:** 1.05%
 - **Max drawdown:** -1.43%
-- **Volatility:** 7.40%
-- **Sharpe ratio:** 1.28
-- **Sortino ratio:** 2.38
-
-## Intraday Activity
-
-The monitor executed two sells before the evening session:
-
-- **08:08 UTC:** SELL 4.0766 shares TTE.PA @ €76.21 → realized P&L **+€33.35**
-- **17:46 UTC:** SELL 0.7168 share QQQ @ €692.23 → realized P&L **-€26.97**
-
-Net intraday realized P&L: **+€6.38**. The TTE.PA sale locked in the residual gain on the week's energy position, while the QQQ sale was a rules-based stop-loss trigger (drawdown exceeded the adaptive -5.0% threshold).
+- **Volatility:** 6.33%
+- **Sharpe ratio:** -0.04
+- **Sortino ratio:** -0.06
 
 ## Today's Decision
 
-Post-trade cash sat at ~34.5%, above the 15–30% target for the normal volatility regime. Only one trade slot remains under the weekly cap, and the market regime is neutral (ADX unavailable due to data alignment, correlation normal at 0.50). The LLM chose to hold all positions rather than deploy into a directionless environment.
+Cash sits at ~34.4%, above the 15–30% target for the normal volatility regime. The weekly trade cap is nearly exhausted (two of three slots used), the market regime is neutral, and both mean-reversion and trend-following signals are disabled. Under those conditions the LLM chose to hold every existing position rather than chase a low-conviction entry.
 
-No stop-losses were breached (the worst single-position drawdown is FEZ at -1.98%). TLT is deeply oversold (RSI ~18.9), but the regime filter has disabled mean-reversion signals, so buying the dip would be a discretionary bet rather than a rules-based one.
-
-> Reasoning excerpt: *Cash is at ~34.5%, which is just slightly above the 15-30% target for the NORMAL volatility regime, meaning the portfolio is adequately invested. The Market Regime Analysis indicates a neutral trend with both mean reversion and trend following disabled, suggesting no strong directional edge in the current environment. Applying DSR skepticism and loss aversion, overtrading in a neutral regime without a clear edge increases the risk of false discoveries and unnecessary transaction costs. Furthermore, I only have 1 trade remaining this week, and none of the current positions have breached the -5% single-position stop-loss threshold. The most prudent action is to hold the current diversified portfolio, preserve capital, and wait for a clearer regime shift before deploying the remaining cash.*
+> Reasoning excerpt: *Cash is at 34.4%, slightly above the 15-30% target for normal volatility, indicating we are marginally under-invested. However, with only one trade remaining this week and the Market Regime Analysis explicitly disabling both mean reversion and trend following (neutral trend, normal vol/corr), there is no high-confidence directional edge to deploy capital. Meta-labeling principles dictate waiting for both directional edge and high confidence before executing. Current positions are maintained: winners (DBA, SAN.PA, REET) are allowed to run as they haven't hit confirmed reversal thresholds (e.g., REET has RSI > 70 but Bollinger Position is 1.05, below the 1.1 trigger), and losers are well within acceptable drawdown limits (<5%). GLD and FEZ are on cooldown. Preserving the final weekly trade for a higher-probability setup aligns with our CVaR mindset, DSR skepticism, and primary goal of capital preservation.*
 
 **Post-close actions:** All positions HOLD. No trades executed.
 
@@ -50,52 +39,105 @@ No stop-losses were breached (the worst single-position drawdown is FEZ at -1.98
 
 | Ticker | Value | Weight | Unrealized P&L |
 |--------|-------|--------|----------------|
-| SPY | €1,529.95 | 15.70% | -21.96 (-1.42%) |
-| FEZ | €1,258.63 | 12.92% | -25.43 (-1.98%) |
-| GLD | €1,072.37 | 11.01% | -19.08 (-1.75%) |
-| IJR | €875.36 | 8.98% | -11.69 (-1.32%) |
-| TLT | €539.57 | 5.54% | -5.19 (-0.95%) |
-| REET | €470.76 | 4.83% | +7.71 (+1.67%) |
-| SAN.PA | €373.44 | 3.83% | +14.68 (+4.09%) |
-| DBA | €263.04 | 2.70% | +14.44 (+5.81%) |
+| SPY | €1,531.38 | 15.68% | -20.53 (-1.32%) |
+| FEZ | €1,268.27 | 12.99% | -15.78 (-1.23%) |
+| GLD | €1,073.41 | 10.99% | -18.04 (-1.65%) |
+| IJR | €875.39 | 8.96% | -11.66 (-1.31%) |
+| TLT | €540.09 | 5.53% | -4.67 (-0.86%) |
+| REET | €479.30 | 4.91% | +16.26 (+3.51%) |
+| SAN.PA | €373.88 | 3.83% | +15.12 (+4.22%) |
+| DBA | €263.04 | 2.69% | +14.44 (+5.81%) |
 
-## Weekly Summary
+## Weekly Summary (Week of 2026-07-20 – 2026-07-24)
 
-- **Trades this week:** 2 / 3 used per cooldown manager
-- **Daily change:** €-77.27 (-0.79%)
-- **Gap vs equal-weight benchmark:** -2.64%
+- **Trades this week:** 2 / 3 used (BUY FEZ on 2026-07-22, BUY GLD on 2026-07-22)
+- **Weekly return:** +0.50% (start €9,716.20 → end €9,764.80)
+- **Gap vs equal-weight benchmark:** -3.11%
+- **SPY alpha:** +0.93% vs weekly benchmark
+- **CAC.PA alpha:** +0.24% vs weekly benchmark
 
 ## Notes
 
-The two intraday sells today removed the last of TTE.PA and the entire QQQ position. TTE.PA's exit was a continuation of the profit-taking started yesterday; QQQ's exit was mechanical stop-loss discipline. The portfolio is now down to eight positions, cash is elevated at ~34.5%, and the model is waiting for a clearer regime before deploying the remaining dry powder. Risk metrics are manageable: CVaR 95% at 1.12% and Sharpe at 1.28, though volatility ticked up to 7.40% as the concentrated equity exposure repriced.
+The portfolio posted a small positive day (+0.22%) after three consecutive down days, but the equal-weight benchmark widened its lead to +0.75% since inception. The strategy remains underwater at −2.35%, driven by realized losses from earlier churn and a few equity positions that have drifted modestly against us. The behavioral guardrails are doing their job: turnover is constrained, no stop-losses were breached today, and the LLM is explicitly preserving the last weekly trade slot for a higher-probability setup.
 
-## Research Session Notes
+Risk metrics are stable: CVaR 95% at 1.12%, max drawdown at −1.43%, and volatility compressed to 6.33%. The negative Sharpe (−0.04) reflects the flat-to-down return profile since February; it is not a statement about the current day’s risk-adjusted quality.
 
-Executed the post-close research analysis suite on 2026-07-23.
+The weekly research session will be appended separately after post-close evaluation.
 
-### Decision Quality (5-day forward lookback)
+---
 
-- **Total trades analyzed:** 17 (15 buys, 2 sells) over the last 8 trading days.
-- **Overall win rate:** 52.9% — essentially coin-flip territory.
-- **Buy accuracy:** 46.7% with an average +0.54% 5-day forward return.
-- **Sell accuracy:** 100.0%, but only 2 observations so the sample is too small for a reliable conclusion.
-- **Decision Sharpe:** 0.295 — marginal risk-adjusted edge at best.
+## Weekly Report (2026-W30)
 
-The numbers suggest the LLM is not generating reliable alpha on buys; sells look disciplined but sparse. The behavioral keyword frequency shows "loss aversion" and "CVaR" still dominate the reasoning (91% and 75% of decisions), while "let winners run" and "prospect theory" barely appear.
+```
+# Weekly Report — Week 2026-W30
 
-### Behavioral & Churn Metrics
+**Period:** 2026-07-20 to 2026-07-24
 
-- **Error rate:** 0% in July so far (4/14 errors in May, 3/15 in June), so JSON parsing and prompt compliance have improved.
-- **Action distribution:** 81.8% hold, 13.4% buy, 4.8% sell — the system is conservative, which matches the design intent.
-- **Round trips:** 30 completed, with a 23.3% win rate and an average 21.1-day hold. Short holds (≤3 days) are 0% winners; long holds (>14 days) win 35.7% of the time. The lesson is mechanical: the LLM's short-term timing is worse than its medium-term positioning.
-- **Annualized turnover:** 235 trades/year — still high, but it has dropped from 243 to 167 trades/year in the post-2026-06-18 cohort.
+## Portfolio Summary
 
-### Keyword Trends (4-week rolling)
+| Metric | Value |
+|--------|-------|
+| Cash | €3360.04 |
+| Positions Value | €6404.76 |
+| **Total Value** | **€9764.80** |
+| Total Return | -2.35% |
+| Realized P&L | €-371.56 |
+| Unrealized P&L | €-24.86 |
+| Number of Positions | 8 |
 
-- **Falling mention rates:** loss aversion, CVaR, tail risk, and cash buffer are all declining from earlier peaks. This is partly because the July decisions are dominated by holds and no new risk-heavy justifications are needed.
-- **Rising mention rates:** trade cap, cooldown, and "let winners run" are ticking up. The system is becoming more aware of the weekly cap and position-management vocabulary.
-- **Momentum:** 100% mention rate in W30, but the actual actions are holds — the LLM is talking about momentum more than trading it.
+## Weekly Performance
 
-### Assessment
+| Metric | Value |
+|--------|-------|
+| Start of Week | €9716.20 |
+| End of Week | €9764.80 |
+| Weekly Return | +0.50% |
+| Trading Days | 5 |
 
-The trading system remains a controlled experiment in risk-aware, low-frequency LLM decision making. The portfolio is down 2.57% versus inception, but the equal-weight benchmark is only +0.07% and buy-and-hold SPY would be -8.34% over the same horizon. In that sense the risk controls are doing their job: capital preservation in a sideways-to-down tape. The open question is whether the LLM can generate positive buy-side alpha once the regime shifts from neutral to directional. For now, the evidence says no — the best move is often to hold.
+## Performance Metrics
+
+| Metric | Value | Interpretation |
+|--------|-------|----------------|
+| Sharpe Ratio | 2.84 | Good |
+| Sortino Ratio | 0.00 | Poor |
+| Max Drawdown | -0.79% | Low |
+| Volatility | 10.53% | Low |
+
+## Risk Metrics
+
+| Metric | Value |
+|--------|-------|
+| CVaR 95% | 0.79% |
+| VaR 95% | 0.64% |
+| Skewness | -1.03 |
+| Kurtosis | 2.08 |
+
+## Benchmark Cumulative Returns
+
+| Benchmark | Weekly Return | Alpha vs Portfolio |
+|-----------|---------------|---------------------|
+| SPY | -0.43% | +0.93% (Outperform) |
+| CAC.PA | +0.26% | +0.24% (Outperform) |
+| FEZ | +0.76% | -0.26% (Underperform) |
+
+## Positions
+
+| Ticker | Quantity | Price | Value | P&L % | P&L € |
+|--------|----------|-------|-------|-------|-------|
+| SAN.PA | 4.91 | €76.16 | €373.88 | +4.22% | €+15.12 |
+| DBA | 9.31 | €28.24 | €263.04 | +5.81% | €+14.44 |
+| SPY | 2.07 | €738.86 | €1531.38 | -1.32% | €-20.53 |
+| IJR | 6.04 | €144.88 | €875.39 | -1.31% | €-11.66 |
+| FEZ | 18.74 | €67.69 | €1268.27 | -1.23% | €-15.78 |
+| GLD | 2.89 | €371.90 | €1073.41 | -1.65% | €-18.04 |
+| TLT | 6.49 | €83.25 | €540.09 | -0.86% | €-4.67 |
+| REET | 16.59 | €28.89 | €479.30 | +3.51% | €+16.26 |
+
+## Trades This Week
+
+| Date | Action | Ticker | Price | P&L |
+|------|--------|--------|-------|-----|
+| 2026-07-22 | BUY | FEZ | €68.42 | — |
+| 2026-07-22 | BUY | GLD | €379.09 | — |
+
+```
