@@ -53,3 +53,54 @@
 
 ---
 *Updated automatically by the Almost Surely Profitable daily pipeline.*
+
+## Research Session Notes — 2026-07-27
+
+**Session type:** Post-close research analysis (no new trades, daily run already executed).  
+**Reddit inspiration scan:** Blocked (network policy), no actionable signals retrieved.
+
+### Decision Quality (8-day lookback)
+
+| Metric | 5-day forward | 1-day forward |
+|--------|---------------|---------------|
+| Overall win rate | 35.3% | 64.7% |
+| Buy accuracy | 31.2% | 68.8% |
+| Sell accuracy | 100.0% | 0.0% |
+| Decision Sharpe | 0.262 | — |
+| Avg trades/day | 2.1 | — |
+
+The LLM is still underperforming on a 5-day horizon but looks considerably better on a 1-day horizon. This suggests either short-term mean-reversion signals are being captured more cleanly than intermediate momentum, or the forward-window measurement is noisy with only 17 recent trades.
+
+### Behavioral & Churn
+
+- Round trips: 30, win rate 23.3%, average hold 21.1 days.
+- Short holds (≤3 days): 4 trips, 0% win rate.
+- Medium holds (4–14 days): 12 trips, 16.7% win rate.
+- Long holds (>14 days): 14 trips, 35.7% win rate.
+- Annualized turnover: ~235 trades/year.
+
+The turnover remains elevated relative to the weekly trade cap (3 trades in normal regime). The positive 1-day accuracy combined with negative 5-day accuracy points to a pattern of early gains reversing over the following week — a classic horizon mismatch worth monitoring.
+
+### Keyword Trends
+
+Risk-control vocabulary (loss aversion, CVaR, tail risk, cash buffer, mean reversion, momentum) has been falling over the last four weeks, while *trade cap*, *cooldown*, and *let winners run* are rising. *Prospect theory* remains absent (0% mention rate) despite being a declared pillar of the Behavioral_RL influence. Re-integrating explicit prospect-theory framing into the system prompt is flagged for the next prompt review.
+
+### Risk Snapshot
+
+| Metric | Value |
+|--------|-------|
+| VaR 95% | -0.78% |
+| CVaR 95% | -0.90% |
+| Max drawdown (est) | -1.02% |
+| Volatility (ann) | 6.9% |
+
+### Data Quality Note
+
+The comprehensive evaluation printed `vs Buy & Hold (SPY): nan%`. This indicates a missing or non-finite comparison series in the benchmark computation path, not a JSON serialization issue. It should be investigated before the next weekly report so that alpha/beta metrics are reliable again.
+
+### Immediate Takeaways
+
+1. The 1D vs 5D divergence is the most important signal: consider whether the system is taking profits too early or holding through reversals.
+2. Prospect-theory language has dropped out of the LLM reasoning; restore it in the prompt.
+3. Fix the SPY benchmark comparison in `src/evaluation.py` to recover `vs Buy & Hold` reporting.
+4. Keep weekly trade cap discipline: 1 slot remains until Friday’s reset.
