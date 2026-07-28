@@ -49,5 +49,69 @@
 - The equal-weight benchmark remains ahead of the strategy by 3.10 percentage points since inception.
 - A partial sale of SAN.PA was executed intraday (50% at €80.05); the remaining half is still the best-performing position at +8.99% unrealized.
 
----
+|---
 *Updated automatically by the Almost Surely Profitable daily pipeline.*
+
+---
+
+## Research Session Notes — 2026-07-28
+
+**Analysis artifacts:**
+- `decision_analysis_20260728.txt`
+- `behavioral_analysis_20260728.txt`
+- `comprehensive_evaluation_20260728.txt`
+- `keyword_trends_20260728.txt`
+
+### Key Metrics
+
+| Metric | Value |
+|--------|-------|
+| Portfolio value | €9,788.68 |
+| Cash | €2,624.11 (26.8%) |
+| Positions | 9 |
+| 5D forward win rate | 41.2% |
+| 5D buy accuracy | 37.5% |
+| 5D sell accuracy | 100.0% (1 sample) |
+| 1D forward win rate | 70.6% |
+| Round trips | 30 |
+| Round-trip win rate | 23.3% |
+| Avg hold period | 21.1 days |
+| Annualized turnover | 238 trades/year |
+| Post-cooldown round trips (since 2026-06-18) | 1, win rate 100% |
+| VaR 95% | -0.78% |
+| CVaR 95% | -0.90% |
+| Max drawdown (30D est) | -1.02% |
+| Volatility (30D ann) | 6.9% |
+
+### Behavioral Keywords (aggregate)
+
+- Core risk concepts remain highly internalized: `loss aversion` 91.1%, `CVaR` 74.4%, `tail risk` 71.1%, `drawdown` 72.2%.
+- Guardrail concepts are rising as intended: `trade cap` 17.8%, `cooldown` 7.8%, `let winners run` 6.7%.
+- `prospect theory` remains at **0.0%** — confirming it is a ghost concept in the current prompt (the prompt only mentions it in a comment, not as an operational instruction).
+
+### Fix: SPY Benchmark Horizon
+
+The evaluation summary previously compared the since-inception portfolio return against a 30-day SPY buy-and-hold window, producing a misleading alpha. After the fix, the benchmark is fetched from the earliest valid daily result (2026-02-17) to the latest result, so the alpha reflects the full live period.
+
+| | Before fix | After fix |
+|---|---|---|
+| Total return | -2.11% | -2.11% |
+| SPY buy-and-hold window | 30 days | Since 2026-02-17 |
+| vs Buy & Hold (SPY) | -2.34% (period mismatch) | **-10.92%** (same horizon) |
+
+The gap is now correctly measured and is large enough to be actionable: the LLM strategy is underperforming a passive SPY position by nearly 11 percentage points since inception. This is driven by the combination of high cash drag and poor buy-side accuracy (37.5% over 5 days), not by excessive risk.
+
+### Code Changes
+
+- `src/evaluation.py`: load all valid daily results for the benchmark date range.
+- `tests/test_evaluation.py`: added tests for `_get_benchmark_return` and for the period-consistency of the summary comparison.
+
+### External Inspiration
+
+- Reddit JSON API scan (r/algotrading) returned the standard HTML block page; network access remains restricted. Pivoted to local analysis as expected.
+
+### Next Steps
+
+1. Continue monitoring post-cooldown round trips once the sample is larger (target: 10+ round trips).
+2. Evaluate whether the buy-side accuracy can be improved by tightening entry criteria or by a small prompt experiment emphasizing regime-aware redeployment of cash.
+3. Consider whether `prospect theory` should be removed from the prompt comment and the keyword tracker, since it is operational dead weight.
