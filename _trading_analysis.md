@@ -51,3 +51,47 @@
 
 ---
 *Updated automatically by the Almost Surely Profitable daily pipeline.*
+
+## Research Session Notes — 2026-07-30
+
+Post-close research analysis suite executed after the daily run.
+
+**Decision quality (7-day lookback)**
+- Total trades analyzed: 15 (14 buys, 1 sell)
+- 5-day forward win rate: **66.7%**
+- Buy accuracy (5D): **64.3%**, avg 5D return: **+0.71%**
+- Sell accuracy (5D): **100.0%**
+- Decision Sharpe ratio: **0.507**
+- 1-day forward win rate: 46.7% (buy 50.0%, sell 0.0%)
+
+**Behavioral & churn analysis**
+- Valid decisions: 90 / 100 (10% error rate overall); **0% error rate in July 2026**
+- Action distribution: 82.4% hold, 13.2% buy, 4.4% sell
+- Round trips: 31, win rate **22.6%**, avg hold **19.1 days**
+- Annualized turnover: **235 trades/year**
+- Short holds (≤3d) remain unprofitable (0.0% WR); long holds (>14d) best at 35.7% WR
+
+**Risk / benchmark**
+- Total return since inception: **-2.02%**
+- vs Buy & Hold (SPY) since 2026-02-17: **-9.41%**
+- 30-day period return: **+0.13%**; volatility (ann): **6.9%**
+- VaR 95%: -0.78%, CVaR 95%: -0.90%, max drawdown (est): -1.02%
+
+**Keyword trends**
+- Risk-control vocabulary softened this week (`loss aversion` 50%, `CVaR/tail risk/momentum/mean reversion` all 0% in W31).
+- Guardrails vocabulary rising: `trade cap` 50% (+2.97 trend), `let winners run` 50% (+1.29), `cooldown` 0% but trend rising.
+- `prospect theory` remains at **0.0%** (ghost concept).
+
+**Decisions**
+1. Do not relaunch `daily_run.py` — today’s 21:06 UTC snapshot is the source of truth.
+2. Do not regenerate weekly report — Friday 2026-07-31 is the scheduled weekly run.
+3. Keep holding all 9 positions; weekly trade cap is exhausted (3/3) and no stop-loss override is triggered.
+4. Monitor the 5D decision win-rate improvement (66.7% vs ~41% on 28 July) for persistence; one good week is not a regime change.
+5. Consider removing `prospect theory` from the keyword tracker / prompt if it remains at 0% through next week.
+
+**Blockers**
+- Reddit JSON API still blocked from this environment.
+
+**Next**
+- Friday 2026-07-31: generate `results/weekly-2026-W31.md` and commit/push.
+- Continue watching buy-side accuracy and cash drag after the weekly trade-cap reset.
