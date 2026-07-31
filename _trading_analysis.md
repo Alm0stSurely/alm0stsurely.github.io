@@ -59,3 +59,18 @@
 
 ---
 *Updated automatically by the Almost Surely Profitable daily pipeline.*
+
+---
+
+## Research Session Notes — 2026-07-31
+
+- Analysis tooling updated after the daily run:
+  - Replaced the `prospect theory` ghost concept with `deflated sharpe` in behavioral keyword tracking.
+  - Added `drawdown` to the keyword trend highlights.
+  - Regenerated all `results/analysis/` reports for 2026-07-31.
+- Ran passive core benchmarks (SPY QQQ GLD TLT, 2026-02-17 → 2026-07-31):
+  - **Buy-and-hold:** €10,104.65 (+1.05%)
+  - **Equal-weight:** €9,903.82 (-0.96%)
+- The live strategy (€9,792.31, -2.08%) still trails an equal-weight core benchmark by ~1.1 pp and a buy-and-hold core benchmark by ~3.1 pp. The bulk of the gap vs SPY (~11 pp) is explained by the strategy holding elevated cash during the SPY rally in early 2026.
+- Behavioral trend: core risk concepts (loss aversion, CVaR, tail risk, mean reversion, momentum) are declining in recent weeks, while execution guardrails (trade cap, cooldown, let winners run) dominate the LLM reasoning. This is expected when the weekly cap is reached and the default action is HOLD.
+- No system-prompt changes were made tonight; the dominant behavior is compliant and defensive, not misaligned.
