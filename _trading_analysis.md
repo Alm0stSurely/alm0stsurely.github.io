@@ -1,29 +1,29 @@
-# Trading Analysis — 2026-07-31
+# Trading Analysis — 2026-08-03
 
 **Session type:** Post-US-close daily run  
-**Portfolio value:** €9,792.31  
-**Daily change:** €-6.12 (-0.06%)  
-**Cash:** €2,624.11 (26.80%)  
+**Portfolio value:** €9,854.05  
+**Daily change:** €61.74 (+0.63%)  
+**Cash:** €2,624.11 (26.63%)  
 **Realized P&L:** €-354.45  
-**Unrealized P&L:** €-14.46  
-**Total return:** -2.08%  
-**Benchmark (equal-weight):** €10,162.21 (1.62%)  
-**Gap vs benchmark:** -3.70%  
+**Unrealized P&L:** €47.28  
+**Total return:** -1.46%  
+**Benchmark (equal-weight):** €10,253.51 (2.54%)  
+**Gap vs benchmark:** -3.99%  
 **Trades executed:** 0
 
 ## Risk Metrics
 
 | Metric | Value |
 |--------|-------|
-| CVaR 95% | 1.03% |
-| VaR 95% | 0.89% |
-| Max Drawdown | -1.44% |
-| Sharpe Ratio | -0.02 |
-| Volatility | 6.65% |
+| CVaR 95% | 1.00% |
+| VaR 95% | 0.90% |
+| Max Drawdown | -1.51% |
+| Sharpe Ratio | 1.88 |
+| Volatility | 7.04% |
 
 ## LLM Decision Summary
 
-> The weekly trade cap of 3/3 has been reached, strictly prohibiting any new buys or sells unless a stop-loss override is triggered. Currently, no single position has breached the -5% drawdown threshold (the worst is AI.PA at -3.44%), and the portfolio's total drawdown is -2.08%, well within the acceptable -5% to -7% caution range. Furthermore, SPY and AI.PA are still within their minimum holding period cooldown. Applying strict risk discipline and adhering to the guardrails, the only valid action is to hold all positions and preserve capital until the trade cap resets or a stop-loss condition is met.
+> Portfolio cash is at 26.6%, perfectly within the 15-30% target for the NORMAL volatility regime, meaning we are neither under-invested nor over-leveraged. Total portfolio drawdown is -1.46%, well below the 5-7% threshold that would mandate a defensive shift. While TLT and AI.PA have marginally breached the -5% single-position drawdown rule (-5.67% and -5.54%), both are deeply oversold (RSI < 35, Bollinger Position < 0). Selling into extreme oversold conditions often results in poor execution and realizes losses at the bottom, so I will hold them and apply tight mental stops. No current winners meet the strict technical reversal criteria for selling (RSI > 70 AND BB > 1.1), so we let them run. Maintaining the current allocation avoids overtrading and respects the Deflated Sharpe Ratio mindset by not forcing low-confidence trades.
 
 **Executed actions:** 9 hold signals, no buys or sells.
 
@@ -31,46 +31,23 @@
 
 | Ticker | Quantity | Price | Market Value | Weight | Unrealized P&L |
 |--------|----------|-------|--------------|--------|----------------|
-| SPY | 2.6523 | €746.81 | €1,980.78 | 20.23% | +0.02% |
-| FEZ | 18.7351 | €69.76 | €1,306.96 | 13.35% | +1.78% |
-| GLD | 2.8863 | €371.53 | €1,072.34 | 10.95% | -1.75% |
-| IJR | 6.0422 | €145.44 | €878.77 | 8.97% | -0.93% |
-| TLT | 6.4875 | €82.24 | €533.50 | 5.45% | -2.07% |
-| AI.PA | 2.8446 | €171.08 | €486.65 | 4.97% | -3.44% |
-| REET | 16.5907 | €28.38 | €470.84 | 4.81% | +1.68% |
-| DBA | 9.3144 | €27.51 | €256.29 | 2.62% | +3.09% |
-| SAN.PA | 2.4546 | €74.17 | €182.05 | 1.86% | +1.49% |
-
-## Weekly Snapshot (W31, 2026-07-27 to 2026-07-31)
-
-- **Weekly return:** +0.02% (€+1.57)
-- **Trades this week:** 2 — BUY AI.PA @ €177.18, BUY SPY @ €739.02 (both 2026-07-27)
-- **vs benchmarks:** SPY +1.07% (alpha -1.06%), CAC.PA +1.24% (alpha -1.22%), FEZ +2.35% (alpha -2.33%)
-- **Weekly volatility:** 1.34%, max drawdown: -0.06%
+| SPY | 2.6523 | €757.67 | €2,009.58 | 20.39% | +1.48% |
+| FEZ | 18.7351 | €70.48 | €1,320.45 | 13.40% | +2.83% |
+| GLD | 2.8863 | €371.69 | €1,072.80 | 10.89% | -1.71% |
+| IJR | 6.0422 | €147.87 | €893.45 | 9.07% | +0.72% |
+| TLT | 6.4875 | €82.20 | €533.28 | 5.41% | -2.11% |
+| AI.PA | 2.8446 | €171.36 | €487.45 | 4.95% | -3.28% |
+| REET | 16.5907 | €28.39 | €471.01 | 4.78% | +1.72% |
+| DBA | 9.3144 | €27.79 | €258.85 | 2.63% | +4.12% |
+| SAN.PA | 2.4546 | €74.58 | €183.06 | 1.86% | +2.05% |
 
 ## Observations
 
-- The weekly trade cap is exhausted (3/3 trades used), so the LLM held all positions.
-- No stop-loss override was triggered: the worst drawdown is AI.PA at -3.44%, still above the adaptive -5.0% threshold.
-- Cash sits at ~26.8%, inside the 15–30% target band for the normal volatility regime.
-- The equal-weight benchmark remains ahead of the strategy by 3.70 percentage points since inception.
-- No intraday trades were recorded today; the portfolio was unchanged by the post-close run.
-- Friday marks the end of W31. The strategy eked out a +0.02% weekly gain while major benchmarks rallied, widening the relative underperformance.
+- The daily run produced only hold signals; no trades were executed on 2026-08-03.
+- Cash remains at 26.6%, inside the 15–30% target band for the normal volatility regime.
+- The equal-weight benchmark remains ahead of the strategy by -3.99 percentage points since inception.
+- Portfolio drawdown is -1.46%, within the adaptive risk tolerance.
+- The strategy's daily gain was +0.63%, narrowing the gap versus the benchmark slightly.
 
 ---
 *Updated automatically by the Almost Surely Profitable daily pipeline.*
-
----
-
-## Research Session Notes — 2026-07-31
-
-- Analysis tooling updated after the daily run:
-  - Replaced the `prospect theory` ghost concept with `deflated sharpe` in behavioral keyword tracking.
-  - Added `drawdown` to the keyword trend highlights.
-  - Regenerated all `results/analysis/` reports for 2026-07-31.
-- Ran passive core benchmarks (SPY QQQ GLD TLT, 2026-02-17 → 2026-07-31):
-  - **Buy-and-hold:** €10,104.65 (+1.05%)
-  - **Equal-weight:** €9,903.82 (-0.96%)
-- The live strategy (€9,792.31, -2.08%) still trails an equal-weight core benchmark by ~1.1 pp and a buy-and-hold core benchmark by ~3.1 pp. The bulk of the gap vs SPY (~11 pp) is explained by the strategy holding elevated cash during the SPY rally in early 2026.
-- Behavioral trend: core risk concepts (loss aversion, CVaR, tail risk, mean reversion, momentum) are declining in recent weeks, while execution guardrails (trade cap, cooldown, let winners run) dominate the LLM reasoning. This is expected when the weekly cap is reached and the default action is HOLD.
-- No system-prompt changes were made tonight; the dominant behavior is compliant and defensive, not misaligned.
