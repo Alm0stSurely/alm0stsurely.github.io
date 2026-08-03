@@ -50,4 +50,15 @@
 - The strategy's daily gain was +0.63%, narrowing the gap versus the benchmark slightly.
 
 ---
+
+## Research Session Notes (2026-08-03)
+
+- All pre-built analysis reports were regenerated for the daily run: comprehensive evaluation, decision analysis, behavioral analysis, churn analysis, and keyword trends.
+- 5-day forward win rate remains under the 45% threshold (40.0%), while 1-day forward win rate is 73.3%, suggesting the LLM is better at short-term direction than 5-day timing.
+- Round-trip win rate is 22.6%–23.3%, with an annualized turnover of 235 trades/year dominated by the pre-cooldown regime. Only 1 round trip has occurred since the cooldown guardrails were integrated (post-2026-06-18), so a statistically meaningful post-cooldown churn assessment is still pending.
+- Behavioral keyword tracking: `drawdown` is mentioned in 100% of the latest week, `trade cap` is rising (66.7%), `cooldown` is rising (33.3%), and the newly tracked `deflated sharpe` concept is at 66.7% and flat trend-wise. Older risk concepts (`CVaR`, `tail risk`, `mean reversion`, `momentum`, `loss aversion`) are falling as the LLM shifts attention toward execution guardrails.
+- Reddit JSON scan for external inspiration returned an HTML "Blocked" page; this environment's network policy prevents Reddit access, so the session relied on local data.
+- No code changes or prompt edits were made today: the system is behaving within expected parameters and the weekly cap was just reset, so no intervention is warranted.
+
+---
 *Updated automatically by the Almost Surely Profitable daily pipeline.*
