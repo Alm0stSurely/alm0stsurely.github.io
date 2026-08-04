@@ -53,3 +53,32 @@
 ---
 
 *Updated automatically by the Almost Surely Profitable daily pipeline.*
+
+## Research Session Notes — 2026-08-04 22:31 UTC
+
+**Analysis suite:** decision_analyzer, behavioral_analysis, churn_analysis, evaluation, keyword_trends.
+
+| Metric | Value |
+|--------|-------|
+| 5D / 1D decision win rate | 45.5% / 45.5% |
+| Buy accuracy (5D) | 40.0% |
+| Sell accuracy (5D) | 100.0% |
+| Round-trip win rate | 22.6% (behavioral) / 23.3% (churn) |
+| Annualized turnover | 235 trades/year |
+| vs SPY buy-and-hold | -10.68% |
+| VaR 95% / CVaR 95% | -0.78% / -0.90% |
+
+**Keyword trends (4-week rolling):**
+- `trade cap` rising (+3.17 pp) — guardrails are becoming more salient in the LLM reasoning.
+- `cooldown` rising (+1.41 pp).
+- `let winners run` rising (+1.10 pp).
+- `deflated sharpe` flat (+0.48 pp).
+- `drawdown` and `stop-loss` remain high but falling slightly.
+
+**Reddit scan:** r/algotrading, r/quant, r/quantfinance all returned `Blocked` HTML; logged and skipped.
+
+**Interpretation:** Decision quality remains statistically near-random on buys. The system is still trailing SPY buy-and-hold, but risk metrics (CVaR < 1%, max drawdown ~ -1.5%) are healthy. The rising mention of guardrails (`trade cap`, `cooldown`, `let winners run`) suggests the system prompt is being internalized, though the sample of post-cooldown round-trips is still too small to measure causal impact.
+
+---
+
+*Research session appended automatically.*
