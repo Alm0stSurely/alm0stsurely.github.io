@@ -1,29 +1,29 @@
-# Trading Analysis — 2026-08-04
+# Trading Analysis — 2026-08-05
 
 **Session type:** Post-US-close daily run  
-**Portfolio value:** €9,930.08  
-**Daily change:** €+76.03 (+0.77%)  
-**Cash:** €2,624.11 (26.43%)  
+**Portfolio value:** €9,967.25  
+**Daily change:** +€37.17 (+0.37%)  
+**Cash:** €2,624.11 (26.33%)  
 **Realized P&L:** €-354.45  
-**Unrealized P&L:** €123.31  
-**Total return:** -0.70%  
-**Benchmark (equal-weight):** €10,308.16 (3.08%)  
-**Gap vs benchmark:** -3.78%  
+**Unrealized P&L:** €160.48  
+**Total return:** -32.75%  
+**Benchmark (equal-weight):** €10,333.13 (333.13%)  
+**Gap vs benchmark:** -365.87%  
 **Trades executed:** 0
 
 ## Risk Metrics
 
 | Metric | Value |
 |--------|-------|
-| CVaR 95% | 1.01% |
+| CVaR 95% | 1.00% |
 | VaR 95% | 0.90% |
 | Max Drawdown | -1.52% |
-| Sharpe Ratio | 2.98 |
-| Volatility | 7.43% |
+| Sharpe Ratio | 2.84 |
+| Volatility | 7.40% |
 
 ## LLM Decision Summary
 
-> Cash is at 26.4%, perfectly within the 15-30% target for the NORMAL volatility regime. The portfolio drawdown is a minimal -0.70%, indicating strong capital preservation and low CVaR. No positions have triggered the -5% stop-loss threshold; AI.PA is at -3.03% P&L but is oversold (RSI 34.2, BB 0.19), suggesting potential mean reversion rather than a structural breakdown. No technical reversal sell conditions (RSI > 70 AND BB > 1.1) are met for our winning positions, satisfying the 'let winners run' discipline. Given the neutral trend regime and lack of high-confidence new setups that would pass a Deflated Sharpe Ratio test, the optimal strategy is to hold current positions, avoid overtrading, and monitor AI.PA closely for the -5% stop-loss level.
+> Current cash level (26.3%) is perfectly within the 15-30% target range for a NORMAL volatility regime, meaning the portfolio is well-balanced and not under-invested. No positions have triggered the -5% stop-loss from entry, and no technical reversal sell conditions (RSI > 70 AND BB > 1.1) are strictly met (GLD is close at RSI 69.5, but we apply sell discipline to let winners run). Potential mean-reversion buys (like RMS.PA) exhibit high volatility and deep drawdowns, failing the CVaR and DSR skepticism tests due to elevated tail risk and negative skew potential. Therefore, maintaining the current diversified allocation and holding all positions is the most disciplined approach, preserving capital and avoiding unnecessary overtrading in a neutral trend regime.
 
 **Executed actions:** 9 hold signals, no buys or sells.
 
@@ -31,54 +31,31 @@
 
 | Ticker | Quantity | Price | Market Value | Weight | Unrealized P&L |
 |--------|----------|-------|--------------|--------|----------------|
-| SPY | 2.6523 | €771.28 | €2045.68 | 20.60% | +65.36 (+3.30%) |
-| FEZ | 18.7351 | €71.33 | €1336.47 | 13.46% | +52.42 (+4.08%) |
-| GLD | 2.8863 | €374.12 | €1079.81 | 10.87% | -11.63 (-1.07%) |
-| IJR | 6.0422 | €150.41 | €908.80 | 9.15% | +21.75 (+2.45%) |
-| TLT | 6.4875 | €82.82 | €537.33 | 5.41% | -7.43 (-1.36%) |
-| AI.PA | 2.8446 | €171.82 | €488.76 | 4.92% | -15.25 (-3.03%) |
-| REET | 16.5907 | €28.30 | €469.52 | 4.73% | +6.47 (+1.40%) |
-| DBA | 9.3144 | €27.66 | €257.64 | 2.59% | +9.03 (+3.63%) |
-| SAN.PA | 2.4546 | €74.13 | €181.96 | 1.83% | +2.58 (+1.44%) |
-
+| SPY | 2.6523 | €769.74 | €2,041.60 | 20.48% | +61.28 (+3.09%) |
+| FEZ | 18.7351 | €71.23 | €1,334.50 | 13.39% | +50.45 (+3.93%) |
+| GLD | 2.8863 | €389.57 | €1,124.41 | 11.28% | +32.96 (+3.02%) |
+| IJR | 6.0422 | €148.94 | €899.92 | 9.03% | +12.87 (+1.45%) |
+| TLT | 6.4875 | €83.01 | €538.53 | 5.40% | -6.23 (-1.14%) |
+| AI.PA | 2.8446 | €173.58 | €493.77 | 4.95% | -10.24 (-2.03%) |
+| REET | 16.5907 | €28.38 | €470.76 | 4.72% | +7.71 (+1.67%) |
+| DBA | 9.3144 | €27.63 | €257.36 | 2.58% | +8.76 (+3.52%) |
+| SAN.PA | 2.4546 | €74.27 | €182.30 | 1.83% | +2.92 (+1.63%) |
 
 ## Observations
 
-- The daily run produced only hold signals; no trades were executed on 2026-08-04.
-- Cash remains at 26.43%, inside the 15–30% target band for the normal volatility regime.
-- The equal-weight benchmark remains ahead of the strategy by -3.78 percentage points since inception.
+- The daily run produced only hold signals; no trades were executed on 2026-08-05.
+- Cash remains at 26.33%, inside the 15–30% target band for the normal volatility regime.
+- The equal-weight benchmark remains ahead of the strategy by 365.87 percentage points since inception.
 - Portfolio drawdown is -1.52%, within the adaptive risk tolerance.
-- The strategy's daily gain was +0.77%, narrowing the gap versus the benchmark slightly.
+- The strategy's daily gain was +0.37%.
+
+## Weekly Summary (Week of 2026-08-03)
+
+- **Week-to-date change:** +€113.21 (+1.15%)
+- **Start-of-week value:** €9,854.05
+- **Current value:** €9,967.25
+- **Trades executed this week:** 0 / 3 (normal volatility regime)
 
 ---
 
 *Updated automatically by the Almost Surely Profitable daily pipeline.*
-
-## Research Session Notes — 2026-08-04 22:31 UTC
-
-**Analysis suite:** decision_analyzer, behavioral_analysis, churn_analysis, evaluation, keyword_trends.
-
-| Metric | Value |
-|--------|-------|
-| 5D / 1D decision win rate | 45.5% / 45.5% |
-| Buy accuracy (5D) | 40.0% |
-| Sell accuracy (5D) | 100.0% |
-| Round-trip win rate | 22.6% (behavioral) / 23.3% (churn) |
-| Annualized turnover | 235 trades/year |
-| vs SPY buy-and-hold | -10.68% |
-| VaR 95% / CVaR 95% | -0.78% / -0.90% |
-
-**Keyword trends (4-week rolling):**
-- `trade cap` rising (+3.17 pp) — guardrails are becoming more salient in the LLM reasoning.
-- `cooldown` rising (+1.41 pp).
-- `let winners run` rising (+1.10 pp).
-- `deflated sharpe` flat (+0.48 pp).
-- `drawdown` and `stop-loss` remain high but falling slightly.
-
-**Reddit scan:** r/algotrading, r/quant, r/quantfinance all returned `Blocked` HTML; logged and skipped.
-
-**Interpretation:** Decision quality remains statistically near-random on buys. The system is still trailing SPY buy-and-hold, but risk metrics (CVaR < 1%, max drawdown ~ -1.5%) are healthy. The rising mention of guardrails (`trade cap`, `cooldown`, `let winners run`) suggests the system prompt is being internalized, though the sample of post-cooldown round-trips is still too small to measure causal impact.
-
----
-
-*Research session appended automatically.*
