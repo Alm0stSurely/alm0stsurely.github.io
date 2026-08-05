@@ -6,9 +6,9 @@
 **Cash:** €2,624.11 (26.33%)  
 **Realized P&L:** €-354.45  
 **Unrealized P&L:** €160.48  
-**Total return:** -32.75%  
-**Benchmark (equal-weight):** €10,333.13 (333.13%)  
-**Gap vs benchmark:** -365.87%  
+**Total return:** -0.33%  
+**Benchmark (equal-weight):** €10,333.13 (3.33%)  
+**Gap vs benchmark:** -3.66%  
 **Trades executed:** 0
 
 ## Risk Metrics
@@ -45,7 +45,7 @@
 
 - The daily run produced only hold signals; no trades were executed on 2026-08-05.
 - Cash remains at 26.33%, inside the 15–30% target band for the normal volatility regime.
-- The equal-weight benchmark remains ahead of the strategy by 365.87 percentage points since inception.
+- The equal-weight benchmark remains ahead of the strategy by 3.66 percentage points since inception.
 - Portfolio drawdown is -1.52%, within the adaptive risk tolerance.
 - The strategy's daily gain was +0.37%.
 
