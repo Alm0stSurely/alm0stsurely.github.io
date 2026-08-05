@@ -56,6 +56,57 @@
 - **Current value:** €9,967.25
 - **Trades executed this week:** 0 / 3 (normal volatility regime)
 
+## Research Session Notes (2026-08-05 22:32 UTC)
+
+- `daily_run.py` was already executed this evening; the research suite ran on top of the live snapshot.
+- Analysis outputs:
+  - `decision_analysis_20260805.txt`
+  - `behavioral_analysis_20260805.txt`
+  - `comprehensive_evaluation_20260805.txt`
+  - `keyword_trends_20260805.txt`
+
+### Key metrics
+
+| Metric | Value |
+|---|---|
+| Portfolio value | €9,967.25 (-0.33% since inception) |
+| Cash | €2,624.11 (26.3%) |
+| Positions | 9 |
+| Equal-weight benchmark | €10,333.13 (+3.33%) |
+| Gap vs benchmark | -3.66 pp |
+| vs SPY buy-and-hold | -10.31 pp |
+| 5D decision win rate | 54.5% |
+| Buy accuracy 5D | 50.0% |
+| Sell accuracy 5D | 100.0% |
+| Round-trip win rate (behavioral / churn) | 22.6% / 23.3% |
+| Avg hold period | 19.1 – 21.1 days |
+| Annualized turnover | 233 trades/year |
+| VaR 95% / CVaR 95% | -0.78% / -0.90% |
+| Max drawdown (est.) | -1.02% |
+| Volatility (30d ann.) | 6.5% |
+| LLM error rate (90 valid decisions) | 10.0% |
+
+### Keyword trends (4-week rolling)
+
+- `stop-loss`: rising (+0.75 pp, 85.4% 4W avg)
+- `trade cap`: rising (+2.74 pp, 33.3% 4W avg)
+- `cooldown`: rising (+1.23 pp, 16.7% 4W avg)
+- `let winners run`: rising (+2.10 pp, 43.8% 4W avg)
+- `drawdown`: flat (~79.2% 4W avg)
+- Core risk concepts (`loss aversion`, `CVaR`, `tail risk`, `mean reversion`, `momentum`, `cash buffer`) falling on the 4W window.
+
+### Observations
+
+- The 5D forward win rate ticked up to 54.5%, but the 1D forward win rate is 27.3% with buy accuracy at 20.0%, so short-horizon timing remains noisy.
+- Sell-side accuracy is 100% on a tiny sample (1 sell over the last 6 trading days); this is not statistically meaningful.
+- Churn remains the dominant pathology: 23% round-trip win rate and ~233 trades/year. The post-2026-06-18 cohort shows only 1 round-trip so far (100% win), so it is too early to claim the cooldown guardrails have fixed churn.
+- Cash at 26.3% is inside the normal-regime target band. The gap vs the equal-weight benchmark narrowed slightly today (+0.37% on the portfolio).
+- Reddit JSON API scan returned `Blocked`; no external inspiration captured.
+
+### Hypothesis for next session
+
+If the short-horizon buy accuracy stays near random while the 5D accuracy hovers around 50%, the LLM is adding noise rather than signal on entry timing. A useful next experiment would be to tighten entry conviction — e.g., require a minimum combined score from trend, mean-reversion, and risk-filter signals before a buy can be issued — and measure the impact on win rate and turnover.
+
 ---
 
 *Updated automatically by the Almost Surely Profitable daily pipeline.*
