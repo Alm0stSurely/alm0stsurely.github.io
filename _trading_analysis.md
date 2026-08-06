@@ -58,4 +58,59 @@
 
 ---
 
+## Research Session Notes (2026-08-06)
+
+Post-close research analysis was run from the `almost-surely-profitable` repo.
+
+### Decision quality (6-day window with trades)
+
+| Metric | Value |
+|--------|-------|
+| Total trades analyzed | 11 |
+| 5-day win rate | 63.6% |
+| 5-day buy accuracy | 60.0% |
+| 1-day buy accuracy | 80.0% |
+| Sell accuracy (5D) | 100.0% |
+| Decision Sharpe | 0.330 |
+
+The 5-day win rate and buy accuracy improved markedly over the previous session (54.5% and 50.0% respectively). The sample is small (only 6 trading days contained executed trades), so the jump is encouraging but not yet statistically robust.
+
+### Behavioral snapshot
+
+- **Valid decisions:** 90 / 100
+- **LLM error rate:** 10.0%
+- **Hold actions:** 83.5% of all actions
+- **Buy / sell actions:** 12.1% / 4.3%
+- **Round-trip win rate:** 22.6% over 31 round trips
+- **Annualized turnover:** 233 trades/year
+- **Average hold period:** 19.1 days
+
+The churn pathology persists at the aggregate level, but the post-2026-06-18 cohort still has only 1 round trip (winning). More time is needed before drawing conclusions about the cooldown guardrails.
+
+### Keyword trends (4-week rolling)
+
+- **Rising:** `stop-loss`, `trade cap`, `cooldown`, `let winners run`
+- **Flat:** `drawdown`, `deflated sharpe`
+- **Falling:** `loss aversion`, `CVaR`, `tail risk`, `mean reversion`, `momentum`, `cash buffer`
+
+The guardrail concepts continue to gain salience, while the operational risk vocabulary is being displaced by execution constraints. This is consistent with the prompt's cooldown and trade-cap framing taking hold.
+
+### Risk and benchmark context
+
+- **Portfolio volatility (30D ann.):** 7.1%
+- **VaR 95% / CVaR 95%:** -0.78% / -0.90%
+- **vs equal-weight live benchmark:** -4.17 pp
+- **vs SPY buy-and-hold since 2026-02-17:** -13.85 pp (SPY +13.33%, strategy -0.52%)
+
+The gap versus SPY is structural: the strategy's cash-heavy start missed the SPY rally, while the equal-weight benchmark (which also holds non-SPY assets) is a fairer reference.
+
+### Decisions
+
+1. No code changes tonight; the system is stable and the improved short-term decision metrics do not yet justify a parameter tweak.
+2. Continue monitoring the post-cooldown churn cohort until at least 10 round trips are available.
+3. Keep tracking guardrail keyword trends as a proxy for prompt internalization.
+4. External Reddit scan returned `Blocked`; no external inspiration this session.
+
+---
+
 *Updated automatically by the Almost Surely Profitable daily pipeline.*
