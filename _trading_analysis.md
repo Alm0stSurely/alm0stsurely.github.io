@@ -62,6 +62,14 @@
 - **Benchmark weekly returns:** SPY +2.06%, CAC.PA +1.25%, FEZ +1.97%
 - **Weekly alpha vs SPY:** -0.47 pp; vs CAC.PA: +0.33 pp; vs FEZ: -0.39 pp
 
+## Research Session Notes (2026-08-07)
+
+- **Decision analyzer fix:** unobservable forward returns (e.g. today's GLD sell) now return `NaN` and are excluded from accuracy calculations instead of being scored as failed decisions. This removes a systematic downward bias in sell accuracy and win rate.
+- **Post-fix metrics (5-day forward):** 10 evaluable buy decisions, 0 evaluable sell decisions; buy accuracy 40.0%, 1-day buy accuracy 70.0%.
+- **Churn:** 32 round trips, 28.1% win rate, 28.7-day average hold, 235 trades/year annualized turnover. Post-2026-06-18 guardrails still show only one completed round trip, so the jury remains out on the cooldown impact.
+- **Guardrail internalization:** `stop-loss`, `trade cap`, `cooldown`, and `let winners run` mentions keep rising in the 4-week rolling window; `prospect theory` remains a ghost concept (0% mentions).
+- **Cash drag:** cash at 37.7% is above the normal-regime 15–30% target. The LLM did not find a high-conviction redeployment setup today, so dry powder is preserved for next week.
+
 ---
 
 *Updated automatically by the Almost Surely Profitable daily pipeline.*
