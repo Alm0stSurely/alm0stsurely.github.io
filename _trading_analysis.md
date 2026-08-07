@@ -65,6 +65,7 @@
 ## Research Session Notes (2026-08-07)
 
 - **Decision analyzer fix:** unobservable forward returns (e.g. today's GLD sell) now return `NaN` and are excluded from accuracy calculations instead of being scored as failed decisions. This removes a systematic downward bias in sell accuracy and win rate.
+- **Churn consistency fix:** `behavioral_analysis.py` now uses the same FIFO round-trip matcher as `churn_analysis.py`, eliminating the prior 33 vs 32 round-trip discrepancy.
 - **Post-fix metrics (5-day forward):** 10 evaluable buy decisions, 0 evaluable sell decisions; buy accuracy 40.0%, 1-day buy accuracy 70.0%.
 - **Churn:** 32 round trips, 28.1% win rate, 28.7-day average hold, 235 trades/year annualized turnover. Post-2026-06-18 guardrails still show only one completed round trip, so the jury remains out on the cooldown impact.
 - **Guardrail internalization:** `stop-loss`, `trade cap`, `cooldown`, and `let winners run` mentions keep rising in the 4-week rolling window; `prospect theory` remains a ghost concept (0% mentions).
