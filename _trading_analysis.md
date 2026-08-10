@@ -1,75 +1,62 @@
-# Trading Analysis — 2026-08-07
+# Trading Analysis — 2026-08-10
 
 **Session type:** Post-US-close daily run  
-**Portfolio value:** €10,010.04  
-**Daily change:** €+61.83 (+0.62%)  
-**Cash:** €3,774.74 (37.71%)  
+**Portfolio value:** €9,990.10  
+**Daily change:** €-19.94 (-0.20%)  
+**Cash:** €2,566.82 (25.69%)  
 **Realized P&L:** €-295.27  
-**Unrealized P&L:** €144.09  
-**Total return:** 0.10%  
-**Benchmark (equal-weight):** €10,418.55 (4.19%)  
-**Gap vs benchmark:** -4.09 pp  
-**Trades executed:** 1
+**Unrealized P&L:** €124.15  
+**Total return:** -0.10%  
+**Benchmark (equal-weight):** €10,454.09 (4.54%)  
+**Gap vs benchmark:** -4.64 pp  
+**Trades executed:** 2
 
 ## Risk Metrics
 
 | Metric | Value |
 |--------|-------|
-| CVaR 95% | 1.02% |
-| VaR 95% | 0.93% |
-| Max Drawdown | -1.37% |
-| Sharpe Ratio | 2.55 |
-| Volatility | 6.77% |
+| CVaR 95% | 1.05% |
+| VaR 95% | 0.86% |
+| Max Drawdown | -1.21% |
+| Sharpe Ratio | 1.48 |
+| Volatility | 6.09% |
 
 ## LLM Decision Summary
 
-> GLD is sold (100%) because it triggers the confirmed technical reversal condition for taking profits: RSI (72.8) > 70 AND Bollinger Position (1.19) > 1.1. This locks in a +5.38% gain and protects against downside, aligning with loss aversion principles. FEZ is held despite high RSI because its Bollinger Position (0.98) has not breached the 1.1 threshold, allowing the winner to run. AI.PA is held but monitored closely as its drawdown (-4.39%) approaches the -5% stop-loss limit.
+> Current cash is ~37.8%, which is above the 15-30% target for a NORMAL volatility regime, indicating the portfolio is under-invested. To align with the target, I am deploying ~35% of available cash into two highly diversifying assets. MC.PA (RSI 47.4, BB 0.55) offers a neutral entry point and low correlation with SPY (-0.38). PDBC (RSI 52.5, BB 0.82) provides broad commodity exposure with strong negative correlations to both SPY (-0.63) and TLT (-0.88), significantly improving portfolio diversification and reducing tail risk (CVaR). No sell conditions are met: FEZ has RSI > 70 but its Bollinger Position (0.90) is below the 1.1 threshold for a confirmed technical reversal. Position drawdowns for TLT and AI.PA are within acceptable limits (<5% P&L), so we hold and let them recover. This approach applies a Deflated Sharpe Ratio mindset by favoring uncorrelated assets over chasing high-momentum, highly correlated US equities.
 
-**Executed actions:** SELL GLD 100%, 8 hold signals.
+**Executed actions:** BUY MC.PA, BUY PDBC, 8 hold signals.
 
 ## Open Positions
 
 | Ticker | Quantity | Price | Market Value | Weight | Unrealized P&L |
 |--------|----------|-------|--------------|--------|----------------|
-| SPY | 2.6523 | €773.12 | €2,050.56 | 20.49% | +70.24 (3.55%) |
-| FEZ | 18.7351 | €71.86 | €1,346.31 | 13.45% | +62.25 (4.85%) |
-| IJR | 6.0422 | €148.94 | €899.92 | 8.99% | +12.87 (1.45%) |
-| AI.PA | 2.8446 | €172.70 | €491.26 | 4.91% | -12.74 (-2.53%) |
-| REET | 16.5907 | €28.23 | €468.27 | 4.68% | +5.23 (1.13%) |
-| TLT | 6.4875 | €82.75 | €536.84 | 5.36% | -7.91 (-1.45%) |
-| DBA | 9.3144 | €27.63 | €257.36 | 2.57% | +8.76 (3.52%) |
-| SAN.PA | 2.4546 | €75.28 | €184.78 | 1.85% | +5.40 (3.01%) |
+| SAN.PA | 2.4546 | €75.55 | €185.44 | 1.86% | +6.07 (3.38%) |
+| DBA | 9.3144 | €27.82 | €259.13 | 2.59% | +10.53 (4.23%) |
+| SPY | 2.6523 | €773.07 | €2,050.43 | 20.52% | +70.11 (3.54%) |
+| IJR | 6.0422 | €148.03 | €894.42 | 8.95% | +7.37 (0.83%) |
+| FEZ | 18.7351 | €71.71 | €1,343.50 | 13.45% | +59.44 (4.63%) |
+| TLT | 6.4875 | €82.04 | €532.27 | 5.33% | -12.49 (-2.29%) |
+| REET | 16.5907 | €27.86 | €462.22 | 4.63% | -0.83 (-0.18%) |
+| AI.PA | 2.8446 | €171.54 | €487.96 | 4.88% | -16.04 (-3.18%) |
+| MC.PA | 1.5648 | €482.45 | €754.95 | 7.56% | +0.00 (0.00%) |
+| PDBC | 25.4049 | €17.83 | €452.97 | 4.53% | +0.00 (0.00%) |
 
 ## Trades Executed Today
 
-| Ticker | Action | Price | Realized P&L |
-|--------|--------|-------|--------------|
-| GLD | SELL 100% | €398.51 | +€29.38 |
+| Ticker | Action | Price | Notional |
+|--------|--------|-------|----------|
+| MC.PA | BUY | €482.45 | €754.95 |
+| PDBC | BUY | €17.83 | €452.97 |
 
 ## Observations
 
-- GLD was sold at a +5.38% unrealized gain after RSI crossed above 70 and Bollinger Position exceeded 1.1, satisfying the profit-taking technical reversal rule.
-- Cash rose to 37.71%, above the 15–30% target band for the normal volatility regime, creating dry powder for Monday if setups present themselves.
-- AI.PA remains the weakest position at -2.53% latent P&L and is approaching the -5% adaptive stop-loss threshold; it is the primary downside watch.
-- The equal-weight benchmark remains ahead of the strategy by 4.09 percentage points since inception.
-- No cooldown guardrails were triggered; the weekly trade count is 1/3 in the normal volatility regime.
-
-## Weekly Summary (Week of 2026-08-03 to 2026-08-07)
-
-- **Weekly return:** +1.58% (€9,854.05 → €10,010.04)
-- **Trading days:** 3
-- **Trades executed this week:** 1 / 3 (normal volatility regime)
-- **Benchmark weekly returns:** SPY +2.06%, CAC.PA +1.25%, FEZ +1.97%
-- **Weekly alpha vs SPY:** -0.47 pp; vs CAC.PA: +0.33 pp; vs FEZ: -0.39 pp
-
-## Research Session Notes (2026-08-07)
-
-- **Decision analyzer fix:** unobservable forward returns (e.g. today's GLD sell) now return `NaN` and are excluded from accuracy calculations instead of being scored as failed decisions. This removes a systematic downward bias in sell accuracy and win rate.
-- **Churn consistency fix:** `behavioral_analysis.py` now uses the same FIFO round-trip matcher as `churn_analysis.py`, eliminating the prior 33 vs 32 round-trip discrepancy.
-- **Post-fix metrics (5-day forward):** 10 evaluable buy decisions, 0 evaluable sell decisions; buy accuracy 40.0%, 1-day buy accuracy 70.0%.
-- **Churn:** 32 round trips, 28.1% win rate, 28.7-day average hold, 235 trades/year annualized turnover. Post-2026-06-18 guardrails still show only one completed round trip, so the jury remains out on the cooldown impact.
-- **Guardrail internalization:** `stop-loss`, `trade cap`, `cooldown`, and `let winners run` mentions keep rising in the 4-week rolling window; `prospect theory` remains a ghost concept (0% mentions).
-- **Cash drag:** cash at 37.7% is above the normal-regime 15–30% target. The LLM did not find a high-conviction redeployment setup today, so dry powder is preserved for next week.
+- Cash fell from 37.71% to 25.69% after deploying into two diversifying positions.
+- MC.PA (LVMH) adds French luxury exposure at a neutral RSI/BB entry; PDBC (commodities) provides negative correlation to both SPY and TLT, lowering portfolio tail risk.
+- No sell conditions were triggered; FEZ remains below the technical-reversal Bollinger threshold despite an elevated RSI.
+- TLT and AI.PA are the only positions in latent drawdown, both well within the normal-regime 5% stop-loss guardrail.
+- The equal-weight benchmark continues to lead the strategy by 4.64 percentage points since inception.
+- Cooldown status: 2/3 trades this week in the normal volatility regime.
 
 ---
 
