@@ -62,6 +62,56 @@ No trades executed.
 - The strategy trails the equal-weight benchmark by 4.57 percentage points since inception.
 - Cooldown status: 2/3 trades this week in the normal volatility regime.
 
+## Research Session Notes — 2026-08-11 22:31 UTC
+
+**Analysis artifacts:**
+- `decision_analysis_20260811.txt`
+- `behavioral_analysis_20260811.txt`
+- `comprehensive_evaluation_20260811.txt`
+- `keyword_trends_20260811.txt`
+
+### Decision quality (5-day forward window)
+
+| Metric | Value |
+|--------|-------|
+| Trades analyzed | 10 (9 buys, 1 sell) |
+| Overall win rate | **60.0%** |
+| Buy accuracy | **66.7%** |
+| Sell accuracy | **0.0%** *(still 1 observation)* |
+| Avg 5D forward return (buys) | **+0.48%** |
+| Decision Sharpe | **0.272** |
+
+### Risk and performance (30 days)
+
+| Metric | Value |
+|--------|-------|
+| Period return | **+1.87%** |
+| Annualized volatility | **6.8%** |
+| VaR 95% | **-0.68%** |
+| CVaR 95% | **-0.90%** |
+| Max drawdown | **-1.02%** |
+| vs Buy & Hold SPY (since 2026-02-17) | **-14.01 pp** |
+
+### Behavioral / churn
+
+- Valid decisions: 90/100 (10% error rate overall; 0% in 2026-08 so far).
+- Action distribution: hold 83.8%, buy 11.9%, sell 4.2%.
+- Round trips: 32, win rate 28.1%, average hold 28.7 days.
+- Annualized turnover remains elevated at **236 trades/year**.
+
+### Keyword trends (4-week rolling)
+
+Concepts **falling**: `loss aversion`, `CVaR`, `tail risk`, `mean reversion`, `momentum`, `cash buffer`.  
+Concepts **rising**: `trade cap`, `cooldown`, `let winners run`, `deflated sharpe`.  
+`drawdown` and `stop-loss` remain flat/high. The LLM is talking less about risk theory and more about execution discipline — a sensible shift given the neutral regime and limited weekly trade allowance.
+
+### Research decisions
+
+1. **Keep current parameters unchanged.** Cash at 25.7% sits inside the normal-regime target band; no stop-loss breaches; no high-conviction technical signal.
+2. **Continue monitoring sell accuracy.** The single sell in the forward window (GLD, 2026-08-07) keeps showing 0% accuracy because the price kept rising. Wait for more sell observations before adjusting the exit logic.
+3. **Hold the weekly trade cap at 3** in the normal regime. The post-2026-06-18 cohort shows better round-trip performance; turnover discipline appears to be improving.
+4. **Reddit scan blocked** (`whoa there, pardner!`). No external inspiration collected this session; continue relying on internal metrics.
+
 ---
 
 *Updated automatically by the Almost Surely Profitable daily pipeline.*
