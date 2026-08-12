@@ -65,3 +65,77 @@ No trades executed.
 ---
 
 *Updated automatically by the Almost Surely Profitable daily pipeline.*
+
+---
+
+## Research Session Notes — 2026-08-12
+
+**Session type:** Post-close research analysis  
+**Daily run status:** Already executed at 21:06 UTC — no re-run to avoid clobbering data.  
+**Weekly report:** Skipped (not Friday).
+
+### Research artefacts generated
+- `decision_analysis_20260812.txt`
+- `behavioral_analysis_20260812.txt`
+- `comprehensive_evaluation_20260812.txt`
+- `keyword_trends_20260812.txt`
+
+### Portfolio snapshot (30-day trends)
+| Metric | Value |
+|--------|-------|
+| Total value | €9,969.38 |
+| Cash | €2,566.82 (25.7%) |
+| 30-day period return | +2.82% |
+| 30-day volatility (ann.) | 6.0% |
+| Realized P&L | €-295.27 |
+| vs Buy & Hold SPY (since 2026-02-17) | -13.75 pp |
+
+### LLM decision quality (5-day forward window)
+| Metric | Value |
+|--------|-------|
+| Trades analyzed | 10 (9 buys, 1 sell) |
+| Overall win rate | 60.0% |
+| Buy accuracy | 66.7% |
+| Sell accuracy | 0.0% (1 observation) |
+| Avg 5D forward return (buys) | +0.07% |
+| Decision Sharpe | -0.074 |
+
+### LLM decision quality (1-day forward window)
+| Metric | Value |
+|--------|-------|
+| Overall win rate | 70.0% |
+| Buy accuracy | 77.8% |
+| Sell accuracy | 0.0% |
+
+### Behavioral / churn metrics
+| Metric | Value |
+|--------|-------|
+| Valid decisions | 90/100 (10% errors) |
+| Action distribution | hold 83.8%, buy 11.9%, sell 4.2% |
+| Round trips | 32 |
+| Churn win rate | 28.1% |
+| Avg hold period | 28.7 days |
+| Annualized turnover | 236 trades/year |
+| Post-2026-06-18 cohort | 1 RT, 100% win, 21.5d avg hold, 153 trades/yr |
+
+### Keyword trends (4-week rolling)
+- **Rising:** `trade cap`, `cooldown`, `let winners run`, `deflated sharpe`
+- **Falling:** `loss aversion`, `CVaR`, `tail risk`, `mean reversion`, `momentum`, `cash buffer`
+- **Flat:** `drawdown`, `stop-loss`
+
+### Observations from research
+- The 5-day forward Decision Sharpe turned slightly negative (-0.074) despite a 60% win rate, because the average magnitude of losing forward returns outweighed the winners. The 1-day forward picture is brighter (70% win / 77.8% buy accuracy), suggesting the LLM is better at next-day direction than 5-day momentum.
+- Sell-side accuracy is still undefined with only one sell in the forward window (GLD, 2026-08-07). We need more sell observations before changing exit logic.
+- Cash has stabilized around 25.7% for three sessions, inside the normal-regime 15–30% band. The LLM is not over-deploying.
+- Post-2026-06-18 churn looks healthier (lower turnover, higher win rate), but the sample is tiny (1 round trip). Wait for more data before declaring a regime change in churn behavior.
+- External inspiration scan (Reddit JSON API) returned the usual `whoa there, pardner!` block. No external ideas collected tonight.
+
+### Decisions
+1. Keep current risk and position-management parameters unchanged.
+2. Continue monitoring 1-day vs 5-day decision accuracy; if the divergence persists, consider splitting the decision-evaluation horizon.
+3. Wait for at least 5 sell decisions before revising the exit strategy.
+4. Re-try alternative external sources (arXiv quant-finance, SSRN) once a stable fetch path is available.
+
+---
+
+*Research session artifacts committed to `almost-surely-profitable` via `feat/research-2026-08-12`.*
