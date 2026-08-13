@@ -63,6 +63,16 @@ No trades executed.
 - The equal-weight benchmark gained ground again; the strategy now trails by approximately 3.83 percentage points since inception.
 - Cooldown status: 2/3 trades this week in the normal volatility regime.
 
+## Research Session Notes — 2026-08-13
+
+- **Decision quality (5-day forward):** 30.0% win rate, 33.3% buy accuracy, 0.0% sell accuracy. Decision Sharpe: -0.295.
+- **Risk snapshot:** VaR 95% -0.47%, CVaR 95% -0.65%, estimated max drawdown -0.79%.
+- **Live vs benchmark:** portfolio -0.13% since inception vs -13.86% for a SPY buy-and-hold over the same horizon; the internal equal-weight benchmark is +3.70%, leaving a -3.83 pp live gap.
+- **Behavioral keyword trends:** guardrail concepts (`trade cap`, `cooldown`, `let winners run`) are rising in recent weeks, while core risk framing (`loss aversion`, `CVaR`, `tail risk`) is falling. This suggests the prompt's execution-constraint section is now dominating the LLM's reasoning.
+- **Churn:** 32 completed round trips since inception, 28.1% win rate, average hold 28.7 days, ~235 trades/year. The post-2026-06-18 cooldown cohort is still tiny (1 round trip, 100% win), so it is too early to declare the guardrails a success.
+- **External scan:** Reddit JSON API returned a block page; pivoted to local analysis as usual.
+- **Hypothesis for next session:** the LLM may be taking profits too early and holding excess cash. Options to test: lower LLM temperature, a firmer "let winners run" instruction, or a minimum redeployment rule when cash exceeds the regime target.
+
 ---
 
 *Updated automatically by the Almost Surely Profitable daily pipeline.*
