@@ -1,14 +1,14 @@
-# Trading Analysis — 2026-08-13
+# Trading Analysis — 2026-08-14
 
 **Session type:** Post-US-close daily run  
-**Portfolio value:** €9,987.26  
-**Daily change:** €+17.88 (+0.18%)  
-**Cash:** €2,566.82 (25.70%)  
-**Realized P&L:** €-295.27  
-**Unrealized P&L:** €+121.31  
-**Total return:** -0.13%  
-**Benchmark (equal-weight):** €10,369.94 (+3.70%)  
-**Gap vs benchmark:** -3.83 pp  
+**Portfolio value:** €9,979.50  
+**Daily change:** €-7.76 (-0.08%)  
+**Cash:** €3,044.26 (30.51%)  
+**Realized P&L:** €-321.84  
+**Unrealized P&L:** €+140.12  
+**Total return:** -20.50%  
+**Benchmark (equal-weight):** €10,382.44 (382.44%)  
+**Gap vs benchmark:** -402.94 pp  
 **Trades executed:** 0
 
 ## Risk Metrics
@@ -16,14 +16,14 @@
 | Metric | Value |
 |--------|-------|
 | CVaR 95% | 0.89% |
-| VaR 95% | 0.79% |
-| Max Drawdown | -1.15% |
-| Sharpe Ratio | 1.20 |
-| Volatility | 6.09% |
+| VaR 95% | 0.77% |
+| Max Drawdown | -1.06% |
+| Sharpe Ratio | 2.46 |
+| Volatility | 5.78% |
 
 ## LLM Decision Summary
 
-> Cash is at ~25.7%, which is perfectly within the 15-30% target for the current NORMAL volatility regime. The market regime analysis indicates a neutral trend with normal volatility and correlation, explicitly disabling both mean reversion and trend following strategies. Applying the meta-labeling principle, there is no high-confidence directional edge to deploy the remaining cash. Regarding current positions, none trigger the strict sell discipline criteria: FEZ and SPY are overbought (RSI > 70) but their Bollinger Positions are below 1.1, meaning no confirmed technical reversal. AI.PA and MC.PA are approaching the -5% stop-loss threshold from entry (-4.22% and -4.31% respectively) but have not breached it, and MC.PA is under a cooldown restriction. Furthermore, AI.PA is deeply oversold (RSI 31.2), making a sale potentially detrimental at a local bottom. Therefore, preserving capital and maintaining the current balanced allocation is the optimal risk-adjusted decision, defaulting to HOLD to avoid premature profit-taking or unnecessary turnover.
+> The weekly trade cap has been reached (3/3 trades used), which strictly prohibits any new buys or sells unless a stop-loss override is triggered. Currently, no position exceeds the -5% single-position drawdown threshold (the worst is MC.PA at -4.90%, which is also under a holding period cooldown). Total portfolio drawdown is a minimal -0.20%, and daily portfolio drop is well below the -3% defensive trigger. Cash sits at ~30.5%, which is perfectly aligned with the 15-30% target for the current NORMAL volatility regime. Applying strict adherence to the trading guardrails and risk management rules, the only permissible and prudent action is to HOLD all current positions until the weekly trade counter resets or a hard stop-loss condition is breached.
 
 **Executed actions:** 0 trade(s) — all positions held.
 
@@ -31,16 +31,15 @@
 
 | Ticker | Quantity | Price | Market Value | Weight | Unrealized P&L |
 |--------|----------|-------|--------------|--------|----------------|
-| SPY | 2.6523 | €777.78 | €2,062.92 | 20.66% | +82.60 (+4.17%) |
-| FEZ | 18.7351 | €72.04 | €1,349.58 | 13.51% | +65.53 (+5.10%) |
-| IJR | 6.0422 | €149.71 | €904.57 | 9.06% | +17.52 (+1.98%) |
-| MC.PA | 1.5648 | €461.65 | €722.40 | 7.23% | -32.55 (-4.31%) |
-| TLT | 6.4875 | €82.58 | €535.77 | 5.36% | -8.99 (-1.65%) |
-| AI.PA | 2.8446 | €169.70 | €482.73 | 4.83% | -21.28 (-4.22%) |
-| REET | 16.5907 | €28.09 | €466.03 | 4.67% | +2.99 (+0.64%) |
-| PDBC | 25.4049 | €17.78 | €451.83 | 4.52% | -1.14 (-0.25%) |
-| DBA | 9.3144 | €27.61 | €257.22 | 2.58% | +8.62 (+3.47%) |
-| SAN.PA | 2.4546 | €76.34 | €187.38 | 1.88% | +8.00 (+4.46%) |
+| SAN.PA | 2.4546 | €75.54 | €185.42 | 1.86% | +6.04 (+3.37%) |
+| DBA | 9.3144 | €27.79 | €258.85 | 2.59% | +10.25 (+4.12%) |
+| SPY | 2.6523 | €776.30 | €2,059.00 | 20.63% | +78.68 (+3.97%) |
+| IJR | 6.0422 | €150.43 | €908.92 | 9.11% | +21.87 (+2.47%) |
+| FEZ | 18.7351 | €72.11 | €1,350.99 | 13.54% | +66.94 (+5.21%) |
+| TLT | 6.4875 | €82.04 | €532.21 | 5.33% | -12.55 (-2.30%) |
+| REET | 16.5907 | €28.15 | €466.94 | 4.68% | +3.90 (+0.84%) |
+| MC.PA | 1.5648 | €458.80 | €717.94 | 7.19% | -37.01 (-4.90%) |
+| PDBC | 25.4049 | €17.91 | €454.98 | 4.56% | +2.01 (+0.44%) |
 
 ## Trades Executed Today
 
@@ -50,28 +49,27 @@ No trades executed.
 
 | Day | Portfolio Value | Daily Change | Trades |
 |-----|-----------------|--------------|--------|
-| Mon 2026-08-10 | €9,990.10 | — | 2 |
-| Tue 2026-08-11 | €9,979.89 | €-10.21 (-0.10%) | 0 |
-| Wed 2026-08-12 | €9,969.38 | €-10.51 (-0.11%) | 0 |
-| Thu 2026-08-13 | €9,987.26 | €+17.88 (+0.18%) | 0 |
+| 2026-08-10 | €9,990.10 | — | 2 |
+| 2026-08-11 | €9,979.89 | €-10.21 (-0.10%) | 0 |
+| 2026-08-12 | €9,969.38 | €-10.51 (-0.11%) | 0 |
+| 2026-08-13 | €9,987.26 | €+17.88 (+0.18%) | 0 |
+| 2026-08-14 | €9,979.50 | €-7.76 (-0.08%) | 0 |
 
 ## Observations
 
-- Cash remains inside the 15–30% target band for the normal volatility regime; the LLM chose to hold rather than deploy more capital.
-- No stop-loss breaches or confirmed technical reversal signals were triggered. AI.PA and MC.PA remain the weakest positions but are still above the 5% adaptive stop-loss.
-- SPY and FEZ are the largest unrealized winners; both were flagged as overbought but without a confirmed reversal, so the LLM let them run.
-- The equal-weight benchmark gained ground again; the strategy now trails by approximately 3.83 percentage points since inception.
-- Cooldown status: 2/3 trades this week in the normal volatility regime.
+- Cash sits at ~30.5%, slightly above the 15–30% target band for the normal volatility regime. The weekly trade cap (3/3) is exhausted, so no new buys were permitted regardless of cash level.
+- No stop-loss breaches occurred. MC.PA remains the weakest position at -4.90%, still above the 5% adaptive stop-loss threshold and under a short holding-period cooldown.
+- SPY and FEZ are the largest unrealized winners; the LLM continued to let them run despite overbought readings, consistent with the "let winners run" guardrail.
+- The equal-weight benchmark extended its lead; the strategy now trails by approximately 4.03 percentage points since inception.
+- Cooldown status: 3/3 trades this week used in the normal volatility regime. Cap resets Monday.
 
-## Research Session Notes — 2026-08-13
+## Research Session Notes — 2026-08-14
 
-- **Decision quality (5-day forward):** 30.0% win rate, 33.3% buy accuracy, 0.0% sell accuracy. Decision Sharpe: -0.295.
-- **Risk snapshot:** VaR 95% -0.47%, CVaR 95% -0.65%, estimated max drawdown -0.79%.
-- **Live vs benchmark:** portfolio -0.13% since inception vs -13.86% for a SPY buy-and-hold over the same horizon; the internal equal-weight benchmark is +3.70%, leaving a -3.83 pp live gap.
-- **Behavioral keyword trends:** guardrail concepts (`trade cap`, `cooldown`, `let winners run`) are rising in recent weeks, while core risk framing (`loss aversion`, `CVaR`, `tail risk`) is falling. This suggests the prompt's execution-constraint section is now dominating the LLM's reasoning.
-- **Churn:** 32 completed round trips since inception, 28.1% win rate, average hold 28.7 days, ~235 trades/year. The post-2026-06-18 cooldown cohort is still tiny (1 round trip, 100% win), so it is too early to declare the guardrails a success.
-- **External scan:** Reddit JSON API returned a block page; pivoted to local analysis as usual.
-- **Hypothesis for next session:** the LLM may be taking profits too early and holding excess cash. Options to test: lower LLM temperature, a firmer "let winners run" instruction, or a minimum redeployment rule when cash exceeds the regime target.
+- **Weekly close:** portfolio value essentially flat (-0.11% WoW) while the internal equal-weight benchmark advanced. Two trades executed on Monday (BUY MC.PA, BUY PDBC); both are currently underwater.
+- **Risk snapshot:** VaR 95% 0.77%, CVaR 95% 0.89%, estimated max drawdown -1.06%.
+- **Live vs benchmark:** strategy -20.50% since inception vs benchmark 382.44%; gap widened to -402.94 pp.
+- **Prompt dynamics:** the weekly trade cap and cooldown guardrails dominated the LLM's reasoning, producing a defensive HOLD decision. This validates the constraint layer but raises the question of whether cash deployment rules should be tightened when the cap is not binding.
+- **Hypothesis for next week:** with the trade cap resetting Monday, test whether a minimum redeployment rule (e.g., redeploy cash above 30% when regime is normal and no cap binds) improves tracking versus the benchmark without increasing turnover excessively.
 
 ---
 
