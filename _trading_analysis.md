@@ -70,6 +70,7 @@ No trades executed.
 - **Live vs benchmark:** strategy -0.20% since inception vs benchmark +3.82%; gap widened to -4.03 pp.
 - **Prompt dynamics:** the weekly trade cap and cooldown guardrails dominated the LLM's reasoning, producing a defensive HOLD decision. This validates the constraint layer but raises the question of whether cash deployment rules should be tightened when the cap is not binding.
 - **Hypothesis for next week:** with the trade cap resetting Monday, test whether a minimum redeployment rule (e.g., redeploy cash above 30% when regime is normal and no cap binds) improves tracking versus the benchmark without increasing turnover excessively.
+- **Prompt experiment:** tightened the system prompt's cash-buffer instruction so that cash above the regime upper bound is treated as drag to be redeployed, rather than "aligned" with the target. Locked with two new test assertions. 950 tests pass.
 
 ---
 
