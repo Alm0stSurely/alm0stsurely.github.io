@@ -6,9 +6,9 @@
 **Cash:** €3,044.26 (30.51%)  
 **Realized P&L:** €-321.84  
 **Unrealized P&L:** €+140.12  
-**Total return:** -20.50%  
-**Benchmark (equal-weight):** €10,382.44 (382.44%)  
-**Gap vs benchmark:** -402.94 pp  
+**Total return:** -0.20%  
+**Benchmark (equal-weight):** €10,382.44 (+3.82%)  
+**Gap vs benchmark:** -4.03 pp  
 **Trades executed:** 0
 
 ## Risk Metrics
@@ -67,7 +67,7 @@ No trades executed.
 
 - **Weekly close:** portfolio value essentially flat (-0.11% WoW) while the internal equal-weight benchmark advanced. Two trades executed on Monday (BUY MC.PA, BUY PDBC); both are currently underwater.
 - **Risk snapshot:** VaR 95% 0.77%, CVaR 95% 0.89%, estimated max drawdown -1.06%.
-- **Live vs benchmark:** strategy -20.50% since inception vs benchmark 382.44%; gap widened to -402.94 pp.
+- **Live vs benchmark:** strategy -0.20% since inception vs benchmark +3.82%; gap widened to -4.03 pp.
 - **Prompt dynamics:** the weekly trade cap and cooldown guardrails dominated the LLM's reasoning, producing a defensive HOLD decision. This validates the constraint layer but raises the question of whether cash deployment rules should be tightened when the cap is not binding.
 - **Hypothesis for next week:** with the trade cap resetting Monday, test whether a minimum redeployment rule (e.g., redeploy cash above 30% when regime is normal and no cap binds) improves tracking versus the benchmark without increasing turnover excessively.
 
