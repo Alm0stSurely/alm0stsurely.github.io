@@ -1,4 +1,4 @@
-# Daily Trading Analysis — 2026-08-17
+# Daily Trading Analysis — 2026-08-18
 
 *Post-US close session for the Almost Surely Profitable paper-trading portfolio.*
 
@@ -6,68 +6,67 @@
 
 | Metric | Value |
 |--------|------:|
-| Portfolio value | **€9,967.08** |
-| Cash | **€1,955.29** (19.62%) |
-| Positions value | **€8,011.79** |
+| Portfolio value | **€9,939.26** |
+| Cash | **€1,955.29** (19.67%) |
+| Positions value | **€7,983.98** |
 | Open positions | 10 |
-| Daily change | €-12.42 (-0.12%) |
-| Total return (since inception) | -0.33% |
+| Daily change | €-27.82 (-0.28%) |
+| Total return (since inception) | -0.61% |
 | Realized P&L | €-360.88 |
-| Unrealized P&L | €166.74 |
+| Unrealized P&L | €138.92 |
 
 ## Benchmark
 
 | | Strategy | Equal-weight benchmark |
 |--------|----------:|-----------------------:|
-| Total value | €9,967.08 | €10,357.39 |
-| Total return | -0.33% | 3.57% |
-| **Gap vs benchmark** | | **-3.90 pp** |
+| Total value | €9,939.26 | €10,292.87 |
+| Total return | -0.61% | +2.93% |
+| **Gap vs benchmark** | | **-3.54 pp** |
 
 ## Risk Metrics
 
 | Metric | Value |
 |--------|------:|
-| Sharpe ratio | 3.43 |
-| Volatility (annualized) | 5.65% |
-| Max drawdown | -0.86% |
-| VaR 95% | 0.77% |
-| CVaR 95% | 0.98% |
+| Sharpe ratio | 2.81 |
+| Volatility (annualized) | 5.75% |
+| Max drawdown | -0.89% |
+| VaR 95% | 0.56% |
+| CVaR 95% | 0.84% |
 
 ## Trades
 
 ### Intraday (before daily close)
-- **SELL MC.PA**: 1.5648 @ €457.50 = €715.91
+No intraday alerts triggered today.
 
 ### Post-close (LLM decision)
-- **BUY OR.PA**: 3.5569 @ €370.00 = €1316.06
-- **BUY AIR.PA**: 2.2815 @ €214.25 = €488.82
+No trades executed.
 
 ## Open Positions
 
 | Ticker | Quantity | Avg Price | Price | Market Value | Unrealized P&L | Weight |
 |--------|---------:|----------:|------:|-------------:|---------------:|-------:|
-| SPY | 2.6523 | €746.64 | €772.68 | €2049.39 | +69.08 (3.49%) | 20.56% |
-| FEZ | 18.7351 | €68.54 | €71.92 | €1347.34 | +63.28 (4.93%) | 13.52% |
-| OR.PA | 3.5569 | €370.00 | €370.00 | €1316.06 | +0.00 (0.00%) | 13.20% |
-| IJR | 6.0422 | €146.81 | €149.80 | €905.15 | +18.10 (2.04%) | 9.08% |
-| TLT | 6.4875 | €83.97 | €81.36 | €527.86 | -16.90 (-3.10%) | 5.30% |
-| AIR.PA | 2.2815 | €214.25 | €214.25 | €488.82 | +0.00 (0.00%) | 4.90% |
-| REET | 16.5907 | €27.91 | €27.98 | €464.21 | +1.16 (0.25%) | 4.66% |
-| PDBC | 25.4049 | €17.83 | €18.23 | €463.13 | +10.16 (2.24%) | 4.65% |
-| DBA | 9.3144 | €26.69 | €28.12 | €261.97 | +13.37 (5.38%) | 2.63% |
-| SAN.PA | 2.4546 | €73.08 | €76.54 | €187.87 | +8.50 (4.74%) | 1.88% |
+| SPY | 2.6523 | €746.64 | €767.39 | €2035.36 | +55.05 (+2.78%) | 20.48% |
+| FEZ | 18.7351 | €68.54 | €71.34 | €1336.56 | +52.51 (+4.09%) | 13.45% |
+| OR.PA | 3.5569 | €370.00 | €375.20 | €1334.55 | +18.50 (+1.41%) | 13.43% |
+| IJR | 6.0422 | €146.81 | €147.68 | €892.28 | +5.23 (+0.59%) | 8.98% |
+| TLT | 6.4875 | €83.97 | €81.64 | €529.64 | -15.12 (-2.77%) | 5.33% |
+| AIR.PA | 2.2815 | €214.25 | €210.05 | €479.24 | -9.58 (-1.96%) | 4.82% |
+| REET | 16.5907 | €27.91 | €27.88 | €462.46 | -0.58 (-0.13%) | 4.65% |
+| PDBC | 25.4049 | €17.83 | €18.19 | €462.24 | +9.27 (+2.05%) | 4.65% |
+| DBA | 9.3144 | €26.69 | €28.03 | €261.08 | +12.48 (+5.02%) | 2.63% |
+| SAN.PA | 2.4546 | €73.08 | €77.63 | €190.55 | +11.17 (+6.23%) | 1.92% |
 
 ## LLM Reasoning Excerpt
 
-> Cash is at 37.7%, exceeding the 30% upper bound for the NORMAL volatility regime, causing capital drag. To align with the 15-30% target, I am deploying ~55% of available cash (~20% of total portfolio) into two diversified European equities. OR.PA offers a strong risk-adjusted entry near the lower Bollinger Band (0.04) with neutral RSI (45.3), while AIR.PA provides healthy momentum (RSI 57.8) without being overbought. This avoids high correlation with existing US holdings (SPY, IJR). No sell conditions are met: winners like FEZ and SPY lack confirmed technical reversals (Bollinger > 1.1), and TLT's -3.10% drawdown is within the -5% stop-loss tolerance. Applying strict sell discipline to let winners run and avoid premature profit-taking driven by loss aversion.
+> The weekly trade cap (3/3) has been reached, strictly prohibiting any new buys or non-emergency sells. A review of current positions shows no stop-loss overrides are triggered: the largest unrealized loss is TLT at -2.77%, which is well within the -5% single-position drawdown tolerance, and there is no >3% daily portfolio drop. Furthermore, cash sits at ~19.6%, perfectly aligned with the 15-30% target for a NORMAL volatility regime. Applying loss aversion and discipline, we avoid forced trades and default to holding all positions until the weekly cap resets or a genuine risk-management threshold is breached.
 
 ## Notes
 
-- The weekly trade cap for the normal volatility regime is now at **3/3**.
-- The intraday monitor closed **MC.PA** on a **-5.17%** stop-loss this morning before the daily run.
-- The evening run redeployed excess cash into **OR.PA** and **AIR.PA**, bringing cash back toward the 15–30% target band.
-- **TLT** remains the only position in negative territory; it is still within the adaptive stop-loss tolerance.
+- The weekly trade cap for the normal volatility regime remains at **3/3**.
+- No stop-loss overrides were triggered; the largest unrealized loss is **TLT** at -2.77%.
+- Cash remains within the 15–30% target band (~19.7%).
+- Strategy continues to trail the equal-weight benchmark by 3.54 percentage points.
 
 ---
 
-*Last updated: 2026-08-17T21:07:32.518459*
+*Last updated: 2026-08-18T21:06:27.022793*
