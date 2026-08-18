@@ -70,3 +70,49 @@ No trades executed.
 ---
 
 *Last updated: 2026-08-18T21:06:27.022793*
+
+## Research Session Notes — 2026-08-18
+
+Post-close research session. No new trades (weekly cap 3/3 already reached).
+
+### Decision-quality snapshot (5-day forward window)
+
+| Metric | Value |
+|--------|------:|
+| Win rate | 40.0% |
+| Buy accuracy | 44.4% |
+| Sell accuracy | 0.0% (1 observation only) |
+| Decision Sharpe | 0.324 |
+
+### Churn / round-trip health
+
+| Cohort | Round trips | Win rate | Avg hold |
+|--------|------------:|---------:|---------:|
+| All-time | 33 | 27.3% | 28.0 days |
+| Post-2026-06-18 cooldown | 2 | 50.0% | 14.0 days |
+| Annualized turnover | ~243 trades/year | | |
+
+The post-cooldown sample is still tiny; no conclusion on turnover yet.
+
+### Cash-drag diagnosis
+
+- 86 live days analyzed; cash was above the regime target on 64 of them (74.4%).
+- 54 days were **cash-drag** (above target with trade-cap headroom) vs. only 10 **cap-binding** days.
+- Cash today is 19.7%, inside the NORMAL 15–30% target band. The prompt tightening from 2026-08-14 appears to be holding.
+
+### Keyword trends
+
+Rising concepts in the latest rolling window: `drawdown`, `stop-loss`, `trade cap`, `cooldown`, `let winners run`. Core risk terms (`CVaR`, `tail risk`, `mean reversion`, `cash buffer`) are falling. The LLM is reasoning more about execution guardrails than first-principles risk — consistent with the cap-binding regime we are currently in.
+
+### Code / tooling
+
+- Merged `fix/cash-drag-report-non-finite-guards` into `dev` and `main`. Adds guards against non-finite portfolio values in `cash_drag_report.py` plus micro-benchmarks.
+- Test suite: **987 passed**.
+- Reddit external scan blocked (expected); relied on local analysis only.
+
+### Hypotheses for next session
+
+1. **Cash target is holding.** Two consecutive days inside the NORMAL band after the 2026-08-14 prompt change. Continue monitoring through Friday.
+2. **Weekly cap is the binding constraint until Monday reset.** With 3/3 trades used this week, expect no new buys until W35 unless a stop-loss triggers.
+3. **Sell accuracy is still noise** (1 observation). Do not tune sell logic.
+4. **Churn cohort remains immature.** Wait for ≥10 post-cooldown round trips before drawing conclusions.
