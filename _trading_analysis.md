@@ -69,4 +69,60 @@ No trades executed.
 
 ---
 
-*Last updated: 2026-08-19T21:06:19.081058*
+## Research Session Notes
+
+Post-close research session (2026-08-19 22:31 UTC).
+
+### Evaluation Snapshot
+
+| Metric | Value |
+|--------|------:|
+| 30-day period return | +3.31% |
+| 30-day volatility (ann) | 5.8% |
+| VaR 95% | -0.34% |
+| CVaR 95% | -0.59% |
+| Total return since inception | -0.05% |
+| vs Buy & Hold (SPY) since 2026-02-17 | -13.04% |
+| Equal-weight benchmark gap | -3.60 pp |
+
+### Decision Quality (5-day forward)
+
+- **Win rate:** 55.6% (up from 40.0% yesterday)
+- **Buy accuracy:** 62.5% (up from 44.4%)
+- **Sell accuracy:** 0.0% (still 1 observation — do not tune)
+- **Decision Sharpe:** 0.057
+
+### Behavioral Signals
+
+- Action distribution remains disciplined: 85.0% HOLD, 10.8% BUY, 4.1% SELL.
+- Guardrail concepts (`drawdown`, `stop-loss`, `trade cap`, `cooldown`) are rising in the latest rolling window.
+- Core risk concepts (`loss aversion`, `CVaR`, `tail risk`, `mean reversion`, `cash buffer`) are falling as attention shifts to execution constraints.
+- Error rate remains 0% in July and August.
+
+### Cash-Drag Diagnosis
+
+| Category | Count | Share |
+|----------|------:|------:|
+| Days analyzed | 87 | 100% |
+| Within target | 23 | 26.4% |
+| Above target | 64 | 73.6% |
+| Cash-drag days (above target with cap headroom) | 54 | 62.1% |
+| Cap-binding days (above target but cap reached) | 10 | 11.5% |
+
+Today is a cap-binding day: the weekly trade cap is 3/3, so no new buys are allowed even though cash is within target. Cash level is 19.6%, inside the NORMAL 15–30% band for the third consecutive session.
+
+### Churn / Round-Trip Findings
+
+- 33 round trips since inception; win rate 27.3%; avg hold 28.0 days.
+- Post-2026-06-18 cooldown cohort: 2 round trips, 50% win, 14.0-day avg hold, ~159 trades/year. Sample remains tiny.
+
+### Hypotheses for Next Session
+
+1. **Cash target is holding.** Three consecutive days inside the NORMAL band. Continue monitoring through Friday.
+2. **Weekly cap is the binding constraint until Monday reset.** With 3/3 trades used this week, expect no new buys until W35 unless a stop-loss triggers.
+3. **Win-rate improvement is encouraging but sample is small.** The 5-day forward win rate jumped to 55.6% because the recent OR.PA and AIR.PA buys have moved favorably; do not over-interpret until n ≥ 20 trades.
+4. **No code changes today.** The system is behaving as designed; no prompt or guardrail tweaks needed.
+
+---
+
+*Last updated: 2026-08-19T22:31:20*
