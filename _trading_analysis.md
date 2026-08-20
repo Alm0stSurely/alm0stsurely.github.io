@@ -80,4 +80,72 @@ No trades executed.
 
 ---
 
-*Last updated: 2026-08-20T21:06:14.675873*
+## Research Session Notes
+
+Research session run at 2026-08-20T22:31 UTC, after the US market close.
+
+### Analysis Run
+
+- `src/evaluation.py` → `results/analysis/comprehensive_evaluation_20260820.txt`
+- `src/analysis/decision_analyzer.py` → `results/analysis/decision_analysis_20260820.txt`
+- `src/analysis/behavioral_analysis.py` → `results/analysis/behavioral_analysis_20260820.txt`
+- `src/analysis/churn_analysis.py` → stdout
+- `src/analysis/keyword_trends.py` → `results/analysis/keyword_trends_20260820.txt`
+- `src/analysis/cash_drag_report.py` → `results/analysis/cash_drag_20260820.txt`
+- Full test suite: **1004 passed**.
+
+### Key Numbers
+
+| Metric | Value |
+|--------|------:|
+| 30-day period return | +2.76% |
+| 30-day volatility (ann) | 5.9% |
+| VaR 95% | -0.34% |
+| CVaR 95% | -0.59% |
+| Est. max drawdown | -0.79% |
+| Total return since inception | -0.33% |
+| vs Buy & Hold (SPY) since 2026-02-17 | -13.56% |
+| 5-day forward win rate | 66.7% |
+| Buy accuracy (5D) | 75.0% |
+| Sell accuracy (5D) | 0.0% (1 observation) |
+| Decision Sharpe (5D) | 0.339 |
+
+### Behavioral Findings
+
+- **Action distribution (last 90 valid decisions):** 85.0% HOLD, 10.8% BUY, 4.1% SELL — discipline remains reasonable.
+- **Error rate:** 0% in July and August; API stability continues.
+- **Keyword trends:** guardrail concepts (`drawdown`, `stop-loss`, `trade cap`, `cooldown`, `let winners run`) are rising in the latest window. Core risk concepts (`loss aversion`, `CVaR`, `tail risk`, `mean reversion`, `cash buffer`, `deflated sharpe`) are falling. The LLM is shifting attention to execution constraints while the cap is binding.
+- **Cash level:** 19.6% today, inside the NORMAL 15–30% target for the fourth consecutive session.
+
+### Cash-Drag Diagnosis
+
+| Category | Count | Share |
+|----------|------:|------:|
+| Days analyzed | 88 | 100% |
+| Within target | 24 | 27.3% |
+| Above target | 64 | 72.7% |
+| Below target | 0 | 0.0% |
+| **Cash-drag days** (above target with cap headroom) | **54** | **61.4%** |
+| **Cap-binding days** (above target but cap reached) | **10** | **11.4%** |
+
+Interpretation: historical cash drag remains the dominant pattern, but the last four days are inside target. Today is a cap-binding situation: no trades because the weekly trade cap is exhausted, not because the LLM is ignoring cash drag.
+
+### Churn / Round-Trip Findings
+
+- 33 completed round trips since inception; win rate 27.3%; avg hold 28.0 days.
+- Post-2026-06-18 cooldown cohort: 2 round trips, 50% win, 14.0-day avg hold, ~156 trades/year. Sample remains tiny.
+
+### External Scan
+
+- Reddit `r/algotrading/top.json?t=week&limit=3` blocked at network level (returns HTML "Blocked" page). Pivoted to local analysis as expected.
+
+### Hypotheses for Next Session
+
+1. **Cash target is holding.** Four consecutive days inside the NORMAL band. Continue monitoring through Friday; if cash stays inside target, the cash-drag episode is likely resolved.
+2. **Weekly cap is the binding constraint until Monday reset.** With 3/3 trades used this week, expect no new buys until W35 unless a stop-loss triggers.
+3. **Sell accuracy remains meaningless on a sample of 1.** Do not tune sell logic.
+4. **Win-rate improvement is encouraging but small-sample.** The 5-day forward win rate rose to 66.7% because recent buys moved favorably; wait until n ≥ 20 trades before drawing conclusions.
+
+---
+
+*Last updated: 2026-08-20T22:31 UTC*
