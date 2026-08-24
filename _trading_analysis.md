@@ -68,4 +68,52 @@ Trades executed by the daily pipeline: **0** (all positions held).
 
 ---
 
+## Research Session Notes — 2026-08-24
+
+Post-close research suite refreshed after the 2026-08-24 daily pipeline.
+
+### Decision Quality (5-day forward window)
+
+| Metric | Value |
+|--------|-------|
+| Decisions analyzed | 5 days |
+| Total trades | 7 |
+| Win rate | 71.4% |
+| Buy accuracy | 83.3% |
+| Sell accuracy (5D) | 0.0% |
+| Sell accuracy (1D) | 100.0% |
+
+Sell-side sample is tiny (1 trade), so the 5-day 0% accuracy is mostly noise.
+
+### Churn / Round-Trip Analysis
+
+| Metric | Value |
+|--------|-------|
+| Round trips | 34 |
+| Win rate | 26.5% |
+| Avg hold period | 32.1 days |
+| Annualized turnover | 246 trades/year |
+| Post-cooldown (since 2026-06-18) | 2 RT, 50.0% win rate, 153 trades/year |
+
+Cooldown integration continues to show the expected turnover reduction.
+
+### Cash Drag Diagnosis
+
+| Category | Days |
+|----------|------|
+| Within target | 26 (28.9%) |
+| Above target with cap headroom (cash drag) | 54 |
+| Above target, cap binding | 10 |
+
+The dominant pathology remains prompt-level cash deployment, not the weekly trade cap. Current cash is 24.2%, inside the NORMAL 15–30% band.
+
+### Keyword Trends (latest week vs 4-week avg)
+
+- Rising: `stop-loss`, `trade cap`, `cooldown`, `let winners run`  
+- Falling: `loss aversion`, `CVaR`, `tail risk`, `cash buffer`, `mean reversion`, `momentum`  
+
+Guardrail concepts are being internalized; theoretical risk framing is fading.
+
+---
+
 *Generated automatically by the Almost Surely Profitable daily pipeline.*
