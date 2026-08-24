@@ -1,154 +1,71 @@
 ---
 layout: page
-title: "Trading Analysis — 2026-08-21"
-date: 2026-08-21
+title: "Trading Analysis — 2026-08-24"
+date: 2026-08-24
 ---
 
-# Daily Trading Analysis — 2026-08-21
+# Daily Trading Analysis — 2026-08-24
 
 ## Portfolio Snapshot
 
 | Metric | Value |
 |--------|-------|
-| Total Value | €9,989.20 |
-| Cash | €1,955.29 |
-| Positions Value | €8,033.91 |
-| Daily Change | €22.49 (+0.23%) |
-| Total Return (inception) | -0.11% |
-| Realized P&L | €-360.88 |
-| Unrealized P&L | €188.86 |
-| Equal-Weight Benchmark | €10,376.29 (+3.76%) |
-| Gap vs Benchmark | -3.87% |
+| Total Value | €9,998.56 |
+| Cash | €2,418.67 |
+| Positions Value | €7,579.89 |
+| Daily Change | €9.36 (+0.09%) |
+| Total Return (inception) | -0.01% |
+| Realized P&L | €-386.32 |
+| Unrealized P&L | €223.65 |
+| Equal-Weight Benchmark | €10,366.14 (+3.66%) |
+| Gap vs Benchmark | -3.68% |
 
 ## Open Positions
 
 | Ticker | Quantity | Price | Market Value | Unrealized P&L |
 |--------|----------|-------|--------------|----------------|
-| SAN.PA | 2.45 | €78.91 | €193.69 | 7.98% |
-| DBA | 9.31 | €28.32 | €263.78 | 6.11% |
-| FEZ | 18.74 | €71.78 | €1344.81 | 4.73% |
-| PDBC | 25.40 | €18.66 | €474.06 | 4.66% |
-| OR.PA | 3.56 | €386.45 | €1374.57 | 4.45% |
-| SPY | 2.65 | €765.65 | €2030.75 | 2.55% |
-| REET | 16.59 | €28.02 | €464.87 | 0.39% |
-| IJR | 6.04 | €147.27 | €889.83 | 0.31% |
-| TLT | 6.49 | €82.04 | €532.24 | -2.30% |
-| AIR.PA | 2.28 | €203.95 | €465.32 | -4.81% |
+| SPY | 2.65 | €763.48 | €2,024.99 | +2.26% |
+| OR.PA | 3.56 | €393.30 | €1,398.93 | +6.30% |
+| FEZ | 18.74 | €71.60 | €1,341.44 | +4.47% |
+| IJR | 6.04 | €146.76 | €886.75 | -0.03% |
+| TLT | 6.49 | €82.57 | €535.64 | -1.67% |
+| PDBC | 25.40 | €18.47 | €469.10 | +3.56% |
+| REET | 16.59 | €28.17 | €467.36 | +0.93% |
+| DBA | 9.31 | €28.29 | €263.50 | +5.99% |
+| SAN.PA | 2.45 | €78.29 | €192.17 | +7.13% |
 
 ## Risk Metrics
 
 | Metric | Value |
 |--------|-------|
-| Volatility (ann.) | 6.68% |
-| Max Drawdown | -1.03% |
-| Sharpe Ratio | 2.83 |
-| Sortino Ratio | 4.37 |
-| CVaR 95% | 0.98% |
-| VaR 95% | 0.64% |
+| Volatility (ann.) | 6.19% |
+| Max Drawdown | -0.95% |
+| Sharpe Ratio | 2.74 |
+| Sortino Ratio | 4.21 |
+| CVaR 95% | 0.95% |
+| VaR 95% | 0.63% |
 
-## Trades
+## Intraday Activity
 
-No trades executed — all positions held.
+| Time | Ticker | Action | Quantity | Proceeds | Realized P&L |
+|------|--------|--------|----------|----------|-------------|
+| 08:07 | AIR.PA | SELL | 2.28 | €463.38 | €-25.44 |
+
+## Post-Close LLM Decision
+
+Trades executed by the daily pipeline: **0** (all positions held).
 
 ## LLM Reasoning
 
-> The weekly trade cap of 3/3 has been reached, strictly prohibiting any new buys or sells unless a stop-loss override is triggered. Currently, no position exceeds the -5% single-position drawdown threshold from average cost (AIR.PA is at -4.81%), and the portfolio's total inception drawdown is well within safe limits (-0.11% total return, -1.03% max drawdown). Additionally, OR.PA and AIR.PA are still within their minimum holding period cooldowns. Adhering to the strict trade cap constraints and applying a CVaR mindset to preserve capital without forcing trades, the only valid action is to hold all current positions until the cap resets or a definitive stop-loss trigger occurs.
+> Cash is at 24.2%, which is comfortably within the 15-30% target range for a NORMAL volatility regime, meaning we are not under-invested and do not need to force capital deployment. No current positions have breached the -5% single-position stop-loss threshold, and none exhibit the confirmed technical reversal signals (RSI > 70 AND Bollinger Position > 1.1) required to trigger a sell under our strict sell discipline. The market regime analysis indicates a neutral trend with mean-reversion and trend-following disabled, suggesting a lack of strong directional edge. Applying a Deflated Sharpe Ratio mindset and loss aversion principles, we avoid forcing trades in a low-signal environment to prevent negative expectancy from transaction costs and false discoveries. Preserving capital and maintaining the current well-diversified portfolio is the optimal risk-adjusted decision.
 
 ## Notes
 
-- The weekly trade cap (3/3 in normal volatility regime) has been reached, so no new deployments were permitted unless a stop-loss override triggered.
-- AIR.PA remains the weakest position at -4.81% unrealized, still above the 5% adaptive stop-loss threshold.
-- SAN.PA and DBA lead unrealized gains at +7.98% and +6.11% respectively.
-- Portfolio volatility is elevated at 6.68% annualized; the risk posture remains conservative with ~19.6% cash.
+- Cash stands at **24.2%**, inside the NORMAL volatility target range of 15–30%.
+- No position breaches the adaptive 5% stop-loss threshold; the weakest holding is TLT at -1.67%.
+- The portfolio remains under-exposed versus the equal-weight benchmark (gap ≈ -3.68%), but the LLM elected not to force deployment given neutral trend/mean-reversion signals and a healthy cash buffer.
+- Intraday stop-loss discipline exited AIR.PA at a small loss (€-25.44), keeping the single-position risk budget intact.
 
 ---
 
 *Generated automatically by the Almost Surely Profitable daily pipeline.*
-
-## Research Session Notes — 2026-08-21
-
-### Weekly Summary (W34)
-
-| Metric | Value |
-|--------|-------|
-| Start of week | €9,967.08 |
-| End of week | €9,989.20 |
-| Weekly return | +0.22% |
-| vs SPY | +1.12% alpha |
-| vs CAC.PA | +1.68% alpha |
-| vs FEZ | +0.43% alpha |
-| Max drawdown (week) | -0.28% |
-| Volatility (ann.) | 6.53% |
-| Sharpe | 1.86 |
-
-### Analysis Run
-
-- `src/evaluation.py` → `results/analysis/comprehensive_evaluation_20260821.txt`
-- `src/analysis/decision_analyzer.py` → `results/analysis/decision_analysis_20260821.txt`
-- `src/analysis/behavioral_analysis.py` → `results/analysis/behavioral_analysis_20260821.txt`
-- `src/analysis/churn_analysis.py` → stdout
-- `src/analysis/keyword_trends.py` → `results/analysis/keyword_trends_20260821.txt`
-- `src/analysis/cash_drag_report.py` → `results/analysis/cash_drag_20260821.txt`
-
-Full test suite: **1012 passed**.
-
-### Key Numbers
-
-| Metric | Value |
-|--------|-------|
-| 30-day period return | +3.09% |
-| 30-day volatility (ann) | 5.9% |
-| VaR 95% | -0.34% |
-| CVaR 95% | -0.59% |
-| Est. max drawdown | -0.79% |
-| Total return since inception | -0.11% |
-| vs Buy & Hold (SPY) since 2026-02-17 | -12.38% |
-| 5-day forward win rate | 66.7% |
-| Buy accuracy (5D) | 75.0% |
-| Sell accuracy (5D) | 0.0% (1 observation) |
-
-### Behavioral Findings
-
-- **Action distribution (last 90 valid decisions):** 85.4% HOLD, 10.4% BUY, 4.1% SELL.
-- **Error rate:** 0% in July and August.
-- **Keyword trends:** `drawdown`, `stop-loss`, `trade cap`, `cooldown`, and `let winners run` are rising as the cap binds. Core risk concepts (`loss aversion`, `CVaR`, `tail risk`, `mean reversion`, `cash buffer`, `deflated sharpe`) are falling.
-- **Cash level:** 19.6%, inside the NORMAL 15–30% target for the fifth consecutive session.
-
-### Cash-Drag Diagnosis
-
-Over the full 89-day history:
-
-| Category | Count | Share |
-|----------|------:|------:|
-| Days analyzed | 89 | 100% |
-| Within target | 25 | 28.1% |
-| Above target | 64 | 71.9% |
-| Below target | 0 | 0.0% |
-| Cash-drag days (above target with cap headroom) | 54 | 60.7% |
-| Cap-binding days (above target but cap reached) | 10 | 11.2% |
-
-The last five sessions have all been inside target, so the recent cash-drag episode appears resolved. The current no-trade outcome is cap-binding (3/3 trades used this week), not prompt-induced drag.
-
-### Churn / Round-Trip Findings
-
-- 33 completed round trips since inception; win rate 27.3%; avg hold 28.0 days.
-- Post-2026-06-18 cooldown cohort: 2 round trips, 50% win, 14.0-day avg hold, ~154 trades/year. Sample remains tiny.
-
-### External Scan
-
-- Reddit `r/algotrading/top.json?t=week&limit=3` blocked at network level (HTML "Blocked" page). Pivoted to local analysis as expected.
-
-### Code Changes
-
-- No code changes today. The reporting guards merged yesterday handled this week's CAC benchmark data cleanly.
-
-### Hypotheses for Next Week
-
-1. **Cash target is holding.** Five consecutive days inside the NORMAL band; continue monitoring.
-2. **Weekly cap resets Monday.** With 3/3 trades used in W34, expect no new buys until W35 unless a stop-loss triggers.
-3. **Sell accuracy remains meaningless** on a sample of 1; do not tune sell logic.
-4. **5-day win rate is encouraging but small-sample.** Wait until n ≥ 20 trades before drawing conclusions.
-
----
-
-*Research session artifacts committed to `Alm0stSurely/almost-surely-profitable`.*
