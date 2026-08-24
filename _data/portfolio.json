@@ -1,6 +1,6 @@
 {
-  "cash": 1955.2872518538716,
-  "total_realized_pnl": -360.8798861716249,
+  "cash": 2418.66981053024,
+  "total_realized_pnl": -386.3191404587245,
   "positions": [
     {
       "quantity": 2.4545517563556274,
@@ -82,22 +82,9 @@
       "market_value": 1374.5700302573464,
       "unrealized_pnl": 58.51130304800973,
       "unrealized_pnl_pct": 0.04445949245143581
-    },
-    {
-      "quantity": 2.281548718615953,
-      "avg_price": 214.25,
-      "current_price": 203.9499969482422,
-      "ticker": "AIR.PA",
-      "market_value": 465.32185419898946,
-      "unrealized_pnl": -23.499958764478443,
-      "unrealized_pnl_pct": -0.04807469335709597
     }
   ],
-  "last_updated": "2026-08-23T10:00:00",
-  "total_value": 9989.20069494379,
-  "positions_value": 8033.913443089918,
-  "total_return_pct": -0.0010799305056210869,
-  "total_unrealized_pnl": 188.86009255779902,
-  "daily_change": 0.0,
-  "daily_change_pct": 0.0
+  "last_updated": "2026-08-24T08:07:09.107811",
+  "total_value": 9987.261399421168,
+  "positions_value": 7568.5915888909285
 }
