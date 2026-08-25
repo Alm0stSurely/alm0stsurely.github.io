@@ -1,55 +1,53 @@
 ---
 layout: page
-title: "Trading Analysis — 2026-08-24"
-date: 2026-08-24
+title: "Trading Analysis — 2026-08-25"
+date: 2026-08-25
 ---
 
-# Daily Trading Analysis — 2026-08-24
+# Daily Trading Analysis — 2026-08-25
 
 ## Portfolio Snapshot
 
 | Metric | Value |
 |--------|-------|
-| Total Value | €9,998.56 |
+| Total Value | €9,991.86 |
 | Cash | €2,418.67 |
-| Positions Value | €7,579.89 |
-| Daily Change | €9.36 (+0.09%) |
-| Total Return (inception) | -0.01% |
+| Positions Value | €7,573.19 |
+| Daily Change | €-6.70 (-0.07%) |
+| Total Return (inception) | -0.08% |
 | Realized P&L | €-386.32 |
-| Unrealized P&L | €223.65 |
-| Equal-Weight Benchmark | €10,366.14 (+3.66%) |
-| Gap vs Benchmark | -3.68% |
+| Unrealized P&L | €216.96 |
+| Equal-Weight Benchmark | €10,344.56 (+3.45%) |
+| Gap vs Benchmark | -3.53 pp |
 
 ## Open Positions
 
-| Ticker | Quantity | Price | Market Value | Unrealized P&L |
-|--------|----------|-------|--------------|----------------|
-| SPY | 2.65 | €763.48 | €2,024.99 | +2.26% |
-| OR.PA | 3.56 | €393.30 | €1,398.93 | +6.30% |
-| FEZ | 18.74 | €71.60 | €1,341.44 | +4.47% |
-| IJR | 6.04 | €146.76 | €886.75 | -0.03% |
-| TLT | 6.49 | €82.57 | €535.64 | -1.67% |
-| PDBC | 25.40 | €18.47 | €469.10 | +3.56% |
-| REET | 16.59 | €28.17 | €467.36 | +0.93% |
-| DBA | 9.31 | €28.29 | €263.50 | +5.99% |
-| SAN.PA | 2.45 | €78.29 | €192.17 | +7.13% |
+| Ticker | Quantity | Price | Market Value | Weight | Unrealized P&L |
+|--------|----------|-------|--------------|--------|----------------|
+| SPY | 2.65 | €765.84 | €2,031.24 | 20.3% | +2.57% |
+| OR.PA | 3.56 | €388.58 | €1,382.13 | 13.8% | +5.02% |
+| FEZ | 18.74 | €71.81 | €1,345.28 | 13.5% | +4.77% |
+| IJR | 6.04 | €146.70 | €886.39 | 8.9% | -0.07% |
+| TLT | 6.49 | €83.46 | €541.48 | 5.4% | -0.60% |
+| REET | 16.59 | €28.23 | €468.27 | 4.7% | +1.13% |
+| PDBC | 25.40 | €18.17 | €461.48 | 4.6% | +1.88% |
+| DBA | 9.31 | €28.28 | €263.46 | 2.6% | +5.98% |
+| SAN.PA | 2.45 | €78.82 | €193.47 | 1.9% | +7.86% |
 
 ## Risk Metrics
 
 | Metric | Value |
 |--------|-------|
-| Volatility (ann.) | 6.19% |
+| Volatility (ann.) | 6.16% |
 | Max Drawdown | -0.95% |
-| Sharpe Ratio | 2.74 |
-| Sortino Ratio | 4.21 |
-| CVaR 95% | 0.95% |
+| Sharpe Ratio | 2.25 |
+| Sortino Ratio | 3.49 |
+| CVaR 95% | 0.96% |
 | VaR 95% | 0.63% |
 
 ## Intraday Activity
 
-| Time | Ticker | Action | Quantity | Proceeds | Realized P&L |
-|------|--------|--------|----------|----------|-------------|
-| 08:07 | AIR.PA | SELL | 2.28 | €463.38 | €-25.44 |
+No trades executed today.
 
 ## Post-Close LLM Decision
 
@@ -57,62 +55,23 @@ Trades executed by the daily pipeline: **0** (all positions held).
 
 ## LLM Reasoning
 
-> Cash is at 24.2%, which is comfortably within the 15-30% target range for a NORMAL volatility regime, meaning we are not under-invested and do not need to force capital deployment. No current positions have breached the -5% single-position stop-loss threshold, and none exhibit the confirmed technical reversal signals (RSI > 70 AND Bollinger Position > 1.1) required to trigger a sell under our strict sell discipline. The market regime analysis indicates a neutral trend with mean-reversion and trend-following disabled, suggesting a lack of strong directional edge. Applying a Deflated Sharpe Ratio mindset and loss aversion principles, we avoid forcing trades in a low-signal environment to prevent negative expectancy from transaction costs and false discoveries. Preserving capital and maintaining the current well-diversified portfolio is the optimal risk-adjusted decision.
+> Current cash level is approximately 24.2%, which sits comfortably within the 15-30% target range for a NORMAL volatility regime. This means capital is not being dragged and there is no urgent need to force deployment. The market regime analysis explicitly disables both mean reversion and trend following strategies due to neutral trend strength and normal volatility/correlation, reducing the probability of high-confidence edge in new entries. None of the current positions trigger a stop-loss (no single position is down >5%, and total portfolio drawdown is minimal at -0.08%). Furthermore, no technical reversal sell conditions are met; while PDBC and SAN.PA have RSI > 70, their Bollinger Positions are well below the 1.1 threshold required for a confirmed overbought exit. Following strict sell discipline and DSR skepticism, the optimal action is to hold all positions, avoid premature profit-taking, and preserve the remaining weekly trade capacity for higher-confidence setups.
 
 ## Notes
 
 - Cash stands at **24.2%**, inside the NORMAL volatility target range of 15–30%.
-- No position breaches the adaptive 5% stop-loss threshold; the weakest holding is TLT at -1.67%.
-- The portfolio remains under-exposed versus the equal-weight benchmark (gap ≈ -3.68%), but the LLM elected not to force deployment given neutral trend/mean-reversion signals and a healthy cash buffer.
-- Intraday stop-loss discipline exited AIR.PA at a small loss (€-25.44), keeping the single-position risk budget intact.
+- No position breaches the adaptive 5% stop-loss threshold; the weakest holding is TLT at -0.60%.
+- The portfolio remains under-exposed versus the equal-weight benchmark (gap ≈ -3.53 pp), but the LLM elected not to force deployment given neutral trend/mean-reversion signals and a healthy cash buffer.
 
----
-
-## Research Session Notes — 2026-08-24
-
-Post-close research suite refreshed after the 2026-08-24 daily pipeline.
-
-### Decision Quality (5-day forward window)
+## Weekly Summary (since 2026-08-17)
 
 | Metric | Value |
 |--------|-------|
-| Decisions analyzed | 5 days |
-| Total trades | 7 |
-| Win rate | 71.4% |
-| Buy accuracy | 83.3% |
-| Sell accuracy (5D) | 0.0% |
-| Sell accuracy (1D) | 100.0% |
+| Week Start Value | €9,967.08 |
+| Week End Value | €9,991.86 |
+| Weekly Change | €24.78 (+0.25 pp) |
+| Sessions | 8 |
 
-Sell-side sample is tiny (1 trade), so the 5-day 0% accuracy is mostly noise.
-
-### Churn / Round-Trip Analysis
-
-| Metric | Value |
-|--------|-------|
-| Round trips | 34 |
-| Win rate | 26.5% |
-| Avg hold period | 32.1 days |
-| Annualized turnover | 246 trades/year |
-| Post-cooldown (since 2026-06-18) | 2 RT, 50.0% win rate, 153 trades/year |
-
-Cooldown integration continues to show the expected turnover reduction.
-
-### Cash Drag Diagnosis
-
-| Category | Days |
-|----------|------|
-| Within target | 26 (28.9%) |
-| Above target with cap headroom (cash drag) | 54 |
-| Above target, cap binding | 10 |
-
-The dominant pathology remains prompt-level cash deployment, not the weekly trade cap. Current cash is 24.2%, inside the NORMAL 15–30% band.
-
-### Keyword Trends (latest week vs 4-week avg)
-
-- Rising: `stop-loss`, `trade cap`, `cooldown`, `let winners run`  
-- Falling: `loss aversion`, `CVaR`, `tail risk`, `cash buffer`, `mean reversion`, `momentum`  
-
-Guardrail concepts are being internalized; theoretical risk framing is fading.
 
 ---
 
