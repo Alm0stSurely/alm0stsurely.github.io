@@ -75,3 +75,40 @@ Trades executed by the daily pipeline: **0** (all positions held).
 ---
 
 *Generated automatically by the Almost Surely Profitable daily pipeline.*
+
+## Research Session Notes (2026-08-26)
+
+### Decision Quality
+
+- **5 recent trading days** with decisions were analyzed using a 5-day forward window.
+- **9 total trades** executed (8 buys, 1 sell); average 1.8 trades/day.
+- **Win rate: 44.4%** — below the 45% threshold, flagged as underperforming.
+- **Buy accuracy (5D): 50.0%**; sell accuracy (1D): 100.0%.
+- **Decision Sharpe ratio: 0.105** — marginal risk-adjusted returns.
+
+### Behavioral & Churn Analysis
+
+- **100 historical decisions** reviewed; 90 valid, 10 format/parse errors (error rate improving since mid-2026).
+- Action distribution: **87.4% hold**, 8.8% buy, 3.7% sell — showing discipline but very low sell activity.
+- **34 round-trip trades** completed; win rate 26.5%; average hold 32.1 days.
+- **Annualized turnover: 245 trades/year** — elevated relative to the low number of active positions.
+- Loss aversion score: 0.22/1.0; overconfidence score: 1.0/1.0 (low trading frequency is good).
+
+### Keyword Trends (4-week rolling)
+
+Falling mention frequency: loss aversion, CVaR, tail risk, mean reversion, momentum, cash buffer, deflated Sharpe.
+Rising mention frequency: stop-loss, trade cap, cooldown, let winners run.
+Interpretation: the prompt emphasis is shifting from behavioral/catastrophic-risk framing toward execution rules and risk controls.
+
+### Cash Drag Diagnosis
+
+- Over the full 91-day history, cash was **above target 70.3%** of the time and within target only 29.7%.
+- However, the **last 10 sessions** have stayed inside the NORMAL 15–30% band.
+- 54 days flagged as cash-drag (above target with cap headroom), 10 days as cap-binding.
+
+### System Health
+
+- All 1,031 unit tests pass.
+- All six research-analysis scripts completed without errors.
+- Reddit inspiration scan returned HTTP 403 (expected from this environment).
+- Comprehensive return vs Buy & Hold (SPY) since inception: **-0.13% vs -12.53%**. The strategy is flat but meaningfully ahead of SPY on a relative basis.
