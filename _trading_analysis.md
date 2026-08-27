@@ -75,3 +75,24 @@ Trades executed by the daily pipeline: **0** (all positions held).
 ---
 
 *Generated automatically by the Almost Surely Profitable daily pipeline.*
+
+## Research Session Notes (2026-08-27)
+
+Post-close research session run on the trading repo.
+
+| Metric | Value |
+|--------|-------|
+| 5D Forward Win Rate | 55.6% (8 buys, 1 sell) |
+| Buy Accuracy (5D) | 62.5% |
+| Sell Accuracy (1D) | 0.0% (n=1) |
+| Round Trips (all time) | 34, win rate 26.5% |
+| Annualized Turnover | 245 trades/year |
+| Cash Drag / Cap-Binding Days | 54 / 10 |
+
+Key observations:
+- The 5D forward win rate improved from 44.4% to 55.6%, but the sample is still small (9 trades); treat as directional noise until n ≥ 20.
+- Keyword trends show guardrail concepts (`stop-loss`, `trade cap`, `cooldown`, `let winners run`) rising while core behavioral concepts (`loss aversion`, `CVaR`, `tail risk`) fall. The LLM appears to be internalizing execution constraints more than risk framing.
+- Cash drag remains the dominant pathology (54 drag days vs 10 cap-binding days), though recent cash levels are inside the NORMAL 15–30% target.
+- Code fix: `keyword_trends.py` now guards against non-finite values in rolling averages and trend slopes; 4 new tests added, 1053 tests passing.
+
+*Committed to `Alm0stSurely/almost-surely-profitable` as `feat/research-2026-08-27` (5b59d4d).*
