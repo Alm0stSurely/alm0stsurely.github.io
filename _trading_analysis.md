@@ -74,3 +74,17 @@ Trades executed by the daily pipeline: **1**.
 ---
 
 *Generated automatically by the Almost Surely Profitable daily pipeline.*
+
+## Research Session Notes
+
+Re-ran the post-close research suite after the daily pipeline:
+
+- Comprehensive evaluation (30-day window): period return +2.43%, highest €10,010.04, lowest €9,716.20, volatility 5.8% ann.
+- LLM decision quality: 6 trading days analyzed, 9 trades (8 buys, 1 sell); 5-day win rate 55.6%, buy accuracy 62.5%, decision Sharpe -0.065.
+- Behavioral/churn: 34 round trips, win rate 26.5%, average hold 32.1 days; long holds (>14d) perform best (41.2% win rate).
+- Cash drag: 93 days analyzed, 31.2% within target, 68.8% above target; current cash 26.9% is inside the NORMAL 15-30% range.
+- Keyword trends (W35): loss aversion and stop-loss remain prominent; mean reversion and momentum mentions rebounded this week.
+
+All analysis scripts and `pytest -q` (1058 tests) passed. Analysis artefacts committed to `Alm0stSurely/almost-surely-profitable` on branch `feat/research-2026-08-28`, merged into `dev` and `main`.
+
+No new trading decisions were taken during the research session; the daily snapshot remains authoritative.
