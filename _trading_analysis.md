@@ -1,98 +1,76 @@
 ---
 layout: page
-title: "Trading Analysis — 2026-08-27"
-date: 2026-08-27
+title: "Trading Analysis — 2026-08-28"
+date: 2026-08-28
 ---
 
-# Daily Trading Analysis — 2026-08-27
+# Daily Trading Analysis — 2026-08-28
 
 ## Portfolio Snapshot
 
 | Metric | Value |
 |--------|-------|
-| Total Value | €9,983.42 |
-| Cash | €2,418.67 |
-| Positions Value | €7,564.75 |
-| Daily Change | €-3.22 (-0.03%) |
-| Total Return (inception) | -0.17% |
-| Realized P&L | €-386.32 |
-| Unrealized P&L | €208.52 |
-| Equal-Weight Benchmark | €10,304.77 (3.05%) |
-| Gap vs Benchmark | -3.21 pp |
+| Total Value | €9987.44 |
+| Cash | €2690.46 |
+| Positions Value | €7296.98 |
+| Daily Change | €+4.02 (+0.04%) |
+| Total Return (inception) | -0.13% |
+| Realized P&L | €-363.13 |
+| Unrealized P&L | €189.35 |
+| Equal-Weight Benchmark | €10319.26 (+3.19%) |
+| Gap vs Benchmark | -3.32 pp |
 
 ## Open Positions
 
 | Ticker | Quantity | Price | Market Value | Weight | Unrealized P&L |
 |--------|----------|-------|--------------|--------|----------------|
-| SPY | 2.65 | €771.04 | €2,045.04 | 20.5% | +3.27% |
-| OR.PA | 3.56 | €384.80 | €1,368.70 | 13.7% | +4.00% |
-| FEZ | 18.74 | €71.34 | €1,336.56 | 13.4% | +4.09% |
-| IJR | 6.04 | €146.76 | €886.75 | 8.9% | -0.03% |
-| TLT | 6.49 | €83.13 | €539.31 | 5.4% | -1.00% |
-| PDBC | 25.40 | €18.41 | €467.70 | 4.7% | +3.25% |
-| REET | 16.59 | €27.89 | €462.71 | 4.6% | -0.07% |
-| DBA | 9.31 | €28.80 | €268.21 | 2.7% | +7.89% |
-| SAN.PA | 2.45 | €77.31 | €189.76 | 1.9% | +5.79% |
+| SPY | 2.65 | €769.38 | €2040.64 | 20.4% | +3.05% |
+| OR.PA | 3.56 | €390.05 | €1387.37 | 13.9% | +5.42% |
+| FEZ | 18.74 | €71.29 | €1335.63 | 13.4% | +4.02% |
+| IJR | 6.04 | €145.59 | €879.68 | 8.8% | -0.83% |
+| TLT | 6.49 | €82.88 | €537.66 | 5.4% | -1.30% |
+| PDBC | 25.40 | €18.39 | €467.07 | 4.7% | +3.11% |
+| REET | 16.59 | €27.67 | €459.15 | 4.6% | -0.84% |
+| SAN.PA | 2.45 | €77.32 | €189.79 | 1.9% | +5.80% |
 
 ## Risk Metrics
 
 | Metric | Value |
 |--------|-------|
-| Volatility (ann.) | 6.11% |
-| Max Drawdown | -0.94% |
-| Sharpe Ratio | 2.43 |
-| Sortino Ratio | 3.69 |
+| Volatility (ann.) | 6.05% |
+| Max Drawdown | -0.95% |
+| Sharpe Ratio | 2.81 |
+| Sortino Ratio | 4.12 |
 | CVaR 95% | 0.95% |
 | VaR 95% | 0.63% |
 
 ## Intraday Activity
 
-No trades executed today.
+- SELL DBA @ €29.18 — realized P&L €23.19
 
 ## Post-Close LLM Decision
 
-Trades executed by the daily pipeline: **0** (all positions held).
+Trades executed by the daily pipeline: **1**.
 
 ## LLM Reasoning
 
-> Current cash level is ~24.2%, comfortably within the 15-30% target range for a NORMAL volatility regime, meaning there is no capital drag requiring immediate deployment. The market regime analysis explicitly disables both mean reversion and trend following strategies due to neutral trend and normal volatility/correlation. While several assets (like ^FCHI, BNP.PA, DG.PA) show extreme oversold RSI levels, buying them would violate the disabled mean-reversion directive. On the sell side, no positions meet the strict criteria for a confirmed technical reversal (RSI > 70 AND Bollinger Position > 1.1) or stop-loss overrides. DBA and PDBC have elevated RSI but their Bollinger positions are below 1.1. Applying loss aversion and a CVaR mindset, the optimal decision is to preserve capital, avoid unnecessary turnover, and hold all current positions.
+> DBA triggers a confirmed technical reversal sell signal per condition (b): RSI at 75.5 (>70) AND Bollinger Position at 1.11 (>1.1). This is the only position meeting sell criteria. Locking in the +9.33% gain after 85 days aligns with loss aversion principles — protecting realized profits when overbought conditions are confirmed. All other positions show neutral technicals (RSI 37-64, BB 0.05-0.71) with no sell triggers. No new buys initiated because: (1) market regime is NEUTRAL with both mean reversion and trend following disabled, (2) cash at 24.2% is within the 15-30% NORMAL regime target — no capital drag, (3) while several French stocks (BNP.PA RSI 25.7, DG.PA RSI 13.6) appear extremely oversold, the regime analysis explicitly disables mean reversion trades, suggesting broader market weakness that could make these falling knives. Portfolio risk metrics remain healthy: CVaR 0.95%, kurtosis 1.20 (well below 3), max drawdown only -0.95%. Using 1 of 2 remaining weekly trades conservatively.
 
 ## Notes
 
-- Cash stands at **24.2%**, inside the NORMAL 15–30% target range.
-- No position breaches the adaptive 5% stop-loss threshold; the weakest holding is TLT at -1.00%.
-- The portfolio trails the equal-weight benchmark by 3.21 pp; the LLM elected to hold given neutral trend/mean-reversion signals and a healthy cash buffer.
+- Cash stands at **26.9%**, inside the NORMAL 15–30% target range.
+- No position breaches the adaptive 5% stop-loss threshold.
+- The portfolio trails the equal-weight benchmark by 3.32 pp; the LLM elected to take profits on DBA while holding the rest of the book.
 
-## Weekly Summary (since 2026-08-24)
+## Weekly Summary (2026-W35)
 
 | Metric | Value |
 |--------|-------|
 | Week Start Value | €9,998.56 |
-| Week End Value | €9,983.42 |
-| Weekly Change | €-15.13 (-0.15%) |
+| Week End Value | €9,987.44 |
+| Weekly Change | €-11.12 (-0.11%) |
 | Sessions | 4 |
 
 ---
 
 *Generated automatically by the Almost Surely Profitable daily pipeline.*
-
-## Research Session Notes (2026-08-27)
-
-Post-close research session run on the trading repo.
-
-| Metric | Value |
-|--------|-------|
-| 5D Forward Win Rate | 55.6% (8 buys, 1 sell) |
-| Buy Accuracy (5D) | 62.5% |
-| Sell Accuracy (1D) | 0.0% (n=1) |
-| Round Trips (all time) | 34, win rate 26.5% |
-| Annualized Turnover | 245 trades/year |
-| Cash Drag / Cap-Binding Days | 54 / 10 |
-
-Key observations:
-- The 5D forward win rate improved from 44.4% to 55.6%, but the sample is still small (9 trades); treat as directional noise until n ≥ 20.
-- Keyword trends show guardrail concepts (`stop-loss`, `trade cap`, `cooldown`, `let winners run`) rising while core behavioral concepts (`loss aversion`, `CVaR`, `tail risk`) fall. The LLM appears to be internalizing execution constraints more than risk framing.
-- Cash drag remains the dominant pathology (54 drag days vs 10 cap-binding days), though recent cash levels are inside the NORMAL 15–30% target.
-- Code fix: `keyword_trends.py` now guards against non-finite values in rolling averages and trend slopes; 4 new tests added, 1053 tests passing.
-
-*Committed to `Alm0stSurely/almost-surely-profitable` as `feat/research-2026-08-27` (5b59d4d).*
