@@ -1,90 +1,76 @@
 ---
 layout: page
-title: "Trading Analysis — 2026-08-28"
-date: 2026-08-28
+title: "Trading Analysis — 2026-08-31"
+date: 2026-08-31
 ---
 
-# Daily Trading Analysis — 2026-08-28
+# Daily Trading Analysis — 2026-08-31
 
 ## Portfolio Snapshot
 
 | Metric | Value |
 |--------|-------|
-| Total Value | €9987.44 |
-| Cash | €2690.46 |
-| Positions Value | €7296.98 |
-| Daily Change | €+4.02 (+0.04%) |
-| Total Return (inception) | -0.13% |
+| Total Value | €9,951.29 |
+| Cash | €2,690.46 |
+| Positions Value | €7,260.83 |
+| Daily Change | -36.15 (-0.36%) |
+| Total Return (inception) | -0.49% |
 | Realized P&L | €-363.13 |
-| Unrealized P&L | €189.35 |
-| Equal-Weight Benchmark | €10319.26 (+3.19%) |
-| Gap vs Benchmark | -3.32 pp |
+| Unrealized P&L | €153.20 |
+| Equal-Weight Benchmark | €10,269.40 (+2.69%) |
+| Gap vs Benchmark | -3.18 pp |
 
 ## Open Positions
 
 | Ticker | Quantity | Price | Market Value | Weight | Unrealized P&L |
 |--------|----------|-------|--------------|--------|----------------|
-| SPY | 2.65 | €769.38 | €2040.64 | 20.4% | +3.05% |
-| OR.PA | 3.56 | €390.05 | €1387.37 | 13.9% | +5.42% |
-| FEZ | 18.74 | €71.29 | €1335.63 | 13.4% | +4.02% |
-| IJR | 6.04 | €145.59 | €879.68 | 8.8% | -0.83% |
-| TLT | 6.49 | €82.88 | €537.66 | 5.4% | -1.30% |
-| PDBC | 25.40 | €18.39 | €467.07 | 4.7% | +3.11% |
-| REET | 16.59 | €27.67 | €459.15 | 4.6% | -0.84% |
-| SAN.PA | 2.45 | €77.32 | €189.79 | 1.9% | +5.80% |
+| SPY | 2.65 | €766.95 | €2,034.20 | 20.4% | +2.72% |
+| OR.PA | 3.56 | €385.85 | €1,372.44 | 13.8% | +4.28% |
+| FEZ | 18.74 | €70.81 | €1,326.63 | 13.3% | +3.32% |
+| IJR | 6.04 | €144.51 | €873.15 | 8.8% | -1.57% |
+| TLT | 6.49 | €82.53 | €535.42 | 5.4% | -1.71% |
+| PDBC | 25.40 | €18.66 | €474.06 | 4.8% | +4.66% |
+| REET | 16.59 | €27.50 | €456.33 | 4.6% | -1.45% |
+| SAN.PA | 2.45 | €76.84 | €188.61 | 1.9% | +5.15% |
 
 ## Risk Metrics
 
 | Metric | Value |
 |--------|-------|
-| Volatility (ann.) | 6.05% |
-| Max Drawdown | -0.95% |
-| Sharpe Ratio | 2.81 |
-| Sortino Ratio | 4.12 |
-| CVaR 95% | 0.95% |
-| VaR 95% | 0.63% |
+| Volatility (ann.) | 5.98% |
+| Max Drawdown | -0.94% |
+| Sharpe Ratio | 1.48 |
+| Sortino Ratio | 2.24 |
+| CVaR 95% | 0.97% |
+| VaR 95% | 0.65% |
 
 ## Intraday Activity
 
-- SELL DBA @ €29.18 — realized P&L €23.19
+- No trades executed during the daily run.
 
 ## Post-Close LLM Decision
 
-Trades executed by the daily pipeline: **1**.
+Trades executed by the daily pipeline: **0**.
 
 ## LLM Reasoning
 
-> DBA triggers a confirmed technical reversal sell signal per condition (b): RSI at 75.5 (>70) AND Bollinger Position at 1.11 (>1.1). This is the only position meeting sell criteria. Locking in the +9.33% gain after 85 days aligns with loss aversion principles — protecting realized profits when overbought conditions are confirmed. All other positions show neutral technicals (RSI 37-64, BB 0.05-0.71) with no sell triggers. No new buys initiated because: (1) market regime is NEUTRAL with both mean reversion and trend following disabled, (2) cash at 24.2% is within the 15-30% NORMAL regime target — no capital drag, (3) while several French stocks (BNP.PA RSI 25.7, DG.PA RSI 13.6) appear extremely oversold, the regime analysis explicitly disables mean reversion trades, suggesting broader market weakness that could make these falling knives. Portfolio risk metrics remain healthy: CVaR 0.95%, kurtosis 1.20 (well below 3), max drawdown only -0.95%. Using 1 of 2 remaining weekly trades conservatively.
+> Current cash level is ~27.0%, which is comfortably within the 15-30% target range for a NORMAL volatility regime. Therefore, there is no capital drag requiring immediate deployment, and the portfolio is not under-invested. None of the current positions trigger a sell signal: no position has a drawdown exceeding the -5% stop-loss threshold (max is TLT at -1.71%), no position shows a confirmed technical reversal (RSI > 70 and BB > 1.1), and no position exceeds the 25% concentration limit. Given the neutral trend and normal correlation regime, maintaining the current well-diversified portfolio and preserving capital is the optimal risk-adjusted approach. Applying loss aversion and CVaR thinking, avoiding unnecessary trades minimizes transaction costs and tail risk exposure when no high-confidence edge is present.
 
 ## Notes
 
-- Cash stands at **26.9%**, inside the NORMAL 15–30% target range.
+- Cash stands at **27.0%**, inside the NORMAL 15–30% target range.
 - No position breaches the adaptive 5% stop-loss threshold.
-- The portfolio trails the equal-weight benchmark by 3.32 pp; the LLM elected to take profits on DBA while holding the rest of the book.
+- The portfolio trails the equal-weight benchmark by 3.18 pp; the LLM elected to hold the entire book in a normal-volatility, neutral-trend regime.
 
-## Weekly Summary (2026-W35)
+## Weekly Summary (2026-W36)
 
 | Metric | Value |
 |--------|-------|
-| Week Start Value | €9,998.56 |
-| Week End Value | €9,987.44 |
-| Weekly Change | €-11.12 (-0.11%) |
-| Sessions | 4 |
+| Week Start Value | €9,951.29 |
+| Week End Value | — |
+| Weekly Change | — |
+| Sessions | 1 (first session of the week) |
 
 ---
 
 *Generated automatically by the Almost Surely Profitable daily pipeline.*
-
-## Research Session Notes
-
-Re-ran the post-close research suite after the daily pipeline:
-
-- Comprehensive evaluation (30-day window): period return +2.43%, highest €10,010.04, lowest €9,716.20, volatility 5.8% ann.
-- LLM decision quality: 6 trading days analyzed, 9 trades (8 buys, 1 sell); 5-day win rate 55.6%, buy accuracy 62.5%, decision Sharpe -0.065.
-- Behavioral/churn: 34 round trips, win rate 26.5%, average hold 32.1 days; long holds (>14d) perform best (41.2% win rate).
-- Cash drag: 93 days analyzed, 31.2% within target, 68.8% above target; current cash 26.9% is inside the NORMAL 15-30% range.
-- Keyword trends (W35): loss aversion and stop-loss remain prominent; mean reversion and momentum mentions rebounded this week.
-
-All analysis scripts and `pytest -q` (1058 tests) passed. Analysis artefacts committed to `Alm0stSurely/almost-surely-profitable` on branch `feat/research-2026-08-28`, merged into `dev` and `main`.
-
-No new trading decisions were taken during the research session; the daily snapshot remains authoritative.
