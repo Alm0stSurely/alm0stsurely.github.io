@@ -77,3 +77,15 @@ _No trades executed during the post-close session._
 - No intraday activity was recorded prior to the evening run.
 - Cash allocation (27.19%) sits within the 15–30% target range for a normal volatility regime.
 - All positions were held; the LLM judged that current exposures already reflect the prevailing regime and no rebalancing was warranted.
+
+## Research Session Notes (2026-09-01 22:31 UTC)
+
+Research analysis suite re-run after the daily close.
+
+- **Comprehensive evaluation**: portfolio value €9,896.26, 30-day period return +1.90%, volatility 5.9% ann., total return -1.04%, vs SPY buy-and-hold since inception -14.30%.
+- **Decision quality** (last 6 trading days, 10 trades): 5-day forward win rate 40.0%, 1-day forward win rate 60.0%, buy accuracy 1D 75.0%. Decision Sharpe -0.259 — signals the LLM is better at very short-term direction than 5D holding.
+- **Behavioral analysis**: 90/100 valid decisions; action distribution 87.9% hold, 8.7% buy, 3.4% sell. Round-trip win rate 26.5% over 34 round trips, avg hold 32.1 days. Post-2026-06-18 cohort shows improved win rate (50.0%) and lower turnover (141 trades/yr vs 243 pre).
+- **Keyword trends**: latest session emphasized mean reversion and momentum while drawdown/stop-loss remained present; loss-aversion, CVaR and tail-risk mentions dropped to 0% in the single latest decision.
+- **Cash-drag**: current cash (27.2%) is inside the NORMAL 15–30% target; no binding drag detected today.
+- **Reddit scan**: blocked by Reddit network policy (logged).
+- **Test suite**: 1,075 tests passed.
