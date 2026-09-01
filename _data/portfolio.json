@@ -3,31 +3,22 @@
   "total_realized_pnl": -363.1263234702452,
   "positions": [
     {
+      "quantity": 2.4545517563556274,
+      "avg_price": 73.07906183264495,
+      "current_price": 76.83999633789062,
+      "ticker": "SAN.PA",
+      "market_value": 188.6077479695294,
+      "unrealized_pnl": 9.231408395389247,
+      "unrealized_pnl_pct": 0.05146391334166847
+    },
+    {
       "quantity": 2.652319458001969,
       "avg_price": 746.6356999909071,
       "current_price": 766.9500122070312,
       "ticker": "SPY",
       "market_value": 2034.1964406915567,
-      "unrealized_pnl": 53.8800455667531,
-      "unrealized_pnl_pct": 0.027207796541702346
-    },
-    {
-      "quantity": 3.5569154789441533,
-      "avg_price": 370.0,
-      "current_price": 385.8500061035156,
-      "ticker": "OR.PA",
-      "market_value": 1372.4358592602907,
-      "unrealized_pnl": 56.37713205095406,
-      "unrealized_pnl_pct": 0.04283785433382604
-    },
-    {
-      "quantity": 18.735126891665615,
-      "avg_price": 68.53729858712835,
-      "current_price": 70.80999755859375,
-      "ticker": "FEZ",
-      "market_value": 1326.6342894587863,
-      "unrealized_pnl": 42.57930361696208,
-      "unrealized_pnl_pct": 0.03316003137439411
+      "unrealized_pnl": 53.880045566753076,
+      "unrealized_pnl_pct": 0.02720779654170234
     },
     {
       "quantity": 6.0421630052117274,
@@ -35,8 +26,17 @@
       "current_price": 144.50999450683594,
       "ticker": "IJR",
       "market_value": 873.152942692554,
-      "unrealized_pnl": -13.896993351205197,
-      "unrealized_pnl_pct": -0.01566652877873568
+      "unrealized_pnl": -13.89699335120513,
+      "unrealized_pnl_pct": -0.015666528778735603
+    },
+    {
+      "quantity": 18.735126891665615,
+      "avg_price": 68.53729858712835,
+      "current_price": 70.80999755859375,
+      "ticker": "FEZ",
+      "market_value": 1326.6342894587863,
+      "unrealized_pnl": 42.57930361696225,
+      "unrealized_pnl_pct": 0.033160031374394244
     },
     {
       "quantity": 6.487549530231055,
@@ -44,17 +44,8 @@
       "current_price": 82.52999877929688,
       "ticker": "TLT",
       "market_value": 535.417454810597,
-      "unrealized_pnl": -9.342087162276698,
-      "unrealized_pnl_pct": -0.017149010604649285
-    },
-    {
-      "quantity": 25.404882635834166,
-      "avg_price": 17.829999923706055,
-      "current_price": 18.65999984741211,
-      "ticker": "PDBC",
-      "market_value": 474.0551061081881,
-      "unrealized_pnl": 21.086050649503647,
-      "unrealized_pnl_pct": 0.04655075307109344
+      "unrealized_pnl": -9.34208716227669,
+      "unrealized_pnl_pct": -0.01714901060464927
     },
     {
       "quantity": 16.59067048400136,
@@ -62,20 +53,29 @@
       "current_price": 27.5049991607666,
       "ticker": "REET",
       "market_value": 456.3263777390127,
-      "unrealized_pnl": -6.71923293792986,
-      "unrealized_pnl_pct": -0.014510952664267303
+      "unrealized_pnl": -6.7192329379299105,
+      "unrealized_pnl_pct": -0.014510952664267412
     },
     {
-      "quantity": 2.4545517563556274,
-      "avg_price": 73.07906183264495,
-      "current_price": 76.83999633789062,
-      "ticker": "SAN.PA",
-      "market_value": 188.6077479695294,
-      "unrealized_pnl": 9.231408395389252,
-      "unrealized_pnl_pct": 0.05146391334166851
+      "quantity": 25.404882635834166,
+      "avg_price": 17.829999923706055,
+      "current_price": 18.65999984741211,
+      "ticker": "PDBC",
+      "market_value": 474.0551061081881,
+      "unrealized_pnl": 21.086050649503633,
+      "unrealized_pnl_pct": 0.046550753071093395
+    },
+    {
+      "quantity": 3.5569154789441533,
+      "avg_price": 370.0,
+      "current_price": 385.8500061035156,
+      "ticker": "OR.PA",
+      "market_value": 1372.4358592602907,
+      "unrealized_pnl": 56.37713205095403,
+      "unrealized_pnl_pct": 0.04283785433382601
     }
   ],
-  "last_updated": "2026-08-31T21:06:15.549032",
+  "last_updated": "2026-08-31T21:06:15.547733",
   "total_value": 9951.28979191552,
   "positions_value": 7260.8262187305145
 }
