@@ -1,76 +1,79 @@
----
-layout: page
-title: "Trading Analysis — 2026-08-31"
-date: 2026-08-31
----
-
-# Daily Trading Analysis — 2026-08-31
+# Trading Analysis — 2026-09-01
 
 ## Portfolio Snapshot
 
 | Metric | Value |
-|--------|-------|
-| Total Value | €9,951.29 |
-| Cash | €2,690.46 |
-| Positions Value | €7,260.83 |
-| Daily Change | -36.15 (-0.36%) |
-| Total Return (inception) | -0.49% |
-| Realized P&L | €-363.13 |
-| Unrealized P&L | €153.20 |
-| Equal-Weight Benchmark | €10,269.40 (+2.69%) |
-| Gap vs Benchmark | -3.18 pp |
-
-## Open Positions
-
-| Ticker | Quantity | Price | Market Value | Weight | Unrealized P&L |
-|--------|----------|-------|--------------|--------|----------------|
-| SPY | 2.65 | €766.95 | €2,034.20 | 20.4% | +2.72% |
-| OR.PA | 3.56 | €385.85 | €1,372.44 | 13.8% | +4.28% |
-| FEZ | 18.74 | €70.81 | €1,326.63 | 13.3% | +3.32% |
-| IJR | 6.04 | €144.51 | €873.15 | 8.8% | -1.57% |
-| TLT | 6.49 | €82.53 | €535.42 | 5.4% | -1.71% |
-| PDBC | 25.40 | €18.66 | €474.06 | 4.8% | +4.66% |
-| REET | 16.59 | €27.50 | €456.33 | 4.6% | -1.45% |
-| SAN.PA | 2.45 | €76.84 | €188.61 | 1.9% | +5.15% |
+|---|---|
+| **Date** | 2026-09-01 |
+| **Portfolio Value** | €9896.26 |
+| **Cash** | €2690.46 (27.19%) |
+| **Positions Value** | €7205.80 |
+| **Daily P&L** | €-55.03 (-0.55%) |
+| **Total Return (inception)** | -1.04% |
+| **Equal-Weight Benchmark Return** | +2.02% |
+| **Gap vs Benchmark** | -3.06 pp |
+| **Realized P&L** | €-363.13 |
+| **Unrealized P&L** | €+98.17 |
+| **Open Positions** | 8 |
 
 ## Risk Metrics
 
 | Metric | Value |
-|--------|-------|
-| Volatility (ann.) | 5.98% |
-| Max Drawdown | -0.94% |
-| Sharpe Ratio | 1.48 |
-| Sortino Ratio | 2.24 |
-| CVaR 95% | 0.97% |
-| VaR 95% | 0.65% |
+|---|---|
+| Volatility (ann.) | +6.17% |
+| Max Drawdown | -1.13% |
+| CVaR 95% | +1.01% |
+| VaR 95% | +0.70% |
+| Sharpe Ratio | 0.61 |
+| Skewness | 0.030 |
+| Kurtosis | 0.758 |
 
-## Intraday Activity
+## LLM Decision
 
-- No trades executed during the daily run.
+### Reasoning Excerpt
 
-## Post-Close LLM Decision
+> Cash is at 27.18%, which sits comfortably within the 15-30% target range for a NORMAL volatility regime, meaning capital is appropriately deployed without excessive drag. No current positions have breached the -5% single-position stop-loss threshold, and the overall portfolio drawdown is a mild -1.04%, requiring no defensive de-risking. PDBC is overbought (RSI > 70) but its Bollinger Position (0.95) has not exceeded the 1.1 technical reversal threshold, so we let the winner run per our sell disc...
 
-Trades executed by the daily pipeline: **0**.
+### Proposed Actions
 
-## LLM Reasoning
+- **SAN.PA**: HOLD
+- **SPY**: HOLD
+- **IJR**: HOLD
+- **FEZ**: HOLD
+- **TLT**: HOLD
+- **REET**: HOLD
+- **PDBC**: HOLD
+- **OR.PA**: HOLD
 
-> Current cash level is ~27.0%, which is comfortably within the 15-30% target range for a NORMAL volatility regime. Therefore, there is no capital drag requiring immediate deployment, and the portfolio is not under-invested. None of the current positions trigger a sell signal: no position has a drawdown exceeding the -5% stop-loss threshold (max is TLT at -1.71%), no position shows a confirmed technical reversal (RSI > 70 and BB > 1.1), and no position exceeds the 25% concentration limit. Given the neutral trend and normal correlation regime, maintaining the current well-diversified portfolio and preserving capital is the optimal risk-adjusted approach. Applying loss aversion and CVaR thinking, avoiding unnecessary trades minimizes transaction costs and tail risk exposure when no high-confidence edge is present.
+## Executed Trades
 
-## Notes
+_No trades executed during the post-close session._
 
-- Cash stands at **27.0%**, inside the NORMAL 15–30% target range.
-- No position breaches the adaptive 5% stop-loss threshold.
-- The portfolio trails the equal-weight benchmark by 3.18 pp; the LLM elected to hold the entire book in a normal-volatility, neutral-trend regime.
+## Open Positions
 
-## Weekly Summary (2026-W36)
+| Ticker | Quantity | Price | Market Value | Weight | Unrealized P&L | Unrealized P&L % |
+|---|---|---|---|---|---|---|
+| SPY | 2.6523 | €761.70 | €2020.27 | 20.41% | +39.96 | +2.02% |
+| OR.PA | 3.5569 | €379.95 | €1351.45 | 13.66% | +35.39 | +2.69% |
+| FEZ | 18.7351 | €69.99 | €1311.27 | 13.25% | +27.22 | +2.12% |
+| IJR | 6.0422 | €142.89 | €863.36 | 8.72% | -23.69 | -2.67% |
+| TLT | 6.4875 | €81.87 | €531.14 | 5.37% | -13.62 | -2.50% |
+| PDBC | 25.4049 | €19.07 | €484.34 | 4.89% | +31.38 | +6.93% |
+| REET | 16.5907 | €27.43 | €455.08 | 4.60% | -7.96 | -1.72% |
+| SAN.PA | 2.4546 | €76.95 | €188.88 | 1.91% | +9.50 | +5.30% |
+
+## Weekly Summary
 
 | Metric | Value |
-|--------|-------|
-| Week Start Value | €9,951.29 |
+|---|---|
+| Week Start Value | €9896.26 |
 | Week End Value | — |
 | Weekly Change | — |
 | Sessions | 1 (first session of the week) |
 
----
 
-*Generated automatically by the Almost Surely Profitable daily pipeline.*
+## Notes
+
+- No intraday activity was recorded prior to the evening run.
+- Cash allocation (27.19%) sits within the 15–30% target range for a normal volatility regime.
+- All positions were held; the LLM judged that current exposures already reflect the prevailing regime and no rebalancing was warranted.
