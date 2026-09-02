@@ -1,81 +1,81 @@
 {
   "cash": 2690.4635731850058,
   "total_realized_pnl": -363.1263234702452,
+  "last_updated": "2026-09-01T21:06:55.502083",
+  "total_value": 9896.261221096798,
+  "positions_value": 7205.797647911792,
   "positions": [
     {
-      "quantity": 2.652319458001969,
-      "avg_price": 746.6356999909071,
-      "current_price": 761.7000122070312,
-      "ticker": "SPY",
-      "market_value": 2020.2717635370464,
-      "unrealized_pnl": 39.955368412242706,
-      "unrealized_pnl_pct": 0.020176254920984297
-    },
-    {
-      "quantity": 3.5569154789441533,
-      "avg_price": 370.0,
-      "current_price": 379.95001220703125,
-      "ticker": "OR.PA",
-      "market_value": 1351.4500796442094,
-      "unrealized_pnl": 35.391352434872715,
-      "unrealized_pnl_pct": 0.026891924883868233
-    },
-    {
-      "quantity": 18.735126891665615,
-      "avg_price": 68.53729858712835,
-      "current_price": 69.98999786376953,
-      "ticker": "FEZ",
-      "market_value": 1311.2714911251276,
-      "unrealized_pnl": 27.216505283303377,
-      "unrealized_pnl_pct": 0.02119574752124831
-    },
-    {
-      "quantity": 6.0421630052117274,
-      "avg_price": 146.80999755859375,
-      "current_price": 142.88999938964844,
-      "ticker": "IJR",
-      "market_value": 863.3646681268601,
-      "unrealized_pnl": -23.68526791689908,
-      "unrealized_pnl_pct": -0.026701166365599806
-    },
-    {
-      "quantity": 6.487549530231055,
-      "avg_price": 83.97000122070312,
-      "current_price": 81.87000274658203,
-      "ticker": "TLT",
-      "market_value": 531.1356978586034,
-      "unrealized_pnl": -13.623844114270241,
-      "unrealized_pnl_pct": -0.025008913226064508
-    },
-    {
-      "quantity": 25.404882635834166,
-      "avg_price": 17.829999923706055,
-      "current_price": 19.065000534057617,
-      "ticker": "PDBC",
-      "market_value": 484.34410101984946,
-      "unrealized_pnl": 31.375045561164995,
-      "unrealized_pnl_pct": 0.06926531775861393
-    },
-    {
-      "quantity": 16.59067048400136,
-      "avg_price": 27.90999984741211,
-      "current_price": 27.43000030517578,
-      "ticker": "REET",
-      "market_value": 455.08209643922817,
-      "unrealized_pnl": -7.963514237714378,
-      "unrealized_pnl_pct": -0.017198120561108955
-    },
-    {
+      "ticker": "SAN.PA",
       "quantity": 2.4545517563556274,
       "avg_price": 73.07906183264495,
       "current_price": 76.94999694824219,
-      "ticker": "SAN.PA",
-      "market_value": 188.87775016086803,
-      "unrealized_pnl": 9.501410586727872,
-      "unrealized_pnl_pct": 0.052969140797974254
+      "market_value": 188.87547534692463,
+      "unrealized_pnl": 9.50108567862818,
+      "unrealized_pnl_pct": 0.05293090871940903
+    },
+    {
+      "ticker": "SPY",
+      "quantity": 2.652319458001969,
+      "avg_price": 746.6356999909071,
+      "current_price": 761.7000122070312,
+      "market_value": 2020.1717603176987,
+      "unrealized_pnl": 39.95680759660448,
+      "unrealized_pnl_pct": 0.02016590572906506
+    },
+    {
+      "ticker": "IJR",
+      "quantity": 6.0421630052117274,
+      "avg_price": 146.80999755859375,
+      "current_price": 142.88999938964844,
+      "market_value": 863.3614421038894,
+      "unrealized_pnl": -23.68680952069587,
+      "unrealized_pnl_pct": -0.02670430601006036
+    },
+    {
+      "ticker": "FEZ",
+      "quantity": 18.735126891665615,
+      "avg_price": 68.53729858712835,
+      "current_price": 69.98999786376953,
+      "market_value": 1311.2685344310983,
+      "unrealized_pnl": 27.203539150304415,
+      "unrealized_pnl_pct": 0.021191257386178568
+    },
+    {
+      "ticker": "TLT",
+      "quantity": 6.487549530231055,
+      "avg_price": 83.97000122070312,
+      "current_price": 81.87000274658203,
+      "market_value": 531.1649349296942,
+      "unrealized_pnl": -13.62004829813998,
+      "unrealized_pnl_pct": -0.02500852397155372
+    },
+    {
+      "ticker": "REET",
+      "quantity": 16.59067048400136,
+      "avg_price": 27.90999984741211,
+      "current_price": 27.43000030517578,
+      "market_value": 455.1020964102492,
+      "unrealized_pnl": -7.969733908721994,
+      "unrealized_pnl_pct": -0.01720580018341386
+    },
+    {
+      "ticker": "PDBC",
+      "quantity": 25.404882635834166,
+      "avg_price": 17.829999923706055,
+      "current_price": 19.065000534057617,
+      "market_value": 484.3480630463885,
+      "unrealized_pnl": 31.38709691401957,
+      "unrealized_pnl_pct": 0.06919066965050934
+    },
+    {
+      "ticker": "OR.PA",
+      "quantity": 3.5569154789441533,
+      "avg_price": 370.0,
+      "current_price": 379.95001220703125,
+      "market_value": 1351.509589921875,
+      "unrealized_pnl": 35.3907209533307,
+      "unrealized_pnl_pct": 0.02689384038614575
     }
-  ],
-  "last_updated": "2026-09-01T21:06:55.503546",
-  "total_value": 9896.261221096798,
-  "positions_value": 7205.797647911792
+  ]
 }
