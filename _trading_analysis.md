@@ -77,3 +77,50 @@ _No trades executed during the post-close session._
 - Cash allocation (27.07%) sits within the 15–30% target range for a normal volatility regime.
 - All positions were held; the LLM judged that current exposures already reflect the prevailing regime and no rebalancing was warranted.
 - PDBC remains the strongest unrealized gainer (+6.90%), while TLT and REET sit in small unrealized losses.
+
+## Research Session Notes
+
+_Post-US-close quantitative review, 2026-09-02 22:30 UTC._
+
+### Key Metrics
+
+| Metric | Value |
+|---|---|
+| 30-day period return | +2.15% |
+| Volatility (ann.) | 5.8% |
+| VaR 95% | -0.33% |
+| CVaR 95% | -0.57% |
+| Max drawdown (est.) | -0.79% |
+| Total return (inception) | -0.63% |
+| SPY buy-and-hold return (since 2026-02-17) | -12.78% |
+
+### Decision Quality (5-day forward)
+
+| Metric | Value |
+|---|---|
+| Win rate | 37.5% |
+| Buy accuracy | 33.3% |
+| Sell accuracy | 50.0% |
+| Decision Sharpe | -0.291 |
+
+### Behavioural Observations
+
+- Action distribution: 88.5% hold, 8.2% buy, 3.4% sell (5.6 actions per decision).
+- Core risk concepts remain prominent: loss aversion 81.1%, drawdown 71.1%, stop-loss 67.8%, regime 66.7%, CVaR 65.6%.
+- Guardrail concepts are still under-mentioned: trade cap 26.7%, cooldown 15.6%, let winners run 8.9%.
+- Latest decision emphasised mean reversion, momentum, and drawdown; cash-buffer language was absent.
+
+### Cash-Drag Diagnosis
+
+- 95 days analyzed; cash was above the regime target on 67.4% of days.
+- 54 drag days (above target with weekly-cap headroom) vs 10 cap-binding days.
+- Interpretation: the prompt has historically been the binding constraint more often than the weekly trade cap.
+
+### Churn
+
+- 34 round trips since inception, win rate 26.5%, average hold 32.1 days.
+- Post-2026-06-18 cohort: 2 round trips, 50.0% win rate, 14.0-day average hold, 139 trades/year.
+
+### Hypothesis for Next Session
+
+The persistently low guardrail mention rates suggest the LLM treats cooldowns and trade caps as background constraints rather than active inputs. A tighter system-prompt framing—e.g., requiring an explicit sentence on why the remaining trade budget is or is not being used—could raise internalisation without changing cap values.
