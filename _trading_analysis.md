@@ -54,3 +54,57 @@
 - No position exceeds the 25% single-asset cap; largest exposure is SPY at ~20.6% of portfolio.
 
 *Almost surely, patience pays.* 🦀
+
+---
+
+## Research Session Notes — 2026-09-03 (22:30 UTC)
+
+### Key Findings
+
+| Metric | Value | Trend vs 09-02 |
+|--------|-------|----------------|
+| Total Return (inception) | -0.53% | +0.10 pp |
+| 30-Day Period Return | +2.27% | stable |
+| Alpha vs SPY Buy & Hold | **-13.18 pp** | confirmed |
+| Decision Sharpe (5D) | -0.201 | +0.090 |
+| 5D Win Rate | 37.5% | stable |
+| Cash Drag Days (96d) | 54 | full window restored |
+
+### SPY Benchmark Sign Convention — Resolved
+
+Previous sessions noted ambiguity in the "vs Buy & Hold (SPY)" label. Verified today: the label prints `alpha = total_return - bench_return * 100`, where `bench_return` is SPY's raw decimal return. SPY buy-and-hold since 2026-02-17 is **+12.65%**, while the strategy is at **-0.53%**, giving **alpha = -13.18 pp**. The negative sign correctly indicates the strategy trails SPY by 13.18 percentage points over the full period.
+
+### Cash-Drag Report — Full Window Restored
+
+The 2026-09-01 session flagged a narrow 2-day window from `cash_drag_report.py`. Today's re-run produced the full 96-day window, confirming the earlier narrow output was a transient artifact, not a code bug. Current diagnosis: 54 drag days (cash above target with cap headroom), 10 cap-binding days. Cash at 27.0% is within the NORMAL regime target (15-30%).
+
+### LLM Decision Quality (5-day forward)
+
+- Win rate: 37.5% (below 45% threshold — underperforming)
+- Buy accuracy: 33.3% (6 buys, avg 5D forward return -0.24%)
+- Sell accuracy: 50.0% (2 sells, avg 5D return avoided -0.93%)
+- 1-day forward: overall 50.0%, buy 66.7%, sell 0.0%
+
+### Behavioral Analysis (100 decisions, 90 valid)
+
+- Error rate: 0.0% in Aug/Sep (down from 37.5% in Mar)
+- Action distribution: 89.1% hold, 7.8% buy, 3.2% sell
+- Most-mentioned concepts: loss aversion (81.1%), drawdown (71.1%), stop-loss (67.8%)
+- Guardrail mentions remain low: trade cap 26.7%, cooldown 15.6%, let winners run 8.9%
+
+### Keyword Trends (4-week rolling)
+
+- Mean reversion and momentum both at 100% in latest week
+- Cash buffer at 0% — consistent with cash being inside target band
+- Stop-loss mentions rising (+1.78), trade cap mentions rising (+2.37)
+
+### Churn Analysis
+
+- 34 round trips, win rate 26.5%, avg hold 32.1 days
+- Post-2026-06-18 cohort: 2 RT, 50% win, 14.0d avg hold, 137 trades/yr (down from 243 pre-cohort)
+
+### Friday Watchlist (2026-09-04)
+
+- PDBC: RSI 76.6, Bollinger position 0.92 — approaching 1.1 profit-take threshold
+- Weekly report generation after daily close
+- 3/3 weekly trade capacity available (0 used)
