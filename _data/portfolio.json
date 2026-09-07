@@ -1,18 +1,18 @@
 {
  "cash": 2690.4635731850058,
  "total_realized_pnl": -363.1263234702452,
- "last_updated": "2026-09-04T21:06:05.929727",
- "total_value": 9956.727412021002,
- "positions_value": 7266.263838835996,
+ "last_updated": "2026-09-07T21:06:27.339145",
+ "total_value": 9960.056433770354,
+ "positions_value": 7269.592860585349,
  "positions": [
   {
    "ticker": "SAN.PA",
    "quantity": 2.4545517563556274,
    "avg_price": 73.07906183264495,
-   "current_price": 76.2699966430664,
-   "market_value": 187.20865421747646,
-   "unrealized_pnl": 7.832314643336304,
-   "unrealized_pnl_pct": 0.04366414579498673
+   "current_price": 75.66999816894531,
+   "market_value": 185.73592690901182,
+   "unrealized_pnl": 6.359587334871662,
+   "unrealized_pnl_pct": 0.035453880650982435
   },
   {
    "ticker": "SPY",
@@ -21,7 +21,7 @@
    "current_price": 770.239990234375,
    "market_value": 2042.9225134298795,
    "unrealized_pnl": 62.606118305075825,
-   "unrealized_pnl_pct": 0.031614199861800496
+   "unrealized_pnl_pct": 0.031614199861800495
   },
   {
    "ticker": "IJR",
@@ -39,7 +39,7 @@
    "current_price": 70.65499877929688,
    "market_value": 1323.7303676606061,
    "unrealized_pnl": 39.67538181878194,
-   "unrealized_pnl_pct": 0.030898506883465613
+   "unrealized_pnl_pct": 0.030898506883465612
   },
   {
    "ticker": "TLT",
@@ -66,16 +66,16 @@
    "current_price": 19.010000228881836,
    "market_value": 482.9468247219237,
    "unrealized_pnl": 29.977769263239225,
-   "unrealized_pnl_pct": 0.066180611902689925
+   "unrealized_pnl_pct": 0.06618061190268992
   },
   {
    "ticker": "OR.PA",
    "quantity": 3.5569154789441533,
    "avg_price": 370.0,
-   "current_price": 383.20001220703125,
-   "market_value": 1363.0100549507779,
-   "unrealized_pnl": 46.95132774144122,
-   "unrealized_pnl_pct": 0.035675708667652026
+   "current_price": 384.54998779296875,
+   "market_value": 1367.8118040085958,
+   "unrealized_pnl": 51.753076799259134,
+   "unrealized_pnl_pct": 0.039324291332348056
   }
  ]
 }
