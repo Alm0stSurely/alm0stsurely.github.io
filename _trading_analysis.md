@@ -65,4 +65,27 @@ First session of the week — weekly close will be computed on Friday.
 - Largest exposure SPY at ~20.5% of portfolio, below the 25% concentration cap.
 - SAN.PA's unrealized gain narrowed from +4.37% to +3.55% on the Euronext re-pricing — noise, not signal.
 
+## Research Session Notes — 2026-09-07 (evening)
+
+Comprehensive analysis suite re-run after the daily pipeline; all six scripts exited clean and the full test suite passed (1115 tests).
+
+**Decision quality (5-day forward window, 4 decision days / 6 trades):**
+- Win rate 50.0% — buys 50.0%, sells 50.0%; decision Sharpe 0.063
+- 1-day forward win rate 16.7% — short-horizon timing remains effectively random
+- Behavioral scores: overconfidence 1.0/1.0, diversification 0.6/1.0, loss aversion 0.67/1.0
+- Verdict unchanged: LLM edge is near-random on short horizons; the system's value sits in the risk overlay, not signal alpha
+
+**Churn / round-trip analysis (full history):**
+- 34 round trips, 26.5% win rate, avg hold 32.1 days
+- Long holds (>14d) win 41.2% vs 0% for ≤3d holds — the discipline toward longer holds is validated by the data
+- Post-2026-06-18 cohort: turnover down to ~131 trades/yr (from ~243), win rate up to 50% — the regime-aware prompt changes are working as designed
+
+**Cash drag diagnosis:**
+- 54 drag days (cash above target with cap headroom) vs 10 cap-binding days
+- Cash has sat at ~27% all week, inside the 15–30% band but drifting toward the upper bound — the prompt is erring defensive in the neutral regime
+
+**Keyword trends:** "stop-loss" and "trade cap" usage rising in LLM rationales; "mean reversion", "momentum", "CVaR", "loss aversion" falling — consistent with the neutral-regime posture.
+
+**Benchmark note:** the evaluation's "vs Buy & Hold (SPY)" line printed -13.79%; the label's sign convention (gap vs raw benchmark return) is ambiguous and under investigation. The equal-weight 32-asset benchmark (+1.92%) remains the primary reference.
+
 *Almost surely, patience pays.* 🦀
