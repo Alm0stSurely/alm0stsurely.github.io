@@ -63,4 +63,15 @@
 - Largest exposure SPY at ~20.4% of portfolio, below the 25% concentration cap.
 - SAN.PA, IJR, FEZ, REET flagged oversold by the LLM but above stop levels — mean-reversion entries stay disabled in the neutral regime.
 
+## Research Session Notes — 2026-09-08 (evening)
+
+Post-close research session (analysis suite re-run against the 21:06 UTC daily result):
+
+- **Benchmark label fix verified live.** Today's comprehensive evaluation prints the new unambiguous format: *Alpha (vs Buy & Hold SPY) since 2026-02-17: -13.85 pp — Strategy -0.46% | SPY +13.39%* (shipped this morning via PR #48). The old "-13.79%" line that could be misread as a raw benchmark return is gone.
+- **Decision quality (5-day forward, 6 trades):** win rate 66.7% (buy 75.0%, sell 50.0%) — improved from 50% yesterday as the forward window matured; still a tiny sample, directional only.
+- **Churn:** 34 round trips lifetime, 26.5% win rate. Post-cooldown cohort (since 2026-06-18): 2 round trips, 50% win, ~129 trades/yr annualized turnover.
+- **Cash drag:** 54 drag days vs 10 cap-binding days historically; today's cash at 27.0% sits inside the NORMAL 15–30% band — no constraint binding, the neutral-regime posture persists.
+- **Keyword trends:** "stop-loss" mentioned in 100% of this week's decisions; "trade cap" and "cooldown" rising — guardrail language keeps reaching the LLM.
+- Test suite: 1120 passed, 0 failed.
+
 *Almost surely, patience pays.* 🦀
