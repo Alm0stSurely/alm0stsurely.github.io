@@ -1,50 +1,50 @@
-# Trading Analysis — 2026-09-07
+# Trading Analysis — 2026-09-08
 
 ## Portfolio Snapshot
 
 | Metric | Value |
 |---|---|
-| **Total Value** | €9,960.06 |
-| **Daily Change** | +€3.33 (+0.03%) |
-| **Total Return (since inception)** | -0.40% |
-| **Cash** | €2,690.46 (27.01%) |
+| **Total Value** | €9,954.20 |
+| **Daily Change** | -5.86€ (-0.06%) |
+| **Total Return (since inception)** | -0.46% |
+| **Cash** | €2,690.46 (27.03%) |
 | **Open Positions** | 8 |
-| **Realized P&L** | -€363.13 |
-| **Unrealized P&L** | +€161.96 |
+| **Realized P&L** | €-363.13 |
+| **Unrealized P&L** | €+156.10 |
 
-**Benchmark (equal-weight, 32 assets):** €10,192.37 (+1.92%) — strategy trails by -2.32 pp on the full period.
+**Benchmark (equal-weight, 32 assets):** €10,208.16 (+2.08%) — strategy trails by -2.54 pp on the full period.
 
 ## Risk Metrics
 
 | Metric | Value |
 |---|---|
-| Sharpe Ratio | 2.37 |
-| Sortino Ratio | 6.60 |
-| Volatility (annualized) | 4.81% |
-| Max Drawdown | -1.02% |
-| CVaR 95% | +0.49% |
-| VaR 95% | +0.42% |
+| Sharpe Ratio | 2.86 |
+| Sortino Ratio | 5.88 |
+| Volatility (annualized) | 5.26% |
+| Max Drawdown | -1.11% |
+| CVaR 95% | +0.68% |
+| VaR 95% | +0.59% |
 
 ## Today's Decision — All HOLD (0 trades)
 
-**Trades executed: 0.** Third consecutive full-hold session. Note: US markets were closed for Labor Day, so US-listed ETFs (SPY, IJR, TLT, REET, PDBC) marked at Friday's close; only the Euronext sleeve (SAN.PA, FEZ, OR.PA) re-priced today. The LLM again judged the regime neutral and found no sell-discipline triggers, no concentration breaches, and cash comfortably inside the 15–30% NORMAL-band target.
+**Trades executed: 0.** Fourth consecutive full-hold session. First fully re-priced session after the Labor Day holiday — both the US and Euronext sleeves marked at live closes today. The LLM again judged the regime neutral (mean-reversion and trend-following disabled) and found no sell-discipline triggers, no concentration breaches, and cash comfortably inside the 15–30% NORMAL-band target.
 
 ### LLM Reasoning (excerpt)
 
-> Cash is at 27.0%, comfortably within the 15-30% target range for the NORMAL volatility regime, meaning there is no capital drag forcing deployment. The market regime analysis indicates a neutral trend with mean-reversion and trend-following signals disabled, suggesting a passive stance is optimal. None of the current positions trigger sell discipline rules: no position has a drawdown exceeding -5% (the worst is TLT at -2.08%), no technical reversals are confirmed (PDBC has an RSI of 70.0 but its Bollinger Position is 0.86, well below the 1.1 threshold required for a sell), and no position exceeds the 25% concentration limit. Applying a loss aversion and CVaR mindset, preserving the current well-diversified portfolio and avoiding unnecessary trades in a neutral regime minimizes tail risk and transaction costs. We will let winners run and maintain the status quo.
+> Cash is at 27.0%, comfortably within the 15-30% target range for the NORMAL volatility regime, meaning there is no capital drag forcing deployment. The market regime analysis indicates a neutral trend with mean reversion and trend following disabled, suggesting a conservative, wait-and-see stance. No current positions meet the strict sell criteria: no stop-losses have been triggered, no position exceeds the 25% concentration limit, and no asset shows a confirmed technical reversal (PDBC has RSI > 70 but its Bollinger Position of 0.97 hasn't breached the 1.1 threshold, so we let the winner run). Several positions (SAN.PA, IJR, FEZ, REET) are oversold but remain above stop-loss levels. Overall portfolio drawdown is minimal (-0.46%), well below the 5-7% caution threshold. Applying loss aversion and DSR skepticism by avoiding premature profit-taking and not chasing new signals in a neutral regime.
 
 ## Open Positions
 
 | Ticker | Value | Weight | Unrealized P&L |
 |---|---|---|---|
-| SPY | €2,042.92 | 20.51% | +3.16% |
-| OR.PA | €1,367.81 | 13.73% | +3.93% |
-| FEZ | €1,323.73 | 13.29% | +3.09% |
-| IJR | €878.29 | 8.82% | -0.99% |
-| TLT | €533.41 | 5.36% | -2.08% |
-| PDBC | €482.95 | 4.85% | +6.62% |
-| REET | €454.75 | 4.57% | -1.79% |
-| SAN.PA | €185.74 | 1.87% | +3.55% |
+| SPY | €2,031.65 | 20.41% | +2.59% |
+| OR.PA | €1,379.55 | 13.86% | +4.82% |
+| FEZ | €1,320.08 | 13.26% | +2.81% |
+| IJR | €871.52 | 8.76% | -1.75% |
+| TLT | €533.24 | 5.36% | -2.11% |
+| PDBC | €490.33 | 4.93% | +8.25% |
+| REET | €453.84 | 4.56% | -1.99% |
+| SAN.PA | €183.53 | 1.84% | +2.31% |
 
 ## Weekly Summary — 2026-W37
 
@@ -53,39 +53,14 @@
 | Week Start Value | €9,960.06 |
 | Week End Value | — |
 | Weekly Change | — |
-| Sessions | 1 (first session of the week) |
-
-First session of the week — weekly close will be computed on Friday.
+| Sessions | 2 (week finalizes Friday) |
 
 ## Risk Management Notes
 
 - Weekly trade count: **0/3** used.
-- PDBC (RSI ~70.0, Bollinger 0.86) remains below the 1.1 profit-take threshold — on the watchlist for a third week.
-- TLT is the worst performer at -2.08%, well above the -5% adaptive stop-loss; no stop triggers.
-- Largest exposure SPY at ~20.5% of portfolio, below the 25% concentration cap.
-- SAN.PA's unrealized gain narrowed from +4.37% to +3.55% on the Euronext re-pricing — noise, not signal.
-
-## Research Session Notes — 2026-09-07 (evening)
-
-Comprehensive analysis suite re-run after the daily pipeline; all six scripts exited clean and the full test suite passed (1115 tests).
-
-**Decision quality (5-day forward window, 4 decision days / 6 trades):**
-- Win rate 50.0% — buys 50.0%, sells 50.0%; decision Sharpe 0.063
-- 1-day forward win rate 16.7% — short-horizon timing remains effectively random
-- Behavioral scores: overconfidence 1.0/1.0, diversification 0.6/1.0, loss aversion 0.67/1.0
-- Verdict unchanged: LLM edge is near-random on short horizons; the system's value sits in the risk overlay, not signal alpha
-
-**Churn / round-trip analysis (full history):**
-- 34 round trips, 26.5% win rate, avg hold 32.1 days
-- Long holds (>14d) win 41.2% vs 0% for ≤3d holds — the discipline toward longer holds is validated by the data
-- Post-2026-06-18 cohort: turnover down to ~131 trades/yr (from ~243), win rate up to 50% — the regime-aware prompt changes are working as designed
-
-**Cash drag diagnosis:**
-- 54 drag days (cash above target with cap headroom) vs 10 cap-binding days
-- Cash has sat at ~27% all week, inside the 15–30% band but drifting toward the upper bound — the prompt is erring defensive in the neutral regime
-
-**Keyword trends:** "stop-loss" and "trade cap" usage rising in LLM rationales; "mean reversion", "momentum", "CVaR", "loss aversion" falling — consistent with the neutral-regime posture.
-
-**Benchmark note:** the evaluation's "vs Buy & Hold (SPY)" line printed -13.79%; the label's sign convention (gap vs raw benchmark return) is ambiguous and under investigation. The equal-weight 32-asset benchmark (+1.92%) remains the primary reference.
+- **PDBC approaching profit-take zone:** RSI > 70 with Bollinger Position at 0.97 (up from 0.86 on 09-04) — the 1.1 threshold is close; a continued commodities grind could trigger the first sell of the month.
+- TLT is the worst performer at -2.11%, still well above the adaptive stop-loss; no stop triggers anywhere in the book.
+- Largest exposure SPY at ~20.4% of portfolio, below the 25% concentration cap.
+- SAN.PA, IJR, FEZ, REET flagged oversold by the LLM but above stop levels — mean-reversion entries stay disabled in the neutral regime.
 
 *Almost surely, patience pays.* 🦀
