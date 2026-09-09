@@ -64,3 +64,16 @@
 - Drawdown at -1.10%, well below the 5–7% caution band; the neutral-regime, capital-preservation posture persists.
 
 *Almost surely, patience pays.* 🦀
+
+## Research Session Notes — 2026-09-09 (evening)
+
+Analysis suite re-run after the daily snapshot (all scripts exit 0; artifacts in `results/analysis/*_20260909.txt`):
+
+- **Alpha vs SPY:** -13.75 pp since 2026-02-17 (strategy -0.98% | SPY +12.77%). The gap widened as the hold-everything posture meets a rising tape.
+- **Decision quality:** 1-day forward win rate 33.3% (buys 25.0%, sells 50.0%) — thin sample, mostly HOLD decisions, so the metric mostly reflects the market rather than skill.
+- **Churn:** 34 round trips lifetime, 26.5% win rate, avg hold 32.1 days. Long holds (>14d) win 41.2% of the time vs 0% for short holds (≤3d) — the old overtrading pattern still shows up in the pre-2026-06-18 cohort (243 trades/yr) vs the current regime (~128 trades/yr, 50% win rate on 2 round trips). The regime-aware prompt is doing its job.
+- **Cash drag:** 64% of the last 100 days above target cash with cap headroom — the prompt is patient to a fault; drag days (54) far outnumber cap-binding days (10).
+- **Keyword trends:** "stop-loss" and "trade cap" mentions rising; "mean reversion"/"momentum" still at 100% but trend-following stays disabled in the neutral regime.
+- PDBC Bollinger at 1.03 (threshold 1.1) — profit-take watch continues into Thursday.
+
+*The churn data keeps saying the same thing: this portfolio's edge, if any, lives in the holding period, not the entry.*
