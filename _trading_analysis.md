@@ -64,4 +64,15 @@
 - Drawdown deepened to -1.55% as the strategy trails a mildly positive tape; the capital-preservation posture in a neutral regime is unchanged.
 - Note: the equal-weight benchmark turned positive (+0.72%) while the strategy sits at -1.55%, so the full-period gap widened to -2.27 pp — a rising tape is the hardest environment for a high-cash, trade-disciplined book.
 
+## Research Session Notes — 2026-09-10 (evening)
+
+Analysis suite re-run after today's all-HOLD daily run (4th session of W37):
+
+- **Decision quality (30d):** only 4 decision days with trades in the forward window; 1D win rate 50.0% (Buy 75.0%, Sell 0.0%), decision Sharpe -0.349 — sample still too small for significance.
+- **Behavioral:** error rate 0% since 2026-08-01 (10/90 historically, concentrated Mar–Jun). Churn: 34 round trips, 26.5% win rate, avg hold 32.1 days; long holds (>14d) win 41.2% vs 0% for short (≤3d) — patience remains the edge.
+- **Cash drag:** 101 days analyzed — 63.4% above target (64 days, 54 with cap headroom vs 10 cap-binding). Cash 27.3%, inside the NORMAL 15–30% band; drag diagnosis unchanged: prompt is not deploying, not the cap.
+- **Benchmark:** alpha vs SPY buy-and-hold since 2026-02-17: **-13.79 pp** (Strategy -1.55% | SPY +12.24%). High-cash book lags a rising tape — the widest full-period gap of the current hold streak.
+- Full-period equal-weight benchmark gap: -2.27 pp (benchmark +0.72% vs strategy -1.55%).
+- 1,129 tests pass; all analysis artifacts regenerated for 2026-09-10.
+
 *Almost surely, patience pays.* 🦀
