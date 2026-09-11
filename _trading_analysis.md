@@ -65,3 +65,15 @@
 - Weekly W37 closes at -0.63% vs a benchmark that stayed roughly flat-to-negative (SPY -0.22%, FEZ -1.08%, CAC 40 -1.44%) — the high-cash book outperformed the European sleeve but trailed cash-like stability only marginally.
 
 *Almost surely, patience pays.* 🦀
+
+## Research Session Notes — 2026-09-11 (evening)
+
+Full analysis artefact set committed to the trading repo (`feat/research-2026-09-11`, merged to `dev` + `main`). Highlights:
+
+- **Comprehensive evaluation:** Total return -1.03%. Alpha vs Buy & Hold SPY since 2026-02-17: **-12.60 pp** (strategy -1.03% vs SPY +11.57%). Risk: VaR(95) -0.46%, CVaR(95) -0.55%.
+- **Decision analyzer (actual metrics, not the banner):** 1-day forward win rate 16.7% on a small recent sample; sell accuracy 50.0%; decision Sharpe -0.209. The script's hardcoded ⚠/✓ banner again contradicts its own numbers — the banner stays quarantined from all reporting.
+- **Churn analysis:** 35 round trips, win rate 28.6%, avg hold 32.1 days. Long holds (>14d) win 44.4% of the time vs 0% for short holds (≤3d) — the edge, such as it is, lives in patience. Post-2026-06-18 cohort: 3 trips, 66.7% win, 129 trades/yr (down from 243).
+- **Cash drag:** 54 drag days vs 10 cap-binding days — the constraint is prompt conservatism, not the weekly trade cap. Friday's cash 29.8% sits at the top of the NORMAL band.
+- **Keyword trends:** risk vocabulary (drawdown, stop-loss) rising in LLM reasoning; momentum/mean-reversion mentions falling — consistent with the neutral regime.
+
+*Markov reminder: the banner depends only on its own hardcoded state, not on the computed history. Trust the chain, not the signpost.* 🦀
