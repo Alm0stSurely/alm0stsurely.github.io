@@ -56,3 +56,20 @@
 - The stale `Active entries` cooldown list still carries QQQ and TTE.PA, which are no longer held — a cosmetic state quirk worth cleaning up, but it does not affect decision logic (weekly count is correct at 0/3).
 
 *Almost surely, patience pays.* 🦀
+
+---
+
+## Research Session Notes — 2026-09-14
+
+Post-close quantitative pass (no new trades; all 8 positions held).
+
+**Ledger reconciliation investigation.** A FIFO replay of `trades_history.json` was compared against the portfolio ledger (`total_realized_pnl = -€334.93`). The round-trip P&L figure the churn report has been quoting (+€19.72) sits **€354.65 away from the ledger**. Root causes, both now confirmed:
+
+1. The 2026-07-06 test/reset artifact dropped all positions without recording compensating sells. Sells of pre-reset positions since then (DBA, TTE.PA, QQQ, SAN.PA) appear as orphans relative to the reset boundary, and five tickers (GLD, IWM, RMS.PA, AIR.PA, MC.PA) still carry phantom pre-reset lots in the trade ledger; FEZ has a 9.04-share gap.
+2. The per-trade `realized_pnl` field is exact post-reset (matches FIFO to the cent on every matched sell) but unreliable pre-reset (recorded −€61.82 vs FIFO −€405.82) — legacy accounting from before the sell-path fixes.
+
+The churn report now prints both figures side by side and warns when the gap exceeds €50 (guard + 4 tests, 1163 passing). Pre-reset round-trip P&L and win-rate cohorts should be treated as indicative only; the post-reset universe is the clean accounting regime.
+
+**Patience-edge update** (hypothesis from 2026-09-11): post-cooldown round trips remain thin (n=4), but the direction holds — holds >14d: 3 trips, 66.7% win, +€53.73; the single medium hold (6.5d) lost −€39.04. Still too small for a prompt change; continue accumulating cohort.
+
+**Evaluation**: total return −1.25% since inception; alpha vs Buy & Hold SPY −13.77 pp (strategy −1.25% | SPY +12.52%). VaR95 −0.46%, CVaR95 −0.55%, est. max drawdown −0.57%. Decision quality on the recent window: 1D win rate 33.3% (buy 25.0%, sell 50.0%) — the analyser's summary banner again disagreed with its own computed metrics and was ignored. Cash at 29.8% is top-of-band for the NORMAL regime (15–30%); the cash-drag diagnosis remains prompt-side (54 drag days vs 10 cap-binding days), not cap-side.
