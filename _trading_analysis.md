@@ -1,79 +1,58 @@
-# Trading Analysis — 2026-09-11
+# Trading Analysis — 2026-09-14
 
 ## Portfolio Snapshot
 
 | Metric | Value |
 |---|---|
-| **Total Value** | €9,896.95 |
-| **Daily Change** | +52.11€ (+0.53%) |
-| **Total Return (since inception)** | -1.03% |
-| **Cash** | €2,945.15 (29.76%) |
+| **Total Value** | €9,874.84 |
+| **Daily Change** | -22.11€ (-0.22%) |
+| **Total Return (since inception)** | -1.25% |
+| **Cash** | €2,945.15 (29.82%) |
 | **Open Positions** | 8 |
 | **Realized P&L** | €-334.93 |
-| **Unrealized P&L** | €70.66 |
+| **Unrealized P&L** | €+48.55 |
 
-**Benchmark (equal-weight, 32 assets):** €10,097.83 (+0.98%) — strategy trails by -2.01 pp on the full period.
+**Benchmark (equal-weight, 32 assets):** €10,062.01 (+0.62%) — strategy trails by -1.87 pp on the full period.
 
 ## Risk Metrics
 
 | Metric | Value |
 |---|---|
-| Sharpe Ratio | -1.37 |
-| Sortino Ratio | -2.05 |
-| Volatility (annualized) | 5.21% |
+| Sharpe Ratio | -2.73 |
+| Sortino Ratio | -3.91 |
+| Volatility (annualized) | 4.87% |
 | Max Drawdown | -1.87% |
 | CVaR 95% | +0.86% |
 | VaR 95% | +0.84% |
 
 ## Today's Decision — All HOLD (0 trades)
 
-**Trades executed: 0** by the evening pipeline. Note: an intraday monitor session already took a **partial profit on PDBC this morning** (sold 50% @ €20.05, +€28.20 realized) after the Bollinger breakout alert; the evening LLM reviewed the remaining book at Friday's official close and held all 8 positions. Cash sits at 29.8% — just inside the 15–30% NORMAL band — so no forced deployment. PDBC closed the week at RSI ~70 with Bollinger Position 0.94, back below the 1.1 profit-take confirmation threshold: the residual winner keeps running. No position breached the -5% stop-loss (worst is TLT at -3.70%). SAN.PA is extremely oversold (RSI 11.1) but mean reversion stays disabled in the neutral regime, so the drawdown is held, not added to.
+**Trades executed: 0.** New week (W38), cooldown reset at 0/3. The evening LLM reviewed the book at Monday's close and held all 8 positions. Cash sits at 29.8% — just inside the 15–30% NORMAL band — so no forced deployment. The market regime is neutral (normal volatility, no trend, mean-reversion and trend-following both disabled), which argues for a wait-and-see stance. No position breached the -5% stop-loss (worst are REET at -3.89% and IJR at -3.78%). PDBC remains the standout winner at +10.88% unrealized; RSI > 70 but Bollinger Position 0.89 is well below the 1.1 profit-take confirmation threshold, so the winner keeps running.
 
 ### LLM Reasoning (excerpt)
 
-> Cash is at ~29.8%, sitting just inside the 15-30% target range for a NORMAL volatility regime, meaning no forced deployment is required. The market regime analysis indicates a neutral trend with disabled mean-reversion and trend-following signals, suggesting a cautious, wait-and-see stance. All current positions are held: PDBC is overbought (RSI 70.1) but its Bollinger Position (0.94) has not breached the 1.1 threshold required for a confirmed technical reversal sell, so we let the winner run. IJR, TLT, and REET are in drawdown but remain above the -5% single-position stop-loss limit. SAN.PA is extremely oversold (RSI 11.1) and held for potential mean-reversion. Preserving capital and avoiding unnecessary trades in a neutral regime aligns with our CVaR and loss-aversion principles.
+> Cash is at ~29.8%, which sits just inside the 15-30% target range for a NORMAL volatility regime, meaning no forced deployment is required. The market regime analysis indicates a neutral trend with mean reversion and trend following disabled, suggesting a cautious, wait-and-see approach is optimal. None of our current positions have breached the -5% single-position stop-loss threshold (the worst are REET at -3.89% and IJR at -3.78%). Furthermore, no winning positions exhibit confirmed technical reversals (e.g., PDBC has RSI > 70 but its Bollinger Position is 0.89, well below the 1.1 threshold). Applying loss aversion and CVaR thinking, we default to holding all positions to avoid premature profit-taking or unnecessary risk in a neutral regime.
 
 ## Open Positions
 
 | Ticker | Value | Weight | Unrealized P&L |
 |---|---|---|---|
-| SPY | €2,026.85 | 20.48% | +2.35% |
-| OR.PA | €1,356.96 | 13.71% | +3.11% |
-| FEZ | €1,305.84 | 13.19% | +1.70% |
-| IJR | €859.07 | 8.68% | -3.15% |
-| TLT | €524.62 | 5.30% | -3.70% |
-| REET | €447.28 | 4.52% | -3.40% |
-| PDBC | €251.38 | 2.54% | +10.99% |
-| SAN.PA | €179.80 | 1.82% | +0.23% |
-
-## Weekly Summary — 2026-W37 (final)
-
-| Metric | Value |
-|---|---|
-| Week Start Value | €9,960.06 |
-| Week End Value | €9,896.95 |
-| Weekly Change | -0.63% |
-| Sessions | 5 |
+| SPY | €2,017.81 | 20.43% | +1.89% |
+| OR.PA | €1,362.12 | 13.79% | +3.50% |
+| FEZ | €1,290.48 | 13.07% | +0.50% |
+| IJR | €853.52 | 8.64% | -3.78% |
+| TLT | €525.17 | 5.32% | -3.60% |
+| REET | €445.04 | 4.51% | -3.89% |
+| PDBC | €251.13 | 2.54% | +10.88% |
+| SAN.PA | €184.44 | 1.87% | +2.82% |
 
 ## Risk Management Notes
 
-- Weekly trade count: **1/3 used** (intraday PDBC partial profit-take on Friday morning, executed by the monitor session; the evening run itself executed 0 trades).
-- **PDBC:** after the morning 50% sale @ €20.05, the residual 12.70 shares closed at €19.79 (+10.99% unrealized). RSI cooled from 78 to ~70 and Bollinger Position fell to 0.94 — no further take-profit trigger at Friday's close.
-- Worst performers: TLT -3.70%, REET -3.40%, IJR -3.15% — all comfortably above the -5% stop-loss.
-- Largest exposure SPY at ~20.5% of portfolio, below the 25% concentration cap.
-- The strategy gained +0.53% on Friday while the equal-weight benchmark gained +0.26% — a rare day of outperformance, though the full-period gap remains -2.01 pp.
-- Weekly W37 closes at -0.63% vs a benchmark that stayed roughly flat-to-negative (SPY -0.22%, FEZ -1.08%, CAC 40 -1.44%) — the high-cash book outperformed the European sleeve but trailed cash-like stability only marginally.
+- Weekly trade count: **0/3 used** — fresh week, full deployment budget available.
+- Cash at 29.82% is at the very top of the NORMAL band (15–30%); one more day of cash accrual and forced deployment logic may start pulling.
+- Worst performers: REET -3.89%, IJR -3.78%, TLT -3.60% — all above the -5% adaptive stop-loss; in the normal vol regime the stop sits at -5.0%.
+- Largest exposure SPY at ~20.4% of portfolio, below the 25% concentration cap.
+- Weekend gap digest: portfolio drifted -0.22% from Friday's close, slightly worse than the benchmark's weekend move; full-period gap vs equal-weight benchmark now -1.87 pp.
+- The stale `Active entries` cooldown list still carries QQQ and TTE.PA, which are no longer held — a cosmetic state quirk worth cleaning up, but it does not affect decision logic (weekly count is correct at 0/3).
 
 *Almost surely, patience pays.* 🦀
-
-## Research Session Notes — 2026-09-11 (evening)
-
-Full analysis artefact set committed to the trading repo (`feat/research-2026-09-11`, merged to `dev` + `main`). Highlights:
-
-- **Comprehensive evaluation:** Total return -1.03%. Alpha vs Buy & Hold SPY since 2026-02-17: **-12.60 pp** (strategy -1.03% vs SPY +11.57%). Risk: VaR(95) -0.46%, CVaR(95) -0.55%.
-- **Decision analyzer (actual metrics, not the banner):** 1-day forward win rate 16.7% on a small recent sample; sell accuracy 50.0%; decision Sharpe -0.209. The script's hardcoded ⚠/✓ banner again contradicts its own numbers — the banner stays quarantined from all reporting.
-- **Churn analysis:** 35 round trips, win rate 28.6%, avg hold 32.1 days. Long holds (>14d) win 44.4% of the time vs 0% for short holds (≤3d) — the edge, such as it is, lives in patience. Post-2026-06-18 cohort: 3 trips, 66.7% win, 129 trades/yr (down from 243).
-- **Cash drag:** 54 drag days vs 10 cap-binding days — the constraint is prompt conservatism, not the weekly trade cap. Friday's cash 29.8% sits at the top of the NORMAL band.
-- **Keyword trends:** risk vocabulary (drawdown, stop-loss) rising in LLM reasoning; momentum/mean-reversion mentions falling — consistent with the neutral regime.
-
-*Markov reminder: the banner depends only on its own hardcoded state, not on the computed history. Trust the chain, not the signpost.* 🦀
