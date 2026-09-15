@@ -1,81 +1,72 @@
 {
-  "cash": 2945.1475119180495,
-  "total_realized_pnl": -334.92691246654357,
+  "cash": 2369.1860008690774,
+  "total_realized_pnl": -358.5686052485684,
   "positions": [
     {
       "ticker": "SAN.PA",
       "quantity": 2.4545517563556274,
       "avg_price": 73.07906183264495,
-      "current_price": 75.13999938964844,
-      "market_value": 184.43501747442235,
-      "unrealized_pnl": 5.058677900282191,
-      "unrealized_pnl_pct": 0.02820147803379235
+      "current_price": 74.2699966430664,
+      "market_value": 182.2995507047652,
+      "unrealized_pnl": 2.923211130625049,
+      "unrealized_pnl_pct": 0.016296525715515684
     },
     {
       "ticker": "SPY",
       "quantity": 2.652319458001969,
       "avg_price": 746.6356999909071,
-      "current_price": 760.77001953125,
-      "market_value": 2017.8051258672724,
-      "unrealized_pnl": 37.48873074246876,
-      "unrealized_pnl_pct": 0.01893067735779976
+      "current_price": 757.4199829101562,
+      "market_value": 2008.9197585521263,
+      "unrealized_pnl": 28.60336342732262,
+      "unrealized_pnl_pct": 0.01444383508500922
     },
     {
       "ticker": "IJR",
       "quantity": 6.0421630052117274,
       "avg_price": 146.80999755859375,
-      "current_price": 141.25999450683594,
-      "market_value": 853.5159129256159,
-      "unrealized_pnl": -33.534023118143296,
-      "unrealized_pnl_pct": -0.03780398572340241
+      "current_price": 140.07000732421875,
+      "market_value": 846.3258163941302,
+      "unrealized_pnl": -40.72411964962896,
+      "unrealized_pnl_pct": -0.045909613421831065
     },
     {
       "ticker": "FEZ",
-      "quantity": 18.735126891665615,
-      "avg_price": 68.53729858712835,
-      "current_price": 68.87999725341797,
-      "market_value": 1290.4754888403647,
-      "unrealized_pnl": 6.420502998540542,
-      "unrealized_pnl_pct": 0.005000177616483668
+      "quantity": 33.52774690874879,
+      "avg_price": 68.58261072669036,
+      "current_price": 68.63999938964844,
+      "market_value": 2301.344527352804,
+      "unrealized_pnl": 1.9241125670896508,
+      "unrealized_pnl_pct": 0.0008367815449133346
     },
     {
       "ticker": "TLT",
       "quantity": 6.487549530231055,
       "avg_price": 83.97000122070312,
-      "current_price": 80.94999694824219,
-      "market_value": 525.167114673774,
-      "unrealized_pnl": -19.592427299099654,
-      "unrealized_pnl_pct": -0.03596527603379779
-    },
-    {
-      "ticker": "REET",
-      "quantity": 16.59067048400136,
-      "avg_price": 27.90999984741211,
-      "current_price": 26.825000762939453,
-      "market_value": 445.04474839101357,
-      "unrealized_pnl": -18.000862285928974,
-      "unrealized_pnl_pct": -0.03887492262287701
+      "current_price": 80.71499633789062,
+      "market_value": 523.6425365744836,
+      "unrealized_pnl": -21.117005398390006,
+      "unrealized_pnl_pct": -0.03876390181604479
     },
     {
       "ticker": "PDBC",
       "quantity": 12.702441317917083,
       "avg_price": 17.829999923706055,
-      "current_price": 19.770000457763672,
-      "market_value": 251.1272706699369,
-      "unrealized_pnl": 24.642742940594673,
-      "unrealized_pnl_pct": 0.10880541460228887
+      "current_price": 20.094999313354492,
+      "market_value": 255.2555495614695,
+      "unrealized_pnl": 28.771021832127275,
+      "unrealized_pnl_pct": 0.12703305660910205
     },
     {
       "ticker": "OR.PA",
       "quantity": 3.5569154789441533,
       "avg_price": 370.0,
-      "current_price": 382.95001220703125,
-      "market_value": 1362.120826081042,
-      "unrealized_pnl": 46.0620988717053,
-      "unrealized_pnl_pct": 0.03500003299197644
+      "current_price": 381.45001220703125,
+      "market_value": 1356.7854528626256,
+      "unrealized_pnl": 40.726725653288895,
+      "unrealized_pnl_pct": 0.03094597893792225
     }
   ],
-  "last_updated": "2026-09-14T21:06:43.151607",
-  "total_value": 9874.839016841492,
-  "positions_value": 6929.691504923442
+  "last_updated": "2026-09-15T21:06:53.677694",
+  "total_value": 9843.759192871483,
+  "positions_value": 7474.5731920024045
 }

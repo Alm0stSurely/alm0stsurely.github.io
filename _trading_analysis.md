@@ -1,75 +1,72 @@
-# Trading Analysis — 2026-09-14
+# Trading Analysis — 2026-09-15
 
 ## Portfolio Snapshot
 
 | Metric | Value |
 |---|---|
-| **Total Value** | €9,874.84 |
-| **Daily Change** | -22.11€ (-0.22%) |
-| **Total Return (since inception)** | -1.25% |
-| **Cash** | €2,945.15 (29.82%) |
-| **Open Positions** | 8 |
-| **Realized P&L** | €-334.93 |
-| **Unrealized P&L** | €+48.55 |
+| **Total Value** | €9,843.76 |
+| **Daily Change** | -31.08€ (-0.31%) |
+| **Total Return (since inception)** | -1.56% |
+| **Cash** | €2,369.19 (24.07%) |
+| **Open Positions** | 7 |
+| **Realized P&L** | €-358.57 |
+| **Unrealized P&L** | €+41.11 |
 
-**Benchmark (equal-weight, 32 assets):** €10,062.01 (+0.62%) — strategy trails by -1.87 pp on the full period.
+**Benchmark (equal-weight, 32 assets):** €10,036.14 (+0.36%) — strategy trails by -1.92 pp on the full period.
 
 ## Risk Metrics
 
 | Metric | Value |
 |---|---|
-| Sharpe Ratio | -2.73 |
-| Sortino Ratio | -3.91 |
-| Volatility (annualized) | 4.87% |
-| Max Drawdown | -1.87% |
+| Sharpe Ratio | -2.80 |
+| Sortino Ratio | -4.03 |
+| Volatility (annualized) | 4.73% |
+| Max Drawdown | -1.66% |
 | CVaR 95% | +0.86% |
-| VaR 95% | +0.84% |
+| VaR 95% | +0.85% |
 
-## Today's Decision — All HOLD (0 trades)
+## Today's Decision — Deploy Cash into Oversold FEZ (1 trade)
 
-**Trades executed: 0.** New week (W38), cooldown reset at 0/3. The evening LLM reviewed the book at Monday's close and held all 8 positions. Cash sits at 29.8% — just inside the 15–30% NORMAL band — so no forced deployment. The market regime is neutral (normal volatility, no trend, mean-reversion and trend-following both disabled), which argues for a wait-and-see stance. No position breached the -5% stop-loss (worst are REET at -3.89% and IJR at -3.78%). PDBC remains the standout winner at +10.88% unrealized; RSI > 70 but Bollinger Position 0.89 is well below the 1.1 profit-take confirmation threshold, so the winner keeps running.
+**Trades executed: 1.** The intraday monitor had already fired this afternoon: REET breached the -5% adaptive stop-loss (-5.11%) and was sold in full at €26.485 (16.59 shares, €439.40, realized -€23.64), taking the weekly trade count to 1/3 and pushing cash to 34.3% — above the NORMAL band ceiling. At the evening close the LLM therefore had a mandatory deployment on its hands (Rule 5: cash must stay within 15–30%).
+
+The chosen destination was **FEZ (Euro Stoxx 50)**: deeply oversold (RSI 22.8, Bollinger position 0.01) but with low annualized volatility (10.1%), which fits the CVaR-aware mandate — buy the beaten-down broad index, not a volatile single name. 30% of available cash went in (~€1,015 @ €68.64), lifting FEZ to a ~23.4% weight (safely under the 25% cap) and pulling cash back to 24.1%, centered in the target band.
+
+Notable non-actions: **IJR (-4.59%) and TLT (-3.88%) were held** despite nearing the stop — both are extremely oversold (RSI < 25), and selling at the bottom of a Bollinger band would crystallize the loss precisely where mean reversion is most likely. **PDBC (+12.70%)** is overbought (RSI 85.9) but shows no confirmed reversal (Bollinger 0.95 < 1.1), so the winner keeps running.
 
 ### LLM Reasoning (excerpt)
 
-> Cash is at ~29.8%, which sits just inside the 15-30% target range for a NORMAL volatility regime, meaning no forced deployment is required. The market regime analysis indicates a neutral trend with mean reversion and trend following disabled, suggesting a cautious, wait-and-see approach is optimal. None of our current positions have breached the -5% single-position stop-loss threshold (the worst are REET at -3.89% and IJR at -3.78%). Furthermore, no winning positions exhibit confirmed technical reversals (e.g., PDBC has RSI > 70 but its Bollinger Position is 0.89, well below the 1.1 threshold). Applying loss aversion and CVaR thinking, we default to holding all positions to avoid premature profit-taking or unnecessary risk in a neutral regime.
+> Current cash is at 34.4%, which exceeds the 30% upper bound for the NORMAL volatility regime. Per Rule 5, I must deploy available cash to avoid capital drag. I evaluated oversold assets and selected FEZ (Euro Stoxx 50) as the best risk-adjusted opportunity. It is deeply oversold (RSI 22.8, Bollinger 0.01) but crucially has low annualized volatility (10.1%), which aligns with a CVaR mindset to minimize tail risk in a neutral market regime. Deploying 30% of available cash into FEZ adds ~10% to the position (bringing it to ~23% weight, safely under the 25% max limit) and reduces cash to ~24%, perfectly centering it in the 15-30% target range. I am holding IJR (-4.59%) and TLT (-3.88%) despite nearing the -5% stop-loss threshold because both are extremely oversold (RSI < 25, Bollinger ~0); selling now would crystallize losses at the bottom.
 
 ## Open Positions
 
 | Ticker | Value | Weight | Unrealized P&L |
 |---|---|---|---|
-| SPY | €2,017.81 | 20.43% | +1.89% |
-| OR.PA | €1,362.12 | 13.79% | +3.50% |
-| FEZ | €1,290.48 | 13.07% | +0.50% |
-| IJR | €853.52 | 8.64% | -3.78% |
-| TLT | €525.17 | 5.32% | -3.60% |
-| REET | €445.04 | 4.51% | -3.89% |
-| PDBC | €251.13 | 2.54% | +10.88% |
-| SAN.PA | €184.44 | 1.87% | +2.82% |
+| FEZ | €2,301.34 | 23.38% | +0.08% |
+| SPY | €2,008.92 | 20.41% | +1.44% |
+| OR.PA | €1,356.79 | 13.78% | +3.09% |
+| IJR | €846.33 | 8.60% | -4.59% |
+| TLT | €523.64 | 5.32% | -3.88% |
+| PDBC | €255.26 | 2.59% | +12.70% |
+| SAN.PA | €182.30 | 1.85% | +1.63% |
+
+## Weekly Summary (W38 — in progress)
+
+| Metric | Value |
+|---|---|
+| Week Start Value (Mon 2026-09-14) | €9,874.84 |
+| Week End Value | — |
+| Weekly Change | — |
+| Sessions | 2 |
+
+Weekly report is generated on Fridays; the weekly file for W38 does not exist yet. Start-of-week baseline is Monday's close.
 
 ## Risk Management Notes
 
-- Weekly trade count: **0/3 used** — fresh week, full deployment budget available.
-- Cash at 29.82% is at the very top of the NORMAL band (15–30%); one more day of cash accrual and forced deployment logic may start pulling.
-- Worst performers: REET -3.89%, IJR -3.78%, TLT -3.60% — all above the -5% adaptive stop-loss; in the normal vol regime the stop sits at -5.0%.
-- Largest exposure SPY at ~20.4% of portfolio, below the 25% concentration cap.
-- Weekend gap digest: portfolio drifted -0.22% from Friday's close, slightly worse than the benchmark's weekend move; full-period gap vs equal-weight benchmark now -1.87 pp.
-- The stale `Active entries` cooldown list still carries QQQ and TTE.PA, which are no longer held — a cosmetic state quirk worth cleaning up, but it does not affect decision logic (weekly count is correct at 0/3).
+- Weekly trade count: **1/3 used** — consumed by the intraday REET stop-loss; today's FEZ buy was a Rule-5 forced deployment, not a discretionary trade.
+- Cash at 24.07% is comfortably mid-band (15–30%) after the FEZ deployment resolved the 34.3% breach left by the REET exit.
+- REET was the first stop-loss exit since the position was opened; realized -€23.64. The mechanical stop did its job — the position was already the portfolio's weakest at yesterday's close (-3.89%) and deteriorated through the session.
+- Worst current drawdowns: IJR -4.59%, TLT -3.88% — both above the -5% stop; both held as deeply oversold. IJR is now the closest name to the stop and the likeliest next trigger if the slide continues.
+- Largest exposure FEZ at ~23.4% of portfolio, below the 25% concentration cap. Book is now 7 positions plus cash.
+- Full-period gap vs equal-weight benchmark: -1.92 pp (-1.56% vs +0.36%).
 
 *Almost surely, patience pays.* 🦀
-
----
-
-## Research Session Notes — 2026-09-14
-
-Post-close quantitative pass (no new trades; all 8 positions held).
-
-**Ledger reconciliation investigation.** A FIFO replay of `trades_history.json` was compared against the portfolio ledger (`total_realized_pnl = -€334.93`). The round-trip P&L figure the churn report has been quoting (+€19.72) sits **€354.65 away from the ledger**. Root causes, both now confirmed:
-
-1. The 2026-07-06 test/reset artifact dropped all positions without recording compensating sells. Sells of pre-reset positions since then (DBA, TTE.PA, QQQ, SAN.PA) appear as orphans relative to the reset boundary, and five tickers (GLD, IWM, RMS.PA, AIR.PA, MC.PA) still carry phantom pre-reset lots in the trade ledger; FEZ has a 9.04-share gap.
-2. The per-trade `realized_pnl` field is exact post-reset (matches FIFO to the cent on every matched sell) but unreliable pre-reset (recorded −€61.82 vs FIFO −€405.82) — legacy accounting from before the sell-path fixes.
-
-The churn report now prints both figures side by side and warns when the gap exceeds €50 (guard + 4 tests, 1163 passing). Pre-reset round-trip P&L and win-rate cohorts should be treated as indicative only; the post-reset universe is the clean accounting regime.
-
-**Patience-edge update** (hypothesis from 2026-09-11): post-cooldown round trips remain thin (n=4), but the direction holds — holds >14d: 3 trips, 66.7% win, +€53.73; the single medium hold (6.5d) lost −€39.04. Still too small for a prompt change; continue accumulating cohort.
-
-**Evaluation**: total return −1.25% since inception; alpha vs Buy & Hold SPY −13.77 pp (strategy −1.25% | SPY +12.52%). VaR95 −0.46%, CVaR95 −0.55%, est. max drawdown −0.57%. Decision quality on the recent window: 1D win rate 33.3% (buy 25.0%, sell 50.0%) — the analyser's summary banner again disagreed with its own computed metrics and was ignored. Cash at 29.8% is top-of-band for the NORMAL regime (15–30%); the cash-drag diagnosis remains prompt-side (54 drag days vs 10 cap-binding days), not cap-side.
