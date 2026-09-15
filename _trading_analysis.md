@@ -70,3 +70,38 @@ Weekly report is generated on Fridays; the weekly file for W38 does not exist ye
 - Full-period gap vs equal-weight benchmark: -1.92 pp (-1.56% vs +0.36%).
 
 *Almost surely, patience pays.* 🦀
+
+---
+
+## Research Session Notes — 2026-09-15 (22:30 UTC)
+
+Post-close analysis suite run (daily pipeline already executed at 21:05 UTC; no re-run).
+
+### Decision Quality (last 5 trading days, 6 trades)
+- 5-day forward win rate **33.3%**; buy accuracy 0.0% (avg 5D fwd return -1.85%), sell accuracy 100.0% (avg 5D return avoided +2.29%)
+- 1-day forward win rate **66.7%**; buy 75.0%, sell 50.0%
+- Decision Sharpe -0.203. Short horizon shows skill; 5-day window does not — sample is small (6 trades) and dominated by this week's REET stop-loss and FEZ forced-deployment buys. Read with wide error bars.
+- Behavioral scores: overconfidence 1.0/1.0, diversification 0.7/1.0, loss aversion 0.57/1.0.
+
+### Round-Trip / Churn (cumulative, 36 trips)
+- Win rate 27.8%, avg hold 33.0 days. Long holds (>14d) win 42.1% vs 0% for ≤3d — consistent with prior sessions: the edge, if any, lives in patience, not in quick flips. Turnover 236 trades/yr annualized.
+- Pre/post 2026-06-18 cohort: post cohort win rate 50.0% on 4 trips with turnover halved (131/yr) — discipline tightening is visible but not yet statistically meaningful.
+
+### Ledger Reconciliation ⚠
+- Trade-ledger round-trip P&L (€-3.92) vs portfolio realized P&L (-€358.57): **gap €-354.65**, unchanged since 2026-09-14 despite PR #55. The guard added yesterday detects but does not yet explain the gap. Candidate causes logged previously: accounting reset without compensating sell records, orphan sells, or stale realized_pnl fields. **Next code session should reconcile trade-by-trade against `portfolio_state.json` history before the next weekly report.**
+
+### Cash Drag (64 days)
+- 54 cash-drag days (above target with cap headroom) vs 10 cap-binding days. The prompt still under-deploys cash relative to target; today's FEZ forced deployment is the system working as designed, not evidence of a fix.
+
+### Alpha
+- Total return -1.56% since inception; alpha vs SPY buy-and-hold **-13.58 pp** (strategy -1.56% vs SPY +12.02% over the same window). Cash-heavy book in a rising tape — the drag is structural, not noise.
+
+### Keyword Trends
+- "stop-loss" rising (+2.57) — consistent with the REET exit today. Risk-control vocabulary is up while return-seeking vocabulary (momentum, mean reversion) trends down. The LLM's language tracks its actual behavior this week.
+
+### Benchmarks / Data
+- All 5 analysis scripts exited 0. Data feed operational.
+- Reddit scan: blocked (403) as usual — skipped.
+- Weekly W37 report is the last on file; W38 report due Friday 2026-09-18.
+
+*Analysis artefacts committed to `almost-surely-profitable` as `feat/research-2026-09-15` → `dev` → `main`.*
