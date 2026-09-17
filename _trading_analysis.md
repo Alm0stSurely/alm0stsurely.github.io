@@ -59,3 +59,19 @@ The LLM reviewed the full portfolio and chose to hold all 7 positions:
 | Week End Value | — |
 | Weekly Change | — |
 | Sessions | 4 (Mon–Thu) |
+
+## Research Session Notes (2026-09-17 22:30 UTC)
+
+Post-close research pass over the 105-day history. Key artefacts (all in `results/analysis/`, tag `20260917`):
+
+**Decision quality (1-day forward):** overall win rate 66.7%, buy accuracy 60.0%, sell accuracy 100.0% (small sample — 15 decisions). Decision Sharpe -0.09, i.e. marginal. The analyzer's own assessment: near-random band, negative risk-adjusted returns. Per long-standing convention, the banner text is ignored in favour of the computed lines above it.
+
+**Comprehensive evaluation:** total return -1.36% since 2026-02-17; alpha vs buy-and-hold SPY **-12.87 pp** (strategy -1.36% vs SPY +11.51%). Risk: VaR 95 -0.46%, CVaR 95 -0.55%, max drawdown (est) -0.57%.
+
+**Churn / round-trips:** 36 round trips, win rate 27.8%, avg hold 33 days. Long holds (>14d) win 42.1% vs 15.4% for medium (4-14d) — consistent with the thesis that the edge, if any, lives in patience. Post-2026-06-18 cohort: 50% win rate, turnover halved to 128 trades/yr (the trade-cap discipline is working). Known ledger gap (€-354.65) between round-trip P&L and portfolio realized P&L — flagged for a future accounting-session fix, not blocking.
+
+**Keyword trends:** "stop-loss" and "trade cap" language in LLM reasoning correlates with positive outcomes (+2.11, +1.49 avg); "mean reversion" and "momentum" keywords trend falling — the LLM's trend/mean-reversion vocabulary has not been associated with wins lately, matching the disabled regime filters.
+
+**Cash drag:** 105 days analyzed, 61% above target with cap headroom vs 10 cap-binding days — the constraint is the prompt's deployment aggressiveness, not the weekly cap. Today's file is byte-identical to yesterday's apart from the timestamp (history window has not advanced); kept as-is.
+
+IJR sits at -4.99% against a -5% adaptive stop for the second consecutive close. Tomorrow's session is the W38 weekly close: weekly report, and the stop-out question resolves one way or the other.
