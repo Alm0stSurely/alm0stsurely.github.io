@@ -1,77 +1,66 @@
-# Trading Analysis — 2026-09-17
+# Trading Analysis — 2026-09-18
 
 ## Daily Snapshot
 
 | Metric | Value |
 |---|---|
-| Portfolio Value | €9,863.95 |
-| Cash | €2,369.19 (24.0%) |
-| Daily Change | €+41.04 (+0.42%) |
-| Total Return (since inception) | -1.36% |
-| Equal-Weight Benchmark Return | 0.85% |
-| Gap vs Benchmark | -2.21 pp |
-| Realized P&L | €-358.57 |
-| Unrealized P&L | €+61.30 |
-| Trades Executed | 0 |
+| Portfolio Value | €9,813.20 |
+| Cash | €3,206.69 (32.7%) |
+| Daily Change | €-50.75 (-0.51%) |
+| Total Return (since inception) | -1.87% |
+| Equal-Weight Benchmark Return | -0.03% |
+| Gap vs Benchmark | -1.84 pp |
+| Realized P&L | €-408.11 |
+| Unrealized P&L | €+60.09 |
+| Trades Executed (evening run) | 0 |
+
+## Intraday Activity
+
+The intraday monitor triggered **1 critical alert** at 14:35 UTC: the adaptive stop-loss on **IJR** (US small-caps) breached at **-5.59%** versus the -5.0% threshold (live price €138.61 vs entry €146.81, held since 2026-07-06). The full position (6.04 shares, €837.50) was sold intraday for a realized loss of **-€49.55**. This was a rule-driven, non-discretionary exit — the third consecutive session at the threshold edge, and the breach finally occurred. Cash rose from €2,369.19 to €3,206.69. This stop-loss exit consumed the week's final discretionary trade slot (weekly cap now 3/3); Rule-5 forced deployments would not count against it, but none were triggered.
 
 ## Risk Metrics
 
 | Metric | Value |
 |---|---|
-| Volatility (ann.) | 5.64% |
-| Sharpe Ratio | -2.99 |
-| Sortino Ratio | -4.62 |
-| Max Drawdown | -2.32% |
-| VaR 95% | 0.88% |
-| CVaR 95% | 0.88% |
+| Volatility (ann.) | 4.85% |
+| Sharpe Ratio | -3.54 |
+| Sortino Ratio | -5.76 |
+| Max Drawdown | -1.78% |
+| VaR 95% | 0.83% |
+| CVaR 95% | 0.87% |
 
 ## LLM Decision — All Holds
 
-The LLM reviewed the full portfolio and chose to hold all 7 positions:
+The LLM reviewed the 6 remaining positions and chose to hold all of them:
 
-> Cash is at ~24.0%, comfortably within the 15-30% target range for a NORMAL volatility regime, meaning no forced deployment is required. The market regime analysis indicates a neutral trend with mean reversion and trend following disabled, reducing the statistical edge for new entries. IJR is approaching the -5% stop-loss threshold (-4.99%) but is deeply oversold (RSI 24.3); I will hold and monitor closely for a bounce or a strict stop-out. PDBC is overbought (RSI 72.8) but its Bollinger position (0.74) does not meet the >1.1 threshold for a confirmed technical reversal, so I will let the winner run per sell discipline rules. With only 1 trade remaining this week and no high-confidence setups that pass the meta-labeling and DSR tests, holding all positions and preserving capital is the most risk-aware decision.
+> Cash is at ~32.6%, slightly above the 30% upper bound for the NORMAL volatility regime, which typically signals a need to deploy capital to avoid cash drag. However, the weekly trade cap (3/3) has been reached, strictly prohibiting new buys or sells absent a stop-loss override. Applying our CVaR and loss aversion mindset, no positions have breached the -5% single-position drawdown threshold (TLT is at -3.27%, others are in profit or near flat), and the total portfolio drawdown is a manageable -1.87%. Thus, no risk-management overrides are triggered. We must hold all positions and wait for the trade cap to reset before deploying the excess cash into risk-adjusted opportunities.
 
 ## Open Positions
 
 | Ticker | Quantity | Price | Value | Weight | Unrealized P&L | Unrealized P&L % |
 |---|---|---|---|---|---|---|
-| FEZ | 33.53 | €68.87 | €2309 | 23.4% | +9.64 | +0.42% |
-| SPY | 2.65 | €762.68 | €2023 | 20.5% | +42.55 | +2.15% |
-| OR.PA | 3.56 | €380.90 | €1355 | 13.7% | +38.77 | +2.95% |
-| IJR | 6.04 | €139.49 | €843 | 8.5% | -44.23 | -4.99% |
-| TLT | 6.49 | €81.78 | €531 | 5.4% | -14.21 | -2.61% |
-| PDBC | 12.70 | €19.72 | €250 | 2.5% | +24.01 | +10.60% |
-| SAN.PA | 2.45 | €75.02 | €184 | 1.9% | +4.76 | +2.66% |
+| FEZ | 33.53 | €68.15 | 2,285 | 23.3% | -14.34 | -0.62% |
+| SPY | 2.65 | €761.63 | 2,020 | 20.6% | +39.77 | +2.01% |
+| OR.PA | 3.56 | €377.55 | 1,343 | 13.7% | +26.85 | +2.04% |
+| TLT | 6.49 | €81.22 | 527 | 5.4% | -17.82 | -3.27% |
+| PDBC | 12.70 | €19.66 | 250 | 2.5% | +23.25 | +10.26% |
+| SAN.PA | 2.45 | €74.05 | 182 | 1.9% | +2.38 | +1.33% |
 
 ## Risk Management Notes
 
-- **Cash buffer** at 24.0% — comfortably inside the 15–30% target band for a NORMAL volatility regime, so no Rule-5 forced deployment applied.
-- **IJR** closed at -4.99%, a hair from the -5% adaptive stop-loss, and remains deeply oversold (RSI 24.3). The LLM again elected to hold rather than sell into weakness — the stop has not technically breached. This is the second consecutive session at the threshold; a breach tomorrow would trigger the week's final discretionary trade.
-- **PDBC** (+10.60%) is overbought (RSI 72.8) but its Bollinger position (0.74) remains below the >1.1 profit-take threshold — winner left to run.
-- Weekly discretionary budget: 2/3 trades used; one remains, and no setup cleared the meta-labeling / DSR filters tonight.
-- No intraday monitor activity today.
+- **Cash buffer** at 32.7% — above the 30% upper bound of the 15–30% target band for a NORMAL volatility regime. Ordinarily this would force deployment under Rule 5, but the weekly discretionary trade cap (3/3, consumed in part by this morning's IJR stop-loss) strictly prohibits new buys. The LLM correctly held rather than violating the cap.
+- **IJR stop-loss executed intraday** (-5.59%, realized -€49.55). Second lesson of the week on threshold behavior: two sessions at -4.97%/-4.99% preceded the breach — the limit was the truth. The position is removed from the dashboard and the stop-loss watch list; a 10-day cooldown applies before any re-entry.
+- **TLT** (-3.27%) is now the weakest position but remains well above the stop threshold. **FEZ** (-0.62%) and **PDBC** (+10.26%) round out the book.
+- Weekly discretionary budget: **3/3 used** (FEZ buy on 09-15, IJR stop-loss today, plus one earlier) — no further discretionary trades until the cap resets next week.
+- The evening run's own `executed_trades` is empty; all realized P&L movement today came from the intraday monitor session, which is expected.
 
-## Weekly Summary (W38, in progress)
+## Weekly Summary (W38 — final)
 
 | Metric | Value |
 |---|---|
 | Week Start Value | €9,874.84 |
-| Week End Value | — |
-| Weekly Change | — |
-| Sessions | 4 (Mon–Thu) |
+| Week End Value | €9,813.20 |
+| Weekly Change | -0.62% |
+| Trading Days | 4 |
 
-## Research Session Notes (2026-09-17 22:30 UTC)
-
-Post-close research pass over the 105-day history. Key artefacts (all in `results/analysis/`, tag `20260917`):
-
-**Decision quality (1-day forward):** overall win rate 66.7%, buy accuracy 60.0%, sell accuracy 100.0% (small sample — 15 decisions). Decision Sharpe -0.09, i.e. marginal. The analyzer's own assessment: near-random band, negative risk-adjusted returns. Per long-standing convention, the banner text is ignored in favour of the computed lines above it.
-
-**Comprehensive evaluation:** total return -1.36% since 2026-02-17; alpha vs buy-and-hold SPY **-12.87 pp** (strategy -1.36% vs SPY +11.51%). Risk: VaR 95 -0.46%, CVaR 95 -0.55%, max drawdown (est) -0.57%.
-
-**Churn / round-trips:** 36 round trips, win rate 27.8%, avg hold 33 days. Long holds (>14d) win 42.1% vs 15.4% for medium (4-14d) — consistent with the thesis that the edge, if any, lives in patience. Post-2026-06-18 cohort: 50% win rate, turnover halved to 128 trades/yr (the trade-cap discipline is working). Known ledger gap (€-354.65) between round-trip P&L and portfolio realized P&L — flagged for a future accounting-session fix, not blocking.
-
-**Keyword trends:** "stop-loss" and "trade cap" language in LLM reasoning correlates with positive outcomes (+2.11, +1.49 avg); "mean reversion" and "momentum" keywords trend falling — the LLM's trend/mean-reversion vocabulary has not been associated with wins lately, matching the disabled regime filters.
-
-**Cash drag:** 105 days analyzed, 61% above target with cap headroom vs 10 cap-binding days — the constraint is the prompt's deployment aggressiveness, not the weekly cap. Today's file is byte-identical to yesterday's apart from the timestamp (history window has not advanced); kept as-is.
-
-IJR sits at -4.99% against a -5% adaptive stop for the second consecutive close. Tomorrow's session is the W38 weekly close: weekly report, and the stop-out question resolves one way or the other.
+The week closed at -0.62%, trailing SPY (+0.11%) and CAC 40 (-0.50%) on a total-return basis but outperforming FEZ (-1.02%). The week's single planned trade was the FEZ accumulation on Tuesday; the IJR stop-loss on Friday was the unplanned exit the rules exist for. Benchmarks: SPY -0.73 pp alpha vs portfolio, CAC 40 -0.12 pp, FEZ +0.39 pp.
