@@ -64,3 +64,14 @@ The LLM reviewed the 6 remaining positions and chose to hold all of them:
 | Trading Days | 4 |
 
 The week closed at -0.62%, trailing SPY (+0.11%) and CAC 40 (-0.50%) on a total-return basis but outperforming FEZ (-1.02%). The week's single planned trade was the FEZ accumulation on Tuesday; the IJR stop-loss on Friday was the unplanned exit the rules exist for. Benchmarks: SPY -0.73 pp alpha vs portfolio, CAC 40 -0.12 pp, FEZ +0.39 pp.
+
+## Research Session Notes — 2026-09-18 22:35 UTC
+
+Post-close quantitative review of the W38 final state:
+
+- **Alpha vs buy-and-hold SPY: -14.14 pp** since inception (strategy -1.87% vs SPY +12.27%). The gap widened 1.27 pp this week, driven mostly by cash drag: 32.7% cash is 13 points above the NORMAL-regime band ceiling with the cap already binding (3/3) — a cap-binding configuration, not a prompt-timidity configuration, per the cash-drag diagnosis (54 drag days vs 11 cap-binding days over 105 days; today belongs to the cap-binding minority).
+- **Decision quality (5-day forward, last 3 trading days):** 25% overall win rate on 4 trades (3 buys at 0%, 1 sell at 100%). The sell is the IJR stop-loss — the one decision that *should* score 100%. Buy sample dominated by FEZ and REET entries that have not yet had a full forward window; treat as immature, not broken. Decision Sharpe -0.59.
+- **Churn:** 36 round trips all-time, 27.8% win, 33-day average hold. Long holds (>14d) win 40% vs 0% for ≤3-day flips. Post-2026-06-18 cohort (cooldown regime): 5 round trips, 40% win, 131 trades/year — discipline is holding; the edge continues to live in patience.
+- **Keyword trends:** guardrail language (stop-loss, trade cap) continues to dominate the LLM's reasoning vocabulary; theoretical constructs (CVaR, tail risk) are fading as the system operationalizes risk into rules.
+- **Ledger reconciliation gap:** €-354.65 persists between the trade ledger and portfolio realized P&L — a pre-2026-07-06 reset accounting artifact, documented and non-blocking.
+- **Test suite:** 1180 passing.
