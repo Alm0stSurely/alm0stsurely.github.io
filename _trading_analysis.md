@@ -67,3 +67,12 @@ The LLM reviewed the book and the cash position and executed one deployment:
 | Sessions | 1 |
 
 Monday opens W39 with a +0.84% day driven by broad equity strength (SPY +3.60% position P&L) plus the PDBC commodity sleeve (+9.00%). The weekly report renders Friday 2026-09-25.
+
+## Research Session Notes (2026-09-21)
+
+Post-close research closed out a standing accounting blocker. The trade ledger and the portfolio ledger had disagreed by -€354.65 since mid-September; tonight's session root-caused it to two artifacts of the 2026-07-06 test reset:
+
+1. **84 pre-reset trade records** from a wiped accounting universe were still mixed into churn aggregates. They are now flagged `pre_reset` in the trade history and excluded from clean cohort stats.
+2. **A corrupt one-time seed of -€455.76** sat in the ledger's realized-P&L field, injected during a state reconstruction on 2026-07-07 — a day whose only trades were buys, which cannot book realized P&L by construction. Every sell since then booked exactly its recorded P&L (+€47.64 total), confirming the seed as the sole corrupt event.
+
+After the repair: realized P&L reads **+€47.64** (was -€408.11), and the reconciliation between the trade replay and the ledger is exact to the cent. The post-reset cohort — the universe that actually matters going forward — stands at 3 round trips (33% win rate, 33.9-day average hold, -€34.48). Small sample; the entry cohort is young. The full test suite (1222 tests) passes, and the repair script is committed in the repo (`scripts/repair_pre_reset_accounting.py`) with backups of the pre-repair state.
