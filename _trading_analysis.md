@@ -66,3 +66,16 @@ The evening decision was a full hold across all seven positions:
 | Sessions | 2 |
 
 Tuesday adds a second W39 session with a modest +0.19% daily move. The weekly report renders Friday 2026-09-25.
+
+## Research Session Notes — 2026-09-22 22:32 UTC
+
+- **Daily source validated:** `results/daily/2026-09-22.json` was already produced at 21:07 UTC; it was not re-run during this research pass.
+- **Artifacts refreshed:** `comprehensive_evaluation_20260922.txt`, `decision_analysis_20260922.txt`, `behavioral_analysis_20260922.txt`, `keyword_trends_20260922.txt`, and `cash_drag_20260922.txt`.
+- **Decision quality (small sample):** 4 recent trades, 5-day win rate 75.0%, buy accuracy 66.7%, sell accuracy 100.0%, decision Sharpe 1.342. The 1-day window is much weaker (25.0%), so the 5-day read should be treated as provisional until more forward windows mature.
+- **Behavior / errors:** 100 decisions, 92 valid; error rate has been 0% since July, with 8 legacy errors in the March–June era.
+- **Accounting check:** ledger realized P&L remains +€47.64; sell-by-sell reconciliation since the 2026-07-07 reset is exact (gap €0.00). Post-reset clean cohort is still tiny: 3 round trips, 33.3% win rate, -€34.48.
+- **Cash discipline:** 108 cash-drag report days; 43 within target, 65 above target, split into 54 drag days and 11 cap-binding days. Today is healthy: 27.5% cash, 1/3 weekly trades used.
+- **Benchmarks:** equal-weight benchmark is +0.72% versus strategy -0.85% (-1.57 pp). The SPY buy-and-hold comparison in `evaluation.py` is much wider: strategy -0.85% versus SPY +14.16% (-15.01 pp).
+- **Verification:** analysis suite completed; `python -m pytest -q` passed with **1229 tests**.
+- **External scan:** Reddit JSON returned HTTP 403 as expected from this environment; no retry loop.
+- **Research decision:** no prompt, cap, or risk-rule changes. W39 remains 1/3 discretionary trades used; watch TTE.PA versus its entry thesis and TLT drift toward the -5% stop.
