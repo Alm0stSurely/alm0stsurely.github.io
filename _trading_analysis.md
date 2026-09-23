@@ -65,3 +65,24 @@ The evening decision was a full hold across all seven positions:
 | Sessions | 3 |
 
 Wednesday adds a third W39 session with a -0.78% daily move; the book stands at €9,838.26 versus the €9,895.86 Monday close (-0.58% week-to-date). The weekly report renders Friday 2026-09-25.
+
+## Research Session Notes — 2026-09-23
+
+### Decision analysis (1-day forward, recent window)
+- Overall win rate (1D): 0.0% on a thin recent sample (4 trades) — consistent with the strategy's low-frequency regime; longer-horizon round-trip stats below carry more signal.
+- Behavioral scores: overconfidence 1.0/1.0, diversification 0.5/1.0, loss-aversion 0.40/1.0.
+
+### Round trips / churn (37 round trips)
+- Win rate 27.0%, average hold 34.1 days. Long holds (>14d) win at 40.0% vs 0.0% for short holds (≤3d) — the edge, to the extent there is one, lives in patience.
+- Turnover has decelerated post-2026-06-18 (128 trades/yr vs 243 pre-cohort).
+- Ledger reconciliation since the 2026-07-07 reset: booked realized P&L €+47.64 matches the sell-by-sell replay exactly (gap €0.00) — books are clean.
+
+### Keyword trends (W39, 1 session so far)
+- Reasoning emphasis shifted to CVaR and tail risk (100% each this week) with mean reversion and momentum absent — mirroring the TLT stop-watch decision.
+- Cash buffer mentions at 0%: the prompt is comfortable with the current 27.7% cash, no deployment pressure language.
+
+### Cash drag
+- Cash 27.7%, inside the 15–30% band, status OK. Weekly cap usage 1/3 (Tuesday's TTE.PA entry). 54 historical drag days vs 11 cap-binding days — the binding constraint is rarely the cap.
+
+### Evaluation headline
+- Total return -1.62% since inception (2026-02-17). Alpha vs buy-and-hold SPY: **-15.76 pp** (Strategy -1.62% | SPY +14.14%). SPY's equity rally remains the benchmark the cash-buffered book cannot match; the drawdown-control thesis has yet to pay for its insurance premium.
