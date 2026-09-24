@@ -66,3 +66,11 @@ The evening decision was a hold across all seven positions:
 | Sessions | 4 |
 
 Thursday adds a fourth W39 session at +0.19%; the book stands at €9,856.78 versus the €9,895.86 Monday close (**-0.39% week-to-date**). The weekly report renders Friday 2026-09-25.
+
+## Research Session Notes — 2026-09-24
+
+- **Infrastructure repair (decision history split):** the LLM decision log had been silently bifurcating for two months. When the nightly pipeline ran from the workspace root instead of the repo directory, the agent's default relative history path wrote 21 decisions (2026-07-24 → 2026-09-24) to a stray directory while the canonical log sat frozen at 2026-09-21. All keyword-trend, behavioral, and decision-quality analyses were reading the incomplete file. Fixed by anchoring the history path to the repo data directory, raising the retention bound from 100 to 500 decisions, merging the 21 stray records back (121 entries total, zero duplicates), and adding an AST-level regression guard. Test suite: 1255 passed.
+- **Decision quality (4-day window, complete history):** 4 trades — 3 buys with 0.0% 5-day accuracy (avg -0.65%) against 1 sell at 100% (+1.66% avoided); 1-day win rate 80%. Small samples, directional only.
+- **Churn:** 37 round trips, 27.0% win rate, 34.1-day average hold; positions held >14 days win 40.0% vs 0.0% for ≤3-day holds — the patience premium persists. Ledger reconciles to the cent against a sell-by-sell replay since the July accounting reset.
+- **Keyword trends (complete history):** guardrail concepts are being internalized — "trade cap" (+1.55 pp/wk) and "cooldown" (+1.22 pp/wk) mention rates rising; "loss aversion" and "cash buffer" falling. "Prospect theory" remains a ghost concept (0% operationalization).
+- **Standing question:** alpha vs SPY buy-and-hold is -14.75 pp since inception (strategy -1.43% vs SPY +13.32%). Max drawdown of -1.26% confirms the drawdown-control thesis works mechanically, but its opportunity cost is the standing research problem.
