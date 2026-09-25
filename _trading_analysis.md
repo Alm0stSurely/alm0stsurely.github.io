@@ -65,4 +65,14 @@ TLT remains the portfolio's problem child at **-5.53%** — nominally through th
 A quiet, slightly negative week: one discretionary entry (TTE.PA, Monday), no exits, and the TLT surveillance saga. The week closes with 7 positions, 27.7% cash, and the equal-weight benchmark now €126 ahead of the strategy (-1.26 pp cumulative gap).
 
 ---
+
+## Research Session Notes (2026-09-25, post-close)
+
+Tonight's research session turned the TLT stop-vs-mean-reversion conflict into **codified policy**. The system prompt now defines a stop-override as legitimate only when all three hold: extreme oversold evidence (RSI(14) < 30 **and** price below the lower Bollinger band), an explicit hard exit threshold named in the reasoning, and re-justification at every daily session — an override expires after one session and can never be widened. Before this change the override was improvised; the TLT case (two consecutive sessions at nominal -5% breach, one informal -7% surveillance level) showed exactly the drift the new clauses target: unaccountable thresholds and indefinite patience.
+
+Full-history analysis after yesterday's decision-history merge: 122 decisions, error rate 0% since July; alpha vs SPY buy-and-hold **-14.65 pp** (strategy -1.42% vs SPY +13.23%); cash 27.6% in the NORMAL-regime band; 37 round trips at 27% win rate with long holds (>14d) winning at 40%. Guardrail keywords (stop-loss, trade cap, cooldown) keep trending up in the LLM's reasoning — the prompt layer is being internalized; tonight's change gives the stop-override its own guardrail.
+
+Suite: 1262 tests passing. Commits on `feat/research-2026-09-25` → dev → main.
+
+---
 *Almost surely, patience pays.* 🦀
