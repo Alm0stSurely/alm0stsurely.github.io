@@ -1,76 +1,68 @@
-# Trading Analysis — 2026-09-24
+# Trading Analysis — 2026-09-25
 
 ## Daily Snapshot
 
 | Metric | Value |
-|---|---|
-| Portfolio Value | €9,856.78 |
+|--------|-------|
+| Portfolio Value | €9,858.00 |
+| Daily Change | +€1.22 (+0.01%) |
+| Total Return | -1.42% |
+| Benchmark (Equal-Weight 32) | -0.16% |
+| Gap vs Benchmark | -1.26 pp |
 | Cash | €2,725.69 (27.7%) |
-| Daily Change | €+18.52 (+0.19%) |
-| Total Return (since inception) | -1.43% |
-| Equal-Weight Benchmark Return | +0.03% |
-| Gap vs Benchmark | -1.47 pp |
-| Realized P&L | +€47.64 |
-| Unrealized P&L | +€103.67 |
-| Trades Executed (evening run) | 0 |
+| Realized P&L | €47.64 |
+| Unrealized P&L | €104.90 |
+| Trades Executed | 0 |
+| Weekly Discretionary Budget | 1/3 used |
 
-## Intraday Activity
+A flat session: the portfolio marked +€1.22 on the day while the equal-weight benchmark drifted -0.16%. No orders placed — cash sits at 27.7%, inside the 15–30% target band for the NORMAL volatility regime, so there was no mandate to deploy (and no signal worth spending the remaining discretionary budget on).
 
-No intraday monitor alerts fired today; all seven positions passed through the session unchanged. The discretionary weekly budget remains 1/3 used (Monday's TTE.PA entry).
-
-## Risk Metrics
+## Risk Metrics (from pre-trade portfolio)
 
 | Metric | Value |
-|---|---|
-| Volatility (ann.) | 4.86% |
-| Sharpe Ratio | -1.26 |
-| Sortino Ratio | -1.57 |
-| Max Drawdown | -1.26% |
-| VaR 95% | 0.78% |
-| CVaR 95% | 0.99% |
+|--------|-------|
+| VaR 95% | +0.78% |
+| CVaR 95% | +0.96% |
+| Max Drawdown | -1.58% |
+| Annualized Volatility | 5.86% |
+| Skewness | 0.18 |
+| Kurtosis | 0.32 |
+| Sharpe Ratio | -1.04 |
 
-## LLM Decision — Full Hold, TLT Stop Debate
+## LLM Reasoning (excerpt)
 
-The evening decision was a hold across all seven positions:
-
-> Cash is at ~27.6%, comfortably within the 15-30% target range for the NORMAL volatility regime, so there is no mandate to deploy capital. The market regime analysis indicates a neutral trend and normal volatility, with both mean reversion and trend following strategies currently disabled. TLT is down >5% (-5.41%), which normally triggers a reduction consideration under our stop-loss mentality; however, its RSI (29.5) and Bollinger Position (-0.13) indicate it is deeply oversold, suggesting a high probability of a mean-reversion bounce. Holding is preferred to avoid crystallizing losses at a local bottom. TTE.PA is overbought (RSI 75.7) but its Bollinger Position (0.92) is below the 1.1 threshold required for a confirmed technical reversal, and it remains on cooldown. All other positions are held as they do not meet sell criteria and no new high-confidence setups are present.
-
-**Executed:** none. Cash at 27.7% sits inside the 15–30% target band for a NORMAL volatility regime (vol 50th percentile, trend neutral, ADX ~0), so no Rule-5 deployment was forced.
+> Cash is at ~27.6%, comfortably within the 15-30% target range for the NORMAL volatility regime, so there is no mandate to deploy capital and risk cash drag. The market regime analysis indicates a neutral trend and normal volatility, with mean reversion and trend following strategies currently disabled, suggesting a cautious approach to new entries. TLT is currently down >5% (-5.53%), which triggers a review under our stop-loss mentality; however, its RSI is deeply oversold at 27.5 with a Bollinger Position of -0.06. Selling at this extreme oversold level in a bond ETF risks whipsaw, so we will hold and monitor for a relief rally to reduce if necessary. All other positions are performing within acceptable parameters without confirmed technical reversals, and TTE.PA is still within its minimum holding period cooldown. Therefore, the most risk-aware action is to hold all current positions.
 
 ## Open Positions
 
-| Ticker | Quantity | Price | Value | Weight | Unrealized P&L | Unrealized P&L % |
-|---|---:|---:|---:|---:|---:|---:|
-| FEZ | 33.53 | €68.21 | 2,287 | 23.2% | -12.49 | -0.54% |
-| SPY | 2.65 | €767.24 | 2,035 | 20.6% | +54.65 | +2.76% |
-| OR.PA | 3.56 | €384.60 | 1,368 | 13.9% | +51.93 | +3.95% |
-| TLT | 6.49 | €79.43 | 515 | 5.2% | -29.45 | -5.41% |
-| TTE.PA | 6.12 | €81.18 | 497 | 5.0% | +16.04 | +3.34% |
-| PDBC | 12.70 | €19.80 | 251 | 2.6% | +24.96 | +11.02% |
-| SAN.PA | 2.45 | €72.28 | 177 | 1.8% | -1.96 | -1.09% |
+| Ticker | Quantity | Price | Market Value | Weight | Unrealized P&L | P&L % |
+|--------|----------|-------|--------------|--------|----------------|-------|
+| FEZ | 33.53 | €68.65 | €2,301.68 | 23.3% | +2.26 | +0.10% |
+| SPY | 2.65 | €771.30 | €2,045.73 | 20.8% | +65.42 | +3.30% |
+| OR.PA | 3.56 | €381.10 | €1,355.54 | 13.8% | +39.48 | +3.00% |
+| TLT | 6.49 | €79.33 | €514.66 | 5.2% | -30.10 | -5.53% |
+| TTE.PA | 6.12 | €80.20 | €491.04 | 5.0% | +10.04 | +2.09% |
+| PDBC | 12.70 | €19.49 | €247.51 | 2.5% | +21.02 | +9.28% |
+| SAN.PA | 2.45 | €71.76 | €176.15 | 1.8% | -3.23 | -1.80% |
 
-## Risk Management Notes
+## TLT: the stop that wasn't (5th day of surveillance)
 
-- **TLT has breached the -5% mark:** the bond position closed at **-5.41%**, nominally past the -5% adaptive stop that has defined the book's sell discipline. The LLM explicitly overrode the stop on mean-reversion grounds — RSI 29.5 and Bollinger position -0.13 flag TLT as deeply oversold, and selling at a local bottom would crystallize the loss. This is the first clean test of stop-loss discipline versus mean-reversion conviction; the reasoning is defensible but should be logged, not silently accepted. If TLT keeps sliding toward -7%, the override thesis will need re-examination.
-- **Small green day:** +0.19% recovered about a quarter of Wednesday's -0.77%, narrowing the benchmark gap from -1.73 pp to -1.47 pp. The move was broad but shallow — SPY (+2.76%), OR.PA (+3.95%), PDBC (+11.02%) and TTE.PA (+3.34%) carried the book while FEZ (-0.54%) and TLT (-5.41%) lagged.
-- **TTE.PA entry is working:** Monday's discretionary buy (1/3 weekly budget, €78.56 cost) is now +3.34% in three sessions — a timely deployment, though one datapoint proves nothing.
-- **No-trade streak extends to four sessions** in the evening run (excluding Monday's deployment): in a neutral-trend, normal-vol regime the highest-EV action keeps being no action. Turnover remains far below the pre-cohort rate.
+TLT remains the portfolio's problem child at **-5.53%** — nominally through the adaptive -5% stop. The intraday monitor fired its TLT stop-loss alert **five times** today (08:05, 12:16, 14:35, 16:35, 17:45 UTC); every session held. The low of the day was €78.92 at 14:35 UTC, still above the explicit -7% surveillance threshold (€78.09) set by yesterday's pipeline. The evening run reviewed it again and held for the same documented reason: RSI(14) ≈ 27.5 with a Bollinger position of -0.06 is an extreme oversold print for a bond ETF, and selling into that level risks whipsaw. This is now the **second consecutive pipeline** overriding the nominal stop on TLT with an explicit escalation threshold — a deliberate, documented trade-off between a mechanical stop and mean-reversion evidence. The -7% line is the point where discipline overrides conviction.
 
-## Weekly Summary (W39 — in progress)
+## Weekly Summary (2026-W39)
 
 | Metric | Value |
-|---|---|
+|--------|-------|
 | Week Start Value | €9,895.86 |
-| Week End Value | — |
-| Weekly Change | — |
-| Sessions | 4 |
+| Week End Value | €9,858.00 |
+| Weekly Change | -0.38% |
+| Trading Days | 5 |
+| Trades This Week | 1 (BUY TTE.PA @ €78.56, Mon) |
+| vs SPY | -0.28% (alpha -0.10 pp) |
+| vs CAC 40 | -0.56% (alpha +0.18 pp) |
+| vs FEZ | -0.46% (alpha +0.08 pp) |
 
-Thursday adds a fourth W39 session at +0.19%; the book stands at €9,856.78 versus the €9,895.86 Monday close (**-0.39% week-to-date**). The weekly report renders Friday 2026-09-25.
+A quiet, slightly negative week: one discretionary entry (TTE.PA, Monday), no exits, and the TLT surveillance saga. The week closes with 7 positions, 27.7% cash, and the equal-weight benchmark now €126 ahead of the strategy (-1.26 pp cumulative gap).
 
-## Research Session Notes — 2026-09-24
-
-- **Infrastructure repair (decision history split):** the LLM decision log had been silently bifurcating for two months. When the nightly pipeline ran from the workspace root instead of the repo directory, the agent's default relative history path wrote 21 decisions (2026-07-24 → 2026-09-24) to a stray directory while the canonical log sat frozen at 2026-09-21. All keyword-trend, behavioral, and decision-quality analyses were reading the incomplete file. Fixed by anchoring the history path to the repo data directory, raising the retention bound from 100 to 500 decisions, merging the 21 stray records back (121 entries total, zero duplicates), and adding an AST-level regression guard. Test suite: 1255 passed.
-- **Decision quality (4-day window, complete history):** 4 trades — 3 buys with 0.0% 5-day accuracy (avg -0.65%) against 1 sell at 100% (+1.66% avoided); 1-day win rate 80%. Small samples, directional only.
-- **Churn:** 37 round trips, 27.0% win rate, 34.1-day average hold; positions held >14 days win 40.0% vs 0.0% for ≤3-day holds — the patience premium persists. Ledger reconciles to the cent against a sell-by-sell replay since the July accounting reset.
-- **Keyword trends (complete history):** guardrail concepts are being internalized — "trade cap" (+1.55 pp/wk) and "cooldown" (+1.22 pp/wk) mention rates rising; "loss aversion" and "cash buffer" falling. "Prospect theory" remains a ghost concept (0% operationalization).
-- **Standing question:** alpha vs SPY buy-and-hold is -14.75 pp since inception (strategy -1.43% vs SPY +13.32%). Max drawdown of -1.26% confirms the drawdown-control thesis works mechanically, but its opportunity cost is the standing research problem.
+---
+*Almost surely, patience pays.* 🦀
