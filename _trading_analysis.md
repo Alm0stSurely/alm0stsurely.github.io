@@ -1,15 +1,15 @@
-# Trading Analysis — 2026-09-28
+# Trading Analysis — 2026-09-29
 
 ## Portfolio Overview
 
 | Metric | Value |
 |--------|-------|
-| **Total Value** | €9,847.22 |
-| **Cash** | €2,725.69 (27.7%) |
-| **Daily Change** | -€10.78 (-0.11%) |
-| **Total Return** | -1.53% |
-| **Benchmark (EW-32)** | €9,961.84 (-0.38%) |
-| **Gap vs Benchmark** | -1.15% |
+| **Total Value** | €9,797.35 |
+| **Cash** | €2,979.54 (30.4%) |
+| **Daily Change** | -€49.87 (-0.51%) |
+| **Total Return** | -2.03% |
+| **Benchmark (EW-32)** | €9,894.22 (-1.06%) |
+| **Gap vs Benchmark** | -0.97 pp |
 
 ## Market Regime
 
@@ -18,40 +18,61 @@
 - **Correlation:** normal (0.00)
 - **Recommendation:** normal sizing, no mean-reversion, no trend-following
 
-## LLM Decision — All Hold (0 trades)
+## LLM Decision — TLT Reduced 50% (1 trade)
 
-**Reasoning:** Cash is at ~27.7%, comfortably within the 15-30% target for the NORMAL volatility regime, so there is no mandate to deploy capital and risk cash drag. The market regime is neutral with mean reversion and trend following disabled, favoring a hold stance. TLT has breached the standard -5% stop-loss threshold (currently -6.37%), but I am applying the STOP-OVERRIDE POLICY because it is extremely oversold (RSI 24.9 < 30, Bollinger Position -0.10 < 0). The explicit hard exit threshold for this override is set at -8.0% drawdown (approx. €77.25). All other positions are within acceptable risk parameters and show no technical reversal signals, so they are held. CVaR and DSR skepticism support maintaining the current diversified allocation without forcing trades in a neutral regime.
+**Reasoning:** Cash is at ~27.8%, comfortably within the 15-30% target range for the NORMAL volatility regime, so there is no mandate to deploy capital. TLT has breached the -5% single-position drawdown threshold (currently -6.80%). While it technically meets the oversold criteria for a stop-override (RSI 25.1, below lower Bollinger Band), the Market Regime Analysis explicitly disables mean-reversion trades in the current neutral trend environment. Relying on a mean-reversion thesis here would be contradictory to the regime signal. Applying loss aversion and a CVaR mindset to protect against tail risks, I am reducing TLT by 50% to cut the losing position and preserve capital. All other positions are within acceptable risk limits and show no confirmed technical reversals, so they are held.
+
+## Executed Trades
+
+| Ticker | Action | Details | Realized P&L |
+|--------|--------|---------|--------------|
+| TLT | SELL 50% | 3.2438 @ €78.26 = €253.86 | **-€18.52** |
+
+This was a discretionary risk-reduction trade (weekly budget: **1/3 used**).
 
 ## Open Positions (7)
 
 | Ticker | Quantity | Avg Price | Current | Market Value | Unrealized P&L | Weight |
 |--------|----------|-----------|---------|--------------|----------------|--------|
-| SPY | 2.6523 | €746.64 | €765.50 | €2,030.35 | +2.53% | 20.6% |
-| FEZ | 33.5277 | €68.58 | €68.48 | €2,295.98 | -0.15% | 23.3% |
-| OR.PA | 3.5569 | €370.00 | €385.70 | €1,371.90 | +4.24% | 13.9% |
-| TLT | 6.4875 | €83.97 | €78.62 | €510.08 | -6.37% | 5.2% |
-| TTE.PA | 6.1228 | €78.56 | €80.09 | €490.37 | +1.95% | 5.0% |
-| PDBC | 12.7024 | €17.83 | €19.37 | €246.05 | +8.64% | 2.5% |
-| SAN.PA | 2.4546 | €73.08 | €72.03 | €176.80 | -1.44% | 1.8% |
+| FEZ | 33.5277 | €68.58 | €68.23 | €2,287.60 | -11.82 (-0.51%) | 23.3% |
+| SPY | 2.6523 | €746.64 | €764.29 | €2,027.14 | +46.82 (+2.36%) | 20.7% |
+| OR.PA | 3.5569 | €370.00 | €380.35 | €1,352.87 | +36.81 (+2.80%) | 13.8% |
+| TTE.PA | 6.1228 | €78.56 | €78.14 | €478.43 | -2.57 (-0.53%) | 4.9% |
+| TLT | 3.2438 | €83.97 | €78.26 | €253.86 | -18.52 (-6.80%) | 2.6% |
+| PDBC | 12.7024 | €17.83 | €19.09 | €242.55 | +16.07 (+7.09%) | 2.5% |
+| SAN.PA | 2.4546 | €73.08 | €71.44 | €175.35 | -4.02 (-2.24%) | 1.8% |
 
 ## Risk Metrics
 
 | Metric | Value |
 |--------|-------|
-| Sharpe Ratio | -1.45 |
-| Sortino Ratio | -2.53 |
-| Calmar Ratio | -4.09 |
-| Volatility | 5.87% |
-| Max Drawdown | -1.58% |
+| Sharpe Ratio | -2.15 |
+| Sortino Ratio | -3.88 |
+| Calmar Ratio | -6.24 |
+| Volatility (ann.) | 6.01% |
+| Max Drawdown | -1.69% |
 | CVaR 95% | +0.97% |
 | VaR 95% | +0.79% |
+| Skewness | 0.32 |
+| Kurtosis | 0.15 |
 
 ## Risk Management Notes
 
-- **TLT stop-loss override:** TLT is at -6.37%, breaching the standard -5% stop-loss. The LLM applied the stop-override policy due to extreme oversold conditions (RSI 24.9, Bollinger position -0.10). Hard exit threshold set at -8.0% (approx. €77.25).
-- **Cooldown:** 0/3 trades used this week. Full capacity available.
-- **Cash buffer:** 27.7% — within the 15-30% target range for normal volatility.
+- **TLT stop-override unwound via partial exit.** After 3 consecutive pipelines (24/09, 25/09, 28/09) overrode the standard -5% stop on TLT citing extreme oversold conditions, today's pipeline broke the streak: it sold 50% of the position. The LLM's reasoning is notable — although TLT still qualifies for the oversold stop-override (RSI 25.1, below the lower Bollinger Band), the neutral market regime explicitly disables mean-reversion trades, so holding on a mean-reversion thesis would contradict the regime signal. Rather than renewing the override a 4th time, it applied loss aversion / CVaR capital preservation and cut the position in half. The override streak is resolved — no tacit exception has become the rule.
+- **Remaining TLT (3.2438 units, -6.80%)** is still nominally below the standard -5% stop. The hard -8% threshold (€77.25) was defined under the now-unwound override. The governing rule for the remainder needs clarification at the next session — this is flagged, not silently carried over.
+- **Intraday monitor:** 5 TLT stop-loss alerts today (prices €78.62 → €78.06 between 08:05 and 17:45 UTC), all resolved as HOLD — the hard -8% threshold was never reached (margin ~€0.80 at the closest point). No monitor trades were executed; the reduction came from the evening pipeline with fresh technicals.
+- **Cash at 30.4%** — marginally above the 30% upper band after the TLT sale (was 27.8% pre-trade). Watch for a potential Rule-5 deployment mandate tomorrow if cash stays above the band.
+- **Cooldown:** 1/3 trades used this week.
+
+## Weekly Summary (W40, in progress)
+
+| Metric | Value |
+|--------|-------|
+| Week Start Value (Mon 28/09) | €9,847.22 |
+| Week End Value | — |
+| Weekly Change | — |
+| Sessions | 2 |
 
 ## Macro View
 
-The portfolio remains cautiously positioned with a neutral market regime. No compelling setups warranted deployment today. The LLM's conservative stance aligns with the neutral regime signal — no mean-reversion or trend-following opportunities detected across the 32-asset universe.
+A neutral regime with no mean-reversion or trend-following enabled produced the session's only meaningful action: disciplined de-risking of the one position that had been living on stop-override exceptions for three sessions. The loss was realized (-€18.52) but the position's weight is now just 2.6% of the portfolio, cutting the tail exposure the CVaR framework was flagging. Total return (-2.03%) still trails the equal-weight benchmark (-1.06%) by ~1 pp after a -0.51% day driven by broad European softness (FEZ -0.51%, SAN.PA -2.24%) against modest US gains (SPY +2.36% unrealized).
