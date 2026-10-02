@@ -1,69 +1,69 @@
 {
-  "date": "2026-10-01",
-  "total_value": 9664.37,
+  "date": "2026-10-02",
+  "total_value": 9714.26,
   "cash": 3176.71,
-  "cash_pct": 32.87,
-  "positions_value": 6487.66,
-  "total_return_pct": -3.36,
-  "daily_change": -84.54,
-  "daily_change_pct": -0.87,
+  "cash_pct": 32.7,
+  "positions_value": 6537.55,
+  "total_return_pct": -2.86,
+  "daily_change": 49.89,
+  "daily_change_pct": 0.52,
   "realized_pnl": -20.58,
-  "unrealized_pnl": -20.52,
+  "unrealized_pnl": 29.37,
   "num_positions": 6,
   "positions": {
     "SAN.PA": {
       "quantity": 2.4546,
       "avg_price": 73.08,
-      "current_price": 73.24,
-      "market_value": 179.77,
-      "unrealized_pnl": 0.4,
-      "unrealized_pnl_pct": 0.0022,
-      "weight_pct": 1.86
+      "current_price": 70.72,
+      "market_value": 173.59,
+      "unrealized_pnl": -5.79,
+      "unrealized_pnl_pct": -3.2281,
+      "weight_pct": 1.79
     },
     "SPY": {
       "quantity": 2.6523,
       "avg_price": 746.64,
-      "current_price": 764.02,
-      "market_value": 2026.43,
-      "unrealized_pnl": 46.11,
-      "unrealized_pnl_pct": 0.0233,
-      "weight_pct": 20.97
+      "current_price": 769.67,
+      "market_value": 2041.41,
+      "unrealized_pnl": 61.09,
+      "unrealized_pnl_pct": 3.0851,
+      "weight_pct": 21.01
     },
     "FEZ": {
       "quantity": 33.5277,
       "avg_price": 68.58,
-      "current_price": 66.07,
-      "market_value": 2215.35,
-      "unrealized_pnl": -84.07,
-      "unrealized_pnl_pct": -0.0366,
-      "weight_pct": 22.92
+      "current_price": 67.0,
+      "market_value": 2246.19,
+      "unrealized_pnl": -53.23,
+      "unrealized_pnl_pct": -2.3149,
+      "weight_pct": 23.12
     },
     "PDBC": {
       "quantity": 12.7024,
       "avg_price": 17.83,
-      "current_price": 19.56,
-      "market_value": 248.4,
-      "unrealized_pnl": 21.91,
-      "unrealized_pnl_pct": 0.0967,
-      "weight_pct": 2.57
+      "current_price": 19.41,
+      "market_value": 246.49,
+      "unrealized_pnl": 20.01,
+      "unrealized_pnl_pct": 8.8334,
+      "weight_pct": 2.54
     },
     "OR.PA": {
       "quantity": 3.5569,
       "avg_price": 370.0,
-      "current_price": 371.7,
-      "market_value": 1322.11,
-      "unrealized_pnl": 6.05,
-      "unrealized_pnl_pct": 0.0046,
-      "weight_pct": 13.68
+      "current_price": 372.45,
+      "market_value": 1324.77,
+      "unrealized_pnl": 8.71,
+      "unrealized_pnl_pct": 0.6622,
+      "weight_pct": 13.64
     },
     "AI.PA": {
       "quantity": 2.9642,
       "avg_price": 170.88,
-      "current_price": 167.2,
-      "market_value": 495.61,
-      "unrealized_pnl": -10.91,
-      "unrealized_pnl_pct": -0.0215,
-      "weight_pct": 5.13
+      "current_price": 170.4,
+      "market_value": 505.1,
+      "unrealized_pnl": -1.42,
+      "unrealized_pnl_pct": -0.2809,
+      "weight_pct": 5.2
     }
   }
 }
