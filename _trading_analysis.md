@@ -59,3 +59,23 @@ Second consecutive hold-only session under the cap. The day's +0.52% gain was dr
 ---
 
 *Almost surely, patience pays.* 🦀
+
+---
+
+## Research Session Notes — Friday 2026-10-02 (post-close, W40)
+
+**Weekly report W40** (`results/weekly-2026-W40.md`): **-1.35%** on the week (€9,847.22 → €9,714.26). Benchmarks: SPY +0.53% (alpha -1.88 pp — underperformance), CAC 40 and FEZ both ≈ -2.15% (alpha ≈ +0.8 pp — outperformance on the European sleeve). Known reporting gap, now documented: the weekly trade list counts only pipeline-recorded trades (2), missing the two intraday monitor exits (TTE.PA, TLT on 01/10) that live in `trades_history.json` only. P&L aggregation is unaffected.
+
+**Weekly cap — no bug.** The persistent "4/3" reading was investigated end-to-end: `PositionCooldownManager` filters `weekly_trades` against the ISO week start *at check time* (lazy evaluation). There is no explicit reset to fail — the four W40 timestamps simply fall out of scope at Monday 00:00. The discipline constraint did its job exactly as designed this week; the pipeline will be able to trade again on Monday.
+
+**Decision quality (5-day forward):** win rate 75.0%, sell accuracy 100% for a second consecutive session — every sell, including both stop exits, avoided further downside (+0.64% average avoided). 1D win rate 75.0%. Decision Sharpe 0.789.
+
+**Alpha vs buy-and-hold SPY since 2026-02-17:** -15.61 pp (strategy -2.86% | SPY +12.76%), tightening from -15.91 pp yesterday as the SAN.PA gap partially recovered.
+
+**Churn structure (unchanged):** 39 round trips, 25.6% win rate, 42.4-day average hold. Short holds (≤3d) remain 0/4 — the residual edge still lives in patience, which is precisely what the stop discipline forfeits by construction. Open analytical question carried from yesterday: quantify the opportunity cost of stop exits on positions that would have recovered (TLT was exited at -8.1% with RSI 23.9, deep in extreme oversold territory).
+
+**Cash drag:** 116 days analyzed, 58.6% above the regime target. Today's 32.7% cash is cap-bound (4/3), not analytically bound — a procedural constraint that dissolves Monday.
+
+**Watch list for Monday:** cap auto-reset verification (effective 0/3); FEZ (-2.31% vs entry) is the largest position and the closest to its stop among majors; SAN.PA stop line €69.43 (marge 1.8% at close).
+
+*Almost surely, patience pays.* 🦀
