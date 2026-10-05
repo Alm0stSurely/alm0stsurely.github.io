@@ -75,6 +75,14 @@ The day itself was quiet: **+0.04%** (+€4.19), with the European sleeve mixed 
 - Volatility regime remains NORMAL (adaptive stop -5%, weekly cap 3 discretionary / 2 raw incl. Rule-5).
 - Risk metrics computed on pre-trade portfolio (`portfolio_before.risk_metrics`), consistent with prior sessions.
 
+## Research Session Notes — Monday 2026-10-05
+
+- **LLM context verified against live recomputation**: the RSI values cited in tonight's reasoning (DBA 40.2, IJR 44.7) match a fresh indicator recomputation to the decimal — the context pipeline is delivering real measurements, and the "NaN indicator" scare from the morning monitor run is confirmed as a pre-#71 artifact. Bollinger bands recompute finite across the universe.
+- **Alpha vs SPY: -16.41 pp** since inception (strategy -2.82% | SPY +13.59%), widening from -15.61 pp on Friday. Today's mechanism measured live: SPY +0.8% vs portfolio +0.04% — cash drag costs exactly this much on rally days.
+- **Decision quality (5D)**: win rate 75%, sell accuracy 100% (third consecutive session), buy accuracy 50%, decision Sharpe 0.956. Churn stable: 39 round trips, 25.6% win, 42.4-day average hold; post-reset ledger reconciles to €0.00.
+- **Cash drag**: 55 drag days vs 13 cap-binding days on the window; tonight's Rule-5 deployment returned cash to the 15-30% band (23.6%).
+- **Weekly report fix shipped**: the W40 trade-list gap (2 listed vs 4 real — monitor sells invisible) is closed by merging `trades_history.json` into the weekly trade list; six regression tests added, full suite 1367 passing.
+
 ---
 
 *Almost surely, patience pays.* 🦀
