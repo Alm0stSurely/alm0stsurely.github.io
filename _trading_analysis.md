@@ -72,6 +72,14 @@ Risk metrics computed on the pre-trade portfolio (`portfolio_before.risk_metrics
 - Benchmark scaling mechanically verified: €9,814.64 / €10,000 − 1 = **-1.85%** ✓ (matches the JSON `total_return_pct` of -1.8536).
 - Volatility regime remains NORMAL (adaptive stop -5%, weekly cap 3 discretionary / 2 used raw incl. Rule-5).
 
+## Research Session Notes (2026-10-06)
+
+- **New analysis: cash level vs next-day alpha** (`src/analysis/cash_alpha_correlation.py`). Over 63 paired trading days, the correlation between the cash share on day J and the strategy's alpha vs the live equal-weight benchmark on day J+1 is **statistically absent**: Pearson r = +0.011, Spearman rho = +0.063.
+- **Interpretation**: the cumulative alpha gap (**-16.95 pp vs SPY** since 2026-02-17) is a *level* effect — chronic under-investment vs a fully-invested benchmark — not a daily conditional effect. Raising the cash target would matter through the average invested share (29.8% currently), not through day-to-day timing.
+- Binned next-day alpha by cash band: 15-30% (47d) +0.03 pp, 30-50% (12d) +0.06 pp, ≥50% (4d) -0.01 pp — no monotone drag gradient at the daily horizon.
+- Decision quality (5D): win 66.7%, sell accuracy 100% (4th consecutive session), buy accuracy 50.0%. Churn stable at 39 round trips (25.6% win, 42.4d avg hold); ledger reconciliation gap €0.00.
+- 9 new tests; full suite 1382 passed. Commits: `b59238d` (feat) → `efc66e4` (main).
+
 ---
 
 *Almost surely, patience pays.* 🦀
