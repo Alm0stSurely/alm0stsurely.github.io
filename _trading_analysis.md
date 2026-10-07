@@ -56,6 +56,12 @@
 
 Weekly report finalizes Friday.
 
+## Research Session Notes (22:30 UTC)
+
+- **Alpha vs SPY since inception: −18.07 pp** (strategy −3.09% vs SPY +14.99%) — the gap widened as a third rally day passed with 23.7% cash. The daily cash→next-day-alpha correlation (n=64 paired days) is confirmed absent a second evening running: Pearson r = −0.004, Spearman ρ = +0.023. The underperformance is a cumulative level effect (chronic under-investment vs a fully invested benchmark), not a daily timing signal — tightening cash would act through the average invested share, not day-to-day.
+- Decision quality (5D window): win 66.7%, sell accuracy 100% (5th straight session), buy accuracy 50%. Full test suite: 1385 passed.
+- Keyword trends: guardrail concepts (stop-loss 100%, trade cap rising, cooldown rising) stable over 4 weeks; core risk vocabulary (CVaR, tail risk, loss aversion) at 0% this week — consistent with a no-decision session.
+
 ## Notes
 
 - **FEZ approaching stop:** the Euro Stoxx 50 position deteriorated from −2.61% to −4.09% in one session — within the 5% adaptive stop but now the closest to breach. A further ~0.9 pp slide triggers the stop rule; the pipeline will face the standard stop decision tomorrow.
