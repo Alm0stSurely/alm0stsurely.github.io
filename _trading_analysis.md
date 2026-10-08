@@ -62,3 +62,18 @@ Weekly report finalizes Friday.
 - HOLD × 8 with consistent reasoning: cash mid-band (23.7%), both alpha engines disabled (neutral trend + NORMAL regime), no stop breaches, no concentration issues, and a single remaining discretionary trade preserved for higher-conviction setups. No cap/cash-band conflation today.
 - Cash at 23.7% sits mid-band (15–30%); no Rule-5 deployment pressure and no cash-drag mandate.
 - Intraday monitor: no alerts or mechanical trades today.
+
+## Research Session Notes (2026-10-08)
+
+Post-close quantitative pass — 6 analysis artefacts regenerated, all clean:
+
+| Metric | 10-07 | 10-08 |
+|--------|-------|-------|
+| Alpha vs SPY (since 02-17) | −18.07 pp | −18.04 pp |
+| Cash-alpha corr (n=65) | — | Pearson +0.002 / Spearman +0.040 |
+| Test suite | 1385 passed | 1393 passed |
+
+- The cumulative alpha gap remains a **level effect** (chronic ~24% cash vs a fully-invested benchmark), not a daily conditional one — the day-level cash→next-day-alpha correlation is again indistinguishable from zero with two more paired days.
+- Keyword trends (W41): stop-loss mention rate 100% this week — the LLM is actively tracking FEZ's approach to its adaptive stop (−4.41%, ~0.6 pp margin). Trade-cap and cooldown mentions at 25% as it justifies preserving the last discretionary slot.
+- Behavioural dashboard: 0 LLM errors since July; hold share steady at 92.8% of actions over 123 valid decisions.
+- FEZ internal-consistency check: LLM-quoted −4.41% matches the JSON's exact −4.4073%; stop math (avg €68.58 × 0.95 = €65.15 vs last €65.56) confirmed.
