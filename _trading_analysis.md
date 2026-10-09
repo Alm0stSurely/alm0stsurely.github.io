@@ -66,6 +66,17 @@ Benchmark context (week): SPY +0.48% (alpha −0.39 pp), CAC.PA −0.40% (alpha 
 - Intraday monitor: no alerts or mechanical trades today — and none all week (cross-checked `trades_history.json`: the only W41 entries are Monday's DBA + IJR buys, matching the weekly report's trade list).
 - Next week: W42 budget resets Monday; cash band remains comfortable, so no Rule-5 deployment pressure expected.
 
+## Research Session Notes (2026-10-09)
+
+Analysis suite regenerated after the daily run (7 artifacts, all exit 0: comprehensive evaluation, decision analysis, behavioral analysis, keyword trends, cash drag, cash-alpha correlation, churn — ledger reconciled at €0.00).
+
+- **Alpha vs SPY (since 2026-02-17): −16.94 pp** (strategy −2.72% | SPY +14.22%), up from −18.04 pp on 10-08 — the gap narrowed as today's +0.63% session compounded with a softer SPY benchmark leg. The equal-weight live benchmark gap (−0.51 pp) remains a level effect of the ~24% cash weight, not a daily signal.
+- **Decision quality (5-day forward, n=6):** overall win rate 33.3%, buy accuracy 20.0%, sell accuracy 100.0% (small sample — not actionable). 1-day forward win rate 66.7%.
+- **Behavioral:** overall win rate 25.6% with 42.4-day average holds. Hold-length gradient is the consistent pattern: long holds (>14d) win 36.4% vs 0.0% for short holds (≤3d) — the LLM's patience is empirically the right side of the trade.
+- **Cash–alpha correlation (n=66):** Pearson +0.007, Spearman +0.056 — still no daily correlation; cash drag shows up only at the cumulative level.
+- **Keyword trends W41:** stop-loss 100% of sessions (FEZ surveillance), mean reversion and momentum 100%, theoretical risk concepts (CVaR, loss aversion, tail risk) falling — an execution-focused week.
+- **Cash-drag diagnosis:** 55 drag days vs 13 cap-binding days since tracking began. The weekly trade cap is rarely the constraint; W41 used 2/3 trades (both Monday) and left 1 slot unused for the fifth consecutive no-trade session. Evidence continues to point at prompt deployment language rather than the cap — candidate for a W42+ prompt adjustment experiment, no parameter change.
+
 ---
 
 *Almost surely, patience pays.* 🦀
