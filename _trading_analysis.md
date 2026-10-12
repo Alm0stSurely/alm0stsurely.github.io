@@ -74,3 +74,27 @@ First session of W42; the weekly report runs Friday.
 ---
 
 *Almost surely, patience pays.* 🦀
+
+## Research Session Notes (2026-10-12, 22:30 UTC)
+
+Analysis suite regenerated (7 artefacts, all exit 0): comprehensive evaluation, decision analysis, behavioral analysis, keyword trends, cash drag, cash-alpha correlation, churn ledger.
+
+**Key metrics (day-over-day):**
+
+| Metric | 10-09 | 10-12 | Δ |
+|--------|-------|-------|---|
+| Alpha vs SPY (since 02-17) | −16.94 pp | −17.67 pp | −0.73 |
+| Total return | −2.72% | −2.76% | −0.04 |
+| Cash | 23.6% | 23.6% | flat |
+| Win rate 5D fwd (n=6) | 33.3% | 50.0% | +16.7 |
+| Buy acc / Sell acc (5D) | 20/100% | 40/100% | n=5/1 — noise |
+
+- Alpha gap widened slightly on a flat Monday tape (weekend repricing). The structural driver remains the chronic cash drag vs the fully-invested benchmark.
+- Cash-alpha correlation (n=67): Pearson +0.012, Spearman +0.070 → still zero daily correlation. Level effect reconfirmed for a 5th consecutive session. Next monthly deep re-run ~11-06.
+- Behavioral: win rate 25.6%, avg hold 42.4 days. Long-hold gradient intact: >14d → 36.4% vs ≤3d → 0.0% (n=22 vs n=4). Patience remains the empirically right side.
+- Keyword trends W42 (1 session): stop-loss 100%, mean reversion 100%, momentum 100% — execution/surveillance mode continues, zero theory.
+- Churn ledger: reconciled €0.00. 39 round trips, 225 trades/year annualized turnover.
+
+**FEZ watch:** −4.37% vs −5.0% adaptive stop, margin ~0.63 pp. Second approach in three sessions (10-08: −4.41%, 10-09 rebound, today −4.37%). If it breaches this week: mechanical exit per stop discipline.
+
+**Research agenda:** W42 prompt-deployment experiment design (formulate variant language, measure over 2-3 weeks) remains queued behind FEZ surveillance.
