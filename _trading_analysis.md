@@ -1,17 +1,17 @@
-# Trading Analysis — 2026-10-09
+# Trading Analysis — 2026-10-12
 
 ## Daily Snapshot
 
 | Metric | Value |
 |--------|-------|
-| Portfolio Value | €9727.93 |
-| Daily Change | €+61.37 (+0.63%) |
+| Portfolio Value | €9724.00 |
+| Daily Change | €-3.93 (-0.04%) |
 | Cash | €2295.17 (23.6%) |
-| Total Return (since inception) | -2.72% |
-| Benchmark (equal-weight 32) | -2.21% |
-| **Gap vs Benchmark** | **-0.51 pp** |
+| Total Return (since inception) | -2.76% |
+| Benchmark (equal-weight 32) | -2.12% |
+| **Gap vs Benchmark** | **-0.64 pp** |
 | Realized P&L | €-20.58 |
-| Unrealized P&L | €+43.04 |
+| Unrealized P&L | €+39.12 |
 | Positions | 8 |
 
 ## Risk Metrics (as of pre-trade close)
@@ -20,62 +20,56 @@
 |--------|-------|
 | CVaR 95% | +1.05% |
 | VaR 95% | +0.97% |
-| Max Drawdown | -2.55% |
-| Annualized Volatility | 7.13% |
-| Sharpe Ratio | -2.48 |
-| Skewness | 0.43 |
-| Kurtosis | 0.09 |
+| Max Drawdown | -2.54% |
+| Annualized Volatility | 7.10% |
+| Sharpe Ratio | -2.19 |
+| Skewness | 0.38 |
+| Kurtosis | 0.11 |
 
 ## LLM Decision
 
-**Regime:** NORMAL volatility (adaptive stop ±5.0%) · **Trades executed:** 0 (HOLD × 8) · **Weekly budget:** 2/3 used (1 remaining)
+**Regime:** NORMAL volatility (adaptive stop ±5.0%) · **Trades executed:** 0 (HOLD × 8) · **Weekly budget:** 0/3 used (W42 reset)
 
-> Cash is at ~23.6%, which is comfortably within the 15-30% target range for the NORMAL volatility regime, meaning there is no cash drag mandate to deploy capital. Both mean reversion and trend following strategies are currently disabled by the market regime analysis. None of the current positions have breached their -5% stop-loss thresholds, and the overall portfolio drawdown of -2.72% requires caution but not defensive selling. Therefore, the most prudent action is to hold all existing positions and preserve the remaining weekly trade allowance for higher-confidence setups.
+> Cash is at ~23.6%, which is comfortably within the 15-30% target range for the NORMAL volatility regime, meaning there is no cash drag mandate to deploy capital. The current market regime analysis disables both mean reversion and trend following, removing the primary statistical edge for new entries. From a risk management perspective, no single position has breached the -5% stop-loss threshold (FEZ is at -4.37% and will be monitored closely, but has not triggered a mechanical exit). Total portfolio drawdown from inception is -2.76%, well below the 5-7% threshold that would require defensive de-risking. Winners like SPY, PDBC, and OR.PA are showing healthy momentum and are being allowed to run per the sell discipline rules. Defaulting to HOLD across the board to preserve capital, avoid unnecessary turnover, and respect the neutral market regime.
 
 ## Open Positions
 
 | Ticker | Quantity | Price | Market Value | P&L % | P&L € | Weight |
 |--------|----------|-------|--------------|-------|-------|--------|
-| FEZ | 33.5277 | €65.92 | €2210.15 | -3.88% | €-89.27 | 22.72% |
-| SPY | 2.6523 | €778.53 | €2064.91 | +4.27% | €+84.59 | 21.23% |
-| OR.PA | 3.5569 | €380.45 | €1353.23 | +2.82% | €+37.17 | 13.91% |
-| AI.PA | 2.9642 | €170.06 | €504.09 | -0.48% | €-2.43 | 5.18% |
-| DBA | 16.7430 | €28.33 | €474.33 | -0.46% | €-2.18 | 4.88% |
-| IJR | 2.9135 | €137.52 | €400.66 | -1.08% | €-4.37 | 4.12% |
-| PDBC | 12.7024 | €19.66 | €249.67 | +10.24% | €+23.18 | 2.57% |
-| SAN.PA | 2.4546 | €71.59 | €175.72 | -2.04% | €-3.65 | 1.81% |
+| FEZ | 33.5277 | €65.58 | €2198.92 | -4.37% | €-100.50 | 22.61% |
+| SPY | 2.6523 | €778.07 | €2063.69 | +4.21% | €+83.37 | 21.22% |
+| OR.PA | 3.5569 | €382.85 | €1361.77 | +3.47% | €+45.71 | 14.00% |
+| AI.PA | 2.9642 | €168.70 | €500.06 | -1.28% | €-6.46 | 5.14% |
+| DBA | 16.7430 | €28.44 | €476.17 | -0.07% | €-0.33 | 4.90% |
+| IJR | 2.9135 | €137.46 | €400.49 | -1.12% | €-4.55 | 4.12% |
+| PDBC | 12.7024 | €19.85 | €252.14 | +11.33% | €+25.66 | 2.59% |
+| SAN.PA | 2.4546 | €71.54 | €175.60 | -2.11% | €-3.78 | 1.81% |
 
-## Weekly Summary (2026-W41 — final)
+## Weekly Summary (2026-W42 — in progress)
 
 | Metric | Value |
 |--------|-------|
-| Week Start Value | €9,718.45 |
-| Week End Value | €9,727.93 |
-| Weekly Change | +0.10% |
-| Sessions | 5 (Mon–Fri) |
+| Week Start Value | €9724.00 |
+| Week End Value | — |
+| Weekly Change | — |
+| Sessions | 1 (Mon) |
 
-Benchmark context (week): SPY +0.48% (alpha −0.39 pp), CAC.PA −0.40% (alpha +0.50 pp), FEZ −1.23% (alpha +1.33 pp).
-
-**Trades this week (2, both Monday 10-05):** BUY DBA @ €28.46 · BUY IJR @ €139.02. Weekly risk metrics: Sharpe 0.54, Sortino 1.53, max drawdown −0.76%, volatility 8.07%.
+First session of W42; the weekly report runs Friday.
 
 ## Notes
 
-- **FEZ rebound resolves the anticipated stop decision without a trade.** After two sessions of drift toward the 5% adaptive stop (−4.09% → −4.41%, margin ~0.6 pp), FEZ bounced to −3.88% today. Stop math: avg €68.58 × 0.95 = €65.15 vs last €65.92 → margin back to ~1.2 pp. No stop-out, no override — the surveillance scenario flagged Thursday simply expired. FEZ remains the closest position to its stop and stays on the watch list.
-- HOLD × 8 with internally consistent reasoning: cash mid-band (23.6%), both alpha engines disabled (neutral trend + NORMAL regime), no stop breaches, and the last discretionary trade preserved for higher-conviction setups. No cap/cash-band conflation today.
-- Fifth consecutive no-trade session; the paper portfolio still trails the equal-weight benchmark by 0.51 pp, the widest gap of the week (−0.23 → −0.36 → −0.51 pp), driven by the ~24% cash weight in a mildly up tape.
-- Intraday monitor: no alerts or mechanical trades today — and none all week (cross-checked `trades_history.json`: the only W41 entries are Monday's DBA + IJR buys, matching the weekly report's trade list).
-- Next week: W42 budget resets Monday; cash band remains comfortable, so no Rule-5 deployment pressure expected.
+- **FEZ is again the closest position to its adaptive stop:** −4.37% vs the −5.0% threshold, margin ~0.7 pp (stop €65.15 vs last €65.58). The same ticker flirted with the stop on 10-08/10-09 before rebounding to −3.88% Friday. Two approaches in three sessions is a pattern worth watching — if FEZ breaches −5% this week, the stop discipline applies without override (no oversold-extremity argument was made for it).
+- Monday session, so the daily delta spans the weekend close: −€3.93 (−0.04%) vs Friday's close, essentially flat. All 8 positions re-priced normally (no holiday flattening).
+- HOLD × 8 with internally consistent reasoning: cash mid-band (23.6%), both alpha engines disabled by the neutral regime, no stop breaches, and no cash-band mandate. No cap/cash-band conflation today.
+- First live run of the PR #81 monetary-base ingress guard (merged 10-12): the healthy state file passed validation with zero friction — the guard is a no-op exactly as designed for well-formed input.
+- Intraday monitor: no alerts or mechanical trades today.
+- W41 closed at +0.10% (5 sessions, 2 trades both Monday) with a −0.51 pp benchmark gap; W42 opens with the gap at −0.64 pp after today's flat tape.
 
-## Research Session Notes (2026-10-09)
+## Next
 
-Analysis suite regenerated after the daily run (7 artifacts, all exit 0: comprehensive evaluation, decision analysis, behavioral analysis, keyword trends, cash drag, cash-alpha correlation, churn — ledger reconciled at €0.00).
-
-- **Alpha vs SPY (since 2026-02-17): −16.94 pp** (strategy −2.72% | SPY +14.22%), up from −18.04 pp on 10-08 — the gap narrowed as today's +0.63% session compounded with a softer SPY benchmark leg. The equal-weight live benchmark gap (−0.51 pp) remains a level effect of the ~24% cash weight, not a daily signal.
-- **Decision quality (5-day forward, n=6):** overall win rate 33.3%, buy accuracy 20.0%, sell accuracy 100.0% (small sample — not actionable). 1-day forward win rate 66.7%.
-- **Behavioral:** overall win rate 25.6% with 42.4-day average holds. Hold-length gradient is the consistent pattern: long holds (>14d) win 36.4% vs 0.0% for short holds (≤3d) — the LLM's patience is empirically the right side of the trade.
-- **Cash–alpha correlation (n=66):** Pearson +0.007, Spearman +0.056 — still no daily correlation; cash drag shows up only at the cumulative level.
-- **Keyword trends W41:** stop-loss 100% of sessions (FEZ surveillance), mean reversion and momentum 100%, theoretical risk concepts (CVaR, loss aversion, tail risk) falling — an execution-focused week.
-- **Cash-drag diagnosis:** 55 drag days vs 13 cap-binding days since tracking began. The weekly trade cap is rarely the constraint; W41 used 2/3 trades (both Monday) and left 1 slot unused for the fifth consecutive no-trade session. Evidence continues to point at prompt deployment language rather than the cap — candidate for a W42+ prompt adjustment experiment, no parameter change.
+- FEZ stop surveillance: margin ~0.7 pp to the −5% adaptive stop. Breach → mechanical exit per stop discipline (NORMAL regime, no override justification on file).
+- Cash at 23.6% is mid-band — no Rule-5 pressure; deployment only if the LLM finds a regime-consistent entry.
+- W42 budget: 0/3 used, full week ahead.
 
 ---
 
