@@ -1,87 +1,87 @@
 {
- "date": "2026-10-12",
- "total_value": 9724.0,
+ "date": "2026-10-13",
+ "total_value": 9743.79,
  "cash": 2295.17,
  "cash_pct": 23.6,
- "positions_value": 7428.83,
- "total_return_pct": -2.76,
- "daily_change": -3.93,
- "daily_change_pct": -0.04,
+ "positions_value": 7448.62,
+ "total_return_pct": -2.56,
+ "daily_change": 19.79,
+ "daily_change_pct": 0.2,
  "realized_pnl": -20.58,
- "unrealized_pnl": 39.12,
+ "unrealized_pnl": 58.9,
  "num_positions": 8,
  "positions": {
   "SAN.PA": {
    "quantity": 2.4546,
    "avg_price": 73.08,
-   "current_price": 71.54,
-   "market_value": 175.6,
-   "unrealized_pnl": -3.78,
-   "unrealized_pnl_pct": -2.106,
-   "weight_pct": 1.81
+   "current_price": 70.7,
+   "market_value": 173.54,
+   "unrealized_pnl": -5.84,
+   "unrealized_pnl_pct": -3.2555,
+   "weight_pct": 1.78
   },
   "SPY": {
    "quantity": 2.6523,
    "avg_price": 746.64,
-   "current_price": 778.07,
-   "market_value": 2063.69,
-   "unrealized_pnl": 83.37,
-   "unrealized_pnl_pct": 4.2101,
-   "weight_pct": 21.22
+   "current_price": 778.04,
+   "market_value": 2063.61,
+   "unrealized_pnl": 83.29,
+   "unrealized_pnl_pct": 4.2061,
+   "weight_pct": 21.18
   },
   "FEZ": {
    "quantity": 33.5277,
    "avg_price": 68.58,
-   "current_price": 65.58,
-   "market_value": 2198.92,
-   "unrealized_pnl": -100.5,
-   "unrealized_pnl_pct": -4.3708,
-   "weight_pct": 22.61
+   "current_price": 65.75,
+   "market_value": 2204.45,
+   "unrealized_pnl": -94.97,
+   "unrealized_pnl_pct": -4.1302,
+   "weight_pct": 22.62
   },
   "PDBC": {
    "quantity": 12.7024,
    "avg_price": 17.83,
-   "current_price": 19.85,
-   "market_value": 252.14,
-   "unrealized_pnl": 25.66,
-   "unrealized_pnl_pct": 11.3292,
-   "weight_pct": 2.59
+   "current_price": 19.98,
+   "market_value": 253.79,
+   "unrealized_pnl": 27.31,
+   "unrealized_pnl_pct": 12.0583,
+   "weight_pct": 2.6
   },
   "OR.PA": {
    "quantity": 3.5569,
    "avg_price": 370.0,
-   "current_price": 382.85,
-   "market_value": 1361.77,
-   "unrealized_pnl": 45.71,
-   "unrealized_pnl_pct": 3.473,
-   "weight_pct": 14.0
+   "current_price": 386.25,
+   "market_value": 1373.86,
+   "unrealized_pnl": 57.8,
+   "unrealized_pnl_pct": 4.3919,
+   "weight_pct": 14.1
   },
   "AI.PA": {
    "quantity": 2.9642,
    "avg_price": 170.88,
-   "current_price": 168.7,
-   "market_value": 500.06,
-   "unrealized_pnl": -6.46,
-   "unrealized_pnl_pct": -1.2758,
-   "weight_pct": 5.14
+   "current_price": 169.56,
+   "market_value": 502.61,
+   "unrealized_pnl": -3.91,
+   "unrealized_pnl_pct": -0.7725,
+   "weight_pct": 5.16
   },
   "DBA": {
    "quantity": 16.743,
    "avg_price": 28.46,
-   "current_price": 28.44,
-   "market_value": 476.17,
-   "unrealized_pnl": -0.33,
-   "unrealized_pnl_pct": -0.0703,
-   "weight_pct": 4.9
+   "current_price": 28.42,
+   "market_value": 475.92,
+   "unrealized_pnl": -0.59,
+   "unrealized_pnl_pct": -0.123,
+   "weight_pct": 4.88
   },
   "IJR": {
    "quantity": 2.9135,
    "avg_price": 139.02,
-   "current_price": 137.46,
-   "market_value": 400.49,
-   "unrealized_pnl": -4.55,
-   "unrealized_pnl_pct": -1.1221,
-   "weight_pct": 4.12
+   "current_price": 137.58,
+   "market_value": 400.83,
+   "unrealized_pnl": -4.2,
+   "unrealized_pnl_pct": -1.0358,
+   "weight_pct": 4.11
   }
  }
 }
