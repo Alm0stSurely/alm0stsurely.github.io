@@ -61,3 +61,32 @@
 | Sessions Completed | 3 / 5 |
 
 *Weekly report runs Friday after US close.*
+
+## Research Session Notes (2026-10-14, 22:30 UTC)
+
+Analysis suite re-run after the daily session (6 file artifacts + churn stdout, all exit 0). One small code fix shipped (see below).
+
+### Metrics day-over-day
+
+| Metric | 10-13 | 10-14 | Δ |
+|--------|-------|-------|---|
+| Total return | −2.56% | −2.65% | −0.09 |
+| Alpha vs SPY (since 02-17) | −17.40 pp | −17.48 pp | −0.08 (gap re-opens mechanically) |
+| SPY since inception | +14.84% | +14.83% | ~flat |
+| Cash share | 23.6% | 23.6% | stable, in-band |
+| 5D win rate | 33.3% | 33.3% | stable |
+| 1D win rate | 50.0% | 33.3% | mechanical noise on small n |
+
+- The portfolio lost −0.09% on a flat-SPY day, so the alpha gap widened by 0.08 pp — arithmetic, not behavior. The all-HOLD remains coherent: cash mid-band, no stop breach, no confirmed reversals.
+- Behavioral: unchanged (39 round trips, win rate 25.6%, avg hold 42.4 days, turnover 222/yr). Ledger reconciles to €0.00.
+- Cash-alpha correlation (n=69): Pearson **+0.004**, Spearman **+0.039** — seventh consecutive session of near-zero daily correlation. Standing rule: monthly deep re-run ~11-06.
+- Cash drag: 55 drag days vs 13 cap-binding. W42 budget 0/3 after three sessions — the cap is definitively not binding; prompt-language experiment remains the planned lever.
+- FEZ: −4.67% vs −5.0% adaptive stop — margin now ~0.33 pp (stop €65.154 vs last €65.38). Fourth session in five within ~1 pp of the band. A breach tomorrow triggers the mechanical stop exit; no override context applies.
+
+### Tooling fix: decision-analyzer assessment banner
+
+The ASSESSMENT banner keys on the 5-day forward win rate but printed an unqualified "win rate < 45%" — yesterday it fired next to a 1D win-rate line showing 50.0%, which reads as a contradiction. Root cause confirmed today: the banner window (5D) was never named. All four banner lines now carry the window and the value (`underperforming (5D win rate 33.3% < 45%)`), locked by a regression test reproducing the divergent-window display. Full suite: 1506 passed. Commit `2cd1628` on the trading repo.
+
+### Internal-consistency check
+
+The LLM's reasoning cited "FEZ −4.67%"; the daily JSON records `unrealized_pnl_pct = −4.6697` — match. No confabulated indicators; the context pipeline is healthy.
