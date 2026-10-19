@@ -1,69 +1,70 @@
-# Trading Analysis — 2026-10-16
+# Trading Analysis — Almost Surely Profitable
 
-## Daily Snapshot
+Daily snapshot for **2026-10-19** (post US close).
 
-| Metric | Value |
-|---|---|
-| Portfolio Value | **€9,775.66** |
-| Daily Change | **-€26.87 (-0.27%)** (vs €9,802.53 on 2026-10-15) |
-| Total Return (since inception) | **-2.24%** |
-| Equal-Weight Benchmark | €9,865.28 (-1.35%) |
-| Gap vs Benchmark | **-0.90 pp** (strategy trailing) |
-| Cash | €2,422.90 (24.8%) — within 15–30% band |
-| Positions | 8 |
-| Realized P&L (cumulative) | +€95.73 |
-| Unrealized P&L | -€25.54 |
-
-## Risk Metrics (portfolio at open)
+## Portfolio Snapshot
 
 | Metric | Value |
 |---|---|
-| CVaR 95% | +0.88% |
-| VaR 95% | +0.75% |
-| Max Drawdown | -2.62% |
-| Annualized Volatility | 6.23% |
-| Sharpe / Sortino | -3.32 / -7.14 |
-| Skewness / Kurtosis | +0.62 / -0.21 |
+| Total value | €9,746.24 |
+| Cash | €4,606.23 (47.26%) |
+| Daily change | €-29.42 (-0.30%) |
+| Total return (vs €10,000 start) | -2.54% |
+| Equal-weight benchmark | €9,804.55 (-1.95%) |
+| Gap vs benchmark | -0.58 pp |
+| Realized P&L (cumulative) | €-20.36 |
+| Unrealized P&L | €61.13 |
+| Positions | 7 |
 
-## LLM Decision — 2026-10-16
-
-**All 8 positions HOLD. Zero trades executed.**
-
-> The weekly trade cap of 3/3 has been reached, meaning no new buys or sells are permitted unless a strict stop-loss override is triggered. Currently, no position has breached the -5% single-position drawdown threshold (FEZ is the closest at -3.96%), and the total portfolio drawdown from inception is -2.24%, which is well within safe limits and does not trigger a defensive portfolio reduction. Cash is at ~24.8%, which sits comfortably within the 15-30% target range for the NORMAL volatility regime, meaning there is no severe cash drag. Applying our risk-aversion and CVaR mindset, we preserve capital and maintain our current diversified allocation until the weekly trade cap resets.
-
-**Weekly budget (W42, NORMAL regime, cap 3):** discretionary 2/3 used (OR.PA 50% trim + OR.PA full exit, both intraday monitor trades on 2026-10-15); raw counter 3/3 including the Rule-5 forced TLT deployment. Cap binding until Monday 00:00 UTC — no override conditions were met today (closest: FEZ at -3.96%, margin 1.04 pp above the -5% stop), so the hold is mechanically consistent with the constraint set.
-
-## Open Positions (sorted by market value)
-
-| Ticker | Quantity | Avg Price | Current | Value | Unrealized P&L | P&L % | Weight |
-|---|---|---|---|---|---|---|---|
-| FEZ | 33.53 | €68.58 | €65.87 | €2,208.47 | -90.95 | -3.96% | 22.6% |
-| SPY | 2.65 | €746.64 | €763.31 | €2,024.54 | +44.23 | +2.23% | 20.7% |
-| TLT | 16.31 | €79.97 | €80.04 | €1,305.70 | +1.06 | +0.08% | 13.4% |
-| AI.PA | 2.96 | €170.88 | €173.38 | €513.93 | +7.41 | +1.46% | 5.3% |
-| DBA | 16.74 | €28.46 | €28.23 | €472.57 | -3.93 | -0.83% | 4.8% |
-| IJR | 2.91 | €139.02 | €135.90 | €395.95 | -9.08 | -2.24% | 4.1% |
-| PDBC | 12.70 | €17.83 | €20.10 | €255.32 | +28.84 | +12.73% | 2.6% |
-| SAN.PA | 2.45 | €73.08 | €71.81 | €176.26 | -3.11 | -1.74% | 1.8% |
-
-## Weekly Summary — 2026-W42 (Mon 2026-10-12 → Fri 2026-10-16)
+## Risk Metrics
 
 | Metric | Value |
 |---|---|
-| Week Start Value | €9,724.00 |
-| Week End Value | €9,775.66 |
-| Weekly Return | **+0.53%** |
-| Trading Days | 5 |
-| Trades This Week | 3 (2 discretionary OR.PA sells + 1 Rule-5 TLT buy) |
-| Benchmark Cumulative (week) | SPY -1.91% · CAC.PA +1.72% · FEZ +0.40% |
+| VaR 95% (daily) | +0.75% |
+| CVaR 95% (daily) | +0.88% |
+| Max drawdown | -2.02% |
+| Annualized volatility | 6.24% |
+| Sharpe ratio | -3.60 |
 
-The week's headline was Thursday's intraday OR.PA event: a Bollinger-band breakout with RSI > 70 escalated through the trim-then-liquidate protocol, realizing **+€116.31** (+9.39% vs €370.00 average cost, 58-day holding) across two sells at €400.70 and €404.70. The cash surge above the 30% band triggered a Rule-5 deployment into TLT (16.31 shares @ €79.97), restoring cash to the target band. Friday closed the book quietly: cap-bound, no stop breaches, no trades.
+## Today's Decision
 
-## Notes & Next
+**FEZ stop-loss executed.** The LLM sold the full FEZ position (33.53 sh @ €65.12, €2,183.33) after the position breached the −5% single-position drawdown threshold (P&L −5.05%). The stop-override policy for mean-reversion requires RSI < 30 **and** price strictly below the lower Bollinger band; FEZ RSI was 29.3 but its Bollinger-band position was 0.17, so the override conditions were not met and the stop executed mechanically. Realized loss: **−€116.09**.
 
-- **FEZ** remains the closest position to its stop (-3.96% vs -5.0% NORMAL threshold, 1.04 pp margin) and is the natural candidate for Monday's refreshed discretionary budget if it deteriorates further. It is also the portfolio's largest weight (22.6%) — a stop-out would free significant cash and could trigger a Rule-5 redeployment.
-- **TLT** (re-entered 2026-10-15 after the 15.3-day flip cooldown) is governed by the standard -5% stop; no override regime is in effect.
-- **OR.PA** was closed definitively on 2026-10-15; the 10-day flip cooldown prevents re-entry until ~2026-10-25.
-- **Benchmark scaling verified mechanically:** 9,865.28 / 10,000 − 1 = −1.35%, matching the reported `total_return_pct` (-1.3472, percent-scaled). Gap = -2.24% − (-1.35%) = **-0.90 pp**.
+> FEZ has breached the -5% single-position drawdown threshold (current P&L -5.05%). The stop-override policy for mean-reversion requires RSI < 30 AND price strictly below the lower Bollinger band (BB position < 0). While FEZ RSI is 29.3, its BB position is 0.17, meaning the override conditions are not met. The stop-loss executes mechanically to protect against further downside, adhering to loss aversion and CVaR principles. Current cash is ~24.8%, which is comfortably within the 15-30% target for the NORMAL volatility regime, so there is no cash drag mandate to deploy capital. This conservative stance is further supported by the neutral market regime, which disables mean-reversion and trend-following strategies. All other positions are held as they haven't triggered sell conditions (e.g., PDBC has RSI > 70 but BB < 1.1) and TLT remains on its minimum holding period cooldown.
 
-*Almost surely, patience pays.* 🦀
+All 7 remaining positions held. No discretionary stop-override was renewed. Weekly discretionary budget: check below.
+
+## Open Positions
+
+| Ticker | Quantity | Price | Market value | Weight | Unrealized P&L |
+|---|---|---|---|---|---|
+| SPY | 2.6523 | €766.54 | €2,033.11 | 20.86% | €52.79 (+2.67%) |
+| TLT | 16.3141 | €79.46 | €1,296.32 | 13.30% | €-8.32 (-0.64%) |
+| AI.PA | 2.9642 | €173.26 | €513.58 | 5.27% | €7.05 (+1.39%) |
+| DBA | 16.7430 | €28.19 | €471.99 | 4.84% | €-4.52 (-0.95%) |
+| IJR | 2.9135 | €135.87 | €395.85 | 4.06% | €-9.18 (-2.27%) |
+| PDBC | 12.7024 | €20.07 | €254.94 | 2.62% | €28.45 (+12.56%) |
+| SAN.PA | 2.4546 | €70.98 | €174.22 | 1.79% | €-5.15 (-2.87%) |
+
+## Notable Dynamics
+
+- **Cash-band breach post-trade:** the FEZ exit added ~€2.18k of cash, lifting cash from ~24.8% (pre-trade) to **47.3%** — well above the 30% upper band. This creates a potential Rule-5 forced-deployment mandate at the next session (a mechanical deployment does not consume the discretionary trade budget).
+- **Stop discipline held cleanly:** unlike the multi-day TLT override episodes of late September, the FEZ stop was executed on first breach with no override — the override gate (RSI < 30 AND below lower band) was correctly applied and rejected.
+- **Neutral regime:** mean-reversion and trend-following strategies are disabled; the LLM's conservative hold stance is regime-consistent.
+- Benchmark scaling verified: €9,804.55 / 10,000 − 1 = -1.9545% matches reported -1.95%.
+
+## Weekly Summary (W43 — in progress)
+
+| Metric | Value |
+|---|---|
+| Week start value | €9,746.24 (Monday, first session of ISO week 43) |
+| Week end value | — |
+| Weekly change | — |
+| Sessions | 1 |
+| Trades this week | 1 (FEZ stop-loss, discretionary) |
+
+## Next
+
+- Watch the Rule-5 cash-band mandate at tomorrow's session: cash at ~47% forces a mechanical deployment unless the band logic is re-examined pre-trade.
+- PDBC is up +12.6% with RSI > 70 — monitor for a profit-take signal.
+- TLT minimum holding period should roll off soon; watch how the LLM re-rules the remainder.
