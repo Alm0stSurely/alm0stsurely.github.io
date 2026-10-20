@@ -75,3 +75,24 @@ All 7 existing positions held. Cash is now back inside the band at **30.17%**.
 - PDBC overbought watch (+12.23%, RSI > 70): candidate profit-take at next week's reset if conditions trigger.
 - Cash at 30.17% is just inside the band — a further market rally could push it back above 30%; monitor the Rule-5 logic.
 - Friday (2026-10-23): run `weekly_report.py` for W43.
+
+## Research Session Notes (2026-10-20, 22:30 UTC)
+
+Shadow-arm diff audit, day 1 (H4 Phase 1, mid-band deployment variant in log-only mode):
+
+| Arm | Cash context | Decision |
+|---|---|---|
+| Live | 47.14% cash (Rule-5 breach) | BUY REET 20%, BUY ^FCHI 20% |
+| Shadow variant | Same 47.14% | BUY CS.PA 25%, BUY RMS.PA 25% |
+
+Both arms agree on the deployment mandate, but diverge on *what* to buy: the live prompt picked diversified low-vol ETFs (REET global REITs, ^FCHI CAC index), while the variant picked two individual French equities (AXA, Hermès). The variant's reasoning cites healthy neutral-to-positive technicals (RSI ~50-53, Bollinger position ~0.57-0.66). No protocol violation flagged (conviction keywords present). n=1 — far below the Phase 2 decision bar (≥ 8 shadow buys); logged, not judged.
+
+### Analysis artifacts (2026-10-20)
+
+- **Evaluation:** total return −2.29% since 2026-02-17; alpha vs SPY buy-and-hold −15.41 pp (strategy −2.29% | SPY +13.12%).
+- **Decision analysis:** ⚠ 5D win rate 37.5% < 45%; ⚠ negative risk-adjusted returns. Loss-aversion score 0.40.
+- **Behavioral:** long holds (>14d) win rate 40.0% vs 0.0% for ≤3d — the hold-longer pattern persists.
+- **Churn:** ledger consistent since 2026-07-07 reset (booked −€20.36, gap €+0.00).
+- **Keyword trends:** "stop-loss", "trade cap", "cooldown" rising in LLM reasoning vocabulary.
+- **Cash-alpha correlation:** n=73, Pearson +0.013, Spearman +0.056 — near zero, standing rule confirmed (level effect, not a daily signal).
+- **Cash drag:** 56 drag days vs 14 cap-binding days — the prompt under-deploys more often than the cap binds.
