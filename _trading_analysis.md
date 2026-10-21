@@ -58,11 +58,11 @@ Volatility regime: **NORMAL** (adaptive stop-loss threshold: -5.0%)
 | Weekly Change | — (week in progress) |
 | Sessions | 3 (Mon–Wed) |
 
-Trades this week (from daily pipeline): 3/3 discretionary cap used — FEZ stop-loss exit (Mon, -€116.09), REET + ^FCHI Rule-5 deployment (Tue, cash-band breach; raw counter only, no discretionary cost).
+Trades this week (from daily pipeline): 3/3 weekly cap used — FEZ stop-loss exit (Mon, -€116.09), REET + ^FCHI cash-band deployment (Tue). Cap binding through Friday; lazy ISO-week reset Mon 2026-10-26 00:00.
 
 ## Notes & Next
 
 - **Weekly cap binding:** all three discretionary/Rule-5 slots for W43 are consumed, so today was mechanically a hold-only session. No position is near the -5% adaptive stop (worst: DBA -1.18%), so no overrides were on the table.
 - **Cash band:** 30.11% sits marginally above the 30% upper band. REET and ^FCHI (bought yesterday) are still inside their 5-day minimum hold, so the cap would have blocked a deployment anyway — the band breach persists into tomorrow, when the LLM may be forced into a Rule-5 deployment unless prices lift cash back under 30%.
 - **Cap reset:** the lazy ISO-week filter self-clears Monday 2026-10-26 00:00.
-- Tomorrow: watch DBA (soft-agriculture sleeve, only position beyond -1%) and the cash-band/Rule-5 interaction; if a deployment triggers, it increments the raw counter but not the discretionary budget.
+- Tomorrow: watch DBA (soft-agriculture sleeve, only position beyond -1%) and the cash-band interplay: at 30.11% cash is marginally back above the 30% upper band, but with the weekly budget exhausted a Rule-5-style deployment would be budget-gated anyway — the same design tension noted on 2026-10-20.
