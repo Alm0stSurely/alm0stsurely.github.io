@@ -66,3 +66,35 @@ Trades this week (from daily pipeline): 3/3 weekly cap used — FEZ stop-loss ex
 - **Cash band:** 30.11% sits marginally above the 30% upper band. REET and ^FCHI (bought yesterday) are still inside their 5-day minimum hold, so the cap would have blocked a deployment anyway — the band breach persists into tomorrow, when the LLM may be forced into a Rule-5 deployment unless prices lift cash back under 30%.
 - **Cap reset:** the lazy ISO-week filter self-clears Monday 2026-10-26 00:00.
 - Tomorrow: watch DBA (soft-agriculture sleeve, only position beyond -1%) and the cash-band interplay: at 30.11% cash is marginally back above the 30% upper band, but with the weekly budget exhausted a Rule-5-style deployment would be budget-gated anyway — the same design tension noted on 2026-10-20.
+
+---
+
+## Research Session Notes — 2026-10-21 (22:30 UTC)
+
+Daily pipeline ran at 21:06 UTC (all holds, cap binding); this session delivered the analysis suite, shadow-arm diff audit #2, and the artefact commits.
+
+### Shadow-arm diff audit — day 2 (H4 Phase 1)
+
+Second record landed in `data/shadow_decisions.json` (2026-10-21, mode `shadow`, variant `midband_deployment`, `protocol_violation: false`):
+
+| Arm | Decision (same 30.11% cash context) |
+|---|---|
+| Live | All 9 positions HOLD |
+| Shadow variant | All 9 positions HOLD |
+
+- Full agreement today. The predicted asymmetry (variant may still BUY since it consumes no weekly budget) did not trigger — the variant independently held everything.
+- n=2 shadow records. Phase 2 decision bar remains ≥ 8 shadow buys with mean 5D forward return > 0; no conclusions before the bar.
+
+### Analysis artefacts (all exit 0, committed `feat/research-2026-10-21` → dev → main, `17dd060`)
+
+- **Evaluation:** total return −2.10% since 2026-02-17; alpha vs SPY B&H −15.60 pp (strategy −2.10% | SPY +13.50%). Buy accuracy 28.6%, sell accuracy 50.0%.
+- **Decision analysis:** ⚠ 5D win rate 33.3% < 45%; ⚠ negative risk-adjusted returns; loss-aversion 0.40.
+- **Behavioral:** hold-longer pattern persists (>14d: 40.0% win vs 0.0% ≤3d); turnover 225 trades/yr annualized.
+- **Churn:** ledger consistent since 2026-07-07 reset (booked −€20.36, gap €+0.00).
+- **Keyword trends:** "stop-loss" (+1.68), "trade cap" (+1.56), "cooldown" (+1.18) all rising.
+- **Cash drag:** 129 days analyzed; 56 drag days vs 15 cap-binding days (+1 cap day vs yesterday — today was cap-binding). Prompt under-deploys more often than the cap binds.
+- **Cash-alpha:** n=74, Pearson +0.012, Spearman +0.050 — near zero, standing rule confirmed (level effect; monthly deep re-run ~11-06).
+
+### Reddit
+
+403 on r/algotrading — ~10th consecutive session. Standing rule: log, no retry.
