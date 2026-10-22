@@ -67,3 +67,22 @@ Trades this week (from daily pipeline): 3/3 weekly cap used — FEZ stop-loss ex
 - **DBA drift:** worst position deteriorated from -1.18% (Wed) to -1.90% (Thu). Still well clear of the -5% stop; monitor for acceleration.
 - **No intraday monitor trades today** — `trades_history.json` clean for 2026-10-22, so the published 0-trade session is complete.
 - **Tomorrow (Fri 2026-10-23):** weekly report day (`weekly_report.py`). Cap stays binding; REET/^FCHI min-hold runs through the weekend, so Friday is hold-only again unless a stop breaches.
+
+---
+
+## Research Session Notes (2026-10-22, evening)
+
+Analysis suite re-run against the 2026-10-22 daily result; all seven standard artifacts current under `results/analysis/*_20261022.*`.
+
+| Artifact | Headline |
+|----------|----------|
+| Decision quality | 8-day window: 9 trades (7 buys / 2 sells), 5D win rate 55.6% — skill assessment holds (≥55% bar). Sell accuracy 100% (n=2), buy accuracy 42.9% (avg 5D fwd −0.03%). |
+| Behavioral | Overall round-trip win rate 28.6%; long holds (>14d) win 40.0% vs short holds (≤3d) 0.0%. Post-2026-07-07 cohort: 50% win rate, realized P&L +€27.23; ledger reconciles to €0.00 gap. |
+| Cash drag | 130 days analyzed; cash above target on 72 days (55.4%). Drag days 56 vs cap-binding days 16 — the cap, not prompt timidity, is the binding constraint this week. |
+| Cash-alpha correlation | n=75 pairs: Pearson r +0.015, Spearman ρ +0.068 — null daily correlation reconfirmed (level effect, not a signal). Next deep re-run due ~11-06. |
+| Keyword trends | "deflated sharpe" falling; "let winners run" flat — no prompt-keyword signal change. |
+| Comprehensive eval | Alpha vs SPY B&H since 2026-02-17: −16.18 pp (strategy −2.08% vs SPY +14.10%). Equal-weight-32 benchmark remains the fairer comparison: +0.25 pp ahead. |
+
+**H4 shadow arm:** record #3 logged for 2026-10-22 (midband_deployment variant). Live arm and variant both emitted all-holds — full agreement, no diff-audit divergence. Phase 2 bar (n ≥ 8 shadow buys) still not accumulable while the live cap is binding; divergence logging only.
+
+**Reddit scan:** r/algotrading JSON API returned 403 (blocked from this environment) — logged, no retry.
