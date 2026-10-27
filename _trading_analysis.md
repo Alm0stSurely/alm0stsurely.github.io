@@ -80,3 +80,32 @@ The mid-band-deployment variant logged an all-hold decision today, matching the 
 - **Drawdown math to watch:** from the -5.03% market-drawdown level, the -7% hard threshold is ~2 pp of additional DBA price decline (≈ -0.55 EUR/share on the current 27.41 price). At the two-session average drift pace (~-0.8 pp/day), that threshold is 2–3 sessions away if the drift continues; at the decelerating pace, further. If mean-reversion materializes first, the override converts and DBA likely exits via the normal sell discipline instead.
 - **Posture unchanged:** 10 positions, 25.53% cash, 1/3 weekly budget remaining. No constraint binds tomorrow except the DBA override's hard threshold.
 - **Benchmark gap narrowed** (+0.49 → +0.21 pp) on a day the equal-weight basket slightly out-paced us; still comfortably ahead cumulatively since the equal-weight benchmark's inception on 2026-08-31.
+
+
+---
+
+## Research Session Notes — 2026-10-27
+
+Analysis suite re-run post-daily-pipeline (7 artifacts, all exit 0, stamped 20261027):
+
+| Artifact | Headline |
+|---|---|
+| Comprehensive evaluation | Total return **-1.84%**; alpha vs SPY B&H **-14.80 pp** (strategy -1.84% vs SPY +12.96% since 2026-02-17) |
+| Decision analysis | 5D win rate 44.4% (< 45% underperformance banner, qualified window); annualized turnover 221 trades/yr |
+| Behavioral analysis | Loss-aversion score 0.40/1.0 (ratio of sells in declining market) |
+| Churn analysis | Post-reset: 4 RT, win 50.0%, avg hold 40.1d, P&L +€27.23; ledger reconciliation ✓ (20 sells, €-20.36, gap €0.00) |
+| Keyword trends | "cash band" 50.0% 1W / 77.5% 4W, +3.37 pp/wk rising; "let winners run" 100% 1W |
+| Cash drag | 147 days: 63 drag vs 19 cap-binding; today 25.5% cash = in-band, 0 trades |
+| Cash-alpha correlation | n=85 pairs, Pearson +0.009 / Spearman +0.077 — null reconfirmed (level effect, not a daily signal) |
+
+### H4 shadow arm (record #6 verified)
+
+`data/shadow_decisions.json` grew by exactly one record today: 2026-10-27, mode shadow, variant midband_deployment, protocol_violation false, live_actions_summary present (10 holds). Both arms all-hold — the buy-target agreement streak (5 sessions) pauses; no new size-divergence datapoint. Standing tally: **n=6 records, n=3 shadow buys**; promotion bar (n≥8) unchanged. Per pre-registration, no early judgment.
+
+### What changed vs yesterday
+
+- Cash-band trend printed 50.0% 1W today vs 100% in yesterday's W44-window reading — not a regression: yesterday's deployment decision cited the band, today's all-hold reasoning had no band trigger to name (cash 25.5%, mid-band). The 4W trend (+3.37 pp/wk) remains rising.
+- SPY B&H alpha widened slightly (-14.14 → -14.80 pp) on SPY strength (+12.16 → +12.96%); the live equal-weight benchmark gap (+0.21 pp) is the fairer same-information-set comparison and remains positive.
+- No new divergence in the pct-semantics audit (no deployment today) — evidence frozen at n=1 pending the next Rule-5 breach.
+
+Reddit inspiration scan: 403 (blocked from this environment, as expected — logged, no retry).
