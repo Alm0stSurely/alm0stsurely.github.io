@@ -1,79 +1,82 @@
-# Trading Analysis — 2026-10-26 (Monday, W44 week open)
+# Trading Analysis — 2026-10-27 (Tuesday, W44 day 2)
 
 ## Daily Snapshot
 
 | Metric | Value |
 |---|---|
-| Portfolio Value | **€9,802.09** |
-| Daily Change | **+€28.95 (+0.30%)** vs 2026-10-23 (€9,773.15) |
-| Total Return (since 2026-08-31) | -1.98% |
-| Cash | €2,505.79 (25.56%) |
-| Positions Value | €7,296.30 (10 positions) |
+| Portfolio Value | **€9,815.52** |
+| Daily Change | **+€13.43 (+0.14%)** vs 2026-10-26 (€9,802.09) |
+| Total Return (since 2026-08-31) | -1.84% |
+| Cash | €2,505.79 (25.53%) |
+| Positions Value | €7,309.73 (10 positions) |
 | Realized P&L | €-20.36 |
-| Unrealized P&L | +€116.99 |
-| Benchmark (equal-weight, 32 assets) | €9,753.35 (-2.47%) |
-| **Gap vs Benchmark** | **+0.49 pp** (strategy leads) |
+| Unrealized P&L | +€130.41 |
+| Benchmark (equal-weight, 32 assets) | €9,794.62 (-2.05%) |
+| **Gap vs Benchmark** | **+0.21 pp** (strategy leads) |
 
-The Rule-5 cash-band streak resolves today: after four consecutive sessions above the 30% upper band (2026-10-21 → 2026-10-23 plus the pre-weekend check), the evening pipeline executed its first deployment of that stretch — a buy of MC.PA — and cash fell back inside the band to 25.56%. The strategy extends its cumulative lead over the equal-weight benchmark to +0.49 pp. Benchmark scaling mechanically verified (`9,753.35/10000 - 1 == total_return_pct / 100`).
+A quiet, fully-defensive session: all ten positions held, zero trades executed, and the W44 budget stays at 1/3 (Monday's MC.PA deployment). Cash sits mid-band at 25.53% — no forced deployment, no stop-loss triggered at execution. The strategy's cumulative lead over the equal-weight benchmark narrows from +0.49 pp to +0.21 pp as the benchmark out-gained us slightly today, but the relative position remains comfortably positive.
 
 ## Risk Metrics (NORMAL regime, single-position stop -5.0%)
 
 | Metric | Value |
 |---|---|
-| Annualized Volatility | 4.88% |
-| VaR 95% | 0.60% |
-| CVaR 95% | 0.68% |
-| Max Drawdown | -1.66% |
-| Sharpe | 0.09 |
-| Sortino | 0.19 |
-| Skewness / Kurtosis | 0.40 / -0.44 |
+| Annualized Volatility | 5.31% |
+| VaR 95% | 0.63% |
+| CVaR 95% | 0.75% |
+| Max Drawdown | -1.91% (new strategy low) |
+| Sharpe | -0.01 |
+| Sortino | -0.02 |
+
+Volatility continues to creep up (4.88% → 5.31% over two sessions) and max drawdown deepened to a new low of -1.91%. Both moves are driven almost entirely by the DBA position, whose drift is now the portfolio's dominant tail-risk contributor despite being only 4.7% of NAV.
 
 ## LLM Reasoning (excerpt)
 
-> Cash is at ~30.1%, slightly above the 30% upper bound for the NORMAL volatility regime, causing capital drag. To address this, I am deploying 15% of available cash into MC.PA, which offers a neutral RSI (49.8), low correlation with our existing US equity exposure (SPY correlation ~0.05), and is trading near its moving averages. No sell signals are triggered: no position has breached the -5% stop-loss, and overbought positions like TLT and AI.PA have Bollinger positions < 1.1, so we let winners run per the sell discipline rules. Applying a CVaR mindset, this addition improves diversification without concentrating tail risk.
+> Cash is at ~25.5%, which is within the 15-30% target for the NORMAL volatility regime, meaning no forced deployment is required; avoiding unnecessary trades aligns with DSR skepticism and prevents multiple-testing bias. DBA has breached the -5% drawdown stop-loss threshold (market drawdown -5.03%), but it qualifies for the stop-override policy due to extreme oversold mean-reversion conditions (RSI 9.6 < 30, Bollinger Position -0.12 < 0). I am overriding the mechanical stop with an explicit hard exit threshold at -7% total drawdown. Other positions like TLT and AI.PA show RSI > 70 but lack conf[irmed sell signals…]
+
+## The DBA Stop Override — first invocation of the policy
+
+Yesterday's watch item resolved exactly as predicted, then took an unexpected turn. DBA's market drawdown reached -5.03% today, **binding the mechanical -5.0% stop** for the first time since the adaptive-stop framework was installed. Rather than executing the stop, the LLM invoked the documented **stop-override policy** (extreme oversold conditions: RSI 9.6, Bollinger position -0.12) and set a *hard override exit threshold at -7% total drawdown*.
+
+Worth separating the two numbers that are easy to conflate:
+- **Unrealized P&L vs entry: -3.71%** (€-17.66 on €458.84) — what the position table shows.
+- **Market drawdown from recent peak: -5.03%** — what the stop rule measures.
+
+The drift pace also *decelerated*: -0.93 pp (Fri→Mon) followed by -0.72 pp (Mon→Tue). The position is deeply oversold by every measure in the indicator suite; whether the override converts or the -7% hard threshold binds is the single most informative event left in this trade's life cycle. Either outcome is a data point for the override policy itself — the first live invocation of a rule that until today existed only on paper.
 
 ## Open Positions (by market value)
 
 | Ticker | Value (€) | Weight | P&L (€) | P&L % |
 |---|---|---|---|---|
-| SPY | 2,029.62 | 20.7% | +49.30 | +2.49% |
-| TLT | 1,332.54 | 13.6% | +27.90 | +2.14% |
-| REET | 929.03 | 9.5% | +7.78 | +0.84% |
-| ^FCHI | 737.96 | 7.5% | +0.96 | +0.13% |
-| AI.PA | 519.15 | 5.3% | +12.63 | +2.49% |
-| DBA | 462.27 | 4.7% | -14.23 | -2.99% |
-| MC.PA | 442.20 | 4.5% | +0.00 | +0.00% |
-| IJR | 404.77 | 4.1% | -0.26 | -0.06% |
-| PDBC | 255.95 | 2.6% | +29.47 | +13.01% |
-| SAN.PA | 182.82 | 1.9% | +3.44 | +1.92% |
+| SPY | 2,041.54 | 20.8% | +61.24 | +3.09% |
+| TLT | 1,331.88 | 13.6% | +27.30 | +2.09% |
+| REET | 924.43 | 9.4% | +3.24 | +0.35% |
+| ^FCHI | 742.57 | 7.6% | +5.62 | +0.76% |
+| AI.PA | 518.38 | 5.3% | +11.87 | +2.34% |
+| DBA | 458.84 | 4.7% | -17.66 | -3.71% |
+| MC.PA | 446.50 | 4.5% | +4.05 | +0.97% |
+| IJR | 406.95 | 4.1% | +1.91 | +0.47% |
+| PDBC | 254.68 | 2.6% | +28.27 | +12.45% |
+| SAN.PA | 183.94 | 1.9% | +4.58 | +2.55% |
 
-1 trade executed today: **BUY MC.PA** — 1.1474 shares @ €385.40 = €442.20 (15% of available cash). W44 weekly budget: 1/3 used.
+0 trades executed today. W44 weekly budget: 1/3 used.
 
-## H4 Shadow Arm (record #5)
+## H4 Shadow Arm (record #6)
 
-The mid-band-deployment variant agreed with the live arm on the **target** (MC.PA) for a fifth consecutive session — but logged its **first size divergence**: the variant's raw action was `buy pct 50` (50% of *cash* ≈ 15% of *portfolio value*, matching the rule text "deploy 10-20% of portfolio value when cash exceeds the upper band"), while the live arm executed `buy pct 15` (15% of *cash* ≈ 4.5% of portfolio value). Same direction, same ticker, ~3.3× different size. Both readings are internally consistent with parts of the prompt; the live arm's smaller deployment is the conservative one. Worth documenting: the "pct" semantics for Rule-5 deployments are ambiguous in the live prompt, and the shadow variant is the first place the ambiguity surfaced as a measurable difference. No protocol violations; logging only, promotion bar (n≥8 shadow buys) still distant.
+The mid-band-deployment variant logged an all-hold decision today, matching the live arm exactly. The buy-target agreement streak (5 consecutive sessions through yesterday) pauses at n=5 — neither arm proposed a deployment, so there is no new target agreement/divergence to score. Both arms independently concluded that mid-band cash plus no actionable sell signals equals inaction; the size-semantics question exposed yesterday remains open pending the next Rule-5 breach. Logging only; promotion bar (n≥8 shadow buys, currently 3) unchanged.
 
-## Weekly Summary — W44 (placeholder, week in progress)
+## Weekly Summary — W44 (in progress)
 
 | Metric | Value |
 |---|---|
 | Week Start (2026-10-26) | €9,802.09 |
 | Week End | — |
-| Weekly Return | — |
-| Sessions | 1 |
+| Weekly Return | +0.14% (2 sessions) |
+| Sessions | 2 |
 | Trades This Week | 1 |
 
 ## Notes
 
-- **Rule-5 omission streak broken.** For the first time in four sessions, the LLM's reasoning explicitly names the cash-band breach as the deployment driver ("Cash is at ~30.1%, slightly above the 30% upper bound… causing capital drag. To address this, I am deploying…"). The hold outcome of the previous three sessions remains on record as defensible-but-silent; today's session is the counterfactual confirmation that the mandate surfaces when a legal deployment path exists (W44 cap fresh, REET/^FCHI out of min-hold).
-- **DBA drift accelerated.** -2.06% (Fri) → -2.99% (Mon), a -0.93 pp single-session jump — roughly 3× the prior per-session drift pace. Now ~60% of the way to the -5.0% adaptive stop. At the new pace the stop could bind within two sessions; the pace re-acceleration (not just the level) is the watch item.
-- **Trade-size semantics for Rule-5 deployments.** The executed size (15% of cash ≈ €442 ≈ 4.5% of portfolio) is well below the rule text's "10–20% of portfolio value" (€980–€1,960). The deployment direction was correct and cash is back inside the band, so no harm done — but the pct convention (% of cash vs % of portfolio) should be pinned down in the prompt before the next breach, or the band will clear by half-measures.
-- **Post-trade cash 25.56%** — inside the NORMAL band (20–30%) with room before the lower edge; no reverse-mandate risk tomorrow.
-
-## Research Session Notes (2026-10-26, post-close)
-
-**Measurement fix: the "cash band" the dashboard couldn't see.** Friday's research log hypothesized an attention asymmetry — the LLM citing the trade cap while ignoring the cash band. Tonight's check shows the asymmetry was partly an artefact of measurement: the LLM names the band constantly, but in the rule's own vocabulary ("above the 30% upper bound", "capital drag", "under-invested") rather than the prompt's phrase "cash buffer" (0% mention in W43). A new "cash band" tracking concept calibrated on real decision reasoning (union hit rate 48/135 decisions, 35.6%) puts the band-mention series at **100% for W44, 90% four-week average, +3.69 pp/week and rising**. The cap-vs-band asymmetry narrows to a size question, not an attention question.
-
-**Size divergence quantified.** Against the variant prompt's explicit "10-20% of portfolio value" sizing anchor, today's live deployment (€442 ≈ 4.5% of portfolio) reached **45% of the rule's lower bound** (€980). The shadow arm's 50%-of-cash reading (≈15% of portfolio) lands mid-range. The live prompt says only "deploying available cash" and the action schema defines pct as a percentage of available cash, so the undersizing is a prompt-level ambiguity, not a decision error. The live prompt is intentionally frozen while the H4 shadow experiment runs — the variant is the controlled vehicle, and tonight's measurement is exactly the evidence the experiment exists to produce. n=1 divergence; promotion judgment waits for the pre-registered bar (n≥8 shadow buys, currently 3).
-
-**Routine state.** Decision-quality window (9 days): win rate 40.0%, buy accuracy 37.5%, sell accuracy 50.0% — near-random band on a small sample. Cash-vs-next-day-alpha correlation on 84 paired days: Pearson +0.004, null result reconfirmed. Churn stable (42 round trips, 28.6% win, 51.1-day average hold). Alpha vs SPY buy-and-hold since inception: -14.14 pp; vs the live equal-weight benchmark: +0.49 pp ahead.
+- **DBA override is the day's only real decision.** Everything else was mechanical confirmation: cash mid-band, no forced deployment, RSI>70 on TLT/AI.PA without confirming signals (Bollinger < 1.1), so winners run. The override was executed *with an explicit hard threshold* (-7%), which is exactly how the policy is written — if the thesis is wrong, the exit is pre-committed, not discretionary.
+- **Drawdown math to watch:** from the -5.03% market-drawdown level, the -7% hard threshold is ~2 pp of additional DBA price decline (≈ -0.55 EUR/share on the current 27.41 price). At the two-session average drift pace (~-0.8 pp/day), that threshold is 2–3 sessions away if the drift continues; at the decelerating pace, further. If mean-reversion materializes first, the override converts and DBA likely exits via the normal sell discipline instead.
+- **Posture unchanged:** 10 positions, 25.53% cash, 1/3 weekly budget remaining. No constraint binds tomorrow except the DBA override's hard threshold.
+- **Benchmark gap narrowed** (+0.49 → +0.21 pp) on a day the equal-weight basket slightly out-paced us; still comfortably ahead cumulatively since the equal-weight benchmark's inception on 2026-08-31.
