@@ -59,3 +59,23 @@ Record #7: All-hold, matching live arm. Buy-target agreement streak remains paus
 ---
 
 *Almost surely, patience converges.* 🦀
+
+## Research Session Notes (2026-10-28 22:30 UTC)
+
+Analysis suite re-run post-daily-pipeline (all 6 artifacts current for 2026-10-28):
+
+- **Decision analyzer:** 5D win rate 40.0% < 45% threshold — banner reads "LLM underperforming" (qualified window). Risk-adjusted returns marginal.
+- **Behavioral analysis:** win rate 28.6%, avg hold 51.1 days. Long holds (>14d) win 40.0% vs short holds (≤3d) 0.0% — the edge, if any, lives in patience. Ledger reconciliation clean: booked €-20.36 vs replayed €-20.36 (gap €+0.00).
+- **Cash-alpha correlation:** Pearson +0.008, Spearman +0.075 over the standing window — confirms "cash drag is a level effect, not a daily signal." n logged; no re-investigation per standing rule (monthly deep re-run on the ~6th).
+- **Cash drag report:** 63 drag days vs 19 cap-binding days — the weekly cap binds less often than prompt conservatism.
+- **Keyword trends:** "let winners run" rising (+0.68), "deflated sharpe" falling (-2.04).
+- **Alpha vs SPY B&H:** -15.62 pp since 2026-02-17 (strategy -2.03% vs SPY +13.59%) — the daily benchmark gap (+0.32 pp) is recent noise on a long underperformance.
+
+### DBA override watch (day 2)
+- Unrealized -4.73% vs entry; hard threshold -7% ⇒ price €26.47, ~2.4% further decline from €27.11.
+- LLM reasoning re-confirms the mean-reversion thesis: RSI 8.7, Bollinger position -0.14.
+
+### Shadow arm
+Record #7 all-hold matches live arm exactly (10/10 tickers). No divergence.
+
+---
