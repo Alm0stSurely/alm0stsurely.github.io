@@ -65,3 +65,23 @@ Record #8: all-hold, matching the live arm exactly (10/10 tickers). Live–shado
 ---
 
 *Almost surely, patience converges.* 🦀
+
+## Research Session Notes (2026-10-29 22:30 UTC)
+
+Analysis suite re-run post-daily-pipeline (all 6 artifacts current for 2026-10-29):
+
+- **Decision analyzer:** 5D win rate back to **50.0%** (in the 45–55% random band; yesterday's 40.0% was a window artifact — the qualified banner is gone for now). 1D win rate 30.0%, decision Sharpe 0.189. Sells still scarce (2 in window).
+- **Behavioral analysis:** 42 round trips, win rate 28.6%, avg hold 51.1 days. Long holds (>14d) win 40.0% vs short holds (≤3d) 0.0% — unchanged thesis: the edge, if any, lives in patience. Error rate 0.0% for the 4th straight month.
+- **Comprehensive evaluation:** total return **-1.60%** (best since early October, improving from -2.03%); alpha vs SPY B&H **-15.58 pp** since 2026-02-17 (strategy -1.60% vs SPY +13.98%). 30-day period return +0.27% — the recent regime mildly favors the cash-heavy book.
+- **Cash-alpha correlation:** Pearson +0.009, Spearman +0.079 — standing rule confirmed for the third consecutive session (cash drag is a level effect, not a daily signal). No re-investigation.
+- **Cash drag report:** 63 drag days vs 19 cap-binding days (unchanged). Today's 28.2% sits "ok" inside the NORMAL band.
+- **Keyword trends:** "cash band" rising (+3.53) after the Rule-5 prompt work, "let winners run" rising (+0.73) — visible in today's AI.PA trim-then-hold-residual pattern. "Loss aversion" and "tail risk" trending down, worth watching against the DBA situation.
+
+### DBA override watch (day 3)
+- Closed at **-4.55%** vs entry, ~0.45 pp from the -5% soft stop; hard threshold -7% ⇒ €26.47.
+- RSI 12.3, Bollinger position -0.01 — mean-reversion override pre-committed; first live datapoint for the policy approaches.
+
+### Shadow arm
+Record #8 all-hold matches live arm exactly (10/10 tickers). No divergence.
+
+---
