@@ -1,81 +1,67 @@
-# Trading Analysis — 2026-10-28
+# Trading Analysis — 2026-10-29
 
 ## Portfolio Overview
 
 | Metric | Value |
 |--------|-------|
-| Total Value | €9,796.88 |
-| Cash | €2,505.79 (25.58%) |
-| Positions | €7,291.09 |
-| Total Return | **-2.03%** |
-| Daily Change | -€18.64 (-0.19%) |
-| Benchmark (EW) | €9,765.11 (-2.35%) |
-| **Gap vs Benchmark** | **+0.32 pp** |
-| Sharpe Ratio | -0.96 |
-| Volatility | 5.19% |
-| Max Drawdown | -1.91% |
+| Total Value | €9,840.15 |
+| Cash | €2,771.71 (28.17%) |
+| Positions | €7,068.44 |
+| Total Return | **-1.60%** |
+| Daily Change | +€43.27 (+0.44%) |
+| Benchmark (EW) | €9,814.75 (-1.85%) |
+| **Gap vs Benchmark** | **+0.25 pp** |
+| Sharpe Ratio | 0.30 |
+| Volatility | 4.97% |
+| Max Drawdown | -1.93% |
 
 ## Daily Decision
 
-**Regime:** Volatility normal (50th percentile), trend neutral, correlation normal.
+**Regime:** Volatility normal, trend neutral — mean-reversion and trend-following opportunities both disabled by the regime filter.
 
-**LLM Decision:** All 10 positions held. No trades executed.
+**LLM Decision:** All 10 positions held. No trades executed in the evening pipeline.
 
-**Reasoning:** Cash at ~25.6% is comfortably within the 15–30% target band for the normal volatility regime, so no forced deployment is required. DBA is approaching the -5% stop-loss threshold but the documented override policy remains active (RSI deeply oversold, Bollinger position extreme). The LLM maintained the hard exit threshold at -7% total drawdown.
+**Reasoning:** Cash at ~28.2% sits comfortably inside the 15–30% target band for the NORMAL regime, so no forced deployment is required. No winner meets the strict reversal criteria (RSI > 70 AND Bollinger position > 1.1). DBA is at -4.55%, just shy of the -5% stop-loss threshold, but extremely oversold (RSI 12.3, Bollinger position -0.01) — a live override candidate should it breach. MC.PA remains in its mandatory cooldown. With a neutral tape and portfolio drawdown at only -1.60%, holding preserves optionality at zero transaction cost.
+
+## Intraday Monitor Activity
+
+The monitor traded once today: **AI.PA 50% profit-take at 12:18 UTC @ €179.42** (+2.96% gap at the Paris open, full Bollinger-breakout criteria met on honest bands). Realized **+€12.66**; remaining 1.4821 shares continue to run (+3.70% unrealized on the residual). Weekly discretionary budget now **2/3 used**. The evening pipeline reviewed the remainder against the surveillance escalation thresholds (RSI ≥ 82, BB position > 1.3, price > ~€183) — none triggered, so the residual holds.
 
 ## Position Highlights
 
 | Ticker | Weight | P&L % | Note |
 |--------|--------|-------|------|
-| SPY | 20.91% | +3.44% | Largest position, healthy gains |
-| TLT | 13.49% | +1.32% | Bond ETF stabilizer |
-| REET | 9.37% | -0.38% | Slight pullback |
-| ^FCHI | 7.57% | +0.68% | CAC 40 index |
-| AI.PA | 5.26% | +1.83% | Air Liquide |
-| DBA | 4.63% | **-4.74%** | Oversold, override active |
-| MC.PA | 4.52% | +0.13% | Monday's buy, flat |
-| IJR | 4.16% | +0.52% | Small-cap ETF |
-| PDBC | 2.61% | +13.01% | Best performer |
-| SAN.PA | 1.89% | +3.33% | Sanofi |
+| SPY | 20.74% | +3.07% | Largest position |
+| TLT | 13.51% | +1.89% | Bond ETF stabilizer |
+| REET | 9.50% | +1.46% | Real estate ETF |
+| ^FCHI | 7.62% | +1.75% | CAC 40 index |
+| DBA | 4.62% | **-4.55%** | Override watch, day 3 |
+| MC.PA | 4.47% | -0.43% | In mandatory cooldown |
+| IJR | 4.20% | +2.14% | Small-cap ETF |
+| AI.PA | 2.67% | +3.70% | Post-trim residual |
+| PDBC | 2.60% | +12.79% | Best performer |
+| SAN.PA | 1.90% | +4.04% | Sanofi |
 
 ## Risk Metrics
 
-- **CVaR 95%:** +0.75%
-- **VaR 95%:** +0.63%
-- **Max Drawdown:** -1.91% (strategy low)
-- **Volatility:** 5.19% (up from 5.31% — slight decrease)
+- **CVaR 95%:** +0.65%
+- **VaR 95%:** +0.49%
+- **Max Drawdown:** -1.93%
+- **Volatility:** 4.97% (annualized)
+- **Sortino (tail block):** 1.62
 
 ## H4 Shadow Arm
 
-Record #7: All-hold, matching live arm. Buy-target agreement streak remains paused at n=5.
+Record #8: all-hold, matching the live arm exactly (10/10 tickers). Live–shadow agreement continues; no size divergence to report today.
 
 ## Observations
 
-- The DBA override policy is being stress-tested in real time. The position is now at -4.74% (entry) and the -7% hard threshold is ~2.26 pp of additional decline away. The mean-reversion thesis is intact but not confirmed.
-- Portfolio underperformed the benchmark slightly today (-0.19% vs benchmark's implicit move), but the cumulative gap remains positive at +0.32 pp.
-- Cash mid-band means no forced buying or selling pressure. The LLM is preserving optionality.
-- No confirming sell signals on TLT/AI.PA despite elevated RSI readings from prior sessions.
+- **DBA override watch, day 3.** The position closed at -4.55% vs entry, roughly 0.45 pp from the -5% soft stop. The LLM pre-committed to the documented mean-reversion override should it breach (RSI 12.3 is extreme). The hard -7% threshold (~€26.47) remains the unconditional exit line — a live price below it forces a full exit without waiting for the pipeline.
+- **Cash at 28.17%** — inside the band, no Rule-5 tension, but one trim away from the 30% upper edge. The AI.PA residual is the most likely next source of either cash (further trim) or stabilization.
+- **Cumulative gap vs equal-weight benchmark: +0.25 pp.** The strategy's cash-heavy posture is finally paying on down days: +0.44% while the 32-asset benchmark slipped.
+- Weekly discretionary budget: **2/3 used** (Monday's FEZ stop + today's AI.PA trim). One trade remains before Monday's rollover.
+- Realized P&L improved from -€20.36 to **-€7.70** thanks to the AI.PA trim; unrealized stands at +€142.39.
 
 ---
 
 *Almost surely, patience converges.* 🦀
-
-## Research Session Notes (2026-10-28 22:30 UTC)
-
-Analysis suite re-run post-daily-pipeline (all 6 artifacts current for 2026-10-28):
-
-- **Decision analyzer:** 5D win rate 40.0% < 45% threshold — banner reads "LLM underperforming" (qualified window). Risk-adjusted returns marginal.
-- **Behavioral analysis:** win rate 28.6%, avg hold 51.1 days. Long holds (>14d) win 40.0% vs short holds (≤3d) 0.0% — the edge, if any, lives in patience. Ledger reconciliation clean: booked €-20.36 vs replayed €-20.36 (gap €+0.00).
-- **Cash-alpha correlation:** Pearson +0.008, Spearman +0.075 over the standing window — confirms "cash drag is a level effect, not a daily signal." n logged; no re-investigation per standing rule (monthly deep re-run on the ~6th).
-- **Cash drag report:** 63 drag days vs 19 cap-binding days — the weekly cap binds less often than prompt conservatism.
-- **Keyword trends:** "let winners run" rising (+0.68), "deflated sharpe" falling (-2.04).
-- **Alpha vs SPY B&H:** -15.62 pp since 2026-02-17 (strategy -2.03% vs SPY +13.59%) — the daily benchmark gap (+0.32 pp) is recent noise on a long underperformance.
-
-### DBA override watch (day 2)
-- Unrealized -4.73% vs entry; hard threshold -7% ⇒ price €26.47, ~2.4% further decline from €27.11.
-- LLM reasoning re-confirms the mean-reversion thesis: RSI 8.7, Bollinger position -0.14.
-
-### Shadow arm
-Record #7 all-hold matches live arm exactly (10/10 tickers). No divergence.
-
----
