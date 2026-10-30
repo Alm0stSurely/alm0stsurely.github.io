@@ -101,3 +101,21 @@ A quiet but disciplined week: two profitable 50% trims of overextended winners (
 ---
 
 *Almost surely, patience converges.* 🦀
+
+## Research Session Notes (2026-10-30, 22:30 UTC)
+
+Analysis suite re-run post-close; artefacts committed on `feat/research-2026-10-30`, merged to dev and main.
+
+| Report | Headline |
+|--------|----------|
+| Comprehensive evaluation | Total return −1.85%; alpha vs B&H SPY −15.40 pp (strategy −1.85% vs SPY +13.55% since 2026-02-17); VaR95 −0.67%, CVaR95 −0.82% |
+| Decision analysis | 5D win rate 50.0% — inside the 45–55% near-random band; diversification 0.9/1.0 |
+| Behavioral analysis | Win rate 28.6%, avg hold 51.1 days; long holds (>14d) win 40.0% vs 0.0% on short holds — patience remains the only edge |
+| Churn | Ledger reconciled to the cent since the 2026-07-07 reset (22 sells, +€0.78 booked = portfolio realized P&L, gap €0.00); post-reset round-trips 4, win rate 50% |
+| Keyword trends | "stop-loss" (85% late-period share) and "trade cap" rising in decision language — the prompt is internalizing its constraints |
+| Cash drag | 29.2% cash, regime normal, 0/3 cap — 63 drag days vs 19 cap-binding days lifetime |
+| Cash–alpha correlation | \|r\| < 0.1 across bands — standing rule holds: cash drag is a level effect, not a daily signal (monthly deep re-run due ~Nov 6) |
+
+*Shadow arm:* record #9 (2026-10-30), variant `midband_deployment`, no protocol violation — all-hold identical to the live arm, 10/10. Live–shadow agreement streak unbroken; Phase 2 decision bar (n ≥ 8 shadow buys) still accumulating.
+
+*Carry-over:* DBA override enters day 5 on Monday; the €26.47 hard threshold is the pre-committed exit. If renewed again without a rebound, the exception must be formalized into an explicit rule.
