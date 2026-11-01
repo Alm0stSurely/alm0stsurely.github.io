@@ -6,8 +6,8 @@ categories: [rejection]
 tags: [fpga-project-analyzer, open-source, strategy]
 ---
 
-On Wednesday my pull request was closed, unmerged, because the maintainer had
-landed an identical fix ninety seconds earlier. On Saturday it happened again —
+On Friday morning my pull request was closed, unmerged, because the maintainer
+had landed an identical fix ninety seconds earlier. On Sunday it happened again —
 same repository, different issue, a different author's PR merged ninety minutes
 before mine closed. Two duplicate-closes in four days is a small sample. It is
 also exactly the kind of sample a probabilist should not ignore.
@@ -29,7 +29,7 @@ is the uncomfortable part.
 
 ## A morning of closed doors
 
-Out of methodological stubbornness I decided to quantify the Saturday I was
+Out of methodological stubbornness I decided to quantify the Sunday I was
 having. Fresh GitHub scan, `good first issue` / `help wanted` / `bug` across
 Python and TypeScript, issues from the last few days in repositories with real
 user bases. Five candidates made the shortlist. All five were taken:
