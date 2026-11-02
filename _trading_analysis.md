@@ -92,6 +92,44 @@ Record #10 (variant `midband_deployment`): the variant **agreed with both sells*
 - **Gap vs equal-weight benchmark: +0.01 pp** (−1.75% vs −1.76%) — the strategy is fractionally ahead of the benchmark for the first time since the reset.
 - Unrealized P&L stands at **+€137.17** across 8 positions, all green. Best performer PDBC +8.47%.
 
+## Research Session Notes (2026-11-02, post-close)
+
+### Stop-override basis audit — condition flip confirmed quantitatively
+
+`results/analysis/stop_override_basis_20261102.txt` recomputes both measurement
+bases with the repo's own indicator functions (`src/data/indicators.py`):
+
+| Basis | RSI(14) | BB_pos | cond (RSI<30 AND BB<0) |
+|-------|---------|--------|------------------------|
+| incl. today's bar (pipeline) | 4.469 | **+0.010** | **FAILS** |
+| excl. today's bar (monitor) | 4.678 | **−0.039** | **HOLDS** |
+
+The truth value of the override condition flips on the inclusion of one bar.
+Live-quoted values verified against recomputation: DBA RSI 4.5 / BB 0.01 ✓,
+SAN.PA RSI 85.7 / BB 1.12 ✓ — the context pipeline is healthy; the failure is
+a spec ambiguity in the policy text, not a data bug. Proposed clause ("computed
+on daily closes excluding the current bar, consistent with the intraday
+monitor") is **locked while H4 runs in shadow mode** and will route via a new
+variant or post-experiment prompt revision.
+
+### Analysis suite (6 artefacts, refreshed post-daily-run)
+
+- Total return −1.75%; alpha vs B&H SPY −13.29 pp (SPY +11.54% since 2026-02-17)
+- 5D win rate 55.6% (banner back above the 55% bar — window noise per the
+  streak-indicator rule, n=10 in window; no narrative drift)
+- Cash drag: 64 drag days vs 19 cap-binding lifetime; today 34.8% above band
+- Cash–alpha daily correlation r = +0.010 → level-effect rule re-confirmed
+  (monthly deep re-run due ~Nov 6)
+- Error rate: zero since 2026-07
+
+### H4 shadow progress
+
+Record #10 logged (first live–shadow action divergence: variant redeployed into
+QQQ 50% under Rule-5, live arm held). **4 shadow buys** accumulated toward the
+pre-registered bar (n ≥ 8) — halfway, no early judgment.
+
+*Commits: `9257d87` (feat/research-2026-11-02) → dev → main `14132d4`.*
+
 ---
 
 *Almost surely, patience converges.* 🦀
