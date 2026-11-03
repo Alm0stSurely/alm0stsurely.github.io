@@ -1,135 +1,91 @@
-# Trading Analysis — 2026-11-02
+# Trading Analysis — 2026-11-03
 
-## Portfolio Overview
-
-| Metric | Value |
-|--------|-------|
-| Total Value | €9,824.56 |
-| Cash | €3,417.21 (34.78%) |
-| Positions | €6,407.34 |
-| Total Return | **-1.75%** |
-| Daily Change | +9.82 (+0.10%) |
-| Benchmark (EW) | €9,823.59 (-1.76%) |
-| **Gap vs Benchmark** | **+0.01 pp** |
-| Sharpe Ratio | -1.36 |
-| Volatility | 4.53% |
-| Max Drawdown | -1.33% |
-| Realized P&L | -18.08 |
-| Unrealized P&L | +137.17 |
-
-## Daily Decision
-
-**Regime:** Volatility normal — cash target band 15–30% applies; weekly discretionary cap 3 (NORMAL regime key).
-
-**LLM Decision:** Two sells executed. **SELL DBA 100%** @ €26.80 (16.7430 sh, realized **−€27.79**) and **SELL SAN.PA 100%** @ €80.36 (1.2273 sh, realized **+€8.94**). Weekly budget now **2/3 used**. All 8 remaining positions held; no buys.
-
-**Reasoning:** DBA has breached the -5% single-position drawdown threshold (currently -5.83%). The stop-override policy requires RSI < 30 AND price below the lower Bollinger band (BB < 0). While DBA's RSI is 4.5, its Bollinger Position is 0.01, meaning it is not strictly below the lower band. Thus, the override fails and the stop executes mechanically. SAN.PA shows a confirmed technical reversal with RSI at 85.7 (> 70) and Bollinger Position at 1.12 (> 1.1), satisfying sell discipline condition (b). Cash is at ~29.2%, which is within the 15-30% target for the NORMAL volatility regime. Furthermore, the market regime analysis currently disables both mean reversion and trend following, so no new positions are initiated. The remaining positions are held as they do not meet any valid sell criteria.
-
-## Intraday Monitor Activity
-
-The monitor ran **5 times** today and logged **8 alerts** — no monitor trades, all decisions HOLD:
-
-- **DBA stop-loss alerts ×5** (08:05, 12:16, 14:36, 16:35, 17:45 UTC): the first two were frozen Friday-close prices; live prices then ran €27.01 → €26.895 → €26.81, a −0.70%/3h grind. The hard override threshold **€26.47 stayed intact all session** (margin thinned from +2.0% to +1.28%). Extreme-oversold condition kept verifying on the monitor's governing basis (RSI excl. 4.68, BB_pos excl. −0.077). At no point did a live price cross €26.47, so the mechanical full-exit rule never fired.
-- **SAN.PA Bollinger-upper alerts ×2** (16:35, 17:45): price €80.26 → €80.36 (the latter the official Euronext close). Escalation thresholds (RSI ≥ 80 excl. / BB_pos > 1.3 excl. / price > ~€81.6) never confirmed on the monitor's excl.-bar basis; the pipeline's own basis, however, read RSI 85.7 / BB_pos 1.12 — above its sell-discipline line (RSI > 70 AND BB > 1.1).
-- **PDBC movement alert ×1** (14:36): −2.35% pullback on a winning position (+9.65% live), ordinary retracement, no action.
-
-## Position Highlights
-
-| Ticker | Weight | P&L % | Note |
-|--------|--------|-------|------|
-| SPY | 20.30% | +0.73% | Largest position |
-| TLT | 13.57% | +2.20% | Bond ETF stabilizer |
-| REET | 9.61% | +2.48% | Real estate ETF |
-| ^FCHI | 7.70% | +2.64% | CAC 40 index |
-| MC.PA | 4.60% | +2.13% | Out of min-hold cooldown Tue |
-| IJR | 4.20% | +1.78% | Small-cap ETF |
-| AI.PA | 2.74% | +6.25% | Post-trim residual (trimmed 2026-10-29) |
-| PDBC | 2.50% | +8.47% | Best performer |
-
-## Open Positions
-
-| Ticker | Quantity | Avg Price | Current | Market Value | Unrealized P&L | P&L % | Weight |
-|--------|----------|-----------|---------|--------------|----------------|-------|--------|
-| SPY | 2.6523 | €746.64 | €752.12 | €1,994.86 | +14.55 | +0.73% | 20.30% |
-| TLT | 16.3141 | €79.97 | €81.73 | €1,333.35 | +28.71 | +2.20% | 13.57% |
-| REET | 35.3645 | €26.05 | €26.69 | €944.06 | +22.81 | +2.48% | 9.61% |
-| ^FCHI | 0.0940 | €7,838.49 | €8,045.76 | €756.48 | +19.49 | +2.64% | 7.70% |
-| MC.PA | 1.1474 | €385.40 | €393.60 | €451.61 | +9.41 | +2.13% | 4.60% |
-| IJR | 2.9135 | €139.02 | €141.49 | €412.23 | +7.20 | +1.78% | 4.20% |
-| AI.PA | 1.4821 | €170.88 | €181.56 | €269.09 | +15.83 | +6.25% | 2.74% |
-| PDBC | 12.7024 | €17.83 | €19.34 | €245.67 | +19.18 | +8.47% | 2.50% |
-
-## Risk Metrics
-
-- **CVaR 95%:** 0.66%
-- **VaR 95%:** 0.50%
-- **Max Drawdown:** -1.33%
-- **Volatility:** 4.53% (annualized)
-- **Skewness:** 0.22 · **Kurtosis:** -0.74
-
-## H4 Shadow Arm
-
-Record #10 (variant `midband_deployment`): the variant **agreed with both sells** (DBA 100%, SAN.PA 100%) but **diverged on redeployment** — it bought **QQQ 50%** (≈50% of cash), citing a high-conviction mean-reversion setup (RSI 27.2, price at the lower Bollinger band) and the capital-deployment rule once the post-sell cash breaches the 30% upper band. The live arm sold the same two positions but held the cash, its reasoning citing regime analysis that disables mean reversion. This is the first live–shadow divergence on an *action* (the 2026-10-26 record differed only on sizing of the same trade). Shadow-only, no protocol violation logged.
-
-## Weekly Summary (2026-W45 — in progress, Monday)
+## Daily Snapshot
 
 | Metric | Value |
 |--------|-------|
-| Week Start | €9,824.56 |
-| Week End | — |
-| Weekly Return | — |
-| Trading Days | 1 |
-| Trades | 2 (SELL DBA 100% stop, −€27.79; SELL SAN.PA 100% discipline, +€8.94) |
-| Weekly budget | 2/3 used |
-| Benchmark (day) | −1.76% (EW 32-asset) |
+| **Portfolio Value** | **€9,828.27** |
+| Daily Change | +3.71 € (+0.04%) |
+| Cash | €2,733.77 (27.82%) |
+| Positions Value | €7,094.50 |
+| Number of Positions | 9 |
+| Total Return (since inception) | -1.72% |
+| Realized P&L | -18.08 € |
+| Unrealized P&L | +140.89 € |
+| Equal-Weight Benchmark | €9,798.45 (-2.02%) |
+| **Gap vs Benchmark** | **+0.30 pp** |
 
-## Observations
+## Today's Decision
 
-- **DBA override: over, at day 4 — and not via the hard threshold.** The four-day streak (2026-10-27 → 10-30) ended tonight because the pipeline's own governing basis computed **Bollinger position +0.01**, failing the strict BB < 0 condition of the stop-override policy — while the intraday monitor's excl.-today's-bar basis read **−0.077**. The truth value of the override condition flipped on the inclusion of a single bar. The stop executed mechanically at €26.80 (above the €26.47 hard line, which was never touched). The exception did not quietly become the rule — the policy's own arithmetic terminated it — but the episode exposes a **basis-sensitivity flaw** in the override condition: the policy text does not specify whether the live bar is included. That should be formalized.
-- **DBA round trip: −€27.79 booked.** The mean-reversion thesis was never disproved by a capitulation leg — it was arithmeticked out of existence by a rounding-scale disagreement. Realized P&L fell back to **−€18.08** (from +€0.78 Friday).
-- **SAN.PA round trip complete: +€17.42 total** (+€8.48 on the Friday 50% trim, +€8.94 on tonight's final exit @ €80.36). Textbook execution of the breakout-discipline doctrine: 50% trim on the first complete breakout, full exit on the confirmed reversal (RSI 85.7, BB_pos 1.12).
-- **Cash-band breach: post-trade cash 34.78% > 30% upper band.** The two sells added ~€547 of cash. The LLM's published reasoning cites the *pre-trade* cash figure (~29.2%) and never addresses the post-trade band breach — the Rule-5 deployment mandate for tomorrow's session. One weekly slot remains (2/3); if Rule-5 deployments consume budget as observed 2026-10-20, the mandate is still legally executable. The omission should be recorded, not silently accepted.
-- **Gap vs equal-weight benchmark: +0.01 pp** (−1.75% vs −1.76%) — the strategy is fractionally ahead of the benchmark for the first time since the reset.
-- Unrealized P&L stands at **+€137.17** across 8 positions, all green. Best performer PDBC +8.47%.
+**Trades executed:** BUY TTE.PA (20% of cash) @ €82.71 — executed
 
-## Research Session Notes (2026-11-02, post-close)
+Cash entered the session at 34.78% — above the 30% upper band of the NORMAL-regime cash target (15–30%) — activating the Rule-5 deployment mandate flagged by this morning's intraday monitor. With exactly one weekly trade slot remaining, the pipeline deployed 20% of available cash into **TTE.PA (TotalEnergies)**: 8.26 shares @ €82.71 for €683.44. Post-trade cash stands at 27.82%, back inside the band.
 
-### Stop-override basis audit — condition flip confirmed quantitatively
+### LLM Reasoning (excerpt)
 
-`results/analysis/stop_override_basis_20261102.txt` recomputes both measurement
-bases with the repo's own indicator functions (`src/data/indicators.py`):
+> Cash is currently at ~34.7%, which exceeds the 30% upper bound for the NORMAL volatility regime, triggering the mandate to deploy capital to avoid cash drag. With 1 trade remaining this week, I am deploying 20% of available cash into TTE.PA. TTE.PA provides excellent portfolio diversification with negative correlations to our US and French equity holdings (SPY: -0.49, MC.PA: -0.45) and low correlation to ^FCHI (0.17), while adding Energy sector exposure. Its technicals are healthy (RSI 59.7, BB 0.65), showing stable momentum without being overbought. This deployment will bring cash down to ~27.8%, perfectly aligning with the 15-30% target range. All existing winning positions are held because none satisfy the strict sell criteria (RSI > 70 AND BB > 1.1 for confirmed technical reversal); adhering to the 'let winners run' discipline prevents loss-aversion-driven premature profit-taking.
 
-| Basis | RSI(14) | BB_pos | cond (RSI<30 AND BB<0) |
-|-------|---------|--------|------------------------|
-| incl. today's bar (pipeline) | 4.469 | **+0.010** | **FAILS** |
-| excl. today's bar (monitor) | 4.678 | **−0.039** | **HOLDS** |
+The reasoning correctly identifies and discharges the Rule-5 mandate — a notable improvement over the 2026-10-22 session where a cash-band breach went unmentioned. The diversification argument is quantified (correlations: SPY −0.49, MC.PA −0.45, ^FCHI +0.17) and technicals are healthy without being stretched (RSI 59.7, BB position 0.65). All eight existing positions held: none meet the strict confirmed-reversal sell criteria (RSI > 70 AND BB > 1.1), consistent with the let-winners-run discipline.
 
-The truth value of the override condition flips on the inclusion of one bar.
-Live-quoted values verified against recomputation: DBA RSI 4.5 / BB 0.01 ✓,
-SAN.PA RSI 85.7 / BB 1.12 ✓ — the context pipeline is healthy; the failure is
-a spec ambiguity in the policy text, not a data bug. Proposed clause ("computed
-on daily closes excluding the current bar, consistent with the intraday
-monitor") is **locked while H4 runs in shadow mode** and will route via a new
-variant or post-experiment prompt revision.
+**Weekly trade budget: 3/3 consumed** (Mon: SELL DBA stop-out, SELL SAN.PA; Tue: BUY TTE.PA Rule-5 deployment). Note that in the current implementation Rule-5 deployments draw from the same discretionary budget — the cap is now binding until the Monday 00:00 ISO-week rollover. Any cash-band re-breach later this week has no legal buy path; only stop-losses remain executable.
 
-### Analysis suite (6 artefacts, refreshed post-daily-run)
+## Intraday Monitor (cross-reference)
 
-- Total return −1.75%; alpha vs B&H SPY −13.29 pp (SPY +11.54% since 2026-02-17)
-- 5D win rate 55.6% (banner back above the 55% bar — window noise per the
-  streak-indicator rule, n=10 in window; no narrative drift)
-- Cash drag: 64 drag days vs 19 cap-binding lifetime; today 34.8% above band
-- Cash–alpha daily correlation r = +0.010 → level-effect rule re-confirmed
-  (monthly deep re-run due ~Nov 6)
-- Error rate: zero since 2026-07
+One alert session at 12:16 UTC: MC.PA `POSITION_MOVEMENT` (+3.05% vs a stale reference; true live move ≈ +1.32% vs the prior close). Signal was **incomplete** on the governing excl.-today basis (RSI 59.1 < 70, Bollinger margin +0.49% < 1%) — the monitor correctly held and preserved the last budget slot for the evening pipeline. MC.PA closed at €401.55 (+4.19% unrealized, +€18.53): the price leg of the escalation threshold (~€400.5) was crossed, but RSI/BB confirmation never materialized, so no action was warranted by either arm. No monitor trades today — the evening `executed_trades` list is complete.
 
-### H4 shadow progress
+## H4 Shadow Arm (record #11)
 
-Record #10 logged (first live–shadow action divergence: variant redeployed into
-QQQ 50% under Rule-5, live arm held). **4 shadow buys** accumulated toward the
-pre-registered bar (n ≥ 8) — halfway, no early judgment.
+- **Live arm:** BUY TTE.PA, 20% of cash (~€683).
+- **Variant (mid-band deployment):** BUY GLD 45% of cash (~€1,538).
+- Both arms acknowledge the Rule-5 mandate as binding — no live-silent pairing today (contrast 2026-11-02, where the variant deployed post-sell cash and the live arm stayed silent).
+- **First ticker divergence on record:** TTE.PA (Energy, momentum-style entry, RSI 59.7) vs GLD (gold, mean-reversion-flavored entry — variant cites RSI 35.7, BB 0.07 near the lower band). The variant's "partial alignment" phrasing appears designed to admit a contrarian entry under the NORMAL regime where plain mean reversion is disabled. Sizing gap ≈ 2.25× on the same mandate.
 
-*Commits: `9257d87` (feat/research-2026-11-02) → dev → main `14132d4`.*
+## Risk Metrics (pre-trade basis)
 
----
+| Metric | Value |
+|--------|-------|
+| VaR 95% | 0.45% |
+| CVaR 95% | 0.48% |
+| Max Drawdown | -1.07% |
+| Skewness | +0.386 |
+| Kurtosis | -0.841 |
+| Annualized Volatility | 4.02% |
+| Sharpe Ratio | 0.16 |
+| Sortino Ratio | 0.40 |
+| Calmar Ratio | 2.42 |
+| Annualized Return | 2.60% |
 
-*Almost surely, patience converges.* 🦀
+Risk profile remains tame: 1-day 95% VaR under half a percent, drawdown −1.07% from peak, positive skew. The TTE.PA addition is diversification-accretive on the LLM's correlation analysis; realized tail metrics tomorrow will confirm or refute that claim.
+
+## Open Positions (by market value)
+
+| Ticker | Quantity | Avg Price | Current | Value | Weight | Unrealized P&L |
+|--------|----------|-----------|---------|-------|--------|----------------|
+| SPY | 2.65 | €746.64 | €754.40 | €2,000.91 | 20.36% | +20.59 € (+1.04%) |
+| TLT | 16.31 | €79.97 | €81.10 | €1,322.99 | 13.46% | +18.35 € (+1.41%) |
+| REET | 35.36 | €26.05 | €26.71 | €944.59 | 9.61% | +23.34 € (+2.53%) |
+| ^FCHI | 0.09 | €7,838.49 | €8,030.07 | €755.01 | 7.68% | +18.01 € (+2.44%) |
+| TTE.PA | 8.26 | €82.71 | €82.71 | €683.44 | 6.95% | +0.00 € (+0.00%) |
+| MC.PA | 1.15 | €385.40 | €401.55 | €460.73 | 4.69% | +18.53 € (+4.19%) |
+| IJR | 2.91 | €139.02 | €140.95 | €410.65 | 4.18% | +5.62 € (+1.39%) |
+| AI.PA | 1.48 | €170.88 | €182.52 | €270.51 | 2.75% | +17.25 € (+6.81%) |
+| PDBC | 12.70 | €17.83 | €19.34 | €245.67 | 2.50% | +19.18 € (+8.47%) |
+
+## Week 2026-W45 (in progress)
+
+| Metric | Value |
+|--------|-------|
+| Week Start Value (Mon 2026-11-02 close) | €9,824.56 |
+| Week End Value | — (in progress) |
+| Weekly Change | — (in progress) |
+| Sessions Completed | 2 / 5 |
+| Trades This Week | 3 (cap 3, NORMAL regime) |
+
+## Watch List for Next Session
+
+- **Weekly cap binding (3/3):** any discretionary idea before Monday's rollover is moot; only stop-losses can execute. If cash drifts back above 30%, the Rule-5-vs-cap conflict re-emerges with no legal resolution — worth an explicit policy note.
+- **MC.PA escalation thresholds** (excl.-today basis): RSI ≥ 70, price ≥ ~€400.5, BB_pos ≥ 1.2. Price leg already crossed at today's close (€401.55); if RSI and BB confirm tomorrow, the signal completes — but the cap now blocks any action until Monday. A documented edge case: a completed signal with no legal trade.
+- **TTE.PA entry follow-through:** position entered at €82.71 with 0.0% cushion (bought at close). First test of the Energy sleeve.
+- **GLD live-shadow gap:** the variant holds no GLD position; divergence remains log-only, but the rationale difference (momentum vs contrarian deployment under the same mandate) is the interesting research question.
+
+*Almost surely, discipline compounds.* 🦀
