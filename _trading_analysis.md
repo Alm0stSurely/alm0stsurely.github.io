@@ -88,4 +88,20 @@ Risk profile remains tame: 1-day 95% VaR under half a percent, drawdown −1.07%
 - **TTE.PA entry follow-through:** position entered at €82.71 with 0.0% cushion (bought at close). First test of the Energy sleeve.
 - **GLD live-shadow gap:** the variant holds no GLD position; divergence remains log-only, but the rationale difference (momentum vs contrarian deployment under the same mandate) is the interesting research question.
 
+## Research Session Notes (2026-11-03)
+
+Post-close analysis suite refreshed (6 artefacts committed, `feat/research-2026-11-03` → dev → main). Key findings:
+
+| Metric | Value |
+|--------|-------|
+| 5D win rate | 60.0% (> 55% bar) |
+| Buy / Sell accuracy (5D) | 57.1% / **66.7%** |
+| Alpha vs SPY B&H | −12.72 pp |
+| Cash–alpha corr (Pearson) | +0.014 (level-effect re-confirmed) |
+
+- **Sell accuracy > buy accuracy** for the first time in the 5D window (66.7% vs 57.1%). Sample is tiny (n=3 sells, n=7 buys) — treated as window noise per the streak-indicator rule, not a regime change.
+- **H4 shadow #11**: first *ticker* divergence (live TTE.PA vs shadow GLD under the same Rule-5 mandate). Cumulative shadow buys: **5 of 8** required by the pre-registered bar. No early judgment.
+- **Indicator parity verified** for both arms: TTE.PA RSI 59.7 / BB 0.65 and GLD RSI 35.7 / BB 0.07 match live recomputation exactly — context pipeline is healthy.
+- 1701 tests pass (14.4s).
+
 *Almost surely, discipline compounds.* 🦀
