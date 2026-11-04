@@ -1,107 +1,55 @@
-# Trading Analysis — 2026-11-03
+# Daily Trading Analysis — 2026-11-04
 
-## Daily Snapshot
+**Session:** Post-US close (21:00 UTC)
+**Strategy value:** €9,928.81 (**+€100.54, +1.02%** day over day)
+**Total return since inception:** -0.71%
+**Equal-weight benchmark (32 assets):** €9,943.58 (-0.56%) — gap: **-0.15 pp**
+**Cash:** €2,733.77 (27.53%) — inside the 15–30% NORMAL-regime band, no Rule-5 mandate
 
-| Metric | Value |
-|--------|-------|
-| **Portfolio Value** | **€9,828.27** |
-| Daily Change | +3.71 € (+0.04%) |
-| Cash | €2,733.77 (27.82%) |
-| Positions Value | €7,094.50 |
-| Number of Positions | 9 |
-| Total Return (since inception) | -1.72% |
-| Realized P&L | -18.08 € |
-| Unrealized P&L | +140.89 € |
-| Equal-Weight Benchmark | €9,798.45 (-2.02%) |
-| **Gap vs Benchmark** | **+0.30 pp** |
+## Market context
 
-## Today's Decision
+A strong day for the book: all nine positions closed green or near-flat, with the risk-on sleeve leading. SPY +2.69% unrealized (€766.74 close), MC.PA +8.46% (€418.00), AI.PA +10.17% (€188.26 — a fresh all-time-high zone for the position), REET +5.33% ($27.44). The only laggard remains TTE.PA at -1.25% (€81.68), comfortably above its -5% stop. Portfolio volatility computed at 5.27%, max drawdown -1.54%, Sharpe 2.46, Sortino 5.34. Tail risk remains tame (CVaR 95% 0.58%).
 
-**Trades executed:** BUY TTE.PA (20% of cash) @ €82.71 — executed
+## LLM decision — HOLD ×9 (0 trades executed)
 
-Cash entered the session at 34.78% — above the 30% upper band of the NORMAL-regime cash target (15–30%) — activating the Rule-5 deployment mandate flagged by this morning's intraday monitor. With exactly one weekly trade slot remaining, the pipeline deployed 20% of available cash into **TTE.PA (TotalEnergies)**: 8.26 shares @ €82.71 for €683.44. Post-trade cash stands at 27.82%, back inside the band.
+> The weekly trade cap of 3/3 has been reached, strictly prohibiting any new buys or regular sells. Additionally, none of the current positions have breached the -5% single-position drawdown threshold that would necessitate a stop-loss override (the worst performer is TTE.PA at -1.25%). Cash currently sits at ~27.5%, which is perfectly within the 15-30% target range for the NORMAL volatility regime, meaning there is no cash drag issue to address. Therefore, the only permissible and prudent action is to hold all existing positions and wait for the weekly trade counter to reset.
 
-### LLM Reasoning (excerpt)
+The reasoning is textbook cap-discipline: with the NORMAL-regime weekly budget of 3 consumed (SELL DBA + SELL SAN.PA Monday, BUY TTE.PA Tuesday), and no hard stop breached, the correct action set collapses to a single point — hold everything.
 
-> Cash is currently at ~34.7%, which exceeds the 30% upper bound for the NORMAL volatility regime, triggering the mandate to deploy capital to avoid cash drag. With 1 trade remaining this week, I am deploying 20% of available cash into TTE.PA. TTE.PA provides excellent portfolio diversification with negative correlations to our US and French equity holdings (SPY: -0.49, MC.PA: -0.45) and low correlation to ^FCHI (0.17), while adding Energy sector exposure. Its technicals are healthy (RSI 59.7, BB 0.65), showing stable momentum without being overbought. This deployment will bring cash down to ~27.8%, perfectly aligning with the 15-30% target range. All existing winning positions are held because none satisfy the strict sell criteria (RSI > 70 AND BB > 1.1 for confirmed technical reversal); adhering to the 'let winners run' discipline prevents loss-aversion-driven premature profit-taking.
+## Intraday context (12 alerts, 0 trades)
 
-The reasoning correctly identifies and discharges the Rule-5 mandate — a notable improvement over the 2026-10-22 session where a cash-band breach went unmentioned. The diversification argument is quantified (correlations: SPY −0.49, MC.PA −0.45, ^FCHI +0.17) and technicals are healthy without being stretched (RSI 59.7, BB position 0.65). All eight existing positions held: none meet the strict confirmed-reversal sell criteria (RSI > 70 AND BB > 1.1), consistent with the let-winners-run discipline.
+The intraday monitor fired three runs (14:35, 16:35, 17:45 UTC) with a combined 12 MEDIUM alerts, including **two complete Bollinger breakout signals** that could not be acted upon under the exhausted cap:
 
-**Weekly trade budget: 3/3 consumed** (Mon: SELL DBA stop-out, SELL SAN.PA; Tue: BUY TTE.PA Rule-5 deployment). Note that in the current implementation Rule-5 deployments draw from the same discretionary budget — the cap is now binding until the Monday 00:00 ISO-week rollover. Any cash-band re-breach later this week has no legal buy path; only stop-losses remain executable.
+- **AI.PA** — complete at all three runs (RSI 86.3, margin up to +3.22% above the upper band ex-bar, BB_pos 1.34, live P&L +10.17%). The OR.PA 2026-10-15 precedent suggests a 50% trim here; queued for Monday's cap rollover.
+- **REET** — complete at the 17:45 run (RSI 70.4, margin +2.11%, BB_pos 1.38, P&L +4.84% live US).
+- **MC.PA** — price escalation (+4.63% above the band ex-bar) but RSI stuck at 60.9 < 70: incomplete signal, watch for a late RSI jump in the grind.
+- **PDBC** — lower-band breakdown (RSI 36.6, BB_pos -0.70) but far from its $16.94 stop; not a stop-override candidate (predicate requires RSI ≤ 30 AND BB_pos ≤ 0).
 
-## Intraday Monitor (cross-reference)
+None of the alerts were stop-losses, so no override trades executed — exactly the designed behavior under cap exhaustion. This is now the fourth consecutive capped session (evening 11-03 plus three intraday runs today), and the second distinct complete signal aging under the cap. Formalizing the disposition of complete-signals-under-exhausted-cap (queue? expiry? Monday report?) is a policy debt now 4 alert-runs old.
 
-One alert session at 12:16 UTC: MC.PA `POSITION_MOVEMENT` (+3.05% vs a stale reference; true live move ≈ +1.32% vs the prior close). Signal was **incomplete** on the governing excl.-today basis (RSI 59.1 < 70, Bollinger margin +0.49% < 1%) — the monitor correctly held and preserved the last budget slot for the evening pipeline. MC.PA closed at €401.55 (+4.19% unrealized, +€18.53): the price leg of the escalation threshold (~€400.5) was crossed, but RSI/BB confirmation never materialized, so no action was warranted by either arm. No monitor trades today — the evening `executed_trades` list is complete.
+## Open positions (9)
 
-## H4 Shadow Arm (record #11)
+| Ticker | Weight | Unreal. P&L | Notes |
+|---|---|---|---|
+| SPY | 20.48% | +2.69% | Core risk-on anchor |
+| TLT | 13.43% | +2.25% | Duration ballast |
+| REET | 9.77% | +5.33% | Complete breakout signal — queued for Monday |
+| ^FCHI | 7.76% | +4.55% | Index position, tiny size |
+| MC.PA | 4.83% | +8.46% | RSI < 70 — signal incomplete |
+| IJR | 4.19% | +2.81% | Complete ex-bar signature intraday |
+| TTE.PA | 6.80% | -1.25% | Weakest link, far from stop |
+| AI.PA | 2.81% | +10.17% | Complete signal ×3 runs — Monday trim candidate |
+| PDBC | 2.38% | +4.46% | Lower-band dip, hold |
 
-- **Live arm:** BUY TTE.PA, 20% of cash (~€683).
-- **Variant (mid-band deployment):** BUY GLD 45% of cash (~€1,538).
-- Both arms acknowledge the Rule-5 mandate as binding — no live-silent pairing today (contrast 2026-11-02, where the variant deployed post-sell cash and the live arm stayed silent).
-- **First ticker divergence on record:** TTE.PA (Energy, momentum-style entry, RSI 59.7) vs GLD (gold, mean-reversion-flavored entry — variant cites RSI 35.7, BB 0.07 near the lower band). The variant's "partial alignment" phrasing appears designed to admit a contrarian entry under the NORMAL regime where plain mean reversion is disabled. Sizing gap ≈ 2.25× on the same mandate.
+## Risk management notes
 
-## Risk Metrics (pre-trade basis)
+- Weekly cap: **3/3 consumed**, NORMAL regime. Rollover Monday 00:00. No discretionary trades possible until then.
+- Cash 27.53% inside band → no Rule-5 deployment tension this week.
+- No position within 4 pp of its -5% stop; no stop-override predicates met anywhere.
+- Shadow H4 arm (mid-band deployment variant) logged a matching all-hold decision — arms agree.
 
-| Metric | Value |
-|--------|-------|
-| VaR 95% | 0.45% |
-| CVaR 95% | 0.48% |
-| Max Drawdown | -1.07% |
-| Skewness | +0.386 |
-| Kurtosis | -0.841 |
-| Annualized Volatility | 4.02% |
-| Sharpe Ratio | 0.16 |
-| Sortino Ratio | 0.40 |
-| Calmar Ratio | 2.42 |
-| Annualized Return | 2.60% |
+## Macro vision
 
-Risk profile remains tame: 1-day 95% VaR under half a percent, drawdown −1.07% from peak, positive skew. The TTE.PA addition is diversification-accretive on the LLM's correlation analysis; realized tail metrics tomorrow will confirm or refute that claim.
+The book keeps compounding quietly: +1.02% on the day while the equal-weight benchmark returned roughly +1.06% (benchmark moved from ~€9,839 to €9,943.58), keeping the gap at -0.15 pp. The concentrated quality/momentum sleeve (MC.PA, AI.PA, REET, SPY) is doing the heavy lifting; energy (TTE.PA) lags but within tolerance. Into the weekend the posture is deliberately passive — the cap enforces patience, and the signals worth acting on have been documented and queued rather than chased. Monday's reset brings the first real decision point of the week: whether AI.PA's breakout survives the weekend and justifies the prescribed partial trim, and whether REET's live-US signal confirms at Monday's close.
 
-## Open Positions (by market value)
-
-| Ticker | Quantity | Avg Price | Current | Value | Weight | Unrealized P&L |
-|--------|----------|-----------|---------|-------|--------|----------------|
-| SPY | 2.65 | €746.64 | €754.40 | €2,000.91 | 20.36% | +20.59 € (+1.04%) |
-| TLT | 16.31 | €79.97 | €81.10 | €1,322.99 | 13.46% | +18.35 € (+1.41%) |
-| REET | 35.36 | €26.05 | €26.71 | €944.59 | 9.61% | +23.34 € (+2.53%) |
-| ^FCHI | 0.09 | €7,838.49 | €8,030.07 | €755.01 | 7.68% | +18.01 € (+2.44%) |
-| TTE.PA | 8.26 | €82.71 | €82.71 | €683.44 | 6.95% | +0.00 € (+0.00%) |
-| MC.PA | 1.15 | €385.40 | €401.55 | €460.73 | 4.69% | +18.53 € (+4.19%) |
-| IJR | 2.91 | €139.02 | €140.95 | €410.65 | 4.18% | +5.62 € (+1.39%) |
-| AI.PA | 1.48 | €170.88 | €182.52 | €270.51 | 2.75% | +17.25 € (+6.81%) |
-| PDBC | 12.70 | €17.83 | €19.34 | €245.67 | 2.50% | +19.18 € (+8.47%) |
-
-## Week 2026-W45 (in progress)
-
-| Metric | Value |
-|--------|-------|
-| Week Start Value (Mon 2026-11-02 close) | €9,824.56 |
-| Week End Value | — (in progress) |
-| Weekly Change | — (in progress) |
-| Sessions Completed | 2 / 5 |
-| Trades This Week | 3 (cap 3, NORMAL regime) |
-
-## Watch List for Next Session
-
-- **Weekly cap binding (3/3):** any discretionary idea before Monday's rollover is moot; only stop-losses can execute. If cash drifts back above 30%, the Rule-5-vs-cap conflict re-emerges with no legal resolution — worth an explicit policy note.
-- **MC.PA escalation thresholds** (excl.-today basis): RSI ≥ 70, price ≥ ~€400.5, BB_pos ≥ 1.2. Price leg already crossed at today's close (€401.55); if RSI and BB confirm tomorrow, the signal completes — but the cap now blocks any action until Monday. A documented edge case: a completed signal with no legal trade.
-- **TTE.PA entry follow-through:** position entered at €82.71 with 0.0% cushion (bought at close). First test of the Energy sleeve.
-- **GLD live-shadow gap:** the variant holds no GLD position; divergence remains log-only, but the rationale difference (momentum vs contrarian deployment under the same mandate) is the interesting research question.
-
-## Research Session Notes (2026-11-03)
-
-Post-close analysis suite refreshed (6 artefacts committed, `feat/research-2026-11-03` → dev → main). Key findings:
-
-| Metric | Value |
-|--------|-------|
-| 5D win rate | 60.0% (> 55% bar) |
-| Buy / Sell accuracy (5D) | 57.1% / **66.7%** |
-| Alpha vs SPY B&H | −12.72 pp |
-| Cash–alpha corr (Pearson) | +0.014 (level-effect re-confirmed) |
-
-- **Sell accuracy > buy accuracy** for the first time in the 5D window (66.7% vs 57.1%). Sample is tiny (n=3 sells, n=7 buys) — treated as window noise per the streak-indicator rule, not a regime change.
-- **H4 shadow #11**: first *ticker* divergence (live TTE.PA vs shadow GLD under the same Rule-5 mandate). Cumulative shadow buys: **5 of 8** required by the pre-registered bar. No early judgment.
-- **Indicator parity verified** for both arms: TTE.PA RSI 59.7 / BB 0.65 and GLD RSI 35.7 / BB 0.07 match live recomputation exactly — context pipeline is healthy.
-- 1701 tests pass (14.4s).
-
-*Almost surely, discipline compounds.* 🦀
+*Almost surely, patience pays.* 🦀
