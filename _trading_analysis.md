@@ -1,83 +1,80 @@
-# Trading Analysis — 2026-11-09
+# Trading Analysis — 2026-11-10
 
 ## Daily Snapshot
 
 | Metric | Value |
-|--------|-------|
-| Portfolio Value | €9,846.87 |
-| Daily Change | +€72.32 (+0.74%) |
-| Total Return (since inception) | -1.53% |
-| Cash | €2,029.70 (20.61%) |
-| Positions | 9 |
-| Realized P&L | -€52.45 |
-| Unrealized P&L | +€193.85 |
-
-Benchmark (equal-weight, 32 assets): €9,998.07 (-0.02%) — strategy trails by **-1.51 pp**.
-
-## Today's Decision
-
-**BUY GLD — 3.5650 shares @ €379.56 = €1,353.14** (40% of available cash)
-
-Rule-5 cash-band deployment: cash stood at 34.3% after Friday's TTE.PA exit, above the 30% upper bound of the NORMAL regime band (15–30%). The deployment brought cash back to 20.61%.
-
-### LLM Reasoning (excerpt)
-
-> Current cash is 34.3%, exceeding the 30% upper bound for the NORMAL volatility regime, triggering the capital deployment rule to avoid cash drag. GLD is the optimal choice: it exhibits a stable uptrend (price > SMA20/50), neutral RSI (51.3), and a healthy Bollinger Position (0.72). Crucially, it offers low correlation with our existing equity-heavy book, enhancing diversification and protecting against tail risks (CVaR mindset). No existing positions meet the strict sell criteria; although AI.PA, ^FCHI, and REET show RSI > 70, their Bollinger Positions remain below 1.1, lacking a confirmed technical reversal. All positions are profitable, so no stop-losses are triggered.
-
-All 8 existing positions: **HOLD**.
+|---|---|
+| Portfolio Value | €9,788.79 |
+| Daily Change | -58.08 EUR (-0.59%) |
+| Cash | €2,421.14 (24.73%) |
+| Total Return (since inception) | -2.11% |
+| Benchmark (equal-weight) | €9,983.93 (-0.16%) |
+| Benchmark Daily Change | -14.14 EUR (-0.14%) |
+| Gap vs Benchmark | -1.95 pp |
+| Realized P&L (cumul.) | €-29.51 |
+| Unrealized P&L | €+112.84 |
+| Open Positions | 9 |
+| Trades Today (evening run) | 0 — full HOLD |
 
 ## Intraday Activity
 
-Three monitor runs (08:06 / 14:36 / 16:36 UTC), **zero trades**:
+3 monitor runs today; **1 discretionary trade executed**:
 
-- **08:06** — SPY Bollinger lower breakout (close-Fri basis, -1.17% below band). By 14:36 SPY had drifted back above the band; the oversold signal faded before the US open.
-- **16:36** — PDBC Bollinger lower breakout, live bar: RSI ~22, 1.07% below the lower band — but the position sat at **+3.9% unrealized**, far from its stop. Per the actionability matrix, a lower-band breakout only sanctions an exit on positions ≤ -2% P&L. Held; flagged as a mean-reversion candidate for the evening pipeline, which ultimately held it.
-- Weekly trade cap reset Monday: the GLD deployment consumed **1/3** of this week's budget (deployments count toward the cap in the current implementation).
+- **12:18 UTC — TRIM 50% ^FCHI** @ €8,326.48: sold 0.047011 parts for €391.44, **+€22.94 realized**.
+  Signal: Bollinger upper-band breakout, complete on the honest excl.-today basis (RSI 72.91 ≥ 70, margin +1.10 % ≥ 1 %, BB_pos 1.166 ≥ 1.1, P&L +6.2 % ≥ +2 %) — the exact mapping of the OR.PA 2026-10-15 precedent. Remaining 0.047011 parts (~4.0 % of portfolio) kept under escalation surveillance (RSI ≥ 75 / BB_pos > 1.2 / price > ≈ €8,493).
+- 08:06 UTC: PDBC lower-band alert on a frozen pre-market US price (previous close) → HOLD; Euronext feed briefly stale, guard exclusions correct.
+- 14:36 UTC: GLD drawdown alert (−2.31 % vs entry) → HOLD (stop far, no mean-reversion signature); PDBC re-alert on live prices, winner-on-oversold doctrine → HOLD.
 
-## Open Positions (by market value)
+Weekly trade budget after today: **2/3 used** (GLD Rule-5 deployment 2026-11-09 + ^FCHI trim), 1 slot remaining under the NORMAL regime cap (`max_trades_normal_vol: 3`).
 
-| Ticker | Qty | Avg Price | Current | Market Value | Weight | Unrealized P&L |
-|--------|-----|-----------|---------|--------------|--------|----------------|
-| SPY | 2.652 | €746.64 | €752.64 | €1,996.24 | 20.27% | +€15.93 (+0.80%) |
-| GLD | 3.565 | €379.56 | €379.56 | €1,353.14 | 13.74% | €0.00 (0.00%) |
-| TLT | 16.314 | €79.97 | €81.96 | €1,337.19 | 13.58% | +€32.55 (+2.49%) |
-| REET | 35.365 | €26.05 | €27.35 | €967.40 | 9.82% | +€46.15 (+5.01%) |
-| ^FCHI | 0.094 | €7,838.49 | €8,236.03 | €774.37 | 7.86% | +€37.38 (+5.07%) |
-| MC.PA | 1.147 | €385.40 | €401.50 | €460.67 | 4.68% | +€18.47 (+4.18%) |
-| IJR | 2.913 | €139.02 | €141.72 | €412.90 | 4.19% | +€7.87 (+1.94%) |
-| AI.PA | 1.482 | €170.88 | €189.40 | €280.71 | 2.85% | +€27.45 (+10.84%) |
-| PDBC | 12.702 | €17.83 | €18.47 | €234.55 | 2.38% | +€8.07 (+3.56%) |
+## LLM Reasoning (evening run)
 
-Every position is profitable. Book is equity-heavy (SPY + IJR + MC.PA + AI.PA + ^FCHI ≈ 40%); GLD adds a non-correlated sleeve.
+> Current cash is at 24.7%, which sits comfortably within the 15-30% target range for the NORMAL volatility regime, meaning there is no cash drag and no need to force capital deployment. None of the current positions have breached the -5% single-position drawdown threshold. While AI.PA, REET, and ^FCHI show RSI > 70, their Bollinger Positions are below 1.1, so there is no confirmed technical reversal to justify selling; we apply the sell discipline to let winners run. We preserve our final weekly trade for a higher-conviction setup or an unexpected risk-management need, defaulting to HOLD across the portfolio.
+
+Shadow arm (mid-band deployment variant, record #16): all HOLD — no divergence from the live arm on ticker, direction, or sizing.
 
 ## Risk Metrics
 
 | Metric | Value |
-|--------|-------|
-| Sharpe Ratio | 1.98 |
-| Sortino Ratio | 2.99 |
-| Calmar Ratio | 12.53 |
-| Annualized Volatility | 6.32% |
-| Max Drawdown | -1.23% |
-| VaR 95% | 0.48% |
-| CVaR 95% | 1.07% |
+|---|---|
+| VaR (95%) | 0.94% |
+| CVaR (95%) | 1.14% |
+| VaR (99%) | 1.21% |
+| CVaR (99%) | 1.30% |
+| Max Drawdown | -1.21% |
+| Annualized Volatility | 8.15% |
+| Skewness | 0.66 |
+| Kurtosis | 1.44 |
+| Sharpe Ratio | 0.99 |
+| Sortino Ratio | 1.86 |
 
-## Shadow Arm (H4 mid-band variant)
+## Open Positions
 
-Variant decision: **BUY FEZ, 20% of cash** — same Rule-5 mandate, different ticker and half the size. Third dimension of live–shadow divergence on record: both arms acknowledged the deployment mandate (no live-silent pairing), but disagreed on instrument (GLD vs FEZ) and sizing (40% vs 20% of cash). Live chose the non-correlated commodity sleeve; the variant chose European large-cap equity despite the existing ^FCHI/MC.PA exposure. The live pick is arguably the better diversification trade.
+| Ticker | Quantity | Avg Price | Current | Market Value | Unrealized P&L | P&L % | Weight |
+|---|---|---|---|---|---|---|---|
+| SPY | 2.6523 | 746.64 | 749.98 | 1,989.19 | +8.87 | +0.45% | 20.32% |
+| TLT | 16.3141 | 79.97 | 80.89 | 1,319.65 | +15.01 | +1.15% | 13.48% |
+| GLD | 3.5650 | 379.56 | 369.42 | 1,316.99 | -36.15 | -2.67% | 13.45% |
+| REET | 35.3645 | 26.05 | 27.27 | 964.57 | +43.32 | +4.70% | 9.85% |
+| MC.PA | 1.1474 | 385.40 | 401.90 | 461.13 | +18.93 | +4.28% | 4.71% |
+| IJR | 2.9135 | 139.02 | 141.21 | 411.40 | +6.37 | +1.57% | 4.20% |
+| ^FCHI | 0.0470 | 7,838.49 | 8,293.51 | 389.89 | +21.39 | +5.80% | 3.98% |
+| AI.PA | 1.4821 | 170.88 | 190.36 | 282.13 | +28.87 | +11.40% | 2.88% |
+| PDBC | 12.7024 | 17.83 | 18.32 | 232.71 | +6.22 | +2.75% | 2.38% |
 
-## Week W46 (in progress)
+## Notes & Surveillance
 
-- Week Start Value (Mon): €9,846.87
-- Sessions: 1
-- Weekly Change: —
-- Trades used: 1/3
+- **GLD day 2:** the Rule-5 deployment from 2026-11-09 is down −2.67 % at the first full close (intraday low read −2.31 % at 14:36 UTC). Stop −5 % (≈ €360.58) remains distant; no mean-reversion signature (RSI mid-band). Worth watching: a fresh position drawing down on day one tests the deployment discipline, but the thesis (diversification ballast) is structural, not tactical.
+- **Winners running hot:** AI.PA +11.40 %, REET +4.70 %, ^FCHI remainder +5.80 %, MC.PA +4.28 % — RSI > 70 on three names but BB position below 1.1, so the sell discipline keeps letting them run. No confirmed technical reversal.
+- **Cash 24.73 %** — mid-band (15–30 %), no Rule-5 deployment mandate, no drag.
 
-## Notes & Next
+## Week-to-Date (W46, through Tuesday)
 
-- **AI.PA +10.84%** — approaching trim territory. RSI > 70 flagged, but no confirmed reversal (BB position < 1.1). Watch for the BB upper-band confirmation; a 50% trim would crystallize gains and feed the cash band.
-- **PDBC** — oversold-extreme signature (RSI ~22, below lower band) on a +3.6% winner. Held today; if the correction deepens toward the -5% stop (€16.94) with the signature intact, the stop-override predicate becomes relevant.
-- **Cash band** — 20.61% is comfortably inside the 15–30% target. No Rule-5 pressure tomorrow; 2/3 of the weekly budget remains.
-- Stale `cooldown.active_entries` now includes GLD correctly, but still lists historical entries; cosmetic only (known issue).
+| Metric | Value |
+|---|---|
+| Week Start Value | €9,846.87 |
+| Current Value | €9,788.79 |
+| Sessions | 2 |
+| Weekly Change | — (report runs Friday) |
 
 *Almost surely, patience pays.* 🦀
