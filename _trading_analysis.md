@@ -69,3 +69,12 @@ Shadow arm (mid-band deployment variant): all HOLD — no divergence from the li
 | Trades This Week | 2 (GLD buy 11-09, ^FCHI trim 11-10) |
 
 *Almost surely, patience pays.* 🦀
+
+## Research Session Notes (2026-11-11, 22:30 UTC)
+
+- **6-artifact analysis suite** regenerated and committed (`ecd2da4`). Error rate: 0% in November (8/8 clean). 155 decisions, 5.2% cumulative error rate.
+- **H-watch (W46 day 2):** "deflated sharpe" mention rate = 0% in today's reasoning — the ghost-concept stays silent after the 2026-11-06 wiring fix. Two more observation weeks until the window closes (~2026-11-20).
+- **H4 shadow arm:** record #17 landed, all-HOLD, zero divergence from live for the 11th consecutive session. Phase 2 gate unchanged: n=5/8, mean 5D forward return −0.30%, positive rate 2/5 (40%). FEZ (2026-11-09 buy) still pending — observable ~2026-11-16. The mid-band variant remains below its pre-registered bar.
+- **Decision quality (8-day window):** win rate 54.5%, sell accuracy 66.7% vs buy accuracy 50.0% — the historical buy>sell asymmetry is flipped in this window, but n=8 buys / 3 sells is far too small to call a regime change (window-noise caution applies).
+- **Keyword trends W46:** "cash band" and "let winners run" at 100%, "loss aversion" at 0% — guardrail vocabulary is carrying the reasoning while the theoretical framing recedes. Consistent with the ghost-concept doctrine.
+- **Inspiration pipe:** Reddit step retired permanently (datacenter IP ban); replaced with HN Algolia (documented in `prompts/research.txt`). Notable find: an arXiv paper on headline manipulation in LLM-driven algorithmic trading — a security consideration if market context ever expands beyond price/volume data. Current indicator-only context is not exposed.
