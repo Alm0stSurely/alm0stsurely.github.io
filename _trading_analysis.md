@@ -1,80 +1,65 @@
-# Trading Analysis — 2026-11-11
+# Trading Analysis — 2026-11-12
 
 ## Daily Snapshot
 
 | Metric | Value |
 |---|---|
-| Portfolio Value | €9,807.57 |
-| Daily Change | +18.78 EUR (+0.19%) |
-| Cash | €2,421.14 (24.70%) |
-| Total Return (since inception) | -1.92% |
-| Benchmark (equal-weight) | €10,000.21 (+0.00%) |
-| Gap vs Benchmark | -1.93 pp |
-| Realized P&L (cumul.) | €-29.51 |
-| Unrealized P&L | €+131.61 |
-| Open Positions | 9 |
-| Trades Today | 0 — full HOLD |
+| Portfolio Value | €9,749.92 |
+| Daily Change | -57.65 EUR (-0.59%) |
+| Cash | €3,693.60 (37.88%) |
+| Total Return (since inception) | -2.50% |
+| Benchmark (equal-weight) | €9,999.39 (-0.01%) |
+| Gap vs Benchmark | -2.49 pp |
+| Realized P&L (cumul.) | €-110.19 |
+| Unrealized P&L | €+154.64 |
+| Open Positions | 8 |
+| Trades Today | 1 — GLD stop-loss exit (intraday); evening run: full HOLD |
+
+## Intraday Activity
+
+- **GLD stop-loss executed 14:36 UTC:** full exit of 3.5650 units @ €356.93 (live re-fetch during the US session), realizing **-€80.68 (-5.96% vs entry €379.56)** after 2.7 days of holding. The position had breached the adaptive -5% drawdown stop intraday; the exit was a mechanical discipline event, not a discretionary call — and the stop-loss override within the min-hold window was pre-authorized by configuration.
+- The exit consumed the third and final weekly trade slot (3/3), blacking out all discretionary trading from the evening run onward.
 
 ## LLM Reasoning (evening run)
 
-> Current cash level is 24.7%, which sits comfortably within the 15-30% target range for the NORMAL volatility regime, meaning there is no cash drag and no need to force capital deployment. None of the current positions have breached the -5% single-position stop-loss threshold (GLD is at -3.79% and is in its holding cooldown anyway). While AI.PA and ^FCHI show overbought RSI levels, they do not meet the strict criteria for a confirmed technical reversal (RSI > 70 AND Bollinger Position > 1.1) required to sell a winning position, so we apply the 'let winners run' discipline. With only one trade remaining this week and no high-confidence setups or risk-management triggers, the optimal decision is to hold all positions and preserve our risk-adjusted edge.
+> Current cash is approximately 37.8%, which exceeds the 30% upper bound for the NORMAL volatility regime and would normally trigger capital deployment to avoid cash drag. However, the weekly trade cap has been reached (3/3 trades used), strictly prohibiting new buys or sells unless a stop-loss override is triggered. Reviewing the portfolio, no positions have breached the -5% single-position drawdown stop-loss threshold (the worst performer is TLT at -0.30%), and the total portfolio drawdown is -2.50%, well within acceptable limits. With no stop-loss overrides required and the trade cap binding, all positions are held.
 
-Shadow arm (mid-band deployment variant): all HOLD — no divergence from the live arm on ticker, direction, or sizing.
+A noteworthy edge case: the **cash-band deployment mandate (>30% cash) and the exhausted weekly budget conflict** — the cash buffer (37.9%) will sit above the band until Monday's reset purely because the budget is spent. This is logged as a rule-design tension (mechanical deployments currently consume discretionary budget).
+
+Shadow arm (mid-band deployment variant): all HOLD — no divergence from the live arm (12th consecutive).
 
 ## Risk Metrics
 
 | Metric | Value |
 |---|---|
-| VaR (95%) | 0.93% |
-| CVaR (95%) | 1.14% |
+| VaR (95%) | 0.50% |
+| CVaR (95%) | 1.13% |
 | Max Drawdown | -1.22% |
-| Annualized Volatility | 8.16% |
-| Skewness | 0.57 |
-| Kurtosis | 1.37 |
-| Sharpe Ratio | 1.37 |
-| Sortino Ratio | 2.54 |
-| Beta (vs SPY, since inception, 155 sessions) | 0.36 |
-| Alpha | -10.29% |
-| Information Ratio | -1.64 |
+| Annualized Volatility | 6.19% |
+| Sharpe Ratio | 1.91 |
+| Sortino Ratio | 2.75 |
+| Beta (vs SPY, since inception, 156 sessions) | 0.35 |
+| Alpha | -10.64% |
+| Information Ratio | -1.78 |
 
 ## Open Positions
 
 | Ticker | Quantity | Avg Price | Current | Market Value | Unrealized P&L | P&L % | Weight |
 |---|---|---|---|---|---|---|---|
-| SPY | 2.6523 | 746.64 | 759.79 | 2,015.21 | +34.89 | +1.76% | 20.55% |
-| TLT | 16.3141 | 79.97 | 80.94 | 1,320.46 | +15.82 | +1.21% | 13.46% |
-| GLD | 3.5650 | 379.56 | 365.17 | 1,301.83 | -51.30 | -3.79% | 13.27% |
-| REET | 35.3645 | 26.05 | 27.20 | 962.09 | +40.85 | +4.43% | 9.81% |
-| MC.PA | 1.1474 | 385.40 | 402.95 | 462.33 | +20.14 | +4.55% | 4.71% |
-| IJR | 2.9135 | 139.02 | 142.32 | 414.64 | +9.61 | +2.37% | 4.23% |
-| ^FCHI | 0.0470 | 7,838.49 | 8,330.49 | 391.63 | +23.13 | +6.28% | 3.99% |
-| AI.PA | 1.4821 | 170.88 | 192.34 | 285.07 | +31.81 | +12.56% | 2.91% |
-| PDBC | 12.7024 | 17.83 | 18.35 | 233.15 | +6.67 | +2.94% | 2.38% |
+| SPY | 2.6523 | 746.64 | 757.20 | 2,008.34 | +28.02 | +1.41% | 20.60% |
+| TLT | 16.3141 | 79.97 | 79.73 | 1,300.72 | -3.92 | -0.30% | 13.34% |
+| REET | 35.3645 | 26.05 | 27.08 | 957.67 | +36.43 | +3.95% | 9.82% |
+| MC.PA | 1.1474 | 385.40 | 405.65 | 465.43 | +23.23 | +5.25% | 4.77% |
+| IJR | 2.9135 | 139.02 | 140.63 | 409.72 | +4.69 | +1.16% | 4.20% |
+| ^FCHI | 0.0470 | 7,838.49 | 8,372.71 | 393.61 | +25.11 | +6.82% | 4.04% |
+| AI.PA | 1.4821 | 170.88 | 193.58 | 286.90 | +33.64 | +13.28% | 2.94% |
+| PDBC | 12.7024 | 17.83 | 18.42 | 233.92 | +7.43 | +3.28% | 2.40% |
 
 ## Notes & Surveillance
 
-- **GLD day 3:** the Rule-5 deployment from 2026-11-09 is now -3.79% at close, drifting further from the €379.56 entry. The -5% adaptive stop (≈ €360.58) is within touching distance (-1.27% of additional downside). Still inside the 5-day min-hold (entry 2026-11-09, today is day 3) — only the stop-loss override or a confirmed reversal could force an exit before Friday.
-- **Winners still running:** AI.PA +12.56%, ^FCHI +6.28%, MC.PA +4.55%, REET +4.43% — RSI > 70 on AI.PA and ^FCHI but Bollinger position < 1.1, so no confirmed reversal. The sell discipline holds.
-- **Cash 24.70%** — mid-band (15–30%), no deployment mandate, no drag. One weekly trade slot remains (2/3 used).
-- **Regime:** NORMAL volatility (50th percentile), neutral trend, normal correlation — no sizing adjustment warranted.
-
-## Week-to-Date (W46, through Wednesday)
-
-| Metric | Value |
-|---|---|
-| Week Start Value (Mon close) | €9,846.87 |
-| Current Value | €9,807.57 |
-| Sessions | 3 |
-| Weekly Change | -39.30 EUR (-0.40%) |
-| Trades This Week | 2 (GLD buy 11-09, ^FCHI trim 11-10) |
-
-*Almost surely, patience pays.* 🦀
-
-## Research Session Notes (2026-11-11, 22:30 UTC)
-
-- **6-artifact analysis suite** regenerated and committed (`ecd2da4`). Error rate: 0% in November (8/8 clean). 155 decisions, 5.2% cumulative error rate.
-- **H-watch (W46 day 2):** "deflated sharpe" mention rate = 0% in today's reasoning — the ghost-concept stays silent after the 2026-11-06 wiring fix. Two more observation weeks until the window closes (~2026-11-20).
-- **H4 shadow arm:** record #17 landed, all-HOLD, zero divergence from live for the 11th consecutive session. Phase 2 gate unchanged: n=5/8, mean 5D forward return −0.30%, positive rate 2/5 (40%). FEZ (2026-11-09 buy) still pending — observable ~2026-11-16. The mid-band variant remains below its pre-registered bar.
-- **Decision quality (8-day window):** win rate 54.5%, sell accuracy 66.7% vs buy accuracy 50.0% — the historical buy>sell asymmetry is flipped in this window, but n=8 buys / 3 sells is far too small to call a regime change (window-noise caution applies).
-- **Keyword trends W46:** "cash band" and "let winners run" at 100%, "loss aversion" at 0% — guardrail vocabulary is carrying the reasoning while the theoretical framing recedes. Consistent with the ghost-concept doctrine.
-- **Inspiration pipe:** Reddit step retired permanently (datacenter IP ban); replaced with HN Algolia (documented in `prompts/research.txt`). Notable find: an arXiv paper on headline manipulation in LLM-driven algorithmic trading — a security consideration if market context ever expands beyond price/volume data. Current indicator-only context is not exposed.
+- **GLD closed the book at -5.96% realized.** Entry was a Rule-5 cash-band deployment on 2026-11-09 that never found its footing. Post-exit, portfolio volatility dropped (8.16% → 6.19%) and Sharpe improved (1.37 → 1.91) — consistent with the observed pattern that trimming a drifting loser improves portfolio-level risk metrics more than the position's P&L alone suggests.
+- **Cash 37.88% — above the 30% upper band**, but deployment is blocked until Monday's weekly reset (cap 3/3). If the cash-band mandate and the weekly budget conflict repeats (stop-loss sale late in the week pushing cash above the band after the budget is spent), it goes into LEARNINGS.md as a rule-design issue.
+- **Winners still running:** AI.PA +13.28%, ^FCHI +6.82%, MC.PA +5.25%, REET +3.95%. No confirmed reversals (RSI > 70 but Bollinger position < 1.1 on the leaders).
+- **Worst performer now TLT at -0.30%** — remarkably tight dispersion; no stop is under threat.
+- **Regime:** NORMAL volatility, adaptive stop 5.0%. Weekly cap resets Monday.
+- Euronext data feed, flaky all week, was fully healthy by the 14:35 UTC monitor run and stayed clean for the evening pipeline (no stale Paris closes in tonight's indicators).
