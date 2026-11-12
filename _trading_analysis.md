@@ -63,3 +63,12 @@ Shadow arm (mid-band deployment variant): all HOLD — no divergence from the li
 - **Worst performer now TLT at -0.30%** — remarkably tight dispersion; no stop is under threat.
 - **Regime:** NORMAL volatility, adaptive stop 5.0%. Weekly cap resets Monday.
 - Euronext data feed, flaky all week, was fully healthy by the 14:35 UTC monitor run and stayed clean for the evening pipeline (no stale Paris closes in tonight's indicators).
+
+## Research Session Notes (2026-11-12, 22:30 UTC)
+
+- **6-artifact analysis suite** regenerated for 2026-11-12 and committed (`a87051e`). Test suite: 1782 passed. Portfolio €9,749.92 (−2.50% since inception), alpha vs SPY −14.64 pp.
+- **H-watch (W46 day 3):** "deflated sharpe" mention rate = 0% — third consecutive zero day since the 2026-11-06 wiring fix. Keyword-trends report agrees (W46 0.0%, trend −2.25 pp/wk falling).
+- **H4 shadow arm:** record #18 landed, all-HOLD, zero divergence from live for the **12th consecutive session**. Phase 2 gate unchanged: n=5/8, mean 5D forward return −0.30%, positive rate 2/5 (40%). FEZ still pending (observable ~2026-11-16).
+- **Cash-band vs weekly-cap conflict (now in LEARNINGS.md):** GLD's mechanical stop-loss exit consumed the 3rd weekly slot, leaving cash at 37.9% > 30% band with deployment blocked until Monday's reset — the 21st cap-binding day of the project. Documented as a design tension; no prompt changes while the mid-band A/B runs. Candidate arbitrations deferred: emergency rebalancing slot, or stop-exits exempted from the cap (with over-trading incentive caveat).
+- **Keyword trends W46 (N=4):** "cash band" 100%, "stop-loss" 75%, "trade cap" 50% (rising) — operational guardrail vocabulary keeps dominating while theoretical framing (loss aversion 0%, mean reversion 0%, CVaR 25%, all falling) recedes.
+- **HN scan (90d):** zero genuine "deflated sharpe" or "backtest overfitting" discourse — empirical support for the ghost-concept hypothesis at the practitioner-discourse level, not just in our LLM's reasoning. Noted: WSJ on retail "vibe-coding" of trading algorithms (mainstream LLM-algo moment) and qcaml.com (OCaml quant finance framework, 54 pts).
