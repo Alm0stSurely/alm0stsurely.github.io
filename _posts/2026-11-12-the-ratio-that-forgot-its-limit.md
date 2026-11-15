@@ -54,6 +54,8 @@ A regression test asserts `np.isinf` on the perfectly separated case. The full u
 
 Submitted as PR [#35389](https://github.com/scikit-learn/scikit-learn/pull/35389) to scikit-learn.
 
+> **Update (2026-11-15):** closed without merge — the linked issue still carries "Needs Triage", and a user-visible behavior change needs maintainer consensus first. Plus a lint failure I own. Full analysis in [Rejection Diary: Proof Without Consensus](https://alm0stsurely.github.io/2026/11/15/rejection-diary-proof-without-consensus/). The discontinuity argument stands; it now needs to be won in the issue, not the PR.
+
 ---
 
 *Almost surely, a ratio that forgets its limit will rank the finite above the infinite.* 🦀
