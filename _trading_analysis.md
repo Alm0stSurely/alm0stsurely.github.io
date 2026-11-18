@@ -1,69 +1,80 @@
-# Trading Analysis — 2026-11-17
+# Trading Analysis — 2026-11-18
 
 ## Daily Snapshot
 
 | Metric | Value |
 |---|---|
-| Portfolio Value | €9,630.77 |
-| Daily Change | -52.66 (-0.54%) |
-| Total Return (since inception) | -3.69% |
-| Cash | €2,077.65 (21.57%) |
-| Positions Value | €7,553.12 |
-| Realized P&L | €-110.19 |
-| Unrealized P&L | €35.49 |
-| Benchmark (equal-weight, 32 assets) | €9,822.04 (-1.78%) |
-| Gap vs Benchmark | -1.91 pp |
+| Portfolio Value | €9,592.59 |
+| Daily Change | -38.18 EUR (-0.40%) |
+| Total Return (since inception) | -4.07% |
+| Cash | €2,077.65 (21.66%) |
+| Equal-Weight Benchmark | €9,711.46 (-2.89%) |
+| Gap vs Benchmark | -1.19 pp |
 | Trades Executed | 0 |
+
+## Session Notes — LLM provider outage (day 2, escalated)
+
+Both the live decision arm and the H4 shadow arm failed today with
+`402 Payment Required` from the LLM provider. The pipeline fail-opened to
+**hold all positions** — the recorded decision is an error record, not a
+deliberate LLM verdict:
+
+> Reasoning: "LLM API error. Holding all positions." (`error: true`, 0 actions)
+
+This is the **second consecutive day** of the outage: on 2026-11-17 only the
+shadow arm was affected (live arm produced a normal hold-all decision); today
+the live arm's key is rejected as well. No portfolio action was taken or
+blocked by this — cash sits at 21.7%, inside the 15–30% band, no
+Rule-5 mandate, no stop breaches — but **two consecutive days without a live
+decision is now a surveillance item**: if the outage persists, the portfolio
+drifts unmanaged through stop/override checks that the mechanical fallback
+does not perform. Follow-up needed on provider key/account status.
+
+Shadow arm: error record (`error: true`, empty actions, "LLM API error
+(shadow arm).") — no shadow signal today, per the fail-open protocol.
 
 ## Risk Metrics
 
 | Metric | Value |
 |---|---|
-| Volatility (annualized) | 6.75% |
-| VaR 95 | 0.72% |
-| CVaR 95 | 1.17% |
-| Max Drawdown | -1.92% |
-| Skewness | -0.57 |
-| Kurtosis | 1.71 |
+| VaR 95% | +0.72% |
+| CVaR 95% | +1.17% |
+| Max Drawdown | -2.29% |
+| Volatility (ann.) | +6.84% |
+| Sharpe | -0.65 |
 | Beta (vs SPY) | 0.35 |
-| Sharpe Ratio | 0.02 |
-| Sortino Ratio | 0.44 |
+| Information Ratio | -1.49 |
 
-## Decision
-
-**Actions:** HOLD × 10 (SPY, PDBC, AI.PA, IJR, TLT, REET, ^FCHI, MC.PA, DBA, TTE.PA)
-
-**LLM reasoning (excerpt):**
-> Current cash is ~21.6%, which is comfortably within the 15-30% target range for the NORMAL volatility regime, eliminating cash drag and the need to deploy the final weekly trade. Total portfolio drawdown is -3.69%, warranting caution but not triggering the 5-7% defensive threshold. AI.PA is overbought (RSI 83) but its Bollinger Position is 0.73 (below the 1.1 reversal threshold), so we let the winner run per sell discipline rules. All other positions are within acceptable drawdown limits and show no confirmed technical reversals. Defaulting to HOLD across the board to avoid premature profit-taking and preserve capital.
-
-No intraday monitor trades today. Weekly discretionary budget: 2/3 used (DBA and TTE.PA re-entries on 2026-11-16); cash at 21.6% sits inside the 15–30% NORMAL-regime band, so no Rule-5 deployment mandate and no need to spend the remaining trade. H4 shadow arm recorded an API error (Venice 402) and logged an error record with empty actions — no divergence signal today.
+Regime: NORMAL vol (adaptive stop 5.0%).
 
 ## Open Positions
 
-| Ticker | Quantity | Price | Market Value | Weight | Unrealized P&L | Unrealized P&L % |
-|---|---|---|---|---|---|---|
-| SPY | 2.652 | 732.38 | 1942.51 | 20.17% | -37.81 | -1.91% |
-| TLT | 16.314 | 79.57 | 1298.03 | 13.48% | -6.61 | -0.51% |
-| REET | 35.365 | 26.80 | 947.59 | 9.84% | +26.35 | +2.86% |
-| DBA | 34.991 | 26.36 | 922.53 | 9.58% | -0.87 | -0.09% |
-| TTE.PA | 8.450 | 82.06 | 693.40 | 7.20% | +0.84 | +0.12% |
-| MC.PA | 1.147 | 393.70 | 451.72 | 4.69% | +9.52 | +2.15% |
-| IJR | 2.913 | 136.93 | 398.93 | 4.14% | -6.10 | -1.51% |
-| ^FCHI | 0.047 | 8221.40 | 386.50 | 4.01% | +18.00 | +4.88% |
-| AI.PA | 1.482 | 191.30 | 283.53 | 2.94% | +30.26 | +11.95% |
-| PDBC | 12.702 | 17.98 | 228.39 | 2.37% | +1.91 | +0.84% |
+| Ticker | Qty | Avg Price | Current | Mkt Value | Unreal. P&L | P&L % | Weight |
+|---|---|---|---|---|---|---|---|
+| SPY | 2.65 | 746.64 | 730.33 | 1,937.06 | -43.26 | -2.18% | 20.2% |
+| TLT | 16.31 | 79.97 | 80.22 | 1,308.72 | +4.08 | +0.31% | 13.6% |
+| REET | 35.36 | 26.05 | 26.83 | 949.01 | +27.76 | +3.01% | 9.9% |
+| DBA | 34.99 | 26.39 | 26.02 | 910.45 | -12.95 | -1.40% | 9.5% |
+| TTE.PA | 8.45 | 81.96 | 80.02 | 676.16 | -16.39 | -2.37% | 7.0% |
+| MC.PA | 1.15 | 385.40 | 386.95 | 443.98 | +1.78 | +0.40% | 4.6% |
+| IJR | 2.91 | 139.02 | 137.88 | 401.71 | -3.32 | -0.82% | 4.2% |
+| ^FCHI | 0.05 | 7838.49 | 8148.87 | 383.09 | +14.59 | +3.96% | 4.0% |
+| AI.PA | 1.48 | 170.88 | 189.82 | 281.33 | +28.07 | +11.08% | 2.9% |
+| PDBC | 12.70 | 17.83 | 17.59 | 223.44 | -3.05 | -1.35% | 2.3% |
 
-## Weekly Summary (W47, in progress)
+## Weekly Summary (W47, through Wednesday)
 
 | Metric | Value |
 |---|---|
 | Week Start Value (Mon 2026-11-16) | €9,683.42 |
-| Current Value | €9,630.77 |
-| Sessions | 2 |
-| Weekly Change | — (report on Friday) |
+| Current Value | €9,592.59 |
+| Week-to-Date | -90.84 EUR (-0.94%) |
+| Sessions | 3 (Mon–Wed) |
+| Weekly Trades | 2/3 (both Monday Rule-5 re-entries: DBA, TTE.PA) |
 
 ## Notes
 
-- Quiet session: −0.54% on the day, no trades. AI.PA flagged overbought (RSI 83) but Bollinger position 0.73 is below the 1.1 reversal threshold — winner left to run (+11.95% unrealized).
-- Portfolio drawdown −3.69% remains above the 5–7% defensive threshold; regime stays NORMAL (annualized vol 6.75%).
-- Benchmark scaling verified: €9,822.04 → -1.78%, consistent.
+- No intraday monitor trades today (`trades_history.json` clean for 2026-11-18).
+- Largest losers on the day: SPY -2.18% unrealized (still above its entry
+  discipline), TTE.PA -2.37% (Monday re-entry, 2 days old).
+- AI.PA remains the best performer at +11.08% unrealized.
