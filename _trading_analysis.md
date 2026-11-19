@@ -110,3 +110,29 @@ left-skewed (skew -0.28, excess kurtosis +1.04).
   and even if there were one, the fallback could not execute it.
 - Friday is the last W47 session with 1/3 weekly budget remaining; whether
   the provider is back by then determines if Friday is a real decision.
+
+## Research Session Notes (2026-11-19, post-close)
+
+- **Shadow-arm visibility shipped.** The daily JSON now carries an
+  informational `shadow_arm` block next to `llm_outage` — a
+  shadow-arm-only outage (like 2026-11-17) is now visible without opening
+  the shadow log. The block is deliberately fenced off from the live-arm
+  escalation streak: a broken experiment must never escalate pipeline
+  state. Five new regression tests pin that invariant (suite: 1831).
+- **H4 shadow gate check:** n=6/8, mean 5D forward return −0.58%,
+  positive 2/6 (33%). Still well under the pre-registered bar. DBA and
+  TTE.PA (11-16 entries) remain pending; the window extends, the bar
+  does not move.
+- **Cash-alpha correlation:** re-confirmed null (Pearson r = +0.019,
+  n=102). The alpha gap is a level effect — chronic under-investment vs
+  a fully-invested benchmark — not a daily timing signal. Cash-drag
+  diagnosis: 64 drag days vs 22 cap-binding days; the prompt, not the
+  cap, is the lever. (No prompt change while H4 is in shadow.)
+- **Keyword trends:** `cash band` 100% latest week, +3.41 pp/wk rising;
+  `let winners run` 50%, +0.97 rising. `deflated sharpe` 50% latest
+  but −2.03 pp/wk falling; the H-watch 2-week window closes ~2026-11-20
+  with no organic re-adoption.
+- **Escalation policy reminder:** Venice 402 is at day 3. If day 4
+  occurs tomorrow, the stated policy is an explicit exit-rule review —
+  SPY sits 0.87 pp from its 5% adaptive stop with no live decision layer
+  to react.
