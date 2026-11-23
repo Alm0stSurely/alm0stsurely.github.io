@@ -1,96 +1,87 @@
 {
-  "date": "2026-11-20",
-  "total_value": 9468.94,
-  "cash": 3944.94,
-  "cash_pct": 41.66,
-  "positions_value": 5524.0,
-  "total_return_pct": -5.31,
-  "daily_change": -65.3,
-  "daily_change_pct": -0.68,
-  "realized_pnl": -223.22,
-  "unrealized_pnl": -13.31,
-  "num_positions": 9,
+  "date": "2026-11-23",
+  "total_value": 9504.13,
+  "cash": 4601.41,
+  "cash_pct": 48.41,
+  "positions_value": 4902.72,
+  "total_return_pct": -4.96,
+  "daily_change": 35.19,
+  "daily_change_pct": 0.37,
+  "realized_pnl": -259.3,
+  "unrealized_pnl": 57.96,
+  "num_positions": 8,
   "positions": {
     "PDBC": {
       "quantity": 12.702441317917083,
       "avg_price": 17.829999923706055,
-      "current_price": 17.475000381469727,
-      "market_value": 221.97516687619785,
-      "unrealized_pnl": -4.509360853144386,
-      "unrealized_pnl_pct": -1.9910238012078454,
-      "weight_pct": 2.3442450638127146
+      "current_price": 17.329999923706055,
+      "market_value": 220.1333070703837,
+      "unrealized_pnl": -6.351220658958539,
+      "unrealized_pnl_pct": -2.804262490967371,
+      "weight_pct": 2.316186112733196
     },
     "AI.PA": {
       "quantity": 1.4821001609463524,
       "avg_price": 170.8800048828125,
-      "current_price": 187.5800018310547,
-      "market_value": 278.01235090412325,
-      "unrealized_pnl": 24.751068164793367,
-      "unrealized_pnl_pct": 9.772938009742491,
-      "weight_pct": 2.936045011059494
+      "current_price": 187.39999389648438,
+      "market_value": 277.74556111532496,
+      "unrealized_pnl": 24.484278375995075,
+      "unrealized_pnl_pct": 9.667596290742793,
+      "weight_pct": 2.9223674512958544
     },
     "IJR": {
       "quantity": 2.9134682782268437,
       "avg_price": 139.02000427246094,
-      "current_price": 131.27999877929688,
-      "market_value": 382.4801120091402,
-      "unrealized_pnl": -22.550260477634993,
-      "unrealized_pnl_pct": -5.567548018481327,
-      "weight_pct": 4.039312717733136
+      "current_price": 135.30999755859375,
+      "market_value": 394.22138561391455,
+      "unrealized_pnl": -10.808986872860658,
+      "unrealized_pnl_pct": -2.668685512766968,
+      "weight_pct": 4.147896158255792
     },
     "TLT": {
       "quantity": 16.314113775527353,
       "avg_price": 79.97000122070312,
-      "current_price": 81.44000244140625,
-      "market_value": 1328.621465708327,
-      "unrealized_pnl": 23.98176716471471,
-      "unrealized_pnl_pct": 1.8381908193875978,
-      "weight_pct": 14.031363762413443
+      "current_price": 81.69499969482422,
+      "market_value": 1332.7815199130348,
+      "unrealized_pnl": 28.141821369422587,
+      "unrealized_pnl_pct": 2.157056956095825,
+      "weight_pct": 14.023184809298348
     },
     "REET": {
       "quantity": 35.364525166868845,
       "avg_price": 26.049999237060547,
-      "current_price": 26.09000015258789,
-      "market_value": 922.6604669998064,
-      "unrealized_pnl": 1.4146133838645483,
-      "unrealized_pnl_pct": 0.15355438272119337,
-      "weight_pct": 9.744073068073275
+      "current_price": 26.44499969482422,
+      "market_value": 935.21485724545,
+      "unrealized_pnl": 13.969003629508165,
+      "unrealized_pnl_pct": 1.5163165809299484,
+      "weight_pct": 9.840090505164165
     },
     "^FCHI": {
       "quantity": 0.047011392554954026,
       "avg_price": 7838.490234375,
-      "current_price": 7940.06982421875,
-      "market_value": 373.27373942009245,
-      "unrealized_pnl": 4.775397973715712,
-      "unrealized_pnl_pct": 1.2959075894268632,
-      "weight_pct": 3.9420856548989733
+      "current_price": 8052.33984375,
+      "market_value": 378.5517093804284,
+      "unrealized_pnl": 10.053367934051664,
+      "unrealized_pnl_pct": 2.7281989640961823,
+      "weight_pct": 3.983023849898467
     },
     "MC.PA": {
       "quantity": 1.1473742001522271,
       "avg_price": 385.3999938964844,
-      "current_price": 382.8500061035156,
-      "market_value": 439.2722195312965,
-      "unrealized_pnl": -2.925790204355451,
-      "unrealized_pnl_pct": -0.6616470766353069,
-      "weight_pct": 4.639085294079881
+      "current_price": 388.95001220703125,
+      "market_value": 446.2712091552415,
+      "unrealized_pnl": 4.073199419589514,
+      "unrealized_pnl_pct": 0.9211256789745598,
+      "weight_pct": 4.695551031846043
     },
     "DBA": {
       "quantity": 34.99055045021812,
       "avg_price": 26.389999389648438,
-      "current_price": 26.135000228881836,
-      "market_value": 914.478044025152,
-      "unrealized_pnl": -8.922560999567054,
-      "unrealized_pnl_pct": -0.9662719464352312,
-      "weight_pct": 9.657659777170966
-    },
-    "TTE.PA": {
-      "quantity": 8.449859217967502,
-      "avg_price": 81.95999908447266,
-      "current_price": 78.48999786376953,
-      "market_value": 663.2294319674226,
-      "unrealized_pnl": -29.321021801116785,
-      "unrealized_pnl_pct": -4.233774108668234,
-      "weight_pct": 7.004262431446143
+      "current_price": 26.229999542236328,
+      "market_value": 917.8021222918185,
+      "unrealized_pnl": -5.598482732900607,
+      "unrealized_pnl_pct": -0.6062896972815756,
+      "weight_pct": 9.656878180682027
     }
   }
 }

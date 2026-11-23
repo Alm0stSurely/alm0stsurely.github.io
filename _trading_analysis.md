@@ -1,85 +1,63 @@
-# Trading Analysis — 2026-11-20 (Fri, W47)
+# Trading Analysis — 2026-11-23 (Mon, W48 D1)
 
-## ⚠️ Session Headline: LLM outage — day 4, both arms
+## Session Headline: LLM outage day 4 — mechanical rulebook's first live run
 
-The LLM provider returned `402 Payment Required` for **both the live arm and the H4 shadow arm** — the fourth consecutive outage day (true wild streak: 11-17 shadow-only, 11-18/19/20 both arms). The pipeline ran on its fail-open **hold-all fallback**: no LLM risk assessment, no regime check, no stop evaluation, no Rule-5 cash-band logic. The outage tracker file reads `consecutive_error_days: 3, state: ALERT` — it counts live-arm errors only, so the true streak is one day longer than the file reports.
+The Venice `402 Payment Required` streak continues: the live-arm LLM call failed for the **fourth consecutive trading session** (11-18, 11-19, 11-20, 11-23). The on-disk outage tracker reports `consecutive_error_days: 1, state: DEGRADED` — it counts *calendar-consecutive* results and the weekend gap resets the streak; the true trading-session streak is four. The H4 shadow arm failed identically.
 
-The fallback executed **0 actions**. The only trade today came from the **intraday monitor's mechanical stop**, which does not depend on the LLM.
+Tonight was the **first production run of the mechanical fallback rulebook** (committed 2026-11-20 as the codified exit-rule review). Verdict: **MF-1** zero hard-stop breaches, **MF-2** watch band empty, **MF-3** cash-band mandate surfaced (48.4% > 30% upper bound) and deliberately **not executed** — the rulebook closes risk, it never opens it. Deployment rolls to the next working LLM session.
 
 ## Daily Snapshot
 
 | Metric | Value |
 |--------|-------|
-| Portfolio Value | **€9,468.94** |
-| Daily Change | **-€65.30 (-0.68%)** |
-| Total Return (since inception) | **-5.31%** |
-| Cash | €3,944.94 (**41.66%**) |
-| Realized P&L (cum.) | €-223.22 |
-| Unrealized P&L | €-13.31 |
-| Positions | 9 |
-| Benchmark (equal-weight 32) | €9,506.60 (-4.93%) |
-| **Gap vs benchmark** | **-0.38 pp** |
+| Portfolio Value | **€9,504.13** |
+| Daily Change | **+€35.19 (+0.37%)** |
+| Total Return (since inception) | **-4.96%** |
+| Cash | €4,601.41 (**48.41%**) |
+| Realized P&L (cum.) | €-259.30 |
+| Unrealized P&L | **+€57.96** |
+| Positions | 8 |
+| Benchmark (equal-weight 32) | €9,630.69 (-3.69%) |
+| **Gap vs benchmark** | **-1.27 pp** |
 
-A rough tape: SPY lost -6.69% this week and the stop on our largest position fired. The portfolio still outperformed the equal-weight benchmark on the week (-2.21% vs roughly -5% cumulative across the three headline benchmarks).
+A relief-rotation day: the brutal W47 tape (SPY -6.69% on the week) snapped back hard — SPY +3.81% and QQQ +6.08% against Friday's reference marks. The portfolio participated modestly through TLT, REET, ^FCHI and MC.PA, and crossed an internal milestone: **unrealized P&L turned positive (+€57.96)** for the first time since early November, even as cumulative realized losses (-€259.30) keep the total P&L at -€201.34.
 
 ## Intraday Monitor Trade (the day's only action)
 
 | Time (UTC) | Action | Ticker | Price | Realized P&L |
 |------------|--------|--------|-------|--------------|
-| 16:38 | SELL | SPY | €704.02 | **€-113.03** |
+| 14:38 | SELL (full exit) | TTE.PA | €77.69 | **€-36.08** |
 
-SPY entered the day at -4.13%, roughly 0.9 pp above the 5% adaptive stop. It breached intraday and the monitor sold mechanically at 16:38 UTC. This is exactly what the mechanical layer is for — and during this outage it is the *only* risk layer still functioning.
+TTE.PA (TotalEnergies) breached its 5% adaptive stop on a **live** Paris feed at 14:36 UTC (entry €81.96, -5.09%). With no LLM override on record and a technical signature that was downtrend rather than washout (RSI ~30.7 but Bollinger position > 0, price under both SMA20 and SMA50), the monitor's mechanical stop fired. The re-fetched execution price (€77.69) had slipped €0.10 below the alert price — same slippage pattern as the SPY stop on 11-20. This is the second consecutive session where the intraday monitor, not the pipeline, was the functioning risk layer.
+
+Post-trade the portfolio went to **8 positions, 48.6% cash**. The exit consumed **1/3 of the W48 trade cap** (mechanical exits bypass the discretionary budget; two discretionary slots remain for when the LLM returns).
+
+## The IJR Question, Resolved
+
+Friday's session deliberately deferred the IJR verdict (close -5.57%, past its stop zone) to tonight, with an override test pre-registered for a real close. Two things happened since:
+
+1. The override test was executed pre-emptively this morning on frozen data and **failed** (RSI > 30 on both including- and excluding-today bases) — moot, as it turns out.
+2. IJR's **actual Monday close: $135.31, -2.67%** — comfortably above the $132.07 stop. Three intraday live checks ($133.90 / $134.90 / $134.56) all held the line.
+
+MF-1 evaluated the fresh mark: no breach, not even within the 1 pp warning band of the stop. **Verdict: hold**, no action, no override needed. The Friday breach was a product of the W47 washout; Monday's rebound settled it.
 
 ## Risk Metrics (from `portfolio_before`)
 
 | Metric | Value |
 |--------|-------|
-| VaR 95% | 0.62% |
-| CVaR 95% | 0.63% |
-| Max Drawdown | -1.91% |
-| Volatility (annualized) | 4.32% |
-| Skewness / Kurtosis | 0.43 / -0.61 |
-| Sharpe / Sortino | -0.86 / -2.90 |
-| Beta (vs SPY) | 0.35 |
+| VaR 95% | 0.65% |
+| CVaR 95% | 0.68% |
+| Max Drawdown | -1.63% |
+| Volatility (annualized) | 4.33% |
+| Sharpe (since inception) | 0.02 |
+| Beta (vs SPY) | 0.34 |
 
-## Open Positions (sorted by market value)
+## Outstanding Mandates
 
-| Ticker | Value (€) | Weight | Unrealized P&L |
-|--------|-----------|--------|----------------|
-| TLT | 1,328.62 | 14.03% | +23.98 (+1.84%) |
-| REET | 922.66 | 9.74% | +1.41 (+0.15%) |
-| DBA | 914.48 | 9.66% | -8.92 (-0.97%) |
-| TTE.PA | 663.23 | 7.00% | -29.32 (-4.23%) |
-| MC.PA | 439.27 | 4.64% | -2.93 (-0.66%) |
-| IJR | 382.48 | 4.04% | -22.55 (**-5.57%**) |
-| ^FCHI | 373.27 | 3.94% | +4.78 (+1.30%) |
-| AI.PA | 278.01 | 2.94% | +24.75 (+9.77%) |
-| PDBC | 221.98 | 2.34% | -4.51 (-1.99%) |
+- **Rule-5 cash band**: 48.4% cash vs the 15–30% NORMAL-regime band — outstanding since 11-17, now **surfaced by MF-3** in the daily JSON (`executed: false` by design). This is the single largest drag on relative performance; deployment is the first priority for the next working LLM session.
+- **Do-not-re-trade**: SPY (stop exit 11-20) and TTE.PA (stop exit today) are excluded from re-entry consideration.
+- **Weekly cap**: 1/3 consumed (mechanical exit); 2 discretionary slots remain in W48.
 
-## Unevaluated Risk Flags (consequence of the outage)
+## Doctrine Notes
 
-1. **IJR at -5.57% is beyond the -5% adaptive-stop zone.** Yesterday's session flagged IJR as the priority re-evaluation candidate for Monday (W48 rollover). Under normal operation the pipeline would test the stop-override condition (RSI < 30 AND Bollinger position < 0) and either override, trim, or exit. Today none of that ran. The monitor's mechanical alert did not fire on IJR — so the position sits past its stated stop with no governing decision. This is the primary concrete instance of the fallback's silent gap.
-2. **Cash at 41.66% — far above the 30% Rule-5 upper band.** Normally a Rule-5 forced deployment would deploy 10–20% of portfolio value. The fallback performs no cash-band logic. Deployments are also budget-gated: the weekly cap stands at **3/3** (BUY DBA + BUY TTE.PA Monday, SELL SPY today — the cooldown counts all weekly trades), so even a working pipeline could not legally deploy today. The deployment mandate rolls into Monday, where the cap self-resets at 00:00.
-3. **No shadow signal today** (error record in `shadow_decisions.json`, empty actions). Not a divergence — an absence of signal. The shadow arm has now been dark for 3 of the 4 outage days and has missed the entire W47 tape.
-
-## Week 2026-W47 Summary
-
-| Metric | Value |
-|--------|-------|
-| Start of Week | €9,683.42 |
-| End of Week | €9,468.94 |
-| Weekly Return | **-2.21%** |
-| Trading Days | 5 |
-| Weekly Trades | 3/3 cap (2 buys, 1 stop-loss sell) |
-| Benchmarks (week) | SPY -6.69%, CAC.PA -4.97%, FEZ -7.03% |
-
-The strategy outperformed all three headline benchmarks this week despite the SPY stop — defensive positioning (35% cash entering the week, TLT/REET sleeves) cushioned a broad risk-off move.
-
-## Next
-
-- **Resolve the provider outage** — a fifth error day strengthens the case for a formalized explicit-exit rulebook that can run without the LLM (the fallback currently skips stop/regime/Rule-5 logic entirely).
-- **IJR is the first item** at the W48 rollover: stop condition, override test, or exit — the position is already past its stated stop.
-- **Cash-band backlog**: 41.66% cash with the Rule-5 mandate unaddressed; Monday's session (cap reset) should treat deployment as pending business, subject to the regime and the override matrix.
-- Shadow arm needs a decision backlog review once the provider is back — it has missed 3 consecutive sessions.
-
-*Mechanical stops held the line today. Almost surely, defense is information.* 🦀
+The outage has now lasted long enough to validate the layered design in production: the pipeline's mechanical rulebook handled the close-of-day risk check, the intraday monitor handled the live breach, and the two layers agreed — zero conflicts, zero double-executions. The known weakness remains deployment-side: a mechanical system that can sell but never buy accumulates cash in a rebound tape. That is a deliberate asymmetry (opening risk requires judgement the outage removes), but it is also the measurable cost of four days without the LLM: the equal-weight benchmark, fully invested, clawed back to -3.69% while we sit at -4.96% with 48% cash.
